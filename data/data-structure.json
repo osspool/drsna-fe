@@ -1,0 +1,450 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Treatment Page Data Structure",
+  "description": "Complete schema for treatment page content structure",
+  "type": "object",
+  "required": ["id", "title", "description"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier slug for the treatment (e.g., 'prp-facelift')"
+    },
+    "categoryId": {
+      "type": "string",
+      "description": "Parent category identifier (e.g., 'aesthetic-medicine')"
+    },
+    "subcategoryId": {
+      "type": "string",
+      "description": "Subcategory identifier (e.g., 'face', 'body')"
+    },
+    "title": {
+      "type": "string",
+      "description": "Main treatment title"
+    },
+    "shortTitle": {
+      "type": "string",
+      "description": "Abbreviated title for navigation/cards"
+    },
+    "tagline": {
+      "type": "string",
+      "description": "Short catchy tagline"
+    },
+    "description": {
+      "type": "string",
+      "description": "Brief 1-2 sentence description"
+    },
+    "longDescription": {
+      "type": "string",
+      "description": "Extended description (2-3 paragraphs)"
+    },
+    "alternativeTitles": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Alternative names/synonyms for SEO"
+    },
+    "seo": {
+      "type": "object",
+      "description": "SEO metadata",
+      "properties": {
+        "metaTitle": {"type": "string"},
+        "metaDescription": {"type": "string"},
+        "keywords": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "h1": {"type": "string"},
+        "canonicalUrl": {"type": "string"}
+      }
+    },
+    "hero": {
+      "type": "object",
+      "description": "Hero section data",
+      "properties": {
+        "headline": {"type": "string"},
+        "subheadline": {"type": "string"},
+        "image": {"type": "string"},
+        "video": {"type": "string"},
+        "badge": {"type": "string"}
+      }
+    },
+    "quickStats": {
+      "type": "object",
+      "description": "At-a-glance treatment stats",
+      "properties": {
+        "duration": {"type": "string"},
+        "anesthesia": {"type": "string"},
+        "downtime": {"type": "string"},
+        "resultsVisible": {"type": "string"},
+        "resultsLast": {"type": "string"},
+        "painLevel": {"type": "string"},
+        "price": {"type": "string"},
+        "sessions": {"type": "string"}
+      }
+    },
+    "overview": {
+      "type": "object",
+      "description": "Overview/introduction block",
+      "properties": {
+        "title": {"type": "string"},
+        "content": {"type": "string"},
+        "image": {"type": "string"},
+        "highlights": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "gallery": {
+      "type": "object",
+      "description": "Treatment image gallery",
+      "properties": {
+        "title": {"type": "string"},
+        "subtitle": {"type": "string"},
+        "images": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "src": {"type": "string"},
+              "alt": {"type": "string"},
+              "title": {"type": "string"},
+              "caption": {"type": "string"}
+            }
+          }
+        },
+        "columns": {
+          "type": "number",
+          "enum": [2, 3, 4],
+          "default": 3
+        }
+      }
+    },
+    "video": {
+      "type": "object",
+      "description": "Video section with YouTube embeds",
+      "properties": {
+        "enabled": {"type": "boolean"},
+        "title": {"type": "string"},
+        "subtitle": {"type": "string"},
+        "description": {"type": "string"},
+        "videos": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "url": {"type": "string"},
+              "thumbnail": {"type": "string"},
+              "title": {"type": "string"},
+              "description": {"type": "string"},
+              "duration": {"type": "string"}
+            }
+          }
+        },
+        "layout": {
+          "type": "string",
+          "enum": ["single", "grid", "feature"],
+          "description": "single: one large video, grid: multiple videos, feature: text + video"
+        },
+        "featureContent": {
+          "type": "object",
+          "description": "For 'feature' layout - text beside video",
+          "properties": {
+            "title": {"type": "string"},
+            "description": {"type": "string"},
+            "videoSide": {
+              "type": "string",
+              "enum": ["left", "right"]
+            }
+          }
+        }
+      }
+    },
+    "howItWorks": {
+      "type": "object",
+      "description": "Science/mechanism explanation",
+      "properties": {
+        "title": {"type": "string"},
+        "subtitle": {"type": "string"},
+        "content": {"type": "string"},
+        "benefits": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {"type": "string"},
+              "description": {"type": "string"},
+              "icon": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "treatsConditions": {
+      "type": "object",
+      "description": "What conditions/concerns this treats",
+      "properties": {
+        "title": {"type": "string"},
+        "subtitle": {"type": "string"},
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "description": {"type": "string"},
+              "icon": {"type": "string"},
+              "effectiveness": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "benefits": {
+      "type": "object",
+      "description": "Key benefits/advantages",
+      "properties": {
+        "title": {"type": "string"},
+        "subtitle": {"type": "string"},
+        "layout": {
+          "type": "string",
+          "enum": ["grid-2", "grid-3", "grid-4", "list"],
+          "default": "grid-3"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {"type": "string"},
+              "description": {"type": "string"},
+              "icon": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "process": {
+      "type": "object",
+      "description": "Treatment process/journey timeline",
+      "properties": {
+        "title": {"type": "string"},
+        "subtitle": {"type": "string"},
+        "steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "number": {"type": "number"},
+              "title": {"type": "string"},
+              "description": {"type": "string"},
+              "duration": {"type": "string"},
+              "icon": {"type": "string"},
+              "tips": {
+                "type": "array",
+                "items": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "beforeAfter": {
+      "type": "object",
+      "description": "Before/after gallery",
+      "properties": {
+        "enabled": {"type": "boolean"},
+        "title": {"type": "string"},
+        "subtitle": {"type": "string"},
+        "disclaimer": {"type": "string"},
+        "gallery": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {"type": "string"},
+              "title": {"type": "string"},
+              "before": {"type": "string"},
+              "after": {"type": "string"},
+              "description": {"type": "string"},
+              "area": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "pricing": {
+      "type": "object",
+      "description": "Pricing information - supports both single price and multi-package",
+      "properties": {
+        "title": {"type": "string"},
+        "subtitle": {"type": "string"},
+        "disclaimer": {"type": "string"},
+        "singlePrice": {
+          "type": "object",
+          "description": "For treatments with one price point",
+          "properties": {
+            "originalPrice": {"type": "string"},
+            "currentPrice": {"type": "string"},
+            "currency": {"type": "string"},
+            "consultationFee": {"type": "string"},
+            "consultationNote": {"type": "string"},
+            "consultationDisclaimer": {"type": "string"}
+          }
+        },
+        "packages": {
+          "type": "array",
+          "description": "For treatments with multiple pricing tiers",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "price": {"type": "string"},
+              "description": {"type": "string"},
+              "includes": {"type": "string"},
+              "areas": {"type": "string"},
+              "popular": {"type": "boolean"},
+              "featured": {"type": "string"},
+              "savings": {"type": "string"}
+            }
+          }
+        },
+        "includes": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "What's included in every treatment"
+        },
+        "financing": {
+          "type": "object",
+          "properties": {
+            "available": {"type": "boolean"},
+            "buttonText": {"type": "string"}
+          }
+        }
+      }
+    },
+    "candidacy": {
+      "type": "object",
+      "description": "Who is/isn't a good candidate",
+      "properties": {
+        "title": {"type": "string"},
+        "subtitle": {"type": "string"},
+        "suitable": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "notSuitable": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "note": {"type": "string"}
+      }
+    },
+    "safety": {
+      "type": "object",
+      "description": "Safety information and certifications",
+      "properties": {
+        "title": {"type": "string"},
+        "content": {"type": "string"},
+        "certifications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "description": {"type": "string"},
+              "icon": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "comparison": {
+      "type": "object",
+      "description": "Compare with other treatments",
+      "properties": {
+        "title": {"type": "string"},
+        "subtitle": {"type": "string"},
+        "comparisons": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "treatment": {"type": "string"},
+              "naturalness": {"type": "string"},
+              "results": {"type": "string"},
+              "downtime": {"type": "string"},
+              "cost": {"type": "string"},
+              "duration": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "testimonials": {
+      "type": "array",
+      "description": "Patient testimonials",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "age": {"type": "number"},
+          "treatment": {"type": "string"},
+          "rating": {"type": "number"},
+          "text": {"type": "string"},
+          "date": {"type": "string"},
+          "verified": {"type": "boolean"},
+          "image": {"type": "string"}
+        }
+      }
+    },
+    "faq": {
+      "type": "array",
+      "description": "Frequently asked questions - keep to 5-8 most important",
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {"type": "string"},
+          "answer": {"type": "string"},
+          "category": {"type": "string"}
+        }
+      }
+    },
+    "relatedTreatments": {
+      "type": "array",
+      "description": "Related/complementary treatments",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "string"},
+          "title": {"type": "string"},
+          "description": {"type": "string"},
+          "reason": {"type": "string"}
+        }
+      }
+    },
+    "cta": {
+      "type": "object",
+      "description": "Call-to-action section",
+      "properties": {
+        "title": {"type": "string"},
+        "subtitle": {"type": "string"},
+        "primaryButton": {"type": "string"},
+        "secondaryButton": {"type": "string"},
+        "urgency": {"type": "string"},
+        "guarantee": {"type": "string"}
+      }
+    },
+    "bookingInfo": {
+      "type": "object",
+      "description": "Booking details",
+      "properties": {
+        "depositRequired": {"type": "boolean"},
+        "cancellationPolicy": {"type": "string"},
+        "consultationFee": {"type": "string"},
+        "duration": {"type": "string"}
+      }
+    }
+  }
+}
+

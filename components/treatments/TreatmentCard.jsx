@@ -1,0 +1,182 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowRight, Clock, Calendar, TrendingUp, Star } from "lucide-react";
+import { CometCard } from "@/components/aceternity/comet-card";
+
+export function TreatmentCard({ treatment, categoryId, subcategoryId, index = 0 }) {
+  const href = subcategoryId
+    ? `/treatments/${categoryId}/${subcategoryId}/${treatment.id}`
+    : `/treatments/${categoryId}/${treatment.id}`;
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: index * 0.05 }}
+    >
+      <Link href={href}>
+        <CometCard>
+          <div className="group relative h-full rounded-3xl overflow-hidden bg-white border border-dark-brown/10 hover:border-gold-primary/30 hover:shadow-gold-xl transition-all duration-500">
+            {/* Image Section */}
+            {treatment.image && (
+              <div className="relative h-56 overflow-hidden">
+                <Image
+                  src={treatment.image}
+                  alt={treatment.title}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-dark-brown/80 via-dark-brown/20 to-transparent" />
+
+                {/* Badges */}
+                <div className="absolute top-4 right-4 flex gap-2">
+                  {treatment.featured && (
+                    <span className="px-3 py-1 bg-gold/90 backdrop-blur-sm text-white text-xs font-semibold rounded-full">
+                      Featured
+                    </span>
+                  )}
+                  {treatment.popular && (
+                    <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-dark-brown text-xs font-semibold rounded-full flex items-center gap-1">
+                      <Star className="w-3 h-3 fill-gold text-gold" />
+                      Popular
+                    </span>
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* Content Section */}
+            <div className="p-8">
+              {/* Title */}
+              <h3 className="text-2xl font-heading font-bold text-dark-brown mb-3 group-hover:text-gold transition-colors">
+                {treatment.title}
+              </h3>
+
+              {/* Short Description */}
+              {treatment.shortDescription && (
+                <p className="text-dark-brown/70 mb-6 leading-relaxed">
+                  {treatment.shortDescription}
+                </p>
+              )}
+
+              {/* Meta Info Grid */}
+              <div className="grid grid-cols-2 gap-3 mb-6 pb-6 border-b border-dark-brown/10">
+                {treatment.duration && (
+                  <div className="flex items-center text-sm text-dark-brown/60">
+                    <Clock className="w-4 h-4 mr-2 text-gold" />
+                    <span>{treatment.duration}</span>
+                  </div>
+                )}
+                {treatment.results && (
+                  <div className="flex items-center text-sm text-dark-brown/60">
+                    <TrendingUp className="w-4 h-4 mr-2 text-gold" />
+                    <span>{treatment.results}</span>
+                  </div>
+                )}
+                {treatment.downtime && (
+                  <div className="flex items-center text-sm text-dark-brown/60">
+                    <Calendar className="w-4 h-4 mr-2 text-gold" />
+                    <span>{treatment.downtime}</span>
+                  </div>
+                )}
+                {treatment.longevity && (
+                  <div className="flex items-center text-sm text-dark-brown/60">
+                    <Star className="w-4 h-4 mr-2 text-gold" />
+                    <span>{treatment.longevity}</span>
+                  </div>
+                )}
+              </div>
+
+              {/* Benefits */}
+              {treatment.benefits && treatment.benefits.length > 0 && (
+                <div className="mb-6">
+                  <ul className="space-y-2">
+                    {treatment.benefits.slice(0, 3).map((benefit, idx) => (
+                      <li key={idx} className="flex items-start text-sm text-dark-brown/70">
+                        <span className="text-gold mr-2">✓</span>
+                        {benefit}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Price & CTA */}
+              <div className="flex items-center justify-between">
+                {treatment.price && (
+                  <span className="text-gold font-heading font-bold text-xl">
+                    {treatment.price}
+                  </span>
+                )}
+                <div className="flex items-center text-gold font-semibold text-sm group-hover:gap-3 transition-all">
+                  Learn more
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform" />
+                </div>
+              </div>
+            </div>
+
+            {/* Hover Gradient Effect */}
+            <div className="absolute inset-0 bg-gradient-to-br from-gold-primary/5 to-gold-light/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+          </div>
+        </CometCard>
+      </Link>
+    </motion.div>
+  );
+}
+
+// Simplified version for grid layouts
+export function TreatmentCardSimple({ treatment, categoryId, subcategoryId, index = 0 }) {
+  const href = subcategoryId
+    ? `/treatments/${categoryId}/${subcategoryId}/${treatment.id}`
+    : `/treatments/${categoryId}/${treatment.id}`;
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: index * 0.05 }}
+    >
+      <Link href={href}>
+        <div className="group relative bg-white rounded-2xl p-8 border border-dark-brown/10 hover:border-gold-primary/30 hover:shadow-xl transition-all duration-500">
+          {/* Hover gradient effect */}
+          <div className="absolute inset-0 bg-gradient-to-br from-gold-primary/5 to-gold-light/5 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-500" />
+
+          <div className="relative z-10">
+            {/* Treatment Name */}
+            <h3 className="text-2xl font-heading font-bold text-dark-brown mb-4 group-hover:text-gold transition-colors">
+              {treatment.title}
+            </h3>
+
+            {/* Meta Info */}
+            <div className="space-y-2 mb-6">
+              {treatment.duration && (
+                <div className="flex items-center text-sm text-dark-brown/60">
+                  <Clock className="w-4 h-4 mr-2" />
+                  <span>{treatment.duration}</span>
+                </div>
+              )}
+              {treatment.results && (
+                <div className="flex items-center text-sm text-dark-brown/60">
+                  <TrendingUp className="w-4 h-4 mr-2" />
+                  <span>{treatment.results}</span>
+                </div>
+              )}
+            </div>
+
+            {/* CTA */}
+            <div className="flex items-center text-gold font-semibold text-sm">
+              Learn more
+              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform" />
+            </div>
+          </div>
+        </div>
+      </Link>
+    </motion.div>
+  );
+}

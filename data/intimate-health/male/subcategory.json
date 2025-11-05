@@ -1,0 +1,218 @@
+{
+  "id": "male",
+  "categoryId": "intimate-health",
+  "title": "Men's Intimate Health Treatments",
+  "shortTitle": "Male",
+  "tagline": "Restore Strength. Rebuild Confidence.",
+  "description": "Doctor-led regenerative treatments for performance, comfort, and long-term penile health.",
+  "longDescription": "From performance concerns to chronic inflammatory conditions, our male intimate health programme uses evidence-based regenerative medicine to repair tissue, improve blood flow, and protect long-term function. Every plan is delivered in complete privacy by Dr. Abbas and our senior medical team, with digital tracking so you can confidently measure progress.",
+  "seo": {
+    "metaTitle": "Men's Intimate Health Clinic London | P-Shot & Shockwave | Dr. SNA",
+    "metaDescription": "Explore P-Shot PRP, shockwave therapy, Peyronie's care, and lichen sclerosus support for men. Confidential appointments at Dr. SNA Clinic, London.",
+    "keywords": [
+      "men's health clinic london",
+      "p shot london",
+      "shockwave therapy ed",
+      "peyronies treatment",
+      "lichen sclerosus male",
+      "intimate health doctor"
+    ],
+    "h1": "Men's Intimate Health Treatments"
+  },
+  "hero": {
+    "headline": "Advanced Solutions for Men's Intimate Wellness",
+    "subheadline": "Cutting-edge regenerative medicine tailored to your goals",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80",
+    "backgroundImage": "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=1920&q=80",
+    "cta": "View treatment programmes"
+  },
+  "introduction": {
+    "title": "Confidence Starts with Clarity",
+    "content": "We prioritise discreet consultations, measurable diagnostics, and modern therapies proven to repair vascular tissue and nerves. Most patients see noticeable improvements within weeks while long-term regeneration continues behind the scenes.",
+    "image": "https://images.unsplash.com/photo-1485217988980-11786ced9454?w=1200&q=80",
+    "highlights": [
+      "Dedicated men's health suites",
+      "Doppler and hormone screening",
+      "Combination regenerative protocols",
+      "Concierge follow-up + digital check-ins"
+    ]
+  },
+  "treatmentCategories": [
+    {
+      "id": "performance",
+      "title": "Performance Optimisation",
+      "description": "Restore healthy erections, sensitivity, and stamina with PRP and acoustic wave therapy.",
+      "icon": "activity",
+      "treatments": ["p-shot", "shockwave-therapy"],
+      "benefits": ["Improved blood flow", "Heightened sensitivity", "Confidence in intimate moments"]
+    },
+    {
+      "id": "corrective",
+      "title": "Corrective Care",
+      "description": "Address Peyronie's curvature and scar tissue with combination regenerative medicine.",
+      "icon": "align-center",
+      "treatments": ["peyronies-disease"],
+      "benefits": ["Reduced curvature", "Less plaque density", "Pain-free erections"]
+    },
+    {
+      "id": "dermatological",
+      "title": "Dermatological Support",
+      "description": "Calm inflammation and rebuild tissue integrity for chronic skin conditions.",
+      "icon": "droplet",
+      "treatments": ["lichen-sclerosis-male"],
+      "benefits": ["Soothe irritation", "Protect delicate tissue", "Prevent flare-ups"]
+    }
+  ],
+  "treatments": {
+    "p-shot": {
+      "title": "P-Shot® PRP for Men",
+      "shortDescription": "Platelet-rich plasma injections that regenerate penile tissue and sensitivity.",
+      "description": "Our flagship procedure isolates high-quality PRP ('liquid gold') and reinjects it into strategic areas to enhance blood flow, improve rigidity, and boost nerve response—without surgery.",
+      "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80",
+      "icon": "droplet",
+      "duration": "40 mins",
+      "downtime": "None – resume intimacy same day",
+      "results": "3-6 weeks",
+      "longevity": "12-18 months",
+      "price": "From £1,200",
+      "benefits": ["Improved erection quality", "Increased girth + sensitivity", "Supports Peyronie's correction", "Drug-free solution"],
+      "featured": true,
+      "popular": true
+    },
+    "shockwave-therapy": {
+      "title": "Focused Shockwave Therapy",
+      "shortDescription": "Acoustic waves break down micro-plaque and stimulate new vessels for natural erections.",
+      "description": "A course of low-intensity extracorporeal shockwave therapy (LI-ESWT) enhances penile blood flow and responsiveness, especially for men who want to reduce reliance on medication.",
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80",
+      "icon": "waveform",
+      "duration": "20 mins",
+      "downtime": "None",
+      "results": "Often within 2-3 sessions",
+      "longevity": "Up to 2 years",
+      "price": "From £350 per session",
+      "benefits": ["Drug-free performance", "Enhanced blood flow", "Supports nerve repair", "Pairs well with P-Shot"],
+      "featured": true,
+      "popular": true
+    },
+    "peyronies-disease": {
+      "title": "Peyronie's Regenerative Plan",
+      "shortDescription": "Combination therapy to soften plaques and straighten curvature.",
+      "description": "Custom plans blend PRP, shockwave, traction, and prescription topicals to reduce fibrotic plaques, curvature, and pain for Peyronie's disease.",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+      "icon": "align-vertical-justify-center",
+      "duration": "45 mins per visit",
+      "downtime": "Minimal soreness",
+      "results": "Visible change at 8-12 weeks",
+      "longevity": "Permanent when maintained",
+      "price": "Programmes from £1,650",
+      "benefits": ["Reduced curvature", "Less plaque density", "Pain-free intimacy", "Confidence restored"],
+      "featured": false,
+      "popular": false
+    },
+    "lichen-sclerosis-male": {
+      "title": "Lichen Sclerosus Relief",
+      "shortDescription": "Targeted anti-inflammatory and regenerative therapy for chronic irritation.",
+      "description": "Combines medical-grade topicals, PRP, and laser biostimulation to calm flare-ups, rebuild skin integrity, and prevent scar tightening.",
+      "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80",
+      "icon": "shield",
+      "duration": "30-40 mins",
+      "downtime": "None",
+      "results": "Symptom relief within days",
+      "longevity": "Maintenance every 6-12 months",
+      "price": "From £795",
+      "benefits": ["Reduces itching/burning", "Protects against scarring", "Improves skin elasticity", "Doctor-monitored plan"],
+      "featured": false,
+      "popular": false
+    }
+  },
+  "benefits": {
+    "title": "Designed for Men's Real Lives",
+    "items": [
+      {"title": "Fast appointments", "description": "Evening and lunchtime slots reduce time away from work", "icon": "clock"},
+      {"title": "Comprehensive diagnostics", "description": "Hormones, vascular studies, and lifestyle review inform every plan", "icon": "activity"},
+      {"title": "Advanced pain control", "description": "Topical, nerve block, or nitrous options keep you comfortable", "icon": "shield-check"},
+      {"title": "Progress tracking", "description": "Outcome surveys and ultrasound comparisons so you can see gains", "icon": "chart-line"}
+    ]
+  },
+  "process": {
+    "title": "What Working with Us Looks Like",
+    "steps": [
+      {"number": 1, "title": "Confidential consultation", "description": "45-minute doctor appointment covering goals, history, and expectations.", "icon": "message-circle"},
+      {"number": 2, "title": "Diagnostics & planning", "description": "Penile Doppler, hormone labs, or photo documentation inform your bespoke plan.", "icon": "scan"},
+      {"number": 3, "title": "Treatment sessions", "description": "Precision-delivered PRP, shockwave, or topical therapy in a calm suite.", "icon": "syringe"},
+      {"number": 4, "title": "Review & optimisation", "description": "Follow-up measurements, supplement tweaks, and maintenance roadmap.", "icon": "refresh-cw"}
+    ]
+  },
+  "faq": [
+    {
+      "question": "How quickly will I notice improvement?",
+      "answer": "Many men feel stronger erections within weeks of shockwave or the P-Shot, while collagen-driven gains continue for 3-4 months."
+    },
+    {
+      "question": "Do you offer same-day treatment?",
+      "answer": "Yes. After consultation and suitability checks we can deliver the first session immediately, saving you a second visit."
+    },
+    {
+      "question": "Is there any downtime?",
+      "answer": "Most patients resume normal activity—including intercourse—the same day. Mild swelling or tingling settles within 24 hours."
+    },
+    {
+      "question": "Can I combine treatments?",
+      "answer": "We often pair PRP with shockwave or traction devices to accelerate plaque remodelling and performance. Your plan outlines the ideal sequence."
+    },
+    {
+      "question": "Will my information stay private?",
+      "answer": "All notes are stored on encrypted systems accessible only to your treating physician. We never share data without consent."
+    },
+    {
+      "question": "Is financing available?",
+      "answer": "0% finance is available for courses over £1,000, and bespoke payment plans can be arranged with our patient advisor."
+    }
+  ],
+  "beforeAfter": {
+    "title": "Meaningful Functional Gains",
+    "subtitle": "Ultrasound and patient-reported data demonstrate measurable improvements.",
+    "note": "Imagery available in clinic due to patient privacy."
+  },
+  "video": {
+    "enabled": true,
+    "title": "Inside the Men's Intimate Health Programme",
+    "description": "See how Dr. SNA combines P-Shot PRP, shockwave, and lifestyle coaching to rebuild performance.",
+    "videos": [
+      {
+        "url": "https://youtu.be/rXHRM8roswo",
+        "thumbnail": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1280&q=80",
+        "title": "How the P-Shot Works",
+        "description": "Breakdown of the procedure, recovery, and expected results."
+      },
+      {
+        "url": "https://youtu.be/FKgy_KMZBDI",
+        "thumbnail": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=1280&q=80",
+        "title": "Patient Testimonial",
+        "description": "Real patient sharing confidence gains after treatment."
+      }
+    ],
+    "layout": "feature"
+  },
+  "cta": {
+    "title": "Take the First Step Today",
+    "subtitle": "Book a confidential consultation with Dr. Abbas and receive a tailored action plan the same day.",
+    "primaryButton": "Book men's health consult",
+    "secondaryButton": "Request a call back",
+    "note": "Consultation fee (£100) credited toward treatment."
+  },
+  "relatedSubcategories": [
+    {
+      "id": "female",
+      "title": "Women's Intimate Health",
+      "description": "Partner-focused support for restoring balance together.",
+      "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&q=80"
+    },
+    {
+      "id": "aesthetic-medicine",
+      "title": "Aesthetic Medicine",
+      "description": "Complementary regenerative treatments for face and body.",
+      "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600&q=80"
+    }
+  ]
+}

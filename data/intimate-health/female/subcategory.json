@@ -1,0 +1,283 @@
+{
+  "id": "female",
+  "categoryId": "intimate-health",
+  "title": "Women's Intimate Health Treatments",
+  "shortTitle": "Female",
+  "tagline": "Reclaim Comfort, Desire & Confidence",
+  "description": "Doctor-led intimate rejuvenation, pelvic floor therapy, and inflammatory care for every season of womanhood.",
+  "longDescription": "Sensitive symptoms after childbirth, perimenopause, or chronic inflammation deserve the same level of clinical precision as any other healthcare concern. Our women's intimate health programme blends regenerative PRP, energy-based tightening, and pelvic neuromuscular therapies to restore lubrication, support bladder control, and reignite sensual confidence.\\n\\nEvery visit is led by Dr. Syed Nadeem Abbas or our senior female clinicians in discreet suites with optional chaperones, so you feel fully supported from consultation to aftercare.",
+  "seo": {
+    "metaTitle": "Women's Intimate Health Clinic London | O-Shot, Ultra Femme & EMSELLA | Dr. SNA",
+    "metaDescription": "Explore O-Shot PRP, Ultra Femme 360, EMSELLA pelvic floor therapy, and lichen sclerosus care at Dr. SNA Clinic London. Discreet regenerative treatments for women's sexual wellness.",
+    "keywords": [
+      "o-shot london",
+      "women's intimate health clinic",
+      "pelvic floor treatment london",
+      "ultra femme 360 uk",
+      "emsella chair london",
+      "lichen sclerosis treatment women"
+    ],
+    "h1": "Women's Intimate Health Treatments in London"
+  },
+  "hero": {
+    "headline": "Specialist Care for Women's Intimate Wellness",
+    "subheadline": "Regenerative PRP, radiofrequency, and pelvic therapies tailored to your life stage",
+    "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=1920&q=80",
+    "backgroundImage": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1920&q=80",
+    "cta": "Explore women's treatments"
+  },
+  "introduction": {
+    "title": "The Comfort-First Clinic Women Recommend",
+    "content": "We combine discreet scheduling, hormone-aware diagnostics, and evidence-based regenerative medicine to address the root cause of dryness, laxity, pain, or bladder leaks. Expect longer appointments, compassionate explanations, and personalised plans that honour both your biology and your boundaries.",
+    "image": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1200&q=80",
+    "highlights": [
+      "Female chaperone available on request",
+      "Dual-spin PRP and FDA-listed energy devices",
+      "Hormone + pelvic floor diagnostics in-house",
+      "Blended treatment plans for complex cases",
+      "Digital check-ins to track progress between visits"
+    ]
+  },
+  "treatmentCategories": [
+    {
+      "id": "regenerative-rejuvenation",
+      "title": "Regenerative Rejuvenation",
+      "description": "Reawaken arousal, sensitivity, and lubrication with advanced PRP and RF tightening.",
+      "icon": "sparkles",
+      "treatments": ["prp-shot-women", "ultra-femme-360"],
+      "benefits": ["Increased natural lubrication", "Heightened orgasm intensity", "Improved tissue tone"]
+    },
+    {
+      "id": "pelvic-strength",
+      "title": "Pelvic Floor Strength & Support",
+      "description": "Neuromuscular stimulation that performs 11,000 Kegels in under 30 minutes.",
+      "icon": "activity",
+      "treatments": ["btl-emsella-chair"],
+      "benefits": ["Better bladder control", "Improved posture and core stability", "Faster postnatal recovery"]
+    },
+    {
+      "id": "calm-comfort",
+      "title": "Comfort & Dermatological Care",
+      "description": "Soothe inflammatory skin conditions and rebuild healthy vulvar tissue.",
+      "icon": "shield",
+      "treatments": ["lichen-sclerosis-female"],
+      "benefits": ["Reduced itching and tearing", "More resilient skin barrier", "Fewer flare-ups"]
+    }
+  ],
+  "treatments": {
+    "prp-shot-women": {
+      "title": "O-Shot® PRP for Women",
+      "shortDescription": "Clitoral and G-spot PRP injections that boost lubrication and orgasm quality.",
+      "description": "Our O-Shot protocol concentrates platelet-rich plasma up to 6x baseline and strategically injects it along the clitoral complex, anterior vaginal wall, and labia to promote nerve regeneration, collagen production, and healthier blood flow.",
+      "image": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=800&q=80",
+      "icon": "droplet",
+      "duration": "45 mins",
+      "downtime": "Zero downtime – resume intimacy same day",
+      "results": "2-6 weeks",
+      "longevity": "12-18 months",
+      "price": "From £1,100",
+      "benefits": [
+        "Stronger, faster orgasms",
+        "Better natural lubrication",
+        "Supports mild stress incontinence",
+        "Improves comfort for menopausal tissue"
+      ],
+      "featured": true,
+      "popular": true
+    },
+    "ultra-femme-360": {
+      "title": "Ultra Femme 360™",
+      "shortDescription": "Radiofrequency tightening for labial contour and vaginal support without surgery.",
+      "description": "This 8-minute internal and external RF treatment heats tissue to 42–45°C, triggering collagen remodelling for tighter vaginal walls, improved moisture retention, and refined labial appearance.",
+      "image": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=800&q=80",
+      "icon": "waves",
+      "duration": "30 mins (internal + external)",
+      "downtime": "No downtime",
+      "results": "Immediately, with peak at 90 days",
+      "longevity": "12 months",
+      "price": "Course from £1,250",
+      "benefits": [
+        "Restores vaginal tightness",
+        "Enhances moisture and pH",
+        "Non-surgical labial contouring",
+        "Comfortable, chaperoned sessions"
+      ],
+      "featured": true,
+      "popular": true
+    },
+    "btl-emsella-chair": {
+      "title": "BTL EMSELLA® Chair",
+      "shortDescription": "High-intensity focused electromagnetic therapy to strengthen the entire pelvic floor.",
+      "description": "Remain fully clothed while 11,200 supramaximal contractions activate deep pelvic floor muscles, rebuilding continence and sexual function after childbirth or menopause.",
+      "image": "https://images.unsplash.com/photo-1610276198568-eb6d0ff53e48?w=800&q=80",
+      "icon": "pulse",
+      "duration": "28 mins",
+      "downtime": "None – walk out immediately",
+      "results": "Improvement after first session, best after 6",
+      "longevity": "6-9 months",
+      "price": "Packages from £900 (6 sessions)",
+      "benefits": [
+        "Less urinary urgency or leaks",
+        "Improved intimate sensation",
+        "Accelerates postnatal recovery",
+        "Supports prolapse rehab"
+      ],
+      "featured": false,
+      "popular": true
+    },
+    "lichen-sclerosis-female": {
+      "title": "Lichen Sclerosus Relief Programme",
+      "shortDescription": "Combined PRP, light therapy, and barrier repair to calm chronic vulvar inflammation.",
+      "description": "We pair anti-inflammatory PRP injections with LED photobiomodulation and compounded topicals to reduce plaques, itching, and micro-tears for long-term comfort.",
+      "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&q=80",
+      "icon": "shield-check",
+      "duration": "45 mins",
+      "downtime": "Minimal – mild warmth for 24 hrs",
+      "results": "Symptom relief within 1-3 weeks",
+      "longevity": "Sustained with quarterly maintenance",
+      "price": "From £750",
+      "benefits": [
+        "Calms itching and soreness",
+        "Thickens fragile tissue",
+        "Reduces steroid reliance",
+        "Personalised flare prevention plan"
+      ],
+      "featured": false,
+      "popular": false
+    }
+  },
+  "video": {
+    "enabled": true,
+    "title": "Inside the Women's Regenerative Programme",
+    "description": "Go behind the scenes with Dr. Abbas as he explains how PRP, RF, and neuromuscular therapies work together to restore confidence.",
+    "videos": [
+      {
+        "url": "https://youtu.be/1jYWdQO2v6Y",
+        "thumbnail": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1280&q=80",
+        "title": "How the O-Shot & Ultra Femme Work",
+        "description": "Step-by-step walkthrough filmed inside Dr. SNA Clinic."
+      }
+    ],
+    "layout": "feature"
+  },
+  "benefits": {
+    "title": "Why Women Choose Dr. SNA Clinic",
+    "items": [
+      {
+        "title": "Doctor-Led Procedures",
+        "description": "Every intimate treatment is performed by a GMC-registered doctor with a female nurse present if desired.",
+        "icon": "stethoscope"
+      },
+      {
+        "title": "Advanced Regenerative Tech",
+        "description": "Dual-spin PRP, Ultra Femme 360, and EMSELLA deliver measurable results without surgery.",
+        "icon": "dna"
+      },
+      {
+        "title": "Whole-Person Diagnostics",
+        "description": "Hormone panels, pelvic floor scans, and microbiome support ensure we treat root causes.",
+        "icon": "activity"
+      },
+      {
+        "title": "Concierge Aftercare",
+        "description": "Private messaging, topical prescriptions, and progress tracking keep you supported between visits.",
+        "icon": "heart-handshake"
+      }
+    ]
+  },
+  "process": {
+    "title": "Your Discreet Care Pathway",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Confidential Consultation",
+        "description": "45-minute appointment focused on symptoms, sexual goals, and hormone or birth history.",
+        "icon": "message-circle"
+      },
+      {
+        "number": 2,
+        "title": "Custom Diagnostics",
+        "description": "Pelvic exam, ultrasound, or lab testing to understand tissue tone, hormone balance, and inflammation.",
+        "icon": "scan-line"
+      },
+      {
+        "number": 3,
+        "title": "Tailored Treatment Plan",
+        "description": "Combine PRP, energy devices, supplements, and pelvic coaching for multi-layered results.",
+        "icon": "layers"
+      },
+      {
+        "number": 4,
+        "title": "Concierge Follow-Up",
+        "description": "App-based check-ins, flare management, and reviews at 6 and 12 weeks.",
+        "icon": "smartphone"
+      }
+    ]
+  },
+  "faq": [
+    {
+      "question": "Will anyone know I'm visiting the clinic?",
+      "answer": "Appointments are staggered, check-in is discreet, and communications use neutral language. A female team member can greet you on arrival."
+    },
+    {
+      "question": "Is the O-Shot painful?",
+      "answer": "Topical anaesthetic, vibration analgesia, and optional nerve blocks make the injections highly tolerable. Most patients report mild pressure for a few seconds."
+    },
+    {
+      "question": "How many EMSELLA sessions do I need?",
+      "answer": "A standard protocol is six sessions over three weeks. We reassess at visit six and can add booster sessions every 6-9 months if needed."
+    },
+    {
+      "question": "Can I combine Ultra Femme with PRP?",
+      "answer": "Yes. Many women begin with Ultra Femme 360 to tighten tissue and follow with an O-Shot to maximise blood flow and neurosensory improvement."
+    },
+    {
+      "question": "Do you treat lichen sclerosus long term?",
+      "answer": "We design maintenance plans with quarterly PRP, barrier repair prescriptions, and dietary guidance to keep symptoms controlled."
+    }
+  ],
+  "beforeAfter": {
+    "title": "Subtle, Natural Transformations",
+    "subtitle": "Patient imagery is shown with permission and remains anonymised.",
+    "note": "Results vary; photos represent typical improvements after recommended treatment plans.",
+    "gallery": [
+      {
+        "id": "vf-tightening",
+        "title": "Pelvic Support & Lubrication",
+        "before": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=800&q=80",
+        "after": "https://images.unsplash.com/photo-1544723795-432537f903db?w=800&q=80",
+        "description": "3x Ultra Femme 360 + O-Shot improved lubrication scores and confidence.",
+        "treatment": "Ultra Femme 360 + O-Shot"
+      },
+      {
+        "id": "lichen-relief",
+        "title": "Lichen Sclerosus Management",
+        "before": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80",
+        "after": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=801&q=80",
+        "description": "Two PRP sessions plus LED therapy reduced plaques and itching for 12+ months.",
+        "treatment": "Lichen Sclerosus Relief Programme"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Feel Like Yourself Again?",
+    "subtitle": "Book a confidential consultation with Dr. Abbas or our senior female clinician today.",
+    "primaryButton": "Book women's health consult",
+    "secondaryButton": "Speak to a patient advisor",
+    "note": "Consultation fee (£100) credited toward any treatment within 30 days."
+  },
+  "relatedSubcategories": [
+    {
+      "id": "male",
+      "title": "Men's Intimate Health",
+      "description": "Support partners together with coordinated care plans.",
+      "image": "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=600&q=80"
+    },
+    {
+      "id": "aesthetic-medicine",
+      "title": "Aesthetic Medicine",
+      "description": "Complement intimate confidence with radiant skin and body treatments.",
+      "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600&q=80"
+    }
+  ]
+}

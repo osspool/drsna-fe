@@ -1,65 +1,182 @@
-import Image from "next/image";
+import { Header } from "@/components/core/Header";
+import { HeroSection } from "@/components/landing/HeroSection";
+import { RegulatoryLogos } from "@/components/landing/RegulatoryLogos";
+import { DrAbbasSection } from "@/components/landing/DrAbbasSection";
+import { PShotFeaturedSection } from "@/components/landing/PShotFeaturedSection";
+import { GlobalReachSection } from "@/components/landing/GlobalReachSection";
+import { FeaturedTreatments } from "@/components/landing/FeaturedTreatments";
+import { TestimonialsSection } from "@/components/landing/TestimonialsSection";
+import { FAQSection } from "@/components/landing/FAQSection";
+import { FinalCTA } from "@/components/landing/FinalCTA";
 
-export default function Home() {
+export const metadata = {
+  metadataBase: new URL("https://drsnaclinic.com"),
+  title:
+    "Dr SNA Clinic | London's Premier Aesthetic Medicine Clinic | Dr Syed Nadeem Abbas",
+  description:
+    "Award-winning aesthetic medicine clinic in London. Expert treatments including dermal fillers, anti-wrinkle injections, PRP therapy, and intimate health. CQC registered with GMC certified doctors. Book your consultation today.",
+  keywords: [
+    "aesthetic medicine London",
+    "dermal fillers London",
+    "anti-wrinkle treatment",
+    "Dr Syed Nadeem Abbas",
+    "PRP therapy London",
+    "aesthetic clinic Wimpole Street",
+    "intimate health treatments",
+    "pain management London",
+    "CQC registered clinic",
+    "best aesthetic doctor London",
+  ],
+  authors: [{ name: "Dr Syed Nadeem Abbas" }],
+  openGraph: {
+    title: "Dr SNA Clinic - Premier Aesthetic Medicine in London",
+    description:
+      "Global Recognition Award 2024. Expert care, natural results. 15+ years experience, 10,000+ happy patients.",
+    url: "https://drsnaclinic.com",
+    siteName: "Dr SNA Clinic",
+    locale: "en_GB",
+    type: "website",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Dr SNA Clinic - Aesthetic Medicine Excellence",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dr SNA Clinic - London's Premier Aesthetic Medicine",
+    description:
+      "Award-winning aesthetic treatments with Dr Syed Nadeem Abbas. Natural results, expert care.",
+    images: ["/images/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "your-google-site-verification-code",
+  },
+  alternates: {
+    canonical: "https://drsnaclinic.com",
+  },
+};
+
+// JSON-LD Structured Data for SEO
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  name: "Dr SNA Clinic",
+  alternateName: "Dr Syed Nadeem Abbas Clinic",
+  description:
+    "Premier aesthetic medicine and regenerative treatment clinic in London",
+  url: "https://drsnaclinic.com",
+  telephone: "+447955836986",
+  email: "info@drsnaclinic.com",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "48 Wimpole Street",
+    addressLocality: "Marylebone, London",
+    postalCode: "W1G 8SF",
+    addressCountry: "GB",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "51.5175",
+    longitude: "-0.1483",
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ],
+      opens: "09:00",
+      closes: "18:00",
+    },
+  ],
+  founder: {
+    "@type": "Person",
+    name: "Dr Syed Nadeem Abbas",
+    jobTitle: "Aesthetic Medicine Specialist",
+    description:
+      "MSc | MRCGP | MRCSEd | MBBS - Masters in Aesthetic Plastic Surgery with Distinction",
+  },
+  medicalSpecialty: [
+    "Aesthetic Medicine",
+    "Dermatology",
+    "Regenerative Medicine",
+    "Pain Management",
+  ],
+  hasCredential: [
+    "CQC Registered",
+    "GMC Certified",
+    "Masters in Aesthetic Plastic Surgery",
+  ],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5.0",
+    reviewCount: "500",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  award:
+    "Global Recognition Award 2024 - Excellence in Aesthetic & Regenerative Medicine",
+};
+
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <>
+      {/* Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
+      <Header />
+
+      <main>
+        {/* Hero Section with Flip Words & Background Lines */}
+        <HeroSection />
+
+        {/* Dr Abbas Section with Card Spotlight */}
+        <DrAbbasSection />
+
+        {/* Featured Treatments with Comet Cards */}
+        <FeaturedTreatments />
+
+        {/* P-Shot Featured Section - Premium Treatment Highlight */}
+        <PShotFeaturedSection />
+
+        {/* Global Reach Section with World Map */}
+        <GlobalReachSection />
+
+        {/* Testimonials with Card Spotlight */}
+        <TestimonialsSection />
+
+        {/* FAQ Section with Animated Accordion */}
+        <FAQSection />
+
+        {/* Regulatory Logos Carousel - Trust Signals */}
+        <RegulatoryLogos />
+
+        {/* Final CTA with Wavy Background */}
+        <FinalCTA />
       </main>
-    </div>
+    </>
   );
 }

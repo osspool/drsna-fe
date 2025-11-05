@@ -1,0 +1,135 @@
+{
+  "categories": {
+    "aesthetic-medicine": {
+      "id": "aesthetic-medicine",
+      "title": "Aesthetic Medicine",
+      "description": "Advanced non-surgical treatments for facial rejuvenation and enhancement",
+      "icon": "sparkles",
+      "color": "#cda55c",
+      "image": "/images/categories/aesthetic-medicine.jpg",
+      "subcategories": {
+        "face": {
+          "id": "face",
+          "title": "Face",
+          "description": "Facial aesthetic treatments",
+          "treatments": [
+            "prp-facelift",
+            "non-surgical-blepharoplasty",
+            "dermal-fillers",
+            "anti-wrinkle",
+            "lip-enhancement",
+            "jawline-reduction",
+            "tear-trough-treatment",
+            "non-surgical-rhinoplasty",
+            "skin-boosters",
+            "nefertiti-neck-lift",
+            "cheek-augmentation",
+            "polynucleotide",
+            "double-chin-treatment",
+            "spot-injection"
+          ]
+        },
+        "body": {
+          "id": "body",
+          "title": "Body",
+          "description": "Body contouring and enhancement",
+          "treatments": [
+            "buttock-augmentation-lanluma",
+            "buttock-augmentation-dermal",
+            "excessive-sweating",
+            "fat-reduction-cellulite",
+            "decolletage-treatment"
+          ]
+        },
+        "skin": {
+          "id": "skin",
+          "title": "Skin",
+          "description": "Skin rejuvenation treatments",
+          "treatments": [
+            "polynucleotide-skin",
+            "skin-range"
+          ]
+        },
+        "hair": {
+          "id": "hair",
+          "title": "Hair",
+          "description": "Hair restoration treatments",
+          "treatments": [
+            "prp-hair",
+            "exosome-treatment",
+            "regenera-treatment",
+            "polynucleotide-hair"
+          ]
+        }
+      }
+    },
+    "intimate-health": {
+      "id": "intimate-health",
+      "title": "Intimate Health",
+      "description": "Discreet, professional intimate wellness treatments",
+      "icon": "heart-pulse",
+      "color": "#8b2635",
+      "image": "/images/categories/intimate-health.jpg",
+      "subcategories": {
+        "male": {
+          "id": "male",
+          "title": "Male",
+          "description": "Men's intimate health treatments",
+          "treatments": [
+            "p-shot",
+            "shockwave-therapy",
+            "peyronies-disease",
+            "lichen-sclerosis-male"
+          ]
+        },
+        "female": {
+          "id": "female",
+          "title": "Female",
+          "description": "Women's intimate health treatments",
+          "treatments": [
+            "prp-shot-women",
+            "ultra-femme-360",
+            "btl-emsella-chair",
+            "lichen-sclerosis-female"
+          ]
+        }
+      }
+    },
+    "pain-management": {
+      "id": "pain-management",
+      "title": "Pain Management",
+      "description": "Regenerative treatments for chronic pain relief",
+      "icon": "activity",
+      "color": "#2d2620",
+      "image": "/images/categories/pain-management.jpg",
+      "subcategories": {
+        "conditions": {
+          "id": "conditions",
+          "title": "Conditions",
+          "description": "Treated conditions",
+          "treatments": [
+            "knee-treatment",
+            "hip-treatment",
+            "elbow-treatment",
+            "foot-ankle-treatment",
+            "hand-wrist-treatment",
+            "shoulder-treatment"
+          ]
+        },
+        "treatments": {
+          "id": "treatments",
+          "title": "Treatments",
+          "description": "Available treatment methods",
+          "treatments": [
+            "non-surgical-regenerative",
+            "platelet-rich-plasma",
+            "adipose-cell-therapy",
+            "bmac-therapy",
+            "physiotherapy",
+            "arthrosamid-injection"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,567 @@
+{
+  "id": "non-surgical-blepharoplasty",
+  "categoryId": "aesthetic-medicine",
+  "subcategoryId": "face",
+  "title": "Non-Surgical Blepharoplasty",
+  "alternativeTitles": ["Eye Lift", "Non-Surgical Eye Lift", "Eyelid Rejuvenation", "Eye Bag Treatment", "Non-Surgical Eyelid Lift"],
+  "shortTitle": "Eye Lift",
+  "tagline": "Bright, Youthful Eyes Without Surgery",
+  "description": "Rejuvenate tired eyes and reduce hooding or bags using advanced non-surgical techniques",
+  "longDescription": "Non-surgical blepharoplasty offers a revolutionary way to address drooping eyelids, under-eye bags, and tired-looking eyes without scalpels or significant downtime. Using a strategic combination of anti-wrinkle injections, dermal fillers, and innovative plasma technology, we can lift, tighten, and rejuvenate the eye area—delivering results that rival surgical blepharoplasty.",
+
+  "seo": {
+    "metaTitle": "Non-Surgical Eye Lift London | Blepharoplasty Alternative | Dr. SNA Clinic",
+    "metaDescription": "Non-surgical blepharoplasty in London. Lift drooping eyelids, reduce bags & rejuvenate tired eyes. No surgery, minimal downtime. From £350.",
+    "keywords": [
+      "non-surgical blepharoplasty London",
+      "eye lift without surgery",
+      "non-surgical eyelid lift",
+      "eye bag treatment",
+      "droopy eyelid treatment",
+      "eyelid rejuvenation",
+      "tired eyes treatment",
+      "under eye bags London",
+      "hooded eyes treatment"
+    ],
+    "h1": "Non-Surgical Blepharoplasty London | Eye Lift Without Surgery",
+    "canonicalUrl": "/treatments/aesthetic-medicine/face/non-surgical-blepharoplasty",
+    "schema": {
+      "type": "MedicalProcedure",
+      "procedureType": "Cosmetic",
+      "bodyLocation": "Eyes"
+    }
+  },
+
+  "hero": {
+    "headline": "Brighter Eyes, No Surgery Required",
+    "subheadline": "Transform tired, aging eyes with advanced non-surgical techniques",
+    "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=1920&q=80",
+    "backgroundImage": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=1920&q=80",
+    "video": null,
+    "badge": "Revolutionary Eye Treatment"
+  },
+
+  "quickStats": {
+    "duration": "30-60 minutes",
+    "anesthesia": "Topical numbing",
+    "downtime": "Minimal (1-3 days)",
+    "resultsVisible": "Immediate to 2 weeks",
+    "resultsLast": "6-12 months",
+    "painLevel": "Mild",
+    "price": "From £350",
+    "sessions": "Single treatment (maintenance as needed)"
+  },
+
+  "overview": {
+    "title": "What is Non-Surgical Blepharoplasty?",
+    "content": "Non-surgical blepharoplasty is an umbrella term for advanced, minimally invasive treatments that address common eye area concerns without the need for surgery, general anesthesia, or extensive downtime.\n\nUsing a customized combination of treatments—including anti-wrinkle injections for brow lift, strategic filler placement to support the eye area, and plasma pen technology for skin tightening—we can lift drooping eyelids, reduce bags, brighten dark circles, and restore a youthful, refreshed appearance to tired eyes.",
+    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1200&q=80",
+    "highlights": [
+      "No surgery, scalpels, or general anesthesia",
+      "Minimal downtime—back to work next day",
+      "Natural, subtle improvements",
+      "Customized combination approach",
+      "Significantly less expensive than surgery",
+      "Adjustable and reversible options"
+    ]
+  },
+
+  "techniques": {
+    "title": "Our Non-Surgical Approach",
+    "subtitle": "Multiple advanced techniques for comprehensive eye rejuvenation",
+    "methods": [
+      {
+        "name": "Brow Lift with Anti-Wrinkle Injections",
+        "description": "Strategic injections relax muscles that pull the brow down, allowing natural lift of the brow and reduction of upper eyelid hooding",
+        "benefits": ["Opens the eye area", "Reduces hooding", "Creates arch", "Lasts 3-4 months"],
+        "icon": "arrow-up",
+        "suitable": "Mild to moderate hooding"
+      },
+      {
+        "name": "Tear Trough Filler",
+        "description": "Hyaluronic acid filler placed in the tear trough to fill hollows, reduce bags' appearance, and brighten dark circles",
+        "benefits": ["Fills hollows", "Brightens eyes", "Reduces shadows", "Lasts 9-12 months"],
+        "icon": "droplet",
+        "suitable": "Under-eye hollows and bags"
+      },
+      {
+        "name": "Lower Eyelid Filler",
+        "description": "Specialized filler technique to smooth transition between lid and cheek, reducing bag prominence",
+        "benefits": ["Smooths contour", "Minimizes bags", "Youthful transition", "Long-lasting"],
+        "icon": "eye",
+        "suitable": "Under-eye bags and volume loss"
+      },
+      {
+        "name": "Plasma Pen Skin Tightening",
+        "description": "Plasma energy creates micro-injuries that trigger skin contraction and collagen production, tightening loose eyelid skin",
+        "benefits": ["Tightens skin", "Lifts lids", "Natural results", "Permanent improvement"],
+        "icon": "zap",
+        "suitable": "Excess eyelid skin, crepiness"
+      },
+      {
+        "name": "PRP for Eye Rejuvenation",
+        "description": "Platelet-rich plasma improves skin quality, thickness, and darkness around the delicate eye area",
+        "benefits": ["Improves texture", "Thickens skin", "Brightens darkness", "Natural approach"],
+        "icon": "sparkles",
+        "suitable": "Overall eye area quality"
+      }
+    ]
+  },
+
+  "treatsConditions": {
+    "title": "What Can We Address?",
+    "subtitle": "Comprehensive solutions for all eye area concerns",
+    "conditions": [
+      {
+        "name": "Hooded Upper Eyelids",
+        "description": "Excess skin or drooping brow creating heavy, tired appearance",
+        "solution": "Brow lift with anti-wrinkle + plasma pen if needed",
+        "icon": "eye-off",
+        "effectiveness": "High"
+      },
+      {
+        "name": "Under-Eye Bags",
+        "description": "Puffy, swollen appearance below the eyes",
+        "solution": "Strategic filler placement + possible PRP",
+        "icon": "circle",
+        "effectiveness": "High"
+      },
+      {
+        "name": "Tear Trough Hollows",
+        "description": "Sunken, hollow area under eyes creating dark shadows",
+        "solution": "Tear trough filler",
+        "icon": "frown",
+        "effectiveness": "Very High"
+      },
+      {
+        "name": "Dark Circles",
+        "description": "Shadowing or pigmentation around eyes",
+        "solution": "Filler for structural darkness + PRP for pigmentation",
+        "icon": "moon",
+        "effectiveness": "Moderate to High"
+      },
+      {
+        "name": "Crow's Feet",
+        "description": "Lines radiating from outer eye corners",
+        "solution": "Anti-wrinkle injections",
+        "icon": "minimize",
+        "effectiveness": "Very High"
+      },
+      {
+        "name": "Drooping Brows",
+        "description": "Sagging brows that hood the eyes",
+        "solution": "Brow lift with anti-wrinkle injections",
+        "icon": "arrow-down",
+        "effectiveness": "High"
+      },
+      {
+        "name": "Crepey Eyelid Skin",
+        "description": "Thin, crinkled skin on eyelids",
+        "solution": "Plasma pen treatment + PRP",
+        "icon": "layers",
+        "effectiveness": "Moderate"
+      },
+      {
+        "name": "Asymmetrical Eyes",
+        "description": "Uneven appearance between eyes",
+        "solution": "Customized combination approach",
+        "icon": "sliders",
+        "effectiveness": "High"
+      }
+    ]
+  },
+
+  "benefits": {
+    "title": "Why Choose Non-Surgical Eye Lift?",
+    "subtitle": "The advantages over traditional surgery",
+    "items": [
+      {
+        "title": "No Surgery Required",
+        "description": "No scalpels, incisions, stitches, or general anesthesia—minimally invasive alternatives",
+        "icon": "shield-check"
+      },
+      {
+        "title": "Minimal Downtime",
+        "description": "Resume normal activities within 1-3 days vs. 2-4 weeks for surgery",
+        "icon": "clock"
+      },
+      {
+        "title": "Natural Results",
+        "description": "Subtle, refreshed appearance without the 'pulled' look of surgery",
+        "icon": "eye"
+      },
+      {
+        "title": "Lower Risk",
+        "description": "Fewer complications compared to surgical blepharoplasty",
+        "icon": "trending-down"
+      },
+      {
+        "title": "Cost-Effective",
+        "description": "Significantly less expensive than surgical alternatives (£3,000-6,000)",
+        "icon": "dollar-sign"
+      },
+      {
+        "title": "Adjustable",
+        "description": "Can add more treatment gradually until perfect results achieved",
+        "icon": "sliders"
+      },
+      {
+        "title": "Reversible Options",
+        "description": "Filler-based treatments can be dissolved if desired",
+        "icon": "rotate-ccw"
+      },
+      {
+        "title": "Customizable",
+        "description": "Tailored combination of techniques for your specific concerns",
+        "icon": "settings"
+      }
+    ]
+  },
+
+  "process": {
+    "title": "Your Eye Rejuvenation Journey",
+    "subtitle": "From consultation to brighter, youthful eyes",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Specialized Eye Assessment",
+        "description": "Comprehensive evaluation of eye anatomy, including lid position, skin quality, fat distribution, and brow position. We'll determine which combination of treatments will achieve optimal results.",
+        "duration": "20-30 minutes",
+        "icon": "search",
+        "tips": ["Bring photos from 10+ years ago", "Come makeup-free if possible", "Discuss specific concerns"]
+      },
+      {
+        "number": 2,
+        "title": "Customized Treatment Planning",
+        "description": "Based on assessment, we create your personalized treatment plan, which may include one or more techniques. We'll explain the approach and expected outcomes.",
+        "duration": "10 minutes",
+        "icon": "clipboard",
+        "tips": ["Ask questions", "Understand the combination approach", "Set realistic expectations"]
+      },
+      {
+        "number": 3,
+        "title": "Preparation",
+        "description": "Thorough cleansing of the eye area and application of topical numbing cream for your comfort during treatment.",
+        "duration": "15-20 minutes",
+        "icon": "check-circle",
+        "tips": ["Arrive makeup-free", "Remove contact lenses", "Relax during numbing"]
+      },
+      {
+        "number": 4,
+        "title": "Treatment Application",
+        "description": "Expert administration of chosen treatment(s)—anti-wrinkle injections, strategic filler placement, and/or plasma pen treatment. We work meticulously for precision.",
+        "duration": "30-45 minutes",
+        "icon": "syringe",
+        "tips": ["Stay still during injections", "Communicate any discomfort", "Trust the expertise"]
+      },
+      {
+        "number": 5,
+        "title": "Immediate Aftercare",
+        "description": "Ice application to minimize swelling, detailed aftercare instructions, and discussion of what to expect during healing and result development.",
+        "duration": "10 minutes",
+        "icon": "snowflake",
+        "tips": ["Apply cold compress", "Sleep elevated", "Avoid rubbing eyes"]
+      },
+      {
+        "number": 6,
+        "title": "Results & Review",
+        "description": "Initial results visible immediately (filler) to 2 weeks (anti-wrinkle). Swelling subsides over 3-7 days. Complimentary 2-week review to assess and refine.",
+        "duration": "2-4 weeks",
+        "icon": "calendar-check",
+        "tips": ["Be patient as swelling resolves", "Book review appointment", "Maintenance every 6-12 months"]
+      }
+    ]
+  },
+
+  "beforeAfter": {
+    "enabled": true,
+    "title": "Remarkable Eye Transformations",
+    "subtitle": "See the rejuvenating power of non-surgical techniques",
+    "disclaimer": "Individual results vary. Photos shown with patient consent. Results from combination treatments.",
+    "gallery": [
+      {
+        "id": "ba-eyes-1",
+        "title": "Brow Lift & Tear Trough",
+        "before": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
+        "after": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=800&q=80",
+        "description": "2 weeks after combination treatment",
+        "area": "Upper & Lower Eyes"
+      },
+      {
+        "id": "ba-eyes-2",
+        "title": "Under-Eye Rejuvenation",
+        "before": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=800&q=80",
+        "after": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=800&q=80",
+        "description": "Immediately after tear trough filler",
+        "area": "Under Eyes"
+      }
+    ]
+  },
+
+  "faq": [
+    {
+      "question": "How does non-surgical compare to surgical blepharoplasty?",
+      "answer": "Non-surgical is best for mild to moderate concerns, offering subtler results with minimal downtime and lower cost. Surgery is more suitable for severe hooding or excess skin. Non-surgical results last 6-12 months vs. surgery's 10+ years. However, many prefer non-surgical's natural appearance, safety profile, and ability to adjust gradually."
+    },
+    {
+      "question": "Will I still need surgery eventually?",
+      "answer": "Not necessarily. Many patients maintain results with periodic maintenance treatments indefinitely. However, if significant excess skin develops, surgery may eventually be more appropriate. Non-surgical treatments can also postpone surgery for years while maintaining a refreshed appearance."
+    },
+    {
+      "question": "Is treatment around the eyes safe?",
+      "answer": "Yes, when performed by experienced practitioners. The eye area requires specialized knowledge of anatomy and advanced injection techniques. We use blunt-tip cannulas when appropriate, inject conservatively, and have extensive training in periorbital treatments. Serious complications are extremely rare."
+    },
+    {
+      "question": "Does it hurt?",
+      "answer": "Most patients find it tolerable with numbing cream. The eye area is sensitive, so you may feel pressure or slight pinching. Plasma pen treatment can be more uncomfortable but is manageable. Most describe it as brief discomfort worth enduring for the results."
+    },
+    {
+      "question": "What's the downtime?",
+      "answer": "Minimal. Expect mild swelling and possible bruising for 3-7 days. Under-eye filler often causes more swelling initially. Plasma pen may cause tiny scabs for 5-7 days. Most patients return to work next day with concealer. Avoid makeup for 24 hours."
+    },
+    {
+      "question": "Which technique is best for me?",
+      "answer": "This depends on your specific concerns. Hooding typically needs brow lift (anti-wrinkle); hollows need filler; excess skin may need plasma pen. Most patients benefit from a combination approach. We'll assess and recommend during consultation."
+    },
+    {
+      "question": "How long do results last?",
+      "answer": "Varies by technique: anti-wrinkle (3-4 months), tear trough filler (9-12 months), plasma pen (permanent skin tightening with gradual aging). Most patients return every 6-12 months for maintenance to sustain results."
+    },
+    {
+      "question": "Can I wear makeup afterwards?",
+      "answer": "Avoid makeup for 24 hours post-treatment. After that, use concealer to camouflage any bruising or swelling. Avoid waterproof or difficult-to-remove makeup that requires harsh rubbing. Be gentle when applying and removing products."
+    },
+    {
+      "question": "What if I don't like the results?",
+      "answer": "Filler-based treatments are reversible with hyaluronidase. Anti-wrinkle effects fade naturally over 3-4 months. Plasma pen results develop gradually, allowing assessment. We offer complimentary review appointments to assess and adjust if needed."
+    },
+    {
+      "question": "Am I too young/old for this treatment?",
+      "answer": "Age isn't the primary factor—your specific concerns are. Patients typically range from late 30s to 70s+. Younger patients often have brow lift or tear trough filler; older patients may need combination approaches. Suitability determined during consultation."
+    },
+    {
+      "question": "Can this help with naturally puffy eyes?",
+      "answer": "Strategic filler placement can minimize the appearance of bags by smoothing the transition, but true puffy bags (fat pads) may be better addressed surgically. We'll assess whether you're a good candidate during consultation."
+    },
+    {
+      "question": "How much does it cost?",
+      "answer": "Pricing varies based on techniques used. Single treatments start from £350. Combination approaches range from £600-1,200. Still significantly less than surgical blepharoplasty (£3,000-6,000). Exact quote provided during consultation."
+    }
+  ],
+
+  "pricing": {
+    "title": "Non-Surgical Blepharoplasty",
+    "subtitle": "Price Starts From",
+    "disclaimer": "*After consultation doctor will confirm the cost.",
+    "singlePrice": {
+      "originalPrice": "£2000",
+      "currentPrice": "£1500",
+      "currency": "GBP",
+      "consultationFee": "£100",
+      "consultationNote": "Consultation Fee - £100",
+      "consultationDisclaimer": "Which can be offset against treatment plan"
+    },
+    "includes": [
+      "Specialized eye area assessment",
+      "Topical numbing cream",
+      "Expert precision plasma treatment",
+      "Immediate aftercare kit",
+      "Detailed at-home care instructions",
+      "Follow-up appointments"
+    ],
+    "financing": {
+      "available": true,
+      "buttonText": "0% Finance Available"
+    }
+  },
+
+  "candidacy": {
+    "title": "Am I a Candidate?",
+    "subtitle": "Non-surgical blepharoplasty may be ideal if:",
+    "suitable": [
+      "You have mild to moderate eyelid hooding",
+      "Under-eye bags or dark circles concern you",
+      "You want to avoid surgery and long recovery",
+      "You have realistic expectations",
+      "You're in good general health",
+      "You're over 30 years old"
+    ],
+    "notSuitable": [
+      "Severe excess skin requiring removal",
+      "Active eye infection or inflammation",
+      "Certain eye conditions (consult ophthalmologist)",
+      "Unrealistic expectations about surgical-level results",
+      "Pregnancy or breastfeeding (filler/anti-wrinkle)"
+    ],
+    "note": "Comprehensive assessment during consultation determines suitability"
+  },
+
+  "safety": {
+    "title": "Safety & Expertise",
+    "content": "The eye area requires exceptional skill and anatomical knowledge. We use advanced techniques, premium products, and conservative approaches to ensure both safety and beautiful results.",
+    "certifications": [
+      {
+        "name": "Specialist Training",
+        "description": "Advanced periorbital injection training",
+        "icon": "award"
+      },
+      {
+        "name": "Premium Products",
+        "description": "FDA-approved fillers and neurotoxins only",
+        "icon": "shield-check"
+      },
+      {
+        "name": "Cannula Technique",
+        "description": "Blunt-tip cannulas minimize risk",
+        "icon": "droplet"
+      },
+      {
+        "name": "Conservative Approach",
+        "description": "Gradual building for safety and natural results",
+        "icon": "trending-up"
+      },
+      {
+        "name": "Emergency Preparedness",
+        "description": "Hyaluronidase always available",
+        "icon": "alert-circle"
+      }
+    ]
+  },
+
+  "testimonials": [
+    {
+      "name": "Jennifer K.",
+      "age": 48,
+      "treatment": "Brow Lift + Tear Trough Filler",
+      "rating": 5,
+      "text": "I've been told I look 'angry' or 'tired' for years. Dr. Abbas lifted my brows and filled my under-eyes, and I look SO much more refreshed! People say I look younger and happier. Best decision ever—and no surgery!",
+      "date": "March 2024",
+      "verified": true
+    },
+    {
+      "name": "Michael R.",
+      "age": 54,
+      "treatment": "Under-Eye Filler",
+      "rating": 5,
+      "text": "My under-eye bags made me look exhausted even when I felt great. The tear trough filler made an incredible difference—I look years younger and well-rested. The treatment was surprisingly comfortable and quick.",
+      "date": "February 2024",
+      "verified": true
+    },
+    {
+      "name": "Patricia B.",
+      "age": 61,
+      "treatment": "Combination Eye Rejuvenation",
+      "rating": 5,
+      "text": "I was considering surgery but decided to try non-surgical first. I'm so glad I did! The combination of brow lift and fillers opened up my eyes beautifully. I may never need surgery now!",
+      "date": "January 2024",
+      "verified": true
+    }
+  ],
+
+  "comparison": {
+    "title": "Non-Surgical vs. Surgical Blepharoplasty",
+    "subtitle": "Understanding your options",
+    "features": [
+      {
+        "aspect": "Invasiveness",
+        "nonSurgical": "Minimally invasive injections",
+        "surgical": "Surgical incisions & removal",
+        "advantage": "non-surgical"
+      },
+      {
+        "aspect": "Anesthesia",
+        "nonSurgical": "Topical numbing cream",
+        "surgical": "General or IV sedation",
+        "advantage": "non-surgical"
+      },
+      {
+        "aspect": "Downtime",
+        "nonSurgical": "1-3 days mild swelling",
+        "surgical": "2-4 weeks recovery",
+        "advantage": "non-surgical"
+      },
+      {
+        "aspect": "Results Duration",
+        "nonSurgical": "6-12 months",
+        "surgical": "10+ years",
+        "advantage": "surgical"
+      },
+      {
+        "aspect": "Cost",
+        "nonSurgical": "£350-1,200",
+        "surgical": "£3,000-6,000",
+        "advantage": "non-surgical"
+      },
+      {
+        "aspect": "Risks",
+        "nonSurgical": "Minimal (bruising, swelling)",
+        "surgical": "Higher (scarring, infection, etc.)",
+        "advantage": "non-surgical"
+      },
+      {
+        "aspect": "Adjustability",
+        "nonSurgical": "Can add more gradually",
+        "surgical": "Permanent, hard to correct",
+        "advantage": "non-surgical"
+      },
+      {
+        "aspect": "Best For",
+        "nonSurgical": "Mild-moderate concerns",
+        "surgical": "Severe excess skin",
+        "advantage": "depends"
+      }
+    ]
+  },
+
+  "relatedTreatments": [
+    {
+      "id": "tear-trough-treatment",
+      "title": "Tear Trough Filler",
+      "description": "Dedicated under-eye filler treatment",
+      "reason": "Specifically targets under-eye hollows"
+    },
+    {
+      "id": "anti-wrinkle",
+      "title": "Anti-Wrinkle Injections",
+      "description": "Smooth crow's feet and lift brows",
+      "reason": "Complementary treatment for eye area"
+    },
+    {
+      "id": "prp-facelift",
+      "title": "PRP Treatment",
+      "description": "Improve overall eye area skin quality",
+      "reason": "Enhances skin thickness and texture"
+    }
+  ],
+
+  "video": {
+    "enabled": false,
+    "title": "Non-Surgical Blepharoplasty Explained",
+    "embedUrl": null,
+    "thumbnail": null,
+    "duration": null
+  },
+
+  "instagram": {
+    "enabled": true,
+    "title": "Eye Transformation Gallery",
+    "handle": "@drsnaclinic",
+    "hashtags": ["#NonSurgicalBlepharoplasty", "#EyeLift", "#TearTrough", "#BrightEyes"]
+  },
+
+  "cta": {
+    "title": "Say Goodbye to Tired-Looking Eyes",
+    "subtitle": "Discover your path to brighter, more youthful eyes without surgery",
+    "primaryButton": "Book Eye Consultation",
+    "secondaryButton": "View Before & After",
+    "urgency": "Limited consultation slots—book today",
+    "guarantee": "Complimentary eye area analysis with all consultations"
+  },
+
+  "bookingInfo": {
+    "depositRequired": false,
+    "cancellationPolicy": "24 hours notice required",
+    "consultationFee": "Free",
+    "duration": "60 minutes total"
+  }
+}

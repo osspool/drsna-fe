@@ -1,0 +1,394 @@
+{
+  "id": "p-shot",
+  "categoryId": "intimate-health",
+  "subcategoryId": "male",
+  "title": "P-Shot® (PRP Shot for Men)",
+  "alternativeTitles": [
+    "Priapus Shot",
+    "PRP Shot for Men",
+    "Platelet-Rich Plasma Penile Therapy",
+    "PRP Erectile Dysfunction Treatment"
+  ],
+  "shortTitle": "P-Shot",
+  "tagline": "Rebuild Performance with Your Own Biology",
+  "description": "Doctor-administered PRP injections that regenerate penile tissue, sensitivity, and blood flow.",
+  "longDescription": "The P-Shot® is our signature regenerative procedure for men's sexual wellness. Using a concentrated dose of your own platelet-rich plasma (PRP), we stimulate new blood vessel growth, mobilise stem cells, and repair micro-tissue damage responsible for performance issues. The result is stronger, longer-lasting erections, increased girth, heightened sensitivity, and renewed confidence—all without implants or daily medication.",
+  "seo": {
+    "metaTitle": "P-Shot London | PRP Shot Treatment for Men | Dr. SNA Clinic",
+    "metaDescription": "Experience the P-Shot in London with Dr. SNA Clinic. £1,200 standard / £1,350 enhanced package. Doctor-led procedure, zero downtime, finance available.",
+    "keywords": [
+      "p shot london",
+      "prp shot treatment",
+      "priapus shot",
+      "erectile dysfunction london",
+      "penile prp",
+      "dr sna clinic"
+    ],
+    "h1": "P-Shot® Treatment in London",
+    "canonicalUrl": "/treatments/intimate-health/male/p-shot",
+    "schema": {
+      "type": "MedicalProcedure",
+      "procedureType": "Regenerative Medicine",
+      "bodyLocation": "Penile tissue"
+    }
+  },
+  "hero": {
+    "headline": "London's Leading P-Shot Clinic",
+    "subheadline": "Doctor-led PRP injection that renews blood flow, sensation, and confidence",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80",
+    "backgroundImage": "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=1920&q=80",
+    "video": "https://youtu.be/rXHRM8roswo",
+    "badge": "0% finance available"
+  },
+  "quickStats": {
+    "duration": "Approx. 40 minutes",
+    "anesthesia": "Topical numbing + optional nerve block",
+    "downtime": "None – resume intimacy same day",
+    "resultsVisible": "Initial change at 2-4 weeks",
+    "resultsLast": "12-18 months",
+    "painLevel": "2/10 (brief pressure)",
+    "price": "From £1,200 (consultation credited)",
+    "sessions": "One treatment, review at 6 months"
+  },
+  "overview": {
+    "title": "What Is the P-Shot?",
+    "content": "Developed by Dr. Charles Runels, the P-Shot harnesses growth factors from your own blood to regenerate penile tissue. We draw a small sample, spin it in a medical-grade centrifuge, and extract platelet-rich plasma loaded with healing proteins. This PRP is injected with ultra-fine needles along the corpora cavernosa and glans to improve blood flow, nerve signalling, and erectile strength. Because it's autologous, there's virtually zero risk of allergic reaction.",
+    "image": "/images/treatment/intimate-health/dr-syed-abbas.jpg",
+    "highlights": [
+      "100% natural and biocompatible",
+      "Targets root causes, not just symptoms",
+      "Improves erection quality and staying power",
+      "Helps with Peyronie's curvature",
+      "Zero downtime and minimal discomfort"
+    ]
+  },
+  "whatToExpect": {
+    "enabled": true,
+    "title": "What to Expect on the Day of Your P-Shot Appointment",
+    "subtitle": "A Quick, Professional, and Comfortable Procedure",
+    "description": "The P-Shot treatment is performed as a quick outpatient procedure, allowing you to go home the same day.",
+    "background": "gradient-cream",
+    "variant": "compact-timeline",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Preparation & Comfort",
+        "description": "On arrival, you'll be made comfortable on the treatment table. A numbing cream or ointment is applied to the genital area, including the penile shaft, to minimise discomfort during the procedure.",
+        "duration": "10 minutes"
+      },
+      {
+        "number": 2,
+        "title": "Blood Collection",
+        "description": "A small blood sample is drawn, usually from your arm, using a sterile collection tube.",
+        "duration": "5 minutes"
+      },
+      {
+        "number": 3,
+        "title": "PRP Processing",
+        "description": "The sample is placed in a centrifuge to separate and concentrate the platelet-rich plasma (PRP) from the rest of your blood.",
+        "duration": "15 minutes"
+      },
+      {
+        "number": 4,
+        "title": "PRP Extraction",
+        "description": "The PRP is carefully extracted and prepared in syringes for precise injection.",
+        "duration": "5 minutes"
+      },
+      {
+        "number": 5,
+        "title": "Targeted PRP Injections",
+        "description": "Using ultrasound-guided accuracy, the PRP is injected directly into the penile shaft and other targeted areas as needed. This process typically involves four to five small injections and takes only a few minutes.",
+        "duration": "10 minutes",
+        "tips": ["Minimal discomfort with numbing cream", "Ultrasound-guided precision"]
+      },
+      {
+        "number": 6,
+        "title": "Post-Treatment Support",
+        "description": "If recommended, you will be given a penis pump to enhance blood flow and maximise the effects of the PRP. You'll receive clear instructions to use it safely (about 10 minutes daily for several weeks).",
+        "tips": ["Follow Dr Abbas's guidance", "Gentle daily use recommended"]
+      }
+    ]
+  },
+  "videoTestimonials": {
+    "enabled": true,
+    "title": "Real Patient Stories",
+    "subtitle": "Hear directly from men who've experienced life-changing results with the P-Shot",
+    "background": "white",
+    "testimonials": [
+      {
+        "name": "Patient Success Story 1",
+        "treatment": "P-Shot Treatment",
+        "rating": 5,
+        "quote": "The P-Shot has completely transformed my confidence and intimate life. Dr. Abbas made me feel comfortable throughout the entire process.",
+        "video": {
+          "url": "https://youtu.be/_rqOTIFl39I",
+          "title": "Patient Testimonial - Regaining Confidence",
+          "duration": "02:37"
+        },
+        "verified": true,
+        "results": "Improved erectile function within 4 weeks"
+      },
+      {
+        "name": "Patient Success Story 2",
+        "treatment": "Enhanced P-Shot + Shockwave",
+        "rating": 5,
+        "quote": "After trying various treatments, the P-Shot combined with shockwave therapy gave me the results I was looking for. Highly recommend Dr. SNA Clinic.",
+        "video": {
+          "url": "https://youtu.be/FKgy_KMZBDI",
+          "title": "Patient Testimonial - Enhanced Treatment Results",
+          "duration": "03:05"
+        },
+        "verified": true,
+        "results": "Enhanced sensitivity and stronger erections"
+      }
+    ]
+  },
+  "howItWorks": {
+    "enabled": true,
+    "title": "The Science Behind the P-Shot",
+    "subtitle": "Growth factors that remodel tissue from the inside out",
+    "content": "Platelets contain PDGF, VEGF, TGF-β, and EGF—signals that instruct your body to repair and regenerate. When injected into penile tissue, they stimulate angiogenesis (new vessels), activate stem cells, and repair micro-tears caused by ageing, diabetes, or medication use. The procedure also releases nitric oxide for improved arterial dilation.",
+    "background": "dark",
+    "variant": "dark-glass",
+    "benefits": [
+      {"title": "Angiogenesis", "description": "New capillary networks carry more oxygenated blood", "icon": "activity"},
+      {"title": "Collagen & elastin", "description": "Strengthens tunica albuginea and improves girth", "icon": "layers"},
+      {"title": "Neurogenesis", "description": "Supports nerve sensitivity and orgasm intensity", "icon": "sparkles"},
+      {"title": "Anti-inflammatory", "description": "Reduces pain and plaques linked to Peyronie's and lichen sclerosus", "icon": "shield"}
+    ],
+    "growthFactors": [
+      "PDGF – Platelet-Derived Growth Factor",
+      "VEGF – Vascular Endothelial Growth Factor",
+      "TGF-β – Transforming Growth Factor",
+      "EGF – Epidermal Growth Factor",
+      "FGF – Fibroblast Growth Factor"
+    ]
+  },
+  "treatsConditions": {
+    "title": "What the P-Shot Treats",
+    "subtitle": "Versatile support for sexual wellbeing",
+    "conditions": [
+      {"name": "Erectile Dysfunction", "description": "Improves blood inflow, rigidity, and morning erections", "icon": "activity", "effectiveness": "Very High"},
+      {"name": "Sensitivity Loss", "description": "Enhances nerve conduction for stronger sensation", "icon": "sparkles", "effectiveness": "High"},
+      {"name": "Peyronie's Disease", "description": "Softens plaques and reduces curvature when combined with traction", "icon": "align-center", "effectiveness": "High"},
+      {"name": "Post-Prostatectomy Recovery", "description": "Supports tissue healing and erectile rehabilitation", "icon": "stethoscope", "effectiveness": "Moderate"},
+      {"name": "Lichen Sclerosus Symptoms", "description": "Decreases inflammation and micro-tears", "icon": "shield", "effectiveness": "Moderate"}
+    ]
+  },
+  "benefits": {
+    "title": "Benefits of the P-Shot Treatment at Our Clinic",
+    "subtitle": "Clinical precision plus concierge comfort",
+    "layout": "grid-3",
+    "items": [
+      {"title": "Doctor-only procedure", "description": "Performed start-to-finish by Dr. Abbas for predictable results", "icon": "stethoscope"},
+      {"title": "Premium PRP concentration", "description": "Dual-spin centrifuge yields 5-7x platelet concentration for maximum potency", "icon": "dna"},
+      {"title": "Targeted injection mapping", "description": "Ultrasound-guided placement for balanced girth and dorsal support", "icon": "map"},
+      {"title": "No pharmaceuticals", "description": "Drug-free alternative for men who can't tolerate PDE5 inhibitors", "icon": "leaf"},
+      {"title": "Synergistic protocols", "description": "Option to add shockwave, peptide therapy, or traction devices", "icon": "atom"},
+      {"title": "Minimal downtime", "description": "Walk out ready for normal activity, including intercourse", "icon": "zap"
+      }
+    ]
+  },
+  "process": {
+    "title": "Your P-Shot Journey",
+    "subtitle": "Seven simple stages from consult to confidence",
+    "steps": [
+      {"number": 1, "title": "Confidential Consultation", "description": "Discuss medical history, goals, medications, and baseline erectile function.", "duration": "30-45 mins", "icon": "message-circle", "tips": ["Arrive hydrated", "Bring recent labs if available"]},
+      {"number": 2, "title": "Diagnostics", "description": "Penile Doppler, hormone review, or photos for Peyronie's planning.", "duration": "15 mins", "icon": "activity", "tips": ["Optional but recommended", "Helps quantify improvement"]},
+      {"number": 3, "title": "Blood Draw", "description": "10-20ml of blood collected just like a routine test.", "duration": "5 mins", "icon": "droplet", "tips": ["Eat beforehand", "Avoid NSAIDs for 3 days"]},
+      {"number": 4, "title": "PRP Preparation", "description": "Dual-spin centrifuge isolates golden PRP while numbing cream works.", "duration": "15 mins", "icon": "settings", "tips": ["Relax in private suite"]},
+      {"number": 5, "title": "Targeted Injection", "description": "Ultrafine needles deliver PRP along the corpora cavernosa and glans.", "duration": "10 mins", "icon": "syringe", "tips": ["Pressure not pain", "Breathe deeply"]},
+      {"number": 6, "title": "Shockwave (optional)", "description": "Low-intensity acoustic waves enhance cellular uptake.", "duration": "15 mins", "icon": "waveform", "tips": ["Recommended for vascular ED"]},
+      {"number": 7, "title": "Aftercare & Tracking", "description": "Go home immediately with supplement plan and digital progress diary.", "duration": "Immediate", "icon": "check-circle", "tips": ["Resume intercourse same day", "Avoid NSAIDs for 48 hours"]}
+    ]
+  },
+  "gallery": {
+    "title": "Inside the Procedure",
+    "subtitle": "A look at the precision and care behind each P-Shot",
+    "images": [
+      {"src": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80", "alt": "PRP preparation in centrifuge", "title": "Medical-grade PRP processing"},
+      {"src": "https://images.unsplash.com/photo-1512678080530-7760d81faba6?w=800&q=80", "alt": "Doctor preparing injection", "title": "Doctor-led injection mapping"},
+      {"src": "https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=800&q=80", "alt": "Private treatment suite", "title": "Soundproof treatment suites"},
+      {"src": "https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=800&q=80", "alt": "Comfort amenities", "title": "Comfort-focused environment"}
+    ],
+    "columns": 3
+  },
+  "pricing": {
+    "title": "Transparent P-Shot Pricing",
+    "subtitle": "Price Starts From",
+    "disclaimer": "*After consultation the doctor will confirm the exact protocol and cost.",
+    "singlePrice": {
+      "originalPrice": "£1,500",
+      "currentPrice": "£1,200",
+      "currency": "GBP",
+      "consultationFee": "£100",
+      "consultationNote": "Consultation fee credited toward treatment",
+      "consultationDisclaimer": "Fee is redeemable against any plan agreed within 30 days"
+    },
+    "packages": [
+      {
+        "name": "Standard P-Shot",
+        "price": "£1,200",
+        "description": "Single advanced PRP session",
+        "includes": "Dual-spin PRP + post-care kit",
+        "savings": "Save £300",
+        "popular": true
+      },
+      {
+        "name": "Enhanced P-Shot + Shockwave",
+        "price": "£1,350",
+        "description": "Adds focused shockwave therapy in the same visit",
+        "includes": "P-Shot + LI-ESWT boost",
+        "savings": "Was £1,750",
+        "popular": true
+      }
+    ],
+    "includes": [
+      "Comprehensive consultation",
+      "Medical photography & Doppler (if required)",
+      "Dual-spin PRP processing",
+      "Topical numbing + comfort options",
+      "Precision injections by Dr. Abbas",
+      "Aftercare supplements + recovery plan",
+      "6-week and 12-week follow-ups"
+    ],
+    "financing": {
+      "available": true,
+      "buttonText": "0% Finance Available"
+    }
+  },
+  "faq": [
+    {"question": "Does the P-Shot hurt?", "answer": "Topical anaesthetic and vibration analgesia make the procedure very tolerable. Patients describe pressure rather than pain, lasting only minutes."},
+    {"question": "When can I resume intimacy?", "answer": "You can resume sexual activity immediately—many patients prefer to wait 24 hours due to mild swelling, but it's not medically required."},
+    {"question": "Is it safe if I have diabetes or take medication?", "answer": "Yes, provided glucose levels are controlled and blood thinners are reviewed. We'll adjust your plan or coordinate with your GP if needed."},
+    {"question": "How many treatments will I need?", "answer": "Most men achieve goals with a single treatment plus review. Severe ED or Peyronie's may benefit from a second session at 6 months."},
+    {"question": "Can it replace PDE5 inhibitors?", "answer": "Many patients reduce or eliminate pill use after the P-Shot. We can also integrate low-dose medication for hybrid protocols if desired."},
+    {"question": "Any side effects?", "answer": "Temporary fullness, warmth, or minor bruising may appear for 24-48 hours. Serious complications are extremely rare because PRP is autologous."}
+  ],
+  "candidacy": {
+    "title": "Who Is a Good Candidate?",
+    "subtitle": "Ideal if you want natural, doctor-led improvement",
+    "suitable": [
+      "Men with mild to moderate erectile dysfunction",
+      "Patients experiencing sensitivity loss or delayed climax",
+      "Men in Peyronie's programmes",
+      "Post-prostatectomy patients rebuilding function",
+      "Those unable to tolerate ED medication side effects",
+      "Men seeking natural enhancement without implants"
+    ],
+    "notSuitable": [
+      "Active genital infection",
+      "Uncontrolled diabetes or hypertension",
+      "Bleeding disorders or platelet dysfunction",
+      "Current anticoagulant therapy (unless cleared)",
+      "Cancer treatment in pelvic region",
+      "Allergy to local anaesthetics"
+    ],
+    "note": "Suitability is confirmed after blood tests and consultation."
+  },
+  "safety": {
+    "title": "Safety You Can Trust",
+    "content": "Performed in our CQC-regulated clinic with sterile, single-use kits and FDA-listed centrifuges.",
+    "certifications": [
+      {"name": "Autologous therapy", "description": "Uses your own blood—no foreign substances", "icon": "shield-check"},
+      {"name": "GMC-registered doctor", "description": "Procedure performed only by senior physicians", "icon": "award"},
+      {"name": "Medical-grade PRP", "description": "Dual-spin centrifuge calibrated for high platelet yield", "icon": "settings"},
+      {"name": "CQC regulated", "description": "Clinic inspected for hygiene, governance, and safety", "icon": "building"}
+    ]
+  },
+  "comparison": {
+    "title": "How the P-Shot Compares",
+    "subtitle": "Choose the pathway that fits your goals",
+    "comparisons": [
+      {"treatment": "P-Shot PRP", "naturalness": "Autologous", "results": "3-6 weeks", "downtime": "None", "cost": "£1,200", "duration": "12-18 months"},
+      {"treatment": "PDE5 Medication", "naturalness": "Synthetic", "results": "Immediate", "downtime": "None", "cost": "Ongoing", "duration": "4-6 hours"},
+      {"treatment": "Penile Implants", "naturalness": "Surgical", "results": "Immediate", "downtime": "4-6 weeks", "cost": "£8k-£15k", "duration": "10+ years"},
+      {"treatment": "Shockwave Alone", "naturalness": "Mechanical", "results": "2-3 weeks", "downtime": "None", "cost": "£350/session", "duration": "Up to 2 years"}
+    ]
+  },
+  "relatedTreatments": [
+    {"id": "shockwave-therapy", "title": "Focused Shockwave Therapy", "description": "Boost PRP uptake and further improve vascular health", "reason": "Synergistic vascular regeneration"},
+    {"id": "peyronies-disease", "title": "Peyronie's Regenerative Plan", "description": "Combine PRP with traction for straighter results", "reason": "Structural correction"},
+    {"id": "lichen-sclerosis-male", "title": "Lichen Sclerosus Relief", "description": "Use PRP's anti-inflammatory power for symptom control", "reason": "Tissue health maintenance"}
+  ],
+  "whyChooseDrSNA": {
+    "enabled": true,
+    "title": "Why Choose Dr. SNA Clinic for P-Shot Treatment?",
+    "subtitle": "When it comes to sexual wellness, men across the UK choose Dr SNA Clinic for trusted, results-driven care.",
+    "background": "gradient-cream",
+    "variant": "compact-grid",
+    "features": [
+      {
+        "title": "Expert Sexual Health Specialists",
+        "description": "Dedicated doctors focused on men's intimate health with years of specialized experience",
+        "icon": "stethoscope"
+      },
+      {
+        "title": "Advanced PRP Technology",
+        "description": "Stimulates natural healing and improves blood flow using medical-grade equipment",
+        "icon": "dna"
+      },
+      {
+        "title": "Fast & Convenient",
+        "description": "A 30-minute walk-in procedure with zero downtime - return to normal activities immediately",
+        "icon": "zap"
+      },
+      {
+        "title": "Non-Surgical & Drug-Free",
+        "description": "Uses your own growth factors for natural results without medication or surgery",
+        "icon": "leaf"
+      },
+      {
+        "title": "Central London Location",
+        "description": "Easy to reach from all London boroughs at 48 Wimpole Street, Marylebone",
+        "icon": "map-pin"
+      },
+      {
+        "title": "Trusted by Thousands",
+        "description": "Proven results that help men regain intimacy and confidence with 5-star reviews",
+        "icon": "award"
+      }
+    ]
+  },
+  "video": {
+    "enabled": true,
+    "title": "Doctor Insight + Patient Proof",
+    "subtitle": "Watch the full explanation then jump into candid testimonials",
+    "description": "See how the procedure works from start to finish and hear from men who reclaimed their confidence.",
+    "background": "white",
+    "videos": [
+      {
+        "url": "https://youtu.be/rXHRM8roswo",
+        "title": "How the P-Shot Works", 
+        "description": "Step-by-step walkthrough with Dr. Abbas explaining the complete P-Shot procedure", 
+        "duration": "04:21"
+      }
+    ],
+    "layout": "feature",
+    "featureContent": {
+      "title": "Doctor insight + patient proof",
+      "description": "Watch the full explanation then jump into candid testimonials.",
+      "videoSide": "right"
+    }
+  },
+  "instagram": {
+    "enabled": true,
+    "title": "Follow @drsnaclinic",
+    "handle": "@drsnaclinic",
+    "hashtags": ["#PShotLondon", "#MensHealth", "#RegenerativeMedicine"]
+  },
+  "cta": {
+    "title": "Ready to Take Control Again?",
+    "subtitle": "Book your confidential assessment and reserve the next P-Shot slot.",
+    "primaryButton": "Book P-Shot consultation",
+    "secondaryButton": "Speak to a patient advisor",
+    "urgency": "Limited daily slots to maintain discretion",
+    "guarantee": "Consultation fee credited toward treatment"
+  },
+  "bookingInfo": {
+    "depositRequired": false,
+    "cancellationPolicy": "48 hours' notice required to reschedule",
+    "consultationFee": "£100 (redeemable)",
+    "duration": "40-minute procedure + 20-minute recovery"
+  }
+}

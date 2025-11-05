@@ -1,0 +1,215 @@
+{
+  "id": "intimate-health",
+  "title": "Intimate Health & Sexual Wellness",
+  "shortTitle": "Intimate Health",
+  "tagline": "Confident, Comfortable, Connected",
+  "description": "Discreet regenerative treatments that restore pelvic health, sexual confidence, and overall intimate wellbeing.",
+  "longDescription": "Intimate wellness deserves the same level of medical excellence as every other part of your health. At Dr. SNA Clinic we combine regenerative medicine, urology expertise, and compassionate care to treat sensitive concerns for both men and women. Every appointment is led by a GMC-registered doctor in private suites, with protocols designed to protect your dignity while delivering proven results.",
+  "seo": {
+    "metaTitle": "Intimate Health Clinic London | Men's & Women's Sexual Wellness | Dr. SNA",
+    "metaDescription": "Explore discreet male and female intimate health treatments in London. P-Shot, shockwave therapy, PRP, pelvic rejuvenation & more with Dr. SNA Clinic.",
+    "keywords": [
+      "intimate health London",
+      "sexual wellness clinic",
+      "p shot london",
+      "men's health clinic",
+      "female intimate rejuvenation",
+      "pelvic floor treatments",
+      "dr sna clinic"
+    ],
+    "h1": "Intimate Health Treatments in London"
+  },
+  "hero": {
+    "headline": "World-Class Intimate Health Care",
+    "subheadline": "Doctor-led regenerative treatments that help you feel confident in your body again",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80",
+    "cta": "Explore intimate treatments",
+    "stats": [
+      {"value": "96%", "label": "Patient satisfaction"},
+      {"value": "400+", "label": "Advanced procedures/year"},
+      {"value": "100%", "label": "Doctor-led care"}
+    ]
+  },
+  "introduction": {
+    "title": "Specialist Care for Sensitive Concerns",
+    "content": "Intimate issues can affect confidence, relationships, and quality of life. We make it easy to seek help with calm clinical spaces, discreet scheduling, and evidence-based treatments that focus on regeneration rather than masking symptoms.",
+    "highlights": [
+      {
+        "icon": "shield-check",
+        "title": "Absolute discretion",
+        "description": "Private entrances, confidential bookings, and judgment-free consultations"
+      },
+      {
+        "icon": "dna",
+        "title": "Regenerative protocols",
+        "description": "PRP, shockwave, and cellular therapies proven to restore healthy function"
+      },
+      {
+        "icon": "stethoscope",
+        "title": "Doctor-only",
+        "description": "Treatments delivered by Dr. Syed Nadeem Abbas and the consultant medical team"
+      },
+      {
+        "icon": "heart-handshake",
+        "title": "Outcome-focused",
+        "description": "Clear treatment roadmaps, ongoing reviews, and concierge aftercare"
+      }
+    ]
+  },
+  "subcategories": [
+    {
+      "id": "male",
+      "title": "Men's Intimate Health",
+      "shortDescription": "Performance, recovery, and penile regenerative medicine",
+      "description": "Restore confidence with P-Shot PRP, focused shockwave therapy, Peyronie's correction, and inflammation control for conditions like lichen sclerosus.",
+      "icon": "male",
+      "image": "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=800&q=80",
+      "treatmentCount": 4,
+      "featured": true,
+      "color": "#6f1d1b"
+    },
+    {
+      "id": "female",
+      "title": "Female Intimate Health",
+      "shortDescription": "Pelvic floor, hormonal, and sensual rejuvenation",
+      "description": "Natural PRP shots, Ultra Femme 360, and EMSELLA pelvic floor therapy to improve lubrication, support, and confidence at every life stage.",
+      "icon": "female",
+      "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&q=80",
+      "treatmentCount": 4,
+      "featured": true,
+      "color": "#b23a48"
+    }
+  ],
+  "benefits": {
+    "title": "Why Patients Choose Dr. SNA Clinic",
+    "subtitle": "Advanced medicine with compassionate support",
+    "items": [
+      {
+        "title": "Medically led intimacy care",
+        "description": "GMC, CQC, and ISO standards across every intimate procedure",
+        "icon": "award"
+      },
+      {
+        "title": "Evidence-based results",
+        "description": "Peer-reviewed protocols combining PRP, shockwave, and bio-stimulation",
+        "icon": "dna"
+      },
+      {
+        "title": "Comfort-first environment",
+        "description": "Soundproof suites, chaperone options, and mindful preparation",
+        "icon": "sofa"
+      },
+      {
+        "title": "Finance & packages",
+        "description": "Transparent pricing with 0% finance and bundle savings for treatment courses",
+        "icon": "credit-card"
+      }
+    ]
+  },
+  "process": {
+    "title": "Your Confidential Care Journey",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Private consultation",
+        "description": "Dedicated 45-minute appointment to discuss symptoms, lifestyle goals, and medical history.",
+        "icon": "message-circle"
+      },
+      {
+        "number": 2,
+        "title": "Advanced diagnostics",
+        "description": "Hormone labs, Doppler imaging, or pelvic assessment to understand root causes.",
+        "icon": "activity"
+      },
+      {
+        "number": 3,
+        "title": "Tailored treatment plan",
+        "description": "Blends regenerative injectables, device therapy, and supplements matched to your biology.",
+        "icon": "clipboard-check"
+      },
+      {
+        "number": 4,
+        "title": "Concierge aftercare",
+        "description": "Follow-ups, symptom tracking, and direct access to your doctor for reassurance.",
+        "icon": "heart-handshake"
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "name": "James P.",
+      "treatment": "P-Shot + shockwave course",
+      "rating": 5,
+      "text": "The team treated a sensitive subject with total professionalism. Within weeks my performance anxiety disappeared and I feel like myself again.",
+      "location": "Canary Wharf",
+      "image": "https://images.unsplash.com/photo-1504593811423-6dd665756598?w=400&q=80",
+      "verified": true
+    },
+    {
+      "name": "Samantha R.",
+      "treatment": "PRP shot for women",
+      "rating": 5,
+      "text": "Dr. Abbas explained every step and tailored treatment around my postnatal concerns. Sensitivity, lubrication, and confidence improved dramatically.",
+      "location": "Richmond",
+      "image": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=400&q=80",
+      "verified": true
+    },
+    {
+      "name": "Omar L.",
+      "treatment": "Peyronie's plan",
+      "rating": 5,
+      "text": "After only two visits I understood what was happening and had a structured plan. The curvature reduced and discomfort is gone.",
+      "location": "Knightsbridge",
+      "image": "https://images.unsplash.com/photo-1544723795-432537f903db?w=400&q=80",
+      "verified": true
+    }
+  ],
+  "faq": [
+    {
+      "question": "Will anyone know I'm visiting the clinic?",
+      "answer": "We use discreet scheduling, neutral calendar entries, and private check-in. No shared waiting rooms—you're taken directly to a consultation suite."
+    },
+    {
+      "question": "Are treatments painful?",
+      "answer": "Most procedures use topical numbing, nerve blocks, or vibration techniques. Sensations are mild and last only a few minutes."
+    },
+    {
+      "question": "How soon will I see results?",
+      "answer": "Shockwave and neuromodulator treatments can improve function within weeks, while regenerative PRP builds steadily over 6-12 weeks."
+    },
+    {
+      "question": "Is financing available?",
+      "answer": "Yes. We partner with medical finance providers for 0% plans up to 12 months and extended terms on request."
+    }
+  ],
+  "cta": {
+    "title": "Ready to Feel Like Yourself Again?",
+    "subtitle": "Book a confidential consultation with Dr. Abbas and get a personalised roadmap back to confidence.",
+    "primaryButton": "Book confidential visit",
+    "secondaryButton": "Talk to a patient advisor",
+    "note": "Consultation fee (£100) is redeemable against treatment."
+  },
+  "trustSignals": {
+    "certifications": [
+      "CQC-regulated medical facility",
+      "GMC-registered physicians",
+      "ISO 9001 quality systems"
+    ],
+    "memberships": [
+      "British Society for Sexual Medicine",
+      "International Cellular Medicine Society",
+      "European College of Aesthetic Medicine & Surgery"
+    ],
+    "awards": [
+      "WhatClinic Patient Service Award",
+      "Global Health & Pharma Regenerative Medicine Winner"
+    ]
+  },
+  "video": {
+    "enabled": true,
+    "url": "https://youtu.be/_rqOTIFl39I",
+    "thumbnail": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1280&q=80",
+    "title": "Patient Experience: Regaining Intimate Confidence",
+    "description": "Hear how Dr. SNA Clinic blends medical science and empathy to resolve long-standing intimate concerns."
+  }
+}

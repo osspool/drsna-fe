@@ -1,0 +1,521 @@
+{
+  "id": "anti-wrinkle",
+  "categoryId": "aesthetic-medicine",
+  "subcategoryId": "face",
+  "title": "Anti-Wrinkle Injections",
+  "alternativeTitles": ["Botox", "Botulinum Toxin", "Muscle Relaxing Injections", "Wrinkle Relaxers"],
+  "shortTitle": "Anti-Wrinkle",
+  "tagline": "Turn Back Time, Naturally",
+  "description": "FDA-approved muscle relaxing injections that smooth dynamic wrinkles and prevent new lines from forming",
+  "longDescription": "Anti-wrinkle injections are the world's most popular non-surgical cosmetic treatment. Using purified botulinum toxin type A, this treatment temporarily relaxes specific facial muscles responsible for expression lines, resulting in smoother, more youthful-looking skin while maintaining natural facial expressions.",
+
+  "seo": {
+    "metaTitle": "Anti-Wrinkle Injections London | Botox Treatment | Dr. SNA Clinic",
+    "metaDescription": "Expert anti-wrinkle injections in London. Smooth forehead lines, crow's feet & frown lines. Natural results from £195. Book your consultation today.",
+    "keywords": [
+      "anti wrinkle injections London",
+      "Botox London",
+      "wrinkle treatment",
+      "forehead lines",
+      "crow's feet treatment",
+      "frown lines",
+      "muscle relaxing injections",
+      "non-surgical wrinkle treatment",
+      "Botox Marylebone"
+    ],
+    "h1": "Anti-Wrinkle Injections in London | Natural, Expert Results",
+    "canonicalUrl": "/treatments/aesthetic-medicine/face/anti-wrinkle",
+    "schema": {
+      "type": "MedicalProcedure",
+      "procedureType": "Cosmetic",
+      "bodyLocation": "Face"
+    }
+  },
+
+  "hero": {
+    "headline": "Smooth Away Years, Keep Your Expression",
+    "subheadline": "Expert anti-wrinkle treatments for naturally refreshed, youthful skin",
+    "image": "https://images.unsplash.com/photo-1532413992378-f169ac26fff0?w=1920&q=80",
+    "backgroundImage": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=1920&q=80",
+    "video": null,
+    "badge": "Most Popular Treatment"
+  },
+
+  "quickStats": {
+    "duration": "15-30 minutes",
+    "anesthesia": "None required",
+    "downtime": "None",
+    "resultsVisible": "3-14 days",
+    "resultsLast": "3-6 months",
+    "painLevel": "Minimal",
+    "price": "From £195",
+    "sessions": "Single treatment"
+  },
+
+  "overview": {
+    "title": "What Are Anti-Wrinkle Injections?",
+    "content": "Anti-wrinkle injections use a purified protein (botulinum toxin type A) to temporarily relax specific facial muscles. When these muscles relax, the overlying skin becomes smooth, reducing the appearance of wrinkles and fine lines. This treatment is particularly effective for expression lines—wrinkles that form when you smile, frown, or squint.\n\nAt Dr. SNA Clinic, we use premium, FDA-approved products and advanced injection techniques to ensure natural-looking results that enhance your appearance without compromising facial expression.",
+    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1200&q=80",
+    "highlights": [
+      "FDA-approved and clinically proven safe",
+      "Quick 15-minute 'lunchtime' treatment",
+      "No downtime - resume activities immediately",
+      "Natural results that maintain facial expression",
+      "Preventative anti-aging benefits",
+      "Reversible and adjustable"
+    ]
+  },
+
+  "treatsAreas": {
+    "title": "Treatment Areas",
+    "subtitle": "We can address wrinkles and lines across the upper and mid-face",
+    "areas": [
+      {
+        "name": "Forehead Lines",
+        "description": "Horizontal lines across the forehead caused by raising eyebrows",
+        "image": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&q=80",
+        "price": "From £195",
+        "icon": "minus"
+      },
+      {
+        "name": "Frown Lines (11's)",
+        "description": "Vertical lines between eyebrows that create an angry or tired appearance",
+        "image": "https://images.unsplash.com/photo-1524502397800-2eeaad7c3fe5?w=600&q=80",
+        "price": "From £195",
+        "icon": "frown"
+      },
+      {
+        "name": "Crow's Feet",
+        "description": "Fine lines radiating from the outer corners of eyes when smiling",
+        "image": "https://images.unsplash.com/photo-1618329093459-829e70da6bf2?w=600&q=80",
+        "price": "From £195",
+        "icon": "eye"
+      },
+      {
+        "name": "Bunny Lines",
+        "description": "Wrinkles on the sides of the nose when scrunching",
+        "image": "https://images.unsplash.com/photo-1595182494096-3a8e6460f7a0?w=600&q=80",
+        "price": "From £150",
+        "icon": "nose"
+      },
+      {
+        "name": "Lip Flip",
+        "description": "Subtle eversion of upper lip for a fuller appearance without filler",
+        "image": "https://images.unsplash.com/photo-1602192509154-0b900ee1f851?w=600&q=80",
+        "price": "From £95",
+        "icon": "smile"
+      },
+      {
+        "name": "Gummy Smile",
+        "description": "Reduce excessive gum display when smiling",
+        "image": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80",
+        "price": "From £150",
+        "icon": "smile-plus"
+      },
+      {
+        "name": "Chin Dimpling",
+        "description": "Smooth pebbled appearance of the chin",
+        "image": "https://images.unsplash.com/photo-1600594216850-fd2d9fe4a904?w=600&q=80",
+        "price": "From £95",
+        "icon": "circle-dot"
+      }
+    ]
+  },
+
+  "benefits": {
+    "title": "Why Choose Anti-Wrinkle Injections?",
+    "subtitle": "The benefits go beyond just smoother skin",
+    "items": [
+      {
+        "title": "Immediate Wrinkle Reduction",
+        "description": "Smooth expression lines and prevent new wrinkles from forming with regular treatments",
+        "icon": "sparkles"
+      },
+      {
+        "title": "Natural-Looking Results",
+        "description": "Maintain your ability to express emotions naturally—no frozen look",
+        "icon": "smile"
+      },
+      {
+        "title": "Quick & Convenient",
+        "description": "15-minute treatment with no downtime. Perfect for busy lifestyles",
+        "icon": "clock"
+      },
+      {
+        "title": "Preventative Anti-Aging",
+        "description": "Regular treatments prevent deep wrinkles from forming as you age",
+        "icon": "shield-check"
+      },
+      {
+        "title": "Proven Safety Record",
+        "description": "FDA-approved with 30+ years of clinical use and research",
+        "icon": "award"
+      },
+      {
+        "title": "Versatile Treatment",
+        "description": "Also treats excessive sweating, teeth grinding, and migraines",
+        "icon": "settings"
+      }
+    ]
+  },
+
+  "process": {
+    "title": "What to Expect: Your Treatment Journey",
+    "subtitle": "From consultation to beautiful results",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Consultation",
+        "description": "We discuss your concerns, assess your facial anatomy, and create a personalized treatment plan. We'll explain exactly what to expect and answer all your questions.",
+        "duration": "15-20 minutes",
+        "icon": "message-circle",
+        "tips": ["Bring photos of how you looked younger", "Mention any previous treatments", "Discuss your aesthetic goals openly"]
+      },
+      {
+        "number": 2,
+        "title": "Preparation",
+        "description": "Your face will be cleansed and we'll mark the precise injection points based on your facial anatomy and muscle movements.",
+        "duration": "5 minutes",
+        "icon": "check-circle",
+        "tips": ["No makeup needed", "Relax—the treatment is quick", "We use ultra-fine needles"]
+      },
+      {
+        "number": 3,
+        "title": "Treatment",
+        "description": "Precise injections are administered into the target muscles using ultra-fine needles. Most clients describe it as a minor pinch with minimal discomfort.",
+        "duration": "10-15 minutes",
+        "icon": "syringe",
+        "tips": ["Stay relaxed", "Communicate any discomfort", "The procedure is very quick"]
+      },
+      {
+        "number": 4,
+        "title": "Post-Treatment",
+        "description": "You can leave immediately and resume normal activities. We'll provide detailed aftercare instructions to optimize results.",
+        "duration": "Immediate",
+        "icon": "home",
+        "tips": ["Stay upright for 4 hours", "Avoid intense exercise for 24 hours", "Don't rub treated areas"]
+      },
+      {
+        "number": 5,
+        "title": "Results & Follow-Up",
+        "description": "Results appear gradually over 3-14 days. We offer a complimentary 2-week review to assess results and make any adjustments.",
+        "duration": "2 weeks",
+        "icon": "calendar-check",
+        "tips": ["Results peak at 2 weeks", "Book your review appointment", "Maintenance every 3-4 months"]
+      }
+    ]
+  },
+
+  "beforeAfter": {
+    "enabled": true,
+    "title": "Real Results from Real Patients",
+    "subtitle": "See the natural, rejuvenating effects of expert anti-wrinkle treatment",
+    "disclaimer": "Individual results may vary. Photos shared with patient consent.",
+    "gallery": [
+      {
+        "id": "before-after-1",
+        "title": "Forehead Lines",
+        "before": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
+        "after": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=800&q=80",
+        "description": "2 weeks after treatment",
+        "area": "Forehead"
+      },
+      {
+        "id": "before-after-2",
+        "title": "Crow's Feet",
+        "before": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=800&q=80",
+        "after": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=800&q=80",
+        "description": "10 days after treatment",
+        "area": "Eyes"
+      }
+    ]
+  },
+
+  "faq": [
+    {
+      "question": "Does it hurt?",
+      "answer": "Most clients describe the sensation as a minor pinch or mosquito bite. We use ultra-fine needles and advanced techniques to minimize discomfort. The entire treatment takes just 10-15 minutes, making any discomfort very brief. No anesthetic is typically required."
+    },
+    {
+      "question": "Will I look frozen or unnatural?",
+      "answer": "Absolutely not when performed correctly. Our expert injectors use precise dosing and strategic placement to soften wrinkles while maintaining natural facial expressions. You'll look refreshed and relaxed, not frozen. The goal is to enhance your natural beauty, not change it."
+    },
+    {
+      "question": "How long until I see results?",
+      "answer": "Results appear gradually over 3-14 days, with full effects visible by 2 weeks. Some people notice initial softening within 3-4 days, while others take the full 2 weeks. We offer a complimentary review at 2 weeks to assess results and make any adjustments."
+    },
+    {
+      "question": "How long do results last?",
+      "answer": "Results typically last 3-6 months, depending on factors like metabolism, muscle strength, and the area treated. Forehead and crow's feet tend to last 4-5 months, while stronger muscles (like frown lines) may require more frequent treatment. With regular maintenance, results can last longer over time."
+    },
+    {
+      "question": "Are there any side effects?",
+      "answer": "Common side effects are minor and temporary: slight redness, mild swelling, or small bruises at injection sites, usually resolving within hours to a few days. Headache occurs in 1-2% of patients. Serious side effects are rare when performed by qualified practitioners. We'll discuss all risks during consultation."
+    },
+    {
+      "question": "What should I avoid after treatment?",
+      "answer": "For 24 hours: avoid lying down for 4 hours, intense exercise, alcohol, facials, massages, or rubbing treated areas. Avoid blood-thinning supplements (like fish oil, vitamin E) for a week before treatment to minimize bruising. We provide detailed aftercare instructions."
+    },
+    {
+      "question": "When is the best age to start?",
+      "answer": "There's no single 'right' age. Many people start preventatively in their late 20s to early 30s when fine lines first appear. Others begin later when wrinkles are more established. The best time is when you notice lines that bother you. We treat patients from their mid-20s to 70s+."
+    },
+    {
+      "question": "Can men have this treatment?",
+      "answer": "Absolutely! Anti-wrinkle injections are increasingly popular with men ('Brotox'). Men often require slightly higher doses due to stronger facial muscles. We tailor treatments to maintain masculine features while reducing lines."
+    },
+    {
+      "question": "How much does it cost?",
+      "answer": "Pricing depends on the areas treated and amount of product required. Single area treatments start from £195, with package deals available for multiple areas. We'll provide an exact quote during your consultation. Many clients treat 2-3 areas in one session."
+    },
+    {
+      "question": "Is it safe during pregnancy or breastfeeding?",
+      "answer": "As a precaution, we do not treat pregnant or breastfeeding women. While no harm has been reported, there isn't sufficient research in these populations. We recommend waiting until after you've finished breastfeeding."
+    },
+    {
+      "question": "What's the difference between brands (Botox, Dysport, etc.)?",
+      "answer": "All FDA-approved brands (Botox, Dysport, Azzalure, Bocouture) contain the same active ingredient and work similarly. Small differences exist in spread and duration. At Dr. SNA Clinic, we use premium brands and will discuss which is best for your specific needs."
+    },
+    {
+      "question": "Can I combine this with other treatments?",
+      "answer": "Yes! Anti-wrinkle injections work beautifully with dermal fillers (to address both dynamic and static wrinkles), skin boosters, and laser treatments. Many clients combine treatments for comprehensive facial rejuvenation. We'll create a personalized combination plan."
+    }
+  ],
+
+  "pricing": {
+    "title": "Transparent Pricing",
+    "subtitle": "No hidden fees, no surprises",
+    "disclaimer": "Final pricing determined during consultation based on your individual needs",
+    "packages": [
+      {
+        "name": "Single Area",
+        "price": "£195",
+        "description": "One treatment area",
+        "areas": "Forehead OR Frown Lines OR Crow's Feet",
+        "popular": false
+      },
+      {
+        "name": "Two Areas",
+        "price": "£295",
+        "description": "Combination treatment",
+        "areas": "Any two areas",
+        "popular": true,
+        "savings": "Save £95"
+      },
+      {
+        "name": "Three Areas",
+        "price": "£375",
+        "description": "Full upper face treatment",
+        "areas": "Forehead + Frown Lines + Crow's Feet",
+        "popular": true,
+        "savings": "Save £210"
+      },
+      {
+        "name": "Add-On Areas",
+        "price": "From £95",
+        "description": "Additional areas",
+        "areas": "Lip Flip, Bunny Lines, Chin, etc.",
+        "popular": false
+      }
+    ],
+    "includes": [
+      "Expert consultation",
+      "Premium FDA-approved product",
+      "Precision injection technique",
+      "Detailed aftercare instructions",
+      "2-week complimentary review"
+    ],
+    "financing": {
+      "available": true,
+      "buttonText": "0% Finance Available"
+    }
+  },
+
+  "candidacy": {
+    "title": "Are You a Candidate?",
+    "subtitle": "Anti-wrinkle injections may be right for you if:",
+    "suitable": [
+      "You have expression lines (forehead, frown, crow's feet)",
+      "You're looking for preventative anti-aging",
+      "You want to look refreshed without surgery",
+      "You're in good overall health",
+      "You have realistic expectations",
+      "You're over 18 years old"
+    ],
+    "notSuitable": [
+      "Pregnant or breastfeeding",
+      "Allergic to botulinum toxin",
+      "Certain neurological conditions",
+      "Active skin infection in treatment area",
+      "Taking certain medications (aminoglycosides)"
+    ],
+    "note": "Final candidacy determined during medical consultation"
+  },
+
+  "safety": {
+    "title": "Safety & Quality Assurance",
+    "content": "Your safety is our top priority. Anti-wrinkle injections have been used safely for over 30 years with millions of treatments performed worldwide.",
+    "certifications": [
+      {
+        "name": "FDA Approved",
+        "description": "All products are FDA and CE approved",
+        "icon": "shield-check"
+      },
+      {
+        "name": "GMC Registered",
+        "description": "Administered by GMC-registered doctors",
+        "icon": "award"
+      },
+      {
+        "name": "CQC Regulated",
+        "description": "Our clinic is CQC registered and inspected",
+        "icon": "building"
+      },
+      {
+        "name": "Fully Insured",
+        "description": "Comprehensive medical indemnity insurance",
+        "icon": "umbrella"
+      }
+    ],
+    "products": [
+      "Botox® (Allergan)",
+      "Dysport® (Galderma)",
+      "Azzalure®",
+      "Bocouture® (Merz)"
+    ]
+  },
+
+  "testimonials": [
+    {
+      "name": "Emma R.",
+      "age": 42,
+      "treatment": "Forehead & Crow's Feet",
+      "rating": 5,
+      "text": "Dr. Abbas is an absolute artist! I was nervous about looking frozen, but the results are incredibly natural. I just look like a well-rested, slightly younger version of myself. My husband didn't even notice I'd had anything done—he just said I looked radiant!",
+      "date": "March 2024",
+      "verified": true,
+      "image": null
+    },
+    {
+      "name": "James M.",
+      "age": 38,
+      "treatment": "Frown Lines",
+      "rating": 5,
+      "text": "I was skeptical about 'Brotox' but I'm so glad I tried it. People kept asking if I was angry or tired when I wasn't. Now my face matches how I actually feel. The treatment was quick, painless, and completely discreet. None of my colleagues noticed!",
+      "date": "February 2024",
+      "verified": true,
+      "image": null
+    },
+    {
+      "name": "Sarah L.",
+      "age": 35,
+      "treatment": "Three Areas",
+      "rating": 5,
+      "text": "I've been getting anti-wrinkle injections at Dr. SNA Clinic for 3 years now. The consistency is incredible—I know exactly what to expect every time. Dr. Abbas really understands facial anatomy and always achieves beautiful, natural results.",
+      "date": "January 2024",
+      "verified": true,
+      "image": null
+    }
+  ],
+
+  "comparison": {
+    "title": "Why Dr. SNA Clinic Stands Out",
+    "subtitle": "Not all anti-wrinkle treatments are created equal",
+    "competitors": [
+      {
+        "feature": "Practitioner Qualification",
+        "us": "GMC-registered doctors only",
+        "others": "Often nurses or non-medical",
+        "highlight": true
+      },
+      {
+        "feature": "Product Quality",
+        "us": "Premium FDA-approved brands",
+        "others": "May use cheaper alternatives",
+        "highlight": true
+      },
+      {
+        "feature": "Technique",
+        "us": "Advanced micro-dosing for natural results",
+        "others": "Standard dosing protocols",
+        "highlight": true
+      },
+      {
+        "feature": "Consultation",
+        "us": "Complimentary, comprehensive",
+        "others": "Often rushed or charged",
+        "highlight": false
+      },
+      {
+        "feature": "Follow-Up",
+        "us": "Free 2-week review included",
+        "others": "Additional charge or not offered",
+        "highlight": true
+      },
+      {
+        "feature": "Clinic Standards",
+        "us": "CQC registered medical clinic",
+        "others": "Variable standards",
+        "highlight": true
+      },
+      {
+        "feature": "Price",
+        "us": "From £195 per area",
+        "others": "Variable",
+        "highlight": false
+      }
+    ]
+  },
+
+  "relatedTreatments": [
+    {
+      "id": "dermal-fillers",
+      "title": "Dermal Fillers",
+      "description": "Combine with fillers for comprehensive facial rejuvenation",
+      "reason": "Addresses both dynamic and static wrinkles"
+    },
+    {
+      "id": "skin-boosters",
+      "title": "Skin Boosters",
+      "description": "Improve overall skin quality and hydration",
+      "reason": "Enhances skin texture while anti-wrinkle smooths lines"
+    },
+    {
+      "id": "prp-facelift",
+      "title": "PRP Facelift",
+      "description": "Natural rejuvenation using your own platelets",
+      "reason": "Complementary approach for overall facial refreshment"
+    }
+  ],
+
+  "video": {
+    "enabled": false,
+    "title": "Watch: What to Expect During Treatment",
+    "embedUrl": null,
+    "thumbnail": null,
+    "duration": null
+  },
+
+  "instagram": {
+    "enabled": true,
+    "title": "See Our Work on Instagram",
+    "handle": "@drsnaclinic",
+    "hashtags": ["#AntiWrinkle", "#BotoxLondon", "#NaturalResults"]
+  },
+
+  "cta": {
+    "title": "Ready to Look As Young As You Feel?",
+    "subtitle": "Book your complimentary consultation with Dr. Abbas today",
+    "primaryButton": "Book Consultation",
+    "secondaryButton": "Ask a Question",
+    "urgency": "Limited appointments available this month",
+    "guarantee": "Complimentary 2-week review included with all treatments"
+  },
+
+  "bookingInfo": {
+    "depositRequired": false,
+    "cancellationPolicy": "24 hours notice required",
+    "consultationFee": "Free",
+    "duration": "30-45 minutes total (including consultation)"
+  }
+}

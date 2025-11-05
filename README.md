@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dr SNA Clinic - Luxury Medical Aesthetic Website
 
-## Getting Started
+A sophisticated, modern medical aesthetic clinic website built with Next.js 16, featuring a luxurious gold theme (#cda55c), dynamic content management, and beautiful animations.
 
-First, run the development server:
+## ✨ Features
+
+### 🎨 Luxury Design System
+- **Custom Gold Gradient Theme** with multiple gradient variations
+- **Premium Typography**: Playfair Display (headings), Inter (body), Cormorant Garamond (accents)
+- **Smooth Animations**: Powered by Framer Motion
+- **Responsive Design**: Mobile-first, works beautifully on all devices
+
+### 📦 Dynamic Content Blocks
+8 reusable content block components for building treatment pages
+
+### 🏗️ Smart Architecture
+- **JSON-Driven Content** - All treatment data in structured JSON files
+- **Dynamic Routing** - Automatic page generation from data
+- **Component-Based** - Highly reusable, composable components
+- **SEO Optimized** - Schema markup, meta tags, OpenGraph
+
+## 🚀 Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📁 Key Files
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `ARCHITECTURE.md` - Detailed architecture documentation
+- `PROJECT_SUMMARY.md` - Quick reference guide
+- `data/categories.json` - Treatment categories structure
+- `data/treatments/` - Treatment data files
+- `components/blocks/` - Reusable content blocks
 
-## Learn More
+## 🎨 Color Theme
 
-To learn more about Next.js, take a look at the following resources:
+```css
+--gold-primary: #cda55c
+--gold-gradient: linear-gradient(135deg, #cda55c 0%, #d4af69 50%, #e6c89f 100%)
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📝 Creating Treatment Pages
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Create JSON file in `data/treatments/`
+2. Add treatment to `data/categories.json`
+3. Page automatically available at `/treatments/[category]/[slug]`
 
-## Deploy on Vercel
+See [PROJECT_SUMMARY.md](PROJECT_SUMMARY.md) for detailed guide.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js 16 (App Router)
+- React 19
+- Tailwind CSS v4
+- shadcn/ui + Radix UI
+- Framer Motion
+- Lucide React
+
+## 📚 Documentation
+
+- [ARCHITECTURE.md](ARCHITECTURE.md) - Full architecture guide
+- [PROJECT_SUMMARY.md](PROJECT_SUMMARY.md) - Quick reference
+
+---
+
+Built with ❤️ using Next.js, Tailwind CSS, shadcn/ui, and Framer Motion
