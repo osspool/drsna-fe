@@ -1,0 +1,511 @@
+{
+  "id": "shockwave-therapy",
+  "categoryId": "intimate-health",
+  "subcategoryId": "male",
+  "title": "Focused Shockwave Therapy (LI-ESWT)",
+  "alternativeTitles": [
+    "Extracorporeal Shockwave Therapy",
+    "ESWT for ED",
+    "Acoustic Wave Therapy",
+    "GAINSWave"
+  ],
+  "shortTitle": "Shockwave Therapy",
+  "tagline": "Rebuild Blood Flow with Targeted Acoustic Energy",
+  "description": "Low-intensity shockwaves stimulate angiogenesis and nerve repair to restore natural erections.",
+  "longDescription": "Focused shockwave therapy (LI-ESWT) uses acoustic pulses to break down micro-plaque, recruit growth factors, and trigger new vessel formation inside penile tissue. Unlike pills that mask symptoms, shockwave regenerates the vascular pathways required for spontaneous erections.\\n\\nAt Dr. SNA Clinic we combine LI-ESWT with Doppler diagnostics, personalised treatment mapping, and optional P-Shot® or peptide protocols for lasting gains in rigidity, sensitivity, and confidence.",
+  "seo": {
+    "metaTitle": "Shockwave Therapy for Erectile Dysfunction London | Dr. SNA Clinic",
+    "metaDescription": "Drug-free shockwave therapy in London to treat erectile dysfunction and Peyronie’s disease. Course from £350/session. Doctor-led men’s health clinic.",
+    "keywords": [
+      "shockwave therapy london",
+      "low intensity eswt",
+      "acoustic wave therapy ed",
+      "extracorporeal shockwave erectile dysfunction",
+      "peyronies shockwave treatment"
+    ],
+    "h1": "Shockwave Therapy for Male Intimate Health",
+    "canonicalUrl": "/treatments/intimate-health/male/shockwave-therapy",
+    "schema": {
+      "type": "MedicalProcedure",
+      "procedureType": "Low-Intensity Extracorporeal Shockwave Therapy",
+      "bodyLocation": "Penile tissue"
+    }
+  },
+  "hero": {
+    "headline": "Drug-Free Regeneration for ED",
+    "subheadline": "Precision shockwave therapy that re-opens blood vessels and boosts responsiveness.",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80",
+    "backgroundImage": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80",
+    "video": "https://youtu.be/3cuL-4IYW2g",
+    "badge": "Course-based protocol"
+  },
+  "quickStats": {
+    "duration": "20 minutes per session",
+    "anesthesia": "None required",
+    "downtime": "None – resume life immediately",
+    "resultsVisible": "2-4 weeks after first session",
+    "resultsLast": "Up to 24 months",
+    "painLevel": "1/10 tingling",
+    "price": "£350/session or £1,800 (6-session course)",
+    "sessions": "Typically 6 sessions over 3 weeks"
+  },
+  "overview": {
+    "title": "What Is LI-ESWT?",
+    "content": "Low-intensity extracorporeal shockwave therapy (LI-ESWT) delivers mechanical pulses that create controlled micro-trauma inside the corpora cavernosa. This stimulates endothelial repair, nitric oxide release, and stem cell activation—key mechanisms for healthy erections. Our protocol targets the crura, shaft, and glans to ensure uniform vascular regeneration.",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&q=80",
+    "highlights": [
+      "Improves morning erections and spontaneity",
+      "Safe with cardiovascular medication",
+      "Enhances results of the P-Shot®",
+      "Recommended by European Association of Urology for mild-to-moderate ED"
+    ]
+  },
+  "treatsAreas": {
+    "title": "Treatment Zones",
+    "subtitle": "Energy delivered along every vascular pathway",
+    "areas": [
+      {
+        "name": "Corpora Cavernosa",
+        "description": "Boosts arterial inflow and rigidity.",
+        "image": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=600&q=80",
+        "price": "Included",
+        "icon": "activity"
+      },
+      {
+        "name": "Penile Crura",
+        "description": "Supports venous sealing to maintain erections.",
+        "image": "https://images.unsplash.com/photo-1512654446293-423c82f0c4fc?w=600&q=80",
+        "price": "Included",
+        "icon": "target"
+      },
+      {
+        "name": "Glans",
+        "description": "Improves sensitivity and neural signalling.",
+        "image": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=600&q=80",
+        "price": "Included",
+        "icon": "sparkles"
+      },
+      {
+        "name": "Peyronie’s Plaques (optional)",
+      "description": "Breaks down fibrotic scar tissue when combined with traction.",
+        "image": "https://images.unsplash.com/photo-1485217988980-11786ced9454?w=600&q=80",
+        "price": "Add-on",
+        "icon": "align-center"
+      }
+    ]
+  },
+  "howItWorks": {
+    "enabled": true,
+    "title": "Science Behind Shockwave Therapy",
+    "subtitle": "Acoustic energy drives a healing cascade",
+    "content": "Shockwaves create micro-cavitation bubbles that collapse and trigger cellular signalling. This process releases VEGF, eNOS, and proliferative cytokines while dissolving micro-plaque that restricts penile blood flow.",
+    "background": "dark",
+    "variant": "dark-glass",
+    "benefits": [
+      {
+        "title": "Angiogenesis",
+        "description": "New micro-vessels form, restoring oxygen-rich blood supply.",
+        "icon": "droplet"
+      },
+      {
+        "title": "Neurogenesis",
+        "description": "Nerve response improves for faster arousal and sensation.",
+        "icon": "zap"
+      },
+      {
+        "title": "Plaque Disruption",
+        "description": "Breaks down fibrotic tissue linked to Peyronie’s curvature.",
+        "icon": "align-center"
+      },
+      {
+        "title": "Synergy with PRP",
+        "description": "Prepares tissue to absorb growth factors from the P-Shot.",
+        "icon": "layers"
+      }
+    ],
+    "growthFactors": [
+      "VEGF – Vascular Endothelial Growth Factor",
+      "eNOS – Endothelial Nitric Oxide Synthase",
+      "PCNA – Proliferating Cell Nuclear Antigen"
+    ]
+  },
+  "whyChooseDrSNA": {
+    "enabled": true,
+    "title": "Why Dr. SNA Clinic?",
+    "subtitle": "Results-focused shockwave in a discreet men’s health setting",
+    "background": "gradient-cream",
+    "variant": "compact-grid",
+    "features": [
+      {
+        "title": "Urologist-Designed Protocols",
+        "description": "Treatment plans mapped by Dr. Abbas after Doppler assessment.",
+        "icon": "stethoscope"
+      },
+      {
+        "title": "FDA-Listed Device",
+        "description": "We use a focused applicator (not radial spa devices) for deeper penetration.",
+        "icon": "settings"
+      },
+      {
+        "title": "Privacy Guaranteed",
+        "description": "Soundproof suites, neutral booking notes, and concierge scheduling.",
+        "icon": "shield"
+      },
+      {
+        "title": "Add-On Therapies",
+        "description": "Combine with P-Shot, peptide support, traction, or EMS for faster gains.",
+        "icon": "layers"
+      },
+      {
+        "title": "Progress Tracking",
+        "description": "IIEF-5 scoring and ultrasound imaging track objective improvements.",
+        "icon": "activity"
+      },
+      {
+        "title": "Finance Options",
+        "description": "0% interest plans for full treatment courses.",
+        "icon": "credit-card"
+      }
+    ]
+  },
+  "whatToExpect": {
+    "enabled": true,
+    "title": "What to Expect Each Visit",
+    "subtitle": "Fast, comfortable, repeatable sessions",
+    "variant": "compact-timeline",
+    "background": "gradient-cream",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Pre-Session Check-In",
+        "description": "Vitals, medication review, and baseline questionnaire.",
+        "duration": "5 mins"
+      },
+      {
+        "number": 2,
+        "title": "Target Mapping",
+        "description": "Ultrasound gel applied; doctor outlines treatment points.",
+        "duration": "3 mins"
+      },
+      {
+        "number": 3,
+        "title": "Shockwave Delivery",
+        "description": "2,000–3,000 pulses across shaft, crura, and glans.",
+        "duration": "15 mins"
+      },
+      {
+        "number": 4,
+        "title": "Aftercare & Next Steps",
+        "description": "Immediate return to normal activity; home protocol emailed.",
+        "duration": "2 mins"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Benefits of Shockwave at Our Clinic",
+    "subtitle": "Engineered for long-term vascular change",
+    "layout": "grid-3",
+    "items": [
+      {
+        "title": "Natural Erections",
+        "description": "Reduces reliance on medication by fixing blood flow.",
+        "icon": "heart-pulse"
+      },
+      {
+        "title": "No Downtime",
+        "description": "Walk in during lunch, return to work immediately.",
+        "icon": "clock"
+      },
+      {
+        "title": "Supports Peyronie’s Plans",
+        "description": "Breaks down plaques ahead of traction or PRP.",
+        "icon": "align-center"
+      },
+      {
+        "title": "Enhances P-Shot®",
+        "description": "Improves uptake of growth factors for bigger gains.",
+        "icon": "droplet"
+      },
+      {
+        "title": "Safe with Comorbidities",
+        "description": "Suitable for diabetics or cardiac patients cleared for activity.",
+        "icon": "shield-check"
+      },
+      {
+        "title": "Precise Energy Delivery",
+        "description": "Focused applicator penetrates deeper than radial devices.",
+        "icon": "target"
+      }
+    ]
+  },
+  "process": {
+    "title": "Your LI-ESWT Journey",
+    "subtitle": "Structured for measurable progress",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Consult & Diagnostics",
+        "description": "Confidential assessment, Doppler imaging, hormone labs if required.",
+        "duration": "45 mins",
+        "icon": "message-circle"
+      },
+      {
+        "number": 2,
+        "title": "Programme Design",
+        "description": "6–12 session plan with optional PRP, traction, or peptides.",
+        "duration": "Same day",
+        "icon": "clipboard-check"
+      },
+      {
+        "number": 3,
+        "title": "Treatment Sessions",
+        "description": "Two sessions weekly for three weeks, scheduled discreetly.",
+        "duration": "3 weeks",
+        "icon": "calendar"
+      },
+      {
+        "number": 4,
+        "title": "Review & Maintenance",
+        "description": "IIEF scoring at 6 and 12 weeks; booster sessions offered annually.",
+        "duration": "Ongoing",
+        "icon": "trending-up"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Shockwave Therapy Pricing",
+    "subtitle": "Consultation fee (£100) redeemable toward a treatment plan",
+    "disclaimer": "*Exact number of sessions confirmed after diagnostic review.",
+    "singlePrice": {
+      "originalPrice": "£400",
+      "currentPrice": "£350",
+      "currency": "GBP",
+      "consultationFee": "£100",
+      "consultationNote": "Redeemable within 30 days",
+      "consultationDisclaimer": "Includes Doppler ultrasound where indicated"
+    },
+    "packages": [
+      {
+        "name": "6-Session Course",
+        "price": "£1,800",
+        "description": "Two sessions weekly for three weeks",
+        "includes": "Doctor review + home protocol",
+        "savings": "Save £300"
+      },
+      {
+        "name": "12-Session Optimiser",
+        "price": "£3,200",
+        "description": "Ideal for diabetics or vascular compromise",
+        "includes": "Shockwave + peptides + traction coaching",
+        "savings": "Save £1,000 vs pay-per-session"
+      }
+    ],
+    "includes": [
+      "Doctor consultation and diagnostic plan",
+      "Focused shockwave delivery (not radial spa devices)",
+      "Private suite + comfort measures",
+      "Home protocol (supplements, nitric oxide support)",
+      "Progress tracking via IIEF and Doppler imaging",
+      "Access to doctor between sessions via secure app"
+    ],
+    "financing": {
+      "available": true,
+      "buttonText": "0% Finance Available"
+    }
+  },
+  "treatsConditions": {
+    "title": "Conditions We Treat",
+    "subtitle": "Evidence-based applications for LI-ESWT",
+    "conditions": [
+      {
+        "name": "Vascular Erectile Dysfunction",
+        "description": "Restores blood inflow and endothelial health.",
+        "icon": "heart-pulse",
+        "effectiveness": "High"
+      },
+      {
+        "name": "Performance Decline Post-Prostatectomy",
+        "description": "Speeds rehab when combined with medications or PRP.",
+        "icon": "stethoscope",
+        "effectiveness": "Moderate"
+      },
+      {
+        "name": "Peyronie’s Disease",
+        "description": "Softens plaques and improves curvature when paired with traction.",
+        "icon": "align-center",
+        "effectiveness": "Moderate"
+      },
+      {
+        "name": "Sensitivity Loss",
+        "description": "Improves nerve signalling for more intense sensation.",
+        "icon": "zap",
+        "effectiveness": "High"
+      }
+    ]
+  },
+  "candidacy": {
+    "title": "Who Benefits Most?",
+    "subtitle": "Ideal for men seeking natural, long-term improvement",
+    "suitable": [
+      "Mild to moderate erectile dysfunction",
+      "Men wanting to reduce reliance on PDE5 medication",
+      "Post-prostatectomy recovery protocols",
+      "Peyronie’s patients prepping for traction or PRP",
+      "Men combining with the P-Shot® for maximal results"
+    ],
+    "notSuitable": [
+      "Active genital infection or open lesions",
+      "Uncontrolled bleeding disorders",
+      "Pacemaker without cardiologist clearance",
+      "Severe curvature requiring surgical intervention",
+      "Inability to commit to course-based schedule"
+    ],
+    "note": "Final suitability determined after consultation, Doppler imaging, and medication review."
+  },
+  "safety": {
+    "title": "Safety & Standards",
+    "content": "Performed in our CQC-regulated clinic with single-patient applicator covers, medical-grade ultrasound gel, and strict energy calibration before each session.",
+    "certifications": [
+      {
+        "name": "CQC-Regulated Facility",
+        "description": "Audited infection control and governance.",
+        "icon": "shield-check"
+      },
+      {
+        "name": "GMC-Registered Doctors",
+        "description": "Treatment overseen by intimate health specialists.",
+        "icon": "stethoscope"
+      },
+      {
+        "name": "FDA-Listed Device",
+        "description": "Focused applicator ensures therapeutic energy depth.",
+        "icon": "cpu"
+      },
+      {
+        "name": "ISO 9001 Systems",
+        "description": "Procedural consistency and equipment maintenance logs.",
+        "icon": "clipboard-check"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Compare Your Options",
+    "subtitle": "Understand how LI-ESWT fits alongside other therapies",
+    "comparisons": [
+      {
+        "treatment": "Shockwave Therapy",
+        "naturalness": "Mechanical stimulation",
+        "results": "2-4 weeks",
+        "downtime": "None",
+        "cost": "£1,800 (course)",
+        "duration": "18-24 months"
+      },
+      {
+        "treatment": "P-Shot PRP",
+        "naturalness": "Autologous biologic",
+        "results": "3-6 weeks",
+        "downtime": "None",
+        "cost": "£1,200",
+        "duration": "12-18 months"
+      },
+      {
+        "treatment": "Medication (PDE5)",
+        "naturalness": "Pharmaceutical",
+        "results": "30-60 mins",
+        "downtime": "None",
+        "cost": "£300+/year",
+        "duration": "Short acting"
+      },
+      {
+        "treatment": "Penile Implants",
+        "naturalness": "Surgical",
+        "results": "Immediate",
+        "downtime": "4-6 weeks",
+        "cost": "£8k-£15k",
+        "duration": "10+ years"
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "name": "Anthony L.",
+      "age": 51,
+      "treatment": "Shockwave + P-Shot",
+      "rating": 5,
+      "text": "By the fourth session morning erections were back and I no longer panic about intimacy. The course was painless and the team was incredibly discreet.",
+      "date": "2024-03-02",
+      "verified": true,
+      "image": "https://images.unsplash.com/photo-1504593811423-6dd665756598?w=400&q=80"
+    },
+    {
+      "name": "Daniel W.",
+      "age": 57,
+      "treatment": "Shockwave for Peyronie's",
+      "rating": 5,
+      "text": "Curvature dropped from 35° to under 15° after combining shockwave with traction and PRP. Follow-up imaging proved the plaque shrinkage.",
+      "date": "2023-12-18",
+      "verified": true,
+      "image": "https://images.unsplash.com/photo-1521119989659-a83eee488004?w=400&q=80"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Does shockwave therapy hurt?",
+      "answer": "Most patients describe a light tapping sensation. Energy levels are adjustable and we can pause at any time."
+    },
+    {
+      "question": "When will I see results?",
+      "answer": "Many men notice stronger erections after 3-4 sessions, with maximal gains 8-12 weeks after completing the course."
+    },
+    {
+      "question": "Can I combine it with medication?",
+      "answer": "Yes. PDE5 inhibitors can be used during the course and often become optional once vascular health improves."
+    },
+    {
+      "question": "Is it safe with heart conditions?",
+      "answer": "If your cardiologist has cleared you for sexual activity, shockwave is usually safe. We still review all medications and history first."
+    },
+    {
+      "question": "How long do results last?",
+      "answer": "Expect 12-24 months depending on lifestyle factors. Maintenance sessions can be scheduled annually."
+    },
+    {
+      "question": "Will insurance cover it?",
+      "answer": "Shockwave is considered elective, so we provide itemised invoices for personal reimbursement if available."
+    }
+  ],
+  "relatedTreatments": [
+    {
+      "id": "p-shot",
+      "title": "P-Shot® PRP for Men",
+      "description": "Injectable PRP to amplify shockwave gains.",
+      "reason": "Synergistic vascular regeneration"
+    },
+    {
+      "id": "peyronies-disease",
+      "title": "Peyronie’s Regenerative Plan",
+      "description": "Comprehensive plaque remodelling protocol.",
+      "reason": "Shockwave prepares tissue for PRP + traction."
+    },
+    {
+      "id": "lichen-sclerosis-male",
+      "title": "Lichen Sclerosus Relief",
+      "description": "PRP + light therapy to calm inflammation.",
+      "reason": "Maintain penile skin health during treatment."
+    }
+  ],
+  "cta": {
+    "title": "Ready to Restore Natural Performance?",
+    "subtitle": "Book your confidential shockwave consultation.",
+    "primaryButton": "Book shockwave consult",
+    "secondaryButton": "Speak to a men’s health advisor",
+    "urgency": "Limited course slots each week to maintain privacy",
+    "guarantee": "Consultation fee credited toward treatment plan"
+  },
+  "bookingInfo": {
+    "depositRequired": false,
+    "cancellationPolicy": "48 hours' notice to reschedule",
+    "consultationFee": "£100 (redeemable)",
+    "duration": "20-minute treatment sessions"
+  }
+}

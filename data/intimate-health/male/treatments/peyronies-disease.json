@@ -1,0 +1,485 @@
+{
+  "id": "peyronies-disease",
+  "categoryId": "intimate-health",
+  "subcategoryId": "male",
+  "title": "Peyronie’s Disease Regenerative Plan",
+  "alternativeTitles": [
+    "Peyronie’s Treatment",
+    "Penile Curvature Correction",
+    "Peyronie’s PRP Programme",
+    "Peyronie’s Shockwave Therapy"
+  ],
+  "shortTitle": "Peyronie’s Plan",
+  "tagline": "Straighten, Soften, and Strengthen Without Surgery",
+  "description": "Doctor-led combination of PRP, shockwave, traction, and topical therapy that repairs penile curvature and discomfort.",
+  "longDescription": "Peyronie’s disease forms fibrotic plaques under the penile skin, causing curvature, pain, and anxiety. Our regenerative protocol combines platelet-rich plasma (P-Shot®), focused shockwave therapy, traction devices, and prescription topicals to soften plaques, improve symmetry, and restore confidence.\\n\\nRather than relying on surgery or off-label injections alone, we treat the root causes: inflammation, scar tissue, and restricted blood flow. Each plan is customised after Doppler imaging and curvature measurement so you understand every milestone toward straighter, pain-free erections.",
+  "seo": {
+    "metaTitle": "Peyronie’s Disease Treatment London | Non-Surgical Curvature Correction | Dr. SNA",
+    "metaDescription": "Comprehensive Peyronie’s disease treatment in London. PRP, shockwave, traction, and prescription topicals to reduce curvature and pain. Confidential men’s health clinic.",
+    "keywords": [
+      "peyronies treatment london",
+      "peyronies disease cure",
+      "penile curvature treatment",
+      "peyronies shockwave",
+      "peyronies prp"
+    ],
+    "h1": "Peyronie’s Disease Treatment at Dr. SNA Clinic",
+    "canonicalUrl": "/treatments/intimate-health/male/peyronies-disease",
+    "schema": {
+      "type": "MedicalCondition",
+      "name": "Peyronie’s disease",
+      "possibleTreatment": "Platelet-rich plasma, shockwave therapy, traction therapy"
+    }
+  },
+  "hero": {
+    "headline": "Regain Straightforward Confidence",
+    "subheadline": "Evidence-backed protocol combining PRP, shockwave, and traction.",
+    "image": "https://images.unsplash.com/photo-1485217988980-11786ced9454?w=1920&q=80",
+    "backgroundImage": "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=1920&q=80",
+    "video": "https://youtu.be/kN8PvYtxa_U",
+    "badge": "Doctor-led programme"
+  },
+  "quickStats": {
+    "duration": "Programme runs 12 weeks",
+    "anesthesia": "Topical numbing for PRP injections",
+    "downtime": "Zero – return to daily life immediately",
+    "resultsVisible": "Pain relief in 2-4 weeks, curvature change 8-12 weeks",
+    "resultsLast": "Long-term with maintenance",
+    "painLevel": "Mild pressure during PRP",
+    "price": "Plans from £3,200",
+    "sessions": "3 PRP visits + 6 shockwave sessions + daily traction"
+  },
+  "overview": {
+    "title": "Comprehensive Peyronie’s Management",
+    "content": "We start with penile Doppler, curvature photography, and symptom scoring. Treatment blends dual-spin PRP to stimulate collagen remodelling, LI-ESWT to break down plaques, and traction/restore devices to encourage straight healing. Anti-inflammatory prescriptions and topical compounding creams reduce pain while supplements optimise nitric oxide and scar prevention.",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80",
+    "highlights": [
+      "Average curvature reduction 15°–30° over 3 months",
+      "Improved rigidity and length preservation",
+      "Non-surgical, office-based visits",
+      "Digital coaching for traction adherence"
+    ]
+  },
+  "treatsAreas": {
+    "title": "Targeted Treatment Zones",
+    "subtitle": "We address every plaque and structural element",
+    "areas": [
+      {
+        "name": "Dorsal Plaques",
+        "description": "Most common curvature site; treated with PRP + focused shockwave.",
+        "image": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=600&q=80",
+        "icon": "align-center",
+        "price": "Included"
+      },
+      {
+        "name": "Ventral or Lateral Plaques",
+        "description": "Custom injection angles and traction adjustments for unique curves.",
+        "image": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=600&q=80",
+        "icon": "corner-down-right",
+        "price": "Included"
+      },
+      {
+        "name": "Septal Fibrosis",
+        "description": "Deep scarring addressed with ultrasound-guided PRP.",
+        "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&q=80",
+        "icon": "layers",
+        "price": "Add-on imaging"
+      }
+    ]
+  },
+  "howItWorks": {
+    "enabled": true,
+    "title": "How Our Protocol Reverses Peyronie’s",
+    "subtitle": "Multi-modal therapy for scar remodelling",
+    "content": "PRP delivers growth factors (PDGF, VEGF, TGF-β) that soften plaques and encourage healthy collagen. Shockwave disrupts calcifications and increases circulation. Traction and vacuum devices gently stretch scar tissue while it remodels, locking in straighter alignment.",
+    "background": "dark",
+    "variant": "dark-glass",
+    "benefits": [
+      {
+        "title": "Plaque Softening",
+        "description": "Combined PRP + shockwave reduces density and pain.",
+        "icon": "droplet"
+      },
+      {
+        "title": "Collagen Realignment",
+        "description": "Traction while tissue heals promotes straighter structure.",
+        "icon": "ruler"
+      },
+      {
+        "title": "Length Preservation",
+        "description": "Protects penile length often lost after fibrosis.",
+        "icon": "arrow-up-right"
+      },
+      {
+        "title": "Rigidity Improvement",
+        "description": "Restores blood flow for firmer erections.",
+        "icon": "activity"
+      }
+    ],
+    "growthFactors": [
+      "PDGF – Platelet-Derived Growth Factor",
+      "VEGF – Vascular Endothelial Growth Factor",
+      "TGF-β – Transforming Growth Factor"
+    ]
+  },
+  "whyChooseDrSNA": {
+    "enabled": true,
+    "title": "Why Patients Trust Dr. SNA Clinic",
+    "subtitle": "Personalised, discreet Peyronie’s care",
+    "background": "gradient-cream",
+    "variant": "compact-grid",
+    "features": [
+      {
+        "title": "Doctor-Led Procedures",
+        "description": "All injections and shockwave delivered by Dr. Abbas or senior physicians.",
+        "icon": "stethoscope"
+      },
+      {
+        "title": "Ultrasound-Guided Accuracy",
+        "description": "Ensures PRP reaches plaque core and protects healthy tissue.",
+        "icon": "radar"
+      },
+      {
+        "title": "Integrated Home Kit",
+        "description": "Traction device, vacuum therapy, and app coaching included.",
+        "icon": "home"
+      },
+      {
+        "title": "Confidential Scheduling",
+        "description": "Private suites, neutral reminders, direct-line support.",
+        "icon": "shield"
+      },
+      {
+        "title": "Evidence-Based Protocol",
+        "description": "Built on ISSWSH and SMSNA guidance plus latest studies.",
+        "icon": "book-open"
+      },
+      {
+        "title": "Finance Available",
+        "description": "Spread programme fees over up to 12 months.",
+        "icon": "credit-card"
+      }
+    ]
+  },
+  "process": {
+    "title": "Your Peyronie’s Roadmap",
+    "subtitle": "Structured milestones every step",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Confidential Consultation",
+        "description": "Medical history, symptom scoring, and psychological impact review.",
+        "duration": "45 mins",
+        "icon": "message-circle"
+      },
+      {
+        "number": 2,
+        "title": "Diagnostics & Planning",
+        "description": "Penile ultrasound, curvature measurement, photography, and blood panels.",
+        "duration": "Same week",
+        "icon": "activity"
+      },
+      {
+        "number": 3,
+        "title": "Regenerative Sessions",
+        "description": "Three PRP injections + six shockwave visits across 8 weeks.",
+        "duration": "8 weeks",
+        "icon": "calendar"
+      },
+      {
+        "number": 4,
+        "title": "Traction & Home Therapy",
+        "description": "Daily RestoreX traction, vacuum therapy, and supplements.",
+        "duration": "Daily",
+        "icon": "repeat"
+      },
+      {
+        "number": 5,
+        "title": "Review & Maintenance",
+        "description": "Curvature re-measured at 12 weeks, booster plan if required.",
+        "duration": "Week 12",
+        "icon": "clipboard-check"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "What Patients Notice",
+    "subtitle": "Meaningful change within weeks",
+    "layout": "grid-3",
+    "items": [
+      {
+        "title": "Reduced Curvature",
+        "description": "Average 15°–30° improvement in three months.",
+        "icon": "align-horizontal-justify-end"
+      },
+      {
+        "title": "Less Pain",
+        "description": "Inflammation calms as plaques remodel.",
+        "icon": "feather"
+      },
+      {
+        "title": "Improved Rigidity",
+        "description": "Better blood flow and venous sealing.",
+        "icon": "activity"
+      },
+      {
+        "title": "Psychological Relief",
+        "description": "Confidence returns with measurable progress.",
+        "icon": "smile"
+      },
+      {
+        "title": "Length Preservation",
+        "description": "Traction and PRP protect against shortening.",
+        "icon": "ruler"
+      },
+      {
+        "title": "Non-Surgical",
+        "description": "Avoid downtime and scar tissue from implants.",
+        "icon": "hand"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Inside the Programme",
+    "subtitle": "Clinical precision + concierge comfort",
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80",
+        "alt": "PRP preparation in lab",
+        "title": "Dual-spin PRP prep",
+        "caption": "Sterile, high-yield platelet concentration."
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1512678080530-7760d81faba6?w=800&q=80",
+        "alt": "Doctor performing ultrasound",
+        "title": "Ultrasound mapping",
+        "caption": "Guides injection depth and plaque targeting."
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80",
+        "alt": "Patient using traction device",
+        "title": "Traction coaching",
+        "caption": "Hands-on training for home adherence."
+      }
+    ]
+  },
+  "treatsConditions": {
+    "title": "We Address Every Stage",
+    "subtitle": "Acute or chronic Peyronie’s welcome",
+    "conditions": [
+      {
+        "name": "Acute Phase Peyronie’s",
+        "description": "Active inflammation, pain, and evolving curvature.",
+        "icon": "flame",
+        "effectiveness": "High"
+      },
+      {
+        "name": "Chronic Phase Peyronie’s",
+        "description": "Stable curvature with calcified plaques.",
+        "icon": "shield",
+        "effectiveness": "Moderate"
+      },
+      {
+        "name": "Indentations & Hourglass Deformity",
+        "description": "Combined PRP + traction improves symmetry.",
+        "icon": "triangle",
+        "effectiveness": "Moderate"
+      },
+      {
+        "name": "Post-Surgical Scar Support",
+        "description": "PRP to enhance healing after plaque excision or grafting.",
+        "icon": "bandage",
+        "effectiveness": "Adjunctive"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Programme Investment",
+    "subtitle": "Consultation fee (£150) includes Doppler + curvature photography",
+    "disclaimer": "*Customisations (additional PRP, traction devices) priced at consult.",
+    "singlePrice": {
+      "originalPrice": "£3,600",
+      "currentPrice": "£3,200",
+      "currency": "GBP",
+      "consultationFee": "£150",
+      "consultationNote": "Redeemable when treatment starts within 30 days",
+      "consultationDisclaimer": "Includes imaging + written plan"
+    },
+    "packages": [
+      {
+        "name": "Core Regenerative Plan",
+        "price": "£3,200",
+        "description": "3 PRP sessions + 6 shockwave + traction kit",
+        "includes": "Supplements + app coaching",
+        "savings": "Save £500"
+      },
+      {
+        "name": "Enhanced Plaque Programme",
+        "price": "£4,250",
+        "description": "Adds fourth PRP, peptide protocol, LED therapy",
+        "includes": "Quarterly reviews for 1 year",
+        "savings": "Save £750"
+      }
+    ],
+    "includes": [
+      "Comprehensive consultation + diagnostics",
+      "Dual-spin PRP injections",
+      "Focused shockwave therapy sessions",
+      "Traction/vacuum device + training",
+      "Prescription topicals and supplements",
+      "Progress reviews at 6 and 12 weeks"
+    ],
+    "financing": {
+      "available": true,
+      "buttonText": "Discuss finance options"
+    }
+  },
+  "candidacy": {
+    "title": "Are You a Candidate?",
+    "subtitle": "Most stages qualify—let's confirm together",
+    "suitable": [
+      "Men with curvature between 10° and 60°",
+      "Painful erections or loss of rigidity from plaques",
+      "Hourglass or indentation deformity",
+      "Post-surgery scar management",
+      "Patients wanting non-surgical options first"
+    ],
+    "notSuitable": [
+      "Untreated urethral strictures",
+      "Active infection or ulceration",
+      "Severe calcification requiring surgery",
+      "Bleeding disorders or platelet dysfunction",
+      "Inability to comply with traction protocol"
+    ],
+    "note": "Suitability confirmed after imaging, medical history, and discussion of expectations."
+  },
+  "safety": {
+    "title": "Safety & Governance",
+    "content": "All procedures occur in our CQC-regulated clinic using sterile, single-use kits. We monitor curvature with photography only after explicit consent and store data securely.",
+    "certifications": [
+      {
+        "name": "GMC-Registered Team",
+        "description": "Doctor-only injections and shockwave delivery.",
+        "icon": "stethoscope"
+      },
+      {
+        "name": "CQC Regulated",
+        "description": "Infection control and privacy standards audited annually.",
+        "icon": "shield-check"
+      },
+      {
+        "name": "ISO 9001 Quality Systems",
+        "description": "Protocols reviewed quarterly for consistency.",
+        "icon": "clipboard-check"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Compare Treatment Paths",
+    "subtitle": "Understand your options before deciding",
+    "comparisons": [
+      {
+        "treatment": "Regenerative Plan",
+        "naturalness": "Autologous + mechanical",
+        "results": "8-12 weeks",
+        "downtime": "None",
+        "cost": "£3,200",
+        "duration": "Sustained with maintenance"
+      },
+      {
+        "treatment": "Collagenase Injections",
+        "naturalness": "Enzymatic drug",
+        "results": "Weeks",
+        "downtime": "Bruising/swelling",
+        "cost": "£8,000+",
+        "duration": "Requires multiple cycles"
+      },
+      {
+        "treatment": "Surgery (Plaque Excision)",
+        "naturalness": "Surgical",
+        "results": "Immediate",
+        "downtime": "4-6 weeks",
+        "cost": "£10k+",
+        "duration": "Permanent but invasive"
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "name": "Michael S.",
+      "age": 49,
+      "treatment": "Regenerative Peyronie’s Plan",
+      "rating": 5,
+      "text": "Curvature dropped from 32° to 11° in three months. Pain disappeared and intimacy is comfortable again. The traction coaching kept me accountable.",
+      "date": "2024-01-22",
+      "verified": true,
+      "image": "https://images.unsplash.com/photo-1504593811423-6dd665756598?w=400&q=80"
+    },
+    {
+      "name": "Stephen K.",
+      "age": 55,
+      "treatment": "Enhanced Plaque Programme",
+      "rating": 5,
+      "text": "I avoided surgery thanks to this plan. The mix of shockwave, PRP, and RestoreX made a visible difference within weeks.",
+      "date": "2023-10-10",
+      "verified": true,
+      "image": "https://images.unsplash.com/photo-1521119989659-a83eee488004?w=400&q=80"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Do I need surgery for Peyronie’s?",
+      "answer": "Most men do not. Our regenerative approach can significantly reduce curvature and pain before surgical options are considered."
+    },
+    {
+      "question": "Is collagenase (Xiaflex) included?",
+      "answer": "We focus on PRP, shockwave, and traction. If collagenase is appropriate, we can refer you to a surgical colleague."
+    },
+    {
+      "question": "How soon can I resume intercourse?",
+      "answer": "Usually within 24 hours of PRP and immediately after shockwave. We provide personalised guidance."
+    },
+    {
+      "question": "Will traction hurt?",
+      "answer": "We teach comfortable usage and gradually increase tension. Most men adapt within a few days."
+    },
+    {
+      "question": "What if my curvature is severe?",
+      "answer": "We work alongside urologists for hybrid plans. Even with >60° curvature, regenerative therapy can improve outcomes pre- or post-surgery."
+    }
+  ],
+  "relatedTreatments": [
+    {
+      "id": "p-shot",
+      "title": "P-Shot® PRP for Men",
+      "description": "Injectable PRP boosts plaque remodelling.",
+      "reason": "Core component of the Peyronie’s plan."
+    },
+    {
+      "id": "shockwave-therapy",
+      "title": "Focused Shockwave Therapy",
+      "description": "Acoustic waves break plaques and improve blood flow.",
+      "reason": "Paired in every curvature protocol."
+    },
+    {
+      "id": "lichen-sclerosis-male",
+      "title": "Lichen Sclerosus Relief",
+      "description": "Manage inflammatory skin conditions that can worsen curvature.",
+      "reason": "Protect tissue health long term."
+    }
+  ],
+  "cta": {
+    "title": "Start Your Straightening Plan",
+    "subtitle": "Book a discreet review with Dr. Abbas today.",
+    "primaryButton": "Book Peyronie’s consultation",
+    "secondaryButton": "Request a call back",
+    "urgency": "Limited programme spaces to maintain doctor time",
+    "guarantee": "Consultation fee credited toward treatment"
+  },
+  "bookingInfo": {
+    "depositRequired": true,
+    "cancellationPolicy": "72 hours’ notice for programme visits",
+    "consultationFee": "£150 (redeemable)",
+    "duration": "45-minute consultation, 60-minute PRP visits"
+  }
+}

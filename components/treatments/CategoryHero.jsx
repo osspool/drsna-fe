@@ -115,14 +115,16 @@ export function CategoryHero({
 
           {/* Description */}
           {data.longDescription && (
-            <motion.p
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: isCategory ? 0.6 : 0.5 }}
-              className={`text-lg ${isCategory ? "md:text-xl text-white/60 max-w-3xl mb-12" : "text-white/60 max-w-2xl mb-10"} mx-auto leading-relaxed`}
+              className={`text-lg ${isCategory ? "md:text-xl text-white/60 mb-12" : "text-white/60  mb-10"} mx-auto leading-relaxed space-y-4`}
             >
-              {data.longDescription}
-            </motion.p>
+              {data.longDescription.split('\n\n').map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </motion.div>
           )}
 
           {/* Stats Row - only for category */}
