@@ -1,0 +1,110 @@
+{
+  "id": "excessive-sweating",
+  "categoryId": "aesthetic-medicine",
+  "subcategoryId": "body",
+  "title": "Excessive Sweating (Hyperhidrosis) Treatment",
+  "shortTitle": "Hyperhidrosis",
+  "tagline": "Stay Dry. Stay Confident.",
+  "description": "Micro-dosed botulinum toxin blocks overactive sweat glands in the underarms, palms, or soles for months of relief.",
+  "longDescription": "If sweat patches or slippery palms impact your day, our GMC doctors deliver targeted micro-injections that switch off the nerve signals responsible for excessive sweating. Treatments take 20 minutes, require no downtime, and keep you dry for up to nine months.",
+  "seo": {
+    "metaTitle": "Excessive Sweating Treatment London | Botox for Hyperhidrosis | Dr. SNA Clinic",
+    "metaDescription": "Stop sweat marks with doctor-led hyperhidrosis injections. Underarm, palm, and sole treatments with results lasting up to 9 months.",
+    "keywords": [
+      "hyperhidrosis london",
+      "excessive sweating treatment",
+      "botox underarm sweat",
+      "stop sweating london"
+    ],
+    "h1": "Hyperhidrosis Treatment in London"
+  },
+  "hero": {
+    "headline": "20 Minutes to Sweat-Free Confidence",
+    "subheadline": "Precision injections that shut down overactive sweat glands for months.",
+    "image": "https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?w=1920&q=80",
+    "backgroundImage": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80",
+    "badge": "Lasts up to 9 months"
+  },
+  "quickStats": {
+    "duration": "20-25 minutes",
+    "anesthesia": "Topical numbing or ice",
+    "downtime": "None",
+    "resultsVisible": "7-10 days",
+    "resultsLast": "6-9 months",
+    "sessions": "One visit",
+    "price": "From £450"
+  },
+  "overview": {
+    "title": "How It Works",
+    "content": "We mark the treatment area, apply numbing, then deliver micro-doses of botulinum toxin just under the skin. The toxin blocks acetylcholine release so sweat glands stay inactive while nerves regenerate over months.",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&q=80",
+    "highlights": [
+      "Suitable for underarms, palms, soles",
+      "Doctor-only injections",
+      "No downtime or lifestyle restrictions",
+      "Repeat 1-2 times per year"
+    ]
+  },
+  "benefits": {
+    "title": "Why Patients Book This Treatment",
+    "items": [
+      {"title": "Dry Clothes & Palms", "description": "No more outfit changes or awkward handshakes."},
+      {"title": "Boosted Confidence", "description": "Perform on stage, in meetings, or on dates worry-free."},
+      {"title": "Fast Appointments", "description": "Pop in during lunch and return to work immediately."}
+    ]
+  },
+  "pricing": {
+    "title": "Transparent Pricing",
+    "singlePrice": {
+      "currentPrice": "£450",
+      "currency": "GBP"
+    },
+    "packages": [
+      {
+        "name": "Underarm Session",
+        "price": "£450",
+        "description": "Both underarms treated in one visit."
+      },
+      {
+        "name": "Palms or Soles",
+        "price": "£500",
+        "description": "Extra dosing for thicker skin."
+      }
+    ],
+    "includes": [
+      "Doctor consultation",
+      "Starch-iodine test (if required)",
+      "Botulinum toxin injections",
+      "Aftercare guide + support"
+    ]
+  },
+  "process": {
+    "title": "Simple Treatment Flow",
+    "steps": [
+      {"number": 1, "title": "Consult", "description": "Review history, medications, and treatment areas."},
+      {"number": 2, "title": "Mark & Numb", "description": "Outline sweat zones and apply numbing."},
+      {"number": 3, "title": "Micro-Injections", "description": "Deliver precise toxin grid in under 15 minutes."},
+      {"number": 4, "title": "Stay Dry", "description": "Resume life immediately; results appear within a week."}
+    ]
+  },
+  "faq": [
+    {
+      "question": "Does it hurt?",
+      "answer": "We use numbing cream, ice packs, and vibration distraction. Discomfort is brief."
+    },
+    {
+      "question": "Will I sweat elsewhere?",
+      "answer": "No—your body has plenty of other sweat glands to regulate temperature naturally."
+    },
+    {
+      "question": "How often do I need it?",
+      "answer": "Most clients repeat every 6-9 months once sweating slowly returns."
+    }
+  ],
+  "cta": {
+    "title": "Ready to Stay Dry?",
+    "subtitle": "Book a hyperhidrosis consultation today.",
+    "primaryButton": "Book sweat-free session",
+    "secondaryButton": "Ask a question"
+  }
+}

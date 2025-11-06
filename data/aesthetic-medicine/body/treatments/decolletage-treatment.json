@@ -1,0 +1,105 @@
+{
+  "id": "decolletage-treatment",
+  "categoryId": "aesthetic-medicine",
+  "subcategoryId": "body",
+  "title": "Décolletage Rejuvenation",
+  "shortTitle": "Décolletage",
+  "tagline": "Smooth, Luminous Chest Skin",
+  "description": "Polynucleotides, skin boosters, and LED therapy reverse crepey texture, sun spots, and fine lines across the chest.",
+  "longDescription": "Your chest is often exposed to sun and fragrance but rarely gets the same care as your face. We combine injectable hydrators, PN-HPT biostimulants, and LED light to thicken dermal tissue, fade pigmentation, and restore a glassy sheen—perfect for open-neck outfits and bridal looks.",
+  "seo": {
+    "metaTitle": "Décolletage Treatment London | Chest Skin Rejuvenation | Dr. SNA",
+    "metaDescription": "Revive crepey chest skin with polynucleotides, skin boosters, and LED therapy. Minimal downtime, glow in 2-4 weeks.",
+    "keywords": [
+      "decolletage treatment london",
+      "chest skin rejuvenation",
+      "polynucleotide chest",
+      "skin booster london"
+    ],
+    "h1": "Décolletage Rejuvenation in London"
+  },
+  "hero": {
+    "headline": "Turn the Spotlight Back on Your Décolletage",
+    "subheadline": "Hydrating injectables and LED calm pigmentation and smooth lines for a photo-ready chest.",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80",
+    "backgroundImage": "https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?w=1920&q=80",
+    "badge": "Glow in 2-4 weeks"
+  },
+  "quickStats": {
+    "duration": "40 minutes",
+    "anesthesia": "Topical numbing",
+    "downtime": "Pinpoint marks 24 hrs",
+    "resultsVisible": "2-4 weeks",
+    "resultsLast": "12 months",
+    "sessions": "Course of 3 recommended",
+    "price": "From £395/session"
+  },
+  "overview": {
+    "title": "What’s Included",
+    "content": "Each visit combines micro-droplet injections of polynucleotides or hyaluronic acid boosters with LED therapy. This hydrates, repairs UV damage, and pushes collagen back to the surface for a satin finish.",
+    "image": "https://images.unsplash.com/photo-1521119989659-a83eee488004?w=1200&q=80",
+    "highlights": [
+      "Targets crepey texture and sun spots",
+      "Pairs with microneedling if needed",
+      "Custom homecare to maintain results"
+    ]
+  },
+  "benefits": {
+    "title": "Why Patients Love It",
+    "items": [
+      {"title": "Even Tone", "description": "Fade pigmentation and redness."},
+      {"title": "Plush Hydration", "description": "Skin boosters lock in glow for months."},
+      {"title": "Minimal Downtime", "description": "Tiny bumps settle within a day."}
+    ]
+  },
+  "pricing": {
+    "title": "Décolletage Pricing",
+    "singlePrice": {
+      "currentPrice": "£395",
+      "currency": "GBP"
+    },
+    "packages": [
+      {
+        "name": "Glow Trio",
+        "price": "£1,050",
+        "description": "3-session course + LED",
+        "savings": "Save £135"
+      },
+      {
+        "name": "Bridal Radiance",
+        "price": "£1,450",
+        "description": "3 boosters + microneedling + home kit"
+      }
+    ],
+    "includes": [
+      "Consultation & patch assessment",
+      "PN-HPT or HA booster",
+      "LED therapy",
+      "Homecare guidance"
+    ]
+  },
+  "process": {
+    "title": "How It Works",
+    "steps": [
+      {"number": 1, "title": "Consult & Plan", "description": "Assess skin density, sun damage, and event timelines."},
+      {"number": 2, "title": "Treatment Sessions", "description": "Micro injections + LED every 3-4 weeks."},
+      {"number": 3, "title": "Maintain", "description": "Top up every 9-12 months or before occasions."}
+    ]
+  },
+  "faq": [
+    {
+      "question": "Will it help sun spots?",
+      "answer": "Yes—injectables replenish hydration while LED and skincare fade pigmentation."
+    },
+    {
+      "question": "Does it hurt?",
+      "answer": "Topical numbing keeps sensations mild. Treatments are quick and well tolerated."
+    }
+  ],
+  "cta": {
+    "title": "Show Off Your Neckline",
+    "subtitle": "Book a décolletage glow session today.",
+    "primaryButton": "Book décolletage consult",
+    "secondaryButton": "Ask about bridal plans"
+  }
+}

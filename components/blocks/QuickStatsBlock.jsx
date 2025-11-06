@@ -39,6 +39,7 @@ export function QuickStatsBlock({ data }) {
     <Section
       background="default"
       padding="default"
+      ripple={false}
       className="relative overflow-hidden !py-16 sm:!py-24 bg-gradient-to-b from-[#fefcf7] via-[#fffaf2] to-[#f7efe7]"
     >
       <div className="pointer-events-none absolute inset-0 opacity-80">

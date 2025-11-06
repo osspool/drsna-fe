@@ -55,7 +55,7 @@ export function Section({
 
   if (ripple) {
     return (
-      <section className="">
+      <section className="relative overflow-hidden">
         <BackgroundRippleEffect />
         {content}
       </section>

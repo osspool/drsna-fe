@@ -2,28 +2,30 @@
   "id": "anti-wrinkle",
   "categoryId": "aesthetic-medicine",
   "subcategoryId": "face",
-  "title": "Anti-Wrinkle Injections",
-  "alternativeTitles": ["Botox", "Botulinum Toxin", "Muscle Relaxing Injections", "Wrinkle Relaxers"],
+  "title": "Anti-Wrinkle Treatment London",
+  "alternativeTitles": ["Botox London", "Anti Wrinkle Injections", "Botulinum Toxin", "Muscle Relaxing Injections", "Wrinkle Relaxers"],
   "shortTitle": "Anti-Wrinkle",
-  "tagline": "Turn Back Time, Naturally",
-  "description": "FDA-approved muscle relaxing injections that smooth dynamic wrinkles and prevent new lines from forming",
-  "longDescription": "Anti-wrinkle injections are the world's most popular non-surgical cosmetic treatment. Using purified botulinum toxin type A, this treatment temporarily relaxes specific facial muscles responsible for expression lines, resulting in smoother, more youthful-looking skin while maintaining natural facial expressions.",
+  "tagline": "Embrace Your Radiant Skin",
+  "description": "Professional anti-wrinkle injections in London that smooth wrinkles, restore skin elasticity, and promote a more youthful appearance",
+  "longDescription": "Welcome to Dr SNA Clinic, your haven for timeless beauty. At our clinic, we're not just about anti-wrinkle injections—we're about crafting a story of beauty that's uniquely yours. Our treatments target wrinkles and fine lines, making your skin feel as young as you are. Each treatment is your personal masterpiece, delivered by Dr. Abbas with precision and care.",
 
   "seo": {
-    "metaTitle": "Anti-Wrinkle Injections London | Botox Treatment | Dr. SNA Clinic",
-    "metaDescription": "Expert anti-wrinkle injections in London. Smooth forehead lines, crow's feet & frown lines. Natural results from £195. Book your consultation today.",
+    "metaTitle": "Anti Wrinkle Treatment London | Wrinkle Treatments Reduction Marylebone | Dr. SNA Clinic",
+    "metaDescription": "Expert anti-wrinkle treatment London at Marylebone. Smooth forehead lines, crow's feet & frown lines. Natural results from £250. Book your consultation today.",
     "keywords": [
+      "anti wrinkle treatment London",
       "anti wrinkle injections London",
       "Botox London",
-      "wrinkle treatment",
+      "wrinkle treatment reduction marylebone",
       "forehead lines",
       "crow's feet treatment",
       "frown lines",
       "muscle relaxing injections",
       "non-surgical wrinkle treatment",
-      "Botox Marylebone"
+      "Botox Marylebone",
+      "anti aging treatment London"
     ],
-    "h1": "Anti-Wrinkle Injections in London | Natural, Expert Results",
+    "h1": "Anti Wrinkle Treatment London | Wrinkle Treatments Reduction Marylebone",
     "canonicalUrl": "/treatments/aesthetic-medicine/face/anti-wrinkle",
     "schema": {
       "type": "MedicalProcedure",
@@ -33,8 +35,8 @@
   },
 
   "hero": {
-    "headline": "Smooth Away Years, Keep Your Expression",
-    "subheadline": "Expert anti-wrinkle treatments for naturally refreshed, youthful skin",
+    "headline": "Anti Wrinkle Treatment London",
+    "subheadline": "Turn back time naturally with expert anti-wrinkle treatments at our Marylebone clinic",
     "image": "https://images.unsplash.com/photo-1532413992378-f169ac26fff0?w=1920&q=80",
     "backgroundImage": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=1920&q=80",
     "video": null,
@@ -42,20 +44,21 @@
   },
 
   "quickStats": {
-    "duration": "15-30 minutes",
+    "duration": "30 minutes",
     "anesthesia": "None required",
-    "downtime": "None",
-    "resultsVisible": "3-14 days",
-    "resultsLast": "3-6 months",
+    "downtime": "None - Immediately return to activities",
+    "resultsVisible": "Up to a week for activation",
+    "resultsLast": "Up to 6 months",
     "painLevel": "Minimal",
-    "price": "From £195",
-    "sessions": "Single treatment"
+    "price": "From £250",
+    "sessions": "One repeated 1-2 times per year"
   },
 
   "overview": {
-    "title": "What Are Anti-Wrinkle Injections?",
-    "content": "Anti-wrinkle injections use a purified protein (botulinum toxin type A) to temporarily relax specific facial muscles. When these muscles relax, the overlying skin becomes smooth, reducing the appearance of wrinkles and fine lines. This treatment is particularly effective for expression lines—wrinkles that form when you smile, frown, or squint.\n\nAt Dr. SNA Clinic, we use premium, FDA-approved products and advanced injection techniques to ensure natural-looking results that enhance your appearance without compromising facial expression.",
-    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1200&q=80",
+    "title": "What exactly are Anti Wrinkle Treatments London?",
+    "content": "Let's talk about those little lines that tell stories. Our anti-wrinkle treatments and injections are like magic – they target wrinkles and fine lines, making your skin feel as young as you are. Here at Dr SNA Clinic, we make sure each treatment is your personal masterpiece.\n\nAnti-wrinkle treatment London refers to various procedures and products designed to reduce the appearance of wrinkles and fine lines on the skin, particularly on the face. It aims to smooth out wrinkles, restore skin elasticity, and promote a more youthful appearance for wrinkle treatments reduction marylebone. Life happens, and it shows on our faces. But worry not! Dr SNA Clinic is all about embracing your natural beauty. Whether it's age, sun, or those expressive facial movements, our treatments bring back that refreshed, rejuvenated glow.",
+    
+    "image": "/images/treatment/aesthetic-medicine/anti-wrinkle/anti-wrinkle-3.webp",
     "highlights": [
       "FDA-approved and clinically proven safe",
       "Quick 15-minute 'lunchtime' treatment",
@@ -67,109 +70,97 @@
   },
 
   "treatsAreas": {
-    "title": "Treatment Areas",
-    "subtitle": "We can address wrinkles and lines across the upper and mid-face",
+    "title": "Where can we sprinkle the magic for wrinkle treatments reduction marylebone?",
+    "subtitle": "Anti-Wrinkle Injections for Upper Face and Lower Face",
     "areas": [
       {
         "name": "Forehead Lines",
-        "description": "Horizontal lines across the forehead caused by raising eyebrows",
-        "image": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&q=80",
-        "price": "From £195",
+        "description": "Horizontal lines across the forehead - smooth away wrinkles on your upper face",
+        "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1200&q=80",
         "icon": "minus"
       },
       {
         "name": "Frown Lines (11's)",
         "description": "Vertical lines between eyebrows that create an angry or tired appearance",
         "image": "https://images.unsplash.com/photo-1524502397800-2eeaad7c3fe5?w=600&q=80",
-        "price": "From £195",
         "icon": "frown"
       },
       {
         "name": "Crow's Feet",
         "description": "Fine lines radiating from the outer corners of eyes when smiling",
         "image": "https://images.unsplash.com/photo-1618329093459-829e70da6bf2?w=600&q=80",
-        "price": "From £195",
         "icon": "eye"
       },
       {
-        "name": "Bunny Lines",
-        "description": "Wrinkles on the sides of the nose when scrunching",
+        "name": "Bunny Lines on Nose / Turn up mouth corners",
+        "description": "Additional treatment offered with other Upper Face Treatments",
         "image": "https://images.unsplash.com/photo-1595182494096-3a8e6460f7a0?w=600&q=80",
-        "price": "From £150",
         "icon": "nose"
       },
       {
-        "name": "Lip Flip",
-        "description": "Subtle eversion of upper lip for a fuller appearance without filler",
-        "image": "https://images.unsplash.com/photo-1602192509154-0b900ee1f851?w=600&q=80",
-        "price": "From £95",
-        "icon": "smile"
-      },
-      {
-        "name": "Gummy Smile",
-        "description": "Reduce excessive gum display when smiling",
-        "image": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80",
-        "price": "From £150",
-        "icon": "smile-plus"
-      },
-      {
-        "name": "Chin Dimpling",
-        "description": "Smooth pebbled appearance of the chin",
+        "name": "Chin Treatment",
+        "description": "Smooth pebbled appearance and enhance chin contour",
         "image": "https://images.unsplash.com/photo-1600594216850-fd2d9fe4a904?w=600&q=80",
-        "price": "From £95",
         "icon": "circle-dot"
+      },
+      {
+        "name": "Hyperhidrosis - Armpit (80U)",
+        "description": "Excessive sweating treatment for underarms",
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
+        "icon": "droplet"
       }
     ]
   },
 
   "benefits": {
-    "title": "Why Choose Anti-Wrinkle Injections?",
-    "subtitle": "The benefits go beyond just smoother skin",
+    "title": "Why Choose Anti-Wrinkle Treatment at Dr SNA Clinic?",
+    "subtitle": "Experience the difference of personalized care and expert treatment",
+    "layout": "grid-3",
     "items": [
       {
-        "title": "Immediate Wrinkle Reduction",
-        "description": "Smooth expression lines and prevent new wrinkles from forming with regular treatments",
+        "title": "Smoother Skin, Reduced Dynamic Wrinkle Formation",
+        "description": "Our treatments effectively smooth expression lines and prevent new wrinkles from forming, giving you naturally youthful skin",
         "icon": "sparkles"
       },
       {
         "title": "Natural-Looking Results",
-        "description": "Maintain your ability to express emotions naturally—no frozen look",
+        "description": "Maintain your ability to express emotions naturally. No frozen look—just refreshed, radiant skin that feels as young as you are",
         "icon": "smile"
       },
       {
-        "title": "Quick & Convenient",
-        "description": "15-minute treatment with no downtime. Perfect for busy lifestyles",
+        "title": "Quick Treatment, No Downtime",
+        "description": "30-minute treatment with immediate return to activities. Back to work immediately—perfect for your busy lifestyle",
         "icon": "clock"
       },
       {
-        "title": "Preventative Anti-Aging",
-        "description": "Regular treatments prevent deep wrinkles from forming as you age",
-        "icon": "shield-check"
-      },
-      {
-        "title": "Proven Safety Record",
-        "description": "FDA-approved with 30+ years of clinical use and research",
+        "title": "Expert Care by Dr. Abbas",
+        "description": "Highly qualified doctor with extensive experience. Each treatment is your personal masterpiece crafted with precision",
         "icon": "award"
       },
       {
-        "title": "Versatile Treatment",
-        "description": "Also treats excessive sweating, teeth grinding, and migraines",
+        "title": "Proven Safety & Quality",
+        "description": "FDA-approved products with 30+ years of clinical use. Risk of side effects is minimal when performed by qualified practitioners",
+        "icon": "shield-check"
+      },
+      {
+        "title": "Comprehensive Treatment Options",
+        "description": "Upper face and lower face treatments available. Also effective for excessive sweating (hyperhidrosis)",
         "icon": "settings"
       }
     ]
   },
 
   "process": {
-    "title": "What to Expect: Your Treatment Journey",
-    "subtitle": "From consultation to beautiful results",
+    "title": "Your Anti Wrinkle Treatment London Consultation: What To Expect",
+    "subtitle": "From consultation to beautiful results at our Marylebone clinic",
     "steps": [
       {
         "number": 1,
-        "title": "Consultation",
-        "description": "We discuss your concerns, assess your facial anatomy, and create a personalized treatment plan. We'll explain exactly what to expect and answer all your questions.",
+        "title": "Consultation with Dr. Abbas",
+        "description": "During your Anti Wrinkle Treatment consultation, you'll have a one-on-one conversation with our qualified Dr. Abbas who will listen to your concerns. He will assess your skin, evaluate your medical history, and current medications. The consultation ensures that you are fully informed and comfortable with the process, ensuring the best possible results.",
         "duration": "15-20 minutes",
         "icon": "message-circle",
-        "tips": ["Bring photos of how you looked younger", "Mention any previous treatments", "Discuss your aesthetic goals openly"]
+        "tips": ["Discuss your aesthetic concerns openly", "Share medical history and current medications", "Ask any questions about the treatment"]
       },
       {
         "number": 2,
@@ -206,35 +197,54 @@
     ]
   },
 
-  "beforeAfter": {
-    "enabled": true,
-    "title": "Real Results from Real Patients",
-    "subtitle": "See the natural, rejuvenating effects of expert anti-wrinkle treatment",
-    "disclaimer": "Individual results may vary. Photos shared with patient consent.",
-    "gallery": [
+  "gallery": {
+    "title": "Treatment Gallery",
+    "subtitle": "See our clinic and treatment environment",
+    "images": [
       {
-        "id": "before-after-1",
-        "title": "Forehead Lines",
-        "before": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
-        "after": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=800&q=80",
-        "description": "2 weeks after treatment",
-        "area": "Forehead"
+        "src": "/images/treatment/aesthetic-medicine/anti-wrinkle/anti-wrinkle-1.webp",
+        "alt": "Anti-Wrinkle Treatment at Dr SNA Clinic London",
+        "title": "Professional Treatment Environment",
+        "caption": "State-of-the-art clinic in Marylebone"
       },
       {
-        "id": "before-after-2",
-        "title": "Crow's Feet",
-        "before": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=800&q=80",
-        "after": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=800&q=80",
-        "description": "10 days after treatment",
-        "area": "Eyes"
+        "src": "/images/treatment/aesthetic-medicine/anti-wrinkle/anti-wrinkle-2.webp",
+        "alt": "Anti-Wrinkle Injection Procedure",
+        "title": "Expert Precision",
+        "caption": "Dr. Abbas performing anti-wrinkle treatment"
+      },
+      {
+        "src": "/images/treatment/aesthetic-medicine/anti-wrinkle/anti-wrinkle-3.webp",
+        "alt": "Anti-Wrinkle Results London",
+        "title": "Natural Results",
+        "caption": "Smooth, youthful appearance"
+      },
+      {
+        "src": "/images/treatment/aesthetic-medicine/anti-wrinkle/anti-wrinkle-4.webp",
+        "alt": "Dr SNA Clinic Consultation",
+        "title": "Consultation Process",
+        "caption": "Personalized treatment planning"
       }
-    ]
+    ],
+    "columns": 4
   },
 
   "faq": [
     {
+      "question": "What sets Dr SNA Clinic apart from other beauty clinics?",
+      "answer": "At Dr SNA Clinic, our distinction lies in our commitment to personalized care, innovative treatments, and the expertise of Dr. Abbas. We prioritize your unique journey to beauty and well-being, ensuring a transformative and satisfying experience. We're located at 48 Wimpole Street, Marylebone, London and provide professional, medically-led treatments."
+    },
+    {
+      "question": "How do I book a consultation?",
+      "answer": "Booking a consultation is easy! Simply give us a call at +44 7955836986, or use our online booking form. Our friendly team will guide you through the process for wrinkle treatments reduction marylebone. The consultation fee is £100 which can be offset against your treatment plan."
+    },
+    {
+      "question": "What is the downtime for anti-wrinkle treatments?",
+      "answer": "Anti-wrinkle treatment downtime is minimal. Most patients resume their daily activities immediately after the procedure. You can return to work immediately. Our team will provide detailed post-treatment care instructions during your consultation. It takes up to a week for the treatment to fully activate, with results lasting up to 6 months."
+    },
+    {
       "question": "Does it hurt?",
-      "answer": "Most clients describe the sensation as a minor pinch or mosquito bite. We use ultra-fine needles and advanced techniques to minimize discomfort. The entire treatment takes just 10-15 minutes, making any discomfort very brief. No anesthetic is typically required."
+      "answer": "Most clients describe the sensation as a minor pinch or mosquito bite. We use ultra-fine needles and advanced techniques to minimize discomfort. The entire treatment takes around 30 minutes, making any discomfort very brief. No anesthetic is typically required."
     },
     {
       "question": "Will I look frozen or unnatural?",
@@ -244,29 +254,10 @@
       "question": "How long until I see results?",
       "answer": "Results appear gradually over 3-14 days, with full effects visible by 2 weeks. Some people notice initial softening within 3-4 days, while others take the full 2 weeks. We offer a complimentary review at 2 weeks to assess results and make any adjustments."
     },
-    {
-      "question": "How long do results last?",
-      "answer": "Results typically last 3-6 months, depending on factors like metabolism, muscle strength, and the area treated. Forehead and crow's feet tend to last 4-5 months, while stronger muscles (like frown lines) may require more frequent treatment. With regular maintenance, results can last longer over time."
-    },
-    {
-      "question": "Are there any side effects?",
-      "answer": "Common side effects are minor and temporary: slight redness, mild swelling, or small bruises at injection sites, usually resolving within hours to a few days. Headache occurs in 1-2% of patients. Serious side effects are rare when performed by qualified practitioners. We'll discuss all risks during consultation."
-    },
-    {
-      "question": "What should I avoid after treatment?",
-      "answer": "For 24 hours: avoid lying down for 4 hours, intense exercise, alcohol, facials, massages, or rubbing treated areas. Avoid blood-thinning supplements (like fish oil, vitamin E) for a week before treatment to minimize bruising. We provide detailed aftercare instructions."
-    },
-    {
-      "question": "When is the best age to start?",
-      "answer": "There's no single 'right' age. Many people start preventatively in their late 20s to early 30s when fine lines first appear. Others begin later when wrinkles are more established. The best time is when you notice lines that bother you. We treat patients from their mid-20s to 70s+."
-    },
-    {
-      "question": "Can men have this treatment?",
-      "answer": "Absolutely! Anti-wrinkle injections are increasingly popular with men ('Brotox'). Men often require slightly higher doses due to stronger facial muscles. We tailor treatments to maintain masculine features while reducing lines."
-    },
+  
     {
       "question": "How much does it cost?",
-      "answer": "Pricing depends on the areas treated and amount of product required. Single area treatments start from £195, with package deals available for multiple areas. We'll provide an exact quote during your consultation. Many clients treat 2-3 areas in one session."
+      "answer": "Pricing depends on the areas treated and amount of product required. Single area treatments start from £250, with package deals available for multiple areas (2 areas £325, 3 areas £400). There is a £100 consultation fee which can be offset against your treatment plan. We'll provide an exact quote during your consultation. Many clients treat 2-3 areas in one session."
     },
     {
       "question": "Is it safe during pregnancy or breastfeeding?",
@@ -283,51 +274,79 @@
   ],
 
   "pricing": {
-    "title": "Transparent Pricing",
-    "subtitle": "No hidden fees, no surprises",
-    "disclaimer": "Final pricing determined during consultation based on your individual needs",
+    "title": "Anti Wrinkle Treatment Cost London",
+    "subtitle": "Transparent pricing with no hidden fees",
+    "disclaimer": "Consultation fee of £100 can be offset against treatment plan",
     "packages": [
       {
-        "name": "Single Area",
-        "price": "£195",
-        "description": "One treatment area",
+        "name": "Consultation",
+        "price": "£100",
+        "description": "Initial consultation (can be offset against treatment plan)",
+        "areas": "Comprehensive assessment and treatment planning",
+        "popular": false
+      },
+      {
+        "name": "1 Area",
+        "price": "£250",
+        "description": "Single treatment area",
         "areas": "Forehead OR Frown Lines OR Crow's Feet",
         "popular": false
       },
       {
-        "name": "Two Areas",
-        "price": "£295",
+        "name": "2 Areas",
+        "price": "£325",
         "description": "Combination treatment",
         "areas": "Any two areas",
         "popular": true,
-        "savings": "Save £95"
+        "savings": "Save £175"
       },
       {
-        "name": "Three Areas",
-        "price": "£375",
+        "name": "3 Areas",
+        "price": "£400",
         "description": "Full upper face treatment",
         "areas": "Forehead + Frown Lines + Crow's Feet",
         "popular": true,
-        "savings": "Save £210"
+        "savings": "Save £350"
       },
       {
-        "name": "Add-On Areas",
-        "price": "From £95",
-        "description": "Additional areas",
-        "areas": "Lip Flip, Bunny Lines, Chin, etc.",
+        "name": "Bunny Lines / Turn up mouth corners",
+        "price": "£50",
+        "description": "Add-on treatment",
+        "areas": "Offered as additional with other Upper Face Treatments",
+        "popular": false
+      },
+      {
+        "name": "Gummy Smile",
+        "price": "£100",
+        "description": "Smile enhancement",
+        "areas": "Reduce excessive gum display",
+        "popular": false
+      },
+      {
+        "name": "Chin",
+        "price": "£100",
+        "description": "Chin smoothing",
+        "areas": "Smooth chin dimpling and contour",
+        "popular": false
+      },
+      {
+        "name": "Hyperhidrosis - Armpit (80U)",
+        "price": "£450",
+        "description": "Excessive sweating treatment",
+        "areas": "Underarm hyperhidrosis treatment",
         "popular": false
       }
     ],
     "includes": [
-      "Expert consultation",
-      "Premium FDA-approved product",
-      "Precision injection technique",
+      "Expert medical consultation",
+      "Premium FDA-approved products",
+      "Precision injection technique by Dr. Abbas",
       "Detailed aftercare instructions",
-      "2-week complimentary review"
+      "Professional clinical environment"
     ],
     "financing": {
       "available": true,
-      "buttonText": "0% Finance Available"
+      "buttonText": "Payment Plans Available"
     }
   },
 
@@ -385,86 +404,41 @@
     ]
   },
 
-  "testimonials": [
-    {
-      "name": "Emma R.",
-      "age": 42,
-      "treatment": "Forehead & Crow's Feet",
-      "rating": 5,
-      "text": "Dr. Abbas is an absolute artist! I was nervous about looking frozen, but the results are incredibly natural. I just look like a well-rested, slightly younger version of myself. My husband didn't even notice I'd had anything done—he just said I looked radiant!",
-      "date": "March 2024",
-      "verified": true,
-      "image": null
-    },
-    {
-      "name": "James M.",
-      "age": 38,
-      "treatment": "Frown Lines",
-      "rating": 5,
-      "text": "I was skeptical about 'Brotox' but I'm so glad I tried it. People kept asking if I was angry or tired when I wasn't. Now my face matches how I actually feel. The treatment was quick, painless, and completely discreet. None of my colleagues noticed!",
-      "date": "February 2024",
-      "verified": true,
-      "image": null
-    },
-    {
-      "name": "Sarah L.",
-      "age": 35,
-      "treatment": "Three Areas",
-      "rating": 5,
-      "text": "I've been getting anti-wrinkle injections at Dr. SNA Clinic for 3 years now. The consistency is incredible—I know exactly what to expect every time. Dr. Abbas really understands facial anatomy and always achieves beautiful, natural results.",
-      "date": "January 2024",
-      "verified": true,
-      "image": null
-    }
-  ],
-
-  "comparison": {
-    "title": "Why Dr. SNA Clinic Stands Out",
-    "subtitle": "Not all anti-wrinkle treatments are created equal",
-    "competitors": [
+  "videoTestimonials": {
+    "enabled": true,
+    "title": "Hear from our happy clients!",
+    "subtitle": "Real patients sharing their experience at Dr SNA Clinic",
+    "videos": [
       {
-        "feature": "Practitioner Qualification",
-        "us": "GMC-registered doctors only",
-        "others": "Often nurses or non-medical",
-        "highlight": true
+        "url": "https://youtu.be/oUiAIXvUmgg",
+        "thumbnail": "https://img.youtube.com/vi/oUiAIXvUmgg/maxresdefault.jpg",
+        "title": "Patient Testimonial - Anti-Wrinkle Treatment",
+        "description": "Patient shares their experience with anti-wrinkle injections",
+        "duration": null
       },
       {
-        "feature": "Product Quality",
-        "us": "Premium FDA-approved brands",
-        "others": "May use cheaper alternatives",
-        "highlight": true
+        "url": "https://youtu.be/1evUXYKrunc",
+        "thumbnail": "https://img.youtube.com/vi/1evUXYKrunc/maxresdefault.jpg",
+        "title": "Anti-Wrinkle Results - Patient Review",
+        "description": "Real results and patient satisfaction",
+        "duration": null
       },
       {
-        "feature": "Technique",
-        "us": "Advanced micro-dosing for natural results",
-        "others": "Standard dosing protocols",
-        "highlight": true
+        "url": "https://youtu.be/yVhRWnPBK0Q",
+        "thumbnail": "https://img.youtube.com/vi/yVhRWnPBK0Q/maxresdefault.jpg",
+        "title": "Dr SNA Clinic Experience",
+        "description": "Patient testimonial about treatment experience",
+        "duration": null
       },
       {
-        "feature": "Consultation",
-        "us": "Complimentary, comprehensive",
-        "others": "Often rushed or charged",
-        "highlight": false
-      },
-      {
-        "feature": "Follow-Up",
-        "us": "Free 2-week review included",
-        "others": "Additional charge or not offered",
-        "highlight": true
-      },
-      {
-        "feature": "Clinic Standards",
-        "us": "CQC registered medical clinic",
-        "others": "Variable standards",
-        "highlight": true
-      },
-      {
-        "feature": "Price",
-        "us": "From £195 per area",
-        "others": "Variable",
-        "highlight": false
+        "url": "https://youtu.be/FEnqVbX7DRM",
+        "thumbnail": "https://img.youtube.com/vi/FEnqVbX7DRM/maxresdefault.jpg",
+        "title": "Anti-Wrinkle Treatment Review",
+        "description": "Patient review of anti-wrinkle treatment results",
+        "duration": null
       }
-    ]
+    ],
+    "layout": "grid"
   },
 
   "relatedTreatments": [
@@ -488,34 +462,21 @@
     }
   ],
 
-  "video": {
-    "enabled": false,
-    "title": "Watch: What to Expect During Treatment",
-    "embedUrl": null,
-    "thumbnail": null,
-    "duration": null
-  },
-
-  "instagram": {
-    "enabled": true,
-    "title": "See Our Work on Instagram",
-    "handle": "@drsnaclinic",
-    "hashtags": ["#AntiWrinkle", "#BotoxLondon", "#NaturalResults"]
-  },
-
+ 
+  
   "cta": {
-    "title": "Ready to Look As Young As You Feel?",
-    "subtitle": "Book your complimentary consultation with Dr. Abbas today",
-    "primaryButton": "Book Consultation",
-    "secondaryButton": "Ask a Question",
-    "urgency": "Limited appointments available this month",
-    "guarantee": "Complimentary 2-week review included with all treatments"
+    "title": "Ready to Embrace Your Radiant Skin?",
+    "subtitle": "Book your consultation with Dr. Abbas at our Marylebone clinic today",
+    "primaryButton": "Book Your Appointment Now",
+    "secondaryButton": "Request a Callback",
+    "urgency": "Transform your appearance with expert anti-wrinkle treatment",
+    "guarantee": "Professional care from GMC-registered doctor with 48 Wimpole Street, Marylebone location"
   },
 
   "bookingInfo": {
     "depositRequired": false,
     "cancellationPolicy": "24 hours notice required",
-    "consultationFee": "Free",
-    "duration": "30-45 minutes total (including consultation)"
+    "consultationFee": "£100 (can be offset against treatment plan)",
+    "duration": "30 minutes per session"
   }
 }

@@ -20,7 +20,7 @@ export function OverviewBlock({ data }) {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-dark-brown mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-gold mb-6">
               {title}
             </h2>
             

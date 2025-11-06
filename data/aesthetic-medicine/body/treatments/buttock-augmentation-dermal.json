@@ -1,0 +1,127 @@
+{
+  "id": "buttock-augmentation-dermal",
+  "categoryId": "aesthetic-medicine",
+  "subcategoryId": "body",
+  "title": "Hyaluronic Acid Buttock Fillers",
+  "shortTitle": "HA Buttock Fillers",
+  "tagline": "Instant Lift, Adjustable Volume",
+  "description": "High-density HA fillers add immediate projection and shape to the buttocks or hips with precise cannula placement.",
+  "longDescription": "For clients seeking instant transformation, Dr. SNA uses premium body-formulated hyaluronic acid fillers to lift hip dips, define the upper pole, and smooth contour irregularities. Unlike implants, volume is sculpted layer by layer and can be refined or dissolved if preferences change.",
+  "seo": {
+    "metaTitle": "Dermal Filler Buttock Augmentation London | Instant Non-Surgical BBL | Dr. SNA",
+    "metaDescription": "Achieve fuller curves immediately with high-density hyaluronic acid buttock fillers. Doctor-only injections, custom mapping, adjustable volume.",
+    "keywords": [
+      "buttock filler london",
+      "dermal filler bbl",
+      "hip dip filler",
+      "non surgical butt lift"
+    ],
+    "h1": "Dermal Filler Buttock Augmentation in London"
+  },
+  "hero": {
+    "headline": "Instant Curves, Tailored to You",
+    "subheadline": "Premium HA body fillers create projection and shape you see right away.",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80",
+    "backgroundImage": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1920&q=80",
+    "badge": "Adjustable volume"
+  },
+  "quickStats": {
+    "duration": "90 minutes",
+    "anesthesia": "Local anaesthetic + vibration",
+    "downtime": "Bruising up to 7 days",
+    "resultsVisible": "Immediate",
+    "resultsLast": "12-18 months",
+    "sessions": "Single visit",
+    "price": "From £2,200"
+  },
+  "overview": {
+    "title": "What to Expect",
+    "content": "After 3D mapping we inject HA filler using blunt cannulas to avoid vessels. Volume is layered to sculpt upper, mid, and lower poles for symmetry. Because filler is hydrophilic, results remain soft and natural to the touch.",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80",
+    "highlights": [
+      "Instant results",
+      "Reversible with hyaluronidase",
+      "Perfect for special events",
+      "Custom volume per region"
+    ]
+  },
+  "benefits": {
+    "title": "Why Choose HA Fillers",
+    "items": [
+      {
+        "title": "On-the-spot sculpting",
+        "description": "See curves build in the mirror and tweak as we go."
+      },
+      {
+        "title": "Fully reversible",
+        "description": "Hyaluronidase can dissolve filler if preferences change."
+      },
+      {
+        "title": "Minimal downtime",
+        "description": "Return to desk work the next day; gym in 7 days."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "HA Buttock Filler Pricing",
+    "singlePrice": {
+      "currentPrice": "£2,200",
+      "currency": "GBP"
+    },
+    "packages": [
+      {
+        "name": "Contour Starter",
+        "price": "£2,200",
+        "description": "4 syringes for subtle hip dip correction."
+      },
+      {
+        "name": "Volume Upgrade",
+        "price": "£3,600",
+        "description": "8 syringes for full projection.",
+        "savings": "Save £400"
+      }
+    ],
+    "includes": [
+      "Consultation & 3D imaging",
+      "Premium HA body filler",
+      "Sterile cannulas + comfort protocol",
+      "Aftercare check at 4 weeks"
+    ]
+  },
+  "process": {
+    "title": "Simple Three-Step Journey",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Consult & Design",
+        "description": "Assess proportions, choose desired curves."
+      },
+      {
+        "number": 2,
+        "title": "Injection Session",
+        "description": "Layered filler placement with immediate feedback."
+      },
+      {
+        "number": 3,
+        "title": "Review",
+        "description": "Check-in after swelling settles; adjust if needed."
+      }
+    ]
+  },
+  "faq": [
+    {
+      "question": "How much filler do I need?",
+      "answer": "Ranges from 4 to 12 syringes depending on volume goals. We create a plan and can stage sessions."
+    },
+    {
+      "question": "Is it safe?",
+      "answer": "We use cannulas, aspirate frequently, and keep hyaluronidase on hand for total control."
+    }
+  ],
+  "cta": {
+    "title": "See Your Curves Today",
+    "subtitle": "Book a dermal filler buttock consultation with Dr. SNA.",
+    "primaryButton": "Book filler consult",
+    "secondaryButton": "Chat with patient advisor"
+  }
+}

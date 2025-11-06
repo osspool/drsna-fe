@@ -1,0 +1,485 @@
+{
+  "id": "lichen-sclerosis-female",
+  "categoryId": "intimate-health",
+  "subcategoryId": "female",
+  "title": "Female Lichen Sclerosus Relief Programme",
+  "alternativeTitles": [
+    "Vulvar Lichen Sclerosus Treatment",
+    "PRP for Lichen Sclerosus",
+    "Vulval Dermatology Care",
+    "LS Regenerative Therapy"
+  ],
+  "shortTitle": "Lichen Sclerosus Relief",
+  "tagline": "Calm Flares. Repair Tissue. Protect Comfort.",
+  "description": "Doctor-led PRP, LED light therapy, and barrier repair plans that soothe vulvar lichen sclerosus and prevent long-term scarring.",
+  "longDescription": "Lichen sclerosus can cause burning, itching, whitened patches, and painful intimacy. Our female programme blends anti-inflammatory platelet-rich plasma (PRP) injections, red/near-infrared LED therapy, prescription barrier creams, and microbiome support to heal micro-tears and reduce flare frequency.\\n\\nConsultations take place in private suites with optional female chaperones. We document changes with encrypted photography only when you consent, monitor hormones and autoimmune markers, and provide digital flare diaries so you can message the clinic discreetly between appointments.",
+  "seo": {
+    "metaTitle": "Female Lichen Sclerosus Treatment London | Dr. SNA Clinic",
+    "metaDescription": "Specialist care for female lichen sclerosus: PRP, LED therapy, prescription topicals, and lifestyle guidance in a discreet medical clinic.",
+    "keywords": [
+      "lichen sclerosus women",
+      "vulvar lichen sclerosus treatment",
+      "prp lichen sclerosus",
+      "vulval dermatologist london"
+    ],
+    "h1": "Lichen Sclerosus Treatment for Women",
+    "canonicalUrl": "/treatments/intimate-health/female/lichen-sclerosis-female",
+    "schema": {
+      "type": "MedicalTreatment",
+      "name": "Female lichen sclerosus programme",
+      "bodyLocation": "Vulva and perineum"
+    }
+  },
+  "hero": {
+    "headline": "Finally, Relief for Vulvar Lichen Sclerosus",
+    "subheadline": "Regenerative medicine + dermatology expertise to soothe and protect delicate tissue.",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80",
+    "backgroundImage": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1920&q=80",
+    "video": "https://youtu.be/kL1uD6N02Bs",
+    "badge": "Private & doctor-led"
+  },
+  "quickStats": {
+    "duration": "45-minute visits",
+    "anesthesia": "Topical numbing for PRP",
+    "downtime": "Mild warmth 24 hrs",
+    "resultsVisible": "1-3 weeks",
+    "resultsLast": "Maintenance every 3-6 months",
+    "painLevel": "2/10 tingling",
+    "price": "Programmes from £975",
+    "sessions": "2 PRP sessions + LED course"
+  },
+  "overview": {
+    "title": "Holistic Management for a Chronic Condition",
+    "content": "We begin with a gentle exam, hormone review, and swabs or biopsy if needed. Treatment blends PRP to thicken fragile skin, LED therapy to reduce inflammation, compounded topicals to repair the barrier, and guidance on hygiene, clothing, and supplements. You’ll leave with a clear plan for daily care and flare management.",
+    "image": "https://images.unsplash.com/photo-1521119989659-a83eee488004?w=1200&q=80",
+    "highlights": [
+      "Symptoms often calm within the first week",
+      "Protects against fusion, scarring, and sexual discomfort",
+      "Reduces reliance on potent steroids",
+      "Digital flare diary and direct messaging with your doctor"
+    ]
+  },
+  "treatsAreas": {
+    "title": "Areas We Treat",
+    "subtitle": "Precision care for the vulva and perineum",
+    "areas": [
+      {
+        "name": "Labia Majora & Minora",
+        "description": "PRP + LED restore elasticity and colour.",
+        "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&q=80",
+        "icon": "sparkles"
+      },
+      {
+        "name": "Clitoral Hood",
+        "description": "Prevents scarring and maintains sensitivity.",
+        "image": "https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?w=600&q=80",
+        "icon": "activity"
+      },
+      {
+        "name": "Perineum",
+        "description": "Heals fissures and protects tissue integrity.",
+        "image": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=600&q=80",
+        "icon": "shield"
+      },
+      {
+        "name": "Introitus & Vestibule",
+        "description": "Reduces pain during intimacy with targeted PRP.",
+        "image": "https://images.unsplash.com/photo-1544723795-432537f903db?w=600&q=80",
+        "icon": "droplet"
+      }
+    ]
+  },
+  "howItWorks": {
+    "enabled": true,
+    "title": "Regeneration Meets Anti-Inflammatory Light",
+    "subtitle": "Why PRP + LED calm LS",
+    "content": "PRP releases growth factors (PDGF, VEGF, EGF) that speed up healing, thicken the epidermis, and improve microcirculation. LED therapy at 630 nm and 830 nm reduces inflammatory cytokines and supports melanocyte balance. Together they minimise itching, restore colour, and protect tissue from tearing.",
+    "background": "dark",
+    "variant": "dark-glass",
+    "benefits": [
+      {
+        "title": "Anti-Inflammatory",
+        "description": "LED down-regulates TNF-α and IL-6 for calmer skin.",
+        "icon": "feather"
+      },
+      {
+        "title": "Tissue Repair",
+        "description": "PRP thickens skin and improves resilience.",
+        "icon": "layers"
+      },
+      {
+        "title": "Improved Sensation",
+        "description": "Better blood flow enhances comfort during intimacy.",
+        "icon": "heart-pulse"
+      },
+      {
+        "title": "Long-Term Protection",
+        "description": "Regular maintenance prevents architectural changes.",
+        "icon": "shield-check"
+      }
+    ],
+    "growthFactors": [
+      "PDGF",
+      "VEGF",
+      "EGF",
+      "FGF"
+    ]
+  },
+  "whyChooseDrSNA": {
+    "enabled": true,
+    "title": "Why Women Choose Dr. SNA Clinic",
+    "subtitle": "Specialist care in a calm, discreet space",
+    "background": "gradient-cream",
+    "variant": "compact-grid",
+    "features": [
+      {
+        "title": "Doctor + Derm Nurse Team",
+        "description": "Joint expertise ensures medical accuracy and compassionate care.",
+        "icon": "users"
+      },
+      {
+        "title": "Hormone & Autoimmune Screening",
+        "description": "We uncover triggers such as perimenopause or thyroid issues.",
+        "icon": "dna"
+      },
+      {
+        "title": "Custom Compounded Topicals",
+        "description": "Partner pharmacy creates steroid-sparing barrier creams.",
+        "icon": "beaker"
+      },
+      {
+        "title": "Digital Flare Diary",
+        "description": "Log symptoms on your phone for rapid doctor input.",
+        "icon": "smartphone"
+      },
+      {
+        "title": "Chaperone on Request",
+        "description": "Choose female clinicians for every step.",
+        "icon": "shield"
+      },
+      {
+        "title": "Finance Options",
+        "description": "Spread programme cost with 0% plans.",
+        "icon": "credit-card"
+      }
+    ]
+  },
+  "whatToExpect": {
+    "enabled": true,
+    "title": "What to Expect",
+    "subtitle": "Respectful, step-by-step visits",
+    "variant": "compact-timeline",
+    "background": "gradient-cream",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Private Consultation",
+        "description": "Discuss history, triggers, previous treatments, and goals.",
+        "duration": "20 mins"
+      },
+      {
+        "number": 2,
+        "title": "Diagnostics",
+        "description": "Photography (with consent), swabs, labs, or biopsy if required.",
+        "duration": "10 mins"
+      },
+      {
+        "number": 3,
+        "title": "Regenerative Treatment",
+        "description": "Topical numbing, PRP microinjections, and LED session.",
+        "duration": "20 mins"
+      },
+      {
+        "number": 4,
+        "title": "Aftercare & Plan",
+        "description": "Receive barrier kit, lifestyle guide, and digital check-in schedule.",
+        "duration": "10 mins"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Improvements Patients Report",
+    "subtitle": "Most notice relief within a week",
+    "layout": "grid-3",
+    "items": [
+      {
+        "title": "Itch & Burn Relief",
+        "description": "Flares calm quickly thanks to PRP + LED.",
+        "icon": "wind"
+      },
+      {
+        "title": "Healthy Colour & Texture",
+        "description": "Skin regains softness and natural tone.",
+        "icon": "palette"
+      },
+      {
+        "title": "Less Tearing",
+        "description": "Stronger barrier reduces fissures during intimacy.",
+        "icon": "shield"
+      },
+      {
+        "title": "Comfortable Intimacy",
+        "description": "Improved lubrication and thickness reduce pain.",
+        "icon": "sparkles"
+      },
+      {
+        "title": "Lower Steroid Dependence",
+        "description": "Use potent steroids only during flare-ups.",
+        "icon": "pill-off"
+      },
+      {
+        "title": "Peace of Mind",
+        "description": "Know a doctor is tracking your progress and available by message.",
+        "icon": "smile"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Designed for Dignity",
+    "subtitle": "See where you’ll be cared for",
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=900&q=80",
+        "alt": "Private suite",
+        "title": "Private suites",
+        "caption": "Soft lighting, warming blankets, and aromatherapy."
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1521119989659-a83eee488004?w=900&q=80",
+        "alt": "PRP preparation",
+        "title": "Sterile PRP prep",
+        "caption": "Single-use kits and dual-spin centrifuge."
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&q=80",
+        "alt": "LED therapy device",
+        "title": "LED station",
+        "caption": "Medical-grade red/NIR panels."
+      }
+    ]
+  },
+  "treatsConditions": {
+    "title": "Conditions & Symptoms",
+    "subtitle": "Beyond classic LS plaques",
+    "conditions": [
+      {
+        "name": "Vulvar Lichen Sclerosus",
+        "description": "Labial whitening, itching, or burning.",
+        "icon": "sparkles",
+        "effectiveness": "High"
+      },
+      {
+        "name": "Introital Narrowing",
+        "description": "Prevent fusion or scarring at the entrance.",
+        "icon": "arrow-left-right",
+        "effectiveness": "Moderate"
+      },
+      {
+        "name": "Painful Intimacy",
+        "description": "Heal fissures and improve lubrication.",
+        "icon": "heart",
+        "effectiveness": "High"
+      },
+      {
+        "name": "Post-Surgical Recurrence",
+        "description": "Manage LS after partial vulvectomy or grafts.",
+        "icon": "refresh-cw",
+        "effectiveness": "Moderate"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Programme Pricing",
+    "subtitle": "Consultation fee (£120) credited toward treatment",
+    "disclaimer": "*Additional labs, pathology, or compounded creams priced separately.",
+    "singlePrice": {
+      "originalPrice": "£1,100",
+      "currentPrice": "£975",
+      "currency": "GBP",
+      "consultationFee": "£120",
+      "consultationNote": "Redeemable within 30 days",
+      "consultationDisclaimer": "Includes exam, cultures, and personalised plan"
+    },
+    "packages": [
+      {
+        "name": "3-Month Relief Plan",
+        "price": "£975",
+        "description": "2 PRP sessions + 4 LED visits + barrier kit",
+        "includes": "Digital flare diary + supplements",
+        "savings": "Save £250",
+        "popular": true
+      },
+      {
+        "name": "12-Month Maintenance",
+        "price": "£1,950",
+        "description": "Quarterly PRP boosters + unlimited LED access",
+        "includes": "Monthly check-ins + prescription renewals",
+        "savings": "Save £420",
+        "popular": false
+      }
+    ],
+    "includes": [
+      "Confidential consultation & diagnostics",
+      "Dual-spin PRP injections with topical numbing",
+      "LED photobiomodulation sessions",
+      "Custom barrier creams + hygiene kit",
+      "Lifestyle, nutrition, and supplement plan",
+      "Secure messaging and video reviews"
+    ],
+    "financing": {
+      "available": true,
+      "buttonText": "Discuss payment plans"
+    }
+  },
+  "candidacy": {
+    "title": "Are You a Candidate?",
+    "subtitle": "Most women living with LS qualify",
+    "suitable": [
+      "Diagnosed lichen sclerosus with recurrent symptoms",
+      "Patients relying on steroids daily",
+      "Women experiencing painful intimacy or tearing",
+      "Post-surgical patients wanting to protect remaining tissue",
+      "Those coordinating care with gynaecology or dermatology"
+    ],
+    "notSuitable": [
+      "Active infection that requires antibiotics first",
+      "Uncontrolled autoimmune conditions without specialist clearance",
+      "Bleeding disorders affecting PRP",
+      "Allergy to topical anaesthetics used during treatment"
+    ],
+    "note": "Suitability confirmed after labs, swabs, and review of current medications."
+  },
+  "safety": {
+    "title": "Safety & Governance",
+    "content": "Our clinic is CQC-regulated, uses sterile single-use kits, and stores imagery in encrypted files with your written consent. Female clinicians are available for every visit.",
+    "certifications": [
+      {
+        "name": "CQC-Regulated",
+        "description": "Audited infection control and safeguarding.",
+        "icon": "shield-check"
+      },
+      {
+        "name": "GMC + NMC Team",
+        "description": "Doctor and senior nurse deliver each treatment.",
+        "icon": "stethoscope"
+      },
+      {
+        "name": "ISO 9001 Protocols",
+        "description": "Documented processes for consistency and privacy.",
+        "icon": "clipboard-check"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Compare LS Treatment Paths",
+    "subtitle": "Understand where regenerative therapy fits",
+    "comparisons": [
+      {
+        "treatment": "PRP + LED Programme",
+        "naturalness": "Autologous + light",
+        "results": "1-3 weeks",
+        "downtime": "None",
+        "cost": "£975",
+        "duration": "Maintenance every 3-6 months"
+      },
+      {
+        "treatment": "Topical Steroids Only",
+        "naturalness": "Pharmaceutical",
+        "results": "Days",
+        "downtime": "None",
+        "cost": "£25/month",
+        "duration": "Requires ongoing use"
+      },
+      {
+        "treatment": "Surgical Excision",
+        "naturalness": "Surgical",
+        "results": "Immediate removal of damaged tissue",
+        "downtime": "2-4 weeks",
+        "cost": "£3k+",
+        "duration": "Permanent but may not stop recurrence"
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "name": "Amelia C.",
+      "age": 44,
+      "treatment": "Relief Plan",
+      "rating": 5,
+      "text": "Within 10 days the itching stopped and the whitening softened. I only reach for steroids during a flare now and intimacy no longer hurts.",
+      "date": "2024-02-07",
+      "verified": true,
+      "image": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=400&q=80"
+    },
+    {
+      "name": "Bethany L.",
+      "age": 51,
+      "treatment": "Maintenance Programme",
+      "rating": 5,
+      "text": "I wish I’d found this sooner. Quarterly PRP keeps symptoms quiet and the team checks in before I even think to ask.",
+      "date": "2023-10-22",
+      "verified": true,
+      "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&q=80"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Do I still need steroids?",
+      "answer": "Yes, but usually only during flares. Our programme reduces frequency and reliance on potent creams."
+    },
+    {
+      "question": "Will PRP cure LS?",
+      "answer": "LS is chronic; PRP and LED keep it in remission, protect tissue, and lessen symptoms."
+    },
+    {
+      "question": "Can I remain uncircumcised/avoid surgery?",
+      "answer": "Many patients avoid excision when inflammation is controlled. We coordinate with your gynaecologist if surgery is recommended."
+    },
+    {
+      "question": "Is PRP safe?",
+      "answer": "PRP is your own blood processed sterilely. Side effects are limited to temporary redness or warmth."
+    },
+    {
+      "question": "How often do I need maintenance?",
+      "answer": "Most women return every 3-6 months for LED or booster PRP depending on severity."
+    },
+    {
+      "question": "Can LS increase cancer risk?",
+      "answer": "Chronic inflammation can raise risk slightly. Regular monitoring and treatment reduce that risk. We coordinate smears and biopsies when needed."
+    }
+  ],
+  "relatedTreatments": [
+    {
+      "id": "prp-shot-women",
+      "title": "O-Shot® PRP",
+      "description": "Enhance lubrication and sensation alongside LS management.",
+      "reason": "Improves comfort once inflammation is controlled."
+    },
+    {
+      "id": "ultra-femme-360",
+      "title": "Ultra Femme 360™",
+      "description": "RF rejuvenation for tissue tone and hydration.",
+      "reason": "Add once LS is stable for additional support."
+    },
+    {
+      "id": "btl-emsella-chair",
+      "title": "BTL EMSELLA® Chair",
+      "description": "Strengthen pelvic floor muscles impacted by chronic discomfort.",
+      "reason": "Holistic approach to intimate wellbeing."
+    }
+  ],
+  "cta": {
+    "title": "Ready for Calm, Comfortable Skin?",
+    "subtitle": "Book a discreet lichen sclerosus consultation.",
+    "primaryButton": "Book LS consultation",
+    "secondaryButton": "Speak with a female advisor",
+    "urgency": "Limited weekly slots to keep appointments private",
+    "guarantee": "Consultation fee credited toward programmes"
+  },
+  "bookingInfo": {
+    "depositRequired": false,
+    "cancellationPolicy": "48 hours’ notice to reschedule",
+    "consultationFee": "£120 (redeemable)",
+    "duration": "45-minute visits"
+  }
+}

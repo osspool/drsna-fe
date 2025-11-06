@@ -1,0 +1,505 @@
+{
+  "id": "prp-shot-women",
+  "categoryId": "intimate-health",
+  "subcategoryId": "female",
+  "title": "O-Shot® (PRP Shot for Women)",
+  "alternativeTitles": [
+    "O-Shot",
+    "PRP Shot for Women",
+    "Orgasm Shot",
+    "Clitoral PRP",
+    "Platelet-Rich Plasma Vaginal Rejuvenation"
+  ],
+  "shortTitle": "O-Shot",
+  "tagline": "Reawaken Desire, Lubrication, and Confidence",
+  "description": "Doctor-led PRP injections placed along the clitoris and G-spot to boost lubrication, orgasm quality, and pelvic support—without hormones.",
+  "longDescription": "The O-Shot® harnesses platelet-rich plasma (PRP) from your own blood to regenerate the clitoral network, anterior vaginal wall (G-spot), labia, and periurethral tissue. Concentrated growth factors trigger angiogenesis, collagen production, and nerve sprouting so arousal, lubrication, and orgasm return naturally.\\n\\nEvery appointment at Dr. SNA Clinic is private, doctor-led, and tailored around your hormonal stage—whether you are postnatal, perimenopausal, or simply seeking amplified sensation. Optional chaperones and comfort protocols (topical numbing, vibration analgesia, nerve blocks) ensure the experience is calm from start to finish.",
+  "seo": {
+    "metaTitle": "O-Shot London | PRP Shot for Women | Dr. SNA Clinic",
+    "metaDescription": "Experience the O-Shot in London with Dr. SNA Clinic. £1,150 treatment to restore lubrication, orgasm, and bladder control. Doctor-led, zero downtime.",
+    "keywords": [
+      "o-shot london",
+      "prp shot for women",
+      "orgasm shot uk",
+      "clitoral prp",
+      "vaginal prp treatment"
+    ],
+    "h1": "O-Shot® Treatment in London",
+    "canonicalUrl": "/treatments/intimate-health/female/prp-shot-women",
+    "schema": {
+      "type": "MedicalProcedure",
+      "procedureType": "Platelet-Rich Plasma Therapy",
+      "bodyLocation": "Clitoral complex, anterior vaginal wall, periurethral tissue"
+    }
+  },
+  "hero": {
+    "headline": "London’s Leading O-Shot Clinic",
+    "subheadline": "Precision PRP injections that revive sensation, moisture, and bladder control in a single visit.",
+    "image": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1920&q=80",
+    "backgroundImage": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1920&q=80",
+    "video": "https://youtu.be/ZqZHFqRSbkc",
+    "badge": "Zero downtime"
+  },
+  "quickStats": {
+    "duration": "45 minutes door to door",
+    "anesthesia": "Topical numbing + vibration analgesia (optional nerve block)",
+    "downtime": "None – resume intimacy same day",
+    "resultsVisible": "2-6 weeks",
+    "resultsLast": "12-18 months",
+    "painLevel": "2/10 (brief pressure)",
+    "price": "From £1,150 (consultation credited)",
+    "sessions": "Single treatment; optional booster at 9-12 months"
+  },
+  "overview": {
+    "title": "What Is the O-Shot?",
+    "content": "We draw a small sample of blood, concentrate the platelets using a dual-spin centrifuge, and re-inject this ‘liquid gold’ into the clitoris, anterior vaginal wall, labia, and periurethral sling. Growth factors such as PDGF, VEGF, IGF, and TGF-β stimulate collagen, nerves, and micro-circulation so arousal and lubrication feel effortless again. Because PRP is autologous, there is virtually zero risk of allergic reaction.",
+    "image": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=1200&q=80",
+    "highlights": [
+      "100% natural—uses your own blood",
+      "Targets nerves, blood flow, and tissue tone simultaneously",
+      "Comfort-first visit with optional female chaperone",
+      "Pairs perfectly with Ultra Femme 360 or EMSELLA"
+    ]
+  },
+  "treatsAreas": {
+    "title": "Precision Injection Mapping",
+    "subtitle": "Tailored to your anatomy and goals",
+    "areas": [
+      {
+        "name": "Clitoral Complex",
+        "description": "Enhances blood flow and nerve density for faster, stronger orgasms.",
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80",
+        "icon": "sparkles",
+        "price": "Included"
+      },
+      {
+        "name": "G-Spot / Anterior Vaginal Wall",
+        "description": "Boosts lubrication and sensation during penetration.",
+        "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&q=80",
+        "icon": "droplet",
+        "price": "Included"
+      },
+      {
+        "name": "Vestibule & Labia Minora",
+        "description": "Thickens fragile tissue to reduce burning or tearing.",
+        "image": "https://images.unsplash.com/photo-1544723795-432537f903db?w=600&q=80",
+        "icon": "shield",
+        "price": "Included"
+      },
+      {
+        "name": "Periurethral Sling",
+        "description": "Strengthens tissue supporting the urethra to ease stress incontinence.",
+        "image": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=600&q=80",
+        "icon": "activity",
+        "price": "Included"
+      }
+    ]
+  },
+  "howItWorks": {
+    "enabled": true,
+    "title": "How PRP Restores Sensation",
+    "subtitle": "Growth factors spark regeneration where you need it most",
+    "content": "Once injected, PRP releases growth factors that instruct the body to heal. Platelets activate fibroblasts, stimulate angiogenesis, and encourage nerve sprouting. That means more circulation, thicker tissue, and heightened responsiveness.",
+    "background": "dark",
+    "variant": "dark-glass",
+    "benefits": [
+      {
+        "title": "Neurogenesis",
+        "description": "Supports new nerve endings for stronger orgasms.",
+        "icon": "zap"
+      },
+      {
+        "title": "Angiogenesis",
+        "description": "New micro-vessels improve lubrication and engorgement.",
+        "icon": "droplet"
+      },
+      {
+        "title": "Collagen Remodeling",
+        "description": "Thicker vaginal walls and labial tissue for comfort.",
+        "icon": "layers"
+      },
+      {
+        "title": "Anti-Inflammatory",
+        "description": "Calms micro-tears linked to lichen sclerosus or menopause.",
+        "icon": "shield"
+      }
+    ],
+    "growthFactors": [
+      "PDGF – Platelet-Derived Growth Factor",
+      "VEGF – Vascular Endothelial Growth Factor",
+      "FGF – Fibroblast Growth Factor",
+      "IGF – Insulin-like Growth Factor",
+      "TGF-β – Transforming Growth Factor Beta"
+    ]
+  },
+  "whatToExpect": {
+    "enabled": true,
+    "title": "What to Expect on Treatment Day",
+    "subtitle": "Four calm, curated stages",
+    "variant": "compact-timeline",
+    "background": "gradient-cream",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Settle In & Numbing",
+        "description": "Private suite, robe, and topical anaesthetic applied for 20 minutes.",
+        "duration": "20 mins"
+      },
+      {
+        "number": 2,
+        "title": "Blood Draw & PRP Prep",
+        "description": "10ml of blood collected; dual-spin centrifuge concentrates platelets.",
+        "duration": "15 mins"
+      },
+      {
+        "number": 3,
+        "title": "Precision Injections",
+        "description": "Ultra-fine needles place PRP along the clitoris, G-spot, labia, and periurethral tissue.",
+        "duration": "10 mins"
+      },
+      {
+        "number": 4,
+        "title": "Aftercare & Plan",
+        "description": "Hydrating serum applied; comfort tips and optional add-ons (Ultra Femme, EMSELLA) reviewed.",
+        "duration": "5 mins"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Benefits You’ll Feel",
+    "subtitle": "Most women notice change within the first month",
+    "layout": "grid-3",
+    "items": [
+      {
+        "title": "Lubrication Returns",
+        "description": "Natural moisture makes intimacy comfortable again.",
+        "icon": "droplet"
+      },
+      {
+        "title": "Faster, Stronger Orgasms",
+        "description": "Heightened nerve response amplifies climax.",
+        "icon": "sparkles"
+      },
+      {
+        "title": "Improved Bladder Control",
+        "description": "Supports the urethral sling to reduce mild stress leaks.",
+        "icon": "shield"
+      },
+      {
+        "title": "Comfort After Menopause",
+        "description": "Thicker tissue reduces burning and tearing.",
+        "icon": "leaf"
+      },
+      {
+        "title": "Drug & Hormone-Free",
+        "description": "Ideal if HRT or medications aren’t an option.",
+        "icon": "pill-off"
+      },
+      {
+        "title": "Pairs with Other Therapies",
+        "description": "Combine with Ultra Femme or EMSELLA for layered results.",
+        "icon": "layers"
+      }
+    ]
+  },
+  "process": {
+    "title": "Your O-Shot Journey",
+    "subtitle": "From consult to confident results",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Confidential Consultation",
+        "description": "Discuss goals, hormones, birth history, and medications.",
+        "icon": "message-circle"
+      },
+      {
+        "number": 2,
+        "title": "Diagnostics & Planning",
+        "description": "Optional hormone labs, pelvic exam, lubrication scoring.",
+        "icon": "activity"
+      },
+      {
+        "number": 3,
+        "title": "PRP Appointment",
+        "description": "Blood draw, numbing, injections, and optional add-ons.",
+        "icon": "droplet"
+      },
+      {
+        "number": 4,
+        "title": "Digital Follow-Up",
+        "description": "Track sensation, lubrication, and bladder scores via secure app.",
+        "icon": "smartphone"
+      },
+      {
+        "number": 5,
+        "title": "Review & Maintenance",
+        "description": "Check progress at 8-12 weeks; plan boosters annually if desired.",
+        "icon": "trending-up"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Inside the Experience",
+    "subtitle": "Designed for calm, clinical precision",
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=900&q=80",
+        "alt": "PRP preparation",
+        "title": "Dual-spin PRP prep",
+        "caption": "Sterile, single-use kits for every patient."
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1521119989659-a83eee488004?w=900&q=80",
+        "alt": "Doctor consulting patient",
+        "title": "Doctor-led consults",
+        "caption": "In-depth conversations about goals and comfort."
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&q=80",
+        "alt": "Relaxed patient suite",
+        "title": "Private suites",
+        "caption": "Warm lighting, aromatherapy, and optional chaperone."
+      }
+    ]
+  },
+  "treatsConditions": {
+    "title": "Symptoms We Improve",
+    "subtitle": "O-Shot is ideal for women experiencing",
+    "conditions": [
+      {
+        "name": "Low Libido & Anorgasmia",
+        "description": "Improves nerve sensitivity for reliable climax.",
+        "icon": "sparkles",
+        "effectiveness": "High"
+      },
+      {
+        "name": "Vaginal Dryness",
+        "description": "Stimulates mucosal glands for long-lasting moisture.",
+        "icon": "droplet",
+        "effectiveness": "High"
+      },
+      {
+        "name": "Stress Incontinence",
+        "description": "Strengthens periurethral tissue to reduce leaks.",
+        "icon": "shield",
+        "effectiveness": "Moderate"
+      },
+      {
+        "name": "Dyspareunia",
+        "description": "Thickens tissue to lessen pain during intimacy.",
+        "icon": "feather",
+        "effectiveness": "Moderate"
+      },
+      {
+        "name": "Lichen Sclerosus Support",
+        "description": "Calms inflammation when combined with LED/barrier care.",
+        "icon": "leaf",
+        "effectiveness": "Moderate"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Transparent O-Shot Pricing",
+    "subtitle": "Consultation fee (£100) credited toward treatment",
+    "disclaimer": "*Exact protocol confirmed after consultation and any recommended diagnostics.",
+    "singlePrice": {
+      "originalPrice": "£1,350",
+      "currentPrice": "£1,150",
+      "currency": "GBP",
+      "consultationFee": "£100",
+      "consultationNote": "Redeemable within 30 days",
+      "consultationDisclaimer": "Includes pelvic assessment and personalised plan"
+    },
+    "packages": [
+      {
+        "name": "O-Shot Signature",
+        "price": "£1,150",
+        "description": "Single high-yield PRP session",
+        "includes": "Dual-spin PRP + comfort kit",
+        "savings": "Intro pricing",
+        "popular": true
+      },
+      {
+        "name": "O-Shot + Ultra Femme 360",
+        "price": "£1,950",
+        "description": "Combine PRP with RF tightening for maximum results",
+        "includes": "3 Ultra Femme sessions + O-Shot",
+        "savings": "Save £350",
+        "popular": true
+      },
+      {
+        "name": "O-Shot + EMSELLA Boost",
+        "price": "£2,150",
+        "description": "Ideal for stress incontinence or postnatal recovery",
+        "includes": "O-Shot + 6 EMSELLA sessions",
+        "savings": "Save £250",
+        "popular": false
+      }
+    ],
+    "includes": [
+      "Comprehensive consultation + diagnostics",
+      "Dual-spin PRP with sterile single-use kits",
+      "Comfort protocol (numbing, vibration, optional nitrous)",
+      "Precision injections by doctor",
+      "Aftercare supplements + hydration serums",
+      "Digital reviews at 6 and 12 weeks"
+    ],
+    "financing": {
+      "available": true,
+      "buttonText": "0% Finance Available"
+    }
+  },
+  "candidacy": {
+    "title": "Who Is the O-Shot For?",
+    "subtitle": "If intimate changes impact confidence, you qualify",
+    "suitable": [
+      "Women experiencing low libido or difficulty orgasming",
+      "Perimenopausal/menopausal dryness or burning",
+      "Mild stress/urge incontinence",
+      "Postnatal recovery (6+ weeks after clearance)",
+      "Patients managing lichen sclerosus or scar tissue",
+      "Those seeking non-hormonal, drug-free support"
+    ],
+    "notSuitable": [
+      "Pregnancy or breastfeeding",
+      "Active infection or uncontrolled autoimmune flare",
+      "Platelet/bleeding disorders",
+      "Anticoagulant therapy without GP approval",
+      "Recent pelvic cancer treatment without consultant clearance"
+    ],
+    "note": "Suitability confirmed after consultation, medical history review, and bloodwork if indicated."
+  },
+  "safety": {
+    "title": "Safety & Governance",
+    "content": "All treatments occur in our CQC-regulated clinic using GMP-grade centrifuges, sterile kits, and doctor-only injections. Photos or intimate documentation are stored encrypted with explicit consent.",
+    "certifications": [
+      {
+        "name": "CQC-Regulated",
+        "description": "Audited infection control and privacy protocols.",
+        "icon": "shield-check"
+      },
+      {
+        "name": "GMC-Registered Doctors",
+        "description": "Only senior physicians deliver the O-Shot.",
+        "icon": "stethoscope"
+      },
+      {
+        "name": "ISO 9001 Systems",
+        "description": "Documented procedures, maintenance logs, and chaperone policies.",
+        "icon": "clipboard-check"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Compare Your Options",
+    "subtitle": "Choose the pathway that fits your lifestyle",
+    "comparisons": [
+      {
+        "treatment": "O-Shot PRP",
+        "naturalness": "Autologous biologic",
+        "results": "2-6 weeks",
+        "downtime": "None",
+        "cost": "£1,150",
+        "duration": "12-18 months"
+      },
+      {
+        "treatment": "Ultra Femme 360",
+        "naturalness": "Energy-based RF",
+        "results": "Immediate + cumulative",
+        "downtime": "None",
+        "cost": "£1,250",
+        "duration": "12 months"
+      },
+      {
+        "treatment": "Hormone Therapy",
+        "naturalness": "Systemic medication",
+        "results": "4-8 weeks",
+        "downtime": "None",
+        "cost": "£400+/year",
+        "duration": "Requires ongoing use"
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "name": "Ella T.",
+      "age": 42,
+      "treatment": "O-Shot + Ultra Femme",
+      "rating": 5,
+      "text": "Within a month lubrication returned and orgasms were stronger than pre-children. The team made an intimate subject feel elegant and easy.",
+      "date": "2024-02-11",
+      "verified": true,
+      "image": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=400&q=80"
+    },
+    {
+      "name": "Natalie R.",
+      "age": 35,
+      "treatment": "O-Shot + EMSELLA",
+      "rating": 5,
+      "text": "Postnatal leaks and low sensation disappeared. Dr. Abbas talked me through every step and the whole visit felt luxurious.",
+      "date": "2023-11-07",
+      "verified": true,
+      "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&q=80"
+    }
+  ],
+  "faq": [
+    {
+      "question": "How soon can I be intimate?",
+      "answer": "Immediately. Some women prefer to wait 24 hours if there is mild swelling, but it’s safe to resume the same day."
+    },
+    {
+      "question": "Is the O-Shot painful?",
+      "answer": "Topical anaesthetic, vibration therapy, and optional nitrous oxide keep discomfort to a mild pressure sensation."
+    },
+    {
+      "question": "How long do results last?",
+      "answer": "Most patients enjoy 12-18 months of results. We offer booster sessions if you’d like to maintain peak sensation."
+    },
+    {
+      "question": "Can I do this while on HRT?",
+      "answer": "Yes. PRP is compatible with hormone therapy. We coordinate with your prescribing doctor if needed."
+    },
+    {
+      "question": "Does it help lichen sclerosus?",
+      "answer": "PRP reduces inflammation and improves tissue integrity when paired with LED therapy and custom barriers."
+    },
+    {
+      "question": "Do you offer payment plans?",
+      "answer": "Yes—0% finance over 6–12 months, arranged during consultation."
+    }
+  ],
+  "relatedTreatments": [
+    {
+      "id": "ultra-femme-360",
+      "title": "Ultra Femme 360™",
+      "description": "RF tightening for internal and external tissue.",
+      "reason": "Combine for maximal structure + sensation."
+    },
+    {
+      "id": "btl-emsella-chair",
+      "title": "BTL EMSELLA® Chair",
+      "description": "Strengthen pelvic floor with 11,200 Kegels per session.",
+      "reason": "Improves bladder control alongside PRP."
+    },
+    {
+      "id": "lichen-sclerosis-female",
+      "title": "Lichen Sclerosus Relief",
+      "description": "PRP + LED therapy to calm chronic inflammation.",
+      "reason": "Maintain tissue health for long-term comfort."
+    }
+  ],
+  "cta": {
+    "title": "Ready to Feel Connected Again?",
+    "subtitle": "Book your confidential O-Shot consultation today.",
+    "primaryButton": "Book O-Shot consultation",
+    "secondaryButton": "Talk to a female advisor",
+    "urgency": "Limited daily appointments to protect privacy",
+    "guarantee": "Consultation fee credited toward treatment"
+  },
+  "bookingInfo": {
+    "depositRequired": false,
+    "cancellationPolicy": "48 hours’ notice to reschedule",
+    "consultationFee": "£100 (redeemable)",
+    "duration": "45-minute visit"
+  }
+}

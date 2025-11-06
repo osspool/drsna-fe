@@ -49,7 +49,7 @@ export function WhyChooseBlock({ data }) {
   // Compact Grid Variant - Apple/Meta inspired with enhanced effects
   if (variant === "compact-grid") {
     return (
-      <Section background={background} padding="none" ripple={true}>
+      <Section background={background} padding="none" ripple={false}>
         <div className="relative flex w-full flex-col items-start justify-start overflow-hidden py-16 md:py-24">
           {/* Background Effects */}
           <BackgroundRippleEffect 
@@ -101,7 +101,7 @@ export function WhyChooseBlock({ data }) {
                     <CometCard className="h-full">
                       <div className="group h-full bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gold/10 hover:border-gold/30">
                         {/* Icon */}
-                        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-gold/20 to-gold/10 flex items-center justify-center mb-4 group-hover:from-gold group-hover:to-gold-dark transition-all duration-300 group-hover:scale-110">
+                        <div className="w-12 h-12 rounded-xl bg-linear-to-br from-gold/20 to-gold/10 flex items-center justify-center mb-4 group-hover:from-gold group-hover:to-gold-dark transition-all duration-300 group-hover:scale-110">
                           <IconComponent className="w-6 h-6 text-gold group-hover:text-white transition-colors duration-300" />
                         </div>
 
@@ -162,8 +162,8 @@ export function WhyChooseBlock({ data }) {
 
   // Default Grid Variant with enhanced effects
   return (
-    <Section background={background}>
-      <div className="relative flex w-full flex-col items-start justify-start overflow-hidden py-16 md:py-24">
+    <Section background={background} padding="default">
+      <div className="relative flex w-full flex-col items-start justify-start overflow-hidden">
         {/* Background Effects */}
         <BackgroundRippleEffect 
           rows={8} 
@@ -213,7 +213,7 @@ export function WhyChooseBlock({ data }) {
                 >
                   <CometCard className="h-full">
                     <div className="group h-full bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gold/10 hover:border-gold/30">
-                      <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-gold/20 to-gold/10 flex items-center justify-center mb-4 group-hover:from-gold group-hover:to-gold-dark transition-all duration-300">
+                      <div className="w-12 h-12 rounded-xl bg-linear-to-br from-gold/20 to-gold/10 flex items-center justify-center mb-4 group-hover:from-gold group-hover:to-gold-dark transition-all duration-300">
                         <IconComponent className="w-6 h-6 text-gold group-hover:text-white transition-colors duration-300" />
                       </div>
                       <h3 className="text-lg font-bold text-dark-brown mb-2">

@@ -29,6 +29,13 @@ import nonSurgicalBlepharoplastyData from "@/data/aesthetic-medicine/face/treatm
 
 // Intimate Health
 import pShotData from "@/data/intimate-health/male/treatments/p-shot.json";
+import shockwaveTherapyData from "@/data/intimate-health/male/treatments/shockwave-therapy.json";
+import peyroniesDiseaseData from "@/data/intimate-health/male/treatments/peyronies-disease.json";
+import lichenSclerosisMaleData from "@/data/intimate-health/male/treatments/lichen-sclerosis-male.json";
+// female
+import ultraFemme360Data from "@/data/intimate-health/female/treatments/ultra-femme-360.json";
+import btlEmsellaChairData from "@/data/intimate-health/female/treatments/btl-emsella-chair.json";
+import lichenSclerosisFemaleData from "@/data/intimate-health/female/treatments/lichen-sclerosis-female.json";
 
 const treatmentDataMap = {
   "aesthetic-medicine": {
@@ -42,9 +49,14 @@ const treatmentDataMap = {
   "intimate-health": {
     "male": {
       "p-shot": pShotData,
-      // "shockwave-therapy": shockwaveTherapyData,
-      // "peyronies-disease": peyroniesDiseaseData,
-      // "lichen-sclerosis-male": lichenSclerosisMaleData,
+      "shockwave-therapy": shockwaveTherapyData,
+      "peyronies-disease": peyroniesDiseaseData,
+      "lichen-sclerosis-male": lichenSclerosisMaleData,
+    },
+    "female": {
+      "ultra-femme-360": ultraFemme360Data,
+      "btl-emsella-chair": btlEmsellaChairData,
+      "lichen-sclerosis-female": lichenSclerosisFemaleData,
     },
   },
 };

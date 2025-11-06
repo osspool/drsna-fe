@@ -1,0 +1,106 @@
+{
+  "id": "fat-reduction-cellulite",
+  "categoryId": "aesthetic-medicine",
+  "subcategoryId": "body",
+  "title": "Cellulite & Stubborn Fat Reduction",
+  "shortTitle": "Cellulite Reduction",
+  "tagline": "Smooth, Tight, Confident",
+  "description": "Bespoke injectable cocktails combining fat-dissolving enzymes, polynucleotides, and collagen stimulators to contour thighs, hips, and abdomen.",
+  "longDescription": "Dr. SNA blends deoxycholate, mesotherapy vitamins, and polynucleotides to shrink stubborn fat cells while tightening overlying skin. This dual-action approach makes dimples fade, improves circulation, and sculpts smoother contours without surgery.",
+  "seo": {
+    "metaTitle": "Cellulite & Fat Reduction Injections London | Dr. SNA Clinic",
+    "metaDescription": "Custom injectable cocktails break down stubborn fat, improve circulation, and smooth cellulite. Minimal downtime body contouring in Marylebone.",
+    "keywords": [
+      "cellulite treatment london",
+      "fat dissolving injections",
+      "mesotherapy london",
+      "non surgical body contouring"
+    ],
+    "h1": "Cellulite & Stubborn Fat Reduction"
+  },
+  "hero": {
+    "headline": "Targeted Smoothing That Works",
+    "subheadline": "Precision injections shrink pockets of fat and rebuild collagen for velvet skin.",
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=1920&q=80",
+    "backgroundImage": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1920&q=80",
+    "badge": "Zero surgery"
+  },
+  "quickStats": {
+    "duration": "45 minutes",
+    "anesthesia": "Topical + vibration",
+    "downtime": "Swelling/bruising 3-5 days",
+    "resultsVisible": "4-6 weeks",
+    "resultsLast": "Long term with lifestyle support",
+    "sessions": "3 sessions recommended",
+    "price": "From £450/session"
+  },
+  "overview": {
+    "title": "How We Customise Each Session",
+    "content": "After pinch testing and photography we map each dimple and fat pocket. Deoxycholate melts fat cells, while polynucleotides and biostimulants tighten septae and improve microcirculation. Lymphatic massage completes the visit.",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80",
+    "highlights": [
+      "Treat thighs, hips, abdomen, upper arms",
+      "Combines fat reduction + collagen stimulation",
+      "Supports lymphatic drainage and skin tone"
+    ]
+  },
+  "benefits": {
+    "title": "Why Patients Love This Protocol",
+    "items": [
+      {"title": "Dual Action", "description": "Shrinks fat cells and tightens skin simultaneously."},
+      {"title": "Minimal Downtime", "description": "Mild swelling fades within days."},
+      {"title": "Custom Blend", "description": "Formulas mixed per area and severity."}
+    ]
+  },
+  "pricing": {
+    "title": "Cellulite Programme Pricing",
+    "singlePrice": {
+      "currentPrice": "£450",
+      "currency": "GBP"
+    },
+    "packages": [
+      {
+        "name": "3-Session Sculpt",
+        "price": "£1,200",
+        "description": "Ideal for moderate dimpling.",
+        "savings": "Save £150"
+      },
+      {
+        "name": "6-Session Transformation",
+        "price": "£2,200",
+        "description": "For advanced cellulite + contouring.",
+        "savings": "Save £500"
+      }
+    ],
+    "includes": [
+      "Consultation & mapping",
+      "Custom mesotherapy vials",
+      "Lymphatic massage guidance",
+      "Progress photos + review"
+    ]
+  },
+  "process": {
+    "title": "Treatment Flow",
+    "steps": [
+      {"number": 1, "title": "Assessment", "description": "Pinch test, photos, and plan creation."},
+      {"number": 2, "title": "Inject & Blend", "description": "Micro injections + cannula threads target fat and fibrous bands."},
+      {"number": 3, "title": "Drain & Support", "description": "Lymphatic massage advice, supplements, and follow-up scheduling."}
+    ]
+  },
+  "faq": [
+    {
+      "question": "Will I need time off?",
+      "answer": "You can resume office work immediately. Expect swelling and tenderness for 3-5 days."
+    },
+    {
+      "question": "Is it suitable for all body types?",
+      "answer": "Best for pinchable fat and cellulite grades 1-3. We advise if alternative treatments are better."
+    }
+  ],
+  "cta": {
+    "title": "Ready for Smoother Contours?",
+    "subtitle": "Book a cellulite consultation today.",
+    "primaryButton": "Book cellulite consult",
+    "secondaryButton": "Message our team"
+  }
+}
