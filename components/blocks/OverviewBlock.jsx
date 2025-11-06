@@ -20,13 +20,13 @@ export function OverviewBlock({ data }) {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-gold mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-6">
               {title}
             </h2>
-            
+
             <div className="prose prose-lg max-w-none mb-8">
               {content.split('\n\n').map((paragraph, index) => (
-                <p key={index} className="text-base md:text-lg text-dark-brown/70 leading-relaxed mb-4">
+                <p key={index} className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4">
                   {paragraph}
                 </p>
               ))}
@@ -44,10 +44,10 @@ export function OverviewBlock({ data }) {
                     transition={{ delay: index * 0.1 }}
                     className="flex items-start gap-3"
                   >
-                    <div className="w-6 h-6 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0 mt-1">
-                      <Check className="w-4 h-4 text-gold" />
+                    <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-1">
+                      <Check className="w-4 h-4 text-primary" />
                     </div>
-                    <span className="text-dark-brown/80 font-medium">{highlight}</span>
+                    <span className="text-foreground/80 font-medium">{highlight}</span>
                   </motion.div>
                 ))}
               </div>

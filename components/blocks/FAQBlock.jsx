@@ -20,7 +20,7 @@ export function FAQBlock({ data }) {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-heading font-bold text-center mb-16 text-gold"
+          className="text-4xl md:text-5xl font-heading font-bold text-center mb-16 text-primary"
         >
           {heading}
         </motion.h2>
@@ -35,12 +35,12 @@ export function FAQBlock({ data }) {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-cream border border-gold-primary/20 rounded-lg px-6 hover:shadow-gold transition-shadow"
+                className="bg-secondary border border-primary/20 rounded-lg px-6 hover:shadow-primary transition-shadow"
               >
-                <AccordionTrigger className="text-left font-semibold text-dark-brown hover:text-gold">
+                <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-dark-brown/80 leading-relaxed">
+                <AccordionContent className="text-muted-foreground leading-relaxed">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>

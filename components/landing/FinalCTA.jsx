@@ -31,11 +31,12 @@ export function FinalCTA() {
   return (
     <section className="relative">
       <WavyBackground
-        className="py-32"
-        colors={["#cda55c", "#e6c89f", "#b8935a"]}
-        waveOpacity={0.3}
+        containerClassName="!h-auto py-32"
+        colors={["var(--primary)", "var(--accent)", "var(--primary)"]}
+        waveOpacity={0.5}
         blur={15}
         speed="slow"
+        backgroundFill="var(--background)"
       >
         <div className="container mx-auto px-4 relative z-20">
           <motion.div
@@ -44,12 +45,12 @@ export function FinalCTA() {
             viewport={{ once: true }}
             className="text-center max-w-4xl mx-auto"
           >
-            <h2 className="text-5xl md:text-7xl font-heading font-bold text-white mb-8">
+            <h2 className="text-5xl md:text-7xl font-heading font-bold text-foreground mb-8">
               Begin Your Journey
               <br />
-              <span className="text-gold-light">To Natural Beauty</span>
+              <span className="text-primary">To Natural Beauty</span>
             </h2>
-            <p className="text-xl md:text-2xl text-white/80 mb-12 leading-relaxed font-light">
+            <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed font-light">
               Book your consultation today and discover how Dr Abbas and his expert
               team can help you achieve your aesthetic goals with precision and care
             </p>
@@ -59,7 +60,7 @@ export function FinalCTA() {
               <Link href="/booking">
                 <MovingBorderButton
                   borderRadius="1.5rem"
-                  className="bg-white text-dark-brown px-12 py-6 font-bold text-lg"
+                  className="bg-card text-foreground px-12 py-6 font-bold text-lg"
                 >
                   <span className="flex items-center gap-2">
                     <Calendar className="w-5 h-5" />
@@ -82,11 +83,11 @@ export function FinalCTA() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/20 hover:border-gold-light transition-all"
+                  className="group glass-card rounded-2xl p-6 border border-border hover:bg-card/80 hover:border-primary transition-all"
                 >
-                  <info.icon className="w-6 h-6 text-gold-light mb-3 mx-auto group-hover:scale-110 transition-transform" />
-                  <p className="text-sm text-white/70 mb-1">{info.label}</p>
-                  <p className="text-white font-semibold group-hover:text-gold-light transition-colors">
+                  <info.icon className="w-6 h-6 text-primary mb-3 mx-auto group-hover:scale-110 transition-transform" />
+                  <p className="text-sm text-muted-foreground mb-1">{info.label}</p>
+                  <p className="text-foreground font-semibold group-hover:text-primary transition-colors">
                     {info.value}
                   </p>
                 </motion.a>
@@ -98,10 +99,10 @@ export function FinalCTA() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="mt-12 text-white/60 text-sm"
+              className="mt-12 text-muted-foreground text-sm"
             >
               <p className="mb-2">Open Monday - Saturday</p>
-              <p className="text-lg font-semibold text-white/80">9:00 AM - 6:00 PM</p>
+              <p className="text-lg font-semibold text-foreground">9:00 AM - 6:00 PM</p>
             </motion.div>
           </motion.div>
         </div>

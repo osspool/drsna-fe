@@ -19,18 +19,18 @@ export function HeroSection() {
   const flipWords = ["Excellence", "Precision", "Artistry", "Innovation"];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-charcoal">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
       {/* Video Background Layer */}
       <div className="absolute inset-0">
         <BackgroundVideo url="https://www.youtube.com/watch?v=nUqENQZHd80" />
       </div>
-      
-      {/* Sophisticated gradient overlay for better text contrast */}
-      <div className="absolute inset-0 bg-linear-to-br from-[#0a0908]/70 via-[#1a1814]/60 to-dark-brown/70" />
 
-      {/* Spotlight effects */}
-      <Spotlight className="-top-40 left-0 md:left-60" fill="#cda55c" />
-      <Spotlight className="top-10 right-0 md:right-60" fill="#e6c89f" />
+      {/* Sophisticated gradient overlay for better text contrast */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/70 to-black/80" />
+
+      {/* Spotlight effects - Using CSS variables for theme awareness */}
+      <Spotlight className="-top-40 left-0 md:left-60" fill="hsl(var(--primary))" />
+      <Spotlight className="top-10 right-0 md:right-60" fill="hsl(var(--primary) / 0.8)" />
 
       {/* Animated gradient orbs */}
       <div className="absolute inset-0 overflow-hidden">
@@ -44,7 +44,7 @@ export function HeroSection() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="absolute top-1/4 left-1/4 w-96 h-96 bg-gold-primary/20 rounded-full blur-3xl"
+          className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
@@ -56,7 +56,7 @@ export function HeroSection() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="absolute bottom-1/4 right-1/4 w-lg h-128 bg-gold-light/15 rounded-full blur-3xl"
+          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/15 rounded-full blur-3xl"
         />
       </div>
 
@@ -76,10 +76,10 @@ export function HeroSection() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3, duration: 0.6 }}
-            className="inline-flex items-center gap-2 bg-gold-gradient px-5 py-2.5 rounded-full mb-6 shadow-gold-lg"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-primary via-primary/90 to-primary/80 px-5 py-2.5 rounded-full mb-6 shadow-primary-lg"
           >
-            <Award className="w-4 h-4 text-dark-brown" />
-            <span className="text-dark-brown font-bold text-xs tracking-wider">
+            <Award className="w-4 h-4 text-primary-foreground" />
+            <span className="text-primary-foreground font-bold text-xs tracking-wider">
               GLOBAL RECOGNITION AWARD 2024
             </span>
           </motion.div>
@@ -95,7 +95,7 @@ export function HeroSection() {
             <br />
             Redefined by{" "}
             <span className="inline-block">
-              <FlipWords words={flipWords} className="text-gold-light drop-shadow-lg" />
+              <FlipWords words={flipWords} className="text-primary drop-shadow-lg" />
             </span>
           </motion.h1>
 
@@ -104,12 +104,12 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
-            className="text-lg md:text-xl lg:text-2xl text-gray-200 drop-shadow-md mb-10 leading-relaxed max-w-2xl mx-auto font-light"
+            className="text-lg md:text-xl lg:text-2xl text-white/90 drop-shadow-md mb-10 leading-relaxed max-w-2xl mx-auto font-light"
           >
             Enhancing your natural beauty with{" "}
-            <span className="text-gold-light font-semibold drop-shadow-sm">precision</span>,{" "}
-            <span className="text-gold-light font-semibold drop-shadow-sm">safety</span>, and{" "}
-            <span className="text-gold-light font-semibold drop-shadow-sm">expertise</span>
+            <span className="text-primary font-semibold drop-shadow-sm">precision</span>,{" "}
+            <span className="text-primary font-semibold drop-shadow-sm">safety</span>, and{" "}
+            <span className="text-primary font-semibold drop-shadow-sm">expertise</span>
           </motion.p>
 
           {/* CTA Buttons */}
@@ -122,8 +122,8 @@ export function HeroSection() {
             <Link href="/booking">
               <MovingBorderButton
                 borderRadius="1.5rem"
-                className="bg-linear-to-br from-gold-primary via-gold-light to-gold-primary text-dark-brown px-8 py-3.5 font-bold text-base shadow-gold-lg hover:shadow-gold transition-all duration-300"
-                borderClassName="bg-gradient-to-r from-gold-primary via-gold-light to-gold-dark"
+                className="bg-gradient-to-br from-primary via-primary/90 to-primary/80 text-primary-foreground px-8 py-3.5 font-bold text-base shadow-primary-lg hover:shadow-primary transition-all duration-300"
+                borderClassName="bg-gradient-to-r from-primary via-primary/90 to-primary/70"
               >
                 <span className="flex items-center gap-2">
                   Book Consultation
@@ -136,7 +136,7 @@ export function HeroSection() {
               asChild
               size="lg"
               variant="outline"
-              className="text-white hover:text-dark-brown bg-transparent border-2 border-gold-light hover:bg-gold-light px-8 py-6 rounded-2xl transition-all duration-300 shadow-lg font-semibold"
+              className="text-white hover:text-primary-foreground bg-transparent border-2 border-primary hover:bg-primary px-8 py-6 rounded-2xl transition-all duration-300 shadow-lg font-semibold"
             >
               <Link href="#about">
                 Discover Our Approach
@@ -149,22 +149,22 @@ export function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5, duration: 0.8 }}
-            className="flex flex-wrap justify-center gap-6 text-gray-300 text-xs md:text-sm font-medium"
+            className="flex flex-wrap justify-center gap-6 text-white/80 text-xs md:text-sm font-medium"
           >
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-gold-light shadow-gold" />
+              <div className="w-2 h-2 rounded-full bg-primary shadow-primary" />
               <span>CQC Registered</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-gold-light shadow-gold" />
+              <div className="w-2 h-2 rounded-full bg-primary shadow-primary" />
               <span>GMC Certified Doctors</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-gold-light shadow-gold" />
+              <div className="w-2 h-2 rounded-full bg-primary shadow-primary" />
               <span>15+ Years Experience</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-gold-light shadow-gold" />
+              <div className="w-2 h-2 rounded-full bg-primary shadow-primary" />
               <span>10,000+ Happy Patients</span>
             </div>
           </motion.div>
@@ -173,8 +173,8 @@ export function HeroSection() {
 
       {/* Bottom accent */}
       <div className="absolute bottom-0 left-0 right-0">
-        <div className="h-px bg-gradient-to-r from-transparent via-gold-primary to-transparent" />
-        <div className="h-20 bg-gradient-to-t from-cream/10 to-transparent" />
+        <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent" />
+        <div className="h-20 bg-gradient-to-t from-secondary/10 to-transparent" />
       </div>
     </section>
   );

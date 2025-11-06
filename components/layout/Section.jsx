@@ -15,11 +15,10 @@ export function Section({
 }) {
   const backgrounds = {
     default: "bg-background",
-    white: "bg-white",
-    cream: "bg-[var(--cream)]",
-    "gradient-cream": "bg-gradient-to-b from-cream/30 via-white to-cream/20",
-    dark: "bg-dark-gradient text-white",
-    gold: "bg-gold-gradient",
+    white: "bg-card",
+    cream: "bg-secondary",
+    "gradient-cream": "bg-linear-to-b from-secondary/30 via-background to-secondary/20",
+    gold: "bg-primary",
     muted: "bg-muted",
   };
 

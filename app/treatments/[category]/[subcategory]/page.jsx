@@ -114,24 +114,24 @@ export default async function SubcategoryPage({ params }) {
 
 function IntroSection({ data, title }) {
   return (
-    <section className="py-32 bg-white">
+    <section className="py-32 bg-background">
       <Container>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <div className="inline-flex items-center gap-2 px-6 py-2 bg-gold/10 border border-gold/20 rounded-full mb-6">
-              <Sparkles className="w-4 h-4 text-gold" />
-              <span className="text-gold text-sm font-semibold tracking-wider uppercase">Our Approach</span>
+            <div className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
+              <Sparkles className="w-4 h-4 text-primary" />
+              <span className="text-primary text-sm font-semibold tracking-wider uppercase">Our Approach</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-dark-brown mb-4">{data.title}</h2>
-            <p className="text-lg text-dark-brown/70 mb-6 leading-relaxed">{data.content}</p>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">{data.title}</h2>
+            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">{data.content}</p>
             {data.highlights && (
               <div className="space-y-3">
                 {data.highlights.map((highlight, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="w-6 h-6 bg-gold/10 rounded-full flex items-center justify-center shrink-0">
-                      <span className="text-gold text-sm">✓</span>
+                    <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
+                      <span className="text-primary text-sm">✓</span>
                     </div>
-                    <span className="text-dark-brown/80">{highlight}</span>
+                    <span className="text-foreground">{highlight}</span>
                   </div>
                 ))}
               </div>
@@ -151,11 +151,11 @@ function IntroSection({ data, title }) {
 // Featured Banner - Minimal luxury showcase for featured treatments
 function FeaturedBanner({ treatments, categoryId, subcategoryId }) {
   return (
-    <section className="py-20 bg-linear-to-b from-cream/30 to-white">
+    <section className="py-20 bg-gradient-to-b from-secondary/30 to-background">
       <Container>
         <div className="flex items-center gap-3 mb-12">
-          <Sparkles className="w-5 h-5 text-gold" />
-          <h2 className="text-2xl font-heading font-bold text-dark-brown">Most Popular Treatments</h2>
+          <Sparkles className="w-5 h-5 text-primary" />
+          <h2 className="text-2xl font-heading font-bold text-foreground">Most Popular Treatments</h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -165,32 +165,32 @@ function FeaturedBanner({ treatments, categoryId, subcategoryId }) {
                 href={`/treatments/${categoryId}/${subcategoryId}/${treatment.id}`}
                 className="block group"
               >
-                <div className="relative bg-white rounded-2xl p-8 border border-dark-brown/10 hover:border-gold/30 hover:shadow-xl transition-all duration-500 h-full">
+                <div className="relative bg-card rounded-2xl p-8 border border-border hover:border-primary/30 hover:shadow-xl transition-all duration-500 h-full">
                   {/* Popular Badge */}
                   <div className="absolute -top-3 right-6">
-                    <span className="px-4 py-1.5 bg-gold text-white text-xs font-bold rounded-full shadow-lg uppercase tracking-wider">
+                    <span className="px-4 py-1.5 bg-primary text-primary-foreground text-xs font-bold rounded-full shadow-lg uppercase tracking-wider">
                       Popular
                     </span>
                   </div>
 
                   {/* Treatment Title */}
-                  <h3 className="text-xl font-heading font-bold text-dark-brown mb-3 group-hover:text-gold transition-colors">
+                  <h3 className="text-xl font-heading font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                     {treatment.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-dark-brown/60 text-sm mb-6 leading-relaxed line-clamp-2 min-h-[40px]">
+                  <p className="text-muted-foreground text-sm mb-6 leading-relaxed line-clamp-2 min-h-[40px]">
                     {treatment.shortDescription}
                   </p>
 
                   {/* Price & CTA */}
-                  <div className="flex items-center justify-between pt-4 border-t border-dark-brown/5">
+                  <div className="flex items-center justify-between pt-4 border-t border-border">
                     {treatment.price && (
-                      <span className="text-gold font-heading font-bold text-xl">
+                      <span className="text-primary font-heading font-bold text-xl">
                         {treatment.price}
                       </span>
                     )}
-                    <span className="text-gold text-sm font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">
+                    <span className="text-primary text-sm font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">
                       Learn more
                       <ArrowRight className="w-4 h-4" />
                     </span>
@@ -207,13 +207,13 @@ function FeaturedBanner({ treatments, categoryId, subcategoryId }) {
 
 function AllTreatmentsSection({ treatments, categoryId, subcategoryId, title }) {
   return (
-    <section id="all-treatments" className="py-24 bg-white">
+    <section id="all-treatments" className="py-24 bg-background">
       <Container>
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-dark-brown mb-4">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
             All {title} Treatments
           </h2>
-          <p className="text-lg text-dark-brown/60 max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Explore our complete range of {title.toLowerCase()} treatments
           </p>
         </div>

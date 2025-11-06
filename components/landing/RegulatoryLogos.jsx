@@ -30,7 +30,7 @@ export function RegulatoryLogos() {
   ];
 
   return (
-    <section className="py-20 bg-white border-y border-gold-primary/10">
+    <section className="py-20 bg-background border-y border-border">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -38,10 +38,10 @@ export function RegulatoryLogos() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <p className="text-sm font-semibold text-gold uppercase tracking-wider mb-2">
+          <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">
             Certified Excellence
           </p>
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-dark-brown">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">
             Regulated & Accredited
           </h2>
         </motion.div>

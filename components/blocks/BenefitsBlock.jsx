@@ -21,7 +21,7 @@ export function BenefitsBlock({ data }) {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-gold"
+          className="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-primary"
         >
           {heading}
         </motion.h2>
@@ -43,16 +43,16 @@ export function BenefitsBlock({ data }) {
                 transition={{ delay: index * 0.1 }}
                 className="group flex"
               >
-                <div className="flex flex-col h-full w-full p-6 bg-white rounded-xl shadow-lg hover:shadow-gold-lg transition-all duration-300 hover:-translate-y-1">
+                <div className="flex flex-col h-full w-full p-6 bg-card rounded-xl shadow-lg hover:shadow-primary-lg transition-all duration-300 hover:-translate-y-1">
                   <div className="mb-4">
-                    <div className="w-16 h-16 rounded-full bg-gold-gradient flex items-center justify-center shadow-gold group-hover:scale-110 transition-transform duration-300">
-                      <Icon className="w-8 h-8 text-dark-brown" />
+                    <div className="w-16 h-16 rounded-full bg-linear-to-br from-primary to-primary/80 flex items-center justify-center shadow-primary group-hover:scale-110 transition-transform duration-300">
+                      <Icon className="w-8 h-8 text-foreground" />
                     </div>
                   </div>
-                  <h3 className="text-lg font-heading font-bold mb-3 text-dark-brown">
+                  <h3 className="text-lg font-heading font-bold mb-3 text-foreground">
                     {item.title}
                   </h3>
-                  <p className="text-dark-brown/70 leading-relaxed flex-grow">
+                  <p className="text-muted-foreground leading-relaxed flex-grow">
                     {item.description}
                   </p>
                 </div>

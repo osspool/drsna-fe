@@ -10,7 +10,7 @@ export function SubcategoryGrid({ subcategories, categoryId }) {
   if (!subcategories || subcategories.length === 0) return null;
 
   return (
-    <section id="treatments" className="py-16 md:py-20 bg-linear-to-b from-white to-cream">
+    <section id="treatments" className="py-16 md:py-20 bg-gradient-to-b from-background to-secondary">
       <Container>
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -18,10 +18,10 @@ export function SubcategoryGrid({ subcategories, categoryId }) {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 bg-gold/10 border border-gold/20 rounded-full mb-4"
+            className="inline-flex items-center gap-2 px-4 py-1.5 bg-primary/10 border border-primary/20 rounded-full mb-4"
           >
-            <Sparkles className="w-4 h-4 text-gold" />
-            <span className="text-gold text-xs font-semibold tracking-wider uppercase">
+            <Sparkles className="w-4 h-4 text-primary" />
+            <span className="text-primary text-xs font-semibold tracking-wider uppercase">
               Our Treatments
             </span>
           </motion.div>
@@ -31,7 +31,7 @@ export function SubcategoryGrid({ subcategories, categoryId }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-3xl md:text-4xl font-heading font-bold text-dark-brown mb-3"
+            className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-3"
           >
             Explore Our Specialties
           </motion.h2>
@@ -41,7 +41,7 @@ export function SubcategoryGrid({ subcategories, categoryId }) {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-base text-dark-brown/60 max-w-3xl mx-auto"
+            className="text-base text-muted-foreground max-w-3xl mx-auto"
           >
             Choose from our range of specialized treatment areas, each expertly designed to address your unique needs
           </motion.p>
@@ -72,7 +72,7 @@ function SubcategoryCard({ subcategory, categoryId, index }) {
       transition={{ delay: index * 0.1 }}
     >
       <Link href={`/treatments/${categoryId}/${subcategory.id}`}>
-        <div className="group relative h-full rounded-3xl overflow-hidden bg-white border-2 border-dark-brown/10 hover:border-transparent hover:shadow-2xl transition-all duration-700">
+        <div className="group relative h-full rounded-3xl overflow-hidden bg-card border-2 border-border hover:border-transparent hover:shadow-2xl transition-all duration-700">
           {/* Image Section */}
           {subcategory.image && (
             <div className="relative h-56 overflow-hidden">
@@ -82,19 +82,19 @@ function SubcategoryCard({ subcategory, categoryId, index }) {
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark-brown via-dark-brown/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
 
               {/* Featured Badge */}
               {subcategory.featured && (
-                <div className="absolute top-4 right-4 px-3 py-1.5 bg-gold/90 backdrop-blur-sm rounded-full">
-                  <span className="text-white font-semibold text-xs">Featured</span>
+                <div className="absolute top-4 right-4 px-3 py-1.5 bg-primary/90 backdrop-blur-sm rounded-full">
+                  <span className="text-primary-foreground font-semibold text-xs">Featured</span>
                 </div>
               )}
 
               {/* Treatment Count */}
               <div className="absolute bottom-4 left-4 flex items-center gap-3">
-                <div className="px-3 py-1.5 bg-white/90 backdrop-blur-sm rounded-full">
-                  <span className="text-dark-brown font-semibold text-xs">
+                <div className="px-3 py-1.5 bg-card/90 backdrop-blur-sm rounded-full">
+                  <span className="text-foreground font-semibold text-xs">
                     {subcategory.treatmentCount} {subcategory.treatmentCount === 1 ? 'Treatment' : 'Treatments'}
                   </span>
                 </div>
@@ -105,24 +105,24 @@ function SubcategoryCard({ subcategory, categoryId, index }) {
           {/* Content Section */}
           <div className="p-6">
             {/* Title */}
-            <h3 className="text-2xl font-heading font-bold text-dark-brown mb-2 group-hover:text-gold transition-colors">
+            <h3 className="text-2xl font-heading font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
               {subcategory.title}
             </h3>
 
             {/* Short Description */}
             {subcategory.shortDescription && (
-              <p className="text-sm text-dark-brown/60 mb-2">
+              <p className="text-sm text-muted-foreground mb-2">
                 {subcategory.shortDescription}
               </p>
             )}
 
             {/* Description */}
-            <p className="text-sm text-dark-brown/70 leading-relaxed mb-4">
+            <p className="text-sm text-muted-foreground leading-relaxed mb-4">
               {subcategory.description}
             </p>
 
             {/* CTA */}
-            <div className="flex items-center text-gold font-semibold text-sm">
+            <div className="flex items-center text-primary font-semibold text-sm">
               Explore {subcategory.title} Treatments
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform" />
             </div>

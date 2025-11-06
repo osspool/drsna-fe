@@ -18,11 +18,11 @@ export function TreatmentAreasBlock({ data }) {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-dark-brown mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
             {title}
           </h2>
           {subtitle && (
-            <p className="text-lg md:text-xl text-dark-brown/60 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
               {subtitle}
             </p>
           )}
@@ -44,22 +44,22 @@ export function TreatmentAreasBlock({ data }) {
                 transition={{ delay: index * 0.1 }}
                 className="group flex"
               >
-                <div className="flex flex-col h-full w-full rounded-3xl overflow-hidden bg-white border border-dark-brown/10 hover:border-gold/30 hover:shadow-gold-lg transition-all duration-500">
+                <div className="flex flex-col h-full w-full rounded-3xl overflow-hidden bg-card border border-border hover:border-primary/30 hover:shadow-primary-lg transition-all duration-500">
                   {/* Image */}
                   {area.image && (
-                    <div className="relative h-48 overflow-hidden flex-shrink-0">
+                    <div className="relative h-48 overflow-hidden shrink-0">
                       <Image
                         src={area.image}
                         alt={area.name}
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-110"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-dark-brown/60 to-transparent" />
-                      
+                      <div className="absolute inset-0 bg-linear-to-t from-foreground/60 to-transparent" />
+
                       {/* Icon Overlay */}
                       <div className="absolute top-4 left-4">
-                        <div className="w-12 h-12 rounded-full bg-gold/90 backdrop-blur-sm flex items-center justify-center">
-                          <Icon className="w-6 h-6 text-white" />
+                        <div className="w-12 h-12 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center">
+                          <Icon className="w-6 h-6 text-primary-foreground" />
                         </div>
                       </div>
                     </div>
@@ -67,22 +67,22 @@ export function TreatmentAreasBlock({ data }) {
 
                   {/* Content */}
                   <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-xl font-heading font-bold text-dark-brown mb-3">
+                    <h3 className="text-xl font-heading font-bold text-foreground mb-3">
                       {area.name}
                     </h3>
-                    <p className="text-dark-brown/70 mb-4 leading-relaxed flex-grow">
+                    <p className="text-muted-foreground mb-4 leading-relaxed flex-grow">
                       {area.description}
                     </p>
 
                     {/* Meta Info */}
-                    <div className="flex items-center justify-between pt-4 border-t border-dark-brown/10 mt-auto">
+                    <div className="flex items-center justify-between pt-4 border-t border-border mt-auto">
                       {area.price && (
-                        <span className="text-gold font-heading font-bold text-lg">
+                        <span className="text-primary font-heading font-bold text-lg">
                           {area.price}
                         </span>
                       )}
                       {area.duration && (
-                        <span className="text-sm text-dark-brown/60">
+                        <span className="text-sm text-muted-foreground">
                           {area.duration}
                         </span>
                       )}

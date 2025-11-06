@@ -1,5 +1,5 @@
 import { Header } from "@/components/core/Header";
-import { HeroSection } from "@/components/landing/HeroSection";
+import { HeroSectionV2 } from "@/components/landing/HeroSectionV2";
 import { RegulatoryLogos } from "@/components/landing/RegulatoryLogos";
 import { DrAbbasSection } from "@/components/landing/DrAbbasSection";
 import { PShotFeaturedSection } from "@/components/landing/PShotFeaturedSection";
@@ -150,8 +150,8 @@ export default function HomePage() {
       <Header />
 
       <main>
-        {/* Hero Section with Flip Words & Background Lines */}
-        <HeroSection />
+        {/* Hero Section with Luxury Carousel & Emotional Messaging */}
+        <HeroSectionV2 />
 
         {/* Dr Abbas Section with Card Spotlight */}
         <DrAbbasSection />

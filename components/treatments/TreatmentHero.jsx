@@ -58,7 +58,7 @@ export function TreatmentHero({ treatment, params }) {
   breadcrumbItems.push({ label: treatment.title });
 
   return (
-    <section className="relative min-h-[70vh] overflow-hidden pt-40 sm:py-28">
+    <section className="relative min-h-[70vh] overflow-hidden pt-40 sm:py-28 bg-black">
       {/* Background Image */}
       {treatment.hero?.backgroundImage && (
         <>
@@ -67,11 +67,11 @@ export function TreatmentHero({ treatment, params }) {
               src={treatment.hero.backgroundImage}
               alt={treatment.title}
               fill
-              className="object-cover "
+              className="object-cover"
               priority
             />
           </div>
-          <div className="absolute inset-0 bg-linear-to-br from-[#1a1814]/75 via-[#1a1814]/65 to-dark-brown/75 z-0" />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/75 via-black/65 to-black/75 z-0" />
         </>
       )}
 
@@ -90,18 +90,18 @@ export function TreatmentHero({ treatment, params }) {
                     {item.href ? (
                       <BreadcrumbLink
                         asChild
-                        className="hover:text-white transition-colors"
+                        className="hover:text-primary transition-colors"
                       >
                         <Link href={item.href}>{item.label}</Link>
                       </BreadcrumbLink>
                     ) : (
-                      <BreadcrumbPage className="text-gold-light font-semibold">
+                      <BreadcrumbPage className="text-primary font-semibold">
                         {item.label}
                       </BreadcrumbPage>
                     )}
                   </BreadcrumbItem>
                   {index < breadcrumbItems.length - 1 && (
-                    <BreadcrumbSeparator className="text-white/50" />
+                    <BreadcrumbSeparator className="text-white/30" />
                   )}
                 </Fragment>
               ))}
@@ -114,10 +114,10 @@ export function TreatmentHero({ treatment, params }) {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.2, type: "spring" }}
-              className="inline-flex items-center mt-20 gap-2 px-6 py-3 bg-gold/10 backdrop-blur-sm border border-gold/30 rounded-full mb-8"
+              className="inline-flex items-center mt-20 gap-2 px-6 py-3 bg-primary/10 backdrop-blur-sm border border-primary/30 rounded-full mb-8"
             >
-              <Star className="w-4 h-4 text-gold fill-gold" />
-              <span className="text-gold-light text-sm font-semibold tracking-wider uppercase">
+              <Star className="w-4 h-4 text-primary fill-primary" />
+              <span className="text-primary text-sm font-semibold tracking-wider uppercase">
                 {treatment.hero.badge}
               </span>
             </motion.div>
@@ -139,7 +139,7 @@ export function TreatmentHero({ treatment, params }) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
-              className="text-xl md:text-2xl text-gold-light mb-6 font-light"
+              className="text-xl md:text-2xl text-primary mb-6 font-light"
             >
               {treatment.tagline}
             </motion.p>
@@ -151,7 +151,7 @@ export function TreatmentHero({ treatment, params }) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
-              className="text-lg md:text-xl text-white/70 max-w-3xl mb-8 leading-relaxed"
+              className="text-lg md:text-xl text-white/90 max-w-3xl mb-8 leading-relaxed"
             >
               {treatment.hero.subheadline}
             </motion.p>
@@ -167,7 +167,7 @@ export function TreatmentHero({ treatment, params }) {
             <Button
               asChild
               size="lg"
-              className="btn-gold h-12 px-8 text-base md:text-lg group"
+              className="btn-primary-gradient h-12 px-8 text-base md:text-lg group"
             >
               <Link href="/booking">
                 Book Consultation
@@ -177,7 +177,7 @@ export function TreatmentHero({ treatment, params }) {
             <Button
               asChild
               size="lg"
-              className="h-12 px-8 text-base md:text-lg bg-white/10 backdrop-blur-md border-2 border-white/30 text-white hover:bg-white/20 hover:border-white/50 shadow-lg transition-all"
+              className="h-12 px-8 text-base md:text-lg glass-card border-2 border-white/30 text-white hover:bg-primary hover:border-primary shadow-lg transition-all"
             >
               <Link href="#pricing">
                 View Pricing

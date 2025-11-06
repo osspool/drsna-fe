@@ -24,7 +24,7 @@ export function FeaturedTreatments() {
       title: "Intimate Health",
       description: "Discreet professional wellness treatments",
       href: "/treatments/intimate-health",
-      image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800&q=80",
+      image: "/images/drsnaclinic/clinic-inside.jpg",
       treatments: ["P-Shot", "O-Shot", "Ultra Femme 360", "Regenerative Therapy"],
     },
     {
@@ -38,7 +38,7 @@ export function FeaturedTreatments() {
   ];
 
   return (
-    <Section padding="lg" className="bg-dark">
+    <Section padding="lg" className="bg-background">
       <Container maxWidth="7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -46,13 +46,13 @@ export function FeaturedTreatments() {
           viewport={{ once: true }}
           className="text-center mb-14 md:mb-16"
         >
-          <p className="text-gold text-xs font-semibold tracking-widest uppercase mb-3">
+          <p className="text-primary text-xs font-semibold tracking-widest uppercase mb-3">
             OUR SPECIALTIES
           </p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-dark-brown mb-4">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-4">
             Comprehensive Care
           </h2>
-          <p className="text-base md:text-lg text-dark-brown/60 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             From aesthetic enhancement to regenerative medicine, we offer world-class
             treatments tailored to your unique needs
           </p>
@@ -77,9 +77,9 @@ export function FeaturedTreatments() {
                   href={category.href}
                   className="block h-full w-full"
                 >
-                  <div className="group relative bg-white rounded-3xl overflow-hidden h-full w-full flex flex-col shadow-sm hover:shadow-lg transition-shadow duration-500">
+                  <div className="group relative bg-card rounded-3xl overflow-hidden h-full w-full flex flex-col shadow-sm hover:shadow-lg transition-shadow duration-500 border border-border">
                     {/* Image Section - Compact */}
-                    <div className="relative w-full aspect-5/3 overflow-hidden bg-gray-100">
+                    <div className="relative w-full aspect-5/3 overflow-hidden bg-muted">
                       <Image
                         src={category.image}
                         alt={category.title}
@@ -89,12 +89,12 @@ export function FeaturedTreatments() {
                         priority={index === 0}
                       />
                       {/* Subtle gradient overlay */}
-                      <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
                       
                       {/* Clean icon badge */}
                       <div className="absolute top-5 left-5">
-                        <div className="bg-white rounded-2xl p-2.5 shadow-sm">
-                          <category.icon className="w-5 h-5 text-gold" strokeWidth={2} />
+                        <div className="bg-card rounded-2xl p-2.5 shadow-sm border border-border/50">
+                          <category.icon className="w-5 h-5 text-primary" strokeWidth={2} />
                         </div>
                       </div>
                     </div>
@@ -102,12 +102,12 @@ export function FeaturedTreatments() {
                     {/* Content Section - More compact */}
                     <div className="flex flex-col grow p-6">
                       {/* Title */}
-                      <h3 className="text-xl font-heading font-bold text-dark-brown mb-2 group-hover:text-gold transition-colors duration-300">
+                      <h3 className="text-xl font-heading font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
                         {category.title}
                       </h3>
 
                       {/* Description */}
-                      <p className="text-dark-brown/60 mb-4 leading-relaxed text-sm">
+                      <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
                         {category.description}
                       </p>
 
@@ -116,10 +116,10 @@ export function FeaturedTreatments() {
                         {category.treatments.map((treatment, idx) => (
                           <li
                             key={idx}
-                            className="flex items-center text-xs text-dark-brown/70 group/item"
+                            className="flex items-center text-xs text-muted-foreground group/item"
                           >
-                            <span className="w-1 h-1 rounded-full bg-gold/50 mr-2.5 shrink-0 group-hover/item:bg-gold transition-colors duration-200" />
-                            <span className="group-hover/item:text-dark-brown transition-colors duration-200">
+                            <span className="w-1 h-1 rounded-full bg-primary/50 mr-2.5 shrink-0 group-hover/item:bg-primary transition-colors duration-200" />
+                            <span className="group-hover/item:text-foreground transition-colors duration-200">
                               {treatment}
                             </span>
                           </li>
@@ -128,10 +128,10 @@ export function FeaturedTreatments() {
 
                       {/* CTA - Simple and clean */}
                       <div className="mt-auto pt-4 flex items-center justify-between group/cta">
-                        <span className="text-gold font-semibold text-sm group-hover/cta:text-gold-dark transition-colors duration-200">
+                        <span className="text-primary font-semibold text-sm group-hover/cta:text-primary/80 transition-colors duration-200">
                           Explore Treatments
                         </span>
-                        <ArrowRight className="w-4 h-4 text-gold group-hover/cta:translate-x-1 transition-transform duration-300" />
+                        <ArrowRight className="w-4 h-4 text-primary group-hover/cta:translate-x-1 transition-transform duration-300" />
                       </div>
                     </div>
                   </div>
@@ -151,7 +151,7 @@ export function FeaturedTreatments() {
           <HoverBorderGradient
             as={Link}
             href="/treatments"
-            className="group inline-flex items-center gap-2.5 text-white font-medium px-8 py-3.5 rounded-full transition-all duration-300 hover:scale-[1.02] shadow-sm hover:shadow-md mx-auto"
+            className="group inline-flex items-center gap-2.5 text-foreground font-medium px-8 py-3.5 rounded-full transition-all duration-300 hover:scale-[1.02] shadow-sm hover:shadow-md mx-auto"
           >
             <span>View All Treatments</span>
             <ArrowRight className="w-4 h-4" />

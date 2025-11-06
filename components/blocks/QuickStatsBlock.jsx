@@ -40,23 +40,23 @@ export function QuickStatsBlock({ data }) {
       background="default"
       padding="default"
       ripple={false}
-      className="relative overflow-hidden !py-16 sm:!py-24 bg-gradient-to-b from-[#fefcf7] via-[#fffaf2] to-[#f7efe7]"
+      className="relative overflow-hidden !py-16 sm:!py-24 bg-linear-to-b from-background via-secondary/50 to-secondary"
     >
       <div className="pointer-events-none absolute inset-0 opacity-80">
-        <div className="absolute -top-24 right-[-10%] h-72 w-72 rounded-full bg-gold/25 blur-[140px]" />
-        <div className="absolute bottom-[-15%] left-[-10%] h-80 w-80 rounded-full bg-sky-200/30 blur-[160px]" />
+        <div className="absolute -top-24 right-[-10%] h-72 w-72 rounded-full bg-primary/25 blur-[140px]" />
+        <div className="absolute bottom-[-15%] left-[-10%] h-80 w-80 rounded-full bg-accent/30 blur-[160px]" />
         <ProgressiveBlur direction="top" blurLayers={10} blurIntensity={0.32} className="absolute inset-0" />
       </div>
 
       <Container className="relative">
         <div className="mb-12 flex flex-col gap-4 text-center">
-          <p className="text-[0.65rem] uppercase tracking-[0.4em] text-dark-brown/60">
+          <p className="text-[0.65rem] uppercase tracking-[0.4em] text-muted-foreground">
             Treatment At A Glance
           </p>
-          <h2 className="text-[2.6rem] leading-tight font-heading text-dark-brown md:text-[2.9rem]">
+          <h2 className="text-[2.6rem] leading-tight font-heading text-foreground md:text-[2.9rem]">
             Quick Treatment Facts
           </h2>
-          <p className="text-base text-dark-brown/65 max-w-3xl mx-auto">
+          <p className="text-base text-muted-foreground max-w-3xl mx-auto">
             Everything you need to know before booking—timelines, comfort level, and investment for the treatment.
           </p>
         </div>
@@ -86,19 +86,19 @@ export function QuickStatsBlock({ data }) {
                   as="div"
                   variant="light"
                   containerClassName="!w-full !h-full !rounded-[30px] border-transparent !bg-transparent"
-                  className="w-full h-full rounded-[26px] !bg-white/95 !text-dark-brown flex flex-col gap-4 px-6 py-5 shadow-[0_30px_65px_-55px_rgba(15,23,42,0.65)] transition-all duration-300 hover:shadow-[0_25px_60px_-35px_rgba(15,23,42,0.55)]"
+                  className="w-full h-full rounded-[26px] !bg-card/95 !text-foreground flex flex-col gap-4 px-6 py-5 shadow-[0_30px_65px_-55px_rgba(15,23,42,0.65)] transition-all duration-300 hover:shadow-[0_25px_60px_-35px_rgba(15,23,42,0.55)]"
                 >
                   <div className="flex items-center justify-between">
                     <Pill
                       variant="outline"
-                      className="uppercase tracking-[0.35em] text-[0.58rem] border-transparent bg-amber-50 text-amber-700 px-4 py-1"
+                      className="uppercase tracking-[0.35em] text-[0.58rem] border-transparent bg-primary/10 text-primary px-4 py-1"
                     >
                       {stat.label}
                     </Pill>
-                    <span className="block h-1.5 w-1.5 rounded-full bg-amber-400" />
+                    <span className="block h-1.5 w-1.5 rounded-full bg-primary" />
                   </div>
 
-                  <p className="text-[1.25rem] sm:text-[1.35rem] font-semibold text-slate-900 leading-tight mt-auto">
+                  <p className="text-[1.25rem] sm:text-[1.35rem] font-semibold text-foreground leading-tight mt-auto">
                     {stat.value}
                   </p>
                 </HoverBorderGradient>

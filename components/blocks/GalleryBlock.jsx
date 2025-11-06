@@ -51,12 +51,12 @@ export function GalleryBlock({ data }) {
             className="text-center mb-12"
           >
             {title && (
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-dark-brown mb-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
                 {title}
               </h2>
             )}
             {subtitle && (
-              <p className="text-lg md:text-xl text-dark-brown/60 max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
                 {subtitle}
               </p>
             )}
@@ -75,7 +75,7 @@ export function GalleryBlock({ data }) {
               className="group cursor-pointer"
               onClick={() => handleImageClick(image, index)}
             >
-              <div className="relative aspect-4/3 rounded-2xl overflow-hidden bg-dark-brown/5 shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div className="relative aspect-4/3 rounded-2xl overflow-hidden bg-secondary/5 shadow-lg hover:shadow-2xl transition-all duration-300">
                 <Image
                   src={image.src || image.url || image}
                   alt={image.alt || image.title || `Treatment image ${index + 1}`}
@@ -84,7 +84,7 @@ export function GalleryBlock({ data }) {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-linear-to-t from-dark-brown/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-linear-to-t from-foreground/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 
                 {/* Title/Caption */}
                 {(image.title || image.caption) && (

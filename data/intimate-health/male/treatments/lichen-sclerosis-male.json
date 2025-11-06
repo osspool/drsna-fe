@@ -95,7 +95,7 @@
     "title": "How PRP + LED Help LS",
     "subtitle": "Regeneration meets anti-inflammatory light",
     "content": "PRP releases growth factors that thicken the dermis, improve microcirculation, and accelerate healing of fissures. Red/near-infrared LED therapy (630–850nm) reduces inflammatory cytokines and helps normalise melanocyte activity, slowing the pale appearance associated with LS.",
-    "background": "dark",
+    "background": "default",
     "variant": "dark-glass",
     "benefits": [
       {

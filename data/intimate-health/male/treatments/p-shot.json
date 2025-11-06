@@ -148,7 +148,7 @@
     "title": "The Science Behind the P-Shot",
     "subtitle": "Growth factors that remodel tissue from the inside out",
     "content": "Platelets contain PDGF, VEGF, TGF-β, and EGF—signals that instruct your body to repair and regenerate. When injected into penile tissue, they stimulate angiogenesis (new vessels), activate stem cells, and repair micro-tears caused by ageing, diabetes, or medication use. The procedure also releases nitric oxide for improved arterial dilation.",
-    "background": "dark",
+    "background": "default",
     "variant": "dark-glass",
     "benefits": [
       {"title": "Angiogenesis", "description": "New capillary networks carry more oxygenated blood", "icon": "activity"},

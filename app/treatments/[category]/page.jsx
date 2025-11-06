@@ -100,13 +100,13 @@ export default async function CategoryPage({ params }) {
 // Introduction Section Component
 function IntroductionSection({ data }) {
   return (
-    <section className="py-32 bg-white">
+    <section className="py-32 bg-background">
       <Container>
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-dark-brown mb-4">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
             {data.title}
           </h2>
-          <p className="text-lg text-dark-brown/70 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             {data.content}
           </p>
         </div>
@@ -122,15 +122,15 @@ function IntroductionSection({ data }) {
               return (
                 <div
                   key={index}
-                  className="text-center p-8 bg-cream rounded-3xl hover:shadow-xl transition-shadow group"
+                  className="text-center p-8 bg-secondary rounded-3xl hover:shadow-xl transition-shadow group"
                 >
-                  <div className="w-16 h-16 bg-gold-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                    <Icon className="w-8 h-8 text-white" />
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                    <Icon className="w-8 h-8 text-primary-foreground" />
                   </div>
-                  <h3 className="text-xl font-heading font-bold text-dark-brown mb-3">
+                  <h3 className="text-xl font-heading font-bold text-foreground mb-3">
                     {highlight.title}
                   </h3>
-                  <p className="text-dark-brown/60 leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed">
                     {highlight.description}
                   </p>
                 </div>
@@ -146,16 +146,16 @@ function IntroductionSection({ data }) {
 // Testimonials Section Component
 function TestimonialsSection({ testimonials }) {
   return (
-    <section className="py-32 bg-linear-to-b from-cream to-white">
+    <section className="py-32 bg-gradient-to-b from-secondary to-background">
       <Container>
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-6 py-2 bg-gold/10 border border-gold/20 rounded-full mb-6">
-            <Star className="w-4 h-4 text-gold fill-gold" />
-            <span className="text-gold text-sm font-semibold tracking-wider uppercase">
+          <div className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
+            <Star className="w-4 h-4 text-primary fill-primary" />
+            <span className="text-primary text-sm font-semibold tracking-wider uppercase">
               Patient Stories
             </span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-dark-brown mb-6">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
             What Our Patients Say
           </h2>
         </div>
@@ -164,29 +164,29 @@ function TestimonialsSection({ testimonials }) {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-3xl border border-dark-brown/10 hover:border-gold/30 hover:shadow-xl transition-all"
+              className="bg-card p-8 rounded-3xl border border-border hover:border-primary/30 hover:shadow-xl transition-all"
             >
               {/* Star Rating */}
               <div className="flex gap-1 mb-6">
                 {[...Array(testimonial.rating || 5)].map((_, i) => (
                   <Star
                     key={i}
-                    className="w-5 h-5 fill-gold text-gold"
+                    className="w-5 h-5 fill-primary text-primary"
                   />
                 ))}
               </div>
 
               {/* Testimonial Text */}
-              <p className="text-dark-brown/70 leading-relaxed mb-6 italic">
+              <p className="text-muted-foreground leading-relaxed mb-6 italic">
                 &ldquo;{testimonial.text}&rdquo;
               </p>
 
               {/* Author Info */}
-              <div className="pt-6 border-t border-dark-brown/10">
-                <p className="font-heading font-bold text-dark-brown">
+              <div className="pt-6 border-t border-border">
+                <p className="font-heading font-bold text-foreground">
                   {testimonial.name}
                 </p>
-                <p className="text-sm text-dark-brown/60">
+                <p className="text-sm text-muted-foreground">
                   {testimonial.treatment} • {testimonial.location}
                 </p>
               </div>

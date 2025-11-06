@@ -29,7 +29,7 @@ export function VideoPlayer({ video = {}, isPlaying = false, onPlay, size = "md"
   if (!video?.url) return null;
 
   return (
-    <div className={cn("relative aspect-video overflow-hidden shadow-2xl bg-dark-brown/10", className)}>
+    <div className={cn("relative aspect-video overflow-hidden shadow-2xl bg-secondary/10", className)}>
       {isPlaying ? (
         videoId ? (
           <iframe
@@ -53,22 +53,22 @@ export function VideoPlayer({ video = {}, isPlaying = false, onPlay, size = "md"
           {thumbnail ? (
             <img src={thumbnail} alt={video.title || "Video thumbnail"} className="w-full h-full object-cover" />
           ) : (
-            <div className="w-full h-full bg-dark-brown/20" />
+            <div className="w-full h-full bg-muted" />
           )}
-          <div className="absolute inset-0 bg-gradient-to-t from-dark-brown/70 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-transparent to-transparent" />
           <button
             type="button"
             onClick={handlePlay}
-            className="absolute inset-0 flex items-center justify-center cursor-pointer"
+            className="absolute inset-0 flex items-center justify-center cursor-pointer z-10"
             aria-label={`Play ${video.title || "video"}`}
           >
             <div
               className={cn(
-                "flex items-center justify-center rounded-full bg-gold/90 hover:bg-gold transition-all duration-300 hover:scale-110",
+                "flex items-center justify-center rounded-full bg-primary/90 hover:bg-primary transition-all duration-300 hover:scale-110 shadow-2xl",
                 PLAY_BUTTON_SIZES[size]
               )}
             >
-              <Play className={cn(PLAY_ICON_SIZES[size], "text-white ml-1")} fill="white" />
+              <Play className={cn(PLAY_ICON_SIZES[size], "text-primary-foreground ml-1")} fill="currentColor" />
             </div>
           </button>
         </>

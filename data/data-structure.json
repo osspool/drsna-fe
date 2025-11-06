@@ -166,6 +166,20 @@
         "title": {"type": "string"},
         "subtitle": {"type": "string"},
         "content": {"type": "string"},
+        "variant": {
+          "type": "string",
+          "enum": ["default", "dark-glass"],
+          "description": "Visual style variant"
+        },
+        "background": {
+          "type": "string",
+          "enum": ["default", "white", "cream", "gradient-cream", "gold", "muted"],
+          "description": "Background color theme (should match Section supported values)"
+        },
+        "enabled": {
+          "type": "boolean",
+          "description": "Whether to display this block"
+        },
         "benefits": {
           "type": "array",
           "items": {
@@ -176,6 +190,11 @@
               "icon": {"type": "string"}
             }
           }
+        },
+        "growthFactors": {
+          "type": "array",
+          "description": "List of growth factor names/proteins",
+          "items": {"type": "string"}
         }
       }
     },

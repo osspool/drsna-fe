@@ -21,7 +21,7 @@ export const TestimonialsSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-up space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold">
-            <span className="text-gold">Hear From Our</span>{" "}
+            <span className="text-primary">Hear From Our</span>{" "}
             <span className="text-foreground">Patients</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
@@ -33,7 +33,7 @@ export const TestimonialsSection = () => {
           {videos.map((video, index) => (
             <div
               key={video.id}
-              className="group relative aspect-video rounded-2xl overflow-hidden border-2 border-gold/20 hover:border-gold/60 transition-all duration-500 hover:shadow-2xl hover:shadow-gold/20 hover:-translate-y-2"
+              className="group relative aspect-video rounded-2xl overflow-hidden border-2 border-primary/20 hover:border-primary/60 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Video thumbnail */}
@@ -43,7 +43,7 @@ export const TestimonialsSection = () => {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               
-              <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent opacity-60 group-hover:opacity-75 transition-opacity"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/30 to-transparent opacity-60 group-hover:opacity-75 transition-opacity"></div>
               
               <button
                 onClick={() => setSelectedVideo(video.id)}
@@ -54,7 +54,7 @@ export const TestimonialsSection = () => {
                 </div>
               </button>
 
-              <div className="absolute top-4 left-4 glass-effect px-3 py-1.5 rounded-full border border-primary/30">
+              <div className="absolute top-4 left-4 glass px-3 py-1.5 rounded-full border border-primary/30">
                 <span className="text-primary text-sm font-medium">#Testimonial</span>
               </div>
             </div>

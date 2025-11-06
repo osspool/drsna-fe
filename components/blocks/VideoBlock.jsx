@@ -38,7 +38,7 @@ export function VideoBlock({ data }) {
                 size="md"
               />
               {video.title && (
-                <p className="mt-4 text-center text-dark-brown/70 font-medium">
+                <p className="mt-4 text-center text-muted-foreground font-medium">
                   {video.title}
                 </p>
               )}
@@ -53,12 +53,12 @@ export function VideoBlock({ data }) {
             >
               <div className="space-y-6">
                 {featureContent?.title && (
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-dark-brown">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground">
                     {featureContent.title}
                   </h2>
                 )}
                 {featureContent?.description && (
-                  <p className="text-lg text-dark-brown/70 leading-relaxed">
+                  <p className="text-lg text-muted-foreground leading-relaxed">
                     {featureContent.description}
                   </p>
                 )}
@@ -86,12 +86,12 @@ export function VideoBlock({ data }) {
             {(title || subtitle) && (
               <div className="text-center mb-12">
                 {title && (
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-dark-brown mb-4">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
                     {title}
                   </h2>
                 )}
                 {subtitle && (
-                  <p className="text-lg md:text-xl text-dark-brown/60">
+                  <p className="text-lg md:text-xl text-muted-foreground">
                     {subtitle}
                   </p>
                 )}
@@ -107,7 +107,7 @@ export function VideoBlock({ data }) {
             />
 
             {description && (
-              <p className="mt-6 text-center text-dark-brown/70 max-w-3xl mx-auto">
+              <p className="mt-6 text-center text-muted-foreground max-w-3xl mx-auto">
                 {description}
               </p>
             )}
@@ -129,12 +129,12 @@ export function VideoBlock({ data }) {
             className="text-center mb-12"
           >
             {title && (
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-dark-brown mb-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
                 {title}
               </h2>
             )}
             {subtitle && (
-              <p className="text-lg md:text-xl text-dark-brown/60 max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
                 {subtitle}
               </p>
             )}
@@ -150,7 +150,7 @@ export function VideoBlock({ data }) {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <VideoPlayer
                   video={video}
                   isPlaying={!!playing[index]}
@@ -161,17 +161,17 @@ export function VideoBlock({ data }) {
                 {(video.title || video.description) && (
                   <div className="p-6">
                     {video.title && (
-                      <h3 className="text-xl font-heading font-bold text-dark-brown mb-2">
+                      <h3 className="text-xl font-heading font-bold text-foreground mb-2">
                         {video.title}
                       </h3>
                     )}
                     {video.description && (
-                      <p className="text-dark-brown/70">
+                      <p className="text-muted-foreground">
                         {video.description}
                       </p>
                     )}
                     {video.duration && (
-                      <p className="text-sm text-dark-brown/50 mt-2">
+                      <p className="text-sm text-muted-foreground/80 mt-2">
                         Duration: {video.duration}
                       </p>
                     )}

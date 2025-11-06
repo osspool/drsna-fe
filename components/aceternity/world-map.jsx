@@ -7,13 +7,15 @@ import DottedMap from "dotted-map";
 export default function WorldMap({
   dots = [],
   lineColor = "#cda55c",
+  dotColor = "#cda55c",
+  dotOpacity = 0.6,
 }) {
   const svgRef = useRef(null);
   const map = new DottedMap({ height: 100, grid: "diagonal" });
 
   const svgMap = map.getSVG({
     radius: 0.22,
-    color: "#cda55c40", // Gold color with transparency to match site theme
+    color: dotColor, // Configurable dot color
     shape: "circle",
     backgroundColor: "transparent",
   });
@@ -37,7 +39,8 @@ export default function WorldMap({
     <div className="w-full h-full relative">
       <img
         src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
-        className="h-full w-full opacity-60 pointer-events-none select-none"
+        className="h-full w-full pointer-events-none select-none"
+        style={{ opacity: dotOpacity }}
         alt="world map"
         height="495"
         width="1056"

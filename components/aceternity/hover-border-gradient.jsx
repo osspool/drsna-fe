@@ -13,7 +13,7 @@ export function HoverBorderGradient({
   as: Tag = "button",
   duration = 1,
   clockwise = true,
-  variant = "dark",
+  variant = "default",
   ...props
 }) {
   const [hovered, setHovered] = useState(false);
@@ -29,15 +29,22 @@ export function HoverBorderGradient({
   };
 
   const movingMap = {
-    TOP: "radial-gradient(20.7% 50% at 50% 0%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
-    LEFT: "radial-gradient(16.6% 43.1% at 0% 50%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
+    TOP: "radial-gradient(20.7% 50% at 50% 0%, hsl(var(--primary)) 0%, rgba(255, 255, 255, 0) 100%)",
+    LEFT: "radial-gradient(16.6% 43.1% at 0% 50%, hsl(var(--primary)) 0%, rgba(255, 255, 255, 0) 100%)",
     BOTTOM:
-      "radial-gradient(20.7% 50% at 50% 100%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
+      "radial-gradient(20.7% 50% at 50% 100%, hsl(var(--primary)) 0%, rgba(255, 255, 255, 0) 100%)",
     RIGHT:
-      "radial-gradient(16.2% 41.199999999999996% at 100% 50%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
+      "radial-gradient(16.2% 41.199999999999996% at 100% 50%, hsl(var(--primary)) 0%, rgba(255, 255, 255, 0) 100%)",
   };
 
   const variantStyles = {
+    default: {
+      container: "bg-card/20 hover:bg-card/10 text-foreground border-border",
+      inner: "bg-card text-foreground",
+      fill: "bg-card",
+      highlight:
+        "radial-gradient(75% 181.15942028985506% at 50% 50%, hsl(var(--primary) / 0.3) 0%, rgba(255, 255, 255, 0) 100%)",
+    },
     dark: {
       container: "bg-black/20 hover:bg-black/10 text-white border-white/10",
       inner: "bg-black text-white",
@@ -54,7 +61,7 @@ export function HoverBorderGradient({
     },
   };
 
-  const tones = variantStyles[variant] || variantStyles.dark;
+  const tones = variantStyles[variant] || variantStyles.default;
   const highlight = tones.highlight;
 
   useEffect(() => {

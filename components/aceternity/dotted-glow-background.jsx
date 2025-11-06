@@ -39,7 +39,7 @@ import React, { useEffect, useRef, useState } from "react";
 /**
  * Canvas-based dotted background that randomly glows and dims.
  * - Uses a stable grid of dots.
- * - Each dot gets its own phase + speed producing organic shimmering.
+ * - Each dot gets its own phase + speed producing organic.
  * - Handles high-DPI and resizes via ResizeObserver.
  */
 export const DottedGlowBackground = ({

@@ -3,30 +3,8 @@
 import { motion } from "framer-motion";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
+import Glow from "@/components/custom/ui/glow";
 import { Check, Clock } from "lucide-react";
-
-const cardBaseClasses =
-  "relative h-full rounded-3xl bg-white/90 backdrop-blur-xl border border-dark-brown/5 shadow-[0px_25px_60px_rgba(15,23,42,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0px_35px_80px_rgba(15,23,42,0.18)] overflow-hidden";
-
-const CardShell = ({ children, className = "" }) => (
-  <div className={`${cardBaseClasses} ${className}`}>
-    <div className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-br from-white via-transparent to-gold/10 opacity-80" />
-    <span className="pointer-events-none absolute inset-x-6 top-0 h-1 rounded-full bg-gradient-to-r from-gold/70 via-gold to-transparent opacity-80" />
-    <div className="relative z-10 p-5 md:p-6">{children}</div>
-  </div>
-);
-
-const SectionChrome = ({ children, accent = "right" }) => (
-  <div className="relative overflow-hidden rounded-[40px] border border-gold/10 bg-gradient-to-br from-cream/40 via-white to-gold/5 px-4 py-10 md:px-10">
-    <div className="pointer-events-none absolute inset-x-10 top-6 h-24 rounded-full bg-gold/10 blur-3xl" />
-    <div
-      className={`pointer-events-none absolute ${
-        accent === "right" ? "-right-16" : "-left-16"
-      } bottom-0 h-64 w-64 rounded-full bg-gold/10 blur-3xl`}
-    />
-    {children}
-  </div>
-);
 
 export function WhatToExpectBlock({ data }) {
   const {
@@ -44,9 +22,13 @@ export function WhatToExpectBlock({ data }) {
   // Compact Timeline Variant
   if (variant === "compact-timeline") {
     return (
-      <Section background={background}>
-        <SectionChrome accent="right">
-          <Container>
+      <Section background={background} padding="none" ripple={true}>
+        <div className="relative flex w-full flex-col items-start justify-start overflow-hidden py-16 md:py-24">
+          {/* Glow Effect */}
+          <Glow variant="center" className="opacity-30" />
+
+          {/* Content Layer */}
+          <Container className="relative z-10 w-full">
             {/* Header */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -55,17 +37,17 @@ export function WhatToExpectBlock({ data }) {
               className="text-center mb-10 max-w-3xl mx-auto"
             >
               {title && (
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-dark-brown mb-3">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-3">
                   {title}
                 </h2>
               )}
               {subtitle && (
-                <p className="text-base md:text-lg text-gold font-medium mb-2">
+                <p className="text-base md:text-lg text-primary font-medium mb-2">
                   {subtitle}
                 </p>
               )}
               {description && (
-                <p className="text-sm md:text-base text-dark-brown/60">
+                <p className="text-sm md:text-base text-muted-foreground">
                   {description}
                 </p>
               )}
@@ -81,40 +63,40 @@ export function WhatToExpectBlock({ data }) {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.05 }}
                 >
-                  <CardShell className="group">
+                  <div className="group h-full bg-card/95 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-primary/10 hover:border-primary/30">
                     <div className="flex items-start justify-between gap-4">
                       <div>
-                        <p className="text-[11px] uppercase tracking-[0.3em] text-dark-brown/40 font-semibold">
+                        <p className="text-[11px] uppercase tracking-[0.3em] text-muted-foreground/70 font-semibold">
                           Step
                         </p>
-                        <div className="mt-2 inline-flex h-9 w-9 items-center justify-center rounded-2xl bg-gold/15 text-gold font-semibold">
+                        <div className="mt-2 inline-flex h-9 w-9 items-center justify-center rounded-2xl bg-primary/15 text-primary font-semibold">
                           {step.number || index + 1}
                         </div>
                       </div>
                       <div className="text-right">
-                        <p className="text-[10px] uppercase tracking-[0.2em] text-dark-brown/40">
+                        <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground/70">
                           Duration
                         </p>
                         {step.duration ? (
-                          <div className="mt-1 flex items-center justify-end gap-1.5 text-xs font-medium text-gold">
+                          <div className="mt-1 flex items-center justify-end gap-1.5 text-xs font-medium text-primary">
                             <Clock className="h-3.5 w-3.5" />
                             {step.duration}
                           </div>
                         ) : (
-                          <div className="mt-1 text-xs text-dark-brown/30">Varies</div>
+                          <div className="mt-1 text-xs text-muted-foreground/50">Varies</div>
                         )}
                       </div>
                     </div>
 
                     <div className="mt-4 space-y-3">
-                      <h3 className="text-lg font-semibold text-dark-brown group-hover:text-gold transition-colors">
+                      <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
                         {step.title}
                       </h3>
-                      <p className="text-sm text-dark-brown/70 leading-relaxed">
+                      <p className="text-sm text-muted-foreground leading-relaxed">
                         {step.description}
                       </p>
                     </div>
-                  </CardShell>
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -126,14 +108,14 @@ export function WhatToExpectBlock({ data }) {
               viewport={{ once: true }}
               className="mt-8 max-w-2xl mx-auto"
             >
-              <div className="rounded-3xl border border-gold/20 bg-white/80 p-6 shadow-[0px_25px_65px_rgba(15,23,42,0.08)]">
+              <div className="rounded-3xl border border-primary/20 bg-card/80 backdrop-blur-sm p-6 shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0">
-                    <Check className="w-5 h-5 text-gold" />
+                  <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
+                    <Check className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-dark-brown mb-1">Quick & Professional</h4>
-                    <p className="text-sm text-dark-brown/70">
+                    <h4 className="font-bold text-foreground mb-1">Quick & Professional</h4>
+                    <p className="text-sm text-muted-foreground">
                       The entire appointment takes under an hour, and you can return to normal activities immediately.
                     </p>
                   </div>
@@ -141,16 +123,20 @@ export function WhatToExpectBlock({ data }) {
               </div>
             </motion.div>
           </Container>
-        </SectionChrome>
+        </div>
       </Section>
     );
   }
 
   // Default Timeline Variant
   return (
-    <Section background={background}>
-      <SectionChrome accent="left">
-        <Container>
+    <Section background={background} padding="none" ripple={true}>
+      <div className="relative flex w-full flex-col items-start justify-start overflow-hidden py-16 md:py-24">
+        {/* Glow Effect */}
+        <Glow variant="center" className="opacity-30" />
+
+        {/* Content Layer */}
+        <Container className="relative z-10 w-full">
           {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -159,17 +145,17 @@ export function WhatToExpectBlock({ data }) {
             className="text-center mb-12 max-w-3xl mx-auto"
           >
             {title && (
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-dark-brown mb-3">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-3">
                 {title}
               </h2>
             )}
             {subtitle && (
-              <p className="text-lg md:text-xl text-gold font-medium mb-2">
+              <p className="text-lg md:text-xl text-primary font-medium mb-2">
                 {subtitle}
               </p>
             )}
             {description && (
-              <p className="text-base text-dark-brown/60">
+              <p className="text-base text-muted-foreground">
                 {description}
               </p>
             )}
@@ -187,33 +173,33 @@ export function WhatToExpectBlock({ data }) {
                 className="flex gap-4 group"
               >
                 {/* Step Number */}
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-2xl bg-white shadow-[0px_20px_40px_rgba(15,23,42,0.08)] border border-gold/20 flex items-center justify-center text-gold font-bold">
+                <div className="shrink-0">
+                  <div className="w-12 h-12 rounded-2xl bg-card shadow-lg border border-primary/20 flex items-center justify-center text-primary font-bold">
                     {step.number || index + 1}
                   </div>
                 </div>
 
                 {/* Step Content */}
                 <div className="flex-1">
-                  <CardShell className="group">
+                  <div className="h-full bg-card/95 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-primary/10 hover:border-primary/30">
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                       <div className="flex-1">
-                        <p className="text-[11px] uppercase tracking-[0.3em] text-dark-brown/40 font-semibold">
+                        <p className="text-[11px] uppercase tracking-[0.3em] text-muted-foreground/70 font-semibold">
                           Phase {step.number || index + 1}
                         </p>
-                        <h3 className="mt-2 text-xl font-semibold text-dark-brown group-hover:text-gold transition-colors">
+                        <h3 className="mt-2 text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
                           {step.title}
                         </h3>
-                        <p className="mt-2 text-sm text-dark-brown/70 leading-relaxed">
+                        <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
                           {step.description}
                         </p>
 
                         {/* Tips */}
                         {step.tips && step.tips.length > 0 && (
-                          <div className="mt-4 space-y-2 rounded-2xl bg-cream/60 p-3">
+                          <div className="mt-4 space-y-2 rounded-2xl bg-secondary/60 p-3">
                             {step.tips.map((tip, tipIndex) => (
-                              <div key={tipIndex} className="flex items-start gap-2 text-xs text-dark-brown/70">
-                                <Check className="mt-0.5 h-3.5 w-3.5 text-gold" />
+                              <div key={tipIndex} className="flex items-start gap-2 text-xs text-muted-foreground">
+                                <Check className="mt-0.5 h-3.5 w-3.5 text-primary" />
                                 <span>{tip}</span>
                               </div>
                             ))}
@@ -222,27 +208,27 @@ export function WhatToExpectBlock({ data }) {
                       </div>
 
                       {/* Duration */}
-                      <div className="shrink-0 rounded-2xl border border-gold/30 bg-gold/5 px-4 py-3 text-center">
-                        <div className="text-[10px] uppercase tracking-[0.3em] text-gold">
+                      <div className="shrink-0 rounded-2xl border border-primary/30 bg-primary/5 px-4 py-3 text-center">
+                        <div className="text-[10px] uppercase tracking-[0.3em] text-primary">
                           Time
                         </div>
                         {step.duration ? (
-                          <div className="mt-2 flex items-center justify-center gap-1 text-sm font-semibold text-gold">
+                          <div className="mt-2 flex items-center justify-center gap-1 text-sm font-semibold text-primary">
                             <Clock className="h-4 w-4" />
                             {step.duration}
                           </div>
                         ) : (
-                          <div className="mt-2 text-sm text-dark-brown/40">Varies</div>
+                          <div className="mt-2 text-sm text-muted-foreground/70">Varies</div>
                         )}
                       </div>
                     </div>
-                  </CardShell>
+                  </div>
                 </div>
               </motion.div>
             ))}
           </div>
         </Container>
-      </SectionChrome>
+      </div>
     </Section>
   );
 }

@@ -29,7 +29,7 @@ export function CategoryHero({
     category: {
       minHeight: "min-h-[85vh]",
       backgroundOpacity: "opacity-20",
-      overlayGradient: "bg-linear-to-br from-[#1a1814]/60 via-[#1a1814]/50 to-dark-brown/90",
+      overlayGradient: "bg-gradient-to-br from-background/60 via-background/50 to-secondary/90",
       containerPadding: "py-32",
       animationDuration: 0.8,
       showBeams: true,
@@ -38,7 +38,7 @@ export function CategoryHero({
     subcategory: {
       minHeight: "min-h-[60vh]",
       backgroundOpacity: "opacity-30",
-      overlayGradient: "bg-linear-to-b from-[#1a1814]/40 to-[#1a1814]/60",
+      overlayGradient: "bg-gradient-to-b from-background/40 to-background/60",
       containerPadding: "py-24",
       animationDuration: 0.6,
       showBeams: false,
@@ -49,10 +49,10 @@ export function CategoryHero({
   const settings = config[variant];
 
   return (
-    <section className={`relative ${settings.minHeight} flex items-center justify-center overflow-hidden bg-[#1a1814]`}>
+    <section className={`relative ${settings.minHeight} flex items-center justify-center overflow-hidden bg-black`}>
       {/* Spotlight Effect */}
-      <Spotlight className="-top-40 left-0 md:left-60" fill="#cda55c" />
-      
+      <Spotlight className="-top-40 left-0 md:left-60" fill="hsl(var(--primary))" />
+
       {/* Background Beams - only for category */}
       {settings.showBeams && <BackgroundBeams />}
 
@@ -68,7 +68,7 @@ export function CategoryHero({
               priority
             />
           </div>
-          <div className={`absolute inset-0 ${settings.overlayGradient} z-0`} />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/50 to-black/70 z-0" />
         </>
       )}
 
@@ -107,7 +107,7 @@ export function CategoryHero({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: isCategory ? 0.5 : 0.4 }}
-              className={`text-lg md:text-xl ${isCategory ? "lg:text-2xl text-white/70 max-w-4xl mb-8" : "text-gold-light max-w-3xl mb-6"} mx-auto font-light leading-relaxed`}
+              className={`text-lg md:text-xl ${isCategory ? "lg:text-2xl text-white/90 max-w-4xl mb-8" : "text-primary max-w-3xl mb-6"} mx-auto font-light leading-relaxed`}
             >
               {data.hero.subheadline}
             </motion.p>
@@ -119,7 +119,7 @@ export function CategoryHero({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: isCategory ? 0.6 : 0.5 }}
-              className={`text-lg ${isCategory ? "md:text-xl text-white/60 mb-12" : "text-white/60  mb-10"} mx-auto leading-relaxed space-y-4`}
+              className={`text-lg ${isCategory ? "md:text-xl text-white/80 mb-12" : "text-white/80 mb-10"} mx-auto leading-relaxed space-y-4`}
             >
               {data.longDescription.split('\n\n').map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
@@ -154,13 +154,13 @@ function Breadcrumb({ categoryId, categoryName }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.2 }}
-      className="flex items-center justify-center gap-2 text-gold-light/60 text-sm mb-6"
+      className="flex items-center justify-center gap-2 text-white/70 text-sm mb-6"
     >
-      <Link href="/treatments" className="hover:text-gold-light transition-colors">
+      <Link href="/treatments" className="hover:text-primary transition-colors">
         Treatments
       </Link>
       <span>/</span>
-      <Link href={`/treatments/${categoryId}`} className="hover:text-gold-light transition-colors">
+      <Link href={`/treatments/${categoryId}`} className="hover:text-primary transition-colors">
         {categoryName || "Category"}
       </Link>
     </motion.div>
@@ -173,10 +173,10 @@ function TaglineBadge({ tagline }) {
       initial={{ scale: 0, rotate: -180 }}
       animate={{ scale: 1, rotate: 0 }}
       transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-      className="inline-flex items-center gap-2 px-6 py-3 bg-gold/10 backdrop-blur-sm border border-gold/30 rounded-full mb-8"
+      className="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 backdrop-blur-sm border border-primary/30 rounded-full mb-8"
     >
-      <Sparkles className="w-4 h-4 text-gold" />
-      <span className="text-gold-light text-sm font-semibold tracking-wider uppercase">
+      <Sparkles className="w-4 h-4 text-primary" />
+      <span className="text-primary text-sm font-semibold tracking-wider uppercase">
         {tagline}
       </span>
     </motion.div>
@@ -193,10 +193,10 @@ function StatsSection({ stats }) {
     >
       {stats.map((stat, index) => (
         <div key={index} className="text-center">
-          <div className="text-5xl md:text-6xl font-heading font-bold text-gold mb-2">
+          <div className="text-5xl md:text-6xl font-heading font-bold text-primary mb-2">
             {stat.value}
           </div>
-          <div className="text-white/60 text-sm md:text-base tracking-wide">
+          <div className="text-white/80 text-sm md:text-base tracking-wide">
             {stat.label}
           </div>
         </div>
@@ -216,7 +216,7 @@ function CTAButtons({ cta, delay }) {
       <Button
         asChild
         size="lg"
-        className="btn-gold text-base px-10 h-12 group"
+        className="btn-primary-gradient text-base px-10 h-12 group"
       >
         <Link href="/booking">
           {cta || "Book Consultation"}
@@ -227,7 +227,7 @@ function CTAButtons({ cta, delay }) {
         asChild
         size="lg"
         variant="outline"
-        className="bg-white/10 backdrop-blur-md border-2 border-white/30 text-white hover:bg-white/20 hover:border-white/50 text-base px-10 h-12 shadow-lg transition-all"
+        className="glass-card border-2 border-white/30 text-white hover:bg-primary hover:border-primary text-base px-10 h-12 shadow-lg transition-all"
       >
         <Link href="#treatments">
           Explore Treatments
@@ -249,7 +249,7 @@ function ScrollIndicator() {
         <motion.div
           animate={{ y: [0, 12, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}
-          className="w-1.5 h-1.5 bg-gold rounded-full"
+          className="w-1.5 h-1.5 bg-primary rounded-full"
         />
       </div>
     </motion.div>

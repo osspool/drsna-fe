@@ -57,10 +57,10 @@ function FAQItem({ faq, isOpen, onToggle, index }) {
         aria-controls={answerId}
         className={cn(
           "w-full text-left p-4 sm:p-6 md:p-8 rounded-2xl transition-all duration-300",
-          "border-2 bg-white shadow-lg",
+          "border-2 bg-card shadow-lg",
           isOpen
-            ? "border-gold-primary shadow-gold-lg"
-            : "border-transparent hover:border-gold-light hover:shadow-gold"
+            ? "border-primary shadow-primary-lg"
+            : "border-transparent hover:border-primary/50 hover:shadow-primary"
         )}
       >
         <div className="flex items-start gap-3 sm:gap-4">
@@ -69,14 +69,14 @@ function FAQItem({ faq, isOpen, onToggle, index }) {
             className={cn(
               "flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center transition-all duration-300",
               isOpen
-                ? "bg-gold-gradient shadow-gold"
-                : "bg-cream text-gold-primary group-hover:bg-gold-primary/10"
+                ? "bg-gradient-to-br from-primary to-primary/80 shadow-primary"
+                : "bg-secondary text-primary group-hover:bg-primary/10"
             )}
           >
             <Icon
               className={cn(
                 "w-5 h-5 sm:w-6 sm:h-6",
-                isOpen ? "text-dark-brown" : "text-gold-primary"
+                isOpen ? "text-primary-foreground" : "text-primary"
               )}
             />
           </div>
@@ -86,7 +86,7 @@ function FAQItem({ faq, isOpen, onToggle, index }) {
             <h3
               className={cn(
                 "font-heading font-bold text-base sm:text-lg md:text-xl transition-colors duration-300",
-                isOpen ? "text-gold-primary" : "text-dark-brown group-hover:text-gold-primary"
+                isOpen ? "text-primary" : "text-foreground group-hover:text-primary"
               )}
             >
               {faq.question}
@@ -98,8 +98,8 @@ function FAQItem({ faq, isOpen, onToggle, index }) {
             className={cn(
               "flex-shrink-0 w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-all duration-300",
               isOpen
-                ? "bg-gold-gradient text-dark-brown rotate-180 shadow-gold"
-                : "bg-cream text-gold-primary group-hover:bg-gold-primary/10"
+                ? "bg-gradient-to-br from-primary to-primary/80 text-primary-foreground rotate-180 shadow-primary"
+                : "bg-secondary text-primary group-hover:bg-primary/10"
             )}
           >
             {isOpen ? <Minus className="w-5 h-5" /> : <Plus className="w-5 h-5" />}
@@ -117,7 +117,7 @@ function FAQItem({ faq, isOpen, onToggle, index }) {
           className="overflow-hidden"
           id={answerId}
         >
-          <p className="text-dark-brown/80 leading-relaxed mt-4 sm:mt-5 md:mt-6 sm:ml-16 sm:pr-14 text-sm sm:text-base md:text-lg">
+          <p className="text-muted-foreground leading-relaxed mt-4 sm:mt-5 md:mt-6 sm:ml-16 sm:pr-14 text-sm sm:text-base md:text-lg">
             {faq.answer}
           </p>
         </motion.div>
@@ -130,11 +130,11 @@ export function FAQSection() {
   const [openId, setOpenId] = useState(1);
 
   return (
-    <section className="relative py-12 sm:py-16 md:py-24 lg:py-32 overflow-hidden bg-cream">
+    <section className="relative py-12 sm:py-16 md:py-24 lg:py-32 overflow-hidden bg-secondary">
       {/* Subtle Pattern Overlay */}
       <div className="absolute inset-0 opacity-30">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(205,165,92,0.1),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(205,165,92,0.1),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)_/_0.1),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,hsl(var(--primary)_/_0.1),transparent_50%)]" />
       </div>
 
       {/* Content */}
@@ -150,18 +150,18 @@ export function FAQSection() {
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="inline-flex items-center gap-2 bg-gold-gradient px-5 py-2.5 rounded-full mb-5 md:mb-6 shadow-gold"
+          className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-primary/80 px-5 py-2.5 rounded-full mb-5 md:mb-6 shadow-primary"
         >
-          <Sparkles className="w-4 h-4 text-dark-brown" />
-          <span className="text-dark-brown font-bold text-xs tracking-wider uppercase">
+          <Sparkles className="w-4 h-4 text-primary-foreground" />
+          <span className="text-primary-foreground font-bold text-xs tracking-wider uppercase">
             Frequently Asked Questions
           </span>
         </motion.div>
 
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-dark-brown mb-4 md:mb-6">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 md:mb-6">
             Everything You Need to Know
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-dark-brown/70 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed">
             Get answers to the most common questions about our treatments, safety protocols, and what makes Dr SNA Clinic London's trusted choice for aesthetic excellence.
           </p>
         </motion.div>
@@ -186,21 +186,21 @@ export function FAQSection() {
           viewport={{ once: true }}
           className="text-center mt-12 md:mt-16"
         >
-          <div className="inline-block p-6 sm:p-8 md:p-10 rounded-3xl bg-white border-2 border-gold-primary shadow-gold-lg">
-            <p className="text-dark-brown text-base sm:text-lg md:text-xl font-semibold mb-4 md:mb-6">
+          <div className="inline-block p-6 sm:p-8 md:p-10 rounded-3xl bg-card border-2 border-primary shadow-primary-lg">
+            <p className="text-foreground text-base sm:text-lg md:text-xl font-semibold mb-4 md:mb-6">
               Still have questions? We're here to help!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/booking"
-                className="inline-flex items-center justify-center gap-2 bg-gold-gradient text-dark-brown font-bold px-8 py-4 rounded-xl shadow-gold-lg hover:shadow-gold hover:scale-105 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 btn-primary-gradient font-bold px-8 py-4 rounded-xl shadow-primary-lg hover:shadow-primary hover:scale-105 transition-all duration-300"
               >
                 <Heart className="w-5 h-5" />
                 Book Free Consultation
               </a>
               <a
                 href="tel:02071234567"
-                className="inline-flex items-center justify-center gap-2 bg-transparent text-gold-primary border-2 border-gold-primary font-bold px-8 py-4 rounded-xl hover:bg-gold-primary hover:text-dark-brown transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 bg-transparent text-primary border-2 border-primary font-bold px-8 py-4 rounded-xl hover:bg-primary hover:text-primary-foreground transition-all duration-300"
               >
                 <Clock className="w-5 h-5" />
                 Call Us Now
@@ -211,8 +211,8 @@ export function FAQSection() {
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-primary to-transparent opacity-50" />
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-primary to-transparent opacity-50" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
     </section>
   );
 }

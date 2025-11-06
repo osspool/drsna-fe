@@ -22,9 +22,7 @@ export function CTASection({ data, variant = "default" }) {
   }
 
   return (
-    <section className="relative py-32 overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#1a1814] via-[#2d2620] to-[#1a1814]" />
+    <section className="relative py-32 overflow-hidden bg-gradient-to-br from-secondary via-secondary/90 to-background">
       <BackgroundBeams />
 
       <Container className="relative z-10">
@@ -40,9 +38,9 @@ export function CTASection({ data, variant = "default" }) {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="inline-flex items-center gap-2 px-6 py-2 bg-gold/20 backdrop-blur-sm border border-gold/30 rounded-full mb-8"
+              className="inline-flex items-center gap-2 px-6 py-2 bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full mb-8"
             >
-              <span className="text-gold-light text-sm font-semibold tracking-wider uppercase">
+              <span className="text-primary text-sm font-semibold tracking-wider uppercase">
                 {ctaData.overline}
               </span>
             </motion.div>
@@ -54,7 +52,7 @@ export function CTASection({ data, variant = "default" }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6"
+            className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6"
           >
             {ctaData.title}
           </motion.h2>
@@ -66,7 +64,7 @@ export function CTASection({ data, variant = "default" }) {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-lg md:text-xl text-white/70 mb-8 font-light leading-relaxed"
+              className="text-lg md:text-xl text-muted-foreground mb-8 font-light leading-relaxed"
             >
               {ctaData.subtitle}
             </motion.p>
@@ -84,7 +82,7 @@ export function CTASection({ data, variant = "default" }) {
               as={Link}
               href="/booking"
               borderRadius="2rem"
-              className="bg-gradient-to-br from-[#1a1814] to-[#2d2620] text-white font-semibold text-xl px-12 py-8 hover:bg-gradient-to-br hover:from-[#2d2620] hover:to-[#1a1814] transition-all"
+              className="bg-gradient-to-br from-card to-card text-foreground font-semibold text-xl px-12 py-8 hover:bg-gradient-to-br hover:from-accent hover:to-accent transition-all"
               containerClassName="w-full sm:w-auto"
             >
               <span className="flex items-center gap-3">
@@ -97,7 +95,7 @@ export function CTASection({ data, variant = "default" }) {
               <Button
                 asChild
                 size="lg"
-                className="bg-white/10 backdrop-blur-md border-2 border-white/30 text-white hover:bg-white/20 hover:border-white/50 text-xl px-12 py-8 transition-all shadow-lg"
+                className="glass-card border-2 border-border text-foreground hover:bg-accent hover:border-primary text-xl px-12 py-8 transition-all shadow-lg"
               >
                 <Link href="/contact">
                   {ctaData.secondaryButton}
@@ -118,14 +116,14 @@ export function CTASection({ data, variant = "default" }) {
               {ctaData.phone && (
                 <a
                   href={`tel:${ctaData.phone}`}
-                  className="inline-flex items-center gap-3 text-gold-light hover:text-gold transition-colors text-lg"
+                  className="inline-flex items-center gap-3 text-primary hover:text-primary/80 transition-colors text-lg"
                 >
                   <Phone className="w-5 h-5" />
                   {ctaData.phone}
                 </a>
               )}
               {ctaData.note && (
-                <p className="text-white/50 text-sm">
+                <p className="text-muted-foreground text-sm">
                   {ctaData.note}
                 </p>
               )}
@@ -144,17 +142,17 @@ function InlineCTA({ data }) {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-gold-primary to-gold-light p-12 md:p-16 text-center"
+      className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-primary to-primary/80 p-12 md:p-16 text-center"
     >
       {/* Decorative Elements */}
       <div className="absolute inset-0 bg-[url('/patterns/dots.svg')] opacity-10" />
 
       <div className="relative z-10">
-        <h3 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-white mb-6">
+        <h3 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary-foreground mb-6">
           {data.title}
         </h3>
         {data.subtitle && (
-          <p className="text-base md:text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
             {data.subtitle}
           </p>
         )}
@@ -163,9 +161,8 @@ function InlineCTA({ data }) {
             as={Link}
             href="/booking"
             borderRadius="1.5rem"
-            className="bg-white text-dark-brown hover:bg-cream text-lg px-10 py-6 font-semibold shadow-xl"
+            className="bg-card text-foreground hover:bg-accent text-lg px-10 py-6 font-semibold shadow-xl"
             containerClassName="w-full sm:w-auto"
-            borderClassName="h-20 w-20 opacity-90 bg-[radial-gradient(circle,#e6c89f_20%,#cda55c_40%,transparent_70%)]"
           >
             <span className="flex items-center gap-2">
               {data.primaryButton || "Book Now"}
@@ -177,7 +174,7 @@ function InlineCTA({ data }) {
               asChild
               size="lg"
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white/20 text-lg px-10 py-6"
+              className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/20 text-lg px-10 py-6"
             >
               <Link href="/contact">
                 {data.secondaryButton}
@@ -197,22 +194,21 @@ export function CTACard({ title, description, buttonText, buttonHref }) {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="bg-gradient-to-br from-gold-primary to-gold-light rounded-2xl p-8 text-white"
+      className="bg-gradient-to-br from-primary to-primary/80 rounded-2xl p-8 text-primary-foreground"
     >
       <Calendar className="w-12 h-12 mb-4 opacity-90" />
       <h3 className="text-2xl font-heading font-bold mb-3">
         {title || "Book Your Consultation"}
       </h3>
-      <p className="text-white/90 mb-6 leading-relaxed">
+      <p className="text-primary-foreground/90 mb-6 leading-relaxed">
         {description || "Get personalized advice from our expert practitioners"}
       </p>
       <MovingBorderButton
         as={Link}
         href={buttonHref || "/booking"}
         borderRadius="1rem"
-        className="w-full bg-white text-dark-brown hover:bg-cream font-semibold py-3"
+        className="w-full bg-card text-foreground hover:bg-accent font-semibold py-3"
         containerClassName="w-full"
-        borderClassName="h-16 w-16 opacity-90 bg-[radial-gradient(circle,#e6c89f_20%,#cda55c_40%,transparent_70%)]"
       >
         <span className="flex items-center justify-center gap-2">
           {buttonText || "Book Now"}

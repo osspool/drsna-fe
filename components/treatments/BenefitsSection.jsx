@@ -38,7 +38,7 @@ export function BenefitsSection({ data, variant = "default" }) {
   return (
     <section
       className={`py-16 md:py-24 ${
-        variant === "dark" ? "bg-dark-brown" : "bg-white"
+        variant === "dark" ? "bg-secondary" : "bg-background"
       }`}
     >
       <Container>
@@ -49,10 +49,10 @@ export function BenefitsSection({ data, variant = "default" }) {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="inline-flex items-center gap-2 px-3 py-1 bg-gold/10 ring-1 ring-gold/15 rounded-full mb-4"
+              className="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 ring-1 ring-primary/15 rounded-full mb-4"
             >
-              <Sparkles className="w-3 h-3 text-gold" />
-              <span className="text-gold text-xs md:text-sm font-semibold tracking-wider uppercase">
+              <Sparkles className="w-3 h-3 text-primary" />
+              <span className="text-primary text-xs md:text-sm font-semibold tracking-wider uppercase">
                 {data.subtitle}
               </span>
             </motion.div>
@@ -63,9 +63,7 @@ export function BenefitsSection({ data, variant = "default" }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className={`text-3xl md:text-5xl font-heading font-bold tracking-tight leading-tight mb-4 ${
-              variant === "dark" ? "text-white" : "text-dark-brown"
-            }`}
+            className="text-3xl md:text-5xl font-heading font-bold tracking-tight leading-tight mb-4 text-foreground"
           >
             {data.title || "Why Choose Us"}
           </motion.h2>
@@ -76,9 +74,7 @@ export function BenefitsSection({ data, variant = "default" }) {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className={`text-base md:text-lg max-w-3xl mx-auto ${
-                variant === "dark" ? "text-white/60" : "text-dark-brown/60"
-              }`}
+              className="text-base md:text-lg max-w-3xl mx-auto text-muted-foreground"
             >
               {data.description}
             </motion.p>
@@ -110,40 +106,20 @@ function BenefitCard({ benefit, index, variant }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.03 }}
-      className={`group relative p-6 md:p-7 rounded-2xl border transition-colors duration-200 ${
-        variant === "dark"
-          ? "bg-white/5 border-white/10 hover:bg-white/10 hover:border-gold/30"
-          : "bg-cream border-dark-brown/10 hover:border-gold/30 hover:shadow-md"
-      }`}
+      className="group relative p-6 md:p-7 rounded-2xl border bg-card border-border hover:border-primary/30 hover:shadow-md transition-colors duration-200"
     >
       {/* Icon */}
-      <div
-        className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-colors duration-200 ${
-          variant === "dark"
-            ? "bg-gold/10 group-hover:bg-gold/20"
-            : "bg-gold/10 group-hover:bg-gold/20"
-        }`}
-      >
-        <Icon className="w-6 h-6 text-gold" />
+      <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-colors duration-200 bg-primary/10 group-hover:bg-primary/20">
+        <Icon className="w-6 h-6 text-primary" />
       </div>
 
       {/* Title */}
-      <h3
-        className={`text-lg md:text-xl font-heading font-bold mb-2 transition-colors ${
-          variant === "dark"
-            ? "text-white group-hover:text-gold"
-            : "text-dark-brown group-hover:text-gold"
-        }`}
-      >
+      <h3 className="text-lg md:text-xl font-heading font-bold mb-2 transition-colors text-foreground group-hover:text-primary">
         {benefit.title}
       </h3>
 
       {/* Description */}
-      <p
-        className={`text-sm md:text-base leading-relaxed ${
-          variant === "dark" ? "text-white/70" : "text-dark-brown/70"
-        }`}
-      >
+      <p className="text-sm md:text-base leading-relaxed text-muted-foreground">
         {benefit.description}
       </p>
     </motion.div>
@@ -168,28 +144,16 @@ export function BenefitsListCompact({ items, variant = "default" }) {
             transition={{ delay: index * 0.05 }}
             className="flex items-start gap-4"
           >
-            <div
-              className={`shrink-0 w-10 h-10 rounded-xl flex items-center justify-center ${
-                variant === "dark" ? "bg-gold/20" : "bg-gold/10"
-              }`}
-            >
-              <Icon className="w-5 h-5 text-gold" />
+            <div className="shrink-0 w-10 h-10 rounded-xl flex items-center justify-center bg-primary/10">
+              <Icon className="w-5 h-5 text-primary" />
             </div>
             <div className="flex-1">
               {benefit.title && (
-                <h4
-                  className={`font-heading font-bold mb-1 ${
-                    variant === "dark" ? "text-white" : "text-dark-brown"
-                  }`}
-                >
+                <h4 className="font-heading font-bold mb-1 text-foreground">
                   {benefit.title}
                 </h4>
               )}
-              <p
-                className={`text-sm leading-relaxed ${
-                  variant === "dark" ? "text-white/70" : "text-dark-brown/70"
-                }`}
-              >
+              <p className="text-sm leading-relaxed text-muted-foreground">
                 {benefit.description || benefit}
               </p>
             </div>

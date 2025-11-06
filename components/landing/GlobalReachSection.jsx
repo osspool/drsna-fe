@@ -111,11 +111,11 @@ export function GlobalReachSection() {
   ];
 
   return (
-    <section className="relative py-32 bg-gradient-to-b from-[#0a0908] via-[#1a1814] to-[#2d2620] overflow-hidden">
+    <section className="relative py-32 bg-gradient-to-b from-secondary via-secondary/90 to-background overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gold-gradient rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-gold-gradient rounded-full blur-3xl" />
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-primary rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -126,16 +126,16 @@ export function GlobalReachSection() {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <p className="text-gold-light text-sm font-semibold tracking-wider uppercase mb-4 flex items-center justify-center gap-2">
+          <p className="text-primary text-sm font-semibold tracking-wider uppercase mb-4 flex items-center justify-center gap-2">
             <Globe className="w-4 h-4" />
             Global Excellence
           </p>
-          <h2 className="text-5xl md:text-7xl font-heading font-bold text-white mb-6">
+          <h2 className="text-5xl md:text-7xl font-heading font-bold text-foreground mb-6">
             Trusted Worldwide,
             <br />
-            <span className="text-gold-light">Located in London</span>
+            <span className="text-primary">Located in London</span>
           </h2>
-          <p className="text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Patients travel from across the globe to experience Dr Abbas's
             renowned expertise in aesthetic medicine. Our reputation for natural
             results and personalized care transcends borders.
@@ -150,15 +150,17 @@ export function GlobalReachSection() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <div className="relative h-[600px] rounded-3xl overflow-hidden border-2 border-gold-primary/30 shadow-2xl bg-gradient-to-br from-[#1a1410] via-[#0f0d0a] to-[#1a1814] backdrop-blur-sm">
+          <div className="relative h-[400px] md:h-[600px] rounded-3xl overflow-hidden border-2 border-primary/30 shadow-2xl bg-gradient-to-br from-card/80 via-card/90 to-card/95 backdrop-blur-sm">
             {/* Inner glow effect */}
-            <div className="absolute inset-0 bg-gradient-to-b from-gold-primary/5 via-transparent to-transparent pointer-events-none" />
-            
+            <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-transparent to-transparent pointer-events-none" />
+
             {/* Map container */}
-            <div className="absolute inset-0 p-8">
-              <WorldMap 
-                dots={connections} 
-                lineColor="#cda55c"
+            <div className="absolute inset-0 p-4 md:p-8">
+              <WorldMap
+                dots={connections}
+                lineColor="hsl(var(--primary))"
+                dotColor="#B8860B"
+                dotOpacity={0.8}
               />
             </div>
 
@@ -179,13 +181,13 @@ export function GlobalReachSection() {
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ 
+                  transition={{
                     delay: 0.8 + index * 0.15,
                     type: "spring",
                     stiffness: 200,
                     damping: 15
                   }}
-                  className="absolute text-white text-sm z-20"
+                  className="absolute text-white text-xs md:text-sm z-20"
                   style={{
                     left: `${leftPercent}%`,
                     top: `${topPercent}%`,
@@ -193,6 +195,7 @@ export function GlobalReachSection() {
                   }}
                   onMouseEnter={() => setHoveredLocation(index)}
                   onMouseLeave={() => setHoveredLocation(null)}
+                  onClick={() => setHoveredLocation(isHovered ? null : index)}
                 >
                   <AnimatePresence mode="wait">
                     {isHovered ? (
@@ -202,20 +205,20 @@ export function GlobalReachSection() {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 10, scale: 0.9 }}
                         transition={{ duration: 0.2 }}
-                        className="bg-gradient-to-br from-dark-brown via-[#1a1410] to-dark-brown backdrop-blur-md rounded-xl px-6 py-4 border-2 border-gold-primary shadow-2xl shadow-gold-primary/20 mb-4 min-w-[280px]"
+                        className="bg-gradient-to-br from-card via-card/90 to-card/80 backdrop-blur-md rounded-lg px-3 py-2.5 border border-primary shadow-xl shadow-primary/20 mb-4 max-w-[180px]"
                       >
-                        <div className="flex items-center gap-3 mb-2">
-                          <span className="text-3xl">{location.icon}</span>
+                        <div className="flex items-center gap-2 mb-1.5">
+                          <span className="text-xl">{location.icon}</span>
                           <div>
-                            <p className="font-bold text-gold-light text-lg">
+                            <p className="font-bold text-primary text-sm leading-tight">
                               {location.label}
                             </p>
-                            <p className="text-sm text-white/80 font-semibold">
+                            <p className="text-[10px] text-muted-foreground font-semibold">
                               {location.count} patients
                             </p>
                           </div>
                         </div>
-                        <p className="text-xs text-white/70 leading-relaxed border-t border-white/10 pt-2 mt-2">
+                        <p className="text-[9px] text-muted-foreground leading-snug border-t border-border/50 pt-1.5 mt-1">
                           {location.description}
                         </p>
                       </motion.div>
@@ -226,17 +229,19 @@ export function GlobalReachSection() {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 10, scale: 0.9 }}
                         transition={{ duration: 0.2 }}
-                        className="bg-gradient-to-br from-dark-brown/95 to-[#1a1410]/95 backdrop-blur-md rounded-lg px-5 py-3 border border-gold-primary/40 shadow-xl shadow-gold-primary/10 mb-4"
+                        className="bg-gradient-to-br from-card/95 to-card/90 backdrop-blur-md rounded-md px-2.5 py-1.5 border border-primary/40 shadow-lg shadow-primary/10 mb-4"
                       >
-                        <div className="flex items-center gap-2 mb-1">
-                          <span className="text-xl">{location.icon}</span>
-                          <p className="font-bold text-gold-light text-base">
-                            {location.label}
-                          </p>
+                        <div className="flex items-center gap-1.5">
+                          <span className="text-base">{location.icon}</span>
+                          <div>
+                            <p className="font-bold text-primary text-xs leading-tight">
+                              {location.label}
+                            </p>
+                            <p className="text-[9px] text-muted-foreground font-medium">
+                              {location.count}
+                            </p>
+                          </div>
                         </div>
-                        <p className="text-xs text-white/70 font-medium">
-                          {location.count} patients
-                        </p>
                       </motion.div>
                     )}
                   </AnimatePresence>
@@ -245,10 +250,10 @@ export function GlobalReachSection() {
             })}
 
             {/* Decorative corner accents */}
-            <div className="absolute top-4 left-4 w-12 h-12 border-t-2 border-l-2 border-gold-primary/50 rounded-tl-lg" />
-            <div className="absolute top-4 right-4 w-12 h-12 border-t-2 border-r-2 border-gold-primary/50 rounded-tr-lg" />
-            <div className="absolute bottom-4 left-4 w-12 h-12 border-b-2 border-l-2 border-gold-primary/50 rounded-bl-lg" />
-            <div className="absolute bottom-4 right-4 w-12 h-12 border-b-2 border-r-2 border-gold-primary/50 rounded-br-lg" />
+            <div className="absolute top-4 left-4 w-12 h-12 border-t-2 border-l-2 border-primary/50 rounded-tl-lg" />
+            <div className="absolute top-4 right-4 w-12 h-12 border-t-2 border-r-2 border-primary/50 rounded-tr-lg" />
+            <div className="absolute bottom-4 left-4 w-12 h-12 border-b-2 border-l-2 border-primary/50 rounded-bl-lg" />
+            <div className="absolute bottom-4 right-4 w-12 h-12 border-b-2 border-r-2 border-primary/50 rounded-br-lg" />
           </div>
 
           {/* Instruction hint */}
@@ -256,7 +261,7 @@ export function GlobalReachSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 2 }}
-            className="text-center text-white/40 text-sm mt-4 italic"
+            className="text-center text-muted-foreground text-sm mt-4 italic"
           >
             Hover over the location markers to learn more
           </motion.p>
@@ -271,16 +276,16 @@ export function GlobalReachSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-gold-light/50 transition-all group"
+              className="glass-card rounded-2xl p-8 border border-border hover:border-primary/50 transition-all group"
             >
-              <stat.icon className="w-10 h-10 text-gold-light mb-4 group-hover:scale-110 transition-transform" />
-              <h3 className="text-4xl font-heading font-bold text-white mb-2">
+              <stat.icon className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform" />
+              <h3 className="text-4xl font-heading font-bold text-foreground mb-2">
                 {stat.value}
               </h3>
-              <p className="text-lg font-semibold text-gold-light mb-2">
+              <p className="text-lg font-semibold text-primary mb-2">
                 {stat.label}
               </p>
-              <p className="text-sm text-white/60 leading-relaxed">
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 {stat.description}
               </p>
             </motion.div>
@@ -294,9 +299,9 @@ export function GlobalReachSection() {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <h3 className="text-3xl md:text-4xl font-heading font-bold text-white text-center mb-12">
+          <h3 className="text-3xl md:text-4xl font-heading font-bold text-foreground text-center mb-12">
             Why International Patients Choose{" "}
-            <span className="text-gold-light">Dr SNA Clinic</span>
+            <span className="text-primary">Dr SNA Clinic</span>
           </h3>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -307,15 +312,15 @@ export function GlobalReachSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.15 }}
-                className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-gold-primary/50 transition-all"
+                className="glass-card rounded-2xl p-8 border border-border hover:border-primary/50 transition-all"
               >
-                <div className="w-14 h-14 rounded-full bg-gold-gradient flex items-center justify-center mb-6">
-                  <reason.icon className="w-7 h-7 text-dark-brown" />
+                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center mb-6">
+                  <reason.icon className="w-7 h-7 text-primary-foreground" />
                 </div>
-                <h4 className="text-xl font-heading font-bold text-white mb-4">
+                <h4 className="text-xl font-heading font-bold text-foreground mb-4">
                   {reason.title}
                 </h4>
-                <p className="text-white/70 leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed">
                   {reason.description}
                 </p>
               </motion.div>
