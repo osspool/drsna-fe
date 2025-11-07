@@ -66,7 +66,7 @@ export function WhyChooseBlock({ data }) {
               className="text-center mb-12 max-w-3xl mx-auto"
             >
               {title && (
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-3 drop-shadow-sm">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-3 drop-shadow-sm">
                   {title}
                 </h2>
               )}
@@ -155,13 +155,13 @@ export function WhyChooseBlock({ data }) {
   // Default Grid Variant with enhanced effects
   return (
     <Section background={background} padding="none" ripple={true}>
-      <div className="relative flex w-full flex-col items-start justify-start overflow-hidden">
+      <div className="relative flex w-full flex-col items-start justify-start overflow-hidden py-16 md:py-24">
         {/* Glow Effect */}
         <Glow
           variant="center"
           className="opacity-30"
         />
-        
+
         {/* Content Layer */}
         <Container className="relative z-10 w-full">
           {/* Header */}

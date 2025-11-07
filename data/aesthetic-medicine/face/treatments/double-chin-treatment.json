@@ -1,0 +1,131 @@
+{
+  "id": "double-chin-treatment",
+  "categoryId": "aesthetic-medicine",
+  "subcategoryId": "face",
+  "title": "Double Chin Treatment (Aqualyx / Fat Dissolving)",
+  "shortTitle": "Double Chin",
+  "tagline": "Sleek Jawline, Zero Lipo",
+  "description": "Aqualyx fat-dissolving injections reduce stubborn submental fullness and refine your profile without surgery.",
+  "longDescription": "If diet and workouts can’t shift your double chin, Aqualyx offers a precise, non-surgical solution. The deoxycholic acid-based formula breaks down fat cells under the chin, which are naturally eliminated over weeks. We combine injections with lymphatic massage, jawline contouring, and lifestyle tips so your profile stays sharp.",
+  "seo": {
+    "metaTitle": "Double Chin Treatment London | Aqualyx Fat Dissolving | Dr. SNA Clinic",
+    "metaDescription": "Slim your jawline with Aqualyx injections at Dr. SNA Clinic. Doctor-led fat dissolving for double chin reduction and profile refinement.",
+    "keywords": [
+      "double chin removal london",
+      "aqualyx injections",
+      "fat dissolving chin",
+      "non surgical chin slimming"
+    ],
+    "h1": "Double Chin Treatment in London",
+    "canonicalUrl": "/treatments/aesthetic-medicine/face/double-chin-treatment"
+  },
+  "hero": {
+    "headline": "Wave Goodbye to Submental Fullness",
+    "subheadline": "Doctor-only Aqualyx injections sculpt a tighter jawline in 2-3 sessions.",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80",
+    "badge": "No surgery • Minimal downtime"
+  },
+  "quickStats": {
+    "duration": "30 minutes",
+    "anesthesia": "Numbing cream + lidocaine mix",
+    "downtime": "Swelling 3-5 days",
+    "resultsVisible": "4-6 weeks",
+    "resultsLast": "Permanent (with stable weight)",
+    "painLevel": "Moderate (comfort managed)",
+    "price": "From £350/session",
+    "sessions": "2-3 sessions recommended"
+  },
+  "overview": {
+    "title": "How Fat Dissolving Works",
+    "content": "Aqualyx contains deoxycholic acid, a bile acid that breaks down fat cell membranes. Once destroyed, fat is naturally eliminated through the lymphatic system. We map your under-chin, inject micro-doses, then guide you through massage, diet tweaks, and jawline exercises to enhance results.",
+    "image": "https://images.unsplash.com/photo-1519415943484-9fa1873496ed?w=1200&q=80",
+    "highlights": [
+      "Targets submental fat + jowls",
+      "Pairs with jawline filler or Nefertiti lift",
+      "No general anaesthetic or scars"
+    ]
+  },
+  "benefits": {
+    "title": "Why Choose Dr. SNA Clinic",
+    "layout": "grid-3",
+    "items": [
+      {"title": "Medical precision", "description": "Doctors map safe injection depths to avoid swelling in the wrong areas.", "icon": "stethoscope"},
+      {"title": "Comprehensive plan", "description": "We combine slimming with contouring if needed.", "icon": "layers"},
+      {"title": "Aftercare support", "description": "Compression, massage, and nutrition tips ensure lasting results.", "icon": "heart"}
+    ]
+  },
+  "process": {
+    "title": "Treatment Flow",
+    "steps": [
+      {"number": 1, "title": "Consult & Mapping", "description": "Assess skin elasticity, fat distribution, and goals.", "icon": "clipboard-check"},
+      {"number": 2, "title": "Aqualyx Injections", "description": "Micro-bolus injections with lidocaine for comfort.", "icon": "syringe"},
+      {"number": 3, "title": "Recovery Support", "description": "Compression band + at-home massage routine.", "icon": "activity"},
+      {"number": 4, "title": "Review", "description": "Check progress at week 6, plan booster sessions if required.", "icon": "repeat"}
+    ]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Consultation fee (£75) credited toward treatment",
+    "singlePrice": {
+      "currentPrice": "£350",
+      "currency": "GBP"
+    },
+    "packages": [
+      {
+        "name": "Dual Session Slim",
+        "price": "£650",
+        "description": "2 sessions + compression kit",
+        "includes": "LED healing",
+        "savings": "Save £50"
+      },
+      {
+        "name": "Ultimate Profile",
+        "price": "£1,050",
+        "description": "3 sessions + jawline filler tweak",
+        "includes": "Aftercare bundle + review",
+        "savings": "Save £150"
+      }
+    ],
+    "includes": [
+      "Consultation & diagramming",
+      "Aqualyx product",
+      "Aftercare plan + check-in"
+    ]
+  },
+  "candidacy": {
+    "title": "Who It's For",
+    "suitable": [
+      "Stubborn double chin or jowls",
+      "Stable weight + healthy lifestyle",
+      "Patients wanting non-surgical slimming"
+    ],
+    "notSuitable": [
+      "Pregnancy/breastfeeding",
+      "Uncontrolled thyroid issues",
+      "Severe skin laxity (may need surgery)"
+    ],
+    "note": "We coordinate with surgeons when liposuction or lift is a better option."
+  },
+  "faq": [
+    {"question": "Is swelling normal?", "answer": "Yes—expect chipmunk swelling for 3-5 days as fat cells break down."},
+    {"question": "Are results permanent?", "answer": "Fat cells are destroyed for good, but weight gain can create new ones. Maintain a stable lifestyle for best results."}
+  ],
+  "relatedTreatments": [
+    {"id": "jawline-reduction", "title": "Jawline Sculpt", "description": "Add filler for sharper contour after fat reduction.", "reason": "Complete profile polish."},
+    {"id": "nefertiti-neck-lift", "title": "Nefertiti Lift", "description": "Tighten platysma bands post-slimming.", "reason": "Neck refinement."}
+  ],
+  "cta": {
+    "title": "Ready for a Sleek Jawline?",
+    "subtitle": "Book your double chin consultation today.",
+    "primaryButton": "Book slimming consult",
+    "secondaryButton": "Chat with a patient advisor",
+    "urgency": "Limited injection slots weekly",
+    "guarantee": "Consult fee credited toward treatment"
+  },
+  "bookingInfo": {
+    "depositRequired": false,
+    "cancellationPolicy": "48 hours’ notice required",
+    "consultationFee": "£75 (redeemable)",
+    "duration": "30-minute consultation"
+  }
+}

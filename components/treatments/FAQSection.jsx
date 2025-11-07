@@ -12,7 +12,7 @@ export function FAQSection({ data, variant = "default" }) {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className={`py-32 ${variant === "dark" ? "bg-dark-brown" : "bg-cream"}`}>
+    <section className="py-24 md:py-32 bg-muted">
       <Container>
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
@@ -21,10 +21,10 @@ export function FAQSection({ data, variant = "default" }) {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="inline-flex items-center gap-2 px-6 py-2 bg-gold/10 border border-gold/20 rounded-full mb-6"
+              className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6"
             >
-              <HelpCircle className="w-4 h-4 text-gold" />
-              <span className="text-gold text-sm font-semibold tracking-wider uppercase">
+              <HelpCircle className="w-4 h-4 text-primary" />
+              <span className="text-primary text-sm font-semibold tracking-wider uppercase">
                 FAQ
               </span>
             </motion.div>
@@ -34,9 +34,7 @@ export function FAQSection({ data, variant = "default" }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className={`text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6 ${
-                variant === "dark" ? "text-white" : "text-dark-brown"
-              }`}
+              className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-foreground mb-6"
             >
               Frequently Asked Questions
             </motion.h2>
@@ -46,9 +44,7 @@ export function FAQSection({ data, variant = "default" }) {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className={`text-lg md:text-xl ${
-                variant === "dark" ? "text-white/60" : "text-dark-brown/60"
-              }`}
+              className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto"
             >
               Everything you need to know about our treatments
             </motion.p>
@@ -63,7 +59,6 @@ export function FAQSection({ data, variant = "default" }) {
                 index={index}
                 isOpen={openIndex === index}
                 onToggle={() => setOpenIndex(openIndex === index ? -1 : index)}
-                variant={variant}
               />
             ))}
           </div>
@@ -73,40 +68,24 @@ export function FAQSection({ data, variant = "default" }) {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className={`mt-16 text-center p-8 rounded-3xl border ${
-              variant === "dark"
-                ? "bg-white/5 border-white/10"
-                : "bg-white border-dark-brown/10"
-            }`}
+            className="mt-16 text-center p-8 rounded-3xl bg-card border border-border"
           >
-            <h3
-              className={`text-2xl font-heading font-bold mb-3 ${
-                variant === "dark" ? "text-white" : "text-dark-brown"
-              }`}
-            >
+            <h3 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-3">
               Still have questions?
             </h3>
-            <p
-              className={`mb-6 ${
-                variant === "dark" ? "text-white/60" : "text-dark-brown/60"
-              }`}
-            >
+            <p className="text-base md:text-lg text-muted-foreground mb-6">
               Our expert team is here to help. Book a consultation or get in touch.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/booking"
-                className="inline-flex items-center justify-center px-8 py-3 bg-gold hover:bg-gold-dark text-white font-semibold rounded-full transition-colors"
+                className="inline-flex items-center justify-center px-8 py-3 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full transition-colors shadow-lg"
               >
                 Book Consultation
               </a>
               <a
                 href="/contact"
-                className={`inline-flex items-center justify-center px-8 py-3 font-semibold rounded-full transition-colors ${
-                  variant === "dark"
-                    ? "bg-white/10 hover:bg-white/20 text-white border border-white/20"
-                    : "bg-dark-brown/5 hover:bg-dark-brown/10 text-dark-brown border border-dark-brown/10"
-                }`}
+                className="inline-flex items-center justify-center px-8 py-3 font-semibold rounded-full transition-colors bg-secondary hover:bg-secondary/80 text-foreground border border-border"
               >
                 Contact Us
               </a>
@@ -118,7 +97,7 @@ export function FAQSection({ data, variant = "default" }) {
   );
 }
 
-function FAQItem({ faq, index, isOpen, onToggle, variant }) {
+function FAQItem({ faq, index, isOpen, onToggle }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -127,12 +106,8 @@ function FAQItem({ faq, index, isOpen, onToggle, variant }) {
       transition={{ delay: index * 0.05 }}
       className={`group rounded-2xl overflow-hidden border transition-all duration-300 ${
         isOpen
-          ? variant === "dark"
-            ? "bg-white/10 border-gold/40 shadow-gold-lg"
-            : "bg-white border-gold/40 shadow-gold-lg"
-          : variant === "dark"
-          ? "bg-white/5 border-white/10 hover:border-white/20"
-          : "bg-white border-dark-brown/10 hover:border-dark-brown/20"
+          ? "bg-card border-primary/40 shadow-2xl"
+          : "bg-card border-border hover:border-primary/30"
       }`}
     >
       {/* Question Button */}
@@ -141,19 +116,17 @@ function FAQItem({ faq, index, isOpen, onToggle, variant }) {
         className="w-full text-left p-6 md:p-8 flex items-center justify-between gap-4"
       >
         <h3
-          className={`text-lg md:text-xl font-heading font-bold ${
-            variant === "dark" ? "text-white" : "text-dark-brown"
-          } ${isOpen ? "text-gold" : ""} transition-colors`}
+          className={`text-lg md:text-xl font-heading font-bold transition-colors ${
+            isOpen ? "text-primary" : "text-foreground"
+          }`}
         >
           {faq.question}
         </h3>
         <div
           className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
             isOpen
-              ? "bg-gold text-white rotate-180"
-              : variant === "dark"
-              ? "bg-white/10 text-white/60 group-hover:bg-white/20"
-              : "bg-cream text-dark-brown/60 group-hover:bg-dark-brown/10"
+              ? "bg-primary text-primary-foreground rotate-180"
+              : "bg-secondary text-muted-foreground group-hover:bg-secondary/80"
           }`}
         >
           <ChevronDown className="w-5 h-5" />
@@ -170,11 +143,7 @@ function FAQItem({ faq, index, isOpen, onToggle, variant }) {
             transition={{ duration: 0.3 }}
           >
             <div className="px-6 md:px-8 pb-6 md:pb-8">
-              <div
-                className={`text-lg leading-relaxed ${
-                  variant === "dark" ? "text-white/70" : "text-dark-brown/70"
-                }`}
-              >
+              <div className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 {faq.answer}
               </div>
             </div>

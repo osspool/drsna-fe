@@ -155,6 +155,13 @@ export function MobileNav({ isOpen, onClose }) {
                     Our Team
                   </Link>
                   <Link
+                    href="/dr-syed-nadeem-abbas"
+                    onClick={onClose}
+                    className="block py-2.5 px-3 font-medium text-white hover:bg-white/10 rounded-lg transition-colors"
+                  >
+                    Dr Syed Nadeem Abbas
+                  </Link>
+                  <Link
                     href="/contact"
                     onClick={onClose}
                     className="block py-2.5 px-3 font-medium text-white hover:bg-white/10 rounded-lg transition-colors"

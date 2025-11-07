@@ -1,0 +1,137 @@
+{
+  "id": "foot-ankle-treatment",
+  "categoryId": "pain-management",
+  "subcategoryId": "conditions",
+  "title": "Foot & Ankle Pain Regenerative Programme",
+  "shortTitle": "Foot & Ankle Relief",
+  "tagline": "Stabilise Every Step.",
+  "description": "Platelet-rich plasma, adipose cell therapy, and targeted rehab that calm plantar fasciitis, ankle instability, and chronic tendon pain.",
+  "longDescription": "From first-step stabbing pain to recurring sprains, our foot and ankle specialists combine diagnostic imaging, regenerative injections, and movement coaching to rebuild support from the ground up. We restore cushioning, reduce inflammation, and re-train biomechanics so walking, training, and long days on your feet feel effortless again.",
+  "seo": {
+    "metaTitle": "Foot & Ankle Pain Treatment London | PRP & Regenerative Therapy | Dr. SNA",
+    "metaDescription": "Regenerative foot and ankle clinic in London. PRP, adipose cell therapy, tenotomy, and strength rehab for plantar fasciitis, Achilles tendinopathy, and instability.",
+    "keywords": [
+      "foot pain treatment london",
+      "plantar fasciitis prp",
+      "ankle instability therapy",
+      "achilles tendinopathy treatment"
+    ],
+    "h1": "Regenerative Foot & Ankle Pain Treatment in London",
+    "canonicalUrl": "/treatments/pain-management/conditions/foot-ankle-treatment"
+  },
+  "hero": {
+    "headline": "Walk, Run, and Train Without Foot & Ankle Pain",
+    "subheadline": "Doctor-led orthobiologics that rebuild cushioning, stabilise ligaments, and prevent flare-ups.",
+    "image": "https://images.unsplash.com/photo-1526312426976-f4d754fa9bd6?w=1920&q=80",
+    "badge": "Ultrasound-guided precision"
+  },
+  "quickStats": {
+    "duration": "40-50 minute visit",
+    "anesthesia": "Local anaesthetic + cooling",
+    "downtime": "Supportive footwear 3-5 days",
+    "resultsVisible": "4-6 weeks",
+    "resultsLast": "12-18 months",
+    "painLevel": "Low",
+    "price": "Programmes from £525",
+    "sessions": "Typically 1-3 sessions"
+  },
+  "overview": {
+    "title": "How the Programme Works",
+    "content": "Every patient receives ultrasound assessment to map fascia, tendons, and ligament integrity. We then tailor therapy using PRP, adipose cell concentrate, or percutaneous tenotomy. Rehab covers calf strength, intrinsic foot activation, and gait coaching so the relief lasts.",
+    "image": "/images/drsnaclinic/treatment/pain-management/foot-ankle-treatment.jpg",
+    "highlights": [
+      "Treats plantar fasciitis, Achilles tendinopathy, ankle instability, and Morton’s neuroma",
+      "Evidence-based biologic formulations",
+      "Physio support with custom orthotics and loading plans"
+    ]
+  },
+  "benefits": {
+    "title": "Why Patients Choose This Programme",
+    "items": [
+      {"title": "Consultant expertise", "description": "Regenerative orthopaedic physicians deliver every injection.", "icon": "stethoscope"},
+      {"title": "Root-cause approach", "description": "We address biomechanics, footwear, and strength—not just symptoms.", "icon": "activity"},
+      {"title": "Desk-to-sport recovery", "description": "Minimal downtime so you stay on schedule.", "icon": "clock"}
+    ]
+  },
+  "process": {
+    "title": "Your Recovery Path",
+    "steps": [
+      {"number": 1, "title": "Consult & Imaging", "description": "Ultrasound mapping, gait review, and footwear analysis.", "icon": "scan"},
+      {"number": 2, "title": "Regenerative Injection", "description": "PRP, adipose cells, or tenotomy guided directly to the injury.", "icon": "syringe"},
+      {"number": 3, "title": "Strength & Stability", "description": "Calf loading, intrinsic foot work, and balance drills with physio.", "icon": "bar-chart"},
+      {"number": 4, "title": "Review & Prevent", "description": "Follow-up at week 8 with return-to-sport plan and maintenance tips.", "icon": "repeat"}
+    ]
+  },
+  "pricing": {
+    "title": "Programme Pricing",
+    "singlePrice": {
+      "currentPrice": "£525",
+      "currency": "GBP",
+      "consultationFee": "£120",
+      "consultationNote": "Consultation includes ultrasound assessment and is redeemable within 30 days"
+    },
+    "packages": [
+      {
+        "name": "PRP Fascia Reset",
+        "price": "£1,250",
+        "description": "Two PRP sessions + physio plan",
+        "includes": "Custom orthotic advice, supplement kit",
+        "savings": "Save £200"
+      },
+      {
+        "name": "Achilles Cellular Rebuild",
+        "price": "£1,950",
+        "description": "Adipose cell therapy + PRP booster",
+        "includes": "Shockwave add-on, progress imaging",
+        "savings": "Save £300"
+      }
+    ],
+    "includes": [
+      "Specialist consultation",
+      "Ultrasound-guided procedures",
+      "Rehab roadmap + exercise videos",
+      "Follow-up review and outcome report"
+    ],
+    "financing": {
+      "available": true,
+      "buttonText": "0% finance available"
+    }
+  },
+  "candidacy": {
+    "title": "Ideal Candidates",
+    "suitable": [
+      "Plantar fasciitis or heel spurs",
+      "Achilles or posterior tibial tendinopathy",
+      "Chronic ankle instability or sprain sequelae",
+      "Morton’s neuroma and metatarsalgia"
+    ],
+    "notSuitable": [
+      "Active infection or ulceration",
+      "Complete tendon rupture needing surgery",
+      "Uncontrolled inflammatory arthritis"
+    ],
+    "note": "We coordinate with your GP, podiatrist, or surgeon where needed."
+  },
+  "faq": [
+    {"question": "When can I return to running?", "answer": "Most runners resume gradual mileage after week 4 following physio clearance."},
+    {"question": "Will I need orthotics?", "answer": "We assess footwear and may prescribe custom insoles if biomechanically indicated."}
+  ],
+  "relatedTreatments": [
+    {"id": "knee-treatment", "title": "Knee Pain Programme", "description": "Support the kinetic chain for runners.", "reason": "Great if knee alignment affects foot load."},
+    {"id": "non-surgical-regenerative", "title": "Regenerative Treatment Methods", "description": "Read about the biologics we use across programmes.", "reason": "Understand PRP and adipose therapy options."}
+  ],
+  "cta": {
+    "title": "Ready for Pain-Free Steps?",
+    "subtitle": "Book your foot & ankle consultation today.",
+    "primaryButton": "Book foot & ankle consult",
+    "secondaryButton": "Request a call back",
+    "urgency": "Limited weekly clinics to maintain specialist time",
+    "guarantee": "Consultation fee credited toward treatment"
+  },
+  "bookingInfo": {
+    "depositRequired": false,
+    "cancellationPolicy": "48 hours’ notice to reschedule",
+    "consultationFee": "£120 (redeemable)",
+    "duration": "30-minute consultation"
+  }
+}

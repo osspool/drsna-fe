@@ -22,10 +22,32 @@ import { TreatmentTestimonialsSection } from "@/components/treatments/TreatmentT
 import { RelatedTreatmentsSection } from "@/components/treatments/RelatedTreatmentsSection";
 
 // Import treatment data
+// Aesthetic Medicine
+// face
 import antiWrinkleData from "@/data/aesthetic-medicine/face/treatments/anti-wrinkle.json";
 import dermalFillersData from "@/data/aesthetic-medicine/face/treatments/dermal-fillers.json";
 import prpFaceliftData from "@/data/aesthetic-medicine/face/treatments/prp-facelift.json";
 import nonSurgicalBlepharoplastyData from "@/data/aesthetic-medicine/face/treatments/non-surgical-blepharoplasty.json";
+import lipEnhancementData from "@/data/aesthetic-medicine/face/treatments/lip-enhancement.json";
+import jawlineReductionData from "@/data/aesthetic-medicine/face/treatments/jawline-reduction.json";
+import tearTroughTreatmentData from "@/data/aesthetic-medicine/face/treatments/tear-trough-treatment.json";
+import nonSurgicalRhinoplastyData from "@/data/aesthetic-medicine/face/treatments/non-surgical-rhinoplasty.json";
+import skinBoostersData from "@/data/aesthetic-medicine/face/treatments/skin-boosters.json";
+import nefertitiNeckLiftData from "@/data/aesthetic-medicine/face/treatments/nefertiti-neck-lift.json";
+import cheekAugmentationData from "@/data/aesthetic-medicine/face/treatments/cheek-augmentation.json";
+import polynucleotideFaceData from "@/data/aesthetic-medicine/face/treatments/polynucleotide.json";
+import doubleChinTreatmentData from "@/data/aesthetic-medicine/face/treatments/double-chin-treatment.json";
+import spotInjectionData from "@/data/aesthetic-medicine/face/treatments/spot-injection.json";
+
+// skin
+import skinRangeData from "@/data/aesthetic-medicine/skin/treatments/skin-range.json";
+import polynucleotideSkinData from "@/data/aesthetic-medicine/skin/treatments/polynucleotide-skin.json";
+
+// Hair
+import prpHairData from "@/data/aesthetic-medicine/hair/treatments/prp-hair.json";
+import exosomeTreatmentData from "@/data/aesthetic-medicine/hair/treatments/exosome-treatment.json";
+import regeneraTreatmentData from "@/data/aesthetic-medicine/hair/treatments/regenera-treatment.json";
+import polynucleotideHairData from "@/data/aesthetic-medicine/hair/treatments/polynucleotide-hair.json";
 
 // Intimate Health
 import pShotData from "@/data/intimate-health/male/treatments/p-shot.json";
@@ -37,6 +59,22 @@ import ultraFemme360Data from "@/data/intimate-health/female/treatments/ultra-fe
 import btlEmsellaChairData from "@/data/intimate-health/female/treatments/btl-emsella-chair.json";
 import lichenSclerosisFemaleData from "@/data/intimate-health/female/treatments/lichen-sclerosis-female.json";
 
+// Pain Management
+import kneeTreatmentData from "@/data/pain-management/conditions/treatments/knee-treatment.json";
+import hipTreatmentData from "@/data/pain-management/conditions/treatments/hip-treatment.json";
+import footAnkleTreatmentData from "@/data/pain-management/conditions/treatments/foot-ankle-treatment.json";
+import elbowTreatmentData from "@/data/pain-management/conditions/treatments/elbow-treatment.json";
+import footAncleTreatmentData from "@/data/pain-management/conditions/treatments/foot-ankle-treatment.json";
+import handWristTreatmentData from "@/data/pain-management/conditions/treatments/hand-wrist-treatment.json";
+import shoulderTreatmentData from "@/data/pain-management/conditions/treatments/shoulder-treatment.json";
+// treatments
+import adiposeCellTherapyData from "@/data/pain-management/treatments/treatments/adipose-cell-therapy.json";
+import plateletRichPlasmaData from "@/data/pain-management/treatments/treatments/platelet-rich-plasma.json";
+import bmacTherapyData from "@/data/pain-management/treatments/treatments/bmac-therapy.json";
+import physiotherapyData from "@/data/pain-management/treatments/treatments/physiotherapy.json";
+import arthrosamidInjectionData from "@/data/pain-management/treatments/treatments/arthrosamid-injection.json";
+
+
 const treatmentDataMap = {
   "aesthetic-medicine": {
     face: {
@@ -44,6 +82,26 @@ const treatmentDataMap = {
       "dermal-fillers": dermalFillersData,
       "prp-facelift": prpFaceliftData,
       "non-surgical-blepharoplasty": nonSurgicalBlepharoplastyData,
+      "lip-enhancement": lipEnhancementData,
+      "jawline-reduction": jawlineReductionData,
+      "tear-trough-treatment": tearTroughTreatmentData,
+      "non-surgical-rhinoplasty": nonSurgicalRhinoplastyData,
+      "skin-boosters": skinBoostersData,
+      "nefertiti-neck-lift": nefertitiNeckLiftData,
+      "cheek-augmentation": cheekAugmentationData,
+      "polynucleotide": polynucleotideFaceData,
+      "double-chin-treatment": doubleChinTreatmentData,
+      "spot-injection": spotInjectionData,
+    },
+    skin: {
+      "skin-range": skinRangeData,
+      "polynucleotide-skin": polynucleotideSkinData,
+    },
+    hair: {
+      "prp-hair": prpHairData,
+      "exosome-treatment": exosomeTreatmentData,
+      "regenera-treatment": regeneraTreatmentData,
+      "polynucleotide-hair": polynucleotideHairData,
     },
   },
   "intimate-health": {
@@ -57,6 +115,24 @@ const treatmentDataMap = {
       "ultra-femme-360": ultraFemme360Data,
       "btl-emsella-chair": btlEmsellaChairData,
       "lichen-sclerosis-female": lichenSclerosisFemaleData,
+    },
+  },
+  "pain-management": {
+    "conditions": {
+      "knee-treatment": kneeTreatmentData,
+      "hip-treatment": hipTreatmentData,
+      "foot-ankle-treatment": footAnkleTreatmentData,
+      "elbow-treatment": elbowTreatmentData,
+      "foot-ancle-treatment": footAncleTreatmentData,
+      "hand-wrist-treatment": handWristTreatmentData,
+      "shoulder-treatment": shoulderTreatmentData,
+    },
+    "treatments": {
+      "adipose-cell-therapy": adiposeCellTherapyData,
+      "platelet-rich-plasma": plateletRichPlasmaData,
+      "bmac-therapy": bmacTherapyData,
+      "physiotherapy": physiotherapyData,
+      "arthrosamid-injection": arthrosamidInjectionData,
     },
   },
 };

@@ -216,7 +216,7 @@ function CTAButtons({ cta, delay }) {
       <Button
         asChild
         size="lg"
-        className="btn-primary-gradient text-base px-10 h-12 group"
+        className="bg-primary hover:bg-primary/90 text-primary-foreground text-base px-10 h-12 group shadow-lg font-semibold"
       >
         <Link href="/booking">
           {cta || "Book Consultation"}
@@ -227,7 +227,7 @@ function CTAButtons({ cta, delay }) {
         asChild
         size="lg"
         variant="outline"
-        className="glass-card border-2 border-white/30 text-white hover:bg-primary hover:border-primary text-base px-10 h-12 shadow-lg transition-all"
+        className="bg-white/10 backdrop-blur-sm border-2 border-white/40 text-white hover:bg-white hover:text-black hover:border-white text-base px-10 h-12 shadow-lg transition-all font-semibold"
       >
         <Link href="#treatments">
           Explore Treatments

@@ -1,0 +1,137 @@
+{
+  "id": "shoulder-treatment",
+  "categoryId": "pain-management",
+  "subcategoryId": "conditions",
+  "title": "Shoulder Pain Regenerative Programme",
+  "shortTitle": "Shoulder Relief",
+  "tagline": "Reach Higher Without Pain.",
+  "description": "Regenerative injections, tenotomy, and stabilising rehab for rotator cuff tears, impingement, bursitis, and frozen shoulder.",
+  "longDescription": "Whether you struggle to sleep on your side, reach overhead, or swing a racket, our shoulder specialists combine imaging, orthobiologics, and physio to reset the rotator cuff. We calm inflammation, repair tendon fibres, and rebuild scapular stability so you get back to lifting, serving, or hugging without hesitation.",
+  "seo": {
+    "metaTitle": "Shoulder Pain Treatment London | PRP & Regenerative Therapy | Dr. SNA Clinic",
+    "metaDescription": "Ultrasound-guided PRP, BMAC, and tenotomy for rotator cuff injuries, impingement, and frozen shoulder. Comprehensive rehab for lasting results.",
+    "keywords": [
+      "shoulder pain treatment london",
+      "rotator cuff prp",
+      "shoulder impingement therapy",
+      "frozen shoulder regenerative"
+    ],
+    "h1": "Regenerative Shoulder Pain Treatment in London",
+    "canonicalUrl": "/treatments/pain-management/conditions/shoulder-treatment"
+  },
+  "hero": {
+    "headline": "Lift, Throw, and Sleep Without Shoulder Pain",
+    "subheadline": "Consultant-led orthobiologics and rehab restore strength and mobility.",
+    "image": "https://images.unsplash.com/photo-1517963628607-235ccdd5476c?w=1920&q=80",
+    "badge": "Ultrasound-guided delivery"
+  },
+  "quickStats": {
+    "duration": "45-minute visit",
+    "anesthesia": "Local anaesthetic + nitrous optional",
+    "downtime": "Sling 24-48 hours",
+    "resultsVisible": "3-6 weeks",
+    "resultsLast": "12-18 months",
+    "painLevel": "Low",
+    "price": "Programmes from £650",
+    "sessions": "1-3 injections + rehab block"
+  },
+  "overview": {
+    "title": "How We Rebuild the Shoulder",
+    "content": "We start with ultrasound/MRI review and scapular mechanics testing. Depending on findings we deliver PRP, adipose, or BMAC into the supra/infraspinatus, biceps anchor, or subacromial space. Rehab focuses on rotator cuff endurance, scapular control, and posture to keep gains long-term.",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&q=80",
+    "highlights": [
+      "Rotator cuff tears, impingement, bursitis, frozen shoulder",
+      "Ultrasound-guided injections and percutaneous tenotomy",
+      "Rehab with strength, mobility, and return-to-sport phases"
+    ]
+  },
+  "benefits": {
+    "title": "Why Patients Choose Us",
+    "layout": "grid-3",
+    "items": [
+      {"title": "Consultant-only injections", "description": "Delivered by regenerative orthopaedic physicians.", "icon": "stethoscope"},
+      {"title": "Functional rehab", "description": "Integrated physio ensures strength and flexibility return.", "icon": "activity"},
+      {"title": "Lifestyle support", "description": "Ergonomics, sleep positioning, and strength tracking built in.", "icon": "heart"}
+    ]
+  },
+  "process": {
+    "title": "Your Shoulder Recovery Steps",
+    "steps": [
+      {"number": 1, "title": "Assessment & Imaging", "description": "Consultation, ultrasound/MRI review, functional testing.", "icon": "scan"},
+      {"number": 2, "title": "Regenerative Procedure", "description": "PRP/BMAC/adipose or tenotomy targeted under ultrasound.", "icon": "syringe"},
+      {"number": 3, "title": "Rehab & Mobility", "description": "Scapular control, rotator cuff strength, and flexibility plan.", "icon": "bar-chart"},
+      {"number": 4, "title": "Review & Prevention", "description": "Follow-up at week 6-8 with return-to-sport guidance.", "icon": "repeat"}
+    ]
+  },
+  "pricing": {
+    "title": "Programme Pricing",
+    "singlePrice": {
+      "currentPrice": "£650",
+      "currency": "GBP",
+      "consultationFee": "£150",
+      "consultationNote": "Includes ultrasound assessment; redeemable within 30 days"
+    },
+    "packages": [
+      {
+        "name": "Rotator Cuff PRP Series",
+        "price": "£1,650",
+        "description": "3 PRP sessions + rehab",
+        "includes": "Supplement kit, digital tracking",
+        "savings": "Save £300"
+      },
+      {
+        "name": "Frozen Shoulder Reset",
+        "price": "£2,250",
+        "description": "PRP + hydrodilatation + physio intensives",
+        "includes": "Shockwave add-on, progress imaging",
+        "savings": "Save £350"
+      }
+    ],
+    "includes": [
+      "Consultation with regenerative specialist",
+      "Ultrasound-guided injections",
+      "Physio roadmap + exercise videos",
+      "Follow-up review and outcome report"
+    ],
+    "financing": {
+      "available": true,
+      "buttonText": "0% finance available"
+    }
+  },
+  "candidacy": {
+    "title": "Who It Helps",
+    "suitable": [
+      "Rotator cuff tendinopathy or partial tears",
+      "Subacromial impingement and bursitis",
+      "Adhesive capsulitis (frozen shoulder)",
+      "Post-operative strengthening"
+    ],
+    "notSuitable": [
+      "Full-thickness tears requiring surgical repair",
+      "Uncontrolled infection or inflammatory flare"
+    ],
+    "note": "We liaise with surgeons and physiotherapists for hybrid plans when needed."
+  },
+  "faq": [
+    {"question": "When can I return to the gym?", "answer": "Light band work begins within 2 weeks; pressing or overhead lifting once strength goals are met, typically by week 8-10."},
+    {"question": "Will I need a sling?", "answer": "We provide a sling for comfort for 24-48 hours but encourage early controlled movement."}
+  ],
+  "relatedTreatments": [
+    {"id": "elbow-treatment", "title": "Elbow Programme", "description": "Balance upper-limb mechanics for sport.", "reason": "Ideal for throwing athletes."},
+    {"id": "non-surgical-regenerative", "title": "Regenerative Treatments", "description": "Learn about the biologics we use across programmes.", "reason": "Understand PRP/BMAC options."}
+  ],
+  "cta": {
+    "title": "Ready to Lift and Sleep Without Pain?",
+    "subtitle": "Book a shoulder consultation today.",
+    "primaryButton": "Book shoulder consult",
+    "secondaryButton": "Request a call back",
+    "urgency": "Limited specialist clinics each week",
+    "guarantee": "Consultation fee credited toward treatment"
+  },
+  "bookingInfo": {
+    "depositRequired": false,
+    "cancellationPolicy": "48 hours’ notice to reschedule",
+    "consultationFee": "£150 (redeemable)",
+    "duration": "45-minute consultation"
+  }
+}

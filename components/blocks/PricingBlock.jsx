@@ -174,7 +174,7 @@ export function PricingBlock({ data }) {
                   <div
                     className={`flex flex-col w-full h-full rounded-3xl p-8 border-2 transition-all duration-300 ${
                       pkg.popular
-                        ? "bg-card border-primary shadow-primary-lg scale-105"
+                        ? "bg-card border-primary shadow-2xl scale-105"
                         : "bg-card border-border hover:border-primary/30 hover:shadow-lg"
                     }`}
                   >

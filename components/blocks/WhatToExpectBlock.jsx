@@ -37,12 +37,12 @@ export function WhatToExpectBlock({ data }) {
               className="text-center mb-10 max-w-3xl mx-auto"
             >
               {title && (
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-3">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-3">
                   {title}
                 </h2>
               )}
               {subtitle && (
-                <p className="text-base md:text-lg text-primary font-medium mb-2">
+                <p className="text-base md:text-lg text-foreground font-medium mb-2">
                   {subtitle}
                 </p>
               )}

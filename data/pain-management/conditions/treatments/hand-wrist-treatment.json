@@ -1,0 +1,137 @@
+{
+  "id": "hand-wrist-treatment",
+  "categoryId": "pain-management",
+  "subcategoryId": "conditions",
+  "title": "Hand & Wrist Pain Regenerative Programme",
+  "shortTitle": "Hand & Wrist Relief",
+  "tagline": "Steady Hands. Confident Grip.",
+  "description": "Precision orthobiologics and stabilising rehab for arthritis, TFCC tears, carpal instability, and repetitive strain.",
+  "longDescription": "Typing, lifting, parenting, or sport can flare delicate wrist structures. Our regenerative programme blends ultrasound-guided PRP, adipose cells, or micro-tenotomy with splinting and dexterity training so pain fades, grip returns, and you can work or play without hesitation.",
+  "seo": {
+    "metaTitle": "Hand & Wrist Pain Treatment London | PRP & Regenerative Therapy | Dr. SNA",
+    "metaDescription": "Doctor-led hand and wrist pain clinic in London. PRP, adipose cell therapy, and rehab for arthritis, TFCC tears, carpal tunnel instability, and repetitive strain.",
+    "keywords": [
+      "hand pain treatment london",
+      "wrist prp injection",
+      "tfcc tear therapy",
+      "regenerative hand clinic"
+    ],
+    "h1": "Regenerative Hand & Wrist Pain Treatment in London",
+    "canonicalUrl": "/treatments/pain-management/conditions/hand-wrist-treatment"
+  },
+  "hero": {
+    "headline": "Grip, Lift, and Create Without Pain",
+    "subheadline": "Doctor-led injections and rehab restore strength and fine motor control.",
+    "image": "https://images.unsplash.com/photo-1457530378978-8bac673b8062?w=1920&q=80",
+    "badge": "Ultrasound-guided accuracy"
+  },
+  "quickStats": {
+    "duration": "30-45 minute visit",
+    "anesthesia": "Local anaesthetic + vibration",
+    "downtime": "Splint support 5-7 days",
+    "resultsVisible": "3-6 weeks",
+    "resultsLast": "12-18 months",
+    "painLevel": "Low",
+    "price": "Programmes from £550",
+    "sessions": "1-3 sessions"
+  },
+  "overview": {
+    "title": "How We Repair Hands & Wrists",
+    "content": "Each case starts with ultrasound mapping and strength testing. Depending on pathology we deliver PRP, adipose concentrate, or percutaneous tenotomy, followed by custom splints, proprioception drills, and ergonomic coaching so results last.",
+    "image": "https://images.unsplash.com/photo-1521119989659-a83eee488004?w=1200&q=80",
+    "highlights": [
+      "Treats arthritis, TFCC tears, tendonitis, carpal instability",
+      "Ultrasound-guided placement for millimetre precision",
+      "Desk, manual, and athletic programmes available"
+    ]
+  },
+  "benefits": {
+    "title": "Programme Benefits",
+    "items": [
+      {"title": "Consultant expertise", "description": "Regenerative pain specialists deliver and oversee every session.", "icon": "stethoscope"},
+      {"title": "Functional rehab", "description": "Dexterity, grip, and strength training tailored to your lifestyle.", "icon": "activity"},
+      {"title": "Minimal downtime", "description": "Return to desk work within 24 hours with splint support.", "icon": "clock"}
+    ]
+  },
+  "process": {
+    "title": "Your Recovery Journey",
+    "steps": [
+      {"number": 1, "title": "Consult & Scan", "description": "Ultrasound + strength testing to map injury.", "icon": "scan"},
+      {"number": 2, "title": "Regenerative Procedure", "description": "PRP/adipose/tenotomy precisely targeted under ultrasound.", "icon": "syringe"},
+      {"number": 3, "title": "Rehab & Dexterity", "description": "Splinting, proprioception, and grip drills with physio.", "icon": "bar-chart"},
+      {"number": 4, "title": "Review & Prevention", "description": "Follow-up at week 6 with activity plan and ergonomic tweaks.", "icon": "repeat"}
+    ]
+  },
+  "pricing": {
+    "title": "Programme Pricing",
+    "singlePrice": {
+      "currentPrice": "£550",
+      "currency": "GBP",
+      "consultationFee": "£120",
+      "consultationNote": "Includes ultrasound assessment; redeem within 30 days"
+    },
+    "packages": [
+      {
+        "name": "PRP Tendon Restore",
+        "price": "£1,150",
+        "description": "Two PRP sessions + rehab plan",
+        "includes": "Custom splint, strength coaching",
+        "savings": "Save £190"
+      },
+      {
+        "name": "Cellular Stability Plan",
+        "price": "£1,950",
+        "description": "Adipose cell therapy + PRP booster",
+        "includes": "Shockwave add-on, follow-up imaging",
+        "savings": "Save £300"
+      }
+    ],
+    "includes": [
+      "Consultation with regenerative specialist",
+      "Ultrasound-guided procedures",
+      "Rehab roadmap + exercise library",
+      "Follow-up review and outcome report"
+    ],
+    "financing": {
+      "available": true,
+      "buttonText": "0% finance available"
+    }
+  },
+  "candidacy": {
+    "title": "Who It Helps",
+    "suitable": [
+      "Trigger finger, De Quervain’s, or tendonitis",
+      "TFCC tears and wrist instability",
+      "Early to moderate hand arthritis",
+      "Overuse injuries from sport or work"
+    ],
+    "notSuitable": [
+      "Complete tendon rupture needing surgery",
+      "Active infection",
+      "Severe bone destruction without joint space"
+    ],
+    "note": "We collaborate with surgeons, rheumatologists, and hand therapists when required."
+  },
+  "faq": [
+    {"question": "How soon can I type or lift?", "answer": "Light typing resumes next day with splint support. Strength work restarts gradually from week three."},
+    {"question": "Will I need multiple sessions?", "answer": "Many conditions respond to one session; chronic cases may need a booster at 8-12 weeks."}
+  ],
+  "relatedTreatments": [
+    {"id": "elbow-treatment", "title": "Elbow Pain Programme", "description": "Support the full kinetic chain for racquet sports or desk work.", "reason": "Great if forearm tension feeds into the wrist."},
+    {"id": "non-surgical-regenerative", "title": "Regenerative Therapies", "description": "Discover PRP, adipose, and tenotomy techniques used across programmes.", "reason": "Understand your biologic options."}
+  ],
+  "cta": {
+    "title": "Ready to Restore Your Grip?",
+    "subtitle": "Book a hand & wrist consultation and get a tailored recovery roadmap.",
+    "primaryButton": "Book hand & wrist consult",
+    "secondaryButton": "Request a call back",
+    "urgency": "Limited consultant appointments weekly",
+    "guarantee": "Consultation fee credited toward treatment"
+  },
+  "bookingInfo": {
+    "depositRequired": false,
+    "cancellationPolicy": "48 hours’ notice to reschedule",
+    "consultationFee": "£120 (redeemable)",
+    "duration": "30-minute consultation"
+  }
+}

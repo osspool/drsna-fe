@@ -1,0 +1,178 @@
+{
+  "id": "skin-range",
+  "categoryId": "aesthetic-medicine",
+  "subcategoryId": "skin",
+  "title": "Signature Skin Range Programme",
+  "shortTitle": "Skin Range",
+  "tagline": "Curated Skin Journeys for Real-World Glow",
+  "description": "A bespoke 6–12 week programme blending peels, LED, boosters, and medical skincare to transform texture, tone, and clarity.",
+  "longDescription": "Skin Range is our concierge skin overhaul. After a diagnostic ‘Skin MOT’ we custom-build a calendar of treatments—think enzyme or TCA peels, microneedling, LED, PN boosters, and at-home actives—all sequenced by Dr. Abbas and our lead medical facialist. The result? Fewer breakouts, tighter pores, calmer pigment, and the confidence that comes from having a plan (and a team) on your side.",
+  "seo": {
+    "metaTitle": "Skin Range Programme London | Bespoke Skin Transformation | Dr. SNA Clinic",
+    "metaDescription": "Transform your complexion with the Skin Range programme: personalised peels, boosters, LED therapy, and medical skincare in London.",
+    "keywords": [
+      "skin range programme",
+      "bespoke facial london",
+      "medical skincare plan",
+      "skin transformation london"
+    ],
+    "h1": "Skin Range Programme in London",
+    "canonicalUrl": "/treatments/aesthetic-medicine/skin/skin-range"
+  },
+  "hero": {
+    "headline": "One Skin Journey. Endless Compliments.",
+    "subheadline": "VIP skin programming that sequences peels, boosters, and skincare for your exact needs.",
+    "image": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1920&q=80",
+    "video": null,
+    "badge": "6–12 week transformation"
+  },
+  "quickStats": {
+    "duration": "45–60 mins per visit",
+    "anesthesia": "Topical numbing when needed",
+    "downtime": "0–3 days depending on peel depth",
+    "resultsVisible": "Progressive over 4–8 weeks",
+    "resultsLast": "Maintain with quarterly boosts",
+    "painLevel": "Low–Moderate (customised)",
+    "price": "Programmes from £950",
+    "sessions": "6–8 curated sessions"
+  },
+  "overview": {
+    "title": "What’s Inside a Skin Range Plan?",
+    "content": "No two programmes look the same. We start with VISIA imaging and barrier testing, then curate a sprint of in-clinic treatments (chemical peels, microneedling, LED, PN or PRP boosters) plus medical-grade skincare and supplement support. Weekly check-ins keep you accountable while we tweak every detail around travel, events, or breakouts.",
+    "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=1200&q=80",
+    "highlights": [
+      "Personal skin concierge + doctor oversight",
+      "Homecare bag curated to your skin goals",
+      "Progress photography + hydration metrics",
+      "SOS access to our skin team for flare-ups"
+    ]
+  },
+  "howItWorks": {
+    "title": "The Skin Range Method",
+    "subtitle": "Structure + science + support",
+    "content": "We phase your plan into Reset (clean slate), Treat (target top concerns), and Future-Proof (lock in results). Expect thoughtful sequencing—no random peels—so your barrier thrives while glow builds.",
+    "background": "light",
+    "variant": "minimal",
+    "benefits": [
+      {"title": "Reset", "description": "Detox and prepare skin with enzyme peels + LED.", "icon": "refresh-cw"},
+      {"title": "Treat", "description": "Target pigment, acne, or texture with customised actives.", "icon": "target"},
+      {"title": "Future-Proof", "description": "Hydrate, protect, and plan maintenance boosters.", "icon": "shield"}
+    ]
+  },
+  "beforeAfter": {
+    "enabled": true,
+    "title": "VI Peel Precision Plus",
+    "subtitle": "Achieve radiant skin with our most sought-after treatment",
+    "disclaimer": "The VI Peel Precision Plus. This medium-depth peel targets melanogenesis, effectively reducing the production of melanin at its source. By promoting rapid cell turnover, it unveils brighter, more even-toned skin, delivering noticeable results in just 7 days.",
+    "gallery": [
+      {
+        "id": "vi-peel-precision-plus-1",
+        "title": "VI Peel Precision Plus",
+        "before": "/images/treatment/aesthetic-medicine/skin/before-skin.jpg",
+        "after": "/images/treatment/aesthetic-medicine/skin/after-skin.jpg",
+        "description": "After treatment",
+        "area": "Full Face"
+      }
+    ]
+  },
+  "whatToExpect": {
+    "enabled": true,
+    "title": "Your Skin Range Timeline",
+    "subtitle": "Every fortnight delivers a new win",
+    "background": "gradient-cream",
+    "variant": "compact-timeline",
+    "steps": [
+      {"number": 1, "title": "Skin MOT", "description": "VISIA imaging, barrier test, lifestyle review.", "duration": "60 mins"},
+      {"number": 2, "title": "Reset Phase", "description": "Enzyme peel + LED to calm and prep.", "duration": "Weeks 1–2"},
+      {"number": 3, "title": "Treatment Stack", "description": "Personal mix of PN boosters, TCA peels, microneedling.", "duration": "Weeks 3–8"},
+      {"number": 4, "title": "Glow Lock-In", "description": "Hydration facial + final product plan + maintenance schedule.", "duration": "Week 10+"}
+    ]
+  },
+  "treatsAreas": {
+    "title": "Concerns We Tackle",
+    "areas": [
+      {"name": "Pigmentation & Melasma", "description": "Layered peels + tyrosinase inhibitors even tone.", "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80", "icon": "sun"},
+      {"name": "Acne & Congestion", "description": "Deep detox, blue LED, and non-comedogenic homecare.", "image": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&q=80", "icon": "droplet"},
+      {"name": "Texture & Pores", "description": "Microneedling + PN boosters tighten and smooth.", "image": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=800&q=80", "icon": "sparkles"}
+    ]
+  },
+  "benefits": {
+    "title": "Why Skin Range Works",
+    "layout": "grid-3",
+    "items": [
+      {"title": "Doctor oversight", "description": "Dr. Abbas approves every protocol tweak.", "icon": "stethoscope"},
+      {"title": "Tailored everything", "description": "Treatments, homecare, and supplements built around your life.", "icon": "sliders"},
+      {"title": "Accountability", "description": "Weekly check-ins + progress tracking keep you motivated.", "icon": "calendar"}
+    ]
+  },
+  "pricing": {
+    "title": "Programme Pricing",
+    "subtitle": "Consultation fee (£75) credited toward any Skin Range plan",
+    "singlePrice": {
+      "currentPrice": "£950",
+      "currency": "GBP"
+    },
+    "packages": [
+      {
+        "name": "6-Week Reset",
+        "price": "£950",
+        "description": "4 in-clinic sessions + homecare kit",
+        "includes": "VISIA scans, LED add-on",
+        "savings": "Save £120"
+      },
+      {
+        "name": "12-Week Transformation",
+        "price": "£1,650",
+        "description": "8 sessions + PN booster + deluxe skincare bag",
+        "includes": "Microneedling upgrade, supplement plan",
+        "savings": "Save £280"
+      }
+    ],
+    "includes": [
+      "Skin MOT + bespoke plan",
+      "All in-clinic treatments listed",
+      "Medical-grade skincare bag",
+      "Virtual support + progress imaging"
+    ],
+    "financing": {
+      "available": true,
+      "buttonText": "0% finance available"
+    }
+  },
+  "candidacy": {
+    "title": "Who Is It For?",
+    "suitable": [
+      "Busy professionals needing guided skincare",
+      "Brides/grooms prepping for events",
+      "Acne, pigment, or texture concerns",
+      "All Fitzpatrick skin types"
+    ],
+    "notSuitable": [
+      "Pregnancy (certain treatments adjusted)",
+      "Accutane use within 6 months"
+    ],
+    "note": "We adapt protocols for sensitive or rosacea-prone skin."
+  },
+  "faq": [
+    {"question": "Can I travel during the programme?", "answer": "Yes—your concierge will adjust appointments and homecare for climate changes."},
+    {"question": "What if I break out?", "answer": "You have SOS access to our skin team for prescription tweaks and LED add-ons."}
+  ],
+  "relatedTreatments": [
+    {"id": "polynucleotide-skin", "title": "Polynucleotide Booster", "description": "Add PN sessions for extra hydration and repair.", "reason": "Perfect mid-programme boost."},
+    {"id": "prp-facelift", "title": "PRP Facelift", "description": "Combine with PRP for advanced collagen stimulation.", "reason": "Ultimate skin reset."}
+  ],
+  "cta": {
+    "title": "Ready for a Skin Routine That Actually Works?",
+    "subtitle": "Book a Skin Range consultation and receive your personalised roadmap.",
+    "primaryButton": "Book Skin Range consult",
+    "secondaryButton": "Chat with a skin concierge",
+    "urgency": "Limited Skin Range slots per month for VIP attention",
+    "guarantee": "Consultation fee credited toward your plan"
+  },
+  "bookingInfo": {
+    "depositRequired": false,
+    "cancellationPolicy": "48 hours’ notice to reschedule",
+    "consultationFee": "£75 (redeemable)",
+    "duration": "45-minute consultation"
+  }
+}

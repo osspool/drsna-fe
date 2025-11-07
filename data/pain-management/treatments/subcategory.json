@@ -1,0 +1,229 @@
+{
+  "id": "treatments",
+  "categoryId": "pain-management",
+  "title": "Regenerative Pain Treatments",
+  "shortTitle": "Treatments",
+  "tagline": "Heal Smarter. Move Freer.",
+  "description": "Our biologic therapies repair tissue, reduce pain, and keep you out of the operating theatre.",
+  "longDescription": "Every treatment at Dr. SNA Clinic is designed to activate your body’s own healing power. From platelet-rich plasma to advanced cellular therapies, we combine orthopaedic expertise, ultrasound guidance, and tailored rehab so results are measurable and long-lasting.",
+  "seo": {
+    "metaTitle": "Regenerative Pain Treatments London | PRP, BMAC, Adipose & Arthrosamid | Dr. SNA",
+    "metaDescription": "Explore PRP, BMAC, adipose cell therapy, Arthrosamid®, and non-surgical regenerative pain treatments in London. Consultant-led orthobiologics that heal from within.",
+    "keywords": [
+      "regenerative pain treatments london",
+      "prp injections",
+      "bmac therapy",
+      "adipose cell treatment",
+      "arthrosamid knee injection"
+    ],
+    "h1": "Regenerative Pain Treatments"
+  },
+  "hero": {
+    "headline": "Regenerative Medicine That Keeps You Moving",
+    "subheadline": "Injectable biologics and supportive therapies that target pain at its source.",
+    "image": "https://images.unsplash.com/photo-1544829099-b9a0c07afdba?w=1920&q=80",
+    "backgroundImage": "https://images.unsplash.com/photo-1483729958640-0363d9405493?w=1920&q=80",
+    "cta": "Discover your treatment"
+  },
+  "introduction": {
+    "title": "Why Patients Choose Non-Surgical Regeneration",
+    "content": "Your joints deserve more than temporary relief. We harness growth factors, stem cells, hydrogel cushioned injections, and targeted physiotherapy to restore mobility without downtime. Each protocol is personalised after imaging, lab work, and movement analysis.",
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&q=80",
+    "highlights": [
+      "Consultant-led orthobiologics",
+      "Ultrasound guidance for every injection",
+      "Integrated physio + strength plans",
+      "Finance options for treatment courses"
+    ]
+  },
+  "treatmentCategories": [
+    {
+      "id": "biologics",
+      "title": "Biologic Injections",
+      "description": "Regenerative injectables that rebuild tissue and calm inflammation.",
+      "icon": "droplet",
+      "treatments": [
+        "platelet-rich-plasma",
+        "adipose-cell-therapy",
+        "bmac-therapy"
+      ],
+      "benefits": [
+        "Stimulate collagen and cartilage repair",
+        "Reduce reliance on cortisone",
+        "Quick outpatient visits"
+      ]
+    },
+    {
+      "id": "stabilisation",
+      "title": "Stabilisation & Cushioning",
+      "description": "Long-lasting cushioning and supportive therapies for arthritic joints.",
+      "icon": "shield",
+      "treatments": [
+        "arthrosamid-injection",
+        "non-surgical-regenerative",
+        "physiotherapy"
+      ],
+      "benefits": [
+        "Improved joint mechanics",
+        "Pain-free movement",
+        "Delay or avoid surgery"
+      ]
+    }
+  ],
+  "treatments": {
+    "platelet-rich-plasma": {
+      "title": "Platelet-Rich Plasma (PRP)",
+      "shortDescription": "Concentrated growth factors heal tendons, ligaments, and joints.",
+      "description": "Triple-spin PRP delivers high platelet counts directly to injured tissue, accelerating repair and reducing pain.",
+      "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80",
+      "icon": "sparkles",
+      "duration": "45 mins",
+      "downtime": "Minimal",
+      "results": "3-6 weeks",
+      "longevity": "12-18 months",
+      "price": "From £395",
+      "benefits": [
+        "Targets the root cause",
+        "Drug-free healing",
+        "Complements physiotherapy"
+      ],
+      "featured": true,
+      "popular": true
+    },
+    "adipose-cell-therapy": {
+      "title": "Adipose Cell Therapy",
+      "shortDescription": "Micro-fragmented fat injectables to cushion and regenerate joints.",
+      "description": "Adipose tissue provides cushioning cells and anti-inflammatory factors that stabilise arthritic joints.",
+      "image": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=800&q=80",
+      "icon": "layers",
+      "duration": "90 mins",
+      "downtime": "2-3 days",
+      "results": "6-8 weeks",
+      "longevity": "24 months",
+      "price": "From £2,250",
+      "benefits": [
+        "Long-lasting cushioning",
+        "Autologous (your own cells)",
+        "Ideal for knees, hips, and ankles"
+      ]
+    },
+    "bmac-therapy": {
+      "title": "Bone Marrow Aspirate Concentrate (BMAC)",
+      "shortDescription": "Concentrated marrow-derived cells for advanced cartilage and tendon repair.",
+      "description": "BMAC delivers stem-cell-rich concentrate to severe joint or tendon injuries when PRP alone isn’t enough.",
+      "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=80",
+      "icon": "cpu",
+      "duration": "120 mins",
+      "downtime": "48-72 hrs",
+      "results": "8-12 weeks",
+      "longevity": "3+ years",
+      "price": "From £3,450",
+      "benefits": [
+        "High potency regenerative cells",
+        "Supports advanced osteoarthritis",
+        "One-off procedure"
+      ]
+    },
+    "arthrosamid-injection": {
+      "title": "Arthrosamid® Hydrogel",
+      "shortDescription": "A single hydrogel injection that cushions arthritic knees for years.",
+      "description": "Arthrosamid® integrates into the synovial lining, providing long-term lubrication and shock absorption for painful knees.",
+      "image": "https://images.unsplash.com/photo-1544829099-b9a0c07afdba?w=801&q=80",
+      "icon": "circle",
+      "duration": "45 mins",
+      "downtime": "48 hrs",
+      "results": "4-12 weeks",
+      "longevity": "Up to 3 years",
+      "price": "From £2,200",
+      "benefits": [
+        "Supported by clinical trials",
+        "Ideal for moderate to severe OA",
+        "Minimal downtime"
+      ]
+    },
+    "physiotherapy": {
+      "title": "Specialist Physiotherapy",
+      "shortDescription": "Rehab that protects regenerative gains and builds lasting strength.",
+      "description": "Tailored loading, mobility, and posture programmes that sync with your injection plan.",
+      "image": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=801&q=80",
+      "icon": "activity",
+      "duration": "60 mins",
+      "downtime": "None",
+      "results": "Progressive over 6-8 weeks",
+      "longevity": "Sustained with maintenance",
+      "price": "From £95/session",
+      "benefits": [
+        "Accelerates healing response",
+        "Prevents reinjury",
+        "Personalised exercise library"
+      ]
+    },
+    "non-surgical-regenerative": {
+      "title": "Non-Surgical Regenerative Programme",
+      "shortDescription": "Comprehensive plans combining diagnostics, injections, and rehab.",
+      "description": "For complex cases we design hybrid programmes blending multiple biologics, physiotherapy, and lifestyle coaching.",
+      "image": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=800&q=80",
+      "icon": "layers",
+      "duration": "12-week pathway",
+      "downtime": "Minimal",
+      "results": "6-10 weeks",
+      "longevity": "Tailored boosters",
+      "price": "Bespoke",
+      "benefits": [
+        "All-in-one roadmap",
+        "Coordinated specialist team",
+        "Ideal for multi-joint pain"
+      ]
+    }
+  },
+  "benefits": {
+    "title": "Why Regenerative Medicine?",
+    "items": [
+      {
+        "title": "Treat the cause",
+        "description": "Biologics rebuild tissue instead of masking pain.",
+        "icon": "target"
+      },
+      {
+        "title": "Minimal downtime",
+        "description": "Walk out same day and recover alongside normal life.",
+        "icon": "clock"
+      },
+      {
+        "title": "Personalised plans",
+        "description": "Every protocol matches your imaging, lifestyle, and goals.",
+        "icon": "user-check"
+      }
+    ]
+  },
+  "process": {
+    "title": "How Treatment Plans Come Together",
+    "steps": [
+      {"number": 1, "title": "Consult & Imaging", "description": "Review scans, movement, and medical history.", "icon": "scan"},
+      {"number": 2, "title": "Plan Selection", "description": "Choose the right biologic therapy and rehab mix.", "icon": "clipboard-check"},
+      {"number": 3, "title": "Precision Delivery", "description": "Ultrasound-guided injections in private suites.", "icon": "target"},
+      {"number": 4, "title": "Rehab & Review", "description": "Physio support, digital tracking, and follow-up imaging.", "icon": "bar-chart"}
+    ]
+  },
+  "cta": {
+    "title": "Ready to Heal from the Inside Out?",
+    "subtitle": "Book a consultation to build your regenerative treatment roadmap.",
+    "primaryButton": "Book pain consult",
+    "secondaryButton": "Request a callback",
+    "note": "Consultation fee (£150) redeemable against treatment."
+  },
+  "relatedSubcategories": [
+    {
+      "id": "conditions",
+      "title": "Conditions We Treat",
+      "description": "Explore tailored plans for each joint and tendon.",
+      "image": "https://images.unsplash.com/photo-1544829099-b9a0c07afdba?w=600&q=80"
+    },
+    {
+      "id": "aesthetic-medicine",
+      "title": "Aesthetic Medicine",
+      "description": "Discover regenerative treatments for face and body.",
+      "image": "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&q=80"
+    }
+  ]
+}

@@ -131,6 +131,21 @@ export function MainNav() {
                       <li>
                         <NavigationMenuLink asChild>
                           <Link
+                            href="/dr-syed-nadeem-abbas"
+                            className="block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-colors hover:bg-accent group"
+                          >
+                            <div className="text-sm font-medium text-foreground">
+                              Dr Syed Nadeem Abbas
+                            </div>
+                            <p className="line-clamp-2 text-xs leading-relaxed text-muted-foreground">
+                              Meet our award-winning aesthetic medicine specialist
+                            </p>
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <Link
                             href="/contact"
                             className="block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-colors hover:bg-accent group"
                           >

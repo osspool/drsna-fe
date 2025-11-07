@@ -1,0 +1,144 @@
+{
+  "id": "conditions",
+  "categoryId": "pain-management",
+  "title": "Conditions We Treat",
+  "shortTitle": "Conditions",
+  "tagline": "Personalised Relief for Every Joint",
+  "description": "Evidence-based treatment roadmaps for the most common joint and tendon pain concerns.",
+  "longDescription": "From osteoarthritis to overuse injuries, our pain management specialists blend diagnostics, biologic injections, and rehab to get you moving again. Explore the key conditions below to see how we approach each one.",
+  "seo": {
+    "metaTitle": "Pain Conditions Treated | Regenerative Pain Management | Dr. SNA",
+    "metaDescription": "Learn how we treat knee, hip, shoulder, elbow, hand & wrist, and foot & ankle pain using regenerative medicine in London.",
+    "keywords": [
+      "knee osteoarthritis treatment",
+      "shoulder tendon pain",
+      "hip prp injections",
+      "plantar fasciitis prp",
+      "tennis elbow therapy"
+    ],
+    "h1": "Musculoskeletal Conditions We Treat"
+  },
+  "hero": {
+    "headline": "Targeted Plans for Lasting Relief",
+    "subheadline": "Every joint has a dedicated protocol combining imaging, injections, and rehab.",
+    "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?w=1920&q=80",
+    "backgroundImage": "https://images.unsplash.com/photo-1544829099-b9a0c07afdba?w=1920&q=80",
+    "cta": "Find your condition"
+  },
+  "introduction": {
+    "title": "Regenerative Pathways for Common Conditions",
+    "content": "Click through to see injection options, recovery timelines, and supportive therapies for each area. Plans may include PRP, BMAC, adipose cell therapy, Arthrosamid®, and personalised physiotherapy.",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&q=80",
+    "highlights": [
+      "Ultrasound-guided targeting",
+      "Biomechanics-aligned rehab",
+      "Lifestyle coaching for flare prevention"
+    ]
+  },
+  "treatmentCategories": [
+    {
+      "id": "lower-limb",
+      "title": "Lower Limb",
+      "description": "Restore strength and cushioning to weight-bearing joints.",
+      "icon": "activity",
+      "treatments": ["knee-treatment", "hip-treatment", "foot-ankle-treatment"],
+      "benefits": ["Reduced inflammation", "Improved mobility", "Strengthened support"]
+    },
+    {
+      "id": "upper-limb",
+      "title": "Upper Limb",
+      "description": "Repair tendons and joints for pain-free work and sport.",
+      "icon": "arm",
+      "treatments": ["shoulder-treatment", "elbow-treatment", "hand-wrist-treatment"],
+      "benefits": ["Greater range of motion", "Better grip strength", "Prevent re-injury"]
+    }
+  ],
+  "treatments": {
+    "knee-treatment": {
+      "title": "Knee Pain & Osteoarthritis",
+      "shortDescription": "PRP, Arthrosamid®, and BMAC plans tailored to your X-rays and activity goals.",
+      "description": "We combine biologic injections with bracing and strength coaching to cushion cartilage, calm inflammation, and keep you active.",
+      "image": "https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?w=800&q=80",
+      "icon": "shield",
+      "duration": "Programmes 8-12 weeks",
+      "downtime": "Low-impact activity within days",
+      "results": "4-8 weeks",
+      "longevity": "12-24 months",
+      "price": "From £750"
+    },
+    "hip-treatment": {
+      "title": "Hip Arthritis & Labral Pain",
+      "shortDescription": "Ultrasound-guided PRP or BMAC injections combined with gluteal strengthening.",
+      "description": "Designed to relieve deep joint pain, improve rotation, and delay or avoid hip replacement.",
+      "image": "https://images.unsplash.com/photo-1445384763658-0400939829cd?w=800&q=80",
+      "icon": "compass",
+      "duration": "60-minute injections",
+      "downtime": "Modified activity 48 hrs",
+      "results": "6-10 weeks",
+      "longevity": "12-18 months",
+      "price": "From £850"
+    },
+    "shoulder-treatment": {
+      "title": "Shoulder Tendon & Impingement",
+      "shortDescription": "PRP, tenotomy, and rehab for rotator cuff tears and bursitis.",
+      "description": "We stabilise the shoulder complex with targeted injections and physio to restore range of motion without cortisone.",
+      "image": "https://images.unsplash.com/photo-1526402466625-9d7521de12d8?w=800&q=80",
+      "icon": "move",
+      "duration": "45-minute visit",
+      "downtime": "Sling support 48 hrs",
+      "results": "3-6 weeks",
+      "longevity": "12 months",
+      "price": "From £650"
+    },
+    "elbow-treatment": {
+      "title": "Elbow Pain (Tennis & Golfer’s Elbow)",
+      "shortDescription": "Targeted PRP + dry needling to repair tendinopathy.",
+      "description": "Precision injections into the extensor or flexor tendon origin to reduce pain and rebuild grip strength.",
+      "image": "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7a?w=800&q=80",
+      "icon": "zap",
+      "duration": "30-minute procedure",
+      "downtime": "Avoid heavy lifting 5 days",
+      "results": "4-6 weeks",
+      "longevity": "18 months",
+      "price": "From £495"
+    },
+    "hand-wrist-treatment": {
+      "title": "Hand & Wrist Pain",
+      "shortDescription": "Regenerative therapy for TFCC tears, arthritis, or carpal instability.",
+      "description": "Ultrasound-guided injections plus splinting protocols to protect fine motor control.",
+      "image": "https://images.unsplash.com/photo-1459908676235-d5f02a50184b?w=800&q=80",
+      "icon": "hand",
+      "duration": "45-minute visit",
+      "downtime": "Splint support 1 week",
+      "results": "4 weeks",
+      "longevity": "12 months",
+      "price": "From £550"
+    },
+    "foot-ankle-treatment": {
+      "title": "Foot & Ankle Pain",
+      "shortDescription": "PRP and adipose cell therapy for plantar fasciitis or chronic ankle instability.",
+      "description": "Our protocols improve cushioning, reduce inflammation, and restore stability for runners and active professionals.",
+      "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=801&q=80",
+      "icon": "footprints",
+      "duration": "45-minute visit",
+      "downtime": "Supportive footwear 5 days",
+      "results": "6 weeks",
+      "longevity": "12-18 months",
+      "price": "From £525"
+    }
+  },
+  "benefits": {
+    "title": "Why Patients Trust Our Clinic",
+    "items": [
+      {"title": "Consultant supervision", "description": "All injections delivered by regenerative pain specialists."},
+      {"title": "Integrated physio", "description": "Tailored exercises complement every injection plan."},
+      {"title": "Outcome tracking", "description": "Pain scores, mobility testing, and imaging prove progress."}
+    ]
+  },
+  "cta": {
+    "title": "Need Relief from Joint or Tendon Pain?",
+    "subtitle": "Book a consultation to build your personalised recovery plan.",
+    "primaryButton": "Book condition consult",
+    "secondaryButton": "Call our clinic"
+  }
+}

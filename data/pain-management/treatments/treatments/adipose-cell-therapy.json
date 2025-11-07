@@ -1,0 +1,166 @@
+{
+  "id": "adipose-cell-therapy",
+  "categoryId": "pain-management",
+  "subcategoryId": "treatments",
+  "title": "Adipose Cell Therapy",
+  "shortTitle": "Adipose Therapy",
+  "tagline": "Cushion Joints with Your Own Healing Cells",
+  "description": "Micro-fragmented fat injections that provide cushioning cells, anti-inflammatory factors, and long-lasting joint support.",
+  "longDescription": "Adipose cell therapy uses a small sample of your own fat, processed in clinic to extract regenerative cells and cushioning matrix. Injected into painful joints, it reduces inflammation, improves lubrication, and protects cartilage for sustained relief. It’s ideal for patients who want a potent, natural alternative before considering surgery.",
+  "seo": {
+    "metaTitle": "Adipose Cell Therapy London | Micro-Fragmented Fat Injections | Dr. SNA Clinic",
+    "metaDescription": "Regenerative adipose cell therapy in London. Autologous micro-fragmented fat injections cushion arthritic knees, hips, and ankles with long-lasting relief.",
+    "keywords": [
+      "adipose cell therapy london",
+      "fat stem cell injections",
+      "micro fragmented fat joint",
+      "regenerative orthobiologics"
+    ],
+    "h1": "Adipose Cell Therapy in London",
+    "canonicalUrl": "/treatments/pain-management/treatments/adipose-cell-therapy"
+  },
+  "hero": {
+    "headline": "Lasting Cushion. Natural Relief.",
+    "subheadline": "Harness adipose-derived cells to stabilise arthritic joints without implants or medication.",
+    "image": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=1920&q=80",
+    "video": null,
+    "badge": "Autologous regenerative therapy"
+  },
+  "quickStats": {
+    "duration": "90-minute procedure",
+    "anesthesia": "Local anaesthetic + light sedation optional",
+    "downtime": "48-72 hours",
+    "resultsVisible": "6-8 weeks",
+    "resultsLast": "24 months+",
+    "painLevel": "Low",
+    "price": "From £2,250",
+    "sessions": "Single session (boosters optional)"
+  },
+  "overview": {
+    "title": "Why Adipose Cells Work",
+    "content": "Adipose tissue is rich in mesenchymal stem cells, growth factors, and cushioning matrix. We harvest a small amount via mini-liposuction, process it in a closed system to preserve cell integrity, and reinject it into joints or tendons under ultrasound guidance. The cells modulate inflammation, improve lubrication, and stimulate repair for long-term relief.",
+    "image": "https://images.unsplash.com/photo-1521119989659-a83eee488004?w=1200&q=80",
+    "highlights": [
+      "Autologous: your own cells, zero rejection risk",
+      "Ideal for moderate to severe arthritis",
+      "Supports knees, hips, ankles, shoulders, and spine facet joints",
+      "Pairs well with PRP boosters"
+    ]
+  },
+  "video": {
+    "enabled": false
+  },
+  "whatToExpect": {
+    "enabled": true,
+    "title": "What to Expect",
+    "subtitle": "Comfort-first outpatient procedure",
+    "background": "gradient-cream",
+    "variant": "compact-timeline",
+    "steps": [
+      {"number": 1, "title": "Consult & Imaging", "description": "Confirm joint damage via MRI/ultrasound and plan target sites.", "duration": "45 mins"},
+      {"number": 2, "title": "Harvest & Processing", "description": "Mini-liposuction (10-20ml) processed in closed system to micro-fragment fat.", "duration": "45 mins"},
+      {"number": 3, "title": "Ultrasound-Guided Injection", "description": "Adipose cells injected precisely into joint or tendon.", "duration": "15 mins"},
+      {"number": 4, "title": "Recovery & Rehab", "description": "Compression, rest, and tailored physiotherapy plan.", "duration": "6 weeks"}
+    ]
+  },
+  "treatsAreas": {
+    "title": "Common Treatment Areas",
+    "areas": [
+      {"name": "Knee Osteoarthritis", "description": "Restores cushioning and eases friction.", "image": "https://images.unsplash.com/photo-1544829099-b9a0c07afdba?w=800&q=80", "icon": "shield"},
+      {"name": "Hip Degeneration", "description": "Calms inflammation in labrum and joint capsule.", "image": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80", "icon": "compass"},
+      {"name": "Ankle Instability", "description": "Strengthens support around chronic sprain sites.", "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=80", "icon": "footprints"}
+    ]
+  },
+  "benefits": {
+    "title": "Benefits",
+    "layout": "grid-3",
+    "items": [
+      {"title": "Long-term cushioning", "description": "Cells integrate into the joint for up to two years.", "icon": "layers"},
+      {"title": "Lower inflammation", "description": "Powerful cytokines soothe chronic swelling.", "icon": "droplet"},
+      {"title": "One visit", "description": "Single procedure with optional PRP boosters.", "icon": "check"}
+    ]
+  },
+  "process": {
+    "title": "Treatment Timeline",
+    "steps": [
+      {"number": 1, "title": "Week 0", "description": "Consultation, labs, and imaging review.", "icon": "clipboard-check"},
+      {"number": 2, "title": "Week 1", "description": "Adipose harvest + injection.", "icon": "syringe"},
+      {"number": 3, "title": "Week 3-6", "description": "Rehab progression + optional PRP booster.", "icon": "activity"},
+      {"number": 4, "title": "Month 3", "description": "Outcome assessment and maintenance plan.", "icon": "trending-up"}
+    ]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Consultation fee (£150) includes imaging review and is redeemable within 30 days",
+    "singlePrice": {
+      "currentPrice": "£2,250",
+      "currency": "GBP",
+      "consultationFee": "£150",
+      "consultationNote": "Consultation credited toward treatment"
+    },
+    "packages": [
+      {
+        "name": "Adipose + PRP Booster",
+        "price": "£2,950",
+        "description": "Adipose cell therapy with PRP booster at week 4",
+        "includes": "Supplement kit, physio plan",
+        "savings": "Save £300"
+      },
+      {
+        "name": "Elite Cellular Recovery",
+        "price": "£3,450",
+        "description": "Adipose therapy + dual PRP boosters + shockwave",
+        "includes": "Progress imaging, brace fitting",
+        "savings": "Save £450"
+      }
+    ],
+    "includes": [
+      "Consultation with regenerative specialist",
+      "Mini-liposuction harvest",
+      "Closed-system processing",
+      "Ultrasound-guided injection",
+      "Rehab roadmap + follow-up review"
+    ],
+    "financing": {
+      "available": true,
+      "buttonText": "0% finance available"
+    }
+  },
+  "candidacy": {
+    "title": "Who Is Suitable?",
+    "suitable": [
+      "Moderate to severe osteoarthritis",
+      "Recurrent joint effusion or swelling",
+      "Failed cortisone or hyaluronic acid injections",
+      "Athletes seeking natural alternatives"
+    ],
+    "notSuitable": [
+      "BMI >35 (case-by-case)",
+      "Active infection",
+      "Bleeding disorders not cleared by consultant"
+    ],
+    "note": "We coordinate with your GP or surgeon when a hybrid plan is required."
+  },
+  "faq": [
+    {"question": "Does the harvest leave scars?", "answer": "Only a tiny puncture site that fades over time. We use hidden entry points where possible."},
+    {"question": "Can I drive home?", "answer": "Yes, though we recommend arranging a lift if sedation is used."}
+  ],
+  "relatedTreatments": [
+    {"id": "platelet-rich-plasma", "title": "PRP Therapy", "description": "Boost adipose results with targeted growth factors.", "reason": "Common combination."},
+    {"id": "bmac-therapy", "title": "BMAC Therapy", "description": "Higher potency cellular therapy for advanced cases.", "reason": "Alternative when cartilage loss is severe."}
+  ],
+  "cta": {
+    "title": "Ready to Cushion Your Joints Naturally?",
+    "subtitle": "Book an adipose therapy consultation today.",
+    "primaryButton": "Book adipose consult",
+    "secondaryButton": "Request a call back",
+    "urgency": "Limited weekly theatres to ensure specialist attention",
+    "guarantee": "Consultation fee credited toward treatment"
+  },
+  "bookingInfo": {
+    "depositRequired": true,
+    "cancellationPolicy": "72 hours’ notice required",
+    "consultationFee": "£150 (redeemable)",
+    "duration": "45-minute consultation"
+  }
+}

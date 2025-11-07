@@ -1,0 +1,115 @@
+{
+  "id": "spot-injection",
+  "categoryId": "aesthetic-medicine",
+  "subcategoryId": "face",
+  "title": "Emergency Spot Injection",
+  "shortTitle": "Spot Rescue",
+  "tagline": "Bye-Bye Blemish in 48 Hours",
+  "description": "A fast-acting steroid and anti-inflammatory micro-injection that shrinks angry breakouts before events, shoots, or big meetings.",
+  "longDescription": "A cystic breakout doesn’t have to hijack your plans. Our emergency spot injection delivers a tiny dose of diluted corticosteroid directly into the blemish, rapidly deflating swelling, redness, and pain. Ideal for hormonal cysts, maskne flare-ups, or pre-event emergencies.",
+  "seo": {
+    "metaTitle": "Spot Injection London | Emergency Blemish Treatment | Dr. SNA Clinic",
+    "metaDescription": "Zap cystic breakouts within 48 hours with our doctor-led spot injection. Perfect pre-event emergency fix.",
+    "keywords": [
+      "spot injection london",
+      "emergency blemish treatment",
+      "cystic acne injection",
+      "steroid spot shot"
+    ],
+    "h1": "Emergency Spot Injection in London",
+    "canonicalUrl": "/treatments/aesthetic-medicine/face/spot-injection"
+  },
+  "hero": {
+    "headline": "Big Event? Breakout Gone.",
+    "subheadline": "Doctor-only spot injections shrink cystic acne fast so you stay photo-ready.",
+    "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=1920&q=80",
+    "badge": "Results within 24-48 hrs"
+  },
+  "quickStats": {
+    "duration": "15 minutes",
+    "anesthesia": "Optional topical numbing",
+    "downtime": "None",
+    "resultsVisible": "24-48 hrs",
+    "resultsLast": "Blemish resolution",
+    "painLevel": "Low",
+    "price": "£75 per spot",
+    "sessions": "Single session"
+  },
+  "overview": {
+    "title": "How the Rescue Works",
+    "content": "We cleanse the area, inject a micro-drop of diluted kenalog (or alternative anti-inflammatory) into the lesion, and apply LED or soothing mask. Swelling collapses within hours, redness fades, and makeup sits smoothly the next day.",
+    "image": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=1200&q=80",
+    "highlights": [
+      "Targets cystic acne, ingrown bumps, or post-wax inflammation",
+      "Safe dosing to avoid skin atrophy",
+      "Ideal before photoshoots, weddings, meetings"
+    ]
+  },
+  "benefits": {
+    "title": "Why Patients Love It",
+    "layout": "grid-3",
+    "items": [
+      {"title": "Doctor-administered", "description": "Precision dosing prevents divots or pigment issues.", "icon": "stethoscope"},
+      {"title": "Lightning-fast", "description": "Most blemishes flatten within 24 hours.", "icon": "zap"},
+      {"title": "Calming extras", "description": "LED + soothing mask quell redness immediately.", "icon": "wind"}
+    ]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "singlePrice": {
+      "currentPrice": "£75",
+      "currency": "GBP",
+      "consultationFee": "Waived"
+    },
+    "packages": [
+      {
+        "name": "Spot SOS (3 visits)",
+        "price": "£195",
+        "description": "For frequent flyers or talent on tour",
+        "includes": "LED add-on",
+        "savings": "Save £30"
+      }
+    ],
+    "includes": [
+      "Quick consult",
+      "Steroid/anti-inflammatory injection",
+      "LED or cooling mask"
+    ]
+  },
+  "candidacy": {
+    "title": "Who Can Book?",
+    "suitable": [
+      "Single inflamed cyst or blemish",
+      "Ingrown hair bumps",
+      "Post-shave or hormonal flare-ups"
+    ],
+    "notSuitable": [
+      "Widespread acne (requires full plan)",
+      "Allergy to steroids",
+      "Pregnancy (case-by-case)"
+    ],
+    "note": "We recommend full acne plans for recurrent breakouts."
+  },
+  "faq": [
+    {"question": "Will it leave a mark?", "answer": "No—our diluted dose prevents skin thinning. Follow aftercare to protect the area."},
+    {"question": "How soon before an event?", "answer": "Ideally 48 hours, but even 24 hours can make a dramatic difference."}
+  ],
+  "relatedTreatments": [
+    {"id": "skin-boosters", "title": "Skin Boosters", "description": "Hydrate skin to reduce future congestion.", "reason": "Long-term glow."},
+    {"id": "polynucleotide", "title": "PN Therapy", "description": "Calm inflammation and speed healing.", "reason": "Barrier support."}
+  ],
+  "cta": {
+    "title": "Need an Emergency Fix?",
+    "subtitle": "Text our concierge or book a spot injection now.",
+    "primaryButton": "Book spot rescue",
+    "secondaryButton": "WhatsApp our team",
+    "urgency": "Same-day slots held for emergencies",
+    "guarantee": "Payment applied at visit"
+  },
+  "bookingInfo": {
+    "depositRequired": false,
+    "cancellationPolicy": "6 hours’ notice (emergency friendly)",
+    "consultationFee": "None",
+    "duration": "15-minute visit"
+  }
+}

@@ -58,7 +58,7 @@ export function TreatmentHero({ treatment, params }) {
   breadcrumbItems.push({ label: treatment.title });
 
   return (
-    <section className="relative min-h-[70vh] overflow-hidden pt-40 sm:py-28 bg-black">
+    <section className="relative min-h-[60vh] sm:min-h-[70vh] overflow-hidden pt-28 pb-12 sm:pt-40 sm:pb-20 bg-black">
       {/* Background Image */}
       {treatment.hero?.backgroundImage && (
         <>
@@ -75,15 +75,16 @@ export function TreatmentHero({ treatment, params }) {
         </>
       )}
 
-      <Container className="relative z-10 ">
+      <Container className="relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
+          className="max-w-4xl"
         >
           {/* Breadcrumb */}
-          <Breadcrumb className="mb-6 text-white/70">
-            <BreadcrumbList className="text-white/70">
+          <Breadcrumb className="mb-4 sm:mb-6 text-white/70">
+            <BreadcrumbList className="text-white/70 text-xs sm:text-sm">
               {breadcrumbItems.map((item, index) => (
                 <Fragment key={`${item.href ?? item.label}-${index}`}>
                   <BreadcrumbItem>
@@ -114,10 +115,10 @@ export function TreatmentHero({ treatment, params }) {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.2, type: "spring" }}
-              className="inline-flex items-center mt-20 gap-2 px-6 py-3 bg-primary/10 backdrop-blur-sm border border-primary/30 rounded-full mb-8"
+              className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-6 sm:py-3 bg-primary/10 backdrop-blur-sm border border-primary/30 rounded-full mb-4 sm:mb-6"
             >
-              <Star className="w-4 h-4 text-primary fill-primary" />
-              <span className="text-primary text-sm font-semibold tracking-wider uppercase">
+              <Star className="w-3 h-3 sm:w-4 sm:h-4 text-primary fill-primary flex-shrink-0" />
+              <span className="text-primary text-[10px] sm:text-sm font-semibold tracking-wider uppercase">
                 {treatment.hero.badge}
               </span>
             </motion.div>
@@ -128,7 +129,7 @@ export function TreatmentHero({ treatment, params }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-3 sm:mb-4 leading-tight"
           >
             {treatment.hero?.headline || treatment.title}
           </motion.h1>
@@ -139,7 +140,7 @@ export function TreatmentHero({ treatment, params }) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
-              className="text-xl md:text-2xl text-primary mb-6 font-light"
+              className="text-base sm:text-lg md:text-xl text-primary mb-4 sm:mb-6 font-light leading-relaxed"
             >
               {treatment.tagline}
             </motion.p>
@@ -151,7 +152,7 @@ export function TreatmentHero({ treatment, params }) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
-              className="text-lg md:text-xl text-white/90 max-w-3xl mb-8 leading-relaxed"
+              className="text-sm sm:text-base md:text-lg text-white/90 max-w-2xl mb-6 sm:mb-8 leading-relaxed"
             >
               {treatment.hero.subheadline}
             </motion.p>
@@ -162,22 +163,20 @@ export function TreatmentHero({ treatment, params }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6"
+            className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4"
           >
             <Button
               asChild
-              size="lg"
-              className="btn-primary-gradient h-12 px-8 text-base md:text-lg group"
+              className="btn-primary-gradient h-11 sm:h-12 px-6 sm:px-8 text-sm sm:text-base font-semibold group"
             >
               <Link href="/booking">
                 Book Consultation
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
             <Button
               asChild
-              size="lg"
-              className="h-12 px-8 text-base md:text-lg glass-card border-2 border-white/30 text-white hover:bg-primary hover:border-primary shadow-lg transition-all"
+              className="h-11 sm:h-12 px-6 sm:px-8 text-sm sm:text-base font-semibold glass-card border-2 border-white/30 text-white hover:bg-primary hover:border-primary shadow-lg transition-all"
             >
               <Link href="#pricing">
                 View Pricing

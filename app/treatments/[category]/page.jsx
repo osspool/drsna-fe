@@ -12,10 +12,12 @@ import * as Icons from "lucide-react";
 // Import category data
 import aestheticMedicineData from "@/data/aesthetic-medicine/category.json";
 import intimateHealthData from "@/data/intimate-health/category.json";
+import painManagementData from "@/data/pain-management/category.json";
 
 const categoryDataMap = {
   "aesthetic-medicine": aestheticMedicineData,
   "intimate-health": intimateHealthData,
+  "pain-management": painManagementData,
   // Add other categories as they're created
 };
 

@@ -5,6 +5,7 @@ import { DrAbbasSection } from "@/components/landing/DrAbbasSection";
 import { PShotFeaturedSection } from "@/components/landing/PShotFeaturedSection";
 import { GlobalReachSection } from "@/components/landing/GlobalReachSection";
 import { FeaturedTreatments } from "@/components/landing/FeaturedTreatments";
+import { ClinicShowcaseSection } from "@/components/landing/ClinicShowcaseSection";
 import { TestimonialsSection } from "@/components/landing/TestimonialsSection";
 import { FAQSection } from "@/components/landing/FAQSection";
 import { FinalCTA } from "@/components/landing/FinalCTA";
@@ -158,6 +159,9 @@ export default function HomePage() {
 
         {/* Featured Treatments with Comet Cards */}
         <FeaturedTreatments />
+
+        {/* Clinic Showcase - Interior & Exterior Gallery */}
+        <ClinicShowcaseSection />
 
         {/* P-Shot Featured Section - Premium Treatment Highlight */}
         <PShotFeaturedSection />

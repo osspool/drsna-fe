@@ -1,0 +1,295 @@
+{
+  "id": "knee-treatment",
+  "categoryId": "pain-management",
+  "subcategoryId": "conditions",
+  "title": "Knee Pain Regenerative Programme",
+  "shortTitle": "Knee Relief",
+  "tagline": "Stronger Steps. Zero Surgery.",
+  "description": "Ultrasound-guided PRP, Arthrosamid®, and cellular therapies that cushion arthritic knees and restore confident movement.",
+  "longDescription": "Whether you’re dealing with bone-on-bone osteoarthritis, post-sport flare-ups, or stubborn meniscal pain, our knee programme blends diagnostics, regenerative injections, and rehab to keep you active. We target inflammation, rebuild cartilage support, and strengthen surrounding muscle so you can climb stairs, run meetings, or return to training without fear.",
+  "seo": {
+    "metaTitle": "Knee Pain Treatment London | PRP, Arthrosamid & BMAC | Dr. SNA Clinic",
+    "metaDescription": "Regenerative knee pain clinic in London. PRP, Arthrosamid®, adipose and BMAC injections, plus tailored rehab for osteoarthritis and sports injuries.",
+    "keywords": [
+      "knee pain treatment london",
+      "knee prp injections",
+      "arthrosamid london",
+      "regenerative knee clinic",
+      "non surgical knee pain relief"
+    ],
+    "h1": "Regenerative Knee Pain Treatment in London",
+    "canonicalUrl": "/treatments/pain-management/conditions/knee-treatment"
+  },
+  "hero": {
+    "headline": "Walk, Train, and Live Without Knee Pain",
+    "subheadline": "Doctor-led injections and rehab that cushion joints, calm inflammation, and strengthen support muscles.",
+    "image": "https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?w=1920&q=80",
+    "video": null,
+    "badge": "Ultrasound-guided precision"
+  },
+  "quickStats": {
+    "duration": "45-60 minute visits",
+    "anesthesia": "Local anaesthetic + nitrous optional",
+    "downtime": "Back to desk work next day",
+    "resultsVisible": "4-8 weeks",
+    "resultsLast": "12-24 months (with maintenance)",
+    "painLevel": "Mild pressure",
+    "price": "Programmes from £750",
+    "sessions": "Typically 3-session protocol"
+  },
+  "overview": {
+    "title": "A 360° Approach to Knee Relief",
+    "content": "Your journey starts with diagnostic imaging and gait analysis. We then design a plan combining PRP, Arthrosamid®, adipose cell therapy, or BMAC depending on cartilage wear and symptom severity. Each injection is ultrasound-guided to the exact compartment, followed by personalised strength work and recovery coaching.",
+    "image": "https://images.unsplash.com/photo-1544829099-b9a0c07afdba?w=1200&q=80",
+    "highlights": [
+      "Osteoarthritis, sports injuries, and post-surgery rehab welcome",
+      "Evidence-based biologic dosing",
+      "Coordinated physiotherapy and bracing support",
+      "Digital pain and mobility tracking"
+    ]
+  },
+  "video": {
+    "enabled": true,
+    "title": "Inside the Knee Recovery Plan",
+    "subtitle": "Discover how our regenerative protocol keeps patients moving",
+    "videos": [
+      {
+        "url": "https://youtu.be/NksQb7dxlor",
+        "title": "Patient Story: Back to Running in 12 Weeks",
+        "description": "Real consult footage, injection walk-through, and outcome review.",
+        "thumbnail": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1280&q=80"
+      }
+    ],
+    "layout": "feature"
+  },
+  "whatToExpect": {
+    "enabled": true,
+    "title": "What to Expect",
+    "subtitle": "Predictable steps from assessment to pain-free movement",
+    "description": "",
+    "background": "gradient-cream",
+    "variant": "compact-timeline",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Assessment & Imaging",
+        "description": "Consultation, X-ray/MRI review, gait and strength testing.",
+        "duration": "45 mins"
+      },
+      {
+        "number": 2,
+        "title": "Regenerative Injection",
+        "description": "PRP, Arthrosamid®, or cellular therapy delivered under ultrasound guidance.",
+        "duration": "60 mins"
+      },
+      {
+        "number": 3,
+        "title": "Restorative Rehab",
+        "description": "Physio-prescribed loading plan, bracing, and anti-inflammatory nutrition.",
+        "duration": "Weekly check-ins"
+      },
+      {
+        "number": 4,
+        "title": "Review & Maintain",
+        "description": "Follow-up imaging, booster planning, and return-to-sport timeline.",
+        "duration": "Week 8-12"
+      }
+    ]
+  },
+  "treatsAreas": {
+    "title": "Conditions We Treat",
+    "subtitle": "Tailored protocols for each diagnosis",
+    "areas": [
+      {
+        "name": "Osteoarthritis (Grade 1-4)",
+        "description": "Arthrosamid® or PRP cushions cartilage and reduces swelling.",
+        "image": "https://images.unsplash.com/photo-1544829099-b9a0c07afdba?w=800&q=80",
+        "icon": "shield"
+      },
+      {
+        "name": "Meniscal & Cartilage Tears",
+        "description": "BMAC or adipose therapy stimulates tissue repair alongside rehab.",
+        "image": "https://images.unsplash.com/photo-1517398740160-2010e685ab73?w=800&q=80",
+        "icon": "patch-check"
+      },
+      {
+        "name": "Patellar Tendinopathy",
+        "description": "High-density PRP targets tendon fibres to restore strength.",
+        "image": "https://images.unsplash.com/photo-1508873696983-2dfd5898f08b?w=800&q=80",
+        "icon": "activity"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Why Patients Choose Our Knee Clinic",
+    "subtitle": "",
+    "layout": "grid-3",
+    "items": [
+      {
+        "title": "Consultant-led care",
+        "description": "Every injection performed by regenerative orthopaedic physicians.",
+        "icon": "stethoscope"
+      },
+      {
+        "title": "Evidence-based dosing",
+        "description": "We publish outcomes and follow international orthobiologic guidelines.",
+        "icon": "book-open"
+      },
+      {
+        "title": "Holistic recovery",
+        "description": "Custom rehab, supplements, and lifestyle tweaks accelerate results.",
+        "icon": "heart-pulse"
+      }
+    ]
+  },
+  "process": {
+    "title": "Your Knee Recovery Timeline",
+    "subtitle": "",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Consult & Diagnostics",
+        "description": "Pain scoring, imaging, and biomechanics review.",
+        "duration": "Week 0",
+        "icon": "clipboard-check"
+      },
+      {
+        "number": 2,
+        "title": "Regenerative Injections",
+        "description": "Series of PRP/BMAC/Arthrosamid® sessions based on protocol.",
+        "duration": "Weeks 1-4",
+        "icon": "syringe"
+      },
+      {
+        "number": 3,
+        "title": "Guided Rehab",
+        "description": "Physio drills, strength conditioning, and progress tracking.",
+        "duration": "Weeks 2-10",
+        "icon": "bar-chart"
+      },
+      {
+        "number": 4,
+        "title": "Maintenance",
+        "description": "Annual booster, kit updates, and prevention plan.",
+        "duration": "Month 6 onwards",
+        "icon": "repeat"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Programme Pricing",
+    "subtitle": "Consultation fee (£150) includes imaging review and movement analysis",
+    "singlePrice": {
+      "currentPrice": "£750",
+      "currency": "GBP",
+      "consultationFee": "£150",
+      "consultationNote": "Redeemable against treatment within 30 days"
+    },
+    "packages": [
+      {
+        "name": "PRP Knee Renewal",
+        "price": "£1,950",
+        "description": "3 PRP sessions + physio support",
+        "includes": "Baseline labs, brace fitting, digital tracking",
+        "savings": "Save £300"
+      },
+      {
+        "name": "Arthrosamid® Cushion Plan",
+        "price": "£2,350",
+        "description": "Single Arthrosamid® injection + PRP booster",
+        "includes": "Ultrasound guidance, post-injection rehab",
+        "savings": "Save £250"
+      }
+    ],
+    "includes": [
+      "Consultation with regenerative specialist",
+      "Ultrasound-guided injections",
+      "Physiotherapy roadmap + exercise library",
+      "Follow-up scans and outcome report"
+    ],
+    "financing": {
+      "available": true,
+      "buttonText": "0% finance available"
+    }
+  },
+  "candidacy": {
+    "title": "Who Is a Good Candidate?",
+    "subtitle": "",
+    "suitable": [
+      "Mild to severe knee osteoarthritis",
+      "Post-meniscectomy pain or failed cortisone relief",
+      "Patellar or quadriceps tendinopathy",
+      "Athletes managing overuse injuries",
+      "Patients postponing or avoiding knee replacement"
+    ],
+    "notSuitable": [
+      "Active joint infection",
+      "Uncontrolled rheumatoid arthritis flare",
+      "Recent knee replacement (<6 months)",
+      "Clotting disorders not cleared by consultant"
+    ],
+    "note": "All candidates undergo medical screening and imaging review before enrolment."
+  },
+  "testimonials": [
+    {
+      "name": "James R.",
+      "age": 58,
+      "treatment": "Arthrosamid + PRP",
+      "rating": 5,
+      "text": "Within eight weeks I could walk the Thames Path without swelling. No more cortisone or painkillers.",
+      "date": "2024-01-05",
+      "verified": true
+    },
+    {
+      "name": "Leila H.",
+      "age": 42,
+      "treatment": "Runner’s Knee PRP Programme",
+      "rating": 5,
+      "text": "This programme gave me my marathon season back. The rehab plan was as valuable as the injections.",
+      "date": "2023-10-12",
+      "verified": true
+    }
+  ],
+  "faq": [
+    {
+      "question": "How soon can I exercise?",
+      "answer": "Low-impact movement is encouraged within 48 hours. Running usually resumes at 4-6 weeks depending on progress."
+    },
+    {
+      "question": "What’s the difference between PRP and Arthrosamid®?",
+      "answer": "PRP stimulates healing; Arthrosamid® provides long-lasting cushioning. We’ll recommend the best option based on imaging."
+    },
+    {
+      "question": "Can I combine this with surgery?",
+      "answer": "Yes. We support prehab before surgery or biologics post-meniscectomy to speed recovery."
+    }
+  ],
+  "relatedTreatments": [
+    {
+      "id": "hip-treatment",
+      "title": "Hip Pain Programme",
+      "description": "Regenerative protocols for labral tears and arthritis.",
+      "reason": "Great if your hip mechanics affect knee alignment."
+    },
+    {
+      "id": "foot-ankle-treatment",
+      "title": "Foot & Ankle Pain",
+      "description": "Support lower limb biomechanics from the ground up.",
+      "reason": "Ideal companion for runners."
+    }
+  ],
+  "cta": {
+    "title": "Ready for Pain-Free Steps?",
+    "subtitle": "Book your knee consultation and receive a tailored regenerative roadmap.",
+    "primaryButton": "Book knee consult",
+    "secondaryButton": "Request a call back",
+    "urgency": "Limited weekly appointments to ensure specialist availability",
+    "guarantee": "Consultation fee credited toward treatment"
+  },
+  "bookingInfo": {
+    "depositRequired": false,
+    "cancellationPolicy": "48 hours’ notice to reschedule",
+    "consultationFee": "£150 (redeemable)",
+    "duration": "45-minute consultation"
+  }
+}

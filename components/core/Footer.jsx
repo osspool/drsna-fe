@@ -32,14 +32,14 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-dark-gradient text-white pt-20 pb-8">
+    <footer className="bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white pt-20 pb-8">
       <Container>
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand Column */}
           <div>
             <div className="text-2xl font-heading font-bold mb-4">
-              <span className="text-gold-light">Dr SNA</span> Clinic
+              <span className="text-primary">Dr SNA</span> Clinic
             </div>
             <p className="text-white/70 mb-6 leading-relaxed">
               Premier aesthetic medicine clinic offering advanced treatments in
@@ -52,10 +52,10 @@ export function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-gold-gradient flex items-center justify-center transition-all duration-300 group"
+                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-primary flex items-center justify-center transition-all duration-300 group"
                   aria-label={social.label}
                 >
-                  <social.icon className="w-5 h-5 text-white group-hover:text-dark-brown" />
+                  <social.icon className="w-5 h-5 text-white group-hover:text-primary-foreground" />
                 </a>
               ))}
             </div>
@@ -63,7 +63,7 @@ export function Footer() {
 
           {/* Treatments */}
           <div>
-            <h3 className="font-heading font-bold text-lg mb-4 text-gold-light">
+            <h3 className="font-heading font-bold text-lg mb-4 text-primary">
               Treatments
             </h3>
             <ul className="space-y-2">
@@ -71,7 +71,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-white/70 hover:text-gold-light transition-colors"
+                    className="text-white/70 hover:text-primary transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -82,7 +82,7 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="font-heading font-bold text-lg mb-4 text-gold-light">
+            <h3 className="font-heading font-bold text-lg mb-4 text-primary">
               Company
             </h3>
             <ul className="space-y-2">
@@ -90,7 +90,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-white/70 hover:text-gold-light transition-colors"
+                    className="text-white/70 hover:text-primary transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -101,12 +101,12 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-heading font-bold text-lg mb-4 text-gold-light">
+            <h3 className="font-heading font-bold text-lg mb-4 text-primary">
               Contact Us
             </h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-gold-light mt-0.5 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <span className="text-white/70">
                   123 Harley Street,
                   <br />
@@ -114,19 +114,19 @@ export function Footer() {
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-gold-light flex-shrink-0" />
+                <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <a
                   href="tel:+442071234567"
-                  className="text-white/70 hover:text-gold-light transition-colors"
+                  className="text-white/70 hover:text-primary transition-colors"
                 >
                   020 7123 4567
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-gold-light flex-shrink-0" />
+                <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                 <a
                   href="mailto:info@drsnaclinic.com"
-                  className="text-white/70 hover:text-gold-light transition-colors"
+                  className="text-white/70 hover:text-primary transition-colors"
                 >
                   info@drsnaclinic.com
                 </a>
@@ -136,7 +136,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/10">
+        <div className="pt-8 border-t border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-white/60 text-sm">
               © {new Date().getFullYear()} Dr SNA Clinic. All rights reserved.
@@ -146,7 +146,7 @@ export function Footer() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-white/60 hover:text-gold-light transition-colors"
+                  className="text-white/60 hover:text-primary transition-colors"
                 >
                   {link.label}
                 </Link>

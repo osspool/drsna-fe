@@ -60,7 +60,7 @@ export function BeforeAfterBlock({ data }) {
   };
 
   return (
-    <section className="py-32 bg-gradient-to-b from-background via-secondary/30 to-background">
+    <section className="py-24 md:py-32 bg-linear-to-b from-background via-secondary/30 to-background">
       <Container>
         {/* Header */}
         <div className="text-center mb-16">
@@ -70,10 +70,10 @@ export function BeforeAfterBlock({ data }) {
               Real Results
             </span>
           </div>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-foreground mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-foreground mb-6">
             {title}
           </h2>
-          <p className="text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             {subtitle}
           </p>
         </div>
@@ -101,6 +101,7 @@ export function BeforeAfterBlock({ data }) {
                   src={currentItem.before}
                   alt={`Before - ${currentItem.title}`}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
                   className="object-cover"
                   priority
                 />
@@ -118,6 +119,7 @@ export function BeforeAfterBlock({ data }) {
                   src={currentItem.after}
                   alt={`After - ${currentItem.title}`}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
                   className="object-cover"
                   priority
                 />
@@ -198,7 +200,13 @@ export function BeforeAfterBlock({ data }) {
                     : "border-border hover:border-primary/50 opacity-60 hover:opacity-100"
                 }`}
               >
-                <Image src={item.after} alt={item.title} fill className="object-cover" />
+                <Image
+                  src={item.after}
+                  alt={item.title}
+                  fill
+                  sizes="96px"
+                  className="object-cover"
+                />
               </button>
             ))}
           </div>
@@ -221,14 +229,14 @@ export function BeforeAfterGrid({ gallery, title, subtitle }) {
   if (!gallery || gallery.length === 0) return null;
 
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 md:py-32 bg-background">
       <Container>
         {title && (
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">
               {title}
             </h2>
-            {subtitle && <p className="text-lg text-muted-foreground">{subtitle}</p>}
+            {subtitle && <p className="text-base md:text-lg text-muted-foreground">{subtitle}</p>}
           </div>
         )}
 
@@ -240,13 +248,25 @@ export function BeforeAfterGrid({ gallery, title, subtitle }) {
             >
               <div className="grid grid-cols-2">
                 <div className="relative aspect-square">
-                  <Image src={item.before} alt={`Before - ${item.title}`} fill className="object-cover" />
+                  <Image
+                    src={item.before}
+                    alt={`Before - ${item.title}`}
+                    fill
+                    sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                    className="object-cover"
+                  />
                   <div className="absolute top-2 left-2 px-2 py-1 bg-foreground/80 rounded text-background text-xs font-semibold">
                     BEFORE
                   </div>
                 </div>
                 <div className="relative aspect-square">
-                  <Image src={item.after} alt={`After - ${item.title}`} fill className="object-cover" />
+                  <Image
+                    src={item.after}
+                    alt={`After - ${item.title}`}
+                    fill
+                    sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                    className="object-cover"
+                  />
                   <div className="absolute top-2 right-2 px-2 py-1 bg-primary/90 rounded text-primary-foreground text-xs font-semibold">
                     AFTER
                   </div>

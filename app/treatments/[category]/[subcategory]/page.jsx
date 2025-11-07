@@ -14,14 +14,26 @@ import faceData from "@/data/aesthetic-medicine/face/subcategory.json";
 import categoriesData from "@/data/categories.json";
 import maleData from "@/data/intimate-health/male/subcategory.json";
 import femaleData from "@/data/intimate-health/female/subcategory.json";
+import conditionsData from "@/data/pain-management/conditions/subcategory.json";
+import treatmentsData from "@/data/pain-management/treatments/subcategory.json";
+import bodyData from "@/data/aesthetic-medicine/body/subcategory.json";
+import skinData from "@/data/aesthetic-medicine/skin/subcategory.json";
+import hairData from "@/data/aesthetic-medicine/hair/subcategory.json";
 
 const subcategoryDataMap = {
   "aesthetic-medicine": {
     face: faceData,
+    body: bodyData,
+    skin: skinData,
+    hair: hairData,
   },
   "intimate-health": {
     "male": maleData,
     "female": femaleData,
+  },
+  "pain-management": {
+    "conditions": conditionsData,
+    "treatments": treatmentsData,
   },
 };
 

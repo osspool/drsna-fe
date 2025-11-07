@@ -40,7 +40,7 @@ export function QuickStatsBlock({ data }) {
       background="default"
       padding="default"
       ripple={false}
-      className="relative overflow-hidden !py-16 sm:!py-24 bg-linear-to-b from-background via-secondary/50 to-secondary"
+      className="relative overflow-hidden py-16! sm:py-24! bg-linear-to-b from-background via-secondary/50 to-secondary"
     >
       <div className="pointer-events-none absolute inset-0 opacity-80">
         <div className="absolute -top-24 right-[-10%] h-72 w-72 rounded-full bg-primary/25 blur-[140px]" />
@@ -53,7 +53,7 @@ export function QuickStatsBlock({ data }) {
           <p className="text-[0.65rem] uppercase tracking-[0.4em] text-muted-foreground">
             Treatment At A Glance
           </p>
-          <h2 className="text-[2.6rem] leading-tight font-heading text-foreground md:text-[2.9rem]">
+          <h2 className="text-[2.6rem] leading-tight font-heading text-primary md:text-[2.9rem]">
             Quick Treatment Facts
           </h2>
           <p className="text-base text-muted-foreground max-w-3xl mx-auto">

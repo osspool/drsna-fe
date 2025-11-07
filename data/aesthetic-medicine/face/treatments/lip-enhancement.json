@@ -1,0 +1,153 @@
+{
+  "id": "lip-enhancement",
+  "categoryId": "aesthetic-medicine",
+  "subcategoryId": "face",
+  "title": "Lip Enhancement",
+  "shortTitle": "Lip Fillers",
+  "tagline": "Pillow-Soft Volume with Clinic-Level Precision",
+  "description": "Doctor-led lip filler artistry that balances shape, hydration, and definition for effortless confidence.",
+  "longDescription": "Lip enhancement at Dr. SNA Clinic is never one-size-fits-all. We analyse your facial proportions, smile dynamics, and hydration levels before selecting premium HA fillers that deliver soft volume, crisp borders, or subtle symmetry tweaks. Expect a bespoke plan, micro-cannula comfort, and results that feel like you—only more confident.",
+  "seo": {
+    "metaTitle": "Lip Fillers London | Natural Lip Enhancement | Dr. SNA Clinic",
+    "metaDescription": "Discover natural-looking lip fillers in London. Doctor-led artistry, premium HA products, zero downtime results.",
+    "keywords": [
+      "lip fillers london",
+      "lip enhancement clinic",
+      "subtle lip filler",
+      "doctor lip augmentation"
+    ],
+    "h1": "Lip Enhancement at Dr. SNA Clinic",
+    "canonicalUrl": "/treatments/aesthetic-medicine/face/lip-enhancement"
+  },
+  "hero": {
+    "headline": "Natural Lips, Elevated",
+    "subheadline": "Precise filler placement for plush hydration, refined borders, and camera-ready confidence.",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80",
+    "video": null,
+    "badge": "Doctor-only injections"
+  },
+  "quickStats": {
+    "duration": "30 minutes",
+    "anesthesia": "Topical numbing + dental block optional",
+    "downtime": "Mild swelling 24-48 hrs",
+    "resultsVisible": "Immediate",
+    "resultsLast": "9-12 months",
+    "painLevel": "Low",
+    "price": "From £295",
+    "sessions": "Single session + review"
+  },
+  "overview": {
+    "title": "Our Approach",
+    "content": "We focus on harmony—not trend-driven exaggeration. Whether you want hydration, Cupid’s bow definition, or a subtle Russian-inspired lift, we map your lips with HA fillers tailored to texture and longevity. Expect soft, flexible movement and precise symmetry from every angle.",
+    "image": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1200&q=80",
+    "highlights": [
+      "Premium HA fillers (Teoxane, Juvederm, Restylane)",
+      "Micro-cannula + needle combination for less bruising",
+      "Personalised shape planning (Classic, Russian, Balanced)",
+      "Aftercare kit + review at 2 weeks"
+    ]
+  },
+  "benefits": {
+    "title": "Why Choose Dr. SNA Clinic?",
+    "layout": "grid-3",
+    "items": [
+      {
+        "title": "Doctor Expertise",
+        "description": "Every treatment performed by Dr. Abbas or senior aesthetic doctor.",
+        "icon": "stethoscope"
+      },
+      {
+        "title": "Ultra-Natural Finish",
+        "description": "We build structure and hydration, never stiffness or migration.",
+        "icon": "feather"
+      },
+      {
+        "title": "Comfort Protocol",
+        "description": "Numbing, vibration analgesia, and stress-reducing environment.",
+        "icon": "sofa"
+      }
+    ]
+  },
+  "beforeAfter": {
+    "enabled": true,
+    "title": "Before & After",
+    "subtitle": "Real patient results with permission",
+    "note": "Individual outcomes vary; images represent typical hydration-focused enhancements.",
+    "gallery": [
+      {
+        "id": "lip-01",
+        "title": "Hydration Refresh",
+        "before": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=800&q=80",
+        "after": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=801&q=80",
+        "description": "One syringe for soft volume and defined Cupid’s bow.",
+        "treatment": "1ml HA filler + contouring"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Transparent Pricing",
+    "subtitle": "Consultation fee (£50) credited toward treatment",
+    "singlePrice": {
+      "currentPrice": "£295",
+      "currency": "GBP"
+    },
+    "packages": [
+      {
+        "name": "Hydration Gloss",
+        "price": "£295",
+        "description": "0.7ml filler for subtle refresh",
+        "includes": "Aftercare kit + review"
+      },
+      {
+        "name": "Signature Volume",
+        "price": "£395",
+        "description": "1ml filler + border definition",
+        "includes": "LED healing + check-in"
+      }
+    ],
+    "includes": [
+      "Consultation & lip mapping",
+      "Premium HA filler",
+      "Numbing protocol",
+      "Aftercare + review"
+    ],
+    "financing": {
+      "available": false
+    }
+  },
+  "candidacy": {
+    "title": "Ideal Candidates",
+    "suitable": [
+      "Desire subtle volume or hydration",
+      "Asymmetry or flat Cupid’s bow",
+      "Post-lip filler correction"
+    ],
+    "notSuitable": [
+      "Pregnancy/breastfeeding",
+      "Active cold sores or infection"
+    ],
+    "note": "We dissolve previous filler if migration is present."
+  },
+  "faq": [
+    {"question": "Will my lips look fake?", "answer": "No. We layer filler strategically to enhance your natural anatomy, never overpower it."},
+    {"question": "How long does swelling last?", "answer": "Most swelling subsides within 48 hours; full settling occurs by day seven."}
+  ],
+  "relatedTreatments": [
+    {"id": "tear-trough-treatment", "title": "Tear Trough Filler", "description": "Balance mid-face volume for a fresher look.", "reason": "Complements lip enhancement."},
+    {"id": "jawline-reduction", "title": "Jawline Treatment", "description": "Define lower face for full profile harmony.", "reason": "Complete facial contouring."}
+  ],
+  "cta": {
+    "title": "Ready for Your Signature Smile?",
+    "subtitle": "Book a lip enhancement consultation today.",
+    "primaryButton": "Book lip filler consult",
+    "secondaryButton": "Chat with a patient advisor",
+    "urgency": "Limited daily slots to maintain doctor-only delivery",
+    "guarantee": "Consult fee credited toward treatment"
+  },
+  "bookingInfo": {
+    "depositRequired": false,
+    "cancellationPolicy": "48 hours’ notice to reschedule",
+    "consultationFee": "£50 (redeemable)",
+    "duration": "30-minute consultation"
+  }
+}

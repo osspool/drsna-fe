@@ -1,0 +1,135 @@
+{
+  "id": "physiotherapy",
+  "categoryId": "pain-management",
+  "subcategoryId": "treatments",
+  "title": "Specialist Physiotherapy",
+  "shortTitle": "Physiotherapy",
+  "tagline": "Stronger Movement. Lasting Results.",
+  "description": "Targeted rehabilitation that protects your regenerative investment and keeps pain away for good.",
+  "longDescription": "Regenerative injections create the healing opportunity—physiotherapy locks in the gains. Our musculoskeletal specialists design bespoke programmes that match your injection protocol, combining mobility, strength, neuromuscular control, and lifestyle coaching. Expect measurable progress, not generic exercises.",
+  "seo": {
+    "metaTitle": "Specialist Physiotherapy London | Rehab for Regenerative Treatments | Dr. SNA Clinic",
+    "metaDescription": "Pain management physiotherapy in London. Tailored rehab that supports PRP, BMAC, adipose therapy, and Arthrosamid® for long-lasting relief.",
+    "keywords": [
+      "physiotherapy london",
+      "pain management physiotherapist",
+      "rehab after prp",
+      "regenerative therapy exercises"
+    ],
+    "h1": "Specialist Physiotherapy for Pain Management",
+    "canonicalUrl": "/treatments/pain-management/treatments/physiotherapy"
+  },
+  "hero": {
+    "headline": "Rehab That Matches Your Biology",
+    "subheadline": "Custom programmes that stabilise joints, rebuild strength, and prevent flare-ups.",
+    "image": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=1920&q=80",
+    "video": null,
+    "badge": "MSK specialists + regenerative doctors"
+  },
+  "quickStats": {
+    "duration": "60-minute sessions",
+    "anesthesia": "None",
+    "downtime": "None",
+    "resultsVisible": "2-4 weeks",
+    "resultsLast": "Sustained with adherence",
+    "painLevel": "Comfortable challenge",
+    "price": "From £95/session",
+    "sessions": "6-12 sessions recommended"
+  },
+  "overview": {
+    "title": "Integrated Rehab, Designed Around You",
+    "content": "Every programme starts with movement screening, strength testing, and lifestyle review. We synchronise exercises with your injection timeline—protecting tissue while it remodels, then progressively loading for resilience. Expect digital tracking, video libraries, and ongoing consultant input.",
+    "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1200&q=80",
+    "highlights": [
+      "Supports PRP, adipose, BMAC, Arthrosamid®, and surgery-free plans",
+      "Includes strength, mobility, balance, and neuromuscular control",
+      "Remote check-ins and app-based exercise library",
+      "Sleep, stress, and nutrition guidance to speed recovery"
+    ]
+  },
+  "benefits": {
+    "title": "Why Physiotherapy Matters",
+    "layout": "grid-3",
+    "items": [
+      {"title": "Protect your investment", "description": "Rehab ensures injections deliver full potential.", "icon": "shield"},
+      {"title": "Prevent relapse", "description": "Correct mechanics and strength to avoid repeat injuries.", "icon": "repeat"},
+      {"title": "Personal accountability", "description": "Track metrics, hit milestones, and stay motivated.", "icon": "bar-chart"}
+    ]
+  },
+  "process": {
+    "title": "Your Rehab Journey",
+    "steps": [
+      {"number": 1, "title": "Assessment", "description": "Strength, mobility, posture, and lifestyle audit.", "icon": "clipboard-check"},
+      {"number": 2, "title": "Programme Design", "description": "Exercise, manual therapy, and recovery plan tailored to injections.", "icon": "layers"},
+      {"number": 3, "title": "Guided Sessions", "description": "In-clinic hands-on therapy + at-home digital coaching.", "icon": "activity"},
+      {"number": 4, "title": "Progress Review", "description": "Re-testing, plan upgrades, and maintenance strategy.", "icon": "trending-up"}
+    ]
+  },
+  "pricing": {
+    "title": "Physiotherapy Pricing",
+    "singlePrice": {
+      "currentPrice": "£95",
+      "currency": "GBP"
+    },
+    "packages": [
+      {
+        "name": "6-Session Performance Plan",
+        "price": "£540",
+        "description": "Ideal for single joint rehab",
+        "includes": "Digital exercise app, progress tracking",
+        "savings": "Save £30"
+      },
+      {
+        "name": "12-Session Transformation",
+        "price": "£1,020",
+        "description": "For multi-joint or post-operative cases",
+        "includes": "Manual therapy, gait analysis, re-testing",
+        "savings": "Save £120"
+      }
+    ],
+    "includes": [
+      "Dedicated MSK physiotherapist",
+      "Custom exercise programming",
+      "Access to rehab app + video demos",
+      "Progress reports shared with your consultant"
+    ],
+    "financing": {
+      "available": false
+    }
+  },
+  "candidacy": {
+    "title": "Is This for You?",
+    "suitable": [
+      "Post-PRP or cellular therapy recovery",
+      "Chronic pain needing strength retraining",
+      "Athletes returning to sport",
+      "Desk workers correcting posture pain"
+    ],
+    "notSuitable": [
+      "Acute fractures or surgical emergencies (refer for surgery first)"
+    ],
+    "note": "We coordinate with surgeons, GPs, and coaches for integrated care."
+  },
+  "faq": [
+    {"question": "How often do I attend?", "answer": "Typically weekly for the first 4-6 sessions, then bi-weekly as strength improves."},
+    {"question": "Do I need injections first?", "answer": "No, we support standalone physiotherapy or combine with regenerative treatments."}
+  ],
+  "relatedTreatments": [
+    {"id": "platelet-rich-plasma", "title": "PRP Therapy", "description": "Pair PRP with rehab for optimal healing.", "reason": "Common combination."},
+    {"id": "adipose-cell-therapy", "title": "Adipose Cell Therapy", "description": "Integrate rehab with cellular therapies for long-term results.", "reason": "Protects your investment."}
+  ],
+  "cta": {
+    "title": "Ready to Move with Confidence?",
+    "subtitle": "Book a physiotherapy assessment and receive a personalised rehab plan.",
+    "primaryButton": "Book physio assessment",
+    "secondaryButton": "Request a call back",
+    "urgency": "Limited MSK physio slots each week",
+    "guarantee": "Assessment fee credited toward package"
+  },
+  "bookingInfo": {
+    "depositRequired": false,
+    "cancellationPolicy": "24 hours’ notice required",
+    "consultationFee": "£75 assessment (redeemable)",
+    "duration": "60-minute initial assessment"
+  }
+}

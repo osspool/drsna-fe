@@ -1,0 +1,138 @@
+{
+  "id": "pain-management",
+  "title": "Pain Management & Regenerative Orthopaedics",
+  "shortTitle": "Pain Management",
+  "tagline": "Move Freely. Heal Deeply.",
+  "description": "Doctor-led regenerative medicine that reduces chronic pain, restores mobility, and prevents invasive surgery.",
+  "longDescription": "Persistent pain shouldn’t dictate your lifestyle. At Dr. SNA Clinic we treat the source—not just the symptoms—using platelet-rich plasma, cellular therapies, and targeted rehabilitation. Every protocol is overseen by regenerative pain specialists who combine imaging, ultrasound-guided injections, and physiotherapy to help you move without anxiety.",
+  "seo": {
+    "metaTitle": "Pain Management Clinic London | Regenerative Orthopaedics | Dr. SNA",
+    "metaDescription": "Explore regenerative pain management in London. PRP, BMAC, adipose cell therapy, and targeted rehabilitation for joints and soft tissue injuries.",
+    "keywords": [
+      "pain management london",
+      "regenerative orthopaedics",
+      "prp joint injection",
+      "bmac therapy",
+      "arthritic knee relief"
+    ],
+    "h1": "Regenerative Pain Management Clinic in London"
+  },
+  "hero": {
+    "headline": "Restore Motion Without Surgery",
+    "subheadline": "Platelet-rich plasma, cellular therapies, and guided rehab that address pain at its source.",
+    "image": "https://images.unsplash.com/photo-1544829099-b9a0c07afdba?w=1920&q=80",
+    "cta": "Explore pain programmes",
+    "stats": [
+      {"value": "1,200+", "label": "Regenerative injections"},
+      {"value": "92%", "label": "Improved mobility scores"},
+      {"value": "8-12w", "label": "Average recovery timeline"}
+    ]
+  },
+  "introduction": {
+    "title": "Science-Guided Relief for Chronic Pain",
+    "content": "We specialise in musculoskeletal conditions caused by arthritis, overuse, and sports injury. Expect advanced diagnostics, tailored biologic injections, and coordinated rehab support so progress is measurable each visit.",
+    "highlights": [
+      {
+        "icon": "activity",
+        "title": "Ultrasound precision",
+        "description": "Every injection is guided to the exact tendon, ligament, or joint compartment."
+      },
+      {
+        "icon": "dna",
+        "title": "Biologic medicine",
+        "description": "PRP, BMAC, adipose, and Arthrosamid® to trigger genuine tissue repair."
+      },
+      {
+        "icon": "heart-handshake",
+        "title": "Integrated rehab",
+        "description": "Physio, bracing, and nutrition align with your injection plan."
+      }
+    ]
+  },
+  "subcategories": [
+    {
+      "id": "conditions",
+      "title": "Conditions We Treat",
+      "shortDescription": "From knee osteoarthritis to tennis elbow and plantar fasciitis.",
+      "description": "Targeted treatment roadmaps for each joint and soft-tissue injury we manage.",
+      "icon": "target",
+      "image": "https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?w=800&q=80",
+      "treatmentCount": 6,
+      "featured": true,
+      "color": "#4c4a3d"
+    },
+    {
+      "id": "treatments",
+      "title": "Treatment Methods",
+      "shortDescription": "Biologics and non-surgical techniques that accelerate healing.",
+      "description": "Explore our library of regenerative therapies and supportive care options.",
+      "icon": "droplet",
+      "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80",
+      "treatmentCount": 6,
+      "featured": false,
+      "color": "#6c5f43"
+    }
+  ],
+  "benefits": {
+    "title": "Why Choose Dr. SNA Clinic",
+    "subtitle": "Promoting healing, not masking symptoms",
+    "items": [
+      {
+        "title": "Consultant-led care",
+        "description": "Regenerative pain physicians manage every stage of your plan.",
+        "icon": "stethoscope"
+      },
+      {
+        "title": "Evidence-based protocols",
+        "description": "Peer-reviewed dosing for knees, hips, spine, and tendons.",
+        "icon": "book-open"
+      },
+      {
+        "title": "Comprehensive diagnostics",
+        "description": "MRI, ultrasound, and functional testing quantify improvement.",
+        "icon": "microscope"
+      },
+      {
+        "title": "Concierge support",
+        "description": "Appointments coordinated around life with digital progress tracking.",
+        "icon": "calendar"
+      }
+    ]
+  },
+  "process": {
+    "title": "Your Recovery Journey",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Assessment & Imaging",
+        "description": "Consultation, imaging review, and movement screening to confirm diagnosis.",
+        "icon": "scan"
+      },
+      {
+        "number": 2,
+        "title": "Regenerative Plan",
+        "description": "Choose PRP, cellular therapy, or Arthrosamid® with structured physio.",
+        "icon": "clipboard-check"
+      },
+      {
+        "number": 3,
+        "title": "Precision Treatment",
+        "description": "Ultrasound-guided injections with tailored rehab exercises.",
+        "icon": "target"
+      },
+      {
+        "number": 4,
+        "title": "Review & Prevent",
+        "description": "Follow-up scans, strength testing, and prevention strategies.",
+        "icon": "trending-up"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Move Without Pain?",
+    "subtitle": "Book a regenerative pain consultation and receive a tailored recovery plan.",
+    "primaryButton": "Book pain consult",
+    "secondaryButton": "Request a callback",
+    "note": "Consultation fee (£150) redeemable against treatment."
+  }
+}

@@ -28,10 +28,11 @@ export function TreatmentCard({ treatment, categoryId, subcategoryId, index = 0 
                   src={treatment.image}
                   alt={treatment.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-background/80 via-background/20 to-transparent" />
 
                 {/* Badges */}
                 <div className="absolute top-4 right-4 flex gap-2">
@@ -121,7 +122,7 @@ export function TreatmentCard({ treatment, categoryId, subcategoryId, index = 0 
             </div>
 
             {/* Hover Gradient Effect */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="absolute inset-0 bg-linear-to-br from-primary/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
           </div>
         </CometCard>
       </Link>
@@ -145,7 +146,7 @@ export function TreatmentCardSimple({ treatment, categoryId, subcategoryId, inde
       <Link href={href}>
         <div className="group relative bg-card rounded-2xl p-8 border border-border hover:border-primary/30 hover:shadow-xl transition-all duration-500">
           {/* Hover gradient effect */}
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/5 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-500" />
+          <div className="absolute inset-0 bg-linear-to-br from-primary/5 to-primary/5 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-500" />
 
           <div className="relative z-10">
             {/* Treatment Name */}

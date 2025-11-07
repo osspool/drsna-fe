@@ -1,0 +1,138 @@
+{
+  "id": "hip-treatment",
+  "categoryId": "pain-management",
+  "subcategoryId": "conditions",
+  "title": "Hip Pain Regenerative Programme",
+  "shortTitle": "Hip Relief",
+  "tagline": "Free Your Stride.",
+  "description": "Ultrasound-guided PRP, BMAC, and adipose cell therapy to cushion arthritic hips, calm labral pain, and restore rotational strength.",
+  "longDescription": "Stiff mornings, catching hips, or post-run flare ups don’t have to be your new normal. Our hip specialists blend imaging, regenerative injections, and stabilising rehab to ease deep joint pain, revive mobility, and delay or avoid surgery.",
+  "seo": {
+    "metaTitle": "Hip Pain Treatment London | PRP & Cellular Therapy | Dr. SNA Clinic",
+    "metaDescription": "Doctor-led hip pain clinic in London. PRP, BMAC, adipose injections, and rehab programmes to treat osteoarthritis, labral tears, and bursitis.",
+    "keywords": [
+      "hip pain treatment london",
+      "hip prp injections",
+      "labral tear regenerative therapy",
+      "hip osteoarthritis relief"
+    ],
+    "h1": "Regenerative Hip Pain Treatment in London",
+    "canonicalUrl": "/treatments/pain-management/conditions/hip-treatment"
+  },
+  "hero": {
+    "headline": "Stride, Cycle, and Sleep Without Hip Pain",
+    "subheadline": "Collagen-stimulating injections and stabilising rehab for long-term relief.",
+    "image": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1920&q=80",
+    "badge": "Consultant-led orthobiologics"
+  },
+  "quickStats": {
+    "duration": "45-60 minute visits",
+    "anesthesia": "Local anaesthetic",
+    "downtime": "Light activity after 48 hrs",
+    "resultsVisible": "6-10 weeks",
+    "resultsLast": "12-24 months",
+    "painLevel": "Mild pressure",
+    "price": "Programmes from £850",
+    "sessions": "1-3 injections + rehab block"
+  },
+  "overview": {
+    "title": "Precision Care for Complex Hip Pain",
+    "content": "We begin with MRI review, ultrasound assessment, and gait analysis. Depending on cartilage status and pathology we recommend PRP, BMAC, adipose cell therapy, or peri-tendinous injections. Each plan includes gluteal activation training and movement coaching so you recover stronger than before.",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&q=80",
+    "highlights": [
+      "Targets osteoarthritis, labral tears, bursitis, and gluteal tendinopathy",
+      "Ultrasound-guided delivery into joint capsule or tendon sheath",
+      "Rehab designed for walkers, cyclists, and athletes"
+    ]
+  },
+  "benefits": {
+    "title": "Why Choose Our Hip Programme",
+    "layout": "grid-3",
+    "items": [
+      {"title": "Consultant expertise", "description": "Regenerative orthopaedic physicians plan and deliver every injection.", "icon": "stethoscope"},
+      {"title": "Imaging-led targeting", "description": "We map labral tears and cartilage wear before placing therapy.", "icon": "scan"},
+      {"title": "Holistic rehab", "description": "Strength work, gait retraining, and nutrition keep results lasting.", "icon": "activity"}
+    ]
+  },
+  "process": {
+    "title": "Your Hip Recovery Path",
+    "steps": [
+      {"number": 1, "title": "Consult & Diagnostics", "description": "MRI review, ultrasound scan, and functional testing.", "icon": "clipboard-check"},
+      {"number": 2, "title": "Regenerative Injection", "description": "PRP/BMAC/adipose therapy guided under ultrasound.", "icon": "syringe"},
+      {"number": 3, "title": "Strength & Stability", "description": "Gluteal activation drills and mobility work with physio.", "icon": "bar-chart"},
+      {"number": 4, "title": "Review & Maintenance", "description": "Follow-up imaging, booster planning, and activity progression.", "icon": "repeat"}
+    ]
+  },
+  "pricing": {
+    "title": "Programme Pricing",
+    "singlePrice": {
+      "currentPrice": "£850",
+      "currency": "GBP",
+      "consultationFee": "£150",
+      "consultationNote": "Consultation includes imaging review and is redeemable within 30 days"
+    },
+    "packages": [
+      {
+        "name": "Hip PRP Series",
+        "price": "£2,100",
+        "description": "3 PRP injections + rehab plan",
+        "includes": "Supplement kit, digital tracking",
+        "savings": "Save £300"
+      },
+      {
+        "name": "BMAC Cellular Reset",
+        "price": "£3,450",
+        "description": "Single BMAC injection + two PRP boosters",
+        "includes": "Platelet lab prep, imaging follow-up",
+        "savings": "Save £450"
+      }
+    ],
+    "includes": [
+      "Consultation with regenerative specialist",
+      "Ultrasound-guided procedures",
+      "Physio roadmap + exercise videos",
+      "Follow-up review and outcome report"
+    ],
+    "financing": {
+      "available": true,
+      "buttonText": "0% finance available"
+    }
+  },
+  "candidacy": {
+    "title": "Who It Helps",
+    "suitable": [
+      "Hip osteoarthritis (mild to advanced)",
+      "Femoroacetabular impingement and labral tears",
+      "Greater trochanteric pain syndrome",
+      "Post arthroscopy rehab"
+    ],
+    "notSuitable": [
+      "Active infection in joint",
+      "Recent hip replacement (<6 months)",
+      "Severe bone loss requiring surgical intervention"
+    ],
+    "note": "All patients require imaging and consultant clearance before treatment."
+  },
+  "faq": [
+    {"question": "How soon can I bear weight?", "answer": "You can walk out of clinic. We advise 48 hours of reduced impact before returning to normal activity."},
+    {"question": "Will this replace surgery?", "answer": "Our aim is to delay or avoid replacements. Some patients still choose surgery later with better strength and less pain."}
+  ],
+  "relatedTreatments": [
+    {"id": "knee-treatment", "title": "Knee Pain Programme", "description": "Support linked knee issues to improve overall alignment.", "reason": "Great if compensating from hip pain."},
+    {"id": "non-surgical-regenerative", "title": "Regenerative Treatment Methods", "description": "Learn about PRP, BMAC, and adipose therapy in detail.", "reason": "Understand the biologics we use."}
+  ],
+  "cta": {
+    "title": "Ready to Free Your Stride?",
+    "subtitle": "Book a hip consultation and receive your personalised recovery roadmap.",
+    "primaryButton": "Book hip consult",
+    "secondaryButton": "Request a call back",
+    "urgency": "Limited consultant slots weekly",
+    "guarantee": "Consultation fee credited toward treatment"
+  },
+  "bookingInfo": {
+    "depositRequired": false,
+    "cancellationPolicy": "48 hours’ notice required",
+    "consultationFee": "£150 (redeemable)",
+    "duration": "45-minute consultation"
+  }
+}

@@ -67,33 +67,29 @@ export function DrAbbasSection() {
             {/* Main Image with Modern Design */}
             <div className="relative h-[500px] lg:h-[550px]">
               <div className="relative h-full rounded-3xl overflow-hidden group">
-                {/* Glassmorphic border */}
-                <div className="absolute inset-0 bg-linear-to-br from-primary/40 via-primary/30 to-transparent p-[2px] rounded-3xl">
-                  <div className="relative h-full rounded-[22px] overflow-hidden bg-card/10 backdrop-blur-sm">
-                    <Image
-                      src="/images/drsnaclinic/doctor-intro.jpg"
-                      alt="Dr Syed Nadeem Abbas - Founder & Lead Aesthetic Physician"
-                      fill
-                      className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
-                      priority
-                    />
-                    {/* Modern overlay with better gradient */}
-                    <div className="absolute inset-0 bg-linear-to-t from-background/90 via-background/20 to-transparent" />
+                <Image
+                  src="/images/drsnaclinic/doctor-intro.jpg"
+                  alt="Dr Syed Nadeem Abbas - Founder & Lead Aesthetic Physician"
+                  fill
+                  className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                  priority
+                />
 
-                    {/* Info card overlay */}
-                    <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 z-20">
-                      <div className="glass-card rounded-2xl p-6 shadow-xl">
-                        <h3 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-2">
-                          Dr Syed Nadeem Abbas
-                        </h3>
-                        <p className="text-primary font-semibold text-base md:text-lg">
-                          MSc (Distinction) | MRCGP | MRCSEd | MBBS
-                        </p>
-                        <p className="text-muted-foreground mt-2 text-sm md:text-base">
-                          Founder & Lead Aesthetic Physician
-                        </p>
-                      </div>
-                    </div>
+                {/* Modern overlay with better gradient */}
+                {/* <div className="absolute inset-0 bg-linear-to-t from-background/90 via-background/20 to-transparent z-10" /> */}
+
+                {/* Info card overlay with pure glassmorphism */}
+                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 z-20">
+                  <div className="p-6 rounded-2xl backdrop-blur-md border border-white/20 bg-black/20">
+                    <h3 className="text-2xl md:text-3xl font-heading font-bold text-white mb-2">
+                      Dr Syed Nadeem Abbas
+                    </h3>
+                    <p className="text-primary font-semibold text-base md:text-lg">
+                      MSc (Distinction) | MRCGP | MRCSEd | MBBS
+                    </p>
+                    <p className="text-white/80 mt-2 text-sm md:text-base">
+                      Founder & Lead Aesthetic Physician
+                    </p>
                   </div>
                 </div>
               </div>
@@ -116,7 +112,7 @@ export function DrAbbasSection() {
                     {/* Card with meteor effect */}
                     <div className="relative flex h-full flex-col items-start justify-start overflow-hidden rounded-2xl border border-primary/20 bg-card/80 backdrop-blur-sm p-6 shadow-lg hover:shadow-2xl hover:border-primary/50 transition-all duration-500">
                       {/* Icon with gradient background */}
-                      <div className="inline-flex p-3 rounded-xl bg-gradient-to-br from-primary/30 to-primary/20 mb-4 group-hover:from-primary/40 group-hover:to-primary/30 transition-all duration-300 shadow-md">
+                      <div className="inline-flex p-3 rounded-xl bg-linear-to-br from-primary/30 to-primary/20 mb-4 group-hover:from-primary/40 group-hover:to-primary/30 transition-all duration-300 shadow-md">
                         <credential.icon className="w-6 h-6 text-primary" />
                       </div>
                       
@@ -227,7 +223,7 @@ export function DrAbbasSection() {
                 size="lg"
                 className="btn-primary-gradient text-base md:text-lg px-8 py-6 shadow-2xl hover:shadow-primary-lg group w-full sm:w-auto"
               >
-                <Link href="/about" className="gap-2">
+                <Link href="/dr-syed-nadeem-abbas" className="gap-2">
                   Learn More About Dr Abbas
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
