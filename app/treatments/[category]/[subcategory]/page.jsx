@@ -2,58 +2,34 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { CategoryHero } from "@/components/treatments/CategoryHero";
 import { ProcessTimeline } from "@/components/treatments/ProcessTimeline";
-import { FAQSection } from "@/components/treatments/FAQSection";
-import { CTASection } from "@/components/treatments/CTASection";
+import { FAQSection } from "@/components/sections/FAQSection";
+import { FeaturesSection } from "@/components/sections/FeaturesSection";
+import { CTASection } from "@/components/sections/CTASection";
 import { TreatmentCard } from "@/components/treatments/TreatmentCard";
-import { BenefitsSection } from "@/components/treatments/BenefitsSection";
 import { Container } from "@/components/layout/Container";
 import { Sparkles, ArrowRight } from "lucide-react";
 import { CometCard } from "@/components/aceternity/comet-card";
+import { getSubcategory, getCategories, getStaticSubcategoryPaths } from "@/lib/subcategories";
 
-import faceData from "@/data/aesthetic-medicine/face/subcategory.json";
-import categoriesData from "@/data/categories.json";
-import maleData from "@/data/intimate-health/male/subcategory.json";
-import femaleData from "@/data/intimate-health/female/subcategory.json";
-import conditionsData from "@/data/pain-management/conditions/subcategory.json";
-import treatmentsData from "@/data/pain-management/treatments/subcategory.json";
-import bodyData from "@/data/aesthetic-medicine/body/subcategory.json";
-import skinData from "@/data/aesthetic-medicine/skin/subcategory.json";
-import hairData from "@/data/aesthetic-medicine/hair/subcategory.json";
-
-const subcategoryDataMap = {
-  "aesthetic-medicine": {
-    face: faceData,
-    body: bodyData,
-    skin: skinData,
-    hair: hairData,
-  },
-  "intimate-health": {
-    "male": maleData,
-    "female": femaleData,
-  },
-  "pain-management": {
-    "conditions": conditionsData,
-    "treatments": treatmentsData,
-  },
-};
-
-// Helper function to get category name
-const getCategoryName = (categoryId) => {
-  return categoriesData.categories?.[categoryId]?.title || "Treatments";
-};
-
+/**
+ * Generate static params for high-priority subcategories only
+ * In Next.js 16 with Cache Components, only pre-render most popular pages
+ * Other subcategories will be rendered on-demand with automatic caching
+ */
 export async function generateStaticParams() {
-  return [
-    { category: "aesthetic-medicine", subcategory: "face" },
-    { category: "aesthetic-medicine", subcategory: "body" },
-    { category: "aesthetic-medicine", subcategory: "skin" },
-    { category: "aesthetic-medicine", subcategory: "hair" },
-  ];
+  return await getStaticSubcategoryPaths();
 }
 
+/**
+ * Generate metadata for SEO
+ * Dynamically loads only the needed subcategory data
+ */
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
-  const subcategoryData = subcategoryDataMap[resolvedParams.category]?.[resolvedParams.subcategory];
+  const subcategoryData = await getSubcategory(
+    resolvedParams.category,
+    resolvedParams.subcategory
+  );
 
   if (!subcategoryData) {
     return { title: "Treatment Not Found" };
@@ -71,13 +47,27 @@ export async function generateMetadata({ params }) {
   };
 }
 
+/**
+ * Subcategory Page Component
+ * Uses Next.js 16 Server Components with 'use cache' for optimal performance
+ * Only loads the specific subcategory needed (no bundle bloat)
+ */
 export default async function SubcategoryPage({ params }) {
   const resolvedParams = await params;
-  const subcategoryData = subcategoryDataMap[resolvedParams.category]?.[resolvedParams.subcategory];
+  const subcategoryData = await getSubcategory(
+    resolvedParams.category,
+    resolvedParams.subcategory
+  );
 
   if (!subcategoryData) {
     notFound();
   }
+
+  // Get category data for breadcrumb
+  const categoriesData = await getCategories();
+  const getCategoryName = (categoryId) => {
+    return categoriesData?.categories?.[categoryId]?.title || "Treatments";
+  };
 
   const treatmentsArray = subcategoryData.treatments
     ? Object.entries(subcategoryData.treatments).map(([id, treatment]) => ({ ...treatment, id }))
@@ -87,7 +77,7 @@ export default async function SubcategoryPage({ params }) {
 
   return (
     <main className="min-h-screen">
-      <CategoryHero 
+      <CategoryHero
         data={subcategoryData}
         variant="subcategory"
         breadcrumb={{
@@ -116,7 +106,7 @@ export default async function SubcategoryPage({ params }) {
         title={subcategoryData.title}
       />
 
-      {subcategoryData.benefits && <BenefitsSection data={subcategoryData.benefits} />}
+      {subcategoryData.benefits && <FeaturesSection data={subcategoryData.benefits} variant="compact" />}
       {subcategoryData.process && <ProcessTimeline data={subcategoryData.process} variant="vertical" />}
       <FAQSection data={subcategoryData.faq} variant="default" />
       <CTASection data={subcategoryData.cta} variant="default" />
@@ -169,11 +159,11 @@ function FeaturedBanner({ treatments, categoryId, subcategoryId }) {
           <Sparkles className="w-5 h-5 text-primary" />
           <h2 className="text-2xl font-heading font-bold text-foreground">Most Popular Treatments</h2>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {treatments.slice(0, 3).map((treatment, index) => (
             <CometCard key={treatment.id}>
-              <Link 
+              <Link
                 href={`/treatments/${categoryId}/${subcategoryId}/${treatment.id}`}
                 className="block group"
               >

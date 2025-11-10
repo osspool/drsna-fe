@@ -1,10 +1,10 @@
 import { notFound } from "next/navigation";
 import { CategoryHero } from "@/components/treatments/CategoryHero";
 import { ProcessTimeline } from "@/components/treatments/ProcessTimeline";
-import { FAQSection } from "@/components/treatments/FAQSection";
-import { CTASection } from "@/components/treatments/CTASection";
+import { FAQSection } from "@/components/sections/FAQSection";
+import { FeaturesSection } from "@/components/sections/FeaturesSection";
+import { CTASection } from "@/components/sections/CTASection";
 import { SubcategoryGrid } from "@/components/treatments/SubcategoryGrid";
-import { BenefitsSection } from "@/components/treatments/BenefitsSection";
 import { Container } from "@/components/layout/Container";
 import { Sparkles, Star } from "lucide-react";
 import * as Icons from "lucide-react";
@@ -77,7 +77,7 @@ export default async function CategoryPage({ params }) {
 
       {/* Benefits Section */}
       {categoryData.benefits && (
-        <BenefitsSection data={categoryData.benefits} />
+        <FeaturesSection data={categoryData.benefits} variant="compact" />
       )}
 
       {/* Process Timeline */}

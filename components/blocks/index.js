@@ -1,22 +1,32 @@
+// Core Layout Blocks
 export { HeroBlock } from "./HeroBlock";
-export { AtAGlanceBlock } from "./AtAGlanceBlock";
 export { ContentBlock } from "./ContentBlock";
-export { BenefitsBlock } from "./BenefitsBlock";
-export { BeforeAfterBlock } from "./BeforeAfterBlock";
+export { OverviewBlock } from "./OverviewBlock";
+
+// Media Blocks
 export { GalleryBlock } from "./GalleryBlock";
 export { VideoBlock } from "./VideoBlock";
 export { VideoTestimonialBlock } from "./VideoTestimonialBlock";
-export { WhatToExpectBlock } from "./WhatToExpectBlock";
-export { WhyChooseBlock } from "./WhyChooseBlock";
-export { HowItWorksBlock } from "./HowItWorksBlock";
-export { FAQBlock } from "./FAQBlock";
-export { TestimonialsBlock } from "./TestimonialsBlock";
-export { CTABlock } from "./CTABlock";
+export { BeforeAfterBlock } from "./BeforeAfterBlock";
+
+// Treatment Specific Blocks
 export { TreatmentAreasBlock } from "./TreatmentAreasBlock";
+export { WhatToExpectBlock } from "./WhatToExpectBlock";
+export { HowItWorksBlock } from "./HowItWorksBlock";
 export { PricingBlock } from "./PricingBlock";
 export { CandidacyBlock } from "./CandidacyBlock";
 export { SafetyBlock } from "./SafetyBlock";
 export { ComparisonBlock } from "./ComparisonBlock";
-export { OverviewBlock } from "./OverviewBlock";
-export { QuickStatsBlock } from "./QuickStatsBlock";
+
+// Social Proof & Conversion Blocks
+export { CTABlock } from "./CTABlock";
+
+// Consolidated Section Components (from sections/)
+export { FAQSection } from "@/components/sections/FAQSection";
+export { StatsSection } from "@/components/sections/StatsSection";
+export { FeaturesSection } from "@/components/sections/FeaturesSection";
+export { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+export { CTASection } from "@/components/sections/CTASection";
+
+// Block Rendering System
 export { BlockRenderer, BlocksRenderer } from "./BlockRenderer";

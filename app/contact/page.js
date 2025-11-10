@@ -3,8 +3,10 @@
 import { CategoryHero } from "@/components/treatments/CategoryHero";
 import { Container } from "@/components/layout/Container";
 import { ContactForm } from "@/components/landing/contact/ContactForm";
+import { ContactCard } from "@/components/contact/ContactCard";
+import { FeaturesSection } from "@/components/sections/FeaturesSection";
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Clock, Navigation } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Navigation, UserCheck, MapPinned, CalendarCheck } from "lucide-react";
 import Link from "next/link";
 
 const heroData = {
@@ -165,84 +167,32 @@ export default function ContactPage() {
       </section>
 
       {/* Why Visit Section */}
-      <section className="py-16 md:py-24 bg-background">
-        <Container>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center max-w-4xl mx-auto"
-          >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
-              Visit Our Prestigious Wimpole Street Clinic
-            </h2>
-            <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
-              Located in the heart of London's renowned medical district, Dr. SNA Clinic offers world-class aesthetic treatments in a luxurious, private setting. Our state-of-the-art facility combines cutting-edge technology with personalized care to deliver exceptional results.
-            </p>
-            <div className="flex flex-wrap justify-center gap-8 text-left">
-              {[
-                {
-                  title: "Expert Consultation",
-                  description: "Personalized treatment plans tailored to your unique needs",
-                },
-                {
-                  title: "Premium Location",
-                  description: "Prestigious Wimpole Street address with excellent transport links",
-                },
-                {
-                  title: "Flexible Appointments",
-                  description: "Convenient scheduling to fit your busy lifestyle",
-                },
-              ].map((item, idx) => (
-                <div key={idx} className="flex-1 min-w-[250px]">
-                  <h3 className="text-lg font-heading font-bold text-foreground mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-        </Container>
-      </section>
+      <FeaturesSection
+        data={{
+          title: "Visit Our Prestigious Wimpole Street Clinic",
+          description: "Located in the heart of London's renowned medical district, Dr. SNA Clinic offers world-class aesthetic treatments in a luxurious, private setting. Our state-of-the-art facility combines cutting-edge technology with personalized care to deliver exceptional results.",
+          features: [
+            {
+              icon: "userCheck",
+              title: "Expert Consultation",
+              description: "Personalized treatment plans tailored to your unique needs",
+            },
+            {
+              icon: "mapPinned",
+              title: "Premium Location",
+              description: "Prestigious Wimpole Street address with excellent transport links",
+            },
+            {
+              icon: "calendarCheck",
+              title: "Flexible Appointments",
+              description: "Convenient scheduling to fit your busy lifestyle",
+            },
+          ]
+        }}
+        variant="default"
+        layout="grid-3"
+        background="default"
+      />
     </main>
-  );
-}
-
-function ContactCard({ info, index }) {
-  const Icon = info.icon;
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: index * 0.1 }}
-      className="group bg-card rounded-2xl p-8 border-2 border-border hover:border-primary/30 hover:shadow-2xl transition-all duration-500"
-    >
-      <div className="flex flex-col items-center text-center">
-        <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-          <Icon className="w-8 h-8 text-primary" />
-        </div>
-        <h3 className="text-xl font-heading font-bold text-foreground mb-4">
-          {info.title}
-        </h3>
-        <div className="space-y-2 mb-6">
-          {info.details.map((detail, idx) => (
-            <p key={idx} className="text-muted-foreground">
-              {detail}
-            </p>
-          ))}
-        </div>
-        <Link
-          href={info.actionLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center px-6 py-2.5 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full font-semibold transition-all shadow-lg group-hover:shadow-xl"
-        >
-          {info.action}
-        </Link>
-      </div>
-    </motion.div>
   );
 }

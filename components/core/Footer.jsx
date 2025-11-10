@@ -139,7 +139,7 @@ export function Footer() {
         <div className="pt-8 border-t border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-white/60 text-sm">
-              © {new Date().getFullYear()} Dr SNA Clinic. All rights reserved.
+              © 2025 Dr SNA Clinic. All rights reserved.
             </p>
             <div className="flex flex-wrap gap-6 text-sm">
               {footerLinks.legal.map((link) => (

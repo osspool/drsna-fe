@@ -2,20 +2,28 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { cn } from "@/lib/utils";
+import { ClientOnly } from "@/components/custom/ui/client-only";
 
-export const BackgroundBeams = ({ className }) => {
-  const paths = [
-    "M-380 -189C-380 -189 -312 216 152 343C616 470 684 875 684 875",
-    "M-373 -197C-373 -197 -305 208 159 335C623 462 691 867 691 867",
-    "M-366 -205C-366 -205 -298 200 166 327C630 454 698 859 698 859",
-    "M-359 -213C-359 -213 -291 192 173 319C637 446 705 851 705 851",
-    "M-352 -221C-352 -221 -284 184 180 311C644 438 712 843 712 843",
-  ];
+/**
+ * BackgroundBeams Component
+ * Uses ClientOnly wrapper (React 19.2 best practice) instead of useEffect
+ * for better performance and proper SSR handling
+ */
 
-  const getRandomValue = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  };
+const paths = [
+  "M-380 -189C-380 -189 -312 216 152 343C616 470 684 875 684 875",
+  "M-373 -197C-373 -197 -305 208 159 335C623 462 691 867 691 867",
+  "M-366 -205C-366 -205 -298 200 166 327C630 454 698 859 698 859",
+  "M-359 -213C-359 -213 -291 192 173 319C637 446 705 851 705 851",
+  "M-352 -221C-352 -221 -284 184 180 311C644 438 712 843 712 843",
+];
 
+// Random values only on client
+const getRandomValue = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+
+function BackgroundBeamsContent({ className }) {
   return (
     <div
       className={cn(
@@ -73,5 +81,22 @@ export const BackgroundBeams = ({ className }) => {
         </defs>
       </svg>
     </div>
+  );
+}
+
+export const BackgroundBeams = ({ className }) => {
+  return (
+    <ClientOnly
+      fallback={
+        <div
+          className={cn(
+            "absolute h-full w-full inset-0 flex items-center justify-center pointer-events-none",
+            className
+          )}
+        />
+      }
+    >
+      <BackgroundBeamsContent className={className} />
+    </ClientOnly>
   );
 };

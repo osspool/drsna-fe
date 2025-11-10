@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Send } from "lucide-react";
 import { useActionState } from "react";
 import { sendContactEmail } from "@/actions/sendContactEmail";
-import FormInput from "@/components/custom/form-utils/form-input";
-import FormTextarea from "@/components/custom/form-utils/form-textarea";
+import FormInput from "@/components/form-utils/form-input";
+import FormTextarea from "@/components/form-utils/form-textarea";
 
 // Submit Button Component with Loading State
 function SubmitButton({ isPending }) {

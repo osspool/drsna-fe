@@ -2,8 +2,15 @@
 import { cn } from "@/lib/utils";
 import React, { useEffect, useRef, useState } from "react";
 import { createNoise3D } from "simplex-noise";
+import { ClientOnly } from "@/components/custom/ui/client-only";
 
-export const WavyBackground = ({
+/**
+ * WavyBackground Component
+ * Uses ClientOnly wrapper (React 19.2 best practice) for client-only rendering
+ * Still uses useEffect for DOM interactions (canvas, color resolution)
+ */
+
+function WavyBackgroundContent({
   children,
   className,
   containerClassName,
@@ -14,8 +21,8 @@ export const WavyBackground = ({
   speed = "fast",
   waveOpacity = 0.5,
   ...props
-}) => {
-  const noise = createNoise3D();
+}) {
+  const noiseRef = useRef(null);
   let w,
     h,
     nt,
@@ -136,7 +143,7 @@ export const WavyBackground = ({
       const colorArray = resolvedColorsRef.current.length > 0 ? resolvedColorsRef.current : waveColors;
       ctx.strokeStyle = colorArray[i % colorArray.length];
       for (x = 0; x < w; x += 5) {
-        var y = noise(x / 800, 0.3 * i, nt) * 100;
+        var y = noiseRef.current ? noiseRef.current(x / 800, 0.3 * i, nt) * 100 : 0;
         ctx.lineTo(x, y + h * 0.5);
       }
       ctx.stroke();
@@ -161,6 +168,11 @@ export const WavyBackground = ({
   };
 
   useEffect(() => {
+    // Initialize noise only on client side
+    if (!noiseRef.current) {
+      noiseRef.current = createNoise3D();
+    }
+
     // Delay to ensure CSS is loaded and DOM is ready
     const timer = setTimeout(() => {
       if (typeof window !== 'undefined') {
@@ -245,5 +257,26 @@ export const WavyBackground = ({
         {children}
       </div>
     </div>
+  );
+}
+
+export const WavyBackground = (props) => {
+  return (
+    <ClientOnly
+      fallback={
+        <div
+          className={cn(
+            "h-screen flex flex-col items-center justify-center relative overflow-hidden w-full",
+            props.containerClassName
+          )}
+        >
+          <div className={cn("relative z-10 w-full", props.className)}>
+            {props.children}
+          </div>
+        </div>
+      }
+    >
+      <WavyBackgroundContent {...props} />
+    </ClientOnly>
   );
 };

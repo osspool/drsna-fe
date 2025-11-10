@@ -1,23 +1,22 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { ClientOnly } from "@/components/custom/ui/client-only";
 
-export const Meteors = ({
-  number,
-  className,
-}) => {
-  const [meteorStyles, setMeteorStyles] = useState([]);
+/**
+ * Meteors Component
+ * Uses ClientOnly wrapper (React 19.2 best practice) instead of useEffect
+ * for better performance and proper SSR handling
+ */
 
-  useEffect(() => {
-    // Generate random styles only on the client side to avoid hydration errors
-    const styles = new Array(number || 20).fill(true).map(() => ({
-      left: Math.floor(Math.random() * (400 - -400) + -400) + "px",
-      animationDelay: Math.random() * (0.8 - 0.2) + 0.2 + "s",
-      animationDuration: Math.floor(Math.random() * (10 - 2) + 2) + "s",
-    }));
-    setMeteorStyles(styles);
-  }, [number]);
+function MeteorsContent({ number = 20, className }) {
+  // Generate random styles on the client side
+  const meteorStyles = new Array(number).fill(true).map(() => ({
+    left: Math.floor(Math.random() * (400 - -400) + -400) + "px",
+    animationDelay: Math.random() * (0.8 - 0.2) + 0.2 + "s",
+    animationDuration: Math.floor(Math.random() * (10 - 2) + 2) + "s",
+  }));
 
   return (
     <motion.div
@@ -42,5 +41,13 @@ export const Meteors = ({
         );
       })}
     </motion.div>
+  );
+}
+
+export const Meteors = ({ number, className }) => {
+  return (
+    <ClientOnly>
+      <MeteorsContent number={number} className={className} />
+    </ClientOnly>
   );
 };

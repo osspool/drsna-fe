@@ -6,9 +6,12 @@ import { PShotFeaturedSection } from "@/components/landing/PShotFeaturedSection"
 import { GlobalReachSection } from "@/components/landing/GlobalReachSection";
 import { FeaturedTreatments } from "@/components/landing/FeaturedTreatments";
 import { ClinicShowcaseSection } from "@/components/landing/ClinicShowcaseSection";
-import { TestimonialsSection } from "@/components/landing/TestimonialsSection";
-import { FAQSection } from "@/components/landing/FAQSection";
-import { FinalCTA } from "@/components/landing/FinalCTA";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { FAQSection } from "@/components/sections/FAQSection";
+import { CTASection } from "@/components/sections/CTASection";
+import { landingFaqData } from "@/data/landing-faq";
+import { landingTestimonials } from "@/data/landing-testimonials";
+import { clinicStructuredData } from "@/data/structured-data";
 
 export const metadata = {
   metadataBase: new URL("https://drsnaclinic.com"),
@@ -72,80 +75,13 @@ export const metadata = {
   },
 };
 
-// JSON-LD Structured Data for SEO
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "MedicalClinic",
-  name: "Dr SNA Clinic",
-  alternateName: "Dr Syed Nadeem Abbas Clinic",
-  description:
-    "Premier aesthetic medicine and regenerative treatment clinic in London",
-  url: "https://drsnaclinic.com",
-  telephone: "+447955836986",
-  email: "info@drsnaclinic.com",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "48 Wimpole Street",
-    addressLocality: "Marylebone, London",
-    postalCode: "W1G 8SF",
-    addressCountry: "GB",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: "51.5175",
-    longitude: "-0.1483",
-  },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-      ],
-      opens: "09:00",
-      closes: "18:00",
-    },
-  ],
-  founder: {
-    "@type": "Person",
-    name: "Dr Syed Nadeem Abbas",
-    jobTitle: "Aesthetic Medicine Specialist",
-    description:
-      "MSc | MRCGP | MRCSEd | MBBS - Masters in Aesthetic Plastic Surgery with Distinction",
-  },
-  medicalSpecialty: [
-    "Aesthetic Medicine",
-    "Dermatology",
-    "Regenerative Medicine",
-    "Pain Management",
-  ],
-  hasCredential: [
-    "CQC Registered",
-    "GMC Certified",
-    "Masters in Aesthetic Plastic Surgery",
-  ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5.0",
-    reviewCount: "500",
-    bestRating: "5",
-    worstRating: "1",
-  },
-  award:
-    "Global Recognition Award 2024 - Excellence in Aesthetic & Regenerative Medicine",
-};
-
 export default function HomePage() {
   return (
     <>
       {/* Structured Data for SEO */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicStructuredData) }}
       />
 
       <Header />
@@ -170,16 +106,21 @@ export default function HomePage() {
         <GlobalReachSection />
 
         {/* Testimonials with Card Spotlight */}
-        <TestimonialsSection />
+        <TestimonialsSection
+          variant="video"
+          data={landingTestimonials}
+          title="Hear From Our Patients"
+          subtitle="Real stories from real patients who have experienced transformative results at Dr SNA Clinic"
+        />
 
-        {/* FAQ Section with Animated Accordion */}
-        <FAQSection />
+        {/* FAQ Section with Icons */}
+        <FAQSection data={landingFaqData} variant="with-icons" />
 
         {/* Regulatory Logos Carousel - Trust Signals */}
         <RegulatoryLogos />
 
         {/* Final CTA with Wavy Background */}
-        <FinalCTA />
+        <CTASection variant="contact" />
       </main>
     </>
   );
