@@ -5,8 +5,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Award, GraduationCap, Heart, Shield, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Meteors } from "@/components/aceternity/meteors";
-import Glow from "@/components/custom/ui/glow";
 
 export function DrAbbasSection() {
   const credentials = [
@@ -33,10 +31,7 @@ export function DrAbbasSection() {
   ];
 
   return (
-    <section id="about" className="relative py-20 md:py-32 overflow-hidden">
-      {/* Simple glow background */}
-      <Glow className="pointer-events-none" variant="center" />
-
+    <section id="about" className="relative py-20 md:py-32 overflow-hidden bg-muted/30">
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <motion.div
@@ -71,7 +66,7 @@ export function DrAbbasSection() {
                   src="/images/drsnaclinic/doctor-intro.jpg"
                   alt="Dr Syed Nadeem Abbas - Founder & Lead Aesthetic Physician"
                   fill
-                  className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   priority
                 />
 
@@ -106,29 +101,23 @@ export function DrAbbasSection() {
                   transition={{ delay: index * 0.1 }}
                 >
                   <div className="relative w-full h-full group">
-                    {/* Glow background effect */}
-                    <div className="absolute inset-0 h-full w-full scale-[0.85] transform rounded-2xl bg-gradient-to-r from-primary to-primary/80 blur-2xl opacity-20 group-hover:opacity-30 transition-opacity" />
-                    
-                    {/* Card with meteor effect */}
-                    <div className="relative flex h-full flex-col items-start justify-start overflow-hidden rounded-2xl border border-primary/20 bg-card/80 backdrop-blur-sm p-6 shadow-lg hover:shadow-2xl hover:border-primary/50 transition-all duration-500">
+                    {/* Subtle glow effect on desktop only */}
+                    <div className="hidden md:block absolute inset-0 h-full w-full scale-[0.85] transform rounded-2xl bg-gradient-to-r from-primary/10 to-primary/5 blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
+
+                    {/* Card with subtle effects */}
+                    <div className="relative flex h-full flex-col items-start justify-start rounded-2xl border border-primary/20 bg-card p-6 shadow-md hover:shadow-lg hover:border-primary/40 transition-all duration-300">
                       {/* Icon with gradient background */}
-                      <div className="inline-flex p-3 rounded-xl bg-linear-to-br from-primary/30 to-primary/20 mb-4 group-hover:from-primary/40 group-hover:to-primary/30 transition-all duration-300 shadow-md">
+                      <div className="inline-flex p-3 rounded-xl bg-gradient-to-br from-primary/20 to-primary/10 mb-4 group-hover:from-primary/30 group-hover:to-primary/20 transition-colors duration-300">
                         <credential.icon className="w-6 h-6 text-primary" />
                       </div>
-                      
-                      <h4 className="relative z-10 font-heading font-bold text-foreground text-sm mb-2 leading-tight">
+
+                      <h4 className="font-heading font-bold text-foreground text-sm mb-2 leading-tight">
                         {credential.title}
                       </h4>
-                      
-                      <p className="relative z-10 text-xs text-muted-foreground leading-relaxed">
+
+                      <p className="text-xs text-muted-foreground leading-relaxed">
                         {credential.description}
                       </p>
-
-                      {/* Meteors effect */}
-                      <Meteors 
-                        number={10} 
-                        className="bg-gradient-to-r from-primary to-primary/80 before:bg-gradient-to-r before:from-primary before:to-transparent"
-                      />
                     </div>
                   </div>
                 </motion.div>
@@ -141,7 +130,7 @@ export function DrAbbasSection() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.5 }}
             className="space-y-8"
           >
             {/* Content Text - Condensed */}
@@ -175,18 +164,9 @@ export function DrAbbasSection() {
                 {/* Theme-aware gradient background */}
                 <div className="absolute inset-0 bg-gradient-to-br from-secondary via-secondary/95 to-muted dark:from-secondary dark:via-secondary/95 dark:to-background" />
 
-                {/* Decorative primary accents */}
-                <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
-                <div className="absolute bottom-0 left-0 w-48 h-48 bg-primary/10 rounded-full blur-3xl" />
-
-                {/* Subtle pattern overlay */}
-                <div
-                  className="absolute inset-0 opacity-5"
-                  style={{
-                    backgroundImage: `radial-gradient(circle at 2px 2px, hsl(var(--primary) / 0.3) 1px, transparent 0)`,
-                    backgroundSize: '32px 32px'
-                  }}
-                />
+                {/* Subtle decorative glow - desktop only */}
+                <div className="hidden md:block absolute top-0 right-0 w-48 h-48 bg-primary/8 rounded-full blur-xl opacity-60" />
+                <div className="hidden md:block absolute bottom-0 left-0 w-32 h-32 bg-primary/5 rounded-full blur-xl opacity-40" />
 
                 <div className="relative p-8 md:p-10">
                   {/* Sparkle icon */}
@@ -221,7 +201,7 @@ export function DrAbbasSection() {
               <Button
                 asChild
                 size="lg"
-                className="btn-primary-gradient text-base md:text-lg px-8 py-6 shadow-2xl hover:shadow-primary-lg group w-full sm:w-auto"
+                className="btn-primary-gradient text-base md:text-lg px-8 py-6 shadow-lg hover:shadow-xl group w-full sm:w-auto transition-all"
               >
                 <Link href="/dr-syed-nadeem-abbas" className="gap-2">
                   Learn More About Dr Abbas

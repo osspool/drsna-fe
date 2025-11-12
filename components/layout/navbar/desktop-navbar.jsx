@@ -1,0 +1,131 @@
+"use client"
+
+import { useState, useEffect } from "react"
+import Link from "next/link"
+import Image from "next/image"
+import { navigationData } from "./nav-data"
+import { MegaMenu } from "./mega-menu"
+import { ChevronDown, Phone, Calendar } from "lucide-react"
+import { ModeToggle } from "@/components/custom/ui/mode-toggle"
+import { MovingBorderButton } from "@/components/aceternity/moving-border"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
+import { Container } from "@/components/layout/Container"
+
+export function DesktopNavbar({ onMenuOpenChange }) {
+  const [activeMenuId, setActiveMenuId] = useState(null)
+
+  useEffect(() => {
+    onMenuOpenChange?.(activeMenuId !== null)
+  }, [activeMenuId, onMenuOpenChange])
+
+  const mainItems = navigationData.filter((item) => !item.children || item.children.length === 0)
+  const dropdownItems = navigationData.filter((item) => item.children && item.children.length > 0)
+
+  return (
+    <>
+      <Container>
+        <div className="flex items-center justify-between h-16 relative">
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-3 relative z-10">
+            <div className="relative w-[70px] h-[45px]">
+              <Image
+                src="/dr-sna-clinic-logo.png"
+                alt="Dr SNA Clinic"
+                width={70}
+                height={45}
+                priority
+                className="object-contain"
+              />
+            </div>
+          </Link>
+
+          {/* Main Navigation - Centered */}
+          <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-1 md:gap-2">
+            {dropdownItems.map((item) => {
+              const isActive = activeMenuId === item.id
+
+              return (
+                <div key={item.id} className="group">
+                  <button
+                    className={`px-3 py-2 text-[14px] font-medium transition-all duration-300 ease-out flex items-center gap-1.5 rounded-lg ${
+                      isActive
+                        ? "text-primary bg-white/5"
+                        : "text-white/80 hover:text-white hover:bg-white/5"
+                    }`}
+                    onClick={() => setActiveMenuId(isActive ? null : item.id)}
+                    aria-haspopup="true"
+                    aria-expanded={isActive}
+                  >
+                    <span>{item.label}</span>
+                    <ChevronDown
+                      className={`w-4 h-4 transition-transform duration-300 ${
+                        isActive ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                </div>
+              )
+            })}
+
+            {mainItems.map((item) => (
+              <Link
+                key={item.id}
+                href={item.href}
+                className="px-3 py-2 text-[14px] font-medium text-white/80 hover:text-white hover:bg-white/5 transition-all duration-300 rounded-lg"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+
+          {/* Right Actions */}
+          <div className="flex items-center gap-4">
+            <ModeToggle />
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Link
+                    href="tel:02071234567"
+                    className="text-white/80 hover:text-white text-[14px] transition-colors duration-200 flex items-center gap-1.5"
+                  >
+                    <Phone className="w-4 h-4" />
+                  </Link>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>020 7123 4567</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+            <Link href="/booking">
+              <MovingBorderButton
+                borderRadius="1.5rem"
+                className="bg-linear-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground text-[13px] font-medium px-4 py-2 border-none"
+                containerClassName="h-auto"
+                borderClassName="bg-[radial-gradient(circle,var(--primary)_20%,var(--primary-foreground)_40%,transparent_70%)]"
+                duration={3000}
+              >
+                <span className="flex items-center gap-1.5">
+                  <Calendar className="w-4 h-4" />
+                  Book Consultation
+                </span>
+              </MovingBorderButton>
+            </Link>
+          </div>
+        </div>
+      </Container>
+
+      {activeMenuId && (
+        <MegaMenu
+          item={dropdownItems.find((item) => item.id === activeMenuId)}
+          isOpen={activeMenuId !== null}
+          onClose={() => setActiveMenuId(null)}
+        />
+      )}
+    </>
+  )
+}

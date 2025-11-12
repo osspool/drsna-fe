@@ -84,7 +84,6 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicStructuredData) }}
       />
 
-      <Header />
 
       <main>
         {/* Hero Section with Luxury Carousel & Emotional Messaging */}

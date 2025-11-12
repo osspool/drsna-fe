@@ -1,48 +1,45 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Globe, Users, Award, Plane, MapPin, Heart } from "lucide-react";
 import WorldMap from "@/components/aceternity/world-map";
-import { useState } from "react";
 
 export function GlobalReachSection() {
-  const [hoveredLocation, setHoveredLocation] = useState(null);
-
   // London coordinates (clinic location)
   const londonLocation = { lat: 51.5074, lng: -0.1278 };
 
   // Key locations where patients travel from
   const patientLocations = [
-    { 
+    {
       lat: 51.5074,  // London, UK
       lng: -0.1278,
-      label: "UK & Europe", 
-      count: "5000+",
-      description: "Leading destination for European patients seeking natural aesthetic results",
+      label: "UK & Europe",
+      count: "5,000+",
+      description: "Leading destination for European patients",
       icon: "🇬🇧"
     },
-    { 
+    {
       lat: 25.2048,  // Dubai, UAE
       lng: 55.2708,
-      label: "Middle East", 
-      count: "2000+",
-      description: "Trusted by patients from UAE, Saudi Arabia, and Qatar",
+      label: "Middle East",
+      count: "2,000+",
+      description: "UAE, Saudi Arabia, and Qatar",
       icon: "🌍"
     },
-    { 
+    {
       lat: 1.3521,  // Singapore
       lng: 103.8198,
-      label: "Asia Pacific", 
-      count: "1500+",
-      description: "Excellence recognized across Singapore, Hong Kong, and Australia",
+      label: "Asia Pacific",
+      count: "1,500+",
+      description: "Singapore, Hong Kong, Australia",
       icon: "🌏"
     },
-    { 
+    {
       lat: 40.7128,  // New York, USA
       lng: -74.0060,
-      label: "North America", 
+      label: "North America",
       count: "800+",
-      description: "USA and Canada patients choose London's premier aesthetic clinic",
+      description: "USA and Canada",
       icon: "🇺🇸"
     },
   ];
@@ -54,13 +51,6 @@ export function GlobalReachSection() {
       start: { lat: location.lat, lng: location.lng },
       end: londonLocation
     }));
-
-  // Helper function to convert lat/lng to x/y for label positioning (matching component's projection)
-  const projectPoint = (lat, lng) => {
-    const x = (lng + 180) * (800 / 360);
-    const y = (90 - lat) * (400 / 180);
-    return { x, y };
-  };
 
   const globalStats = [
     {
@@ -111,11 +101,10 @@ export function GlobalReachSection() {
   ];
 
   return (
-    <section className="relative py-32 bg-gradient-to-b from-secondary via-secondary/90 to-background overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-primary rounded-full blur-3xl" />
+    <section className="relative py-24 md:py-32 bg-gradient-to-b from-secondary via-secondary/90 to-background overflow-hidden">
+      {/* Subtle background decoration */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-primary rounded-full blur-xl" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -142,17 +131,17 @@ export function GlobalReachSection() {
           </p>
         </motion.div>
 
-        {/* World Map Visualization */}
+        {/* World Map Visualization - Desktop Only */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-24"
+          transition={{ duration: 0.5 }}
+          className="mb-16 hidden md:block"
         >
-          <div className="relative h-[400px] md:h-[600px] rounded-3xl overflow-hidden border-2 border-primary/30 shadow-2xl bg-gradient-to-br from-card/80 via-card/90 to-card/95 backdrop-blur-sm">
-            {/* Inner glow effect */}
-            <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-transparent to-transparent pointer-events-none" />
+          <div className="relative h-[500px] lg:h-[600px] rounded-3xl overflow-hidden border border-primary/20 shadow-xl bg-gradient-to-br from-card/80 via-card/90 to-card/95">
+            {/* Subtle glow effect - much lighter */}
+            <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent pointer-events-none" />
 
             {/* Map container */}
             <div className="absolute inset-0 p-4 md:p-8">
@@ -164,121 +153,85 @@ export function GlobalReachSection() {
               />
             </div>
 
-            {/* Location Labels - Positioned based on lat/lng */}
+            {/* Simple location markers - no complex animations */}
             {patientLocations.map((location, index) => {
-              const isHovered = hoveredLocation === index;
-              
-              // Convert lat/lng to screen coordinates
-              const { x, y } = projectPoint(location.lat, location.lng);
-              
-              // Calculate percentage position (accounting for the map's aspect ratio and padding)
+              const x = ((location.lng + 180) * (800 / 360));
+              const y = ((90 - location.lat) * (400 / 180));
               const leftPercent = (x / 800) * 100;
               const topPercent = (y / 400) * 100;
-              
+
               return (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{
-                    delay: 0.8 + index * 0.15,
-                    type: "spring",
-                    stiffness: 200,
-                    damping: 15
-                  }}
-                  className="absolute text-white text-xs md:text-sm z-20"
+                  className="absolute text-white text-xs z-20"
                   style={{
                     left: `${leftPercent}%`,
                     top: `${topPercent}%`,
                     transform: "translate(-50%, -120%)",
                   }}
-                  onMouseEnter={() => setHoveredLocation(index)}
-                  onMouseLeave={() => setHoveredLocation(null)}
-                  onClick={() => setHoveredLocation(isHovered ? null : index)}
                 >
-                  <AnimatePresence mode="wait">
-                    {isHovered ? (
-                      <motion.div
-                        key="expanded"
-                        initial={{ opacity: 0, y: 10, scale: 0.9 }}
-                        animate={{ opacity: 1, y: 0, scale: 1 }}
-                        exit={{ opacity: 0, y: 10, scale: 0.9 }}
-                        transition={{ duration: 0.2 }}
-                        className="bg-gradient-to-br from-card via-card/90 to-card/80 backdrop-blur-md rounded-lg px-3 py-2.5 border border-primary shadow-xl shadow-primary/20 mb-4 max-w-[180px]"
-                      >
-                        <div className="flex items-center gap-2 mb-1.5">
-                          <span className="text-xl">{location.icon}</span>
-                          <div>
-                            <p className="font-bold text-primary text-sm leading-tight">
-                              {location.label}
-                            </p>
-                            <p className="text-[10px] text-muted-foreground font-semibold">
-                              {location.count} patients
-                            </p>
-                          </div>
-                        </div>
-                        <p className="text-[9px] text-muted-foreground leading-snug border-t border-border/50 pt-1.5 mt-1">
-                          {location.description}
+                  <div className="bg-card/95 backdrop-blur-md rounded-lg px-3 py-2 border border-primary/40 shadow-lg hover:shadow-xl transition-shadow">
+                    <div className="flex items-center gap-2">
+                      <span className="text-lg">{location.icon}</span>
+                      <div>
+                        <p className="font-bold text-primary text-xs leading-tight">
+                          {location.label}
                         </p>
-                      </motion.div>
-                    ) : (
-                      <motion.div
-                        key="collapsed"
-                        initial={{ opacity: 0, y: 10, scale: 0.9 }}
-                        animate={{ opacity: 1, y: 0, scale: 1 }}
-                        exit={{ opacity: 0, y: 10, scale: 0.9 }}
-                        transition={{ duration: 0.2 }}
-                        className="bg-gradient-to-br from-card/95 to-card/90 backdrop-blur-md rounded-md px-2.5 py-1.5 border border-primary/40 shadow-lg shadow-primary/10 mb-4"
-                      >
-                        <div className="flex items-center gap-1.5">
-                          <span className="text-base">{location.icon}</span>
-                          <div>
-                            <p className="font-bold text-primary text-xs leading-tight">
-                              {location.label}
-                            </p>
-                            <p className="text-[9px] text-muted-foreground font-medium">
-                              {location.count}
-                            </p>
-                          </div>
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </motion.div>
+                        <p className="text-[10px] text-muted-foreground font-medium">
+                          {location.count}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               );
             })}
 
-            {/* Decorative corner accents */}
-            <div className="absolute top-4 left-4 w-12 h-12 border-t-2 border-l-2 border-primary/50 rounded-tl-lg" />
-            <div className="absolute top-4 right-4 w-12 h-12 border-t-2 border-r-2 border-primary/50 rounded-tr-lg" />
-            <div className="absolute bottom-4 left-4 w-12 h-12 border-b-2 border-l-2 border-primary/50 rounded-bl-lg" />
-            <div className="absolute bottom-4 right-4 w-12 h-12 border-b-2 border-r-2 border-primary/50 rounded-br-lg" />
+            {/* Corner accents */}
+            <div className="absolute top-4 left-4 w-12 h-12 border-t-2 border-l-2 border-primary/40 rounded-tl-lg" />
+            <div className="absolute top-4 right-4 w-12 h-12 border-t-2 border-r-2 border-primary/40 rounded-tr-lg" />
+            <div className="absolute bottom-4 left-4 w-12 h-12 border-b-2 border-l-2 border-primary/40 rounded-bl-lg" />
+            <div className="absolute bottom-4 right-4 w-12 h-12 border-b-2 border-r-2 border-primary/40 rounded-br-lg" />
           </div>
-
-          {/* Instruction hint */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 2 }}
-            className="text-center text-muted-foreground text-sm mt-4 italic"
-          >
-            Hover over the location markers to learn more
-          </motion.p>
         </motion.div>
 
+        {/* Patient Regions Grid - Mobile Only */}
+        <div className="grid grid-cols-2 gap-4 mb-16 md:hidden">
+          {patientLocations.map((location, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1, duration: 0.3 }}
+              className="glass-card rounded-2xl p-6 border border-border hover:border-primary/40 transition-all"
+            >
+              <div className="text-4xl mb-3">{location.icon}</div>
+              <h3 className="text-2xl font-heading font-bold text-primary mb-1">
+                {location.count}
+              </h3>
+              <p className="font-semibold text-foreground text-sm mb-2">
+                {location.label}
+              </p>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                {location.description}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+
         {/* Global Stats Grid */}
-        <div className="grid md:grid-cols-4 gap-6 mb-24">
+        <div className="grid md:grid-cols-4 gap-6 mb-16">
           {globalStats.map((stat, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="glass-card rounded-2xl p-8 border border-border hover:border-primary/50 transition-all group"
+              transition={{ delay: index * 0.08, duration: 0.3 }}
+              className="glass-card rounded-2xl p-8 border border-border hover:border-primary/40 transition-all duration-300 group"
             >
-              <stat.icon className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform" />
+              <stat.icon className="w-10 h-10 text-primary mb-4 group-hover:scale-105 transition-transform duration-300" />
               <h3 className="text-4xl font-heading font-bold text-foreground mb-2">
                 {stat.value}
               </h3>
@@ -308,11 +261,11 @@ export function GlobalReachSection() {
             {whyPatientsTravelHere.map((reason, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.15 }}
-                className="glass-card rounded-2xl p-8 border border-border hover:border-primary/50 transition-all"
+                transition={{ delay: index * 0.1, duration: 0.3 }}
+                className="glass-card rounded-2xl p-8 border border-border hover:border-primary/40 transition-all duration-300"
               >
                 <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center mb-6">
                   <reason.icon className="w-7 h-7 text-primary-foreground" />

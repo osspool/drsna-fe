@@ -61,110 +61,74 @@ export function HeroSectionV2() {
         autoPlayInterval={8000}
         showControls={false}
         showIndicators={true}
-        overlayVariant="luxury"
+        overlayVariant="minimal"
         onSlideChange={handleSlideChange}
         enableKenBurns={true}
       />
 
-      {/* Gradient orbs for luxury feel */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none z-20">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/15 rounded-full blur-3xl" />
-      </div>
-
       {/* Content Container */}
-      <div className="relative z-30 container mx-auto px-4 py-16 sm:py-20 md:py-32">
-        <div className="max-w-6xl mx-auto">
+      <div className="relative z-30 container mx-auto px-4 py-20 sm:py-24 md:py-32">
+        <div className="max-w-5xl mx-auto">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentSlide}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -30 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              className="text-left max-w-full sm:max-w-3xl"
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="text-left max-w-full sm:max-w-2xl"
             >
               {/* Award Badge */}
-              <div className="inline-flex items-center gap-1.5 md:gap-2 bg-linear-to-r from-primary via-primary/70 to-primary/80 px-3 py-2 md:px-6 md:py-3 rounded-full mb-6 md:mb-8 shadow-lg shadow-primary/50">
-                <Award className="w-3 h-3 md:w-4 md:h-4 text-primary-foreground flex-shrink-0" />
-                <span className="text-primary-foreground font-bold text-[10px] md:text-xs tracking-wider uppercase leading-tight">
+              <div className="inline-flex items-center gap-2 bg-primary/90 backdrop-blur-sm px-4 py-2 rounded-full mb-6 md:mb-8">
+                <Award className="w-3.5 h-3.5 text-primary-foreground flex-shrink-0" />
+                <span className="text-primary-foreground font-semibold text-[10px] sm:text-xs tracking-wide uppercase">
                   {currentContent.badge}
                 </span>
               </div>
 
-              {/* Main Headline - Two Lines with Different Styling */}
-              <div className="mb-4 md:mb-6">
-                <h1 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white drop-shadow-2xl leading-tight">
-                  {currentContent.headline}
-                  <br />
-                  <span className="bg-linear-to-r from-primary via-primary/90 to-primary/80 bg-clip-text text-transparent drop-shadow-lg">
-                    {currentContent.subheadline}
-                  </span>
-                </h1>
-              </div>
+              {/* Main Headline - Clean and Bold */}
+              <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 md:mb-6 leading-[1.1] tracking-tight">
+                {currentContent.headline}
+                <br />
+                <span className="text-primary">
+                  {currentContent.subheadline}
+                </span>
+              </h1>
 
-              {/* Description */}
-              <p className="text-sm sm:text-base md:text-lg text-white/90 drop-shadow-md mb-3 md:mb-4 leading-relaxed font-light">
+              {/* Description - Smaller and More Subtle */}
+              <p className="text-xs sm:text-sm md:text-base text-white/80 mb-8 md:mb-10 leading-relaxed max-w-xl">
                 {currentContent.description}
               </p>
 
-              {/* Emphasis Text */}
-              <p className="text-xs sm:text-sm md:text-base text-primary font-semibold drop-shadow-sm mb-6 md:mb-8 tracking-wide">
-                {currentContent.emphasis}
-              </p>
-
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 items-stretch sm:items-start w-full sm:w-auto">
-                <Link href={currentSlide === 0 ? "/dr-syed-nadeem-abbas" : "/booking"} className="w-full sm:w-auto">
+              <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-start">
+                <Link href={currentSlide === 0 ? "/dr-syed-nadeem-abbas" : "/booking"}>
                   <Button
-                    className="w-full sm:w-auto group bg-linear-to-br from-primary via-primary/90 to-primary/80 text-primary-foreground px-6 py-2.5 md:px-8 md:py-3 text-sm md:text-base font-semibold rounded-lg md:rounded-xl shadow-xl shadow-primary/40 hover:shadow-primary/60 hover:scale-105 transition-all duration-300"
+                    size="lg"
+                    className="w-full sm:w-auto group bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-lg hover:shadow-xl transition-all"
                   >
-                    <span className="flex items-center justify-center gap-2">
-                      {currentContent.cta}
-                      <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
-                    </span>
+                    {currentContent.cta}
+                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
 
-                <Link href="/treatments" className="w-full sm:w-auto">
+                <Link href="/treatments">
                   <Button
+                    size="lg"
                     variant="outline"
-                    className="w-full sm:w-auto text-white hover:text-primary-foreground bg-transparent border-2 border-white/70 hover:bg-primary hover:border-primary px-6 py-2.5 md:px-8 md:py-3 text-sm md:text-base rounded-lg md:rounded-xl transition-all duration-300 font-semibold"
+                    className="w-full sm:w-auto border-white/60 hover:bg-white hover:text-black hover:border-white backdrop-blur-sm transition-all"
                   >
-                    View All Treatments
+                    View Treatments
                   </Button>
                 </Link>
               </div>
             </motion.div>
           </AnimatePresence>
-
-          {/* Trust Indicators - Static */}
-          <div className="mt-10 md:mt-16 grid grid-cols-2 sm:flex sm:flex-wrap gap-x-4 gap-y-3 md:gap-6 lg:gap-8 text-white/80 text-xs sm:text-sm md:text-base font-medium max-w-3xl">
-            <div className="flex items-center gap-1.5 md:gap-2">
-              <div className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-primary shadow-lg shadow-primary/50 flex-shrink-0" />
-              <span className="leading-tight">CQC Registered</span>
-            </div>
-            <div className="flex items-center gap-1.5 md:gap-2">
-              <div className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-primary shadow-lg shadow-primary/50 flex-shrink-0" />
-              <span className="leading-tight">GMC Certified Doctors</span>
-            </div>
-            <div className="flex items-center gap-1.5 md:gap-2">
-              <div className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-primary shadow-lg shadow-primary/50 flex-shrink-0" />
-              <span className="leading-tight">15+ Years Experience</span>
-            </div>
-            <div className="flex items-center gap-1.5 md:gap-2">
-              <div className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-primary shadow-lg shadow-primary/50 flex-shrink-0" />
-              <span className="leading-tight">10,000+ Happy Patients</span>
-            </div>
-          </div>
         </div>
       </div>
 
-      {/* Bottom accent gradient */}
-      <div className="absolute bottom-0 left-0 right-0 z-20 pointer-events-none">
-        <div className="h-px bg-linear-to-r from-transparent via-primary to-transparent" />
-        <div className="h-24 bg-linear-to-t from-secondary/10 to-transparent" />
-      </div>
+      {/* Subtle bottom gradient */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-black/40 to-transparent z-20 pointer-events-none" />
     </section>
   );
 }

@@ -1,7 +1,5 @@
 import { Inter, Playfair_Display, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/core/Header";
-import { Footer } from "@/components/core/Footer";
 import Providers from "@/components/providers/Providers";
 
 const inter = Inter({
@@ -72,9 +70,7 @@ export default function RootLayout({ children }) {
         className={`${inter.variable} ${playfair.variable} ${cormorant.variable} font-sans antialiased`}
       >
         <Providers>
-          <Header />
           {children}
-          <Footer />
         </Providers>
       </body>
     </html>
