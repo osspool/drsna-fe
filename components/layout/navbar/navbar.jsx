@@ -1,15 +1,23 @@
 "use client"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { DesktopNavbar } from "./desktop-navbar"
 import { MobileNavbar } from "./mobile-navbar"
 import { useIsMobile } from "@/hooks/use-mobile"
 import { cn } from "@/lib/utils"
 
+const NAV_DESKTOP_BREAKPOINT = 1024
+
 export function Navbar() {
-  const isMobile = useIsMobile()
+  const isCompactNav = useIsMobile(NAV_DESKTOP_BREAKPOINT)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  if (isMobile === undefined) return null
+  useEffect(() => {
+    if (isCompactNav) {
+      setIsMenuOpen(false)
+    }
+  }, [isCompactNav])
+
+  if (isCompactNav === undefined) return null
 
   return (
     <nav
@@ -18,7 +26,11 @@ export function Navbar() {
         isMenuOpen ? "bg-black shadow-2xl" : "bg-black/95 shadow-xl"
       )}
     >
-      {isMobile ? <MobileNavbar /> : <DesktopNavbar onMenuOpenChange={setIsMenuOpen} />}
+      {isCompactNav ? (
+        <MobileNavbar />
+      ) : (
+        <DesktopNavbar onMenuOpenChange={setIsMenuOpen} />
+      )}
     </nav>
   )
 }

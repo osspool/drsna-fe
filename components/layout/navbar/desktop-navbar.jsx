@@ -52,10 +52,10 @@ export function DesktopNavbar({ onMenuOpenChange }) {
               return (
                 <div key={item.id} className="group">
                   <button
-                    className={`px-3 py-2 text-[13px] md:text-[14px] font-medium transition-all duration-300 ease-out flex items-center gap-1.5 rounded-lg ${
+                    className={` py-2 text-sm  transition-all duration-300 ease-out flex items-center gap-1.5 rounded-lg ${
                       isActive
-                        ? "text-primary bg-white/5"
-                        : "text-white/80 hover:text-primary hover:bg-white/5"
+                        ? "text-primary "
+                        : "text-white/80 hover:text-primary"
                     }`}
                     onClick={() => setActiveMenuId(isActive ? null : item.id)}
                     aria-haspopup="true"

@@ -130,6 +130,55 @@
           ]
         }
       }
+    },
+    "life-optimization": {
+      "id": "life-optimization",
+      "title": "Life Optimization",
+      "description": "Longevity, metabolic, and performance medicine tailored around your biology",
+      "icon": "infinity",
+      "color": "#112733",
+      "image": "/images/categories/life-optimization.jpg",
+      "subcategories": {
+        "services": {
+          "id": "services",
+          "title": "Optimisation Services",
+          "description": "Comprehensive mind-body protocols for peak living",
+          "treatments": [
+            "life-optimisation",
+            "swallowable-gastric-balloon-weight-transformation",
+            "iv-vitamin-therapy",
+            "medical-nutrition-therapy",
+            "sexual-therapy",
+            "faster-eft-advanced-tapping",
+            "life-coaching",
+            "biohacking"
+          ]
+        }
+      }
+    },
+    "private-gp": {
+      "id": "private-gp",
+      "title": "Private GP",
+      "description": "Doctor-led general practice with concierge access",
+      "icon": "stethoscope",
+      "color": "#12303f",
+      "image": "/images/categories/private-gp.jpg",
+      "subcategories": {
+        "services": {
+          "id": "services",
+          "title": "GP Services",
+          "description": "Comprehensive GP, screening, and wellness support",
+          "treatments": [
+            "health-screening",
+            "illness",
+            "test-and-scan",
+            "referrals-and-forms",
+            "gp-services-pricing",
+            "iv-vitamin-therapy",
+            "medicated-weight-management"
+          ]
+        }
+      }
     }
   }
 }

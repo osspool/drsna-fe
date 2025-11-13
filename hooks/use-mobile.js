@@ -1,19 +1,19 @@
 import * as React from "react"
 
-const MOBILE_BREAKPOINT = 768
+const DEFAULT_BREAKPOINT = 768
 
-export function useIsMobile() {
+export function useIsMobile(breakpoint = DEFAULT_BREAKPOINT) {
   const [isMobile, setIsMobile] = React.useState(undefined)
 
   React.useEffect(() => {
-    const mql = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`)
-    const onChange = () => {
-      setIsMobile(window.innerWidth < MOBILE_BREAKPOINT)
-    }
-    mql.addEventListener("change", onChange)
-    setIsMobile(window.innerWidth < MOBILE_BREAKPOINT)
-    return () => mql.removeEventListener("change", onChange);
-  }, [])
+    const mediaQuery = window.matchMedia(`(max-width: ${breakpoint - 1}px)`)
+    const updateMatch = (event) => setIsMobile(event.matches)
 
-  return !!isMobile
+    setIsMobile(mediaQuery.matches)
+    mediaQuery.addEventListener("change", updateMatch)
+
+    return () => mediaQuery.removeEventListener("change", updateMatch);
+  }, [breakpoint])
+
+  return isMobile
 }
