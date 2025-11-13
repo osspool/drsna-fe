@@ -28,8 +28,8 @@ export function DesktopNavbar({ onMenuOpenChange }) {
 
   return (
     <>
-      <Container>
-        <div className="flex items-center justify-between h-16 relative">
+      <Container maxWidth="full">
+        <div className="flex items-center gap-6 h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 relative z-10">
             <div className="relative w-[70px] h-[45px]">
@@ -44,18 +44,18 @@ export function DesktopNavbar({ onMenuOpenChange }) {
             </div>
           </Link>
 
-          {/* Main Navigation - Centered */}
-          <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-1 md:gap-2">
+          {/* Main Navigation */}
+          <div className="flex-1 flex items-center justify-center gap-1 md:gap-2 lg:gap-3 xl:gap-4 flex-wrap">
             {dropdownItems.map((item) => {
               const isActive = activeMenuId === item.id
 
               return (
                 <div key={item.id} className="group">
                   <button
-                    className={`px-3 py-2 text-[14px] font-medium transition-all duration-300 ease-out flex items-center gap-1.5 rounded-lg ${
+                    className={`px-3 py-2 text-[13px] md:text-[14px] font-medium transition-all duration-300 ease-out flex items-center gap-1.5 rounded-lg ${
                       isActive
                         ? "text-primary bg-white/5"
-                        : "text-white/80 hover:text-white hover:bg-white/5"
+                        : "text-white/80 hover:text-primary hover:bg-white/5"
                     }`}
                     onClick={() => setActiveMenuId(isActive ? null : item.id)}
                     aria-haspopup="true"
@@ -76,7 +76,7 @@ export function DesktopNavbar({ onMenuOpenChange }) {
               <Link
                 key={item.id}
                 href={item.href}
-                className="px-3 py-2 text-[14px] font-medium text-white/80 hover:text-white hover:bg-white/5 transition-all duration-300 rounded-lg"
+                className="px-3 py-2 text-[13px] md:text-[14px] font-medium text-white/80 hover:text-primary hover:bg-white/5 transition-all duration-300 rounded-lg"
               >
                 {item.label}
               </Link>

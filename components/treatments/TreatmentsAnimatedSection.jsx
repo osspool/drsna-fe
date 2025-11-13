@@ -23,7 +23,7 @@ export function AnimatedSectionHeader({ title, subtitle, badge }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.1 }}
-        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6"
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-6"
       >
         {title}
       </motion.h2>
@@ -53,11 +53,11 @@ export function AnimatedFeatureList({ items }) {
           transition={{ delay: idx * 0.1 }}
           className="flex gap-4"
         >
-          <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+          <div className="shrink-0 w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
             <div className="w-6 h-6 bg-primary rounded-full" />
           </div>
           <div>
-            <h3 className="text-lg md:text-xl font-heading font-bold text-foreground mb-2">
+            <h3 className="text-lg md:text-xl font-heading font-bold text-primary mb-2">
               {item.title}
             </h3>
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed">

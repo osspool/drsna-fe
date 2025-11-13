@@ -33,7 +33,7 @@ export function TreatmentsCategoryCard({ category, index }) {
               <Icon
                 name={category.iconName.charAt(0).toLowerCase() + category.iconName.slice(1)}
                 size={32}
-                className="text-[var(--icon-color)]"
+                className="text-(--icon-color)"
                 style={{ '--icon-color': category.color }}
               />
             </div>
@@ -76,11 +76,6 @@ export function TreatmentsCategoryCard({ category, index }) {
               <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-2 transition-transform" />
             </div>
           </div>
-
-          {/* Gradient Border on Hover */}
-          <div
-            className={`absolute inset-0 bg-linear-to-br ${category.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none rounded-3xl`}
-          />
         </div>
       </Link>
     </motion.div>

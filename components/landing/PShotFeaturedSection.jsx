@@ -12,29 +12,20 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CometCard } from "@/components/aceternity/comet-card";
-import { WavyBackground } from "@/components/aceternity/wavy-background";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 
 export function PShotFeaturedSection() {
   return (
+    <div>
     <Section
       background="default"
       padding="none"
-      className="relative overflow-hidden bg-gradient-to-b from-secondary via-secondary/90 to-background"
+      className="relative overflow-hidden bg-linear-to-b from-secondary/40 via-secondary/90 to-background"
     >
-      {/* Hero Section with Wavy Background */}
-      <div className="relative w-full overflow-hidden">
-        <WavyBackground
-          className="mx-auto flex w-full max-w-4xl flex-col items-center gap-6 px-4 text-center"
-          containerClassName="!h-auto w-full py-12 md:py-16"
-          colors={["var(--primary)", "var(--accent)", "var(--primary)", "var(--accent)", "var(--primary)"]}
-          waveWidth={50}
-          backgroundFill="var(--background)"
-          blur={15}
-          speed="slow"
-          waveOpacity={0.7}
-        >
+      {/* Hero Section */}
+      <div className="relative w-full py-12 md:py-16">
+        <Container maxWidth="4xl" className=" mx-auto flex w-full flex-col items-center gap-6 px-4 text-center">
           {/* Premium Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -70,10 +61,12 @@ export function PShotFeaturedSection() {
             Advanced PRP therapy designed to enhance male sexual health and performance
             using your body's natural healing factors.
           </motion.p>
-        </WavyBackground>
+        </Container>
       </div>
+      </Section>
 
       {/* Main Content Section */}
+      <Section className={"bg-primary/5"}>
       <div className="w-full py-16 md:py-20">
         <Container maxWidth="5xl" className="relative">
           {/* How It Works Section */}
@@ -224,5 +217,6 @@ export function PShotFeaturedSection() {
         </Container>
       </div>
     </Section>
+    </div>
   );
 }

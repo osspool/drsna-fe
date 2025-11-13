@@ -1,24 +1,9 @@
 "use client"
 
-import Link from "next/link"
 import { useState, useEffect } from "react"
 // import type { NavItem } from "@/lib/nav-data"
-import { ChevronRight, ArrowLeft, Smile, User, Droplet, ScanLine, ClipboardList, Syringe, Info, Users, UserCheck, Mail } from "lucide-react"
+import { ChevronRight, ArrowLeft } from "lucide-react"
 import { TreatmentMenu } from "./treatment-menu"
-
-// Icon mapping for megamenu items
-const iconMap = {
-  smile: Smile,
-  user: User,
-  droplet: Droplet,
-  "scan-line": ScanLine,
-  "clipboard-list": ClipboardList,
-  syringe: Syringe,
-  info: Info,
-  users: Users,
-  "user-check": UserCheck,
-  mail: Mail,
-}
 
 // interface MegaMenuProps {
 //   item: NavItem
@@ -135,39 +120,30 @@ export function MegaMenu({ item, isOpen, onClose }) {
                 {/* Menu content area with scroll */}
                 <div className="flex-1 overflow-y-auto overscroll-contain px-8 py-10">
                   {displayChildren.length > 0 ? (
-                    <div className="grid gap-6 max-w-6xl mx-auto w-full [grid-template-columns:repeat(auto-fit,minmax(220px,1fr))]">
+                    <div className="grid gap-6 max-w-6xl mx-auto w-full grid-cols-1 lg:grid-cols-2">
                       {displayChildren.map((child, index) => {
                         const hasChildren =
                           (child.children && child.children.length > 0) ||
                           (child.treatmentTypes && child.treatmentTypes.length > 0)
-                        const Icon = child.icon ? iconMap[child.icon] : null
-
                         const content = (
-                          <>
-                            <div className="w-full flex flex-col items-center gap-4 pt-6">
-                              {Icon && (
-                                <Icon className="w-10 h-10 transition-colors duration-200 text-primary/70 group-hover:text-primary" />
-                              )}
-                              <span className="text-base font-medium transition-colors duration-200 text-white group-hover:text-primary">
-                                {child.label}
+                          <div className="flex flex-col gap-4 w-full">
+                            <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.35em] text-white/30">
+                              <span>Explore</span>
+                              <span className="flex items-center justify-center w-8 h-8 rounded-full border border-white/15 text-white/60 group-hover:border-primary/60 group-hover:text-primary transition-all duration-200">
+                                <ChevronRight className="w-4 h-4" />
                               </span>
                             </div>
-                            {child.href && (
-                              <div className="mt-6">
-                                <Link
-                                  href={child.href}
-                                  onClick={(e) => {
-                                    e.stopPropagation()
-                                    onClose?.()
-                                  }}
-                                  className="inline-flex items-center gap-1 rounded-full border border-white/15 px-3 py-1 text-[11px] uppercase tracking-wide text-white/60 hover:text-primary hover:border-primary/60 transition-colors"
-                                >
-                                  View page
-                                  <ChevronRight className="h-3 w-3" />
-                                </Link>
-                              </div>
-                            )}
-                          </>
+                            <div className="space-y-2">
+                              <span className="text-lg md:text-xl font-semibold transition-colors duration-200 text-white group-hover:text-primary">
+                                {child.label}
+                              </span>
+                              {child.description && (
+                                <p className="text-sm text-white/50 leading-relaxed line-clamp-2">
+                                  {child.description}
+                                </p>
+                              )}
+                            </div>
+                          </div>
                         )
 
                         return hasChildren ? (
@@ -182,16 +158,12 @@ export function MegaMenu({ item, isOpen, onClose }) {
                                 handleDrillIn(child)
                               }
                             }}
-                            className="group relative flex flex-col items-center text-center transition-all duration-300 animate-in fade-in slide-in-from-bottom-2 cursor-pointer border border-white/20 hover:border-primary/50 hover:bg-white/5 hover:shadow-lg hover:shadow-primary/10 hover:scale-105 rounded-2xl px-6 pb-6"
+                            className="group relative flex flex-col justify-between text-left transition-all duration-300 animate-in fade-in slide-in-from-bottom-2 cursor-pointer border border-white/15 hover:border-primary/50 hover:bg-white/5 hover:shadow-[0_20px_45px_rgba(0,0,0,0.35)] hover:translate-y-[-4px] rounded-[26px] px-7 py-5 min-h-[120px] bg-gradient-to-br from-white/5 via-white/0 to-transparent"
                             style={{
                               animationDelay: `${index * 50}ms`,
                               animationFillMode: "backwards",
                             }}
                           >
-                            <div className="absolute top-4 left-4 text-[11px] uppercase tracking-wide text-white/30">
-                              Explore
-                            </div>
-                            <ChevronRight className="w-5 h-5 text-white/30 group-hover:text-primary group-hover:translate-x-1 transition-all duration-200 absolute top-4 right-4" />
                             {content}
                           </div>
                         ) : (
@@ -199,7 +171,7 @@ export function MegaMenu({ item, isOpen, onClose }) {
                             key={child.id}
                             href={child.href}
                             onClick={onClose}
-                            className="group relative p-8 text-center transition-all duration-300 animate-in fade-in slide-in-from-bottom-2 cursor-pointer border border-white/20 hover:border-primary/50 hover:bg-white/5 hover:shadow-lg hover:shadow-primary/10 hover:scale-105 rounded-xl"
+                            className="group relative px-7 py-5 text-left transition-all duration-300 animate-in fade-in slide-in-from-bottom-2 cursor-pointer border border-white/15 hover:border-primary/50 hover:bg-white/5 hover:shadow-[0_20px_45px_rgba(0,0,0,0.35)] hover:translate-y-[-4px] rounded-[26px] min-h-[120px] bg-gradient-to-br from-white/5 via-white/0 to-transparent"
                             style={{
                               animationDelay: `${index * 50}ms`,
                               animationFillMode: "backwards",

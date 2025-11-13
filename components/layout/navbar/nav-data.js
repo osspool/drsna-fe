@@ -4,14 +4,12 @@ export const navigationData = [
     id: "aesthetic-medicine",
     label: "Aesthetic Medicine",
     description: "Advanced non-surgical treatments for facial rejuvenation and enhancement",
-    icon: "sparkles",
     href: "/treatments/aesthetic-medicine",
     children: [
       {
         id: "face",
         label: "Face",
         description: "Facial aesthetic treatments",
-        icon: "smile",
         href: "/treatments/aesthetic-medicine/face",
         children: [
           { id: "prp-facelift", label: "PRP Facelift", href: "/treatments/aesthetic-medicine/face/prp-facelift" },
@@ -50,7 +48,6 @@ export const navigationData = [
         id: "body",
         label: "Body",
         description: "Body contouring and enhancement",
-        icon: "user",
         href: "/treatments/aesthetic-medicine/body",
         children: [
           {
@@ -84,7 +81,6 @@ export const navigationData = [
         id: "skin",
         label: "Skin",
         description: "Skin rejuvenation treatments",
-        icon: "droplet",
         href: "/treatments/aesthetic-medicine/skin",
         children: [
           {
@@ -99,7 +95,6 @@ export const navigationData = [
         id: "hair",
         label: "Hair",
         description: "Hair restoration treatments",
-        icon: "scan-line",
         href: "/treatments/aesthetic-medicine/hair",
         children: [
           { id: "prp-hair", label: "PRP Hair", href: "/treatments/aesthetic-medicine/hair/prp-hair" },
@@ -118,14 +113,12 @@ export const navigationData = [
     id: "intimate-health",
     label: "Intimate Health",
     description: "Discreet, professional intimate wellness treatments",
-    icon: "heart-pulse",
     href: "/treatments/intimate-health",
     children: [
       {
         id: "male",
         label: "Male",
         description: "Men's intimate health treatments",
-        icon: "user",
         href: "/treatments/intimate-health/male",
         children: [
           { id: "p-shot", label: "P-Shot", href: "/treatments/intimate-health/male/p-shot" },
@@ -142,7 +135,6 @@ export const navigationData = [
         id: "female",
         label: "Female",
         description: "Women's intimate health treatments",
-        icon: "user",
         href: "/treatments/intimate-health/female",
         children: [
           { id: "prp-shot-women", label: "O-Shot", href: "/treatments/intimate-health/female/prp-shot-women" },
@@ -161,7 +153,6 @@ export const navigationData = [
     id: "pain-management",
     label: "Pain Management",
     description: "Regenerative treatments for chronic pain relief",
-    icon: "activity",
     href: "/treatments/pain-management",
     skipCategoryStage: true,
     inlineChildSections: true,
@@ -170,7 +161,6 @@ export const navigationData = [
         id: "conditions",
         label: "Conditions",
         description: "Treated conditions",
-        icon: "clipboard-list",
         href: "/treatments/pain-management/conditions",
         children: [
           { id: "knee-treatment", label: "Knee Relief", href: "/treatments/pain-management/conditions/knee-treatment" },
@@ -197,7 +187,6 @@ export const navigationData = [
         id: "treatments",
         label: "Treatments",
         description: "Available treatment methods",
-        icon: "syringe",
         href: "/treatments/pain-management/treatments",
         children: [
           {
@@ -227,37 +216,97 @@ export const navigationData = [
     ],
   },
   {
-    id: "more",
-    label: "More",
+    id: "life-optimization",
+    label: "Life Optimization",
+    description: "Longevity, metabolic, and performance medicine tailored around your biology",
+    href: "/treatments/life-optimization",
+    children: [
+      {
+        id: "longevity-programmes",
+        label: "Longevity Programmes",
+        description: "Cellular diagnostics, peptides, and hormone balancing",
+        href: "/treatments/life-optimization/longevity-programmes",
+      },
+      {
+        id: "metabolic-performance",
+        label: "Metabolic Performance",
+        description: "Advanced labs, IV therapy, and nutrition protocols",
+        href: "/treatments/life-optimization/metabolic-performance",
+      },
+      {
+        id: "executive-health",
+        label: "Executive Health",
+        description: "Concierge screening and proactive prevention plans",
+        href: "/treatments/life-optimization/executive-health",
+      },
+      {
+        id: "hormone-optimization",
+        label: "Hormone Optimisation",
+        description: "Bioidentical therapy with continuous monitoring",
+        href: "/treatments/life-optimization/hormone-optimization",
+      },
+    ],
+  },
+  {
+    id: "private-gp",
+    label: "Private GP",
+    description: "Doctor-led general practice with concierge access",
+    href: "/private-gp",
+    children: [
+      {
+        id: "same-day-appointments",
+        label: "Same-Day Appointments",
+        description: "Extended consultations in discreet suites",
+        href: "/private-gp/same-day-appointments",
+      },
+      {
+        id: "executive-screening",
+        label: "Executive Screening",
+        description: "Full diagnostics, imaging, and lifestyle coaching",
+        href: "/private-gp/executive-screening",
+      },
+      {
+        id: "family-care",
+        label: "Family Care",
+        description: "Continuity GP support for every life stage",
+        href: "/private-gp/family-care",
+      },
+      {
+        id: "health-concierge",
+        label: "Health Concierge",
+        description: "24/7 doctor access, referrals, and aftercare",
+        href: "/private-gp/health-concierge",
+      },
+    ],
+  },
+  {
+    id: "about-us",
+    label: "About Us",
     description: "Additional information and resources",
-    href: "/more",
+    href: "/about",
     children: [
       {
         id: "about",
         label: "About",
         description: "Learn about our expert team and world-class clinic",
-        icon: "info",
         href: "/about",
       },
       {
         id: "team",
         label: "Our Team",
         description: "Meet our GMC-registered doctors and specialists",
-        icon: "users",
         href: "/team",
       },
       {
         id: "dr-syed-nadeem-abbas",
         label: "Dr Syed Nadeem Abbas",
         description: "Meet our award-winning aesthetic medicine specialist",
-        icon: "user-check",
         href: "/dr-syed-nadeem-abbas",
       },
       {
         id: "contact",
         label: "Contact",
         description: "Get in touch with our team",
-        icon: "mail",
         href: "/contact",
       },
     ],

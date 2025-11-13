@@ -68,7 +68,7 @@ export function CategoryHero({
               priority
             />
           </div>
-          <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/50 to-black/70 z-0" />
+          <div className="absolute inset-0 bg-linear-to-br from-black/60 via-black/50 to-black/70 z-0" />
         </>
       )}
 
@@ -96,7 +96,7 @@ export function CategoryHero({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight"
+            className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-6 leading-tight"
           >
             {data.hero?.headline || data.title}
           </motion.h1>

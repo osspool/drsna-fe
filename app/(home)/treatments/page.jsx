@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
+import { Section } from "@/components/layout/Section";
 import { CategoryHero } from "@/components/treatments/CategoryHero";
 import { CTASection } from "@/components/sections/CTASection";
 import { Button } from "@/components/ui/button";
@@ -34,7 +35,11 @@ export default async function TreatmentsPage() {
       <CategoryHero data={heroData} variant="category" showStats={true} />
 
       {/* Categories Section */}
-      <section id="categories" className="py-24 md:py-32 bg-linear-to-b from-secondary/30 to-background">
+      <Section 
+        id="categories" 
+        padding="lg" 
+        className="bg-linear-to-b from-secondary/30 to-background"
+      >
         <Container>
           {/* Section Header */}
           <AnimatedSectionHeader
@@ -50,10 +55,10 @@ export default async function TreatmentsPage() {
             ))}
           </div>
         </Container>
-      </section>
+      </Section>
 
       {/* Why Choose Us Section */}
-      <section className="py-24 md:py-32 bg-card">
+      <Section padding="lg" background="white">
         <Container>
           <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
             <AnimatedContent direction="left">
@@ -64,7 +69,7 @@ export default async function TreatmentsPage() {
                 </span>
               </div>
 
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-foreground mb-6">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
                 Why Choose Dr. SNA Clinic?
               </h2>
 
@@ -96,7 +101,7 @@ export default async function TreatmentsPage() {
             </AnimatedContent>
           </div>
         </Container>
-      </section>
+      </Section>
 
       {/* CTA Section */}
       <CTASection />

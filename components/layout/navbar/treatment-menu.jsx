@@ -23,6 +23,8 @@ export function TreatmentMenu({ item, breadcrumb, onBack, onNavigate, inlineChil
   const children = item.children || []
   const useInlineSections = inlineChildSections || item.inlineChildSections
   const showBackButton = breadcrumb.length > 1
+  const topLevelCategory = breadcrumb[0] || item
+  const parentHref = topLevelCategory?.href
 
   const handleNavigate = () => {
     if (typeof onNavigate === "function") {
@@ -85,13 +87,13 @@ export function TreatmentMenu({ item, breadcrumb, onBack, onNavigate, inlineChil
             <span className="text-sm font-semibold text-white/80">{item.label}</span>
           )}
 
-          {item.href && (
+          {parentHref && (
             <Link
-              href={item.href}
+              href={parentHref}
               onClick={handleNavigate}
               className="text-xs uppercase tracking-wide text-white/60 hover:text-primary transition-colors duration-150"
             >
-              Open page
+              {`Explore ${topLevelCategory?.label || "category"}`}
             </Link>
           )}
         </div>

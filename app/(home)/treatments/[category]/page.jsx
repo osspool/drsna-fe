@@ -6,6 +6,7 @@ import { FeaturesSection } from "@/components/sections/FeaturesSection";
 import { CTASection } from "@/components/sections/CTASection";
 import { SubcategoryGrid } from "@/components/treatments/SubcategoryGrid";
 import { Container } from "@/components/layout/Container";
+import { Section } from "@/components/layout/Section";
 import { Sparkles, Star } from "lucide-react";
 import * as Icons from "lucide-react";
 
@@ -102,7 +103,7 @@ export default async function CategoryPage({ params }) {
 // Introduction Section Component
 function IntroductionSection({ data }) {
   return (
-    <section className="py-32 bg-background">
+    <Section background="default" className="py-32">
       <Container>
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
@@ -141,14 +142,14 @@ function IntroductionSection({ data }) {
           </div>
         )}
       </Container>
-    </section>
+    </Section>
   );
 }
 
 // Testimonials Section Component
 function TestimonialsSection({ testimonials }) {
   return (
-    <section className="py-32 bg-gradient-to-b from-secondary to-background">
+    <Section className="py-32 bg-gradient-to-b from-secondary to-background">
       <Container>
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
@@ -196,6 +197,6 @@ function TestimonialsSection({ testimonials }) {
           ))}
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

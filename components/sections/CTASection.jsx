@@ -6,7 +6,7 @@ import { ArrowRight, Phone, Mail, MapPin, Calendar } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/button";
 import { BackgroundBeams } from "@/components/aceternity/background-beams";
-import { WavyBackground } from "@/components/aceternity/wavy-background";
+import { Section } from "@/components/layout/Section";
 import { MovingBorderButton } from "@/components/aceternity/moving-border";
 
 export function CTASection({ data, variant = "default" }) {
@@ -23,7 +23,7 @@ export function CTASection({ data, variant = "default" }) {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-primary to-primary/80 p-12 md:p-16 text-center"
+        className="relative rounded-3xl overflow-hidden bg-linear-to-br from-primary to-primary/80 p-12 md:p-16 text-center"
       >
         <div className="absolute inset-0 bg-[url('/patterns/dots.svg')] opacity-10" />
 
@@ -73,7 +73,7 @@ export function CTASection({ data, variant = "default" }) {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="bg-gradient-to-br from-primary to-primary/80 rounded-2xl p-8 text-primary-foreground"
+        className="bg-linear-to-br from-primary to-primary/80 rounded-2xl p-8 text-primary-foreground"
       >
         <Calendar className="w-12 h-12 mb-4 opacity-90" />
         <h3 className="text-2xl font-heading font-bold mb-3">
@@ -126,81 +126,72 @@ export function CTASection({ data, variant = "default" }) {
     };
 
     return (
-      <section className="relative">
-        <WavyBackground
-          containerClassName="!h-auto py-32"
-          colors={["var(--primary)", "var(--accent)", "var(--primary)"]}
-          waveOpacity={0.5}
-          blur={15}
-          speed="slow"
-          backgroundFill="var(--background)"
-        >
-          <div className="container mx-auto px-4 relative z-20">
+      <Section background="default" padding="lg" className="relative">
+        <Container className="relative z-20">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center max-w-4xl mx-auto"
+          >
+            <h2 className="text-5xl md:text-7xl font-heading font-bold text-foreground mb-8">
+              {ctaData.title || "Begin Your Journey"}
+              <br />
+              <span className="text-primary">{ctaData.titleAccent || "To Natural Beauty"}</span>
+            </h2>
+            <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed font-light">
+              {ctaData.subtitle || "Book your consultation today and discover how Dr Abbas and his expert team can help you achieve your aesthetic goals with precision and care"}
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+              <Link href="/booking">
+                <MovingBorderButton
+                  borderRadius="1.5rem"
+                  className="bg-card text-foreground px-12 py-6 font-bold text-lg"
+                >
+                  <span className="flex items-center gap-2">
+                    <Calendar className="w-5 h-5" />
+                    {ctaData.primaryButton || "Book Your Consultation"}
+                    <ArrowRight className="w-5 h-5" />
+                  </span>
+                </MovingBorderButton>
+              </Link>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 mt-16">
+              {contactInfo.map((info, index) => (
+                <motion.a
+                  key={index}
+                  href={info.href}
+                  target={info.href.startsWith("http") ? "_blank" : undefined}
+                  rel={info.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="group glass-card rounded-2xl p-6 border border-border hover:bg-card/80 hover:border-primary transition-all"
+                >
+                  <info.icon className="w-6 h-6 text-primary mb-3 mx-auto group-hover:scale-110 transition-transform" />
+                  <p className="text-sm text-muted-foreground mb-1">{info.label}</p>
+                  <p className="text-foreground font-semibold group-hover:text-primary transition-colors">
+                    {info.value}
+                  </p>
+                </motion.a>
+              ))}
+            </div>
+
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="text-center max-w-4xl mx-auto"
+              className="mt-12 text-muted-foreground text-sm"
             >
-              <h2 className="text-5xl md:text-7xl font-heading font-bold text-foreground mb-8">
-                {ctaData.title || "Begin Your Journey"}
-                <br />
-                <span className="text-primary">{ctaData.titleAccent || "To Natural Beauty"}</span>
-              </h2>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed font-light">
-                {ctaData.subtitle || "Book your consultation today and discover how Dr Abbas and his expert team can help you achieve your aesthetic goals with precision and care"}
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
-                <Link href="/booking">
-                  <MovingBorderButton
-                    borderRadius="1.5rem"
-                    className="bg-card text-foreground px-12 py-6 font-bold text-lg"
-                  >
-                    <span className="flex items-center gap-2">
-                      <Calendar className="w-5 h-5" />
-                      {ctaData.primaryButton || "Book Your Consultation"}
-                      <ArrowRight className="w-5 h-5" />
-                    </span>
-                  </MovingBorderButton>
-                </Link>
-              </div>
-
-              <div className="grid md:grid-cols-3 gap-6 mt-16">
-                {contactInfo.map((info, index) => (
-                  <motion.a
-                    key={index}
-                    href={info.href}
-                    target={info.href.startsWith("http") ? "_blank" : undefined}
-                    rel={info.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    className="group glass-card rounded-2xl p-6 border border-border hover:bg-card/80 hover:border-primary transition-all"
-                  >
-                    <info.icon className="w-6 h-6 text-primary mb-3 mx-auto group-hover:scale-110 transition-transform" />
-                    <p className="text-sm text-muted-foreground mb-1">{info.label}</p>
-                    <p className="text-foreground font-semibold group-hover:text-primary transition-colors">
-                      {info.value}
-                    </p>
-                  </motion.a>
-                ))}
-              </div>
-
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                className="mt-12 text-muted-foreground text-sm"
-              >
-                <p className="mb-2">Open {openingHours.days}</p>
-                <p className="text-lg font-semibold text-foreground">{openingHours.hours}</p>
-              </motion.div>
+              <p className="mb-2">Open {openingHours.days}</p>
+              <p className="text-lg font-semibold text-foreground">{openingHours.hours}</p>
             </motion.div>
-          </div>
-        </WavyBackground>
-      </section>
+          </motion.div>
+        </Container>
+      </Section>
     );
   }
 

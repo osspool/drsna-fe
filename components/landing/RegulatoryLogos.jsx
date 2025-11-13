@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
-import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 
 export function RegulatoryLogos() {
   const logos = [
@@ -56,7 +55,7 @@ export function RegulatoryLogos() {
             {logos.map((logo, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
+                className="flex items-center justify-center  transition-all duration-300"
               >
                 <Image
                   src={logo.src}
@@ -69,17 +68,7 @@ export function RegulatoryLogos() {
             ))}
           </InfiniteSlider>
 
-          {/* Progressive blur edges */}
-          <ProgressiveBlur
-            className="pointer-events-none absolute left-0 top-0 h-full w-24"
-            direction="left"
-            blurIntensity={1}
-          />
-          <ProgressiveBlur
-            className="pointer-events-none absolute right-0 top-0 h-full w-24"
-            direction="right"
-            blurIntensity={1}
-          />
+        
         </div>
       </div>
     </section>
