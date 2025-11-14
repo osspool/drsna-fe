@@ -49,6 +49,10 @@
     }
   }
 
+  /* Custom Brand Colors */
+  --color-royal-blue: oklch(0.2865 0.0815 294.76);
+  --color-royal-blue-900: oklch(0.1884 0.0815 286.82);
+
   /* Shadcn Color Mappings */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -96,16 +100,18 @@
   /* Luxury Brand Colors - Integrated with Theme System */
   /* Primary = Gold palette for main brand actions */
   --background: oklch(0.989 0.005 85.8);
-  --foreground: oklch(0.161 0.014 60.5);
+  --foreground: oklch(0.2865 0.0815 294.76);
+  /* oklch (0.161 0.014 60.5); */
+  --royal-blue: oklch(0.2865 0.0815 294.76);
   
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.161 0.014 60.5);
+  --card-foreground: oklch(0.2865 0.0815 294.76);
   
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.161 0.014 60.5);
+  --popover-foreground: oklch(0.2865 0.0815 294.76);
   
   /* Primary (Gold) - Main brand color - Posh Gold */
-  --primary: oklch(0.7361 0.116 91.81);
+  --primary: oklch(0.7154 0.0828 80.8);
   --primary-foreground: oklch(0.98 0.005 85.8);
   
   /* Secondary (Cream/Beige) - Subtle backgrounds */
@@ -128,11 +134,11 @@
   --ring: oklch(0.7361 0.116 91.81);
 
   --sidebar: oklch(0.989 0.005 85.8);
-  --sidebar-foreground: oklch(0.161 0.014 60.5);
+  --sidebar-foreground: oklch(0.2865 0.0815 294.76);
   --sidebar-primary: oklch(0.7361 0.116 91.81);
   --sidebar-primary-foreground: oklch(0.98 0.005 85.8);
   --sidebar-accent: oklch(0.96 0.005 85.8);
-  --sidebar-accent-foreground: oklch(0.161 0.014 60.5);
+  --sidebar-accent-foreground: oklch(0.2865 0.0815 294.76);
   --sidebar-border: oklch(0.922 0.012 60.5);
   --sidebar-ring: oklch(0.7361 0.116 91.81);
 
@@ -146,7 +152,10 @@
 .dark {
   /* Dark mode with enhanced luxury feel */
   --background: oklch(0.125 0.014 60.5);
+  /* oklch(0.125 0.014 60.5); */
   --foreground: oklch(0.989 0.005 85.8);
+
+  --royal-blue: oklch(0.2033 0.0815 294.76);
   
   --card: oklch(0.175 0.014 60.5);
   --card-foreground: oklch(0.989 0.005 85.8);

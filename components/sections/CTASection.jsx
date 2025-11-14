@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { BackgroundBeams } from "@/components/aceternity/background-beams";
 import { Section } from "@/components/layout/Section";
 import { MovingBorderButton } from "@/components/aceternity/moving-border";
+import { getIconComponent } from "@/lib/icon-utils";
 
 export function CTASection({ data, variant = "default" }) {
   const ctaData = data || {
@@ -159,7 +160,9 @@ export function CTASection({ data, variant = "default" }) {
             </div>
 
             <div className="grid md:grid-cols-3 gap-6 mt-16">
-              {contactInfo.map((info, index) => (
+              {contactInfo.map((info, index) => {
+                const InfoIcon = getIconComponent(info.icon, Phone);
+                return (
                 <motion.a
                   key={index}
                   href={info.href}
@@ -171,13 +174,14 @@ export function CTASection({ data, variant = "default" }) {
                   transition={{ delay: index * 0.1 }}
                   className="group glass-card rounded-2xl p-6 border border-border hover:bg-card/80 hover:border-primary transition-all"
                 >
-                  <info.icon className="w-6 h-6 text-primary mb-3 mx-auto group-hover:scale-110 transition-transform" />
+                  <InfoIcon className="w-6 h-6 text-primary mb-3 mx-auto group-hover:scale-110 transition-transform" />
                   <p className="text-sm text-muted-foreground mb-1">{info.label}</p>
                   <p className="text-foreground font-semibold group-hover:text-primary transition-colors">
                     {info.value}
                   </p>
                 </motion.a>
-              ))}
+                );
+              })}
             </div>
 
             <motion.div

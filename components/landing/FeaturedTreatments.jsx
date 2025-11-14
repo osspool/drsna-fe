@@ -3,16 +3,20 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles, Heart, Zap } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { CometCard } from "@/components/aceternity/comet-card";
-import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/layout/Section";
+import { getIconComponent } from "@/lib/icon-utils";
 
-export function FeaturedTreatments() {
-  const categories = [
+const defaultData = {
+  badge: "OUR SPECIALTIES",
+  title: "Comprehensive Care",
+  subtitle:
+    "From aesthetic enhancement to regenerative medicine, we offer world-class treatments tailored to your unique needs",
+  categories: [
     {
-      icon: Sparkles,
+      icon: "sparkles",
       title: "Aesthetic Medicine",
       description: "Advanced non-surgical treatments for facial rejuvenation",
       href: "/treatments/aesthetic-medicine",
@@ -20,7 +24,7 @@ export function FeaturedTreatments() {
       treatments: ["Dermal Fillers", "Anti-Wrinkle", "Lip Enhancement", "Skin Boosters"],
     },
     {
-      icon: Heart,
+      icon: "heart",
       title: "Intimate Health",
       description: "Discreet professional wellness treatments",
       href: "/treatments/intimate-health",
@@ -28,182 +32,168 @@ export function FeaturedTreatments() {
       treatments: ["P-Shot", "O-Shot", "Ultra Femme 360", "Regenerative Therapy"],
     },
     {
-      icon: Zap,
+      icon: "zap",
       title: "Pain Management",
       description: "Regenerative treatments for chronic pain relief",
       href: "/treatments/pain-management",
       image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80",
       treatments: ["PRP Therapy", "Joint Injections", "Stem Cell Treatment", "Physiotherapy"],
     },
-  ];
+  ],
+  cta: {
+    text: "View All Treatments",
+    href: "/treatments",
+  },
+};
+
+export function FeaturedTreatments({ data }) {
+  const sectionData = data
+    ? {
+        ...defaultData,
+        ...data,
+        categories: data.categories || defaultData.categories,
+        cta: { ...defaultData.cta, ...data.cta },
+      }
+    : defaultData;
 
   return (
     <Section padding="lg" className="bg-background">
-      <Container maxWidth="7xl">
+     
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-14 md:mb-16"
         >
-          <p className="text-primary text-xs font-semibold tracking-widest uppercase mb-3">
-            OUR SPECIALTIES
-          </p>
+          {sectionData.badge && (
+            <p className="text-primary text-xs font-semibold tracking-widest uppercase mb-3">
+              {sectionData.badge}
+            </p>
+          )}
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-4">
-            Comprehensive Care
+            {sectionData.title}
           </h2>
-          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            From aesthetic enhancement to regenerative medicine, we offer world-class
-            treatments tailored to your unique needs
-          </p>
+          {sectionData.subtitle && (
+            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              {sectionData.subtitle}
+            </p>
+          )}
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 md:auto-rows-fr gap-6 md:gap-8 items-stretch max-w-6xl mx-auto">
-          {categories.map((category, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.08, duration: 0.3 }}
-              className="flex h-full"
-            >
-              {/* CometCard on desktop only for performance */}
-              <div className="hidden md:block w-full h-full">
-                <CometCard
-                  rotateDepth={5}
-                  translateDepth={8}
-                  className="w-full h-full"
-                >
-                  <Link href={category.href} className="block h-full w-full">
-                    <div className="relative bg-card rounded-3xl overflow-hidden h-full w-full flex flex-col shadow-sm hover:shadow-lg transition-all duration-300 border border-border hover:border-primary/30">
-                    {/* Image Section - Compact */}
-                    <div className="relative w-full aspect-5/3 overflow-hidden bg-muted">
-                      <Image
-                        src={category.image}
-                        alt={category.title}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                        sizes="(max-width: 768px) 100vw, 33vw"
-                        priority={index === 0}
-                      />
-                      {/* Subtle gradient overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
-                      
-                      {/* Clean icon badge */}
-                      <div className="absolute top-5 left-5">
-                        <div className="bg-card rounded-2xl p-2.5 shadow-sm border border-border/50">
-                          <category.icon className="w-5 h-5 text-primary" strokeWidth={2} />
+          {sectionData.categories.map((category, index) => {
+            const Icon = getIconComponent(category.icon, "sparkles");
+
+            return (
+              <motion.div
+                key={category.title + index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.08, duration: 0.3 }}
+                className="flex h-full"
+              >
+                <div className="hidden md:block w-full h-full">
+                  <CometCard rotateDepth={5} translateDepth={8} className="w-full h-full">
+                    <Link href={category.href} className="block h-full w-full">
+                      <div className="relative bg-card rounded-3xl overflow-hidden h-full w-full flex flex-col shadow-sm hover:shadow-lg transition-all duration-300 border border-border hover:border-primary/30">
+                        <div className="relative w-full aspect-5/3 overflow-hidden bg-muted">
+                          <Image
+                            src={category.image}
+                            alt={category.title}
+                            fill
+                            className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                            sizes="(max-width: 768px) 100vw, 33vw"
+                            priority={index === 0}
+                          />
+                          <div className="absolute inset-0 bg-linear-to-t from-background/60 via-transparent to-transparent" />
+
+                          <div className="absolute top-5 left-5">
+                            <div className="bg-card rounded-2xl p-2.5 shadow-sm border border-border/50">
+                              <Icon className="w-5 h-5 text-primary" strokeWidth={2} />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex flex-col grow p-6">
+                          <h3 className="text-xl font-heading font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
+                            {category.title}
+                          </h3>
+                          <p className="text-sm md:text-base text-muted-foreground mb-5 leading-relaxed">
+                            {category.description}
+                          </p>
+
+                          <div className="mt-auto space-y-2">
+                            <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                              Signature Treatments
+                            </p>
+                            <div className="flex flex-wrap gap-2" aria-label={`${category.title} treatments`}>
+                              {category.treatments?.map((treatment) => (
+                                <span
+                                  key={treatment}
+                                  className="text-sm font-medium text-foreground/80 bg-secondary/40 rounded-full px-3 py-1"
+                                >
+                                  {treatment}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-
-                    {/* Content Section - More compact */}
-                    <div className="flex flex-col grow p-6">
-                      {/* Title */}
-                      <h3 className="text-xl font-heading font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
-                        {category.title}
-                      </h3>
-
-                      {/* Description */}
-                      <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
-                        {category.description}
-                      </p>
-
-                      {/* Treatment List - Clean and compact */}
-                      <ul className="space-y-2 mb-5">
-                        {category.treatments.map((treatment, idx) => (
-                          <li
-                            key={idx}
-                            className="flex items-center text-xs text-muted-foreground group/item"
-                          >
-                            <span className="w-1 h-1 rounded-full bg-primary/50 mr-2.5 shrink-0 group-hover/item:bg-primary transition-colors duration-200" />
-                            <span className="group-hover/item:text-foreground transition-colors duration-200">
-                              {treatment}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-
-                      {/* CTA - Simple and clean */}
-                      <div className="mt-auto pt-4 flex items-center justify-between group/cta">
-                        <span className="text-primary font-semibold text-sm group-hover/cta:text-primary/80 transition-colors duration-200">
-                          Explore Treatments
-                        </span>
-                        <ArrowRight className="w-4 h-4 text-primary group-hover/cta:translate-x-1 transition-transform duration-300" />
+                    </Link>
+                  </CometCard>
+                </div>
+                <div className="md:hidden w-full h-full">
+                  <Link href={category.href} className="block h-full w-full">
+                    <div className="relative bg-card rounded-3xl overflow-hidden h-full w-full flex flex-col border border-border">
+                      <div className="relative w-full aspect-video overflow-hidden bg-muted">
+                        <Image
+                          src={category.image}
+                          alt={category.title}
+                          fill
+                          className="object-cover"
+                          sizes="100vw"
+                        />
+                        <div className="absolute inset-0 bg-linear-to-t from-background/60 via-transparent to-transparent" />
+                        <div className="absolute top-4 left-4">
+                          <div className="bg-card rounded-2xl p-2 border border-border/50">
+                            <Icon className="w-5 h-5 text-primary" strokeWidth={2} />
+                          </div>
+                        </div>
                       </div>
-                    </div>
+                      <div className="flex flex-col grow p-5 gap-4">
+                        <div>
+                          <h3 className="text-xl font-heading font-bold text-foreground mb-1">
+                            {category.title}
+                          </h3>
+                          <p className="text-sm text-muted-foreground leading-relaxed">
+                            {category.description}
+                          </p>
+                        </div>
+                        <div className="mt-auto space-y-2">
+                          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                            Signature Treatments
+                          </p>
+                          <div className="flex flex-wrap gap-2">
+                            {category.treatments?.map((treatment) => (
+                              <span
+                                key={treatment}
+                                className="text-xs font-medium text-foreground/80 bg-secondary/40 rounded-full px-3 py-1"
+                              >
+                                {treatment}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </Link>
-                </CometCard>
-              </div>
-
-              {/* Simple card on mobile for performance */}
-              <Link href={category.href} className="block md:hidden h-full w-full group">
-                <div className="relative bg-card rounded-3xl overflow-hidden h-full w-full flex flex-col shadow-sm hover:shadow-lg transition-all duration-300 border border-border hover:border-primary/30">
-                    {/* Image Section - Compact */}
-                    <div className="relative w-full aspect-5/3 overflow-hidden bg-muted">
-                      <Image
-                        src={category.image}
-                        alt={category.title}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                        sizes="(max-width: 768px) 100vw, 33vw"
-                        priority={index === 0}
-                      />
-                      {/* Subtle gradient overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
-
-                      {/* Clean icon badge */}
-                      <div className="absolute top-5 left-5">
-                        <div className="bg-card rounded-2xl p-2.5 shadow-sm border border-border/50">
-                          <category.icon className="w-5 h-5 text-primary" strokeWidth={2} />
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Content Section - More compact */}
-                    <div className="flex flex-col grow p-6">
-                      {/* Title */}
-                      <h3 className="text-xl font-heading font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
-                        {category.title}
-                      </h3>
-
-                      {/* Description */}
-                      <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
-                        {category.description}
-                      </p>
-
-                      {/* Treatment List - Clean and compact */}
-                      <ul className="space-y-2 mb-5">
-                        {category.treatments.map((treatment, idx) => (
-                          <li
-                            key={idx}
-                            className="flex items-center text-xs text-muted-foreground group/item"
-                          >
-                            <span className="w-1 h-1 rounded-full bg-primary/50 mr-2.5 shrink-0 group-hover/item:bg-primary transition-colors duration-200" />
-                            <span className="group-hover/item:text-foreground transition-colors duration-200">
-                              {treatment}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-
-                      {/* CTA - Simple and clean */}
-                      <div className="mt-auto pt-4 flex items-center justify-between group/cta">
-                        <span className="text-primary font-semibold text-sm group-hover/cta:text-primary/80 transition-colors duration-200">
-                          Explore Treatments
-                        </span>
-                        <ArrowRight className="w-4 h-4 text-primary group-hover/cta:translate-x-1 transition-transform duration-300" />
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-            </motion.div>
-          ))}
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
 
-        {/* Bottom CTA - Simple button */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -216,13 +206,12 @@ export function FeaturedTreatments() {
             size="lg"
             className="group border-2 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all"
           >
-            <Link href="/treatments" className="gap-2">
-              View All Treatments
+            <Link href={sectionData.cta.href} className="gap-2">
+              {sectionData.cta.text}
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </Button>
         </motion.div>
-      </Container>
     </Section>
   );
 }

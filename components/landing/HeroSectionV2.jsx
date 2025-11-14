@@ -7,8 +7,7 @@ import { Button } from "@/components/ui/button";
 import { HeroCarousel } from "@/components/custom/ui/hero-carousel";
 import { motion, AnimatePresence } from "framer-motion";
 
-// Three powerful slides with emotional messaging
-const heroSlides = [
+const defaultSlides = [
   {
     id: 1,
     image: "/images/drsnaclinic/doctor-hero.jpg",
@@ -16,8 +15,10 @@ const heroSlides = [
     headline: "Award-Winning",
     subheadline: "Dr Syed Nadeem Abbas",
     description: "Experience transformative care from London's most distinguished aesthetic medicine specialist",
-    cta: "Meet Dr Abbas",
-    emphasis: "Excellence Redefined",
+    primaryCta: {
+      text: "Meet Dr Abbas",
+      href: "/dr-syed-nadeem-abbas",
+    },
   },
   {
     id: 2,
@@ -26,8 +27,10 @@ const heroSlides = [
     headline: "Rediscover Your",
     subheadline: "Natural Radiance",
     description: "Advanced regenerative therapies tailored to enhance your inherent beauty with precision and artistry",
-    cta: "Explore Treatments",
-    emphasis: "Transform with Confidence",
+    primaryCta: {
+      text: "Explore Treatments",
+      href: "/treatments",
+    },
   },
   {
     id: 3,
@@ -36,25 +39,38 @@ const heroSlides = [
     headline: "Embrace Your",
     subheadline: "Best Self",
     description: "Bespoke treatments in an exclusive environment where sophistication meets clinical excellence",
-    cta: "Book Consultation",
-    emphasis: "Elevate Your Journey",
+    primaryCta: {
+      text: "Book Consultation",
+      href: "/booking",
+    },
   },
 ];
 
-export function HeroSectionV2() {
+const defaultSecondaryCta = {
+  text: "View Treatments",
+  href: "/treatments",
+};
+
+export function HeroSectionV2({ data }) {
+  const slides = data?.slides?.length ? data.slides : defaultSlides;
+  const secondaryCta = data?.secondaryCta || defaultSecondaryCta;
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handleSlideChange = useCallback((index) => {
     setCurrentSlide(index);
   }, []);
 
-  const currentContent = heroSlides[currentSlide];
+  const currentContent = slides[currentSlide] || slides[0];
+  const primaryCta = currentContent?.primaryCta || {
+    text: currentContent?.cta || "Book Consultation",
+    href: "/booking",
+  };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
       {/* Hero Carousel Background */}
       <HeroCarousel
-        images={heroSlides.map(slide => ({
+        images={slides.map((slide) => ({
           url: slide.image,
           alt: slide.headline
         }))}
@@ -79,15 +95,15 @@ export function HeroSectionV2() {
               className="text-left max-w-full sm:max-w-2xl"
             >
               {/* Award Badge */}
-              <div className="inline-flex items-center gap-2 bg-primary/90 backdrop-blur-sm px-4 py-2 rounded-full mb-6 md:mb-8">
-                <Award className="w-3.5 h-3.5 text-primary-foreground flex-shrink-0" />
-                <span className="text-primary-foreground font-semibold text-[10px] sm:text-xs tracking-wide uppercase">
+              <div className="inline-flex items-center gap-2 bg-royal-blue/90 backdrop-blur-sm px-4 py-2 rounded-full mb-6 md:mb-8">
+                <Award className="w-3.5 h-3.5 text-white shrink-0" />
+                <span className="text-white font-semibold text-[10px] sm:text-xs tracking-wide uppercase">
                   {currentContent.badge}
                 </span>
               </div>
 
               {/* Main Headline - Clean and Bold */}
-              <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 md:mb-6 leading-[1.1] tracking-tight">
+              <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 md:mb-6 leading-[1.1] tracking-tight" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.2)' }}>
                 {currentContent.headline}
                 <br />
                 <span className="text-primary">
@@ -96,29 +112,29 @@ export function HeroSectionV2() {
               </h1>
 
               {/* Description - Smaller and More Subtle */}
-              <p className="text-xs sm:text-sm md:text-base text-white/80 mb-8 md:mb-10 leading-relaxed max-w-xl">
+              <p className="text-xs sm:text-sm md:text-base text-white/80 mb-8 md:mb-10 leading-relaxed max-w-xl" style={{ textShadow: '0 1px 8px rgba(0,0,0,0.25), 0 2px 12px rgba(0,0,0,0.15)' }}>
                 {currentContent.description}
               </p>
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-start">
-                <Link href={currentSlide === 0 ? "/dr-syed-nadeem-abbas" : "/booking"}>
+                <Link href={primaryCta.href}>
                   <Button
                     size="lg"
                     className="w-full sm:w-auto group bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-lg hover:shadow-xl transition-all"
                   >
-                    {currentContent.cta}
+                    {primaryCta.text}
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
 
-                <Link href="/treatments">
+                <Link href={secondaryCta.href}>
                   <Button
                     size="lg"
                     variant="outline"
                     className="w-full sm:w-auto border-white/60 hover:bg-white hover:text-black hover:border-white backdrop-blur-sm transition-all"
                   >
-                    View Treatments
+                    {secondaryCta.text}
                   </Button>
                 </Link>
               </div>

@@ -102,13 +102,13 @@ export function HeroCarousel({
       })}
 
       {overlayVariant === "light" ? (
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-white/65 via-white/35 to-transparent z-20" />
+        <div className="pointer-events-none absolute inset-0 bg-linear-to-r from-white/65 via-white/35 to-transparent z-20" />
       ) : overlayVariant === "minimal" ? (
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-black/30 via-black/20 to-transparent z-20" />
+        <div className="pointer-events-none absolute inset-0 bg-linear-to-br from-black/30 via-black/40 to-transparent z-20" />
       ) : overlayVariant === "luxury" ? (
         <>
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-black/65 via-black/40 to-black/60 z-20" />
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent z-20" />
+          <div className="pointer-events-none absolute inset-0 bg-linear-to-br from-black/65 via-black/40 to-black/60 z-20" />
+          <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/90 via-transparent to-transparent z-20" />
           <div className="pointer-events-none absolute top-0 right-0 w-1/2 h-1/2 bg-primary/20 blur-3xl opacity-30 z-20" />
         </>
       ) : overlayVariant === "none" ? null : (

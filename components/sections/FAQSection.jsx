@@ -9,6 +9,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
+import { getIconComponent } from "@/lib/icon-utils";
 
 /**
  * FAQ Section Component
@@ -69,7 +70,7 @@ export function FAQSection({
           {/* FAQ Accordion - Using shadcn Accordion for accessibility */}
           <Accordion type="single" collapsible defaultValue="item-0" className="space-y-4">
             {data.map((faq, index) => {
-              const Icon = faq.icon;
+              const Icon = showIcons ? getIconComponent(faq.icon) : null;
 
               return (
                 <AccordionItem

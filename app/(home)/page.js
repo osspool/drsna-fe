@@ -1,17 +1,16 @@
-import { Header } from "@/components/core/Header";
 import { HeroSectionV2 } from "@/components/landing/HeroSectionV2";
 import { RegulatoryLogos } from "@/components/landing/RegulatoryLogos";
-import { DrAbbasSection } from "@/components/landing/DrAbbasSection";
 import { PShotFeaturedSection } from "@/components/landing/PShotFeaturedSection";
 import { GlobalReachSection } from "@/components/landing/GlobalReachSection";
 import { FeaturedTreatments } from "@/components/landing/FeaturedTreatments";
+import { AwardSpotlightSection } from "@/components/landing/AwardSpotlightSection";
+import { TreatmentBentoSection } from "@/components/landing/TreatmentBentoSection";
 import { ClinicShowcaseSection } from "@/components/landing/ClinicShowcaseSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { CTASection } from "@/components/sections/CTASection";
-import { landingFaqData } from "@/data/landing-faq";
-import { landingTestimonials } from "@/data/landing-testimonials";
 import { clinicStructuredData } from "@/data/structured-data";
+import { getHomePageData } from "@/lib/home";
 
 export const metadata = {
   metadataBase: new URL("https://drsnaclinic.com"),
@@ -75,51 +74,66 @@ export const metadata = {
   },
 };
 
-export default function HomePage() {
+export default async function HomePage() {
+  const homeData = await getHomePageData();
+  const testimonialsData = homeData?.testimonials;
+  const faqData = homeData?.faq;
+
   return (
     <>
       {/* Structured Data for SEO */}
-      <script
+      {/* <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicStructuredData) }}
-      />
+      /> */}
 
 
       <main>
         {/* Hero Section with Luxury Carousel & Emotional Messaging */}
-        <HeroSectionV2 />
+        <HeroSectionV2 data={homeData?.hero} />
 
-        {/* Dr Abbas Section with Card Spotlight */}
-        <DrAbbasSection />
+        {/* Award Spotlight */}
+        <AwardSpotlightSection data={homeData?.awardSpotlight} />
+
+        {/* Treatment Bento Grid Showcase */}
+        <TreatmentBentoSection data={homeData?.treatmentBento} />
 
         {/* Featured Treatments with Comet Cards */}
-        <FeaturedTreatments />
+        <FeaturedTreatments data={homeData?.featuredTreatments} />
+
 
         {/* Clinic Showcase - Interior & Exterior Gallery */}
-        <ClinicShowcaseSection />
+        <ClinicShowcaseSection data={homeData?.clinicShowcase} />
 
         {/* P-Shot Featured Section - Premium Treatment Highlight */}
-        <PShotFeaturedSection />
+        <PShotFeaturedSection data={homeData?.pshotFeatured} />
 
         {/* Global Reach Section with World Map */}
-        <GlobalReachSection />
+        <GlobalReachSection data={homeData?.globalReach} />
 
         {/* Testimonials with Card Spotlight */}
         <TestimonialsSection
-          variant="video"
-          data={landingTestimonials}
-          title="Hear From Our Patients"
-          subtitle="Real stories from real patients who have experienced transformative results at Dr SNA Clinic"
+          variant={testimonialsData?.variant || "video"}
+          data={testimonialsData}
+          title={testimonialsData?.title}
+          subtitle={testimonialsData?.subtitle}
+          badge={testimonialsData?.badge}
         />
 
         {/* FAQ Section with Icons */}
-        <FAQSection data={landingFaqData} variant="with-icons" />
+        <FAQSection
+          data={faqData?.items}
+          variant={faqData?.variant || "with-icons"}
+          title={faqData?.title}
+          subtitle={faqData?.subtitle}
+          badge={faqData?.badge}
+        />
 
         {/* Regulatory Logos Carousel - Trust Signals */}
-        <RegulatoryLogos />
+        <RegulatoryLogos data={homeData?.regulatory} />
 
         {/* Final CTA with Wavy Background */}
-        <CTASection variant="contact" />
+        <CTASection data={homeData?.cta} variant={homeData?.cta?.variant || "contact"} />
       </main>
     </>
   );

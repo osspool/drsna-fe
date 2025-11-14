@@ -16,6 +16,9 @@ export function Section({
   const backgrounds = {
     default: "bg-background",
     white: "bg-card",
+    "royal-blue": "bg-royal-blue",
+    "royal-blue-900": "bg-royal-blue-900",
+    "foreground": "bg-foreground",
     cream: "bg-secondary",
     "gradient-cream": "bg-linear-to-b from-secondary/30 via-background to-secondary/20",
     gold: "bg-primary",

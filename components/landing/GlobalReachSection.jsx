@@ -1,114 +1,128 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Globe, Users, Award, Plane, MapPin, Heart } from "lucide-react";
+import { Globe } from "lucide-react";
 import WorldMap from "@/components/aceternity/world-map";
+import { getIconComponent } from "@/lib/icon-utils";
 
-export function GlobalReachSection() {
-  // London coordinates (clinic location)
-  const londonLocation = { lat: 51.5074, lng: -0.1278 };
-
-  // Key locations where patients travel from
-  const patientLocations = [
+const defaultData = {
+  badge: "Global Excellence",
+  title: "Trusted Worldwide,",
+  titleAccent: "Located in London",
+  description:
+    "Patients travel from across the globe to experience Dr Abbas's renowned expertise in aesthetic medicine. Our reputation for natural results and personalized care transcends borders.",
+  mapCenter: { lat: 51.5074, lng: -0.1278 },
+  locations: [
     {
-      lat: 51.5074,  // London, UK
+      lat: 51.5074,
       lng: -0.1278,
       label: "UK & Europe",
       count: "5,000+",
       description: "Leading destination for European patients",
-      icon: "🇬🇧"
+      icon: "🇬🇧",
     },
     {
-      lat: 25.2048,  // Dubai, UAE
+      lat: 25.2048,
       lng: 55.2708,
       label: "Middle East",
       count: "2,000+",
       description: "UAE, Saudi Arabia, and Qatar",
-      icon: "🌍"
+      icon: "🌍",
     },
     {
-      lat: 1.3521,  // Singapore
+      lat: 1.3521,
       lng: 103.8198,
       label: "Asia Pacific",
       count: "1,500+",
       description: "Singapore, Hong Kong, Australia",
-      icon: "🌏"
+      icon: "🌏",
     },
     {
-      lat: 40.7128,  // New York, USA
-      lng: -74.0060,
+      lat: 40.7128,
+      lng: -74.006,
       label: "North America",
       count: "800+",
       description: "USA and Canada",
-      icon: "🇺🇸"
+      icon: "🇺🇸",
     },
-  ];
-
-  // Create connections from each location to London
-  const connections = patientLocations
-    .filter(loc => loc.label !== "UK & Europe") // Don't connect London to itself
-    .map(location => ({
-      start: { lat: location.lat, lng: location.lng },
-      end: londonLocation
-    }));
-
-  const globalStats = [
+  ],
+  stats: [
     {
-      icon: Users,
+      icon: "users",
       value: "10,000+",
       label: "International Patients",
       description: "Trusted by patients from over 50 countries",
     },
     {
-      icon: Globe,
+      icon: "globe",
       value: "50+",
       label: "Countries Served",
       description: "Global reputation for excellence",
     },
     {
-      icon: Award,
+      icon: "award",
       value: "98%",
       label: "Satisfaction Rate",
       description: "Outstanding patient outcomes worldwide",
     },
     {
-      icon: Plane,
+      icon: "plane",
       value: "24/7",
       label: "Concierge Support",
       description: "Seamless travel and accommodation assistance",
     },
-  ];
-
-  const whyPatientsTravelHere = [
+  ],
+  reasons: [
     {
-      icon: Award,
+      icon: "award",
       title: "World-Class Expertise",
       description:
         "Dr Abbas's training at premier European clinics and distinction in Masters of Aesthetic Plastic Surgery draws patients seeking the highest level of care.",
     },
     {
-      icon: Heart,
+      icon: "heart",
       title: "Natural, Lasting Results",
       description:
         "Our philosophy of subtle enhancement over dramatic transformation resonates with international patients seeking authentic, refined outcomes.",
     },
     {
-      icon: MapPin,
+      icon: "map-pin",
       title: "London's Premier Location",
       description:
         "Located on prestigious Wimpole Street in London's medical district, easily accessible from major international airports.",
     },
-  ];
+  ],
+};
+
+export function GlobalReachSection({ data }) {
+  const sectionData = data
+    ? {
+        ...defaultData,
+        ...data,
+        mapCenter: data.mapCenter || defaultData.mapCenter,
+        locations: data.locations || defaultData.locations,
+        stats: data.stats || defaultData.stats,
+        reasons: data.reasons || defaultData.reasons,
+      }
+    : defaultData;
+
+  const londonLocation = sectionData.mapCenter;
+  const patientLocations = sectionData.locations;
+
+  const connections = patientLocations
+    .filter((location) => location.lat !== londonLocation.lat || location.lng !== londonLocation.lng)
+    .map((location) => ({
+      start: { lat: location.lat, lng: location.lng },
+      end: londonLocation,
+    }));
 
   return (
     <section className="relative py-24 md:py-32 bg-gradient-to-b from-secondary via-secondary/90 to-background overflow-hidden">
-      {/* Subtle background decoration */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-primary rounded-full blur-xl" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -117,21 +131,18 @@ export function GlobalReachSection() {
         >
           <p className="text-primary text-sm font-semibold tracking-wider uppercase mb-4 flex items-center justify-center gap-2">
             <Globe className="w-4 h-4" />
-            Global Excellence
+            {sectionData.badge}
           </p>
           <h2 className="text-5xl md:text-7xl font-heading font-bold text-foreground mb-6">
-            Trusted Worldwide,
+            {sectionData.title}
             <br />
-            <span className="text-primary">Located in London</span>
+            <span className="text-primary">{sectionData.titleAccent}</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Patients travel from across the globe to experience Dr Abbas's
-            renowned expertise in aesthetic medicine. Our reputation for natural
-            results and personalized care transcends borders.
+            {sectionData.description}
           </p>
         </motion.div>
 
-        {/* World Map Visualization - Desktop Only */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -140,20 +151,12 @@ export function GlobalReachSection() {
           className="mb-16 hidden md:block"
         >
           <div className="relative h-[500px] lg:h-[600px] rounded-3xl overflow-hidden border border-primary/20 shadow-xl bg-gradient-to-br from-card/80 via-card/90 to-card/95">
-            {/* Subtle glow effect - much lighter */}
-            <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent pointer-events-none" />
+            <div className="absolute inset-0 bg-linear-to-b from-primary/5 via-transparent to-transparent pointer-events-none" />
 
-            {/* Map container */}
             <div className="absolute inset-0 p-4 md:p-8">
-              <WorldMap
-                dots={connections}
-                lineColor="hsl(var(--primary))"
-                dotColor="#B8860B"
-                dotOpacity={0.8}
-              />
+              <WorldMap dots={connections} lineColor="hsl(var(--primary))" dotColor="#B8860B" dotOpacity={0.8} />
             </div>
 
-            {/* Simple location markers - no complex animations */}
             {patientLocations.map((location, index) => {
               const x = ((location.lng + 180) * (800 / 360));
               const y = ((90 - location.lat) * (400 / 180));
@@ -162,7 +165,7 @@ export function GlobalReachSection() {
 
               return (
                 <div
-                  key={index}
+                  key={location.label + index}
                   className="absolute text-white text-xs z-20"
                   style={{
                     left: `${leftPercent}%`,
@@ -187,7 +190,6 @@ export function GlobalReachSection() {
               );
             })}
 
-            {/* Corner accents */}
             <div className="absolute top-4 left-4 w-12 h-12 border-t-2 border-l-2 border-primary/40 rounded-tl-lg" />
             <div className="absolute top-4 right-4 w-12 h-12 border-t-2 border-r-2 border-primary/40 rounded-tr-lg" />
             <div className="absolute bottom-4 left-4 w-12 h-12 border-b-2 border-l-2 border-primary/40 rounded-bl-lg" />
@@ -195,11 +197,10 @@ export function GlobalReachSection() {
           </div>
         </motion.div>
 
-        {/* Patient Regions Grid - Mobile Only */}
         <div className="grid grid-cols-2 gap-4 mb-16 md:hidden">
           {patientLocations.map((location, index) => (
             <motion.div
-              key={index}
+              key={location.label + index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -220,32 +221,33 @@ export function GlobalReachSection() {
           ))}
         </div>
 
-        {/* Global Stats Grid */}
         <div className="grid md:grid-cols-4 gap-6 mb-16">
-          {globalStats.map((stat, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.08, duration: 0.3 }}
-              className="glass-card rounded-2xl p-8 border border-border hover:border-primary/40 transition-all duration-300 group"
-            >
-              <stat.icon className="w-10 h-10 text-primary mb-4 group-hover:scale-105 transition-transform duration-300" />
-              <h3 className="text-4xl font-heading font-bold text-foreground mb-2">
-                {stat.value}
-              </h3>
-              <p className="text-lg font-semibold text-primary mb-2">
-                {stat.label}
-              </p>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {stat.description}
-              </p>
-            </motion.div>
-          ))}
+          {sectionData.stats.map((stat, index) => {
+            const Icon = getIconComponent(stat.icon, Globe);
+            return (
+              <motion.div
+                key={stat.label + index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.08, duration: 0.3 }}
+                className="glass-card rounded-2xl p-8 border border-border hover:border-primary/40 transition-all duration-300 group"
+              >
+                <Icon className="w-10 h-10 text-primary mb-4 group-hover:scale-105 transition-transform duration-300" />
+                <h3 className="text-4xl font-heading font-bold text-foreground mb-2">
+                  {stat.value}
+                </h3>
+                <p className="text-lg font-semibold text-primary mb-2">
+                  {stat.label}
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {stat.description}
+                </p>
+              </motion.div>
+            );
+          })}
         </div>
 
-        {/* Why Patients Choose Us */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -253,35 +255,35 @@ export function GlobalReachSection() {
           className="mb-16"
         >
           <h3 className="text-3xl md:text-4xl font-heading font-bold text-foreground text-center mb-12">
-            Why International Patients Choose{" "}
-            <span className="text-primary">Dr SNA Clinic</span>
+            Why International Patients Choose <span className="text-primary">Dr SNA Clinic</span>
           </h3>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {whyPatientsTravelHere.map((reason, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1, duration: 0.3 }}
-                className="glass-card rounded-2xl p-8 border border-border hover:border-primary/40 transition-all duration-300"
-              >
-                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center mb-6">
-                  <reason.icon className="w-7 h-7 text-primary-foreground" />
-                </div>
-                <h4 className="text-xl font-heading font-bold text-foreground mb-4">
-                  {reason.title}
-                </h4>
-                <p className="text-muted-foreground leading-relaxed">
-                  {reason.description}
-                </p>
-              </motion.div>
-            ))}
+            {sectionData.reasons.map((reason, index) => {
+              const ReasonIcon = getIconComponent(reason.icon, Globe);
+              return (
+                <motion.div
+                  key={reason.title + index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1, duration: 0.3 }}
+                  className="glass-card rounded-2xl p-8 border border-border hover:border-primary/40 transition-all duration-300"
+                >
+                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center mb-6">
+                    <ReasonIcon className="w-7 h-7 text-primary-foreground" />
+                  </div>
+                  <h4 className="text-xl font-heading font-bold text-foreground mb-4">
+                    {reason.title}
+                  </h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {reason.description}
+                  </p>
+                </motion.div>
+              );
+            })}
           </div>
         </motion.div>
-
-        {/* International Patient Services */}
       </div>
     </section>
   );

@@ -3,32 +3,77 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Award, GraduationCap, Heart, Shield, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { getIconComponent } from "@/lib/icon-utils";
 
-export function DrAbbasSection() {
-  const credentials = [
+const defaultData = {
+  badge: "Meet Our Founder",
+  title: "Precision. Artistry.",
+  titleAccent: "Natural Results.",
+  image: {
+    src: "/images/drsnaclinic/doctor-intro.jpg",
+    alt: "Dr Syed Nadeem Abbas - Founder & Lead Aesthetic Physician",
+    name: "Dr Syed Nadeem Abbas",
+    credentials: "MSc (Distinction) | MRCGP | MRCSEd | MBBS",
+    role: "Founder & Lead Aesthetic Physician",
+  },
+  credentials: [
     {
-      icon: GraduationCap,
+      icon: "graduation-cap",
       title: "Masters in Aesthetic Surgery",
       description: "Completed with Distinction",
     },
     {
-      icon: Award,
+      icon: "award",
       title: "Multi-Certified Professional",
       description: "MSc | MRCGP | MRCSEd | MBBS",
     },
     {
-      icon: Shield,
+      icon: "shield",
       title: "Rigorous Training",
       description: "Cadaveric courses & world-renowned clinics",
     },
     {
-      icon: Heart,
+      icon: "heart",
       title: "Patient-Centered Approach",
       description: "Personalized consultations for natural results",
     },
-  ];
+  ],
+  content: [
+    "With a Masters in Aesthetic Plastic Surgery completed with distinction, Dr Syed Nadeem Abbas represents the pinnacle of aesthetic medicine in London. His extensive credentials—including MRCGP, MRCSEd, and MBBS—underscore a commitment to medical excellence.",
+    "Dr Abbas's philosophy: \"Making you appear to be your best, not just younger.\" This patient-centered vision focuses on enhancing your natural features while preserving your unique character.",
+    "Through extensive training at world-renowned aesthetic clinics across Europe and the UK, Dr Abbas has refined his expertise in facial anatomy and advanced injection techniques, achieving results that look refreshed, never overdone.",
+  ],
+  quote: {
+    icon: "sparkles",
+    text: "True artistry in aesthetic medicine lies not in dramatic transformation, but in subtle enhancement. It's about understanding the intricate anatomy beneath the surface, respecting each patient's natural beauty, and delivering results that restore confidence while preserving individuality.",
+    author: "Dr Syed Nadeem Abbas",
+    subtitle: "MSc (Distinction) in Aesthetic Plastic Surgery",
+  },
+  cta: {
+    text: "Learn More About Dr Abbas",
+    href: "/dr-syed-nadeem-abbas",
+  },
+};
+
+export function DrAbbasSection({ data }) {
+  const mergedData = data
+    ? {
+        ...defaultData,
+        ...data,
+        image: { ...defaultData.image, ...data.image },
+        quote: { ...defaultData.quote, ...data.quote },
+        cta: { ...defaultData.cta, ...data.cta },
+        content: data.content || defaultData.content,
+        credentials: data.credentials || defaultData.credentials,
+      }
+    : defaultData;
+
+  const image = mergedData.image;
+  const quote = mergedData.quote;
+  const cta = mergedData.cta;
+  const QuoteIcon = getIconComponent(quote.icon, Sparkles);
 
   return (
     <section id="about" className="relative py-20 md:py-32 overflow-hidden bg-muted/30">
@@ -40,13 +85,19 @@ export function DrAbbasSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-primary text-sm font-semibold tracking-wider uppercase mb-3">
-            Meet Our Founder
-          </p>
+          {mergedData.badge && (
+            <p className="text-primary text-sm font-semibold tracking-wider uppercase mb-3">
+              {mergedData.badge}
+            </p>
+          )}
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-4 leading-tight">
-            Precision. Artistry.
-            <br />
-            <span className="text-primary">Natural Results.</span>
+            {mergedData.title}
+            {mergedData.titleAccent && (
+              <>
+                <br />
+                <span className="text-primary">{mergedData.titleAccent}</span>
+              </>
+            )}
           </h2>
         </motion.div>
 
@@ -63,65 +114,59 @@ export function DrAbbasSection() {
             <div className="relative h-[500px] lg:h-[550px]">
               <div className="relative h-full rounded-3xl overflow-hidden group">
                 <Image
-                  src="/images/drsnaclinic/doctor-intro.jpg"
-                  alt="Dr Syed Nadeem Abbas - Founder & Lead Aesthetic Physician"
+                  src={image.src}
+                  alt={image.alt}
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   priority
                 />
 
-                {/* Modern overlay with better gradient */}
-                {/* <div className="absolute inset-0 bg-linear-to-t from-background/90 via-background/20 to-transparent z-10" /> */}
-
-                {/* Info card overlay with pure glassmorphism */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 z-20">
                   <div className="p-6 rounded-2xl backdrop-blur-md border border-white/20 bg-black/20">
                     <h3 className="text-2xl md:text-3xl font-heading font-bold text-white mb-2">
-                      Dr Syed Nadeem Abbas
+                      {image.name}
                     </h3>
                     <p className="text-primary font-semibold text-base md:text-lg">
-                      MSc (Distinction) | MRCGP | MRCSEd | MBBS
+                      {image.credentials}
                     </p>
                     <p className="text-white/80 mt-2 text-sm md:text-base">
-                      Founder & Lead Aesthetic Physician
+                      {image.role}
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Credentials Grid with CometCard */}
+            {/* Credentials Grid */}
             <div className="grid grid-cols-2 gap-4">
-              {credentials.map((credential, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                >
-                  <div className="relative w-full h-full group">
-                    {/* Subtle glow effect on desktop only */}
-                    <div className="hidden md:block absolute inset-0 h-full w-full scale-[0.85] transform rounded-2xl bg-gradient-to-r from-primary/10 to-primary/5 blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
+              {mergedData.credentials.map((credential, index) => {
+                const Icon = getIconComponent(credential.icon, Sparkles);
+                return (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                  >
+                    <div className="relative w-full h-full group">
+                      <div className="hidden md:block absolute inset-0 h-full w-full scale-[0.85] transform rounded-2xl bg-gradient-to-r from-primary/10 to-primary/5 blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
 
-                    {/* Card with subtle effects */}
-                    <div className="relative flex h-full flex-col items-start justify-start rounded-2xl border border-primary/20 bg-card p-6 shadow-md hover:shadow-lg hover:border-primary/40 transition-all duration-300">
-                      {/* Icon with gradient background */}
-                      <div className="inline-flex p-3 rounded-xl bg-gradient-to-br from-primary/20 to-primary/10 mb-4 group-hover:from-primary/30 group-hover:to-primary/20 transition-colors duration-300">
-                        <credential.icon className="w-6 h-6 text-primary" />
+                      <div className="relative flex h-full flex-col items-start justify-start rounded-2xl border border-primary/20 bg-card p-6 shadow-md hover:shadow-lg hover:border-primary/40 transition-all duration-300">
+                        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+                          <Icon className="h-6 w-6" />
+                        </div>
+                        <h3 className="text-lg font-heading font-semibold text-foreground mb-2">
+                          {credential.title}
+                        </h3>
+                        <p className="text-sm text-muted-foreground">
+                          {credential.description}
+                        </p>
                       </div>
-
-                      <h4 className="font-heading font-bold text-foreground text-sm mb-2 leading-tight">
-                        {credential.title}
-                      </h4>
-
-                      <p className="text-xs text-muted-foreground leading-relaxed">
-                        {credential.description}
-                      </p>
                     </div>
-                  </div>
-                </motion.div>
-              ))}
+                  </motion.div>
+                );
+              })}
             </div>
           </motion.div>
 
@@ -133,27 +178,12 @@ export function DrAbbasSection() {
             transition={{ duration: 0.5 }}
             className="space-y-8"
           >
-            {/* Content Text - Condensed */}
             <div className="space-y-5 text-base md:text-lg text-muted-foreground leading-relaxed">
-              <p>
-                With a <span className="font-bold text-foreground">Masters in Aesthetic Plastic Surgery completed with distinction</span>, Dr Syed Nadeem Abbas represents the pinnacle of aesthetic medicine in London. His extensive credentials—including MRCGP, MRCSEd, and MBBS—underscore a commitment to medical excellence.
-              </p>
-
-              <p>
-                Dr Abbas's philosophy:{" "}
-                <span className="font-bold text-primary italic">
-                  "Making you appear to be your best, not just younger."
-                </span>{" "}
-                This patient-centered vision focuses on enhancing your natural features while preserving your unique character.
-              </p>
-
-              <p>
-                Through extensive training at{" "}
-                <span className="font-bold text-foreground">world-renowned aesthetic clinics across Europe and the UK</span>, Dr Abbas has refined his expertise in facial anatomy and advanced injection techniques, achieving results that look refreshed, never overdone.
-              </p>
+              {mergedData.content.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
             </div>
 
-            {/* Elegant Quote Design */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -161,33 +191,26 @@ export function DrAbbasSection() {
               transition={{ delay: 0.2 }}
             >
               <div className="relative overflow-hidden rounded-3xl">
-                {/* Theme-aware gradient background */}
                 <div className="absolute inset-0 bg-gradient-to-br from-secondary via-secondary/95 to-muted dark:from-secondary dark:via-secondary/95 dark:to-background" />
-
-                {/* Subtle decorative glow - desktop only */}
                 <div className="hidden md:block absolute top-0 right-0 w-48 h-48 bg-primary/8 rounded-full blur-xl opacity-60" />
                 <div className="hidden md:block absolute bottom-0 left-0 w-32 h-32 bg-primary/5 rounded-full blur-xl opacity-40" />
 
                 <div className="relative p-8 md:p-10">
-                  {/* Sparkle icon */}
                   <div className="inline-flex p-3 rounded-2xl bg-primary/20 backdrop-blur-sm mb-6 border border-primary/30">
-                    <Sparkles className="w-7 h-7 text-primary" />
+                    <QuoteIcon className="w-7 h-7 text-primary" />
                   </div>
 
-                  {/* Quote text */}
                   <blockquote className="space-y-6">
                     <p className="text-lg md:text-xl font-heading font-medium text-foreground leading-relaxed">
-                      "True artistry in aesthetic medicine lies not in dramatic transformation, but in subtle enhancement. It's about understanding the intricate anatomy beneath the surface, respecting each patient's natural beauty, and delivering results that restore confidence while preserving individuality."
+                      &ldquo;{quote.text}&rdquo;
                     </p>
-
-                    {/* Attribution with primary accent */}
                     <footer className="pt-4 border-t border-primary/20">
                       <cite className="not-italic">
                         <p className="font-bold text-primary text-base">
-                          Dr Syed Nadeem Abbas
+                          {quote.author}
                         </p>
                         <p className="text-muted-foreground text-sm mt-1">
-                          MSc (Distinction) in Aesthetic Plastic Surgery
+                          {quote.subtitle}
                         </p>
                       </cite>
                     </footer>
@@ -196,15 +219,14 @@ export function DrAbbasSection() {
               </div>
             </motion.div>
 
-            {/* CTA Button */}
             <div className="pt-2">
               <Button
                 asChild
                 size="lg"
                 className="btn-primary-gradient text-base md:text-lg px-8 py-6 shadow-lg hover:shadow-xl group w-full sm:w-auto transition-all"
               >
-                <Link href="/dr-syed-nadeem-abbas" className="gap-2">
-                  Learn More About Dr Abbas
+                <Link href={cta.href} className="gap-2">
+                  {cta.text}
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>

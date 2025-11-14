@@ -4,8 +4,10 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 
-export function RegulatoryLogos() {
-  const logos = [
+const defaultData = {
+  badge: "Certified Excellence",
+  title: "Regulated & Accredited",
+  logos: [
     {
       name: "CQC - Care Quality Commission",
       src: "/images/drsnaclinic/regulation/care-quality-comission-CQC.webp",
@@ -26,7 +28,17 @@ export function RegulatoryLogos() {
       name: "Queen Mary University",
       src: "/images/drsnaclinic/regulation/queen-mary.webp",
     },
-  ];
+  ],
+};
+
+export function RegulatoryLogos({ data }) {
+  const sectionData = data
+    ? {
+        ...defaultData,
+        ...data,
+        logos: data.logos || defaultData.logos,
+      }
+    : defaultData;
 
   return (
     <section className="py-20 bg-background border-y border-border">
@@ -37,11 +49,13 @@ export function RegulatoryLogos() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">
-            Certified Excellence
-          </p>
+          {sectionData.badge && (
+            <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">
+              {sectionData.badge}
+            </p>
+          )}
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">
-            Regulated & Accredited
+            {sectionData.title}
           </h2>
         </motion.div>
 
@@ -52,7 +66,7 @@ export function RegulatoryLogos() {
             speed={40}
             gap={80}
           >
-            {logos.map((logo, index) => (
+            {sectionData.logos.map((logo, index) => (
               <div
                 key={index}
                 className="flex items-center justify-center  transition-all duration-300"
