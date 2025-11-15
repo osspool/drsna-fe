@@ -3,7 +3,7 @@
     "slides": [
       {
         "id": 1,
-        "image": "/images/drsnaclinic/doctor-hero.jpg",
+        "image": "/images/drsnaclinic/hero-new.jpg",
         "badge": "GLOBAL RECOGNITION AWARD 2024",
         "headline": "Award-Winning",
         "subheadline": "Dr Syed Nadeem Abbas",
@@ -131,52 +131,28 @@
     "title": "Our Signature Treatments",
     "subtitle": "Experience cutting-edge aesthetic and regenerative medicine with our expert-led treatments",
     "cards": {
-      "integrations": {
-        "title": "PRP Hair Restoration",
-        "description": "Natural regrowth therapy",
-        "image": "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&h=400&fit=crop",
+      "leftTop": {
+        "title": "Stem Cell Therapy",
+        "description": "Advanced regenerative healing",
+        "image": "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=600&h=400&fit=crop",
         "icon": "sparkles",
         "iconColor": "text-emerald-400"
       },
-      "featureTags": {
-        "title": "P-Shot Treatment",
-        "description": "Revolutionary PRP therapy",
-        "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop",
-        "icon": "zap",
-        "iconColor": "text-rose-400"
-      },
-      "secondaryFeature": {
-        "title": "PRP Facial Rejuvenation",
-        "description": "Natural anti-aging treatment",
-        "image": "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&h=400&fit=crop",
-        "icon": "sparkles",
+      "leftMiddle": {
+        "title": "Arthrosamid Treatment",
+        "description": "Revolutionary knee joint pain relief",
+        "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop",
+        "icon": "activity",
         "iconColor": "text-purple-400"
       },
-      "statistic": {
-        "title": "Ultra Femme 360",
-        "description": "Revolutionary laser therapy for feminine wellness",
-        "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=800&fit=crop",
-        "icon": "heart",
-        "iconColor": "text-amber-400",
-        "chips": [
-          {
-            "text": "Vaginal rejuvenation",
-            "className": "bg-amber-500/20 text-white border border-amber-400/30"
-          },
-          {
-            "text": "FDA Approved",
-            "className": "bg-amber-500/20 text-white border border-amber-400/30"
-          }
-        ]
-      },
-      "journey": {
-        "title": "Shockwave Therapy",
-        "description": "ED & musculoskeletal treatment",
+      "leftBottom": {
+        "title": "Joint Rejuvenation",
+        "description": "PRP, Durolane & Osteonil Plus therapy",
         "image": "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&h=400&fit=crop",
-        "icon": "activity",
+        "icon": "zap",
         "iconColor": "text-blue-400"
       },
-      "mainFeature": {
+      "middleTop": {
         "title": "Dr Syed Nadeem Abbas",
         "subtitle": "Consultant Aesthetic Physician",
         "image": "/images/drsnaclinic/doctor-intro-2.png",
@@ -187,6 +163,44 @@
           { "text": "GMC Certified" },
           { "text": "10,000+ Patients" }
         ]
+      },
+      "middleBottom": {
+        "title": "Hair Restoration",
+        "description": "Revolutionary PRP & Exosome therapy",
+        "image": "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&h=800&fit=crop",
+        "icon": "sparkles",
+        "iconColor": "text-amber-400",
+        "chips": [
+          {
+            "text": "Natural regrowth",
+            "className": "bg-amber-500/20 text-white border border-amber-400/30"
+          },
+          {
+            "text": "Advanced PRP",
+            "className": "bg-amber-500/20 text-white border border-amber-400/30"
+          }
+        ]
+      },
+      "rightTop": {
+        "title": "P-Shot Treatment",
+        "description": "Revolutionary PRP therapy for men",
+        "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop",
+        "icon": "zap",
+        "iconColor": "text-rose-400"
+      },
+      "rightMiddle": {
+        "title": "Shockwave Therapy",
+        "description": "ED & musculoskeletal treatment",
+        "image": "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop",
+        "icon": "activity",
+        "iconColor": "text-pink-400"
+      },
+      "rightBottom": {
+        "title": "PRP Facelift",
+        "description": "Revolutionary natural rejuvenation",
+        "image": "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&h=400&fit=crop",
+        "icon": "sparkles",
+        "iconColor": "text-cyan-400"
       }
     },
     "cta": {
@@ -408,12 +422,47 @@
     "title": "Hear From Our Patients",
     "subtitle": "Real stories from real patients who have experienced transformative results at Dr SNA Clinic",
     "items": [
-      { "id": "g5jV7m6O8Ok", "title": "Patient Testimonial 1" },
-      { "id": "4E4heDTY2Uk", "title": "Patient Testimonial 2" },
-      { "id": "wx8OaHQnejs", "title": "Patient Testimonial 3" },
-      { "id": "1evUXYKrunc", "title": "Patient Testimonial 4" },
-      { "id": "SBm8u1SgvdI", "title": "Patient Testimonial 5" },
-      { "id": "yVhRWnPBK0Q", "title": "Patient Testimonial 6" }
+      {
+        "id": "g5jV7m6O8Ok",
+        "title": "Patient Testimonial 1",
+        "orientation": "portrait",
+        "thumbnail": "https://i.ytimg.com/vi/g5jV7m6O8Ok/hq720.jpg",
+        "thumbnailZoom": 6
+      },
+      {
+        "id": "4E4heDTY2Uk",
+        "title": "Patient Testimonial 2",
+        "orientation": "portrait",
+        "thumbnail": "https://i.ytimg.com/vi/4E4heDTY2Uk/hq720.jpg",
+        "thumbnailZoom": 6
+      },
+      {
+        "id": "wx8OaHQnejs",
+        "title": "Patient Testimonial 3",
+        "orientation": "landscape",
+        "thumbnail": "https://i.ytimg.com/vi/wx8OaHQnejs/maxresdefault.jpg"
+      },
+      {
+        "id": "1evUXYKrunc",
+        "title": "Patient Testimonial 4",
+        "orientation": "portrait",
+        "thumbnail": "https://i.ytimg.com/vi/1evUXYKrunc/hq720.jpg",
+        "thumbnailZoom": 6
+      },
+      {
+        "id": "SBm8u1SgvdI",
+        "title": "Patient Testimonial 5",
+        "orientation": "portrait",
+        "thumbnail": "https://i.ytimg.com/vi/SBm8u1SgvdI/hq720.jpg",
+        "thumbnailZoom": 6
+      },
+      {
+        "id": "yVhRWnPBK0Q",
+        "title": "Patient Testimonial 6",
+        "orientation": "portrait",
+        "thumbnail": "https://i.ytimg.com/vi/yVhRWnPBK0Q/hq720.jpg",
+        "thumbnailZoom": 6
+      }
     ]
   },
   "faq": {

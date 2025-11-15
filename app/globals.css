@@ -50,7 +50,7 @@
   }
 
   /* Custom Brand Colors */
-  --color-royal-blue: oklch(0.2865 0.0815 294.76);
+  --color-royal-blue: oklch(0.1884 0.0815 286.82);
   --color-royal-blue-900: oklch(0.1884 0.0815 286.82);
 
   /* Shadcn Color Mappings */
@@ -100,18 +100,18 @@
   /* Luxury Brand Colors - Integrated with Theme System */
   /* Primary = Gold palette for main brand actions */
   --background: oklch(0.989 0.005 85.8);
-  --foreground: oklch(0.2865 0.0815 294.76);
+  --foreground: oklch(0.1884 0.0815 286.82);
   /* oklch (0.161 0.014 60.5); */
-  --royal-blue: oklch(0.2865 0.0815 294.76);
+  --royal-blue: oklch(0.1884 0.0815 286.82);
   
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.2865 0.0815 294.76);
+  --card-foreground: oklch(0.1884 0.0815 286.82);
   
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.2865 0.0815 294.76);
+  --popover-foreground: oklch(0.1884 0.0815 286.82);
   
   /* Primary (Gold) - Main brand color - Posh Gold */
-  --primary: oklch(0.7154 0.0828 80.8);
+  --primary: oklch(0.7011 0.1084 90.94);
   --primary-foreground: oklch(0.98 0.005 85.8);
   
   /* Secondary (Cream/Beige) - Subtle backgrounds */
@@ -134,11 +134,11 @@
   --ring: oklch(0.7361 0.116 91.81);
 
   --sidebar: oklch(0.989 0.005 85.8);
-  --sidebar-foreground: oklch(0.2865 0.0815 294.76);
+  --sidebar-foreground: oklch(0.1884 0.0815 286.82);
   --sidebar-primary: oklch(0.7361 0.116 91.81);
   --sidebar-primary-foreground: oklch(0.98 0.005 85.8);
   --sidebar-accent: oklch(0.96 0.005 85.8);
-  --sidebar-accent-foreground: oklch(0.2865 0.0815 294.76);
+  --sidebar-accent-foreground: oklch(0.1884 0.0815 286.82);
   --sidebar-border: oklch(0.922 0.012 60.5);
   --sidebar-ring: oklch(0.7361 0.116 91.81);
 
@@ -157,22 +157,22 @@
 
   --royal-blue: oklch(0.2033 0.0815 294.76);
   
-  --card: oklch(0.175 0.014 60.5);
+  --card: oklch(0.1412 0.0666 286.82);
   --card-foreground: oklch(0.989 0.005 85.8);
   
-  --popover: oklch(0.175 0.014 60.5);
+  --popover: oklch(0.1412 0.0666 286.82);
   --popover-foreground: oklch(0.989 0.005 85.8);
   
   /* Primary (Brighter Posh Gold in dark mode) */
-  --primary: oklch(0.8361 0.126 91.81);
+  --primary: oklch(0.7011 0.1084 90.94);
   --primary-foreground: oklch(0.125 0.014 60.5);
   
   /* Secondary (Dark Brown/Charcoal) */
-  --secondary: oklch(0.225 0.014 60.5);
+  --secondary: oklch(0.1617 0.0815 286.82);
   --secondary-foreground: oklch(0.989 0.005 85.8);
   
   /* Muted - Darker but visible */
-  --muted: oklch(0.225 0.014 60.5);
+  --muted: oklch(0.1617 0.0815 286.82);
   --muted-foreground: oklch(0.712 0.012 60.5);
   
   /* Accent (Warm Gold) */
@@ -190,7 +190,7 @@
   --sidebar-foreground: oklch(0.989 0.005 85.8);
   --sidebar-primary: oklch(0.8361 0.126 91.81);
   --sidebar-primary-foreground: oklch(0.125 0.014 60.5);
-  --sidebar-accent: oklch(0.225 0.014 60.5);
+  --sidebar-accent: oklch(0.1617 0.0815 286.82);
   --sidebar-accent-foreground: oklch(0.989 0.005 85.8);
   --sidebar-border: oklch(1 0 0 / 12%);
   --sidebar-ring: oklch(0.8361 0.126 91.81);
@@ -249,6 +249,31 @@
 }
 
 @layer components {
+  /* Gradient Border Wrapper - Creates the gradient border effect */
+  .gradient-border {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, var(--primary), var(--royal-blue), var(--primary));
+    padding: 4px;
+    transition: all 0.3s ease;
+  }
+
+  /* Gradient Border Hover State - Use with group-hover: modifier */
+  .gradient-border-hover {
+    background: linear-gradient(to bottom right, var(--primary), hsl(var(--royal-blue) / 0.9), var(--primary));
+    box-shadow: 0 25px 50px -12px hsl(var(--primary) / 0.5);
+  }
+
+  /* Gradient Border Inner - Content wrapper inside gradient border */
+  .gradient-border-inner {
+    position: relative;
+    background: var(--card);
+    backdrop-filter: blur(4px);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
   /* Glass Morphism - Adapts to theme */
   .glass {
     @apply bg-background/10 backdrop-blur-lg border border-border/20;

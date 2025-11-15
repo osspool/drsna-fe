@@ -73,7 +73,7 @@ export function MegaMenu({ item, isOpen, onClose }) {
   return (
     <>
       <div
-        className="fixed top-16 inset-x-0 bottom-0 bg-black/80 backdrop-blur-sm z-40 transition-opacity duration-300 animate-in fade-in"
+        className="fixed top-16 inset-x-0 bottom-0 bg-royal-blue/80 backdrop-blur-sm z-40 transition-opacity duration-300 animate-in fade-in"
         onClick={onClose}
       />
 
@@ -82,7 +82,7 @@ export function MegaMenu({ item, isOpen, onClose }) {
           className="pointer-events-auto w-full overflow-hidden overscroll-contain"
           style={{ height: "calc(100vh - 4rem)" }}
         >
-          <div className="h-full flex flex-col overflow-hidden bg-gradient-to-b from-black via-black/98 to-black/95 animate-in slide-in-from-top-4 fade-in duration-300">
+          <div className="h-full flex flex-col overflow-hidden bg-royal-blue/80 animate-in slide-in-from-top-4 fade-in duration-300">
             {/* Header with breadcrumb and back button */}
             {shouldShowTreatmentMenu ? (
               <TreatmentMenu
@@ -134,7 +134,7 @@ export function MegaMenu({ item, isOpen, onClose }) {
                               </span>
                             </div>
                             <div className="space-y-2">
-                              <span className="text-lg md:text-xl font-semibold transition-colors duration-200 text-white group-hover:text-primary">
+                              <span className="text-lg md:text-xl font-semibold transition-colors duration-200 text-primary group-hover:text-primary">
                                 {child.label}
                               </span>
                               {child.description && (

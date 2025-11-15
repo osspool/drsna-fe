@@ -144,14 +144,9 @@
           "title": "Optimisation Services",
           "description": "Comprehensive mind-body protocols for peak living",
           "treatments": [
-            "life-optimisation",
-            "swallowable-gastric-balloon-weight-transformation",
             "iv-vitamin-therapy",
-            "medical-nutrition-therapy",
-            "sexual-therapy",
-            "faster-eft-advanced-tapping",
-            "life-coaching",
-            "biohacking"
+            "medicated-weight-management",
+            "medical-nutrition-therapy"
           ]
         }
       }
@@ -172,10 +167,8 @@
             "health-screening",
             "illness",
             "test-and-scan",
-            "referrals-and-forms",
             "gp-services-pricing",
-            "iv-vitamin-therapy",
-            "medicated-weight-management"
+            "referrals-and-forms"
           ]
         }
       }

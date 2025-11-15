@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Globe } from "lucide-react";
 import WorldMap from "@/components/aceternity/world-map";
 import { getIconComponent } from "@/lib/icon-utils";
+import { Section } from "../layout/Section";
 
 const defaultData = {
   badge: "Global Excellence",
@@ -117,16 +118,17 @@ export function GlobalReachSection({ data }) {
     }));
 
   return (
-    <section className="relative py-24 md:py-32 bg-gradient-to-b from-secondary via-secondary/90 to-background overflow-hidden">
+    <Section padding="sm" className="relative bg-muted/80">
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-primary rounded-full blur-xl" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.3 }}
           className="text-center mb-20"
         >
           <p className="text-primary text-sm font-semibold tracking-wider uppercase mb-4 flex items-center justify-center gap-2">
@@ -199,12 +201,8 @@ export function GlobalReachSection({ data }) {
 
         <div className="grid grid-cols-2 gap-4 mb-16 md:hidden">
           {patientLocations.map((location, index) => (
-            <motion.div
+            <div
               key={location.label + index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1, duration: 0.3 }}
               className="glass-card rounded-2xl p-6 border border-border hover:border-primary/40 transition-all"
             >
               <div className="text-4xl mb-3">{location.icon}</div>
@@ -217,7 +215,7 @@ export function GlobalReachSection({ data }) {
               <p className="text-xs text-muted-foreground leading-relaxed">
                 {location.description}
               </p>
-            </motion.div>
+            </div>
           ))}
         </div>
 
@@ -225,12 +223,8 @@ export function GlobalReachSection({ data }) {
           {sectionData.stats.map((stat, index) => {
             const Icon = getIconComponent(stat.icon, Globe);
             return (
-              <motion.div
+              <div
                 key={stat.label + index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.08, duration: 0.3 }}
                 className="glass-card rounded-2xl p-8 border border-border hover:border-primary/40 transition-all duration-300 group"
               >
                 <Icon className="w-10 h-10 text-primary mb-4 group-hover:scale-105 transition-transform duration-300" />
@@ -243,17 +237,12 @@ export function GlobalReachSection({ data }) {
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {stat.description}
                 </p>
-              </motion.div>
+              </div>
             );
           })}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-16"
-        >
+        <div className="mb-16">
           <h3 className="text-3xl md:text-4xl font-heading font-bold text-foreground text-center mb-12">
             Why International Patients Choose <span className="text-primary">Dr SNA Clinic</span>
           </h3>
@@ -262,12 +251,8 @@ export function GlobalReachSection({ data }) {
             {sectionData.reasons.map((reason, index) => {
               const ReasonIcon = getIconComponent(reason.icon, Globe);
               return (
-                <motion.div
+                <div
                   key={reason.title + index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1, duration: 0.3 }}
                   className="glass-card rounded-2xl p-8 border border-border hover:border-primary/40 transition-all duration-300"
                 >
                   <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center mb-6">
@@ -279,12 +264,12 @@ export function GlobalReachSection({ data }) {
                   <p className="text-muted-foreground leading-relaxed">
                     {reason.description}
                   </p>
-                </motion.div>
+                </div>
               );
             })}
           </div>
-        </motion.div>
+        </div>
       </div>
-    </section>
+    </Section>
   );
 }

@@ -46,7 +46,7 @@ export function FAQSection({
   const ctaConfig = cta || defaultCTA;
 
   return (
-    <section className="py-24 md:py-32 bg-muted">
+    <section className="py-24 md:py-32 bg-muted/60">
       <Container>
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}

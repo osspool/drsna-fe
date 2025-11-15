@@ -1,0 +1,106 @@
+{
+  "id": "life-optimization",
+  "title": "Life Optimization",
+  "shortTitle": "Life Optimisation",
+  "tagline": "Longevity Medicine Crafted Around You",
+  "description": "Concierge metabolic, nutritional, and regenerative programmes that help high-performers feel grounded, resilient, and energised.",
+  "longDescription": "Life feels different when your biology is aligned. At Dr. SNA Clinic we pair functional testing with targeted IV nutrients, prescription weight programmes, and clinical nutrition therapy so you can recover faster, think clearer, and move through each day with confidence. Every protocol is directed by Dr. Syed Nadeem Abbas and blends medical-science precision with genuine human care.",
+  "seo": {
+    "metaTitle": "Life Optimisation London | IV Therapy & Metabolic Medicine | Dr. SNA Clinic",
+    "metaDescription": "Reclaim energy, focus, and body confidence with concierge IV vitamin therapy, medicated weight management, and medical nutrition in Marylebone.",
+    "keywords": [
+      "life optimisation london",
+      "iv vitamin therapy marylebone",
+      "medical weight management london",
+      "functional nutrition clinic",
+      "longevity doctor near me"
+    ],
+    "h1": "Life Optimisation Programmes in Marylebone"
+  },
+  "hero": {
+    "headline": "Upgrade the Way You Feel Every Day",
+    "subheadline": "Targeted IV nutrients, clinical nutrition, and doctor-led weight programmes delivered in a calm Marylebone setting.",
+    "image": "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?w=1920&q=80",
+    "cta": "Explore Life Optimisation",
+    "stats": [
+      { "value": "3", "label": "Signature Protocols" },
+      { "value": "100%", "label": "Doctor Supervised" },
+      { "value": "Same Day", "label": "Programme Start" }
+    ]
+  },
+  "introduction": {
+    "title": "Medicine That Keeps Pace with Your Ambitions",
+    "content": "Our Life Optimisation suite was designed for patients who refuse to settle for burnout, hormonal chaos, or metabolic slowdowns. We combine diagnostics from the former site with our elevated Marylebone experience so you receive therapies that feel both luxurious and evidence-led. Whether you need a rapid IV recharge between flights or a structured medication plan to reset weight, you are always seen, heard, and guided.",
+    "highlights": [
+      {
+        "icon": "stethoscope",
+        "title": "Consultant-led",
+        "description": "Every programme is tailored by Dr. Abbas with ongoing check-ins."
+      },
+      {
+        "icon": "activity",
+        "title": "Data-informed",
+        "description": "Advanced blood panels and body composition keep progress measurable."
+      },
+      {
+        "icon": "heart",
+        "title": "Whole-person Care",
+        "description": "Mental wellbeing, sleep, and recovery rituals are woven into each plan."
+      }
+    ]
+  },
+  "subcategories": [
+    {
+      "id": "services",
+      "title": "Optimisation Services",
+      "shortDescription": "Build a stronger baseline with targeted IV nutrients, metabolic medicine, and therapeutic nutrition.",
+      "description": "Our concierge programmes are intentionally streamlined so you can choose the level of support you need—whether that is an in-clinic drip to restore vitality, a prescription plan to guide sustainable weight release, or a personalised nutritional strategy to calm inflammation.",
+      "icon": "infinity",
+      "image": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1200&q=80",
+      "treatmentCount": 3,
+      "featured": true,
+      "color": "#112733"
+    }
+  ],
+  "benefits": {
+    "title": "Why Patients Choose Our Life Optimisation Suite",
+    "subtitle": "Rooted in medical science, delivered with warmth.",
+    "items": [
+      {
+        "title": "One-to-one attention",
+        "description": "Appointments are intentionally unhurried so we can understand your pressures and goals."
+      },
+      {
+        "title": "Integrated clinical team",
+        "description": "Doctors, nutritionists, and IV specialists collaborate on every plan."
+      },
+      {
+        "title": "Detox-like environment",
+        "description": "Scent, sound, and lighting turn each visit into a calm reset ritual."
+      }
+    ]
+  },
+  "process": {
+    "title": "How Your Programme Unfolds",
+    "steps": [
+      {
+        "title": "Deep-Dive Consultation",
+        "description": "We review health history, medications, and current lifestyle rhythms."
+      },
+      {
+        "title": "Diagnostics & Blueprint",
+        "description": "Blood work and body composition testing inform a personalised plan."
+      },
+      {
+        "title": "Active Optimisation",
+        "description": "IV drips, nutrition protocols, and medication reviews keep you progressing each week."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Feel Energised Again?",
+    "subtitle": "Book a discovery call to map your Life Optimisation journey.",
+    "primaryButton": "Book Life Optimisation Consult",
+    "secondaryButton": "WhatsApp the Clinic"
+  }
+}

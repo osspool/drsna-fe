@@ -55,7 +55,7 @@ export function AwardSpotlightSection({ data }) {
   const BadgeIcon = getIconComponent(sectionData.badgeIcon || "sparkles", Sparkles);
 
   return (
-    <Section background="muted" padding="lg" className="relative overflow-hidden">
+    <Section background="muted/10" padding="lg" className="relative overflow-hidden">
       <div className="absolute inset-y-0 left-0 w-1/3 opacity-30 pointer-events-none bg-gradient-to-r from-primary/20 to-transparent" />
       <Container className="grid gap-10 lg:grid-cols-2 items-center relative">
         <div>

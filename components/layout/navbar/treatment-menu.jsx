@@ -139,7 +139,7 @@ export function TreatmentMenu({ item, breadcrumb, onBack, onNavigate, inlineChil
                         <Link
                           href={treatment.href || "#"}
                           onClick={handleNavigate}
-                          className="group text-white/80 hover:text-primary transition-all duration-200 text-[13px] py-1.5 px-2 hover:pl-3 hover:bg-white/5 rounded-md flex items-center gap-2"
+                          className="group text-white/80 hover:text-primary transition-all duration-200 text-sm font-medium py-1.5 px-2 hover:pl-3 hover:bg-white/5 rounded-md flex items-center gap-2"
                         >
                           <span className="w-1 h-1 rounded-full bg-white/30 group-hover:bg-primary transition-colors duration-200"></span>
                           {treatment.label}
@@ -185,7 +185,7 @@ export function TreatmentMenu({ item, breadcrumb, onBack, onNavigate, inlineChil
                     <Link
                       href={treatment.href || "#"}
                       onClick={handleNavigate}
-                      className="group text-white/80 hover:text-primary transition-all duration-200 text-[13px] py-1.5 px-2 hover:pl-3 hover:bg-white/5 rounded-md flex items-center gap-2"
+                      className="group text-white/80 hover:text-primary transition-all duration-200 text-sm font-medium py-1.5 px-2 hover:pl-3 hover:bg-white/5 rounded-md flex items-center gap-2"
                     >
                       <span className="w-1 h-1 rounded-full bg-white/30 group-hover:bg-primary transition-colors duration-200"></span>
                       {treatment.label}

@@ -29,7 +29,7 @@ export function CTASection({ data, variant = "default" }) {
         <div className="absolute inset-0 bg-[url('/patterns/dots.svg')] opacity-10" />
 
         <div className="relative z-10">
-          <h3 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary-foreground mb-6">
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-royal-blue mb-6">
             {ctaData.title}
           </h3>
           {ctaData.subtitle && (
@@ -55,7 +55,7 @@ export function CTASection({ data, variant = "default" }) {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/20 text-lg px-10 py-6"
+                className="border-2 border-royal-blue text-royal-blue hover:bg-royal-blue/20 text-lg px-10 py-6"
               >
                 <Link href="/contact">
                   {ctaData.secondaryButton}

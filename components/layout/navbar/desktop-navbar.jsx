@@ -27,7 +27,7 @@ export function DesktopNavbar({ onMenuOpenChange }) {
   const dropdownItems = navigationData.filter((item) => item.children && item.children.length > 0)
 
   return (
-    <>
+    <div className="hidden lg:block">
       <Container maxWidth="full">
         <div className="flex items-center gap-6 h-16">
           {/* Logo */}
@@ -126,6 +126,6 @@ export function DesktopNavbar({ onMenuOpenChange }) {
           onClose={() => setActiveMenuId(null)}
         />
       )}
-    </>
+    </div>
   )
 }

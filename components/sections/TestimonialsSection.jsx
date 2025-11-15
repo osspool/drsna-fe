@@ -13,6 +13,8 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import { Container } from "@/components/layout/Container";
+import { useImageOrientation } from "@/hooks/use-image-orientation";
+import { getYouTubeThumbnailUrl } from "@/lib/utils";
 
 export function TestimonialsSection({
   data,
@@ -49,7 +51,7 @@ export function TestimonialsSection({
                 </span>
               </div>
             )}
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-royal-blue">
               {heading || "Patient Testimonials"}
             </h2>
             {description && (
@@ -60,33 +62,36 @@ export function TestimonialsSection({
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.map((video, index) => (
-              <div
-                key={video.id || index}
-                className="group relative aspect-video rounded-2xl overflow-hidden border-2 border-primary/20 hover:border-primary/60 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2"
-              >
-                <img
-                  src={`https://img.youtube.com/vi/${video.id || video.videoId}/maxresdefault.jpg`}
-                  alt={video.title || `Testimonial ${index + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
+            {testimonials.map((video, index) => {
+              const videoIdentifier = video.id || video.videoId;
 
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/30 to-transparent opacity-60 group-hover:opacity-75 transition-opacity" />
+              return (
+                <div key={videoIdentifier || index} className="group">
+                  <div className="gradient-border group-hover:gradient-border-hover rounded-3xl h-full w-full transition-all duration-500">
+                    <div className="gradient-border-inner rounded-[calc(1.5rem-4px)] overflow-hidden">
+                      <div className="relative aspect-video overflow-hidden bg-muted">
+                        <VideoThumbnail video={video} />
 
-                <button
-                  onClick={() => setSelectedVideo(video.id || video.videoId)}
-                  className="absolute inset-0 flex items-center justify-center cursor-pointer"
-                >
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 shadow-lg">
-                    <Play className="w-7 h-7 text-primary-foreground ml-1" fill="currentColor" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/30 to-transparent opacity-60 group-hover:opacity-75 transition-opacity" />
+
+                        <button
+                          onClick={() => setSelectedVideo(videoIdentifier)}
+                          className="absolute inset-0 flex items-center justify-center cursor-pointer"
+                        >
+                          <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 shadow-lg">
+                            <Play className="w-7 h-7 text-primary-foreground ml-1" fill="currentColor" />
+                          </div>
+                        </button>
+
+                        <div className="absolute top-4 left-4 px-3 py-1.5 rounded-full border border-primary/30 bg-background/80 backdrop-blur-sm">
+                          <span className="text-primary text-sm font-medium">#Testimonial</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </button>
-
-                <div className="absolute top-4 left-4 px-3 py-1.5 rounded-full border border-primary/30 bg-background/80 backdrop-blur-sm">
-                  <span className="text-primary text-sm font-medium">#Testimonial</span>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </Container>
 
@@ -248,5 +253,48 @@ export function TestimonialsSection({
         </div>
       </Container>
     </section>
+  );
+}
+
+function VideoThumbnail({ video }) {
+  const videoIdentifier = video.id || video.videoId;
+  const manualOrientation =
+    video.orientation || (typeof video.isPortrait === "boolean" ? (video.isPortrait ? "portrait" : "landscape") : undefined);
+  const initialThumbnail =
+    video.thumbnail || (videoIdentifier ? getYouTubeThumbnailUrl(videoIdentifier, { orientationHint: manualOrientation }) : null);
+  const orientation = useImageOrientation(initialThumbnail);
+  const resolvedOrientation = manualOrientation || orientation;
+  const isPortrait = resolvedOrientation === "portrait";
+  const PORTRAIT_DEFAULT_SCALE = 4;
+  const baseScale =
+    typeof video.thumbnailZoom === "number"
+      ? video.thumbnailZoom
+      : isPortrait
+        ? PORTRAIT_DEFAULT_SCALE
+        : 1;
+  const thumbnailSrc =
+    video.thumbnail || (videoIdentifier ? getYouTubeThumbnailUrl(videoIdentifier, { orientationHint: resolvedOrientation }) : null);
+  const computeBackgroundSize = () => {
+    if (!isPortrait) return "cover";
+    const widthPercent = Math.max(baseScale * 100, 400);
+    return `${widthPercent}% auto`;
+  };
+
+  if (!thumbnailSrc) {
+    return <div className="absolute inset-0 bg-muted" />;
+  }
+
+  return (
+    <div className="absolute inset-0 overflow-hidden" aria-label={video.title || "Patient testimonial"}>
+      <div
+        className="h-full w-full transition-[background-size] duration-500 group-hover:scale-[1.02]"
+        style={{
+          backgroundImage: `url(${thumbnailSrc})`,
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: computeBackgroundSize(),
+        }}
+      />
+    </div>
   );
 }

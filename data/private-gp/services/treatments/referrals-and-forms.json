@@ -1,0 +1,66 @@
+{
+  "id": "referrals-and-forms",
+  "categoryId": "private-gp",
+  "subcategoryId": "services",
+  "title": "Referrals & Medical Forms",
+  "shortTitle": "Referrals & Forms",
+  "tagline": "Documentation handled with precision and speed.",
+  "description": "From specialist referrals to embassy letters, we replicate the efficient service highlighted on our original site.",
+  "seo": {
+    "metaTitle": "Private Medical Referrals & Forms London | Dr. SNA Clinic",
+    "metaDescription": "Request consultant referrals, medical certificates, visa letters, insurance forms, and occupational health reports within 24-48 hours.",
+    "keywords": [
+      "private medical letter",
+      "gp referral letter",
+      "fit to fly note",
+      "visa medical letter",
+      "occupational health report"
+    ],
+    "h1": "Medical Referrals & Documentation",
+    "canonicalUrl": "/treatments/private-gp/services/referrals-and-forms"
+  },
+  "hero": {
+    "headline": "Paperwork, Perfected",
+    "subheadline": "Our admin team liaises with consultants, embassies, insurers, and HR on your behalf.",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&q=80",
+    "badge": "48-Hour Turnaround"
+  },
+  "overview": {
+    "title": "Documents We Prepare",
+    "content": "Specialist referrals, second-opinion letters, insurance forms, visa and immigration medicals, fit-to-fly notes, school health certificates, vaccination summaries, and occupational health reports. All documents are written by a GMC-registered doctor on headed paper.",
+    "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80",
+    "highlights": [
+      "Digital and hard copies provided",
+      "Urgent same-day letters available",
+      "Dedicated liaison for embassy communications"
+    ]
+  },
+  "howItWorks": {
+    "enabled": true,
+    "title": "Our Documentation Process",
+    "benefits": [
+      { "title": "Consult", "description": "Share your requirements; we may need a brief appointment to verify medical history.", "icon": "message-circle" },
+      { "title": "Draft", "description": "Your GP prepares the letter or form, confirming facts with consultants if needed.", "icon": "edit-3" },
+      { "title": "Deliver", "description": "Receive secure digital copies and optional couriered originals.", "icon": "send" }
+    ]
+  },
+  "benefits": {
+    "title": "Why Clients Rely on Us",
+    "items": [
+      { "title": "Accuracy", "description": "All details double-checked to prevent embassy or insurer delays." },
+      { "title": "Speed", "description": "Standard turnaround 24-48 hours; urgent requests completed sooner." },
+      { "title": "Connections", "description": "Strong relationships with London consultants ensure seamless referrals." }
+    ]
+  },
+  "faq": [
+    { "question": "Do I need an appointment?", "answer": "For new patients we require a short consultation to verify medical history before issuing documentation." },
+    { "question": "Can you courier documents overseas?", "answer": "Yes, we partner with secure couriers for global delivery (fees apply)." },
+    { "question": "Are digital signatures accepted?", "answer": "Most partners accept e-signed PDFs; let us know if a wet signature is required." }
+  },
+  "cta": {
+    "title": "Request Referrals or Letters",
+    "subtitle": "Tell us exactly what paperwork you need—we'll handle the rest.",
+    "primaryButton": "Submit Request",
+    "secondaryButton": "Email Documents"
+  }
+}

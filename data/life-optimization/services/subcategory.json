@@ -1,0 +1,129 @@
+{
+  "id": "services",
+  "categoryId": "life-optimization",
+  "title": "Optimisation Services",
+  "shortTitle": "Protocol Menu",
+  "tagline": "Take ownership of your energy, metabolism, and nourishment.",
+  "description": "Pick from three concierge programmes inspired by our previous clinic website—each one blends functional diagnostics with heartfelt support.",
+  "longDescription": "Life optimisation is more than a single IV push. It is the careful threading together of hydration, nutrient density, metabolism, and nourishment so your mind and body feel synchronised. From our Marylebone lounge we offer three cornerstone services that collectively cover reset, reshape, and replenish.",
+  "seo": {
+    "metaTitle": "Life Optimisation Services London | IV Therapy, Weight Medicine, Nutrition",
+    "metaDescription": "Discover Dr. SNA Clinic's curated IV vitamin therapy, medicated weight management, and medical nutrition therapy programmes.",
+    "keywords": [
+      "iv vitamin therapy london",
+      "medical nutritionist marylebone",
+      "medicated weight loss clinic",
+      "life optimisation clinic"
+    ],
+    "h1": "Our Life Optimisation Protocols"
+  },
+  "hero": {
+    "headline": "Focused Protocols, Powerful Shifts",
+    "subheadline": "Inspired by the most-loved programmes on our previous site—now refined for an even calmer, more luxurious journey.",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80",
+    "backgroundImage": "https://images.unsplash.com/photo-1547234935-80c7145ec969?w=1920&q=80",
+    "cta": "Explore Protocols"
+  },
+  "introduction": {
+    "title": "Three Ways to Reclaim Your Vitality",
+    "content": "Whether burnout has blurred your focus, hormones are sabotaging your weight, or inflammation has muted your appetite for life, our signature services provide a direct path back to balance. Each option can be experienced on its own or layered together for a comprehensive upgrade.",
+    "image": "https://images.unsplash.com/photo-1528712306091-ed0763094c98?w=1400&q=80",
+    "highlights": [
+      "Doctor present at every milestone",
+      "Tailored supplementation & medication plans",
+      "WhatsApp access between visits"
+    ]
+  },
+  "treatments": {
+    "iv-vitamin-therapy": {
+      "title": "IV Vitamin Therapy",
+      "shortDescription": "Medical-grade nutrient infusions based on your lab work.",
+      "description": "Hydrate, remineralise, and calm inflammation with bespoke drips that mirror the IV formulas from our previous Marylebone clinic.",
+      "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+      "duration": "60 mins in-clinic",
+      "downtime": "None",
+      "results": "Feel refreshed same day",
+      "longevity": "1-2 weeks",
+      "price": "From £275",
+      "benefits": [
+        "Energy and immunity boost",
+        "Faster recovery from travel",
+        "Glowing skin and calm nerves"
+      ],
+      "featured": true,
+      "popular": true
+    },
+    "medicated-weight-management": {
+      "title": "Medicated Weight Management",
+      "shortDescription": "Doctor-prescribed medication paired with mindful coaching.",
+      "description": "Weekly accountability, appetite reset, and metabolic testing help you lose weight in a clinically safe, emotionally supportive environment.",
+      "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&q=80",
+      "duration": "12-week programme",
+      "downtime": "Lifestyle integrated",
+      "results": "Visible in 4-6 weeks",
+      "longevity": "Sustainable habits",
+      "price": "Programmes from £1,200",
+      "benefits": [
+        "Prescription-only medications",
+        "Nutrition and mindset support",
+        "Body composition scans"
+      ],
+      "featured": true,
+      "popular": true
+    },
+    "medical-nutrition-therapy": {
+      "title": "Medical Nutrition Therapy",
+      "shortDescription": "Functional nutrition plans to soothe inflammation and stabilise hormones.",
+      "description": "Work with our clinical nutritionist to translate lab results into therapeutic meal plans, supplementation, and digestive care.",
+      "image": "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=800&q=80",
+      "duration": "Monthly reviews",
+      "downtime": "Not applicable",
+      "results": "Gradual, whole-body shift",
+      "longevity": "Lifetime education",
+      "price": "From £350 per block",
+      "benefits": [
+        "Anti-inflammatory frameworks",
+        "Hormone and gut balancing",
+        "Recipe packs & shopping lists"
+      ],
+      "featured": false,
+      "popular": true
+    }
+  },
+  "benefits": {
+    "title": "Why Choose Dr. SNA Clinic",
+    "items": [
+      { "title": "Calm private lounges", "description": "Infusions happen in cocoon-like suites with aromatherapy and warm blankets." },
+      { "title": "Continuity of care", "description": "See the same doctor and nutritionist throughout your journey." },
+      { "title": "Evidence-led supplements", "description": "All IV tracks and nutrition plans are formulated from peer-reviewed protocols." }
+    ]
+  },
+  "process": {
+    "title": "The Journey",
+    "steps": [
+      { "title": "Comprehensive Assessment", "description": "We revisit health questionnaires, biomarkers, and the goals you shared on our former site." },
+      { "title": "Plan Activation", "description": "IV bookings, medication delivery, or nutrition coaching begins within days." },
+      { "title": "Rhythm & Review", "description": "Data reviews every 4 weeks ensure you keep building momentum." }
+    ]
+  },
+  "faq": [
+    {
+      "question": "Do I need blood tests before starting?",
+      "answer": "Yes, we review existing labs or arrange new panels to ensure every protocol is safe and targeted."
+    },
+    {
+      "question": "Can I combine services?",
+      "answer": "Most patients blend IV therapy with either weight support or nutrition therapy for a comprehensive reset."
+    },
+    {
+      "question": "Is financing available?",
+      "answer": "We offer staged payments for programmes over 8 weeks—speak with our patient concierge for details."
+    }
+  ],
+  "cta": {
+    "title": "Design Your Life Optimisation Plan",
+    "subtitle": "Share your goals and we will map the right combination of drips, medication, and nutrition.",
+    "primaryButton": "Book Discovery Call",
+    "secondaryButton": "Download Programme PDF"
+  }
+}

@@ -12,14 +12,14 @@ const BentoCard = ({ children, className }) => {
   return (
     <div
       className={cn(
-        "group relative overflow-hidden rounded-3xl border border-border/50",
-        "backdrop-blur-sm transition-all duration-300",
-        "hover:shadow-2xl hover:border-primary/30 hover:scale-[1.02]",
-        "h-full",
+        "group gradient-border group-hover:gradient-border-hover rounded-3xl h-full",
+        "hover:scale-[1.02] transition-all duration-300",
         className
       )}
     >
-      {children}
+      <div className="gradient-border-inner rounded-[calc(1.5rem-4px)]">
+        {children}
+      </div>
     </div>
   );
 };
@@ -33,28 +33,40 @@ const defaultData = {
   subtitle:
     "Experience cutting-edge aesthetic and regenerative medicine with our expert-led treatments",
   cards: {
-    integrations: {
+    leftTop: {
       title: "PRP Hair Restoration",
       description: "Natural regrowth therapy",
       image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&h=400&fit=crop",
       icon: "sparkles",
       iconColor: "text-emerald-400",
     },
-    featureTags: {
-      title: "P-Shot Treatment",
-      description: "Revolutionary PRP therapy",
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop",
-      icon: "zap",
-      iconColor: "text-rose-400",
-    },
-    secondaryFeature: {
+    leftMiddle: {
       title: "PRP Facial Rejuvenation",
       description: "Natural anti-aging treatment",
       image: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&h=400&fit=crop",
       icon: "sparkles",
       iconColor: "text-purple-400",
     },
-    statistic: {
+    leftBottom: {
+      title: "Shockwave Therapy",
+      description: "ED & musculoskeletal treatment",
+      image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&h=400&fit=crop",
+      icon: "activity",
+      iconColor: "text-blue-400",
+    },
+    middleTop: {
+      title: "Dr Syed Nadeem Abbas",
+      subtitle: "Consultant Aesthetic Physician",
+      image: "/images/drsnaclinic/doctor-intro-2.png",
+      icon: "award",
+      iconColor: "text-primary",
+      highlights: [
+        { text: "CQC Registered" },
+        { text: "GMC Certified" },
+        { text: "10,000+ Patients" },
+      ],
+    },
+    middleBottom: {
       title: "Ultra Femme 360",
       description: "Revolutionary laser therapy for feminine wellness",
       image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=800&fit=crop",
@@ -71,24 +83,26 @@ const defaultData = {
         },
       ],
     },
-    journey: {
-      title: "Shockwave Therapy",
-      description: "ED & musculoskeletal treatment",
-      image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&h=400&fit=crop",
-      icon: "activity",
-      iconColor: "text-blue-400",
+    rightTop: {
+      title: "P-Shot Treatment",
+      description: "Revolutionary PRP therapy",
+      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop",
+      icon: "zap",
+      iconColor: "text-rose-400",
     },
-    mainFeature: {
-      title: "Dr Syed Nadeem Abbas",
-      subtitle: "Consultant Aesthetic Physician",
-      image: "/images/drsnaclinic/doctor-intro-2.png",
-      icon: "award",
-      iconColor: "text-primary",
-      highlights: [
-        { text: "CQC Registered" },
-        { text: "GMC Certified" },
-        { text: "10,000+ Patients" },
-      ],
+    rightMiddle: {
+      title: "Dermal Fillers",
+      description: "Natural facial enhancement",
+      image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=400&fit=crop",
+      icon: "sparkles",
+      iconColor: "text-pink-400",
+    },
+    rightBottom: {
+      title: "Anti-Wrinkle Treatments",
+      description: "Smooth and refresh your skin",
+      image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&h=400&fit=crop",
+      icon: "sparkles",
+      iconColor: "text-cyan-400",
     },
   },
   cta: {
@@ -115,7 +129,7 @@ const ImageCard = ({ card, minHeight = 280 }) => {
         />
         <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-black/20" />
         <div className="absolute inset-0 p-6 flex flex-col justify-end">
-          <h3 className="text-2xl md:text-3xl font-bold mb-2 text-white">
+          <h3 className="text-2xl md:text-3xl font-heading font-bold mb-2 text-white">
             {card.title}
           </h3>
           {card.description && (
@@ -156,11 +170,12 @@ const MainFeatureCard = ({ card }) => {
           src={imageSrc}
           alt={card.title}
           fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className="object-cover object-center md:object-center transition-transform duration-500 group-hover:scale-105"
+          style={{ objectPosition: 'center 30%' }}
         />
         <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/50 to-transparent" />
         <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-end items-center text-center">
-          <h3 className="text-3xl md:text-4xl font-bold mb-2 text-white">
+          <h3 className="text-3xl md:text-4xl font-heading font-bold mb-2 text-white">
             {card.title}
           </h3>
           {card.subtitle && (
@@ -205,19 +220,17 @@ export const TreatmentBentoSection = ({ data }) => {
 
   return (
     <Section padding="sm" className="relative bg-royal-blue/10">
-      <div className="container mx-auto px-4 mb-12 text-center">
+      <div className="container mx-auto px-4 mb-14 md:mb-16 text-center">
         {sectionData.badge?.text && (
-          <div className="inline-flex items-center justify-center px-4 py-1.5 mb-6 rounded-full bg-primary/10 border border-primary/20">
-            <span className="text-sm font-medium text-primary">
-              {sectionData.badge.text}
-            </span>
-          </div>
+          <p className="text-primary text-xs font-semibold tracking-widest uppercase mb-3">
+            {sectionData.badge.text}
+          </p>
         )}
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-4">
           {sectionData.title}
         </h2>
         {sectionData.subtitle && (
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             {sectionData.subtitle}
           </p>
         )}
@@ -225,19 +238,21 @@ export const TreatmentBentoSection = ({ data }) => {
 
       <div className="container mx-auto px-4">
         <BentoGridShowcase
-          integrations={<ImageCard card={cards.integrations} />}
-          mainFeature={<MainFeatureCard card={cards.mainFeature} />}
-          featureTags={<ImageCard card={cards.featureTags} />}
-          secondaryFeature={<ImageCard card={cards.secondaryFeature} />}
-          statistic={<ImageCard card={cards.statistic} minHeight={340} />}
-          journey={<ImageCard card={cards.journey} />}
+          leftTop={<ImageCard card={cards.leftTop} />}
+          leftMiddle={<ImageCard card={cards.leftMiddle} />}
+          leftBottom={<ImageCard card={cards.leftBottom} />}
+          middleTop={<MainFeatureCard card={cards.middleTop} />}
+          middleBottom={<ImageCard card={cards.middleBottom} minHeight={340} />}
+          rightTop={<ImageCard card={cards.rightTop} />}
+          rightMiddle={<ImageCard card={cards.rightMiddle} />}
+          rightBottom={<ImageCard card={cards.rightBottom} />}
         />
       </div>
 
       {(sectionData.cta?.text || sectionData.cta?.button) && (
         <div className="container mx-auto px-4 mt-12 text-center">
           {sectionData.cta?.text && (
-            <p className="text-muted-foreground mb-6">
+            <p className="text-royal-blue font-bold mb-6">
               {sectionData.cta.text}
             </p>
           )}

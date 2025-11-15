@@ -1,0 +1,64 @@
+{
+  "id": "gp-services-pricing",
+  "categoryId": "private-gp",
+  "subcategoryId": "services",
+  "title": "GP Services Pricing",
+  "shortTitle": "Pricing Guide",
+  "tagline": "Transparent fees inspired by our legacy pricing page.",
+  "description": "Understand your investment before booking—no surprise admin fees.",
+  "seo": {
+    "metaTitle": "Private GP Pricing London | Consultation & Screening Fees | Dr. SNA Clinic",
+    "metaDescription": "View the cost of GP consultations, home visits, health screening, tests, and medical letters at our Marylebone practice.",
+    "keywords": [
+      "private gp cost",
+      "health screening price london",
+      "private doctor fees",
+      "home visit doctor cost"
+    ],
+    "h1": "Private GP Pricing",
+    "canonicalUrl": "/treatments/private-gp/services/gp-services-pricing"
+  },
+  "hero": {
+    "headline": "Clarity Before You Book",
+    "subheadline": "We publish our most-requested fees and create bespoke quotes for complex cases.",
+    "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&q=80",
+    "badge": "Transparent"
+  },
+  "overview": {
+    "title": "Guide Pricing",
+    "content": "Standard GP appointment (30 mins) from £250 • Extended appointment (60 mins) from £395 • Home or hotel visit from £495 • Health screening from £895 • Blood tests from £95 + lab fees • Medical letters from £65 • Visa/insurance forms from £120 • Corporate retainers available on request.",
+    "highlights": [
+      "Membership packages starting at £190/month",
+      "Corporate wellness days tailored to your office",
+      "Payment plans for larger diagnostic bundles"
+    ]
+  },
+  "pricing": {
+    "title": "Sample Packages",
+    "cards": [
+      {
+        "title": "Signature GP Membership",
+        "description": "Includes quarterly consultations, priority booking, and WhatsApp access.",
+        "price": "£190/month",
+        "items": ["4 GP visits per year", "Discounted diagnostics", "Dedicated patient liaison"]
+      },
+      {
+        "title": "Couple's Health MOT",
+        "description": "Dual screenings with side-by-side appointments.",
+        "price": "£1,650",
+        "items": ["Comprehensive labs", "Cardiac testing", "Joint health roadmap"]
+      }
+    ]
+  },
+  "faq": [
+    { "question": "Do you accept insurance?", "answer": "We provide invoices for reimbursement. Some insurers cover consultations and diagnostics—check with your provider." },
+    { "question": "Are payment plans available?", "answer": "Yes, we can stage payments for programmes over £1,000." },
+    { "question": "What is your cancellation policy?", "answer": "48 hours' notice is required; otherwise 50% of the fee is charged to protect clinical time." }
+  },
+  "cta": {
+    "title": "Request a Personalised Quote",
+    "subtitle": "Share your needs and we’ll send transparent pricing within hours.",
+    "primaryButton": "Enquire About Pricing",
+    "secondaryButton": "Call 0203 011 1234"
+  }
+}

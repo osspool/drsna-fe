@@ -57,27 +57,28 @@ export function VideoTestimonialBlock({ data }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 }}
-              className="group"
+              className="group h-full"
             >
-              <div className="bg-card rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-primary/10">
-                {/* Video */}
-                <div className="relative">
-                  <VideoPlayer
-                    video={testimonial.video}
-                    isPlaying={!!playing[index]}
-                    onPlay={() => handlePlay(index)}
-                    size="md"
-                    className="rounded-none"
-                  />
+              <div className="gradient-border group-hover:gradient-border-hover rounded-3xl h-full w-full transition-all duration-500">
+                <div className="gradient-border-inner rounded-[calc(1.5rem-4px)] flex flex-col h-full">
+                  {/* Video */}
+                  <div className="relative">
+                    <VideoPlayer
+                      video={testimonial.video}
+                      isPlaying={!!playing[index]}
+                      onPlay={() => handlePlay(index)}
+                      size="md"
+                      className="rounded-none"
+                    />
 
-                  {/* Quote Badge */}
-                  <div className="absolute top-4 right-4 bg-primary/90 backdrop-blur-sm rounded-full p-3 shadow-lg">
-                    <Quote className="w-5 h-5 text-primary-foreground" fill="currentColor" />
+                    {/* Quote Badge */}
+                    <div className="absolute top-4 right-4 bg-primary/90 backdrop-blur-sm rounded-full p-3 shadow-lg">
+                      <Quote className="w-5 h-5 text-primary-foreground" fill="currentColor" />
+                    </div>
                   </div>
-                </div>
 
-                {/* Content */}
-                <div className="p-6 lg:p-8">
+                  {/* Content */}
+                  <div className="p-6 lg:p-8 flex-1 flex flex-col">
                   {/* Rating */}
                   {testimonial.rating && (
                     <div className="flex items-center gap-1 mb-4">
@@ -124,6 +125,7 @@ export function VideoTestimonialBlock({ data }) {
                       <p className="text-sm text-muted-foreground">{testimonial.results}</p>
                     </div>
                   )}
+                  </div>
                 </div>
               </div>
             </motion.div>

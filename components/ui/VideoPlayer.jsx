@@ -1,7 +1,8 @@
 "use client";
 
 import { Play } from "lucide-react";
-import { cn, getYouTubeId } from "@/lib/utils";
+import { useImageOrientation } from "@/hooks/use-image-orientation";
+import { cn, getYouTubeId, getYouTubeThumbnailUrl } from "@/lib/utils";
 
 const PLAY_BUTTON_SIZES = {
   lg: "w-24 h-24",
@@ -17,8 +18,28 @@ const PLAY_ICON_SIZES = {
 
 export function VideoPlayer({ video = {}, isPlaying = false, onPlay, size = "md", className = "" }) {
   const videoId = getYouTubeId(video.url);
-  // Use maxresdefault for best quality, fall back to hqdefault which is more reliable
-  const thumbnail = video.thumbnail || (videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : null);
+  const PORTRAIT_DEFAULT_SCALE = 4;
+  const manualOrientation =
+    video.orientation || (typeof video.isPortrait === "boolean" ? (video.isPortrait ? "portrait" : "landscape") : undefined);
+  const initialThumbnail = video.thumbnail || (videoId ? getYouTubeThumbnailUrl(videoId, { orientationHint: manualOrientation }) : null);
+  const orientation = useImageOrientation(initialThumbnail);
+  const resolvedOrientation = manualOrientation || orientation;
+  const isPortraitThumbnail = resolvedOrientation === "portrait";
+  const thumbnail =
+    video.thumbnail || (videoId ? getYouTubeThumbnailUrl(videoId, { orientationHint: resolvedOrientation }) : null);
+
+  const computeBackgroundSize = () => {
+    if (!isPortraitThumbnail) return "cover";
+    const widthPercent = Math.max(baseScale * 100, 400);
+    return `${widthPercent}% auto`;
+  };
+
+  const baseScale =
+    typeof video.thumbnailZoom === "number"
+      ? video.thumbnailZoom
+      : isPortraitThumbnail
+        ? PORTRAIT_DEFAULT_SCALE
+        : 1;
 
   const handlePlay = () => {
     if (typeof onPlay === "function") {
@@ -29,7 +50,7 @@ export function VideoPlayer({ video = {}, isPlaying = false, onPlay, size = "md"
   if (!video?.url) return null;
 
   return (
-    <div className={cn("relative aspect-video overflow-hidden shadow-2xl bg-secondary/10", className)}>
+    <div className={cn("group relative aspect-video overflow-hidden shadow-2xl bg-secondary/10", className)}>
       {isPlaying ? (
         videoId ? (
           <iframe
@@ -51,9 +72,22 @@ export function VideoPlayer({ video = {}, isPlaying = false, onPlay, size = "md"
       ) : (
         <>
           {thumbnail ? (
-            <img src={thumbnail} alt={video.title || "Video thumbnail"} className="w-full h-full object-cover" />
+            <div
+              className="absolute inset-0 overflow-hidden"
+              aria-label={video.title || "Video thumbnail"}
+            >
+              <div
+                className="h-full w-full transition-[background-size] duration-500 group-hover:scale-[1.02]"
+                style={{
+                  backgroundImage: `url(${thumbnail})`,
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: computeBackgroundSize(),
+                }}
+              />
+            </div>
           ) : (
-            <div className="w-full h-full bg-muted" />
+            <div className="absolute inset-0 bg-muted" />
           )}
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-transparent to-transparent" />
           <button

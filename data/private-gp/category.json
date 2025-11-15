@@ -1,0 +1,80 @@
+{
+  "id": "private-gp",
+  "title": "Private GP",
+  "shortTitle": "Private GP",
+  "tagline": "Doctor-led family medicine with hospitality-level service.",
+  "description": "Same-day appointments, investigations, and letters delivered with the warmth that defined our original GP pages.",
+  "longDescription": "Our Private GP service exists for patients who value continuity, discretion, and access. Every consultation is handled by Dr. Syed Nadeem Abbas or our core GP partners who have supported families through the original drsnaclinic.com site. From annual health screens to urgent prescriptions, we manage the details so you can focus on healing.",
+  "seo": {
+    "metaTitle": "Private GP Marylebone | Health Screening & Same-Day Care | Dr. SNA Clinic",
+    "metaDescription": "Book private GP appointments, comprehensive health screening, tests, referrals, and transparent pricing at our Marylebone clinic.",
+    "keywords": [
+      "private gp london",
+      "health screening marylebone",
+      "same day gp appointment",
+      "private blood tests",
+      "medical referrals london"
+    ],
+    "h1": "Private GP Services in Marylebone"
+  },
+  "hero": {
+    "headline": "Healthcare That Fits Around Your Life",
+    "subheadline": "Concierge appointments, rapid diagnostics, and medical letters when you need them most.",
+    "image": "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?w=1920&q=80",
+    "cta": "Explore GP Services",
+    "stats": [
+      { "value": "24/7", "label": "Patient Support" },
+      { "value": "4", "label": "Core GP Services" },
+      { "value": "15+", "label": "Years Caring for Families" }
+    ]
+  },
+  "introduction": {
+    "title": "Your Family's Medical Anchor",
+    "content": "From busy executives to young families, our GP department handles everything with grace: health maintenance, urgent illness reviews, scans, blood tests, and the paperwork that often causes stress. Expect the same attentiveness you experienced on our long-standing GP pages, now elevated with even deeper diagnostics and wellbeing support.",
+    "highlights": [
+      {
+        "icon": "clock",
+        "title": "Same-Day Access",
+        "description": "Appointments available in person, via video, or at home."
+      },
+      {
+        "icon": "scale",
+        "title": "Transparent Fees",
+        "description": "Clear pricing for consultations, screenings, and letters."
+      },
+      {
+        "icon": "microscope",
+        "title": "On-Site Testing",
+        "description": "Most blood tests and scans arranged within hours."
+      }
+    ]
+  },
+  "subcategories": [
+    {
+      "id": "services",
+      "title": "GP Services",
+      "shortDescription": "Health screening, illness appointments, diagnostics, fees, and referrals.",
+      "description": "Browse the five key services our Marylebone patients requested most on the original site. Each pathway includes the reassurance of a consultant-led practice and concierge follow-up.",
+      "icon": "stethoscope",
+      "image": "https://images.unsplash.com/photo-1550831107-1553da8c8464?w=1200&q=80",
+      "treatmentCount": 5,
+      "featured": true,
+      "color": "#12303f"
+    }
+  ],
+  "benefits": {
+    "title": "What Sets Our GP Care Apart",
+    "subtitle": "Born from decades of patient trust.",
+    "items": [
+      { "title": "Continuity", "description": "See the same doctor who knows your history and family context." },
+      { "title": "Coordination", "description": "Hospital consultants and imaging centres briefed before you arrive." },
+      { "title": "Calm environment", "description": "Boutique clinic interiors with zero rushed waiting rooms." }
+    ]
+  },
+  "cta": {
+    "title": "Need a Private GP Today?",
+    "subtitle": "Call or message our team to arrange the service you require.",
+    "primaryButton": "Book GP Visit",
+    "secondaryButton": "WhatsApp Us"
+  }
+}

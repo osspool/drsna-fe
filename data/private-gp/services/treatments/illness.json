@@ -1,0 +1,72 @@
+{
+  "id": "illness",
+  "categoryId": "private-gp",
+  "subcategoryId": "services",
+  "title": "Illness & Urgent GP Appointments",
+  "shortTitle": "Illness Appointments",
+  "tagline": "See a doctor who listens, diagnoses, and follows up.",
+  "description": "Same-day private GP access for infections, flare-ups, medication reviews, or second opinions—just like the trusted page on drsnaclinic.com/illness.",
+  "seo": {
+    "metaTitle": "Same-Day Private GP London | Illness Appointments | Dr. SNA Clinic",
+    "metaDescription": "Book urgent private GP appointments in Marylebone for infections, flare-ups, and prescriptions with concierge follow-up.",
+    "keywords": [
+      "same day gp london",
+      "private illness appointment",
+      "private doctor marylebone",
+      "urgent gp appointment"
+    ],
+    "h1": "Private GP for Illness & Acute Concerns",
+    "canonicalUrl": "/treatments/private-gp/services/illness"
+  },
+  "hero": {
+    "headline": "Feel Heard, Leave with a Plan",
+    "subheadline": "Appointments in clinic, via secure video, or at home.",
+    "image": "https://images.unsplash.com/photo-1527613426441-4da17471b66d?w=1920&q=80",
+    "badge": "Same-Day GP"
+  },
+  "quickStats": {
+    "duration": "30-45 minutes",
+    "downtime": "Guidance provided",
+    "resultsVisible": "Immediate plan",
+    "price": "From £250",
+    "sessions": "As needed"
+  },
+  "overview": {
+    "title": "What Happens During Your Visit",
+    "content": "We take a full history, examine you thoroughly, and arrange rapid tests if necessary (strep, flu, COVID, blood work, or imaging). Treatment plans may include private prescriptions, injectable therapies, letters for work or travel, and referrals to trusted consultants.",
+    "image": "https://images.unsplash.com/photo-1550831108-299247fa0dc5?w=1200&q=80",
+    "highlights": [
+      "In-person or remote appointments",
+      "Private prescriptions issued on the spot",
+      "Follow-up call within 48 hours"
+    ]
+  },
+  "howItWorks": {
+    "enabled": true,
+    "title": "Our Approach",
+    "benefits": [
+      { "title": "Listen", "description": "Every symptom is documented without rush.", "icon": "ear" },
+      { "title": "Investigate", "description": "Point-of-care tests arranged immediately.", "icon": "activity" },
+      { "title": "Plan & Follow", "description": "Personalised treatment with concierge follow-up.", "icon": "check-circle" }
+    ]
+  },
+  "benefits": {
+    "title": "Why Patients Choose Us When They’re Unwell",
+    "items": [
+      { "title": "No waiting rooms", "description": "We stagger appointments to protect privacy." },
+      { "title": "Holistic care", "description": "Stress management and home-care tips accompany prescriptions." },
+      { "title": "Fast referrals", "description": "Direct introductions to consultants if escalation is needed." }
+    ]
+  },
+  "faq": [
+    { "question": "Do you see children?", "answer": "Yes, families are welcome. We allocate more time for paediatric appointments." },
+    { "question": "Can you visit my home or hotel?", "answer": "Home visits are available within central London for an additional fee." },
+    { "question": "Will you update my NHS GP?", "answer": "We can share reports with your NHS GP upon request." }
+  ],
+  "cta": {
+    "title": "Need to See a GP Today?",
+    "subtitle": "Call or WhatsApp us to arrange an urgent appointment.",
+    "primaryButton": "Book Same-Day GP",
+    "secondaryButton": "WhatsApp the Clinic"
+  }
+}

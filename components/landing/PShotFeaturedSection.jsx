@@ -25,21 +25,24 @@ const defaultData = {
       title: "Blood Collection",
       description:
         "A small blood sample is taken and processed to extract platelet-rich plasma containing growth factors",
-      image: "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=400&q=80",
+      image:
+        "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=400&q=80",
     },
     {
       step: "02",
       title: "PRP Preparation",
       description:
         "Your blood is centrifuged to concentrate the healing platelets and growth factors",
-      image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&q=80",
+      image:
+        "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&q=80",
     },
     {
       step: "03",
       title: "Precise Injection",
       description:
         "PRP is carefully injected to stimulate tissue regeneration and enhance blood flow",
-      image: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=400&q=80",
+      image:
+        "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=400&q=80",
     },
   ],
   ctaButtons: [
@@ -83,10 +86,13 @@ export function PShotFeaturedSection({ data }) {
       <Section
         background="default"
         padding="none"
-        className="relative overflow-hidden bg-linear-to-b from-royal-blue/70 via-royal-blue/80 to-royal-blue"
+        className="relative overflow-hidden bg-royal-blue"
       >
         <div className="relative w-full py-12 md:py-16">
-          <Container maxWidth="7xl" className="mx-auto flex w-full flex-col items-center gap-6 px-4 text-center">
+          <Container
+            maxWidth="7xl"
+            className="mx-auto flex w-full flex-col items-center gap-6 px-4 text-center"
+          >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -107,10 +113,14 @@ export function PShotFeaturedSection({ data }) {
             >
               {sectionData.title}
               {sectionData.titleSuperscript && (
-                <sup className="align-super text-base md:text-lg">{sectionData.titleSuperscript}</sup>
+                <sup className="align-super text-base md:text-lg">
+                  {sectionData.titleSuperscript}
+                </sup>
               )}
               {sectionData.titleAccent && (
-                <span className="mt-2 block text-primary">{sectionData.titleAccent}</span>
+                <span className="mt-2 block text-primary">
+                  {sectionData.titleAccent}
+                </span>
               )}
             </motion.h2>
 
@@ -119,7 +129,7 @@ export function PShotFeaturedSection({ data }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="max-w-3xl text-balance text-base text-muted md:text-lg"
+              className="max-w-3xl text-balance text-base text-white md:text-lg"
             >
               {sectionData.subtitle}
             </motion.p>
@@ -127,7 +137,7 @@ export function PShotFeaturedSection({ data }) {
         </div>
       </Section>
 
-      <Section className="bg-primary/5">
+      <Section padding="sm" className="bg-royal-blue/5">
         <div className="w-full py-16 md:py-20">
           <Container maxWidth="5xl" className="relative">
             <div className="mb-16 md:mb-20">
@@ -153,37 +163,40 @@ export function PShotFeaturedSection({ data }) {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
+                    className="group"
                   >
                     <CometCard className="h-full">
-                      <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-primary/20 bg-card/50">
-                        <div className="relative h-44 overflow-hidden">
-                          <Image
-                            src={process.image}
-                            alt={process.title}
-                            fill
-                            className="object-cover transition-transform duration-700 group-hover:scale-110"
-                          />
-                          <div className="pointer-events-none absolute inset-0">
-                            <div className="absolute inset-0 bg-black/35 dark:bg-background/35" />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/55 to-black/15 dark:from-background/95 dark:via-background/55 dark:to-background/15" />
-                          </div>
+                      <div className="gradient-border group-hover:gradient-border-hover rounded-2xl h-full transition-all duration-300">
+                        <div className="gradient-border-inner rounded-[calc(1rem-4px)] flex flex-col">
+                          <div className="relative h-44 overflow-hidden">
+                            <Image
+                              src={process.image}
+                              alt={process.title}
+                              fill
+                              className="object-cover transition-transform duration-700 group-hover:scale-110"
+                            />
+                            <div className="pointer-events-none absolute inset-0">
+                              <div className="absolute inset-0 bg-black/35 dark:bg-background/35" />
+                              <div className="absolute inset-0 bg-linear-to-t from-black/95 via-black/55 to-black/15 dark:from-background/95 dark:via-background/55 dark:to-background/15" />
+                            </div>
 
-                          <div className="absolute top-4 left-4">
-                            <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center backdrop-blur-sm border-2 border-primary/50">
-                              <span className="text-primary-foreground font-heading font-bold text-lg">
-                                {process.step}
-                              </span>
+                            <div className="absolute top-4 left-4">
+                              <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center backdrop-blur-sm border-2 border-primary/50">
+                                <span className="text-primary-foreground font-heading font-bold text-lg">
+                                  {process.step}
+                                </span>
+                              </div>
                             </div>
                           </div>
-                        </div>
 
-                        <div className="flex flex-col gap-3 p-6">
-                          <h4 className="text-lg font-heading font-semibold text-foreground md:text-xl">
-                            {process.title}
-                          </h4>
-                          <p className="text-sm leading-relaxed text-muted-foreground">
-                            {process.description}
-                          </p>
+                          <div className="flex flex-col gap-3 p-6">
+                            <h4 className="text-lg font-heading font-semibold text-foreground md:text-xl">
+                              {process.title}
+                            </h4>
+                            <p className="text-sm leading-relaxed text-muted-foreground">
+                              {process.description}
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </CometCard>
@@ -201,18 +214,19 @@ export function PShotFeaturedSection({ data }) {
               <div className="inline-flex flex-col items-center gap-4 sm:flex-row">
                 {sectionData.ctaButtons.map((cta, index) => {
                   const isPrimary = (cta.variant || "primary") === "primary";
-                  const Icon = getIconComponent(cta.icon, isPrimary ? ArrowRight : Heart);
+                  const Icon = getIconComponent(
+                    cta.icon,
+                    isPrimary ? ArrowRight : Heart
+                  );
 
                   return (
                     <Button
                       key={cta.text + index}
                       asChild
                       size="lg"
-                      variant={isPrimary ? undefined : "outline"}
+                      variant={isPrimary ? "default" : "outline"}
                       className={
-                        isPrimary
-                          ? "group relative overflow-hidden btn-primary-gradient text-lg shadow-2xl hover:shadow-primary-lg"
-                          : "group bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 py-6 text-lg transition-all duration-300"
+                        "group relative overflow-hidden"
                       }
                     >
                       <Link href={cta.href} className="flex items-center gap-2">

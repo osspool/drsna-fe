@@ -93,49 +93,50 @@ export function FeaturedTreatments({ data }) {
                 transition={{ delay: index * 0.08, duration: 0.3 }}
                 className="flex h-full"
               >
-                <div className="hidden md:block w-full h-full">
+                <div className="hidden md:block w-full h-full group">
                   <CometCard rotateDepth={5} translateDepth={8} className="w-full h-full">
                     <Link href={category.href} className="block h-full w-full">
-                      <div className="relative bg-card rounded-3xl overflow-hidden h-full w-full flex flex-col shadow-sm hover:shadow-lg transition-all duration-300 border border-border hover:border-primary/30">
-                        <div className="relative w-full aspect-5/3 overflow-hidden bg-muted">
-                          <Image
-                            src={category.image}
-                            alt={category.title}
-                            fill
-                            className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                            sizes="(max-width: 768px) 100vw, 33vw"
-                            priority={index === 0}
-                          />
-                          <div className="absolute inset-0 bg-linear-to-t from-background/60 via-transparent to-transparent" />
+                      <div className="gradient-border group-hover:gradient-border-hover rounded-3xl h-full w-full transition-all duration-300">
+                        <div className="gradient-border-inner rounded-[calc(1.5rem-4px)] flex flex-col shadow-sm">
+                          <div className="relative w-full aspect-5/3 overflow-hidden bg-muted">
+                            <Image
+                              src={category.image}
+                              alt={category.title}
+                              fill
+                              className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                              sizes="(max-width: 768px) 100vw, 33vw"
+                              priority={index === 0}
+                            />
 
-                          <div className="absolute top-5 left-5">
-                            <div className="bg-card rounded-2xl p-2.5 shadow-sm border border-border/50">
-                              <Icon className="w-5 h-5 text-primary" strokeWidth={2} />
+                            <div className="absolute top-5 left-5">
+                              <div className="bg-card rounded-2xl p-2.5 shadow-sm border border-border/50">
+                                <Icon className="w-5 h-5 text-primary" strokeWidth={2} />
+                              </div>
                             </div>
                           </div>
-                        </div>
 
-                        <div className="flex flex-col grow p-6">
-                          <h3 className="text-xl font-heading font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
-                            {category.title}
-                          </h3>
-                          <p className="text-sm md:text-base text-muted-foreground mb-5 leading-relaxed">
-                            {category.description}
-                          </p>
-
-                          <div className="mt-auto space-y-2">
-                            <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
-                              Signature Treatments
+                          <div className="flex flex-col grow p-6">
+                            <h3 className="text-xl font-heading font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
+                              {category.title}
+                            </h3>
+                            <p className="text-sm md:text-base text-muted-foreground mb-5 leading-relaxed">
+                              {category.description}
                             </p>
-                            <div className="flex flex-wrap gap-2" aria-label={`${category.title} treatments`}>
-                              {category.treatments?.map((treatment) => (
-                                <span
-                                  key={treatment}
-                                  className="text-sm font-medium text-foreground/80 bg-secondary/40 rounded-full px-3 py-1"
-                                >
-                                  {treatment}
-                                </span>
-                              ))}
+
+                            <div className="mt-auto space-y-2">
+                              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                                Signature Treatments
+                              </p>
+                              <div className="flex flex-wrap gap-2" aria-label={`${category.title} treatments`}>
+                                {category.treatments?.map((treatment) => (
+                                  <span
+                                    key={treatment}
+                                    className="text-sm font-medium text-foreground/80 bg-secondary/40 rounded-full px-3 py-1"
+                                  >
+                                    {treatment}
+                                  </span>
+                                ))}
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -144,45 +145,47 @@ export function FeaturedTreatments({ data }) {
                   </CometCard>
                 </div>
                 <div className="md:hidden w-full h-full">
-                  <Link href={category.href} className="block h-full w-full">
-                    <div className="relative bg-card rounded-3xl overflow-hidden h-full w-full flex flex-col border border-border">
-                      <div className="relative w-full aspect-video overflow-hidden bg-muted">
-                        <Image
-                          src={category.image}
-                          alt={category.title}
-                          fill
-                          className="object-cover"
-                          sizes="100vw"
-                        />
-                        <div className="absolute inset-0 bg-linear-to-t from-background/60 via-transparent to-transparent" />
-                        <div className="absolute top-4 left-4">
-                          <div className="bg-card rounded-2xl p-2 border border-border/50">
-                            <Icon className="w-5 h-5 text-primary" strokeWidth={2} />
+                  <Link href={category.href} className="block h-full w-full group">
+                    <div className="gradient-border group-hover:gradient-border-hover rounded-3xl h-full w-full transition-all duration-300">
+                      <div className="gradient-border-inner rounded-[calc(1.5rem-4px)] flex flex-col">
+                        <div className="relative w-full aspect-video overflow-hidden bg-muted">
+                          <Image
+                            src={category.image}
+                            alt={category.title}
+                            fill
+                            className="object-cover"
+                            sizes="100vw"
+                          />
+                          <div className="absolute inset-0 bg-linear-to-t from-background/60 via-transparent to-transparent" />
+                          <div className="absolute top-4 left-4">
+                            <div className="bg-card rounded-2xl p-2 border border-border/50">
+                              <Icon className="w-5 h-5 text-primary" strokeWidth={2} />
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div className="flex flex-col grow p-5 gap-4">
-                        <div>
-                          <h3 className="text-xl font-heading font-bold text-foreground mb-1">
-                            {category.title}
-                          </h3>
-                          <p className="text-sm text-muted-foreground leading-relaxed">
-                            {category.description}
-                          </p>
-                        </div>
-                        <div className="mt-auto space-y-2">
-                          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
-                            Signature Treatments
-                          </p>
-                          <div className="flex flex-wrap gap-2">
-                            {category.treatments?.map((treatment) => (
-                              <span
-                                key={treatment}
-                                className="text-xs font-medium text-foreground/80 bg-secondary/40 rounded-full px-3 py-1"
-                              >
-                                {treatment}
-                              </span>
-                            ))}
+                        <div className="flex flex-col grow p-5 gap-4">
+                          <div>
+                            <h3 className="text-xl font-heading font-bold text-foreground mb-1">
+                              {category.title}
+                            </h3>
+                            <p className="text-sm text-muted-foreground leading-relaxed">
+                              {category.description}
+                            </p>
+                          </div>
+                          <div className="mt-auto space-y-2">
+                            <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                              Signature Treatments
+                            </p>
+                            <div className="flex flex-wrap gap-2">
+                              {category.treatments?.map((treatment) => (
+                                <span
+                                  key={treatment}
+                                  className="text-xs font-medium text-foreground/80 bg-secondary/40 rounded-full px-3 py-1"
+                                >
+                                  {treatment}
+                                </span>
+                              ))}
+                            </div>
                           </div>
                         </div>
                       </div>
