@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { CategoryHero } from "@/components/treatments/CategoryHero";
+import { CategoryHero } from "@/components/heroes/treatments/CategoryHero";
 import { ProcessTimeline } from "@/components/treatments/ProcessTimeline";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { FeaturesSection } from "@/components/sections/FeaturesSection";

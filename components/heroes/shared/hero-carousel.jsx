@@ -92,9 +92,11 @@ export function HeroCarousel({
               priority={index === 0}
               quality={90}
               className={cn(
-                "object-cover object-center",
+                "object-cover",
+                !image.style && (image.objectPosition || "object-center"),
                 enableKenBurns && isActive && "animate-kenburns"
               )}
+              style={image.style}
               sizes="100vw"
             />
           </div>

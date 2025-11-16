@@ -50,10 +50,6 @@ import {
   } from "lucide-react";
 
 
-  
-  // Import custom SVG icons
-  import { customSvgIcons } from "@/components/custom/svg-icons";
-  
   const iconMap = {
     // Lucide icons
     cloud: Cloud,
@@ -107,9 +103,6 @@ import {
     globe: Globe,
     package: Package,
     trendingUp: TrendingUp,
-
-    // Custom SVG icons
-    ...customSvgIcons,
   };
   
   

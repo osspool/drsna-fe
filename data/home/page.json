@@ -4,6 +4,7 @@
       {
         "id": 1,
         "image": "/images/drsnaclinic/hero-new.jpg",
+        "mobileImage": "/images/drsnaclinic/hero-mobile.jpg",
         "badge": "GLOBAL RECOGNITION AWARD 2024",
         "headline": "Award-Winning",
         "subheadline": "Dr Syed Nadeem Abbas",
@@ -136,21 +137,24 @@
         "description": "Advanced regenerative healing",
         "image": "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=600&h=400&fit=crop",
         "icon": "sparkles",
-        "iconColor": "text-emerald-400"
+        "iconColor": "text-emerald-400",
+        "href": "/treatments/pain-management/treatments/adipose-cell-therapy"
       },
       "leftMiddle": {
         "title": "Arthrosamid Treatment",
         "description": "Revolutionary knee joint pain relief",
         "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop",
         "icon": "activity",
-        "iconColor": "text-purple-400"
+        "iconColor": "text-purple-400",
+        "href": "/treatments/pain-management/treatments/arthrosamid-injection"
       },
       "leftBottom": {
         "title": "Joint Rejuvenation",
         "description": "PRP, Durolane & Osteonil Plus therapy",
         "image": "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&h=400&fit=crop",
         "icon": "zap",
-        "iconColor": "text-blue-400"
+        "iconColor": "text-blue-400",
+        "href": "/treatments/pain-management/treatments/platelet-rich-plasma"
       },
       "middleTop": {
         "title": "Dr Syed Nadeem Abbas",
@@ -162,7 +166,8 @@
           { "text": "CQC Registered" },
           { "text": "GMC Certified" },
           { "text": "10,000+ Patients" }
-        ]
+        ],
+        "href": "/dr-syed-nadeem-abbas"
       },
       "middleBottom": {
         "title": "Hair Restoration",
@@ -179,28 +184,32 @@
             "text": "Advanced PRP",
             "className": "bg-amber-500/20 text-white border border-amber-400/30"
           }
-        ]
+        ],
+        "href": "/treatments/aesthetic-medicine/hair/prp-hair"
       },
       "rightTop": {
         "title": "P-Shot Treatment",
         "description": "Revolutionary PRP therapy for men",
         "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop",
         "icon": "zap",
-        "iconColor": "text-rose-400"
+        "iconColor": "text-rose-400",
+        "href": "/treatments/intimate-health/male/p-shot"
       },
       "rightMiddle": {
         "title": "Shockwave Therapy",
         "description": "ED & musculoskeletal treatment",
         "image": "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop",
         "icon": "activity",
-        "iconColor": "text-pink-400"
+        "iconColor": "text-pink-400",
+        "href": "/treatments/intimate-health/male/shockwave-therapy"
       },
       "rightBottom": {
         "title": "PRP Facelift",
         "description": "Revolutionary natural rejuvenation",
         "image": "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&h=400&fit=crop",
         "icon": "sparkles",
-        "iconColor": "text-cyan-400"
+        "iconColor": "text-cyan-400",
+        "href": "/treatments/aesthetic-medicine/face/prp-facelift"
       }
     },
     "cta": {

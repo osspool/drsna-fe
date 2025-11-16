@@ -5,8 +5,6 @@ import { OverviewBlock } from "@/components/blocks/OverviewBlock";
 import { TreatmentAreasBlock } from "@/components/blocks/TreatmentAreasBlock";
 import { GalleryBlock } from "@/components/blocks/GalleryBlock";
 import { VideoBlock } from "@/components/blocks/VideoBlock";
-import { VideoTestimonialBlock } from "@/components/blocks/VideoTestimonialBlock";
-import { WhatToExpectBlock } from "@/components/blocks/WhatToExpectBlock";
 import { HowItWorksBlock } from "@/components/blocks/HowItWorksBlock";
 import { ProcessTimeline } from "@/components/treatments/ProcessTimeline";
 import { BeforeAfterBlock } from "@/components/blocks/BeforeAfterBlock";
@@ -16,7 +14,7 @@ import { SafetyBlock } from "@/components/blocks/SafetyBlock";
 import { ComparisonBlock } from "@/components/blocks/ComparisonBlock";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { CTASection } from "@/components/sections/CTASection";
-import { TreatmentHero } from "@/components/treatments/TreatmentHero";
+import { TreatmentHero } from "@/components/heroes/treatments/TreatmentHero";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { RelatedTreatmentsSection } from "@/components/treatments/RelatedTreatmentsSection";
 import { getTreatment, getStaticTreatmentPaths } from "@/lib/treatments";
@@ -99,7 +97,12 @@ export default async function TreatmentPage({ params }) {
       {treatment.video?.enabled && <VideoBlock data={treatment.video} />}
 
       {/* What to Expect Section */}
-      {treatment.whatToExpect?.enabled && <WhatToExpectBlock data={treatment.whatToExpect} />}
+      {treatment.whatToExpect?.enabled && (
+        <ProcessTimeline
+          data={treatment.whatToExpect}
+          variant={treatment.whatToExpect.variant || "timeline"}
+        />
+      )}
 
       {/* Gallery */}
       {treatment.gallery && <GalleryBlock data={treatment.gallery} />}
@@ -129,7 +132,12 @@ export default async function TreatmentPage({ params }) {
       {treatment.safety && <SafetyBlock data={treatment.safety} />}
 
       {/* Video Testimonials */}
-      {treatment.videoTestimonials?.enabled && <VideoTestimonialBlock data={treatment.videoTestimonials} />}
+      {treatment.videoTestimonials?.enabled && (
+        <TestimonialsSection
+          data={treatment.videoTestimonials}
+          variant="video-detailed"
+        />
+      )}
 
       {/* Testimonials */}
       {treatment.testimonials && treatment.testimonials.length > 0 && treatment.testimonials.length <= 3 && (

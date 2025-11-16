@@ -56,7 +56,7 @@
     { "question": "Do I need an appointment?", "answer": "For new patients we require a short consultation to verify medical history before issuing documentation." },
     { "question": "Can you courier documents overseas?", "answer": "Yes, we partner with secure couriers for global delivery (fees apply)." },
     { "question": "Are digital signatures accepted?", "answer": "Most partners accept e-signed PDFs; let us know if a wet signature is required." }
-  },
+  ],
   "cta": {
     "title": "Request Referrals or Letters",
     "subtitle": "Tell us exactly what paperwork you need—we'll handle the rest.",

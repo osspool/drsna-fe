@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { CategoryHero } from "@/components/treatments/CategoryHero";
+import { CategoryHero } from "@/components/heroes/treatments/CategoryHero";
 import { ProcessTimeline } from "@/components/treatments/ProcessTimeline";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { FeaturesSection } from "@/components/sections/FeaturesSection";
@@ -7,6 +7,7 @@ import { CTASection } from "@/components/sections/CTASection";
 import { SubcategoryGrid } from "@/components/treatments/SubcategoryGrid";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
+import TwoColumnTextFeaturesImage from "@/components/custom/ui/blocks/TwoColumnTextFeaturesImage";
 import { Sparkles, Star } from "lucide-react";
 import * as Icons from "lucide-react";
 
@@ -64,6 +65,11 @@ export default async function CategoryPage({ params }) {
     <main className="min-h-screen">
       {/* Hero Section */}
       <CategoryHero data={categoryData} showStats={true} />
+
+      {/* Featured Section - Two Column with Image */}
+      {categoryData.featured && (
+        <TwoColumnTextFeaturesImage data={categoryData.featured} />
+      )}
 
       {/* Introduction Section */}
       {categoryData.introduction && (

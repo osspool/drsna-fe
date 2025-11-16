@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
-import { CategoryHero } from "@/components/treatments/CategoryHero";
+import { CategoryHero } from "@/components/heroes/treatments/CategoryHero";
 import { CTASection } from "@/components/sections/CTASection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";

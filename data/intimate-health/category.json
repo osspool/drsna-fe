@@ -30,6 +30,26 @@
       {"value": "100%", "label": "Doctor-led care"}
     ]
   },
+  "featured": {
+    "title": "Your Intimate Health Matters. So Does Your Dignity.",
+    "paragraphs": [
+      "Intimacy is the foundation of connection—with yourself, your partner, and life itself. When intimate health challenges arise, they can silently erode confidence, strain relationships, and diminish joy. You deserve expert care delivered with the compassion and discretion this deeply personal aspect of your wellbeing requires.",
+      "At Dr SNA Clinic, we understand that seeking help takes courage. That's why Dr Syed Nadeem Abbas personally leads every consultation, combining advanced regenerative medicine with genuine empathy to restore not just function, but confidence, comfort, and the freedom to feel like yourself again."
+    ],
+    "features": [
+      {
+        "icon": "heart-handshake",
+        "title": "Compassionate Expertise",
+        "description": "Doctor-led care that treats you as a whole person, not just a condition"
+      },
+      {
+        "icon": "shield-check",
+        "title": "Complete Discretion",
+        "description": "Private suites, confidential consultations, and judgment-free support"
+      }
+    ],
+    "image": "/dr-syed-ih.png"
+  },
   "introduction": {
     "title": "Specialist Care for Sensitive Concerns",
     "content": "Intimate issues can affect confidence, relationships, and quality of life. We make it easy to seek help with calm clinical spaces, discreet scheduling, and evidence-based treatments that focus on regeneration rather than masking symptoms.",

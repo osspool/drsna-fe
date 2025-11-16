@@ -1,4 +1,4 @@
-import { HeroSectionV2 } from "@/components/landing/HeroSectionV2";
+import { HeroSectionV2 } from "@/components/heroes/landing/HeroSectionV2";
 import { RegulatoryLogos } from "@/components/landing/RegulatoryLogos";
 import { PShotFeaturedSection } from "@/components/landing/PShotFeaturedSection";
 import { GlobalReachSection } from "@/components/landing/GlobalReachSection";

@@ -1,4 +1,4 @@
-import { Cpu, Zap } from 'lucide-react'
+import { Cpu, Zap, HeartHandshake, ShieldCheck } from 'lucide-react'
 import Image from 'next/image'
 
 export default function ContentSection({ data = {} }) {
@@ -12,6 +12,7 @@ export default function ContentSection({ data = {} }) {
             { icon: 'zap', title: 'Faaast', description: 'It supports an entire helping developers and innovate.' },
             { icon: 'cpu', title: 'Powerful', description: 'It supports an entire helping developers and businesses.' },
         ],
+        image,
         images = {
             light: '/exercice.png',
             dark: '/exercice-dark.png',
@@ -22,12 +23,21 @@ export default function ContentSection({ data = {} }) {
         },
     } = data
 
-    const iconMap = { zap: Zap, cpu: Cpu }
+    const iconMap = {
+        zap: Zap,
+        cpu: Cpu,
+        'heart-handshake': HeartHandshake,
+        'shield-check': ShieldCheck
+    }
+
+    // Use simple image if provided, otherwise use images object
+    const imageUrl = image || images.light
+    const imageAlt = data.imageAlt || images.altLight || images.alt || 'Feature image'
 
     return (
         <section className="py-16 md:py-32">
             <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
-                <h2 className="relative z-10 max-w-xl text-4xl font-medium lg:text-5xl">{title}</h2>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">{title}</h2>
                 <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
                     <div className="relative space-y-4">
                         {paragraphs?.[0] && (
@@ -59,9 +69,14 @@ export default function ContentSection({ data = {} }) {
                         )}
                     </div>
                     <div className="relative mt-6 sm:mt-0">
-                        <div className="bg-linear-to-b aspect-67/34 relative rounded-2xl from-zinc-300 to-transparent p-px dark:from-zinc-700">
-                            <Image src={images.dark} className="hidden rounded-[15px] dark:block" alt={images.altDark || images.alt || 'image dark'} width={images.width || 1206} height={images.height || 612} />
-                            <Image src={images.light} className="rounded-[15px] shadow dark:hidden" alt={images.altLight || images.alt || 'image light'} width={images.width || 1206} height={images.height || 612} />
+                        <div className="bg-linear-to-b aspect-square relative rounded-2xl from-zinc-300 to-transparent p-px dark:from-zinc-700">
+                            <Image
+                                src={imageUrl}
+                                className="rounded-[15px] shadow object-cover"
+                                alt={imageAlt}
+                                width={600}
+                                height={600}
+                            />
                         </div>
                     </div>
                 </div>

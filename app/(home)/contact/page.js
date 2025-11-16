@@ -1,6 +1,6 @@
 "use client";
 
-import { CategoryHero } from "@/components/treatments/CategoryHero";
+import { CategoryHero } from "@/components/heroes/treatments/CategoryHero";
 import { Container } from "@/components/layout/Container";
 import { ContactForm } from "@/components/landing/contact/ContactForm";
 import { ContactCard } from "@/components/contact/ContactCard";

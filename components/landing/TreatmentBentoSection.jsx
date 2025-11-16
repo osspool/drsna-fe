@@ -39,6 +39,7 @@ const defaultData = {
       image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&h=400&fit=crop",
       icon: "sparkles",
       iconColor: "text-emerald-400",
+      href: "/treatments/aesthetic-medicine/hair/prp-hair",
     },
     leftMiddle: {
       title: "PRP Facial Rejuvenation",
@@ -46,6 +47,7 @@ const defaultData = {
       image: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&h=400&fit=crop",
       icon: "sparkles",
       iconColor: "text-purple-400",
+      href: "/treatments/aesthetic-medicine/face/prp-facelift",
     },
     leftBottom: {
       title: "Shockwave Therapy",
@@ -53,6 +55,7 @@ const defaultData = {
       image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&h=400&fit=crop",
       icon: "activity",
       iconColor: "text-blue-400",
+      href: "/treatments/intimate-health/male/shockwave-therapy",
     },
     middleTop: {
       title: "Dr Syed Nadeem Abbas",
@@ -65,6 +68,7 @@ const defaultData = {
         { text: "GMC Certified" },
         { text: "10,000+ Patients" },
       ],
+      href: "/dr-syed-nadeem-abbas",
     },
     middleBottom: {
       title: "Ultra Femme 360",
@@ -82,6 +86,7 @@ const defaultData = {
           className: "bg-amber-500/20 text-white border border-amber-400/30",
         },
       ],
+      href: "/treatments/intimate-health/female/ultra-femme-360",
     },
     rightTop: {
       title: "P-Shot Treatment",
@@ -89,6 +94,7 @@ const defaultData = {
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop",
       icon: "zap",
       iconColor: "text-rose-400",
+      href: "/treatments/intimate-health/male/p-shot",
     },
     rightMiddle: {
       title: "Dermal Fillers",
@@ -96,6 +102,7 @@ const defaultData = {
       image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=400&fit=crop",
       icon: "sparkles",
       iconColor: "text-pink-400",
+      href: "/treatments/aesthetic-medicine/face/dermal-fillers",
     },
     rightBottom: {
       title: "Anti-Wrinkle Treatments",
@@ -103,6 +110,7 @@ const defaultData = {
       image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&h=400&fit=crop",
       icon: "sparkles",
       iconColor: "text-cyan-400",
+      href: "/treatments/aesthetic-medicine/face/anti-wrinkle",
     },
   },
   cta: {
@@ -118,8 +126,8 @@ const ImageCard = ({ card, minHeight = 280 }) => {
   if (!card) return null;
   const imageSrc = card.image || "/images/drsnaclinic/doctor-hero.jpg";
 
-  return (
-    <BentoCard>
+  const cardContent = (
+    <BentoCard className={card.href ? "cursor-pointer" : ""}>
       <div className="relative h-full" style={{ minHeight }}>
         <Image
           src={imageSrc}
@@ -157,14 +165,24 @@ const ImageCard = ({ card, minHeight = 280 }) => {
       </div>
     </BentoCard>
   );
+
+  if (card.href) {
+    return (
+      <Link href={card.href} className="block h-full">
+        {cardContent}
+      </Link>
+    );
+  }
+
+  return cardContent;
 };
 
 const MainFeatureCard = ({ card }) => {
   if (!card) return null;
   const imageSrc = card.image || "/images/drsnaclinic/doctor-hero.jpg";
 
-  return (
-    <BentoCard>
+  const cardContent = (
+    <BentoCard className={card.href ? "cursor-pointer" : ""}>
       <div className="relative h-full" style={{ minHeight: card.minHeight || 320 }}>
         <Image
           src={imageSrc}
@@ -203,6 +221,16 @@ const MainFeatureCard = ({ card }) => {
       </div>
     </BentoCard>
   );
+
+  if (card.href) {
+    return (
+      <Link href={card.href} className="block h-full">
+        {cardContent}
+      </Link>
+    );
+  }
+
+  return cardContent;
 };
 
 export const TreatmentBentoSection = ({ data }) => {

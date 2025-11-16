@@ -1,4 +1,4 @@
-import { PShotHero } from "@/components/pshot/PShotHero";
+import { PShotHero } from "@/components/heroes/specialty/PShotHero";
 import { StatsSection } from "@/components/sections/StatsSection";
 import { FeaturesSection } from "@/components/sections/FeaturesSection";
 import { ProcessTimeline } from "@/components/treatments/ProcessTimeline";

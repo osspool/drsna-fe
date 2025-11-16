@@ -4,13 +4,15 @@ import { useState, useCallback } from "react";
 import Link from "next/link";
 import { Award, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { HeroCarousel } from "@/components/custom/ui/hero-carousel";
+import { HeroCarousel } from "@/components/heroes/shared/hero-carousel";
 import { motion, AnimatePresence } from "framer-motion";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const defaultSlides = [
   {
     id: 1,
-    image: "/images/drsnaclinic/doctor-hero.jpg",
+    image: "/images/drsnaclinic/hero-new.jpg",
+    mobileImage: "/images/drsnaclinic/hero-mobile.jpg",
     badge: "GLOBAL RECOGNITION AWARD 2024",
     headline: "Award-Winning",
     subheadline: "Dr Syed Nadeem Abbas",
@@ -55,6 +57,7 @@ export function HeroSectionV2({ data }) {
   const slides = data?.slides?.length ? data.slides : defaultSlides;
   const secondaryCta = data?.secondaryCta || defaultSecondaryCta;
   const [currentSlide, setCurrentSlide] = useState(0);
+  const isMobile = useIsMobile();
 
   const handleSlideChange = useCallback((index) => {
     setCurrentSlide(index);
@@ -71,8 +74,9 @@ export function HeroSectionV2({ data }) {
       {/* Hero Carousel Background */}
       <HeroCarousel
         images={slides.map((slide) => ({
-          url: slide.image,
-          alt: slide.headline
+          url: isMobile && slide.mobileImage ? slide.mobileImage : slide.image,
+          alt: slide.headline,
+          objectPosition: "object-center"
         }))}
         autoPlayInterval={8000}
         showControls={false}
@@ -83,7 +87,7 @@ export function HeroSectionV2({ data }) {
       />
 
       {/* Content Container */}
-      <div className="relative z-30 container mx-auto px-4 py-20 sm:py-24 md:py-32">
+      <div className="relative z-30 container mx-auto px-4 py-12 sm:py-20 md:py-32">
         <div className="max-w-5xl mx-auto">
           <AnimatePresence mode="wait">
             <motion.div
@@ -95,15 +99,15 @@ export function HeroSectionV2({ data }) {
               className="text-left max-w-full sm:max-w-2xl"
             >
               {/* Award Badge */}
-              <div className="inline-flex items-center gap-2 bg-royal-blue/90 backdrop-blur-sm px-4 py-2 rounded-full mb-6 md:mb-8">
-                <Award className="w-3.5 h-3.5 text-white shrink-0" />
-                <span className="text-white font-semibold text-[10px] sm:text-xs tracking-wide uppercase">
+              <div className="inline-flex items-center gap-2 bg-royal-blue/90 backdrop-blur-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-full mb-4 sm:mb-6 md:mb-8">
+                <Award className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-white shrink-0" />
+                <span className="text-white font-semibold text-[9px] sm:text-[10px] md:text-xs tracking-wide uppercase">
                   {currentContent.badge}
                 </span>
               </div>
 
               {/* Main Headline - Clean and Bold */}
-              <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 md:mb-6 leading-[1.1] tracking-tight" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.2)' }}>
+              <h1 className="font-heading text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-3 sm:mb-4 md:mb-6 leading-[1.1] tracking-tight" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.2)' }}>
                 {currentContent.headline}
                 <br />
                 <span className="text-primary">
@@ -112,19 +116,19 @@ export function HeroSectionV2({ data }) {
               </h1>
 
               {/* Description - Smaller and More Subtle */}
-              <p className="text-xs sm:text-sm md:text-base text-white/80 mb-8 md:mb-10 leading-relaxed max-w-xl" style={{ textShadow: '0 1px 8px rgba(0,0,0,0.25), 0 2px 12px rgba(0,0,0,0.15)' }}>
+              <p className="text-[11px] sm:text-sm md:text-base text-white/80 mb-5 sm:mb-8 md:mb-10 leading-relaxed max-w-xl" style={{ textShadow: '0 1px 8px rgba(0,0,0,0.25), 0 2px 12px rgba(0,0,0,0.15)' }}>
                 {currentContent.description}
               </p>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-start">
+              <div className="flex flex-col sm:flex-row gap-2.5 sm:gap-3 items-stretch sm:items-start">
                 <Link href={primaryCta.href}>
                   <Button
                     size="lg"
-                    className="w-full sm:w-auto group bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-lg hover:shadow-xl transition-all"
+                    className="w-full sm:w-auto group bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-lg hover:shadow-xl transition-all text-sm sm:text-base py-2.5 sm:py-3"
                   >
                     {primaryCta.text}
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="ml-2 w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
 
@@ -132,7 +136,7 @@ export function HeroSectionV2({ data }) {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="w-full sm:w-auto border-white/60 hover:bg-white hover:text-black hover:border-white backdrop-blur-sm transition-all"
+                    className="w-full sm:w-auto border-white/60 hover:bg-white hover:text-black hover:border-white backdrop-blur-sm transition-all text-sm sm:text-base py-2.5 sm:py-3"
                   >
                     {secondaryCta.text}
                   </Button>
