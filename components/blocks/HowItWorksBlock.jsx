@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
+import { SectionHeader } from "@/components/common/SectionHeader";
 import { Spotlight } from "@/components/aceternity/spotlight";
 import { CardSpotlight } from "@/components/aceternity/card-spotlight";
 import { 
@@ -34,8 +35,8 @@ export function HowItWorksBlock({ data }) {
     content,
     benefits = [],
     growthFactors = [],
-    background = "white",
     variant = "default",
+
     enabled = true 
   } = data;
 
@@ -44,33 +45,24 @@ export function HowItWorksBlock({ data }) {
   // Dark Glass Variant with Spotlight
   if (variant === "dark-glass") {
     return (
-      <Section background={background} padding="xl" className="relative overflow-hidden">
+      <Section background="muted-dark" padding="xl" className="relative overflow-hidden">
         <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="hsl(var(--primary) / 0.3)" />
 
         <Container>
           {/* Header */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16 max-w-3xl mx-auto relative z-10"
-          >
-            {title && (
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-4">
-                {title}
-              </h2>
-            )}
-            {subtitle && (
-              <p className="text-lg md:text-xl text-foreground mb-6 font-medium">
-                {subtitle}
-              </p>
-            )}
-            {content && (
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                {content}
-              </p>
-            )}
-          </motion.div>
+          <div className="max-w-3xl mx-auto relative z-10">
+            <SectionHeader
+              title={title}
+              subtitle={subtitle}
+              subtitleClassName="font-medium"
+            >
+              {content && (
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed mt-6">
+                  {content}
+                </p>
+              )}
+            </SectionHeader>
+          </div>
 
           {/* Benefits Grid with Spotlight Cards */}
           {benefits && benefits.length > 0 && (
@@ -167,31 +159,22 @@ export function HowItWorksBlock({ data }) {
   }
 
   return (
-    <Section background={background}>
+    <Section background="muted-dark">
       <Container>
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
+        <SectionHeader
+          title={title}
+          titleClassName="text-foreground"
+          subtitle={subtitle}
+          subtitleClassName="text-primary font-medium"
+          maxWidth={4}
         >
-          {title && (
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
-              {title}
-            </h2>
-          )}
-          {subtitle && (
-            <p className="text-lg md:text-xl text-primary mb-6 font-medium">
-              {subtitle}
-            </p>
-          )}
           {content && (
-            <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto">
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto mt-6">
               {content}
             </p>
           )}
-        </motion.div>
+        </SectionHeader>
 
         {/* Benefits Grid */}
         {benefits && benefits.length > 0 && (

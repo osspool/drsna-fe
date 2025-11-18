@@ -1,45 +1,12 @@
 "use client";
 
-import {
-  Award, Heart, Shield, Users, Star, CheckCircle2, Sparkles,
-  Clock, TrendingUp, Zap, Stethoscope, Dna, Leaf, MapPin, Check,
-  UserCheck, MapPinned, CalendarCheck, Calendar
-} from "lucide-react";
+import { Sparkles, Award, Star, Users } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { cn } from "@/lib/utils";
-
-// Consolidated icon mapping from all three components
-const iconMap = {
-  award: Award,
-  heart: Heart,
-  shield: Shield,
-  "shield-check": Shield,
-  users: Users,
-  user: Users,
-  userCheck: UserCheck,
-  "user-check": UserCheck,
-  star: Star,
-  "check-circle": CheckCircle2,
-  checkCircle2: CheckCircle2,
-  sparkles: Sparkles,
-  clock: Clock,
-  calendar: Calendar,
-  calendarCheck: CalendarCheck,
-  "calendar-check": CalendarCheck,
-  "trending-up": TrendingUp,
-  trendingUp: TrendingUp,
-  zap: Zap,
-  palette: Sparkles,
-  "graduation-cap": Award,
-  stethoscope: Stethoscope,
-  dna: Dna,
-  leaf: Leaf,
-  "map-pin": MapPin,
-  mapPin: MapPin,
-  mapPinned: MapPinned,
-  "map-pinned": MapPinned,
-  check: Check,
-};
+import { Section } from "../layout/Section";
+import { IconFeatureCard } from "@/components/common/IconFeatureCard";
+import { Icon } from "@/components/custom/ui/icon";
+import { Badge } from "@/components/ui/badge";
 
 /**
  * Unified Features/Benefits Section Component
@@ -48,7 +15,6 @@ const iconMap = {
  * @param {Object} data - Features data
  * @param {string} variant - Display variant: 'default' | 'cards' | 'compact' | 'list'
  * @param {string} layout - Grid layout: 'grid-2' | 'grid-3' | 'grid-4' (only for default/cards variants)
- * @param {string} background - Background color: 'default' | 'muted' | 'secondary'
  * @param {boolean} showStats - Show trust badges with stats (only for cards variant)
  * @param {Object} stats - Stats data for trust badges
  */
@@ -56,7 +22,6 @@ export function FeaturesSection({
   data,
   variant = "default",
   layout = "grid-3",
-  background = "default",
   showStats = false,
   stats = null
 }) {
@@ -75,12 +40,6 @@ export function FeaturesSection({
     "grid-4": "md:grid-cols-2 lg:grid-cols-4"
   };
 
-  const bgClasses = {
-    default: "bg-background",
-    muted: "bg-muted",
-    secondary: "bg-secondary"
-  };
-
   // List variant - compact list format
   if (variant === "list") {
     return (
@@ -94,22 +53,25 @@ export function FeaturesSection({
 
   // Section variants with full header
   return (
-    <section className={cn("py-16 md:py-24", bgClasses[background])}>
+    <Section background="muted-dark" padding="sm">
       <Container>
         {/* Section Header */}
         {(title || heading || subtitle) && (
           <div className="text-center mb-12 md:mb-16">
             {subtitle && (
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-4">
-                <Sparkles className="w-3 h-3 text-primary" />
-                <span className="text-primary text-xs md:text-sm font-semibold tracking-wider uppercase">
+              <div className="mb-4">
+                <Badge
+                  variant="secondary"
+                  className="px-4 py-2 text-xs font-semibold tracking-wider uppercase bg-muted-foreground/10 border-muted-foreground/20 text-muted-foreground"
+                >
+                  <Sparkles className="w-3 h-3" />
                   {subtitle}
-                </span>
+                </Badge>
               </div>
             )}
 
             {(title || heading) && (
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
                 {title || heading}
               </h2>
             )}
@@ -140,7 +102,7 @@ export function FeaturesSection({
           <TrustBadges stats={stats} />
         )}
       </Container>
-    </section>
+    </Section>
   );
 }
 
@@ -148,28 +110,21 @@ export function FeaturesSection({
 function DefaultFeaturesGrid({ features, layout }) {
   return (
     <div className={cn("grid gap-6 md:gap-8", layout)}>
-      {features.map((feature, index) => {
-        const Icon = getIcon(feature.icon);
-
-        return (
-          <div
-            key={index}
-            className="group flex flex-col h-full p-6 bg-card rounded-xl border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-          >
-            <div className="mb-4">
-              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
-                <Icon className="w-7 h-7 text-primary" />
-              </div>
-            </div>
-            <h3 className="text-lg font-heading font-bold mb-3 text-foreground">
-              {feature.title}
-            </h3>
-            <p className="text-muted-foreground leading-relaxed flex-grow">
-              {feature.description}
-            </p>
-          </div>
-        );
-      })}
+      {features.map((feature, index) => (
+        <IconFeatureCard
+          key={index}
+          icon={feature.icon}
+          title={feature.title}
+          description={feature.description}
+          variant="default"
+          iconBg="primary"
+          iconSize="lg"
+          className="rounded-xl"
+          iconClassName="w-14 h-14 rounded-full group-hover:bg-primary/20"
+          titleClassName="text-lg"
+          animationDelay={index * 0.05}
+        />
+      ))}
     </div>
   );
 }
@@ -178,26 +133,22 @@ function DefaultFeaturesGrid({ features, layout }) {
 function CardsFeaturesGrid({ features, layout }) {
   return (
     <div className={cn("grid gap-6", layout)}>
-      {features.map((feature, index) => {
-        const Icon = getIcon(feature.icon);
-
-        return (
-          <div
-            key={index}
-            className="group h-full bg-card rounded-2xl p-6 border border-border hover:border-primary/30 hover:shadow-xl transition-all duration-300"
-          >
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-              <Icon className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
-            </div>
-            <h3 className="text-lg font-heading font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
-              {feature.title}
-            </h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              {feature.description}
-            </p>
-          </div>
-        );
-      })}
+      {features.map((feature, index) => (
+        <IconFeatureCard
+          key={index}
+          icon={feature.icon}
+          title={feature.title}
+          description={feature.description}
+          variant="default"
+          iconBg="primary"
+          iconSize="md"
+          className="rounded-2xl h-full"
+          iconClassName="w-12 h-12 rounded-xl group-hover:bg-primary group-hover:scale-110 transition-all duration-300"
+          titleClassName="text-lg group-hover:text-primary transition-colors duration-300"
+          descriptionClassName="text-sm"
+          animationDelay={index * 0.05}
+        />
+      ))}
     </div>
   );
 }
@@ -206,38 +157,33 @@ function CardsFeaturesGrid({ features, layout }) {
 function CompactFeaturesGrid({ features }) {
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {features.map((feature, index) => {
-        const Icon = getIcon(feature.icon);
-
-        return (
-          <div
-            key={index}
-            className="group p-6 md:p-7 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-md transition-all duration-200"
-          >
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-200">
-              <Icon className="w-6 h-6 text-primary" />
-            </div>
-            <h3 className="text-lg md:text-xl font-heading font-bold mb-2 text-foreground group-hover:text-primary transition-colors">
-              {feature.title}
-            </h3>
-            <p className="text-sm md:text-base leading-relaxed text-muted-foreground">
-              {feature.description}
-            </p>
-          </div>
-        );
-      })}
+      {features.map((feature, index) => (
+        <IconFeatureCard
+          key={index}
+          icon={feature.icon}
+          title={feature.title}
+          description={feature.description}
+          variant="default"
+          iconBg="primary"
+          iconSize="md"
+          className="p-6 md:p-7 rounded-2xl"
+          iconClassName="w-12 h-12 rounded-xl group-hover:bg-primary/20 transition-colors duration-200"
+          titleClassName="text-lg md:text-xl group-hover:text-primary transition-colors"
+          descriptionClassName="text-sm md:text-base"
+          hover={true}
+          animationDelay={index * 0.05}
+        />
+      ))}
     </div>
   );
 }
 
 // List variant item - compact list format (from BenefitsListCompact)
 function FeatureListItem({ feature, index }) {
-  const Icon = getIcon(feature.icon);
-
   return (
     <div className="flex items-start gap-4">
       <div className="shrink-0 w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-        <Icon className="w-5 h-5 text-primary" />
+        <Icon name={feature.icon} size={20} className="text-primary" />
       </div>
       <div className="flex-1">
         {feature.title && (
@@ -293,15 +239,3 @@ function TrustBadges({ stats }) {
   );
 }
 
-// Helper function to get icon component
-function getIcon(iconName) {
-  if (!iconName) return Sparkles;
-
-  // Handle both kebab-case and camelCase
-  const normalizedName = iconName.toLowerCase().replace(/-/g, '');
-  const icon = Object.keys(iconMap).find(key =>
-    key.toLowerCase().replace(/-/g, '') === normalizedName
-  );
-
-  return iconMap[icon] || Sparkles;
-}

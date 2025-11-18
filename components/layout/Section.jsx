@@ -23,6 +23,7 @@ export function Section({
     "gradient-cream": "bg-linear-to-b from-secondary/30 via-background to-secondary/20",
     gold: "bg-primary",
     muted: "bg-muted/70",
+    "muted-dark": "bg-muted"
   };
 
   const paddings = {

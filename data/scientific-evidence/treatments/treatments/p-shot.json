@@ -1,0 +1,115 @@
+{
+  "id": "p-shot",
+  "categoryId": "scientific-evidence",
+  "subcategoryId": "treatments",
+  "title": "Scientific Evidence for P-Shot (PRP for Erectile Function)",
+  "shortTitle": "P-Shot Evidence",
+  "tagline": "PRP-based penile injections supported by controlled trials",
+  "description": "A concise look at randomized and controlled studies evaluating platelet-rich plasma for erectile function and penile tissue health.",
+  "longDescription": "Double-blind randomized trials and regenerative urology reviews report that PRP injections can improve International Index of Erectile Function (IIEF) scores, vascular parameters, and post-prostatectomy rehabilitation outcomes. Evidence suggests PRP may benefit vasculogenic erectile dysfunction when paired with PDE5 inhibitors or shockwave therapy.",
+  "alternativeTitles": [
+    "PRP for Erectile Dysfunction Evidence",
+    "P-Shot Clinical Data"
+  ],
+  "seo": {
+    "metaTitle": "Scientific Evidence | P-Shot PRP for Erectile Function",
+    "metaDescription": "Review double-blind trials and regenerative therapy data on P-Shot (PRP) for erectile dysfunction and penile rehabilitation.",
+    "keywords": [
+      "P-Shot evidence",
+      "PRP erectile dysfunction trial",
+      "IIEF improvement PRP"
+    ],
+    "h1": "P-Shot: Clinical Evidence",
+    "canonicalUrl": "/treatments/scientific-evidence/treatments/p-shot"
+  },
+  "hero": {
+    "headline": "Evidence for PRP in Erectile Function",
+    "subheadline": "Controlled trials show IIEF and vascular improvements with autologous PRP.",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80",
+    "badge": "Clinical Research"
+  },
+  "quickStats": {
+    "duration": "45 mins",
+    "anesthesia": "Topical + local",
+    "downtime": "Minimal",
+    "resultsVisible": "4-8 weeks",
+    "resultsLast": "6-12 months",
+    "painLevel": "Low",
+    "sessions": "1-2 sessions"
+  },
+  "overview": {
+    "title": "What the Literature Shows",
+    "content": "A double-blind RCT found PRP improved IIEF scores versus placebo. Reviews of regenerative therapies highlight improved hemodynamics and potential benefit in penile rehabilitation when combined with PDE5 inhibitors.",
+    "image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1400&q=80",
+    "highlights": [
+      "Double-blind, placebo-controlled RCT data",
+      "Adjunct protocols post-prostatectomy reviewed",
+      "Safety profile favourable with autologous PRP"
+    ]
+  },
+  "howItWorks": {
+    "title": "Why PRP Assists Erectile Function",
+    "subtitle": "Growth factors support vascular repair and nerve health.",
+    "content": "PRP concentrates platelets and growth factors that may enhance endothelial function, microvascular circulation, and nerve healing. In penile tissue, this can translate to improved rigidity and recovery when combined with lifestyle or adjunct therapies.",
+    "variant": "default",
+    "background": "default",
+    "enabled": true,
+    "benefits": [
+      {
+        "title": "Autologous & drug-free",
+        "description": "Uses your own platelets—no synthetic fillers or grafts.",
+        "icon": "droplet"
+      },
+      {
+        "title": "Vascular support",
+        "description": "Growth factors may enhance endothelial repair and blood flow.",
+        "icon": "activity"
+      },
+      {
+        "title": "Adjunct friendly",
+        "description": "Can be paired with PDE5i or shockwave in many protocols.",
+        "icon": "plus-circle"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Evidence Highlights",
+    "items": [
+      {
+        "title": "IIEF score gains",
+        "description": "Double-blind trial reports improved erectile function versus placebo.",
+        "icon": "trending-up"
+      },
+      {
+        "title": "Support in rehab",
+        "description": "Literature suggests benefit when integrated into post-prostatectomy programs.",
+        "icon": "stethoscope"
+      },
+      {
+        "title": "Favourable safety",
+        "description": "Autologous PRP with minimal reported adverse events.",
+        "icon": "shield-check"
+      }
+    ]
+  },
+  "faq": [
+    {
+      "question": "How soon do patients in studies see changes?",
+      "answer": "Many trials reassessed at 4–8 weeks, when IIEF scores began to rise; some protocols repeat at three months."
+    },
+    {
+      "question": "Does PRP replace PDE5 inhibitors?",
+      "answer": "Most research positions PRP as a regenerative adjunct; patients often continue PDE5i or combine with shockwave therapy."
+    },
+    {
+      "question": "What were the safety findings?",
+      "answer": "Reported adverse events were minimal—transient swelling or bruising—with no graft or filler-related complications because PRP is autologous."
+    }
+  ],
+  "cta": {
+    "title": "Considering the P-Shot?",
+    "subtitle": "We’ll align clinical evidence with your history and goals.",
+    "primaryButton": "Book a consultation",
+    "secondaryButton": "Call the clinic"
+  }
+}

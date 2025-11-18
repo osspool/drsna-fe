@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight, ArrowLeftRight } from "lucide-react";
 import { Container } from "@/components/layout/Container";
+import { SectionHeader } from "@/components/common/SectionHeader";
 
 function buildGalleryItems(data) {
   const gallerySource = data?.gallery || data?.images || [];
@@ -63,20 +64,14 @@ export function BeforeAfterBlock({ data }) {
     <section className="py-24 md:py-32 bg-linear-to-b from-background via-secondary/30 to-background">
       <Container>
         {/* Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
-            <ArrowLeftRight className="w-4 h-4 text-primary" />
-            <span className="text-primary text-sm font-semibold tracking-wider uppercase">
-              Real Results
-            </span>
-          </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-foreground mb-6">
-            {title}
-          </h2>
-          <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            {subtitle}
-          </p>
-        </div>
+        <SectionHeader
+          badge="Real Results"
+          badgeIcon="arrow-left-right"
+          title={title}
+          titleClassName="text-foreground mb-6"
+          subtitle={subtitle}
+          subtitleClassName="text-base md:text-lg lg:text-xl leading-relaxed"
+        />
 
         {/* Main Comparison */}
         <div className="max-w-5xl mx-auto mb-12">
@@ -106,7 +101,7 @@ export function BeforeAfterBlock({ data }) {
                   priority
                 />
                 <div className="absolute top-4 left-4 px-4 py-2 bg-foreground/80 backdrop-blur-sm rounded-full">
-                  <span className="text-background text-sm font-semibold">BEFORE</span>
+                  <span className="text-primary text-sm font-semibold">BEFORE</span>
                 </div>
               </div>
 
@@ -149,7 +144,7 @@ export function BeforeAfterBlock({ data }) {
                   {currentItem.title}
                 </h3>
                 {currentItem.description && (
-                  <p className="text-muted-foreground">{currentItem.description}</p>
+                  <p className="text-foreground">{currentItem.description}</p>
                 )}
                 {currentItem.area && (
                   <div className="mt-2 inline-flex items-center gap-2 px-3 py-1 bg-secondary rounded-full">
@@ -169,7 +164,7 @@ export function BeforeAfterBlock({ data }) {
                   >
                     <ChevronLeft className="w-5 h-5 text-foreground" />
                   </button>
-                  <span className="text-sm text-muted-foreground font-medium min-w-[60px] text-center">
+                  <span className="text-sm text-foreground font-medium min-w-[60px] text-center">
                     {activeIndex + 1} / {gallery.length}
                   </span>
                   <button
@@ -214,7 +209,7 @@ export function BeforeAfterBlock({ data }) {
 
         {data?.disclaimer && (
           <div className="text-center">
-            <p className="text-sm text-muted-foreground/70 italic max-w-2xl mx-auto">
+            <p className="text-sm text-foreground/70 italic max-w-2xl mx-auto">
               {data.disclaimer}
             </p>
           </div>
@@ -236,7 +231,7 @@ export function BeforeAfterGrid({ gallery, title, subtitle }) {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">
               {title}
             </h2>
-            {subtitle && <p className="text-base md:text-lg text-muted-foreground">{subtitle}</p>}
+            {subtitle && <p className="text-base md:text-lg text-foreground">{subtitle}</p>}
           </div>
         )}
 
@@ -274,7 +269,7 @@ export function BeforeAfterGrid({ gallery, title, subtitle }) {
               </div>
               <div className="p-4">
                 <h3 className="font-heading font-bold text-foreground mb-1">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.description}</p>
+                <p className="text-sm text-foreground">{item.description}</p>
               </div>
             </div>
           ))}

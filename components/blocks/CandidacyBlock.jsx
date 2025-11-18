@@ -4,28 +4,15 @@ import { motion } from "framer-motion";
 import { Check, X } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
+import { SectionHeader } from "@/components/common/SectionHeader";
 
 export function CandidacyBlock({ data }) {
   const { title, subtitle, suitable, notSuitable, note } = data;
 
   return (
-    <Section background="white">
+    <Section background="muted-dark">
       <Container>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
-            {title}
-          </h2>
-          {subtitle && (
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              {subtitle}
-            </p>
-          )}
-        </motion.div>
+        <SectionHeader title={title} subtitle={subtitle} />
 
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           {/* Suitable Candidates */}

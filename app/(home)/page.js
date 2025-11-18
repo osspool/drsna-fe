@@ -1,14 +1,5 @@
-import { HeroSectionV2 } from "@/components/heroes/landing/HeroSectionV2";
-import { RegulatoryLogos } from "@/components/landing/RegulatoryLogos";
-import { PShotFeaturedSection } from "@/components/landing/PShotFeaturedSection";
-import { GlobalReachSection } from "@/components/landing/GlobalReachSection";
-import { FeaturedTreatments } from "@/components/landing/FeaturedTreatments";
-import { AwardSpotlightSection } from "@/components/landing/AwardSpotlightSection";
-import { TreatmentBentoSection } from "@/components/landing/TreatmentBentoSection";
-import { ClinicShowcaseSection } from "@/components/landing/ClinicShowcaseSection";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
-import { FAQSection } from "@/components/sections/FAQSection";
-import { CTASection } from "@/components/sections/CTASection";
+import { SectionRenderer } from "@/components/common/SectionRenderer";
+import { homePageConfig } from "@/lib/configs/home";
 import { clinicStructuredData } from "@/data/structured-data";
 import { getHomePageData } from "@/lib/home";
 
@@ -76,8 +67,6 @@ export const metadata = {
 
 export default async function HomePage() {
   const homeData = await getHomePageData();
-  const testimonialsData = homeData?.testimonials;
-  const faqData = homeData?.faq;
 
   return (
     <>
@@ -87,53 +76,9 @@ export default async function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicStructuredData) }}
       /> */}
 
-
       <main>
-        {/* Hero Section with Luxury Carousel & Emotional Messaging */}
-        <HeroSectionV2 data={homeData?.hero} />
-
-        {/* Award Spotlight */}
-        <AwardSpotlightSection data={homeData?.awardSpotlight} />
-
-        {/* Treatment Bento Grid Showcase */}
-        <TreatmentBentoSection data={homeData?.treatmentBento} />
-
-        {/* Featured Treatments with Comet Cards */}
-        <FeaturedTreatments data={homeData?.featuredTreatments} />
-
-
-        {/* Clinic Showcase - Interior & Exterior Gallery */}
-        <ClinicShowcaseSection data={homeData?.clinicShowcase} />
-
-        {/* P-Shot Featured Section - Premium Treatment Highlight */}
-        <PShotFeaturedSection data={homeData?.pshotFeatured} />
-
-        {/* Global Reach Section with World Map */}
-        <GlobalReachSection data={homeData?.globalReach} />
-
-        {/* Testimonials with Card Spotlight */}
-        <TestimonialsSection
-          variant={testimonialsData?.variant || "video"}
-          data={testimonialsData}
-          title={testimonialsData?.title}
-          subtitle={testimonialsData?.subtitle}
-          badge={testimonialsData?.badge}
-        />
-
-        {/* FAQ Section with Icons */}
-        <FAQSection
-          data={faqData?.items}
-          variant={faqData?.variant || "with-icons"}
-          title={faqData?.title}
-          subtitle={faqData?.subtitle}
-          badge={faqData?.badge}
-        />
-
-        {/* Regulatory Logos Carousel - Trust Signals */}
-        <RegulatoryLogos data={homeData?.regulatory} />
-
-        {/* Final CTA with Wavy Background */}
-        <CTASection data={homeData?.cta} variant={homeData?.cta?.variant || "contact"} />
+        {/* All home sections - config-driven rendering */}
+        <SectionRenderer sections={homePageConfig} data={homeData} />
       </main>
     </>
   );

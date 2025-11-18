@@ -66,7 +66,7 @@ export function HeroCarousel({
 
   if (!images.length) {
     return (
-      <div className={cn("absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20", className)} />
+      <div className={cn("absolute inset-0 bg-linear-to-br from-primary/20 to-accent/20", className)} />
     );
   }
 

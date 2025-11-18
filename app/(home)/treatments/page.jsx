@@ -2,10 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
+import { SectionHeader } from "@/components/common/SectionHeader";
 import { CategoryHero } from "@/components/heroes/treatments/CategoryHero";
 import { CTASection } from "@/components/sections/CTASection";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { TreatmentsCategoryCard } from "@/components/treatments/TreatmentsCategoryCard";
 import {
   AnimatedSectionHeader,
@@ -62,20 +63,16 @@ export default async function TreatmentsPage() {
         <Container>
           <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
             <AnimatedContent direction="left">
-              <div className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
-                <Sparkles className="w-4 h-4 text-primary" />
-                <span className="text-primary text-sm font-semibold tracking-wider uppercase">
-                  Excellence in Care
-                </span>
-              </div>
-
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
-                Why Choose Dr. SNA Clinic?
-              </h2>
-
-              <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed">
-                We combine medical expertise, advanced technology, and personalized care to deliver exceptional results that transform lives.
-              </p>
+              <SectionHeader
+                badge="Excellence in Care"
+                badgeIcon="sparkles"
+                title="Why Choose Dr. SNA Clinic?"
+                subtitle="We combine medical expertise, advanced technology, and personalized care to deliver exceptional results that transform lives."
+                subtitleClassName="text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed"
+                align="left"
+                spacing="md"
+                animate={false}
+              />
 
               <AnimatedFeatureList items={whyChooseFeatures} />
 

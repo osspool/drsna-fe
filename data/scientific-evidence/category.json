@@ -1,0 +1,109 @@
+{
+  "id": "scientific-evidence",
+  "title": "Scientific Evidence Library",
+  "shortTitle": "Scientific Evidence",
+  "tagline": "Peer-Reviewed Proof for Regenerative Therapies",
+  "description": "A concise library of clinical studies that support our regenerative joint and sexual health protocols.",
+  "longDescription": "Every therapy we offer is anchored in published research—not trends. This library summarises the key prospective studies, randomized trials, and long-term follow-ups that inform our protocols for joint preservation and sexual wellness. Each article has been reviewed by our clinical team so patients understand the level of evidence behind their treatment choice.",
+  "seo": {
+    "metaTitle": "Scientific Evidence | Regenerative Medicine Studies | Dr. SNA Clinic",
+    "metaDescription": "Explore the peer-reviewed research behind fat-derived stem cell therapy, BMAC, PRP joint treatments, and the P-Shot. Evidence-led protocols reviewed by Dr. SNA Clinic.",
+    "keywords": [
+      "scientific evidence regenerative medicine",
+      "stem cell knee osteoarthritis studies",
+      "BMAC clinical trials",
+      "PRP joint treatment research",
+      "P-Shot evidence"
+    ],
+    "h1": "Scientific Evidence Library"
+  },
+  "hero": {
+    "headline": "Evidence-Led Treatments, Transparently Shared",
+    "subheadline": "Key clinical trials and long-term follow-ups that shape our regenerative protocols.",
+    "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1920&q=80",
+    "cta": "Explore the research",
+    "stats": [
+      { "value": "4", "label": "Evidence summaries" },
+      { "value": "15+ yrs", "label": "Longest follow-up cited" },
+      { "value": "Peer-reviewed", "label": "Sources only" }
+    ]
+  },
+  "introduction": {
+    "title": "Why We Publish Our Evidence",
+    "content": "Patients deserve to see the data behind every recommendation. We curate prospective studies, randomized trials, and systematic reviews for the regenerative therapies we deliver—so you can make decisions alongside us with full confidence.",
+    "highlights": [
+      {
+        "icon": "book-open",
+        "title": "Peer-reviewed sources",
+        "description": "Summaries are drawn directly from published clinical studies."
+      },
+      {
+        "icon": "scale",
+        "title": "Balanced interpretation",
+        "description": "We include study design, follow-up duration, and practical outcomes."
+      },
+      {
+        "icon": "stethoscope",
+        "title": "Clinician curated",
+        "description": "Each entry is reviewed by Dr. Abbas and the medical team."
+      }
+    ]
+  },
+  "subcategories": [
+    {
+      "id": "treatments",
+      "title": "Evidence Library",
+      "shortDescription": "Dive into study highlights for each regenerative therapy.",
+      "description": "Understand the trial designs, endpoints, and real-world implications for fat-derived stem cell therapy, BMAC, PRP joint treatment, and the P-Shot.",
+      "icon": "flask-conical",
+      "image": "https://images.unsplash.com/photo-1581092152835-30ab079f19b9?w=1200&q=80",
+      "treatmentCount": 4,
+      "featured": true,
+      "color": "#1f2a3d"
+    }
+  ],
+  "benefits": {
+    "title": "What This Library Offers",
+    "subtitle": "Clarity, context, and confidence before you choose a treatment.",
+    "items": [
+      {
+        "title": "Study design at a glance",
+        "description": "Know whether evidence comes from RCTs, cohort data, or systematic reviews.",
+        "icon": "list-checks"
+      },
+      {
+        "title": "Outcomes that matter",
+        "description": "Pain scores, functional gains, and durability are highlighted first.",
+        "icon": "activity"
+      },
+      {
+        "title": "Safety transparency",
+        "description": "Each summary notes reported adverse events and follow-up length.",
+        "icon": "shield-check"
+      }
+    ]
+  },
+  "process": {
+    "title": "How We Curate Evidence",
+    "steps": [
+      {
+        "title": "Source",
+        "description": "Identify peer-reviewed trials and long-term follow-ups relevant to our protocols."
+      },
+      {
+        "title": "Review",
+        "description": "Clinicians evaluate methodology, endpoints, and limitations before inclusion."
+      },
+      {
+        "title": "Translate",
+        "description": "We extract practical takeaways patients can understand and act on."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Have Questions About the Data?",
+    "subtitle": "Book a consultation to discuss whether the evidence fits your goals and health history.",
+    "primaryButton": "Discuss the evidence",
+    "secondaryButton": "Download study list"
+  }
+}

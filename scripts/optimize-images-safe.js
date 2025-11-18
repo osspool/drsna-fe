@@ -4,7 +4,7 @@ const sharp = require('sharp');
 
 // Configuration
 const config = {
-  inputDir: path.join(__dirname, '../public/images/treatment'),
+  inputDir: path.join(__dirname, '../public/images/drsnaclinic'),
   outputDir: path.join(__dirname, '../public/images/treatment-optimized'),
   // Quality settings for different formats
   webp: {

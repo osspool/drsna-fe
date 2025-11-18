@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Check, Star, Info } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
+import { SectionHeader } from "@/components/common/SectionHeader";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -18,23 +19,8 @@ export function PricingBlock({ data }) {
       <Container>
         {/* Single Price Display */}
         {isSinglePrice && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-2xl mx-auto"
-          >
-            {/* Title */}
-            <div className="text-center mb-8">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
-                {title}
-              </h2>
-              {subtitle && (
-                <p className="text-lg md:text-xl text-muted-foreground">
-                  {subtitle}
-                </p>
-              )}
-            </div>
+          <div className="max-w-2xl mx-auto">
+            <SectionHeader title={title} subtitle={subtitle} spacing="md" />
 
             {/* Single Price Card */}
             <motion.div
@@ -48,7 +34,7 @@ export function PricingBlock({ data }) {
               <div className="text-center mb-6">
                 <div className="flex items-center justify-center gap-3 mb-2">
                   {singlePrice.originalPrice && (
-                    <span className="text-2xl md:text-3xl font-heading text-muted-foreground/70 line-through">
+                    <span className="text-2xl md:text-3xl font-heading text-foreground/70 line-through">
                       {singlePrice.originalPrice}
                     </span>
                   )}
@@ -56,7 +42,7 @@ export function PricingBlock({ data }) {
                     {singlePrice.currentPrice.replace('£', '')}
                   </span>
                 </div>
-                <span className="text-xl md:text-2xl font-semibold text-muted-foreground uppercase tracking-wider">
+                <span className="text-xl md:text-2xl font-semibold text-foreground uppercase tracking-wider">
                   {singlePrice.currency}
                 </span>
               </div>
@@ -71,14 +57,14 @@ export function PricingBlock({ data }) {
                         {singlePrice.consultationNote}
                       </p>
                       {singlePrice.consultationDisclaimer && (
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-sm text-foreground">
                           {singlePrice.consultationDisclaimer}
                         </p>
                       )}
                     </div>
                   </div>
                   {disclaimer && (
-                    <p className="text-sm text-muted-foreground italic text-center mt-3 pt-3 border-t border-border">
+                    <p className="text-sm text-foreground italic text-center mt-3 pt-3 border-t border-border">
                       {disclaimer}
                     </p>
                   )}
@@ -123,32 +109,19 @@ export function PricingBlock({ data }) {
               </motion.div>
             )}
 
-          </motion.div>
+          </div>
         )}
 
         {/* Multi-Package Display (Original Design) */}
         {!isSinglePrice && packages && (
           <>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
-                {title}
-              </h2>
-              {subtitle && (
-                <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-4">
-                  {subtitle}
-                </p>
-              )}
+            <SectionHeader title={title} subtitle={subtitle}>
               {disclaimer && (
-                <p className="text-sm text-muted-foreground/80 max-w-2xl mx-auto italic">
+                <p className="text-sm text-foreground/80 max-w-2xl mx-auto italic mt-4">
                   {disclaimer}
                 </p>
               )}
-            </motion.div>
+            </SectionHeader>
 
             {/* Pricing Packages */}
             <div className="flex flex-wrap justify-center gap-6 mb-16 max-w-6xl mx-auto">
@@ -179,12 +152,12 @@ export function PricingBlock({ data }) {
                     }`}
                   >
                     {/* Package Name */}
-                    <h3 className="text-xl font-heading font-bold text-foreground mb-2">
+                    <h3 className="text-xl font-heading font-bold text-primary mb-2">
                       {pkg.name}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-muted-foreground text-sm mb-4">
+                    <p className="text-foreground text-sm mb-4">
                       {pkg.description}
                     </p>
 
@@ -202,14 +175,14 @@ export function PricingBlock({ data }) {
 
                 {/* Areas/Details */}
                 {pkg.areas && (
-                  <p className="text-sm text-muted-foreground mb-6 leading-relaxed grow">
+                  <p className="text-sm text-foreground mb-6 leading-relaxed grow">
                         {pkg.areas}
                       </p>
                     )}
 
                     {/* Includes (if specific to package) */}
                     {pkg.includes && (
-                      <p className="text-xs text-muted-foreground italic mt-auto">
+                      <p className="text-xs text-foreground italic mt-auto">
                         {pkg.includes}
                       </p>
                     )}
@@ -226,7 +199,7 @@ export function PricingBlock({ data }) {
                 viewport={{ once: true }}
                 className="max-w-6xl mx-auto bg-card rounded-3xl p-8 md:p-12 border border-border mb-12"
               >
-                <h3 className="text-2xl font-heading font-bold text-foreground mb-8 text-center">
+                <h3 className="text-2xl font-heading font-bold text-primary mb-8 text-center">
                   Every Treatment Includes
                 </h3>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -250,10 +223,10 @@ export function PricingBlock({ data }) {
                 viewport={{ once: true }}
                 className="max-w-6xl mx-auto text-center bg-primary/5 rounded-3xl p-8 border border-primary/20"
               >
-                <h3 className="text-2xl font-heading font-bold text-foreground mb-3">
+                <h3 className="text-2xl font-heading font-bold text-primary mb-3">
                   Flexible Payment Options Available
                 </h3>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-foreground mb-6">
                   Finance plans available to help spread the cost of your treatment
                 </p>
                 <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold">

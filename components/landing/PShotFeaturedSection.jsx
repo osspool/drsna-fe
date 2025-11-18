@@ -137,7 +137,7 @@ export function PShotFeaturedSection({ data }) {
         </div>
       </Section>
 
-      <Section padding="sm" className="bg-royal-blue/5">
+      <Section padding="sm" className="muted-dark">
         <div className="w-full py-16 md:py-20">
           <Container maxWidth="5xl" className="relative">
             <div className="mb-16 md:mb-20">
@@ -147,10 +147,10 @@ export function PShotFeaturedSection({ data }) {
                 viewport={{ once: true }}
                 className="mb-8 text-center md:mb-10"
               >
-                <h3 className="text-balance text-3xl font-heading font-semibold text-foreground md:text-4xl">
+                <h3 className="text-balance text-3xl font-heading font-semibold text-primary md:text-4xl">
                   {sectionData.processTitle}
                 </h3>
-                <p className="text-base text-muted-foreground md:text-lg">
+                <p className="text-base text-foreground md:text-lg">
                   {sectionData.processSubtitle}
                 </p>
               </motion.div>

@@ -55,21 +55,21 @@ export function AwardSpotlightSection({ data }) {
   const BadgeIcon = getIconComponent(sectionData.badgeIcon || "sparkles", Sparkles);
 
   return (
-    <Section background="muted/10" padding="lg" className="relative overflow-hidden">
-      <div className="absolute inset-y-0 left-0 w-1/3 opacity-30 pointer-events-none bg-gradient-to-r from-primary/20 to-transparent" />
+    <Section background="muted-dark" padding="lg" className="relative overflow-hidden">
+      <div className="absolute inset-y-0 left-0 w-1/3 opacity-30 pointer-events-none bg-linear-to-r from-foreground/20 to-transparent" />
       <Container className="grid gap-10 lg:grid-cols-2 items-center relative">
         <div>
           {sectionData.badge && (
-            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 border border-primary/20 px-4 py-2 text-sm font-semibold text-primary mb-5">
+            <div className="inline-flex items-center gap-2 rounded-full bg-foreground/10 border border-foreground/20 px-4 py-2 text-sm font-semibold text-foreground mb-5">
               <BadgeIcon className="w-4 h-4" />
               {sectionData.badge}
             </div>
           )}
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-4">
             {sectionData.title}
           </h2>
-          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+          <p className="text-lg text-foreground mb-8 leading-relaxed">
             {sectionData.description}
           </p>
 
@@ -81,7 +81,7 @@ export function AwardSpotlightSection({ data }) {
                   key={`${item.title}-${index}`}
                   className="flex items-start gap-4 p-4 rounded-2xl border border-border bg-background/60 backdrop-blur"
                 >
-                  <div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
                     <Icon className="w-5 h-5" />
                   </div>
                   <div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { Container } from "@/components/layout/Container";
+import { SectionHeader } from "@/components/common/SectionHeader";
 import { HelpCircle } from "lucide-react";
 import {
   Accordion,
@@ -10,6 +11,8 @@ import {
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 import { getIconComponent } from "@/lib/icon-utils";
+import { Section } from "../layout/Section";
+import { getSectionPreset } from "@/lib/section-presets";
 
 /**
  * FAQ Section Component
@@ -18,20 +21,27 @@ import { getIconComponent } from "@/lib/icon-utils";
  *
  * @param {Array} data - FAQ items [{question, answer, icon?}]
  * @param {string} variant - 'default' | 'with-icons' | 'with-cta'
- * @param {string} title - Section title
- * @param {string} subtitle - Section subtitle
- * @param {string} badge - Badge text
+ * @param {string} title - Section title (optional, uses preset default)
+ * @param {string} subtitle - Section subtitle (optional, uses preset default)
+ * @param {string} badge - Badge text (optional, uses preset default)
  * @param {Object} cta - CTA configuration
  */
 export function FAQSection({
   data,
   variant = "default",
-  title = "Frequently Asked Questions",
-  subtitle = "Everything you need to know about our treatments",
-  badge = "FAQ",
+  title,
+  subtitle,
+  badge,
   cta = null
 }) {
   if (!data?.length) return null;
+
+  // Get preset with optional overrides
+  const headerPreset = getSectionPreset('faq', {
+    ...(title !== undefined && { title }),
+    ...(subtitle !== undefined && { subtitle }),
+    ...(badge !== undefined && { badge })
+  });
 
   const showIcons = variant === "with-icons";
   const showCTA = variant === "with-cta" || cta;
@@ -46,26 +56,10 @@ export function FAQSection({
   const ctaConfig = cta || defaultCTA;
 
   return (
-    <section className="py-24 md:py-32 bg-muted/60">
-      <Container>
-        <div className="max-w-4xl mx-auto">
+    <Section padding="sm" className="muted-dark">
+    <Container maxWidth="">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
-              <HelpCircle className="w-4 h-4 text-primary" />
-              <span className="text-primary text-sm font-semibold tracking-wider uppercase">
-                {badge}
-              </span>
-            </div>
-
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">
-              {title}
-            </h2>
-
-            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
-              {subtitle}
-            </p>
-          </div>
+          <SectionHeader {...headerPreset} />
 
           {/* FAQ Accordion - Using shadcn Accordion for accessibility */}
           <Accordion type="single" collapsible defaultValue="item-0" className="space-y-4">
@@ -87,7 +81,7 @@ export function FAQSection({
                       {/* Icon (optional) */}
                       {showIcons && Icon && (
                         <div className={cn(
-                          "flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center transition-colors duration-200",
+                          "shrink-0 w-12 h-12 rounded-xl flex items-center justify-center transition-colors duration-200",
                           "bg-secondary group-data-[state=open]:bg-primary/10"
                         )}>
                           <Icon className="w-6 h-6 text-primary" />
@@ -137,8 +131,7 @@ export function FAQSection({
               </div>
             </div>
           )}
-        </div>
-      </Container>
-    </section>
+    </Container>
+    </Section>
   );
 }

@@ -1,0 +1,115 @@
+{
+  "id": "prp-joint-treatment",
+  "categoryId": "scientific-evidence",
+  "subcategoryId": "treatments",
+  "title": "Scientific Evidence for PRP Joint Treatment",
+  "shortTitle": "PRP Joint Evidence",
+  "tagline": "Platelet-rich plasma for osteoarthritis and tendon pain",
+  "description": "A roundup of randomized trials comparing PRP to hyaluronic acid and corticosteroid for knee osteoarthritis and tendinopathy.",
+  "longDescription": "Systematic reviews and multiple randomized controlled trials show PRP improves pain and function in knee osteoarthritis more durably than hyaluronic acid or corticosteroid. Trials also support PRP in hip OA and specific tendinopathies, with multi-injection protocols outperforming single doses in some studies.",
+  "alternativeTitles": [
+    "PRP Knee OA Evidence",
+    "PRP Tendon Clinical Data"
+  ],
+  "seo": {
+    "metaTitle": "Scientific Evidence | PRP Joint Treatment",
+    "metaDescription": "Review randomized and comparative trials on platelet-rich plasma for knee osteoarthritis and tendinopathy.",
+    "keywords": [
+      "PRP osteoarthritis study",
+      "platelet rich plasma randomized trial",
+      "PRP vs hyaluronic acid evidence"
+    ],
+    "h1": "PRP Joint Treatment: Clinical Evidence",
+    "canonicalUrl": "/treatments/scientific-evidence/treatments/prp-joint-treatment"
+  },
+  "hero": {
+    "headline": "Evidence for PRP Joint Therapy",
+    "subheadline": "RCTs report sustained WOMAC and VAS improvements versus HA or steroid.",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80",
+    "badge": "Clinical Research"
+  },
+  "quickStats": {
+    "duration": "45 mins",
+    "anesthesia": "Topical/local",
+    "downtime": "Minimal",
+    "resultsVisible": "4-6 weeks",
+    "resultsLast": "6-12 months",
+    "painLevel": "Low",
+    "sessions": "1-3 injections (protocol-dependent)"
+  },
+  "overview": {
+    "title": "What the Literature Shows",
+    "content": "Randomized trials comparing PRP with hyaluronic acid or corticosteroid demonstrate better and longer-lasting improvements in pain and function for mild-to-moderate knee OA. Additional studies support PRP for hip OA and chronic tendinopathies when delivered under ultrasound guidance.",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1400&q=80",
+    "highlights": [
+      "Multiple RCTs in knee osteoarthritis",
+      "Comparisons vs HA and corticosteroid",
+      "Evidence for multi-injection protocols"
+    ]
+  },
+  "howItWorks": {
+    "title": "Why PRP Helps Joints & Tendons",
+    "subtitle": "Concentrated platelets release growth factors that drive repair.",
+    "content": "PRP delivers a dense mix of growth factors that modulate inflammation, promote angiogenesis, and support collagen synthesis. In joints and tendons, this can translate to reduced pain, improved biomechanics, and faster recovery when paired with rehab.",
+    "variant": "default",
+    "background": "default",
+    "enabled": true,
+    "benefits": [
+      {
+        "title": "Drug-free biologic",
+        "description": "Uses your own blood—no corticosteroid side effects.",
+        "icon": "heart-pulse"
+      },
+      {
+        "title": "Sustained relief",
+        "description": "Studies show benefits lasting beyond HA and steroid in many cohorts.",
+        "icon": "clock-3"
+      },
+      {
+        "title": "Versatile application",
+        "description": "Protocols exist for knees, hips, and chronic tendinopathies.",
+        "icon": "repeat"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Evidence Highlights",
+    "items": [
+      {
+        "title": "Superior to HA in RCTs",
+        "description": "Several trials report higher WOMAC and VAS improvements vs hyaluronic acid at 6–12 months.",
+        "icon": "medal"
+      },
+      {
+        "title": "Multi-injection advantage",
+        "description": "Studies show repeated PRP injections outperform single-dose and HA in early OA.",
+        "icon": "layers"
+      },
+      {
+        "title": "Safety profile",
+        "description": "Autologous product with mainly transient soreness/swelling reported.",
+        "icon": "shield-check"
+      }
+    ]
+  },
+  "faq": [
+    {
+      "question": "How many injections do studies use?",
+      "answer": "Protocols vary; RCTs often compare single vs double/triple injections, with multiple doses showing greater durability in early OA."
+    },
+    {
+      "question": "How does PRP compare to steroid?",
+      "answer": "Steroids can give quick relief but often wane by 3 months; PRP studies show longer-lasting improvements through 6–12 months."
+    },
+    {
+      "question": "Is PRP used beyond knees?",
+      "answer": "Yes—evidence also exists for hip osteoarthritis and chronic tendinopathies when guided by ultrasound."
+    }
+  ],
+  "cta": {
+    "title": "Want to See If PRP Fits Your Case?",
+    "subtitle": "We’ll align protocol (single vs series) with your imaging and activity goals.",
+    "primaryButton": "Book a consultation",
+    "secondaryButton": "Call the clinic"
+  }
+}

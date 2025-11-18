@@ -2,11 +2,13 @@
 
 import {
   Clock, Syringe, Calendar, Zap, DollarSign, User,
-  Activity, Timer, TrendingUp, BedDouble
+  Activity, Timer, TrendingUp, BedDouble, Info
 } from "lucide-react";
 import { Container } from "@/components/layout/Container";
-import { HelpCircle } from "lucide-react";
+import { SectionHeader } from "@/components/common/SectionHeader";
 import { cn } from "@/lib/utils";
+import { Badge } from "@/components/ui/badge";
+import { getSectionPreset } from "@/lib/section-presets";
 
 // Consolidated icon mapping from all three components
 const iconMap = {
@@ -52,20 +54,27 @@ const labelMap = {
  *
  * @param {Object} data - Stats object with keys like duration, price, etc.
  * @param {string} variant - Display variant: 'default' | 'compact' | 'cards' | 'minimal' | 'highlight'
- * @param {string} title - Section title (optional)
- * @param {string} subtitle - Section subtitle (optional)
- * @param {string} badge - Badge text (optional)
+ * @param {string} title - Section title (optional, uses preset default)
+ * @param {string} subtitle - Section subtitle (optional, uses preset default)
+ * @param {string} badge - Badge text (optional, uses preset default)
  * @param {boolean} showSection - Wrap in section with container (default: true)
  */
 export function StatsSection({
   data,
   variant = "default",
-  title = "Quick Treatment Facts",
-  subtitle = "Everything you need to know before booking—timelines, comfort level, and investment.",
-  badge = "Treatment At A Glance",
+  title,
+  subtitle,
+  badge,
   showSection = true
 }) {
   if (!data) return null;
+
+  // Get preset with optional overrides
+  const headerPreset = getSectionPreset('stats', {
+    ...(title !== undefined && { title }),
+    ...(subtitle !== undefined && { subtitle }),
+    ...(badge !== undefined && { badge })
+  });
 
   // Filter out empty values and create stat entries
   const statEntries = Object.entries(data).filter(([_, value]) => value);
@@ -76,20 +85,7 @@ export function StatsSection({
     <>
       {/* Section Header - only show for variants that need it */}
       {showSection && (variant === "default" || variant === "cards") && (
-        <div className="text-center mb-12">
-          {badge && (
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-4">
-              <HelpCircle className="w-4 h-4 text-primary" />
-              <span className="text-primary text-xs font-semibold tracking-wider uppercase">{badge}</span>
-            </div>
-          )}
-          {title && (
-            <h2 className="text-3xl sm:text-4xl font-heading font-bold text-foreground mb-3">{title}</h2>
-          )}
-          {subtitle && (
-            <p className="text-base text-muted-foreground max-w-2xl mx-auto">{subtitle}</p>
-          )}
-        </div>
+        <SectionHeader {...headerPreset} />
       )}
 
       {/* Stats Grid - variant-specific rendering */}
@@ -165,7 +161,7 @@ function StatsCompact({ statEntries }) {
             key={key}
             className="flex items-center gap-3 p-4 bg-muted/50 rounded-xl border border-border"
           >
-            <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+            <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
               <Icon className="w-5 h-5 text-primary" />
             </div>
             <div className="min-w-0">

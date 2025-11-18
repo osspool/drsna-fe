@@ -1,12 +1,7 @@
 import { HeroSection } from "@/components/heroes/landing/HeroSection";
-import { StatsSection } from "@/components/sections/StatsSection";
-import { OverviewBlock } from "@/components/blocks/OverviewBlock";
-import { FeaturesSection } from "@/components/sections/FeaturesSection";
-import { GalleryBlock } from "@/components/blocks/GalleryBlock";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
-import { FAQSection } from "@/components/sections/FAQSection";
-import { CTASection } from "@/components/sections/CTASection";
-import { drAbbasData } from "@/data/dr-abbas";
+import { SectionRenderer } from "@/components/common/SectionRenderer";
+import { drAbbasPageConfig } from "@/lib/configs/dr-abbas";
+import { drAbbasData } from "@/data/pages/dr-abbas/page";
 
 // P-Shot focused data configuration
 const pshotFocusedData = {
@@ -76,6 +71,21 @@ const pshotFocusedData = {
       location: "Kent, UK"
     }
   ],
+  faqTitle: "Questions About Dr Abbas",
+  faq: [
+    {
+      question: "What makes Dr Abbas different from other P-Shot providers?",
+      answer: "Dr Abbas is one of the few UK practitioners directly certified by Dr. Charles Runels, creator of the Priapus Shot®. With over 1,000 procedures performed and surgical-level qualifications (MRCSEd), he brings unmatched precision and expertise to every treatment."
+    },
+    {
+      question: "How experienced is Dr Abbas with the P-Shot?",
+      answer: "Dr Abbas has performed over 1,000 P-Shot procedures with a 98% patient satisfaction rate. He's one of London's most experienced providers, having specialized in male intimate health for over 15 years."
+    },
+    {
+      question: "Is the consultation confidential?",
+      answer: "Absolutely. Dr Abbas understands the sensitive nature of intimate health concerns. All consultations are completely confidential, conducted in private at our discreet Wimpole Street clinic."
+    }
+  ],
   cta: {
     title: "Ready to Transform Your Intimate Health?",
     subtitle: "Schedule a confidential consultation with Dr Abbas",
@@ -128,57 +138,23 @@ export function DrAbbasPageContent({ variant = 'general' }) {
     ]
   };
 
-  // Stats configuration
-  const statsData = isPShot ? {
-    experience: "15+ Years",
-    procedures: "1,000+ P-Shots",
-    satisfaction: "98% Success Rate",
-    certified: "Official P-Shot® Provider"
-  } : data.quickStats;
-
-  // FAQ configuration
-  const faqData = isPShot ? [
-    {
-      question: "What makes Dr Abbas different from other P-Shot providers?",
-      answer: "Dr Abbas is one of the few UK practitioners directly certified by Dr. Charles Runels, creator of the Priapus Shot®. With over 1,000 procedures performed and surgical-level qualifications (MRCSEd), he brings unmatched precision and expertise to every treatment."
-    },
-    {
-      question: "How experienced is Dr Abbas with the P-Shot?",
-      answer: "Dr Abbas has performed over 1,000 P-Shot procedures with a 98% patient satisfaction rate. He's one of London's most experienced providers, having specialized in male intimate health for over 15 years."
-    },
-    {
-      question: "Is the consultation confidential?",
-      answer: "Absolutely. Dr Abbas understands the sensitive nature of intimate health concerns. All consultations are completely confidential, conducted in private at our discreet Wimpole Street clinic."
-    }
-  ] : data.faq;
-
-  const faqTitle = isPShot ? "Questions About Dr Abbas" : "Frequently Asked Questions";
+  // Override quick stats for P-Shot variant
+  if (isPShot) {
+    data.quickStats = {
+      experience: "15+ Years",
+      procedures: "1,000+ P-Shots",
+      satisfaction: "98% Success Rate",
+      certified: "Official P-Shot® Provider"
+    };
+  }
 
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
       <HeroSection {...heroConfig} />
 
-      {/* Quick Stats */}
-      <StatsSection data={statsData} variant="cards" />
-
-      {/* Overview/Biography */}
-      <OverviewBlock data={data.overview} />
-
-      {/* Why Choose Dr Abbas */}
-      <FeaturesSection data={data.whyChooseDrSNA} variant="cards" />
-
-      {/* Gallery */}
-      <GalleryBlock data={drAbbasData.gallery} />
-
-      {/* Patient Testimonials */}
-      <TestimonialsSection data={data.testimonials} variant="text" />
-
-      {/* FAQ Section */}
-      <FAQSection data={faqData} title={faqTitle} />
-
-      {/* CTA Section */}
-      <CTASection data={data.cta} />
+      {/* All other sections rendered via registry */}
+      <SectionRenderer sections={drAbbasPageConfig} data={data} />
     </main>
   );
 }

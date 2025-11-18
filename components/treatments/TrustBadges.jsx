@@ -1,30 +1,9 @@
 "use client";
 
-import {
-  Shield,
-  ShieldCheck,
-  Award,
-  Building,
-  Umbrella,
-  AlertCircle,
-  CheckCircle,
-  Star,
-  Users,
-  Clock,
-} from "lucide-react";
-
-const iconMap = {
-  "shield-check": ShieldCheck,
-  shield: Shield,
-  award: Award,
-  building: Building,
-  umbrella: Umbrella,
-  "alert-circle": AlertCircle,
-  "check-circle": CheckCircle,
-  star: Star,
-  users: Users,
-  clock: Clock,
-};
+import { ShieldCheck, CheckCircle } from "lucide-react";
+import { StatCard } from "@/components/common/StatCard";
+import { IconFeatureCard } from "@/components/common/IconFeatureCard";
+import { Icon } from "@/components/custom/ui/icon";
 
 export function TrustBadges({ certifications, variant = "default" }) {
   if (!certifications || certifications.length === 0) return null;
@@ -32,20 +11,17 @@ export function TrustBadges({ certifications, variant = "default" }) {
   if (variant === "inline") {
     return (
       <div className="flex flex-wrap items-center justify-center gap-4">
-        {certifications.map((cert, index) => {
-          const Icon = iconMap[cert.icon] || ShieldCheck;
-          return (
-            <div
-              key={index}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-dark-brown/10 hover:border-gold/30 transition-colors"
-            >
-              <Icon className="w-4 h-4 text-gold flex-shrink-0" />
-              <span className="text-sm font-semibold text-dark-brown whitespace-nowrap">
-                {cert.name}
-              </span>
-            </div>
-          );
-        })}
+        {certifications.map((cert, index) => (
+          <div
+            key={index}
+            className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-dark-brown/10 hover:border-gold/30 transition-colors"
+          >
+            <Icon name={cert.icon} size={16} className="text-gold flex-shrink-0" />
+            <span className="text-sm font-semibold text-dark-brown whitespace-nowrap">
+              {cert.name}
+            </span>
+          </div>
+        ))}
       </div>
     );
   }
@@ -53,20 +29,20 @@ export function TrustBadges({ certifications, variant = "default" }) {
   if (variant === "compact") {
     return (
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        {certifications.map((cert, index) => {
-          const Icon = iconMap[cert.icon] || ShieldCheck;
-          return (
-            <div
-              key={index}
-              className="flex flex-col items-center text-center p-4 bg-cream/50 rounded-xl border border-dark-brown/5 hover:border-gold/20 transition-colors"
-            >
-              <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center mb-2">
-                <Icon className="w-5 h-5 text-gold" />
-              </div>
-              <div className="text-xs font-semibold text-dark-brown">{cert.name}</div>
-            </div>
-          );
-        })}
+        {certifications.map((cert, index) => (
+          <StatCard
+            key={index}
+            icon={cert.icon}
+            label={cert.name}
+            variant="minimal"
+            iconBg="gold"
+            iconSize="md"
+            className="p-4 bg-cream/50 rounded-xl border border-dark-brown/5 hover:border-gold/20"
+            iconClassName="w-10 h-10 rounded-full"
+            labelClassName="text-xs font-semibold text-dark-brown"
+            animate={false}
+          />
+        ))}
       </div>
     );
   }
@@ -74,31 +50,28 @@ export function TrustBadges({ certifications, variant = "default" }) {
   // Default variant - cards with descriptions
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {certifications.map((cert, index) => {
-        const Icon = iconMap[cert.icon] || ShieldCheck;
-        return (
-          <div
-            key={index}
-            className="bg-white rounded-2xl p-6 border border-dark-brown/10 hover:border-gold/30 hover:shadow-lg transition-all group"
-          >
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center flex-shrink-0 group-hover:bg-gold/20 transition-colors">
-                <Icon className="w-6 h-6 text-gold" />
-              </div>
-              <div className="flex-1 min-w-0">
-                <h3 className="font-heading font-bold text-dark-brown mb-1 text-lg">
-                  {cert.name}
-                </h3>
-                {cert.description && (
-                  <p className="text-sm text-dark-brown/60 leading-relaxed">
-                    {cert.description}
-                  </p>
-                )}
-              </div>
+      {certifications.map((cert, index) => (
+        <div
+          key={index}
+          className="bg-white rounded-2xl p-6 border border-dark-brown/10 hover:border-gold/30 hover:shadow-lg transition-all group"
+        >
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center flex-shrink-0 group-hover:bg-gold/20 transition-colors">
+              <Icon name={cert.icon} size={24} className="text-gold" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <h3 className="font-heading font-bold text-dark-brown mb-1 text-lg">
+                {cert.name}
+              </h3>
+              {cert.description && (
+                <p className="text-sm text-dark-brown/60 leading-relaxed">
+                  {cert.description}
+                </p>
+              )}
             </div>
           </div>
-        );
-      })}
+        </div>
+      ))}
     </div>
   );
 }

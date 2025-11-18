@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { Section } from "@/components/layout/Section";
 import Glow from "@/components/custom/ui/glow";
+import { Badge } from "@/components/ui/badge";
 
 function getIconComponent(icon) {
   if (!icon) return Sparkles;
@@ -34,7 +35,7 @@ export function ProcessTimeline({ data, variant = "default" }) {
   // Compact Timeline Variant (from WhatToExpectBlock)
   if (variant === "compact-timeline") {
     return (
-      <Section background="white" padding="none" ripple={true}>
+      <Section background="muted" padding="none" ripple={true}>
         <div className="relative flex w-full flex-col items-start justify-start overflow-hidden py-16 md:py-24">
           {/* Glow Effect */}
           <Glow variant="center" className="opacity-30" />
@@ -54,7 +55,7 @@ export function ProcessTimeline({ data, variant = "default" }) {
                 </h2>
               )}
               {data.subtitle && (
-                <p className="text-base md:text-lg text-foreground font-medium mb-2">
+                <p className="text-base md:text-lg text-muted-foreground font-medium mb-2">
                   {data.subtitle}
                 </p>
               )}
@@ -143,7 +144,7 @@ export function ProcessTimeline({ data, variant = "default" }) {
   // Timeline Variant (from WhatToExpectBlock default)
   if (variant === "timeline") {
     return (
-      <Section background="white" padding="none" ripple={true}>
+      <Section background="muted" padding="none" ripple={true}>
         <div className="relative flex w-full flex-col items-start justify-start overflow-hidden py-16 md:py-24">
           {/* Glow Effect */}
           <Glow variant="center" className="opacity-30" />
@@ -158,7 +159,7 @@ export function ProcessTimeline({ data, variant = "default" }) {
               className="text-center mb-12 max-w-3xl mx-auto"
             >
               {data.title && (
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-3">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-3">
                   {data.title}
                 </h2>
               )}
@@ -247,7 +248,7 @@ export function ProcessTimeline({ data, variant = "default" }) {
   }
 
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-linear-to-b from-background via-secondary/20 to-background">
+      <Section background="muted-dark" padding="sm">
       <Container>
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16 max-w-4xl mx-auto">
@@ -256,12 +257,15 @@ export function ProcessTimeline({ data, variant = "default" }) {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-linear-to-r from-primary/10 via-primary/5 to-primary/10 border border-primary/20 rounded-full mb-4 md:mb-6"
+            className="mb-4 md:mb-6"
           >
-            <Sparkles className="w-3.5 h-3.5 text-primary" />
-            <span className="text-primary text-xs font-semibold tracking-[0.2em] uppercase">
+            <Badge
+              variant="default"
+              className="px-4 py-2 text-xs font-semibold tracking-[0.2em] uppercase bg-linear-to-r from-primary/10 via-primary/5 to-primary/10 border-primary/20 text-primary"
+            >
+              <Sparkles className="w-3.5 h-3.5" />
               How It Works
-            </span>
+            </Badge>
           </motion.div>
 
           <motion.h2
@@ -294,7 +298,7 @@ export function ProcessTimeline({ data, variant = "default" }) {
           <MinimalTimeline steps={steps} />
         )}
       </Container>
-    </section>
+    </Section>
   );
 }
 
@@ -413,7 +417,7 @@ function MinimalTimeline({ steps }) {
               transition={{ delay: 0.1, duration: 0.6 }}
               className="mb-6"
             >
-              <h3 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-foreground mb-3 md:mb-4">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-3 md:mb-4">
                 {activeStep.title}
               </h3>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">

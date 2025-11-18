@@ -7,27 +7,31 @@ import { CTASection } from "@/components/sections/CTASection";
 import { SubcategoryGrid } from "@/components/treatments/SubcategoryGrid";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
+import { SectionHeader } from "@/components/common/SectionHeader";
+import { IconFeatureCard } from "@/components/common/IconFeatureCard";
 import TwoColumnTextFeaturesImage from "@/components/custom/ui/blocks/TwoColumnTextFeaturesImage";
-import { Sparkles, Star } from "lucide-react";
-import * as Icons from "lucide-react";
+import { Star } from "lucide-react";
 
 // Import category data
 import aestheticMedicineData from "@/data/aesthetic-medicine/category.json";
 import intimateHealthData from "@/data/intimate-health/category.json";
 import painManagementData from "@/data/pain-management/category.json";
+import scientificEvidenceData from "@/data/scientific-evidence/category.json";
 
 const categoryDataMap = {
   "aesthetic-medicine": aestheticMedicineData,
   "intimate-health": intimateHealthData,
   "pain-management": painManagementData,
+  "scientific-evidence": scientificEvidenceData,
   // Add other categories as they're created
 };
 
 export async function generateStaticParams() {
+  // Only pre-render top 2 most popular categories to limit server load
+  // Other categories will be rendered on-demand with automatic caching
   return [
     { category: "aesthetic-medicine" },
     { category: "intimate-health" },
-    { category: "pain-management" },
   ];
 }
 
@@ -109,42 +113,32 @@ export default async function CategoryPage({ params }) {
 // Introduction Section Component
 function IntroductionSection({ data }) {
   return (
-    <Section background="default" className="py-32">
+    <Section background="default" padding="xl">
       <Container>
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-            {data.title}
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            {data.content}
-          </p>
-        </div>
+        <SectionHeader
+          title={data.title}
+          titleClassName="text-foreground"
+          subtitle={data.content}
+          subtitleClassName="text-muted-foreground leading-relaxed"
+          maxWidth={4}
+        />
 
         {data.highlights && data.highlights.length > 0 && (
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
-            {data.highlights.map((highlight, index) => {
-              const iconName = highlight.icon?.split('-').map(word =>
-                word.charAt(0).toUpperCase() + word.slice(1)
-              ).join('');
-              const Icon = Icons[iconName] || Icons.Star;
-
-              return (
-                <div
-                  key={index}
-                  className="text-center p-8 bg-secondary rounded-3xl hover:shadow-xl transition-shadow group"
-                >
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                    <Icon className="w-8 h-8 text-primary-foreground" />
-                  </div>
-                  <h3 className="text-xl font-heading font-bold text-foreground mb-3">
-                    {highlight.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {highlight.description}
-                  </p>
-                </div>
-              );
-            })}
+            {data.highlights.map((highlight, index) => (
+              <IconFeatureCard
+                key={index}
+                icon={highlight.icon}
+                title={highlight.title}
+                description={highlight.description}
+                variant="bordered"
+                iconBg="none"
+                iconSize="lg"
+                className="text-center bg-secondary rounded-3xl"
+                iconClassName="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-2xl mx-auto group-hover:scale-110 transition-transform"
+                animationDelay={index * 0.1}
+              />
+            ))}
           </div>
         )}
       </Container>
@@ -155,19 +149,14 @@ function IntroductionSection({ data }) {
 // Testimonials Section Component
 function TestimonialsSection({ testimonials }) {
   return (
-    <Section className="py-32 bg-gradient-to-b from-secondary to-background">
+    <Section padding="xl" className="bg-gradient-to-b from-secondary to-background">
       <Container>
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
-            <Star className="w-4 h-4 text-primary fill-primary" />
-            <span className="text-primary text-sm font-semibold tracking-wider uppercase">
-              Patient Stories
-            </span>
-          </div>
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
-            What Our Patients Say
-          </h2>
-        </div>
+        <SectionHeader
+          badge="Patient Stories"
+          badgeIcon="star"
+          title="What Our Patients Say"
+          titleClassName="text-foreground"
+        />
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (

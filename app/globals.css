@@ -151,7 +151,7 @@
 
 .dark {
   /* Dark mode with enhanced luxury feel */
-  --background: oklch(0.125 0.014 60.5);
+  --background: oklch(0.0912 0.0469 286.82);
   /* oklch(0.125 0.014 60.5); */
   --foreground: oklch(0.989 0.005 85.8);
 
@@ -168,11 +168,11 @@
   --primary-foreground: oklch(0.125 0.014 60.5);
   
   /* Secondary (Dark Brown/Charcoal) */
-  --secondary: oklch(0.1617 0.0815 286.82);
+  --secondary: oklch(0.1118 0.0444 286.82);
   --secondary-foreground: oklch(0.989 0.005 85.8);
   
   /* Muted - Darker but visible */
-  --muted: oklch(0.1617 0.0815 286.82);
+  --muted: oklch(0.1118 0.0444 286.82);
   --muted-foreground: oklch(0.712 0.012 60.5);
   
   /* Accent (Warm Gold) */
@@ -190,7 +190,7 @@
   --sidebar-foreground: oklch(0.989 0.005 85.8);
   --sidebar-primary: oklch(0.8361 0.126 91.81);
   --sidebar-primary-foreground: oklch(0.125 0.014 60.5);
-  --sidebar-accent: oklch(0.1617 0.0815 286.82);
+  --sidebar-accent: oklch(0.1118 0.0444 286.82);
   --sidebar-accent-foreground: oklch(0.989 0.005 85.8);
   --sidebar-border: oklch(1 0 0 / 12%);
   --sidebar-ring: oklch(0.8361 0.126 91.81);

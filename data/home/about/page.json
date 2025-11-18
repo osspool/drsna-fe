@@ -1,0 +1,367 @@
+{
+  "page": "About Us",
+  "hero": {
+    "badge": "About Dr SNA Clinic",
+    "title": "Advanced Medical, Regenerative and Aesthetic Care",
+    "subtitle": "Where medical excellence meets aesthetic artistry in the heart of London's prestigious Harley Street medical district",
+    "image": {
+      "src": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&q=80",
+      "alt": "Modern medical clinic interior"
+    },
+    "stats": [
+      {
+        "value": "20+",
+        "label": "Years of Clinical Experience"
+      },
+      {
+        "value": "10,000+",
+        "label": "Happy Patients"
+      },
+      {
+        "value": "CQC",
+        "label": "Registered & Regulated"
+      },
+      {
+        "value": "100%",
+        "label": "Doctor-Led Care"
+      }
+    ],
+    "cta": [
+      {
+        "text": "Book Your Consultation",
+        "href": "/contact",
+        "variant": "default"
+      },
+      {
+        "text": "Meet Dr Abbas",
+        "href": "/dr-syed-nadeem-abbas",
+        "variant": "outline"
+      }
+    ]
+  },
+  "introduction": {
+    "title": "Your Health, Function and Confidence—All Under One Roof",
+    "content": "When your joints, tissues, skin, hair and confidence begin to change, you deserve more than temporary fixes. You deserve an aesthetic and regenerative clinic that understands your symptoms, listens carefully to your concerns and offers real, long-lasting medical solutions.\n\nDr SNA Clinic is an advanced medical, regenerative and aesthetic clinic located on London's prestigious Wimpole Street, within the Harley Street medical district.\n\nAs both a regenerative clinic and an aesthetic clinic, we bring medicine, aesthetics and regenerative science together under one roof - helping you heal, repair and rejuvenate both internally and externally.",
+    "image": "https://images.unsplash.com/photo-1551076805-e1869033e561?w=1200&q=80",
+    "highlights": [
+      "Advanced regenerative treatments for repair, healing and healthy ageing",
+      "Doctor-led aesthetic treatments for natural, balanced enhancement",
+      "Evidence-based wellness programmes to improve mobility, comfort and quality of life"
+    ]
+  },
+  "mission": {
+    "badge": "Our Mission",
+    "title": "Better Health, Better Function, Better Confidence",
+    "description": "Every patient is different - and every treatment plan is tailored with precision. Our mission is to support your skin health, joint health, hair health and long-term wellbeing through medically led regenerative and aesthetic treatments.",
+    "image": {
+      "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80",
+      "alt": "Medical professional consulting with patient"
+    },
+    "highlights": [
+      {
+        "icon": "sparkles",
+        "title": "Natural Refinement",
+        "description": "Enhancing and preserving your natural features through precision medical care"
+      },
+      {
+        "icon": "heart-pulse",
+        "title": "Regenerative Science",
+        "description": "Supporting tissue repair and joint mobility with evidence-based treatments"
+      },
+      {
+        "icon": "shield-check",
+        "title": "Patient-First Care",
+        "description": "Warm, honest care that puts your wellbeing and trust at the center"
+      }
+    ]
+  },
+  "story": {
+    "badge": "Our Story",
+    "title": "Built on Medical Excellence, Driven by Patient Care",
+    "description": "Dr SNA Clinic was created to redefine what a modern aesthetic and regenerative clinic should be: medically led, scientifically grounded and focused on the whole person.",
+    "image": {
+      "src": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1200&q=80",
+      "alt": "Dr Syed Nadeem Abbas in consultation"
+    },
+    "highlights": [
+      {
+        "icon": "shield",
+        "title": "Safety is Non-Negotiable",
+        "description": "As a CQC-registered clinic, our systems, safety and medical governance are independently monitored and upheld to the highest standards"
+      },
+      {
+        "icon": "microscope",
+        "title": "Science-Guided",
+        "description": "Every treatment is guided by regenerative science and medical evidence"
+      },
+      {
+        "icon": "user-round-check",
+        "title": "Whole-Person Care",
+        "description": "We care for the whole person - not just one feature - considering your overall health and wellbeing"
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Dr Syed Nadeem Abbas (Dr SNA)",
+      "role": "Founder & Clinical Director",
+      "image": "/images/drsnaclinic/dr-syed-nadeem-abbas.webp",
+      "bio": "Dr Syed Nadeem Abbas (Dr SNA) is a highly experienced medical doctor with more than 20 years in clinical practice, known for his advanced expertise in regenerative medicine, aesthetic medicine and Trauma & Orthopaedics.",
+      "credentials": {
+        "title": "His Background includes:",
+        "list": [
+          "Over 6 years' experience in Trauma & Orthopaedics, working in leading UK hospitals",
+          "Held clinical posts in Cambridge and Oxford, where he also taught medical students",
+          "Member of the Royal College of Surgeons of Edinburgh since 2006",
+          "Masters in Aesthetic Plastic Surgery (Distinction) from Queen Mary University of London",
+          "Performed PRP and the P-Shot for nearly 5 years, trained by the American Cellular Medical Association"
+        ]
+      },
+      "memberships": {
+        "title": "Professional Memberships:",
+        "list": [
+          "Royal College of Surgeons of Edinburgh",
+          "Royal College of General Practitioners",
+          "British Medical Association",
+          "American Cellular Medical Association"
+        ]
+      },
+      "highlights": [
+        "20+ years clinical experience",
+        "GMC Registered",
+        "Distinction Masters in Aesthetic Surgery",
+        "CQC Regulated Practice"
+      ]
+    }
+  ],
+  "clinicShowcase": {
+    "badge": "Experience Excellence",
+    "title": "Your Sanctuary of",
+    "titleAccent": "Aesthetic Excellence",
+    "description": "Step inside our world-class clinic where luxury, privacy, and cutting-edge technology converge to create the perfect environment for your transformation",
+    "slides": [
+      {
+        "src": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=80",
+        "title": "State-of-the-Art Reception",
+        "subtitle": "First Impressions That Last",
+        "description": "Welcome to our elegant reception area, where luxury meets comfort. Every detail is designed to put you at ease from the moment you arrive."
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&q=80",
+        "title": "Premium Treatment Rooms",
+        "subtitle": "Where Excellence Meets Comfort",
+        "description": "Our advanced treatment rooms combine cutting-edge medical equipment with a soothing ambiance, ensuring your complete comfort during every procedure."
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1600&q=80",
+        "title": "Private Consultation Suites",
+        "subtitle": "Your Journey Begins Here",
+        "description": "Discreet, private spaces where Dr Abbas takes the time to understand your aesthetic goals and create your personalized treatment plan."
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=1600&q=80",
+        "title": "Prestigious London Location",
+        "subtitle": "Wimpole Street Excellence",
+        "description": "Located in the heart of London's medical district, our clinic sets the standard for aesthetic medicine in one of the world's most iconic locations."
+      }
+    ]
+  },
+  "expertise": {
+    "badge": "Our Expertise",
+    "title": "Medically Designed, Integrated & Evidence-Led",
+    "subtitle": "Advanced protocols for regenerative medicine, aesthetics, and wellness",
+    "description": "Every protocol at our aesthetic and regenerative clinic is medically designed, refined and engineered for safety, precision and long-term benefit. We do not use generic, off-the-shelf treatments.",
+    "features": [
+      {
+        "icon": "dna",
+        "title": "Regenerative Medicine",
+        "description": "Advanced PRP therapy, tissue repair, and cellular regeneration treatments"
+      },
+      {
+        "icon": "sparkles",
+        "title": "Advanced Aesthetics",
+        "description": "Natural facial enhancement, dermal fillers, and anti-wrinkle treatments"
+      },
+      {
+        "icon": "stethoscope",
+        "title": "Medical Diagnostics",
+        "description": "Comprehensive assessments to understand your unique needs"
+      },
+      {
+        "icon": "heart-pulse",
+        "title": "Personalised Wellness",
+        "description": "Tailored protocols for joint health, mobility, and quality of life"
+      },
+      {
+        "icon": "activity",
+        "title": "Collagen Stimulation",
+        "description": "Cutting-edge treatments to boost natural collagen production"
+      },
+      {
+        "icon": "droplet",
+        "title": "Skin Rejuvenation",
+        "description": "Science-backed therapies for lasting skin health and radiance"
+      }
+    ],
+    "approach": {
+      "title": "This integrated approach ensures:",
+      "points": [
+        "Completely joined-up care",
+        "Truly personalised treatment plans",
+        "Long-term health, function and confidence at the centre of each decision"
+      ]
+    }
+  },
+  "services": {
+    "title": "Our Signature Clinical Specialities",
+    "subtitle": "Comprehensive Treatment Protocols",
+    "list": [
+      {
+        "name": "Dr SNA Signature Facial Aesthetics Protocols",
+        "description": "Using advanced anatomical expertise, our facial aesthetic treatments deliver natural refinement, balanced facial proportions and minimal downtime.",
+        "image": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80",
+        "idealFor": [
+          "Facial rejuvenation",
+          "Profile balancing",
+          "Non-surgical enhancement",
+          "Dermal fillers and minimally invasive procedures"
+        ]
+      },
+      {
+        "name": "Dr SNA Research-Led Skin Regeneration Systems",
+        "description": "Our skin regeneration protocols combine PRP, microneedling, polynucleotides, collagen stimulation and regenerative aesthetics.",
+        "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80",
+        "designedFor": [
+          "Fine lines & wrinkles",
+          "Pigmentation",
+          "Uneven texture",
+          "Acne scarring",
+          "Long-term skin health"
+        ]
+      },
+      {
+        "name": "Dr SNA Advanced Hair Restoration Techniques",
+        "description": "Using PRP, regenerative therapies and targeted delivery systems to support follicle strength, density and scalp health.",
+        "image": "https://images.unsplash.com/photo-1622296089863-eb7fc530daa8?w=800&q=80",
+        "idealFor": [
+          "Early to moderate hair thinning",
+          "Men and women seeking non-surgical improvement",
+          "Follicle strength and density"
+        ]
+      },
+      {
+        "name": "Regenerative Medicine Protocols",
+        "description": "Supporting joint pain, tendon injury, degenerative change, and tissue repair through regenerative science and orthopaedic expertise.",
+        "image": "https://images.unsplash.com/photo-1581594549595-35f6edc7b762?w=800&q=80",
+        "idealFor": [
+          "Joint pain management",
+          "Soft-tissue injury recovery",
+          "Degenerative condition support"
+        ]
+      }
+    ]
+  },
+  "whyChoose": {
+    "title": "Why Patients Trust Our Aesthetic & Regenerative Clinic",
+    "intro": "Choosing a clinic is both a medical and emotional decision. Patients trust us because we offer:",
+    "points": [
+      "20+ years of clinical experience",
+      "Exclusive protocols that combine aesthetics & regeneration",
+      "A warm, respectful, supportive team",
+      "A CQC-registered medical clinic",
+      "Honest advice - even if treatment is not recommended",
+      "A reputation for precision, safety and natural results"
+    ],
+    "closing": "We do not rush. We do not over-treat. We deliver medically grounded, safe, natural outcomes."
+  },
+  "values": [
+    {
+      "title": "Innovation & Excellence",
+      "subtitle": "Innovation, Excellence & Regenerative Science",
+      "content": "We continually invest in cutting-edge regenerative technologies, global medical training, evidence-based techniques, and safer, smarter aesthetic and regenerative systems.",
+      "image": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800&q=80",
+      "goal": "Our goal is to deliver the highest standard of regenerative and aesthetic medicine in London."
+    },
+    {
+      "title": "Our Promise",
+      "subtitle": "Natural Results, Better Function, Lifelong Confidence",
+      "content": "We promise treatments that respect your individuality, support your natural beauty, improve your function and movement, protect your long-term wellbeing, and offer meaningful, lasting change.",
+      "image": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800&q=80",
+      "closing": "This is where patients feel seen, supported and transformed—medically and aesthetically."
+    }
+  ],
+  "testimonials": {
+    "title": "What Our Patients Say",
+    "subtitle": "Real experiences from real patients",
+    "items": [
+      {
+        "name": "Sarah M.",
+        "role": "Facial Aesthetics Patient",
+        "content": "Dr Abbas's approach is genuinely different. He took time to understand not just what I wanted aesthetically, but my medical history and overall health. The results are natural and confidence-building.",
+        "rating": 5
+      },
+      {
+        "name": "James T.",
+        "role": "Regenerative Medicine Patient",
+        "content": "After years of joint pain, the regenerative treatments at Dr SNA Clinic have given me my mobility back. The medical expertise and care are exceptional.",
+        "rating": 5
+      },
+      {
+        "name": "Emma L.",
+        "role": "Skin Rejuvenation Patient",
+        "content": "The clinic is beautiful, the staff are warm and professional, and Dr Abbas's knowledge is impressive. I feel in safe, expert hands every visit.",
+        "rating": 5
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What makes Dr SNA Clinic different from a standard aesthetic or beauty clinic?",
+        "answer": "Dr SNA Clinic is a medically led aesthetic and regenerative clinic, not a high-street beauty salon. All treatments are designed and overseen by a UK-trained doctor with more than 20 years of clinical experience, including trauma & orthopaedics, regenerative medicine and aesthetic medicine.\n\nWe focus on:\n- long-term health, function and confidence\n- evidence-based regenerative treatments\n- natural, doctor-led facial aesthetics\n- skin, hair, joint and tissue health — not just looks\n\nThis medical foundation allows us to treat more complex concerns safely, ethically and effectively."
+      },
+      {
+        "question": "What conditions and concerns do you treat?",
+        "answer": "We support patients with a wide range of aesthetic and medical concerns, including:\n- skin ageing & facial rejuvenation\n- hair thinning and hair loss\n- joint pain & soft-tissue inflammation\n- tendon injuries and degenerative issues\n- metabolic and body contour concerns\n- natural, doctor-led facial enhancement\n\nIf you're unsure whether your concern fits, your consultation will give you clear, honest guidance."
+      },
+      {
+        "question": "Is regenerative treatment at Dr SNA Clinic safe and evidence-based?",
+        "answer": "Yes. All regenerative treatments are:\n- based on current scientific evidence\n- performed by a GMC-registered doctor\n- supported by extensive training in Trauma & Orthopaedics and regenerative medicine\n- delivered in a CQC-regulated medical clinic\n\nWe explain benefits, risks and alternatives clearly so you can make a confident, informed decision."
+      },
+      {
+        "question": "Who performs the treatments?",
+        "answer": "All assessments and key treatments are performed by Dr Syed Nadeem Abbas or clinicians working directly under his medical supervision.\n\nDr SNA:\n- has 20+ years clinical experience\n- has worked in Cambridge & Oxford hospitals\n- holds a Distinction Masters in Aesthetic Plastic Surgery\n- is a Member of the Royal College of Surgeons of Edinburgh\n- is trained by the American Cellular Medical Association\n\nYour care is always medically led, not delegated to unregulated providers."
+      },
+      {
+        "question": "What happens during my first consultation?",
+        "answer": "Your consultation is structured, calm and medically focused. It includes:\n- detailed discussion of your symptoms, concerns and goals\n- aesthetic and/or regenerative medical assessment\n- explanation of treatment options and expected outcomes\n- time to ask questions without pressure\n- advice on the safest and most effective path\n\nWe build your treatment plan together — never rushed, never forced."
+      },
+      {
+        "question": "Do you combine regenerative and aesthetic treatments?",
+        "answer": "Yes — and this is one of our clinic's greatest strengths. When appropriate, we integrate:\n- regenerative medicine (PRP, collagen stimulation, polynucleotides)\n- advanced aesthetic treatments\n- wellness and metabolic support\n\nThis joined-up approach helps you feel better, function better and look naturally refreshed at the same time."
+      },
+      {
+        "question": "Is there downtime after treatment?",
+        "answer": "Most of our treatments have minimal or no downtime, especially:\n- PRP\n- polynucleotide injections\n- skin regeneration therapies\n- non-surgical facial enhancement\n- scalp and hair restoration treatments\n\nDuring your consultation, we explain recovery expectations clearly."
+      },
+      {
+        "question": "Do you treat men and women?",
+        "answer": "Yes. We treat men and women of all ages, with tailored protocols for:\n- skin\n- hair\n- joints\n- wellness\n- facial aesthetics\n\nEvery plan is personalised."
+      },
+      {
+        "question": "Are your treatments suitable for sensitive or mature skin?",
+        "answer": "Absolutely. Because our approach is medical and regenerative, we can safely support:\n- sensitive skin\n- mature skin\n- post-procedure skin\n- thinning hair\n- age-related joint or tissue changes\n\nYour safety and suitability are always assessed first."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Begin Your Journey",
+    "subtitle": "Ready to restore, refine and rejuvenate with medically guided treatment?",
+    "content": "If you're ready to improve your skin, restore your hair, support your joints or enhance your natural features, we're here to help.",
+    "button": {
+      "text": "Book Your Consultation Today",
+      "href": "/contact"
+    }
+  }
+}

@@ -5,6 +5,8 @@ import { Globe } from "lucide-react";
 import WorldMap from "@/components/aceternity/world-map";
 import { getIconComponent } from "@/lib/icon-utils";
 import { Section } from "../layout/Section";
+import { StatCard } from "@/components/common/StatCard";
+import { IconFeatureCard } from "@/components/common/IconFeatureCard";
 
 const defaultData = {
   badge: "Global Excellence",
@@ -118,7 +120,7 @@ export function GlobalReachSection({ data }) {
     }));
 
   return (
-    <Section padding="sm" className="relative bg-muted/80">
+    <Section padding="sm" className="relative" background="muted-dark">
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-primary rounded-full blur-xl" />
       </div>
@@ -220,26 +222,19 @@ export function GlobalReachSection({ data }) {
         </div>
 
         <div className="grid md:grid-cols-4 gap-6 mb-16">
-          {sectionData.stats.map((stat, index) => {
-            const Icon = getIconComponent(stat.icon, Globe);
-            return (
-              <div
-                key={stat.label + index}
-                className="glass-card rounded-2xl p-8 border border-border hover:border-primary/40 transition-all duration-300 group"
-              >
-                <Icon className="w-10 h-10 text-primary mb-4 group-hover:scale-105 transition-transform duration-300" />
-                <h3 className="text-4xl font-heading font-bold text-foreground mb-2">
-                  {stat.value}
-                </h3>
-                <p className="text-lg font-semibold text-primary mb-2">
-                  {stat.label}
-                </p>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {stat.description}
-                </p>
-              </div>
-            );
-          })}
+          {sectionData.stats.map((stat, index) => (
+            <StatCard
+              key={stat.label + index}
+              icon={stat.icon}
+              value={stat.value}
+              label={stat.label}
+              description={stat.description}
+              variant="large"
+              iconBg="primary"
+              iconSize="lg"
+              animationDelay={index * 0.1}
+            />
+          ))}
         </div>
 
         <div className="mb-16">
@@ -248,25 +243,19 @@ export function GlobalReachSection({ data }) {
           </h3>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {sectionData.reasons.map((reason, index) => {
-              const ReasonIcon = getIconComponent(reason.icon, Globe);
-              return (
-                <div
-                  key={reason.title + index}
-                  className="glass-card rounded-2xl p-8 border border-border hover:border-primary/40 transition-all duration-300"
-                >
-                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center mb-6">
-                    <ReasonIcon className="w-7 h-7 text-primary-foreground" />
-                  </div>
-                  <h4 className="text-xl font-heading font-bold text-foreground mb-4">
-                    {reason.title}
-                  </h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {reason.description}
-                  </p>
-                </div>
-              );
-            })}
+            {sectionData.reasons.map((reason, index) => (
+              <IconFeatureCard
+                key={reason.title + index}
+                icon={reason.icon}
+                title={reason.title}
+                description={reason.description}
+                variant="default"
+                iconBg="gradient"
+                iconSize="lg"
+                className="glass-card p-8"
+                animationDelay={index * 0.1}
+              />
+            ))}
           </div>
         </div>
       </div>

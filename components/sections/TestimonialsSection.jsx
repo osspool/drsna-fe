@@ -2,7 +2,10 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Play, X, Star, Check, Quote } from "lucide-react";
+import { Play, X, Quote } from "lucide-react";
+import { SectionHeader } from "@/components/common/SectionHeader";
+import { TestimonialCard } from "@/components/common/TestimonialCard";
+import { RatingStars } from "@/components/common/RatingStars";
 import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
 import {
   Carousel,
@@ -46,23 +49,14 @@ export function TestimonialsSection({
     return (
       <section className={`py-20 border-y border-border ${bgClasses[background]}`}>
         <Container>
-          <div className="text-center mb-16 space-y-4">
-            {badgeText && (
-              <div className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 rounded-full">
-                <span className="text-primary text-sm font-semibold tracking-wider uppercase">
-                  {badgeText}
-                </span>
-              </div>
-            )}
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-royal-blue">
-              {heading || "Patient Testimonials"}
-            </h2>
-            {description && (
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                {description}
-              </p>
-            )}
-          </div>
+          <SectionHeader
+            badge={badgeText}
+            title={heading || "Patient Testimonials"}
+            titleClassName="text-4xl md:text-5xl"
+            subtitle={description}
+            subtitleClassName="text-lg"
+            maxWidth={2}
+          />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((video, index) => {
@@ -143,23 +137,12 @@ export function TestimonialsSection({
         <Container>
           {/* Header */}
           {(heading || description) && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              {heading && (
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
-                  {heading}
-                </h2>
-              )}
-              {description && (
-                <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-                  {description}
-                </p>
-              )}
-            </motion.div>
+            <SectionHeader
+              title={heading}
+              titleClassName="text-foreground"
+              subtitle={description}
+              subtitleClassName="text-muted-foreground"
+            />
           )}
 
           {/* Video Testimonials Grid */}
@@ -195,11 +178,7 @@ export function TestimonialsSection({
                     <div className="p-6 lg:p-8 flex-1 flex flex-col">
                       {/* Rating */}
                       {testimonial.rating && (
-                        <div className="flex items-center gap-1 mb-4">
-                          {Array.from({ length: testimonial.rating }).map((_, i) => (
-                            <Star key={i} className="w-4 h-4 text-primary fill-primary" />
-                          ))}
-                        </div>
+                        <RatingStars rating={testimonial.rating} size="md" className="mb-4" />
                       )}
 
                       {/* Quote */}
@@ -268,18 +247,12 @@ export function TestimonialsSection({
     return (
       <section className={`py-20 ${bgClasses[background]}`}>
         <Container>
-          {badgeText && (
-            <div className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
-              <Star className="w-4 h-4 text-primary fill-primary" />
-              <span className="text-primary text-sm font-semibold tracking-wider uppercase">
-                {badgeText}
-              </span>
-            </div>
-          )}
-
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-16 text-foreground">
-            {heading || "Patient Testimonials"}
-          </h2>
+          <SectionHeader
+            badge={badgeText}
+            badgeIcon="star"
+            title={heading || "Patient Testimonials"}
+            titleClassName="text-4xl md:text-5xl text-foreground"
+          />
 
           <Carousel
             opts={{
@@ -293,14 +266,7 @@ export function TestimonialsSection({
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                   <Card className="h-full shadow-lg hover:shadow-xl transition-shadow duration-300 border-border">
                     <CardContent className="p-6">
-                      <div className="flex gap-1 mb-4">
-                        {[...Array(testimonial.rating || 5)].map((_, i) => (
-                          <Star
-                            key={i}
-                            className="w-5 h-5 fill-primary text-primary"
-                          />
-                        ))}
-                      </div>
+                      <RatingStars rating={testimonial.rating || 5} size="lg" className="mb-4" />
 
                       <p className="text-muted-foreground leading-relaxed mb-6 italic">
                         "{testimonial.content || testimonial.text}"
@@ -343,58 +309,28 @@ export function TestimonialsSection({
   return (
     <section className={`py-20 ${bgClasses[background]}`}>
       <Container>
-        <div className="text-center mb-16">
-          {badgeText && (
-            <div className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
-              <Star className="w-4 h-4 text-primary fill-primary" />
-              <span className="text-primary text-sm font-semibold tracking-wider uppercase">
-                {badgeText}
-              </span>
-            </div>
-          )}
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
-            {heading || "What Our Patients Say"}
-          </h2>
-          {description && (
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              {description}
-            </p>
-          )}
-        </div>
+        <SectionHeader
+          badge={badgeText}
+          badgeIcon="star"
+          title={heading || "What Our Patients Say"}
+          titleClassName="text-foreground"
+          subtitle={description}
+          subtitleClassName="text-muted-foreground text-lg"
+          maxWidth={2}
+        />
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div
+            <TestimonialCard
               key={index}
-              className="bg-card p-8 rounded-3xl border border-border hover:border-primary/30 hover:shadow-xl transition-all"
-            >
-              <div className="flex gap-1 mb-6">
-                {[...Array(testimonial.rating || 5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-primary text-primary" />
-                ))}
-              </div>
-
-              <p className="text-muted-foreground leading-relaxed mb-6 italic">
-                &ldquo;{testimonial.text || testimonial.content}&rdquo;
-              </p>
-
-              <div className="pt-6 border-t border-border">
-                <p className="font-heading font-bold text-foreground">
-                  {testimonial.name}
-                </p>
-                {testimonial.age && (
-                  <p className="text-sm text-muted-foreground">
-                    Age {testimonial.age} • {testimonial.treatment}
-                  </p>
-                )}
-                {testimonial.verified && (
-                  <div className="flex items-center gap-1 mt-2 text-primary text-xs">
-                    <Check className="w-3 h-3" />
-                    <span>Verified Patient</span>
-                  </div>
-                )}
-              </div>
-            </div>
+              testimonial={{
+                ...testimonial,
+                quote: testimonial.text || testimonial.content || testimonial.quote,
+              }}
+              variant="default"
+              className="p-8 rounded-3xl"
+              animationDelay={index * 0.1}
+            />
           ))}
         </div>
       </Container>

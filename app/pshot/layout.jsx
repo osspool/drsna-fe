@@ -1,7 +1,7 @@
 import { PShotHeader } from "@/components/pshot/PShotHeader";
 import { Footer } from "@/components/core/Footer";
 import { DomainProvider } from "@/lib/domain-context";
-import { pshotSiteConfig } from "@/data/pshot/site-config";
+import { pshotSiteConfig } from "@/data/pages/pshot/site-config";
 
 export const metadata = {
   metadataBase: new URL(pshotSiteConfig.url),

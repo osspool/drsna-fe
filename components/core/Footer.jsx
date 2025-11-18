@@ -32,7 +32,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-royal-blue-900 text-white pt-20 pb-8">
+    <footer className="bg-royal-blue text-white pt-20 pb-8">
       <Container>
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">

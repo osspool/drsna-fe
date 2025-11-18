@@ -5,12 +5,13 @@ import Image from "next/image";
 import { Check } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
+import { SectionHeader } from "@/components/common/SectionHeader";
 
 export function OverviewBlock({ data }) {
   const { title, content, image, highlights } = data;
 
   return (
-    <Section background="white">
+    <Section background="muted">
       <Container>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Text Content */}
@@ -20,9 +21,12 @@ export function OverviewBlock({ data }) {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-6">
-              {title}
-            </h2>
+            <SectionHeader
+              title={title}
+              align="left"
+              spacing="sm"
+              animate={false}
+            />
 
             <div className="prose prose-lg max-w-none mb-8">
               {content.split('\n\n').map((paragraph, index) => (

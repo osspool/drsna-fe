@@ -170,7 +170,7 @@ export function ClinicShowcaseSection({ data }) {
   };
 
   return (
-    <Section background="muted" padding="none" className="relative overflow-hidden">
+    <Section background="muted-dark" padding="none" className="relative overflow-hidden">
       <Glow variant="center" className="opacity-40" />
 
       <div className="relative py-20 md:py-32">

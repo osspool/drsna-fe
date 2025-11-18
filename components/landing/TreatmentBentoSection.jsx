@@ -247,18 +247,18 @@ export const TreatmentBentoSection = ({ data }) => {
   const cards = { ...defaultData.cards, ...sectionData.cards };
 
   return (
-    <Section padding="sm" className="relative bg-royal-blue/10">
+    <Section padding="sm" className="relative" background="muted-dark">
       <div className="container mx-auto px-4 mb-14 md:mb-16 text-center">
         {sectionData.badge?.text && (
-          <p className="text-primary text-xs font-semibold tracking-widest uppercase mb-3">
+          <p className="text-foreground text-xs font-semibold tracking-widest uppercase mb-3">
             {sectionData.badge.text}
           </p>
         )}
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-4">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-4">
           {sectionData.title}
         </h2>
         {sectionData.subtitle && (
-          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base md:text-lg text-foreground max-w-2xl mx-auto leading-relaxed">
             {sectionData.subtitle}
           </p>
         )}
@@ -280,7 +280,7 @@ export const TreatmentBentoSection = ({ data }) => {
       {(sectionData.cta?.text || sectionData.cta?.button) && (
         <div className="container mx-auto px-4 mt-12 text-center">
           {sectionData.cta?.text && (
-            <p className="text-royal-blue font-bold mb-6">
+            <p className="text-foreground font-bold mb-6">
               {sectionData.cta.text}
             </p>
           )}

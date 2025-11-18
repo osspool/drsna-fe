@@ -1,0 +1,54 @@
+{
+  "hero": {
+    "title": "Premium Medical Treatments",
+    "tagline": "Expert Medical Care",
+    "hero": {
+      "headline": "Premium Medical Treatments",
+      "subheadline": "Transform your life with world-class aesthetic medicine, intimate health, and pain management solutions",
+      "stats": [
+        { "value": "45+", "label": "Treatments Available" },
+        { "value": "15+", "label": "Years Experience" },
+        { "value": "10K+", "label": "Happy Patients" }
+      ],
+      "cta": "Book Consultation"
+    }
+  },
+  "categoriesSection": {
+    "badge": "Our Services",
+    "title": "Choose Your Treatment Category",
+    "subtitle": "Explore our comprehensive range of medical treatments, each delivered with expertise, care, and the highest safety standards"
+  },
+  "whyChoose": {
+    "badge": "Excellence in Care",
+    "badgeIcon": "sparkles",
+    "title": "Why Choose Dr. SNA Clinic?",
+    "subtitle": "We combine medical expertise, advanced technology, and personalized care to deliver exceptional results that transform lives.",
+    "image": {
+      "src": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
+      "alt": "Dr. SNA Clinic"
+    },
+    "features": [
+      {
+        "title": "Expert Practitioners",
+        "description": "Led by Dr. Syed Nadeem Abbas with 15+ years of specialist experience"
+      },
+      {
+        "title": "CQC Registered",
+        "description": "Fully regulated clinic meeting the highest UK medical standards"
+      },
+      {
+        "title": "Premium Products",
+        "description": "FDA/CE approved treatments using only the finest medical-grade products"
+      },
+      {
+        "title": "Natural Results",
+        "description": "Subtle enhancements that celebrate your natural beauty and confidence"
+      }
+    ],
+    "cta": {
+      "text": "Learn More About Us",
+      "href": "/dr-syed-nadeem-abbas"
+    }
+  },
+  "cta": {}
+}

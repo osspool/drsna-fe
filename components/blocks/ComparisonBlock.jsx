@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { Check, Sparkles, X } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
+import { SectionHeader } from "@/components/common/SectionHeader";
+import { getSectionPreset } from "@/lib/section-presets";
 
 export function ComparisonBlock({ data }) {
   const hasCompetitors = Array.isArray(data?.competitors) && data.competitors.length > 0;
@@ -24,34 +26,20 @@ export function ComparisonBlock({ data }) {
       .trim()
       .replace(/^./, char => char.toUpperCase());
 
+  // Get preset with data overrides
+  const headerPreset = getSectionPreset('comparison', {
+    ...(data?.title && { title: data.title }),
+    ...(data?.subtitle && { subtitle: data.subtitle })
+  });
+
   const ctaText = data?.ctaText ?? "Experience the difference that expertise and care make";
   const ctaHighlight = data?.ctaHighlight ?? "Choose Excellence, Choose Dr. SNA Clinic";
   const shouldShowCta = Boolean(ctaText || ctaHighlight);
 
   return (
-    <Section background="white">
+    <Section background="muted">
       <Container>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <div className="inline-flex items-center gap-2 px-6 py-2 bg-gold/10 border border-gold/20 rounded-full mb-6">
-            <Sparkles className="w-4 h-4 text-gold" />
-            <span className="text-gold text-sm font-semibold tracking-wider uppercase">
-              Honest Comparison
-            </span>
-          </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-dark-brown mb-4">
-            {data?.title || "See How We Compare"}
-          </h2>
-          {data?.subtitle && (
-            <p className="text-lg md:text-xl text-dark-brown/60 max-w-3xl mx-auto">
-              {data.subtitle}
-            </p>
-          )}
-        </motion.div>
+        <SectionHeader {...headerPreset} />
 
         {hasCompetitors && (
           <motion.div

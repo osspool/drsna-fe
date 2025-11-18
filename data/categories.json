@@ -172,6 +172,27 @@
           ]
         }
       }
+    },
+    "scientific-evidence": {
+      "id": "scientific-evidence",
+      "title": "Scientific Evidence",
+      "description": "Research-led regenerative treatments with published clinical outcomes",
+      "icon": "book-open",
+      "color": "#1f2a3d",
+      "image": "/images/categories/scientific-evidence.jpg",
+      "subcategories": {
+        "treatments": {
+          "id": "treatments",
+          "title": "Evidence-Backed Treatments",
+          "description": "Clinically supported biologic therapies and protocols",
+          "treatments": [
+            "fat-derived-stem-cell-joint-therapy",
+            "bmac-therapy",
+            "p-shot",
+            "prp-joint-treatment"
+          ]
+        }
+      }
     }
   }
 }

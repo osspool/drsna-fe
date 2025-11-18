@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
+import { SectionHeader } from "@/components/common/SectionHeader";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
@@ -40,27 +41,16 @@ export function GalleryBlock({ data }) {
   }[columns] || "md:grid-cols-2 lg:grid-cols-3";
 
   return (
-    <Section background="white">
+    <Section background="muted">
       <Container>
         {/* Header */}
         {(title || subtitle) && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            {title && (
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-4">
-                {title}
-              </h2>
-            )}
-            {subtitle && (
-              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-                {subtitle}
-              </p>
-            )}
-          </motion.div>
+          <SectionHeader
+            title={title}
+            subtitle={subtitle}
+            subtitleClassName="text-muted-foreground"
+            spacing="md"
+          />
         )}
 
         {/* Gallery Grid */}
