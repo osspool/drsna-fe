@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 
 const defaultData = {
@@ -43,11 +42,8 @@ export function RegulatoryLogos({ data }) {
   return (
     <section className="py-20 bg-background border-y border-border">
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-12"
+        <div
+          className="opacity-0 animate-fade-in-up text-center mb-12"
         >
           {sectionData.badge && (
             <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">
@@ -57,7 +53,7 @@ export function RegulatoryLogos({ data }) {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">
             {sectionData.title}
           </h2>
-        </motion.div>
+        </div>
 
         {/* Infinite Slider for all screen sizes */}
         <div className="relative overflow-hidden">
@@ -82,7 +78,7 @@ export function RegulatoryLogos({ data }) {
             ))}
           </InfiniteSlider>
 
-        
+
         </div>
       </div>
     </section>

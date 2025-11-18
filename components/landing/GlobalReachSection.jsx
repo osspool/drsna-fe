@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Globe } from "lucide-react";
 import WorldMap from "@/components/aceternity/world-map";
 import { getIconComponent } from "@/lib/icon-utils";
@@ -126,12 +125,8 @@ export function GlobalReachSection({ data }) {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.3 }}
-          className="text-center mb-20"
+        <div
+          className="opacity-0 animate-fade-in-up text-center mb-20"
         >
           <p className="text-primary text-sm font-semibold tracking-wider uppercase mb-4 flex items-center justify-center gap-2">
             <Globe className="w-4 h-4" />
@@ -145,14 +140,11 @@ export function GlobalReachSection({ data }) {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             {sectionData.description}
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="mb-16 hidden md:block"
+        <div
+          className="opacity-0 animate-fade-in-up mb-16 hidden md:block"
+          style={{ animationDelay: '100ms' }}
         >
           <div className="relative h-[500px] lg:h-[600px] rounded-3xl overflow-hidden border border-primary/20 shadow-xl bg-gradient-to-br from-card/80 via-card/90 to-card/95">
             <div className="absolute inset-0 bg-linear-to-b from-primary/5 via-transparent to-transparent pointer-events-none" />
@@ -199,7 +191,7 @@ export function GlobalReachSection({ data }) {
             <div className="absolute bottom-4 left-4 w-12 h-12 border-b-2 border-l-2 border-primary/40 rounded-bl-lg" />
             <div className="absolute bottom-4 right-4 w-12 h-12 border-b-2 border-r-2 border-primary/40 rounded-br-lg" />
           </div>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-2 gap-4 mb-16 md:hidden">
           {patientLocations.map((location, index) => (

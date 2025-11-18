@@ -20,14 +20,18 @@ import { Badge } from "@/components/ui/badge";
  */
 export function FeaturesSection({
   data,
-  variant = "default",
-  layout = "grid-3",
+  variant,
+  layout,
   showStats = false,
   stats = null
 }) {
   if (!data) return null;
 
   const { title, subtitle, description, heading, features, items, enabled = true } = data;
+  const resolvedVariant = variant ?? data.variant ?? "default";
+  const resolvedLayout = layout ?? data.layout ?? "grid-3";
+  const resolvedShowStats = showStats || data.showStats;
+  const resolvedStats = stats || data.stats;
 
   // Support both 'features' and 'items' property names
   const featureList = features || items || [];
@@ -41,7 +45,7 @@ export function FeaturesSection({
   };
 
   // List variant - compact list format
-  if (variant === "list") {
+  if (resolvedVariant === "list") {
     return (
       <div className="space-y-4">
         {featureList.map((feature, index) => (
@@ -85,21 +89,21 @@ export function FeaturesSection({
         )}
 
         {/* Features Grid */}
-        {variant === "default" && (
-          <DefaultFeaturesGrid features={featureList} layout={gridCols[layout]} />
+        {resolvedVariant === "default" && (
+          <DefaultFeaturesGrid features={featureList} layout={gridCols[resolvedLayout]} />
         )}
 
-        {variant === "cards" && (
-          <CardsFeaturesGrid features={featureList} layout={gridCols[layout]} />
+        {resolvedVariant === "cards" && (
+          <CardsFeaturesGrid features={featureList} layout={gridCols[resolvedLayout]} />
         )}
 
-        {variant === "compact" && (
+        {resolvedVariant === "compact" && (
           <CompactFeaturesGrid features={featureList} />
         )}
 
         {/* Trust Badges - only for cards variant */}
-        {variant === "cards" && showStats && stats && (
-          <TrustBadges stats={stats} />
+        {resolvedVariant === "cards" && resolvedShowStats && resolvedStats && (
+          <TrustBadges stats={resolvedStats} />
         )}
       </Container>
     </Section>

@@ -133,6 +133,7 @@ const ImageCard = ({ card, minHeight = 280 }) => {
           src={imageSrc}
           alt={card.title}
           fill
+          sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover transition-transform duration-500 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-black/20" />
@@ -188,6 +189,7 @@ const MainFeatureCard = ({ card }) => {
           src={imageSrc}
           alt={card.title}
           fill
+          sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover object-center md:object-center transition-transform duration-500 group-hover:scale-105"
           style={{ objectPosition: 'center 30%' }}
         />

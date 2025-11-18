@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Send } from "lucide-react";
 import { useActionState } from "react";
@@ -42,10 +41,8 @@ export const ContactForm = () => {
     <section id="contact" className="">
       {/* Show success/error messages */}
       {state?.message && (
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          className={`mb-6 rounded-xl border p-4 ${
+        <div
+          className={`opacity-0 animate-fade-in-up mb-6 rounded-xl border p-4 ${
             state.success
               ? "border-green-500/20 bg-green-500/10 text-green-500"
               : "border-red-500/20 bg-red-500/10 text-red-500"
@@ -54,7 +51,7 @@ export const ContactForm = () => {
           aria-live="polite"
         >
           {state.message}
-        </motion.div>
+        </div>
       )}
 
       <form action={formAction} className="space-y-6">

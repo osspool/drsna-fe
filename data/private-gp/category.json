@@ -65,7 +65,7 @@
   "benefits": {
     "title": "What Sets Our GP Care Apart",
     "subtitle": "Born from decades of patient trust.",
-    "items": [
+    "features": [
       { "title": "Continuity", "description": "See the same doctor who knows your history and family context." },
       { "title": "Coordination", "description": "Hospital consultants and imaging centres briefed before you arrive." },
       { "title": "Calm environment", "description": "Boutique clinic interiors with zero rushed waiting rooms." }

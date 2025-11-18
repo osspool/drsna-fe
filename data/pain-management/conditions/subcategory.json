@@ -129,7 +129,7 @@
   },
   "benefits": {
     "title": "Why Patients Trust Our Clinic",
-    "items": [
+    "features": [
       {"title": "Consultant supervision", "description": "All injections delivered by regenerative pain specialists."},
       {"title": "Integrated physio", "description": "Tailored exercises complement every injection plan."},
       {"title": "Outcome tracking", "description": "Pain scores, mobility testing, and imaging prove progress."}

@@ -3,7 +3,6 @@
 import { Fragment } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { ArrowRight, Star } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/button";
@@ -67,6 +66,7 @@ export function TreatmentHero({ treatment, params }) {
               src={treatment.hero.backgroundImage}
               alt={treatment.title}
               fill
+              sizes="100vw"
               className="object-cover"
               priority
             />
@@ -76,12 +76,7 @@ export function TreatmentHero({ treatment, params }) {
       )}
 
       <Container className="relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="max-w-4xl"
-        >
+        <div className="opacity-0 animate-fade-in-up max-w-4xl">
           {/* Breadcrumb */}
           <Breadcrumb className="mb-4 sm:mb-6 text-white/70">
             <BreadcrumbList className="text-white/70 text-xs sm:text-sm">
@@ -111,59 +106,49 @@ export function TreatmentHero({ treatment, params }) {
 
           {/* Badge */}
           {treatment.hero?.badge && (
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.2, type: "spring" }}
-              className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-6 sm:py-3 bg-primary/10 backdrop-blur-sm border border-primary/30 rounded-full mb-4 sm:mb-6"
+            <div
+              className="opacity-0 animate-scale-in inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-6 sm:py-3 bg-primary/10 backdrop-blur-sm border border-primary/30 rounded-full mb-4 sm:mb-6"
+              style={{ animationDelay: '200ms' }}
             >
               <Star className="w-3 h-3 sm:w-4 sm:h-4 text-primary fill-primary flex-shrink-0" />
               <span className="text-primary text-[10px] sm:text-sm font-semibold tracking-wider uppercase">
                 {treatment.hero.badge}
               </span>
-            </motion.div>
+            </div>
           )}
 
           {/* Title */}
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-3 sm:mb-4 leading-tight"
+          <h1
+            className="opacity-0 animate-fade-in-up text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-3 sm:mb-4 leading-tight"
+            style={{ animationDelay: '300ms' }}
           >
             {treatment.hero?.headline || treatment.title}
-          </motion.h1>
+          </h1>
 
           {/* Tagline */}
           {treatment.tagline && (
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
-              className="text-base sm:text-lg md:text-xl text-primary mb-4 sm:mb-6 font-light leading-relaxed"
+            <p
+              className="opacity-0 animate-fade-in text-base sm:text-lg md:text-xl text-primary mb-4 sm:mb-6 font-light leading-relaxed"
+              style={{ animationDelay: '400ms' }}
             >
               {treatment.tagline}
-            </motion.p>
+            </p>
           )}
 
           {/* Subheadline */}
           {treatment.hero?.subheadline && (
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              className="text-sm sm:text-base md:text-lg text-white/90 max-w-2xl mb-6 sm:mb-8 leading-relaxed"
+            <p
+              className="opacity-0 animate-fade-in text-sm sm:text-base md:text-lg text-white/90 max-w-2xl mb-6 sm:mb-8 leading-relaxed"
+              style={{ animationDelay: '500ms' }}
             >
               {treatment.hero.subheadline}
-            </motion.p>
+            </p>
           )}
 
           {/* CTA Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 }}
-            className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4"
+          <div
+            className="opacity-0 animate-fade-in-up flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4"
+            style={{ animationDelay: '600ms' }}
           >
             <Button
               asChild
@@ -182,8 +167,8 @@ export function TreatmentHero({ treatment, params }) {
                 View Pricing
               </Link>
             </Button>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </Container>
     </section>
   );

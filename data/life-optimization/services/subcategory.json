@@ -92,7 +92,7 @@
   },
   "benefits": {
     "title": "Why Choose Dr. SNA Clinic",
-    "items": [
+    "features": [
       { "title": "Calm private lounges", "description": "Infusions happen in cocoon-like suites with aromatherapy and warm blankets." },
       { "title": "Continuity of care", "description": "See the same doctor and nutritionist throughout your journey." },
       { "title": "Evidence-led supplements", "description": "All IV tracks and nutrition plans are formulated from peer-reviewed protocols." }

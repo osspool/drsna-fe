@@ -1,8 +1,6 @@
 import { notFound } from "next/navigation";
-import { CTASection } from "@/components/sections/CTASection";
-import { TreatmentHero } from "@/components/heroes/treatments/TreatmentHero";
-import { RelatedTreatmentsSection } from "@/components/treatments/RelatedTreatmentsSection";
-import { TreatmentSectionRenderer } from "@/components/treatments/TreatmentSectionRenderer";
+import { SectionRenderer } from "@/components/common/SectionRenderer";
+import { treatmentDetailPageConfig } from "@/lib/configs/treatment-detail";
 import { getTreatment, getStaticTreatmentPaths } from "@/lib/treatments";
 import { createMetadataGenerator, createStaticParamsGenerator } from "@/lib/seo-helpers";
 
@@ -42,25 +40,16 @@ export default async function TreatmentPage({ params }) {
     notFound();
   }
 
+  // Enrich treatment data with params for mappers
+  const treatmentData = {
+    ...treatment,
+    _params: resolvedParams
+  };
+
   return (
     <main className="min-h-screen">
-      {/* Hero Section */}
-      <TreatmentHero treatment={treatment} params={resolvedParams} />
-
-      {/* All treatment sections - config-driven rendering */}
-      <TreatmentSectionRenderer treatment={treatment} />
-
-      {/* Related Treatments */}
-      {treatment.relatedTreatments && treatment.relatedTreatments.length > 0 && (
-        <RelatedTreatmentsSection
-          treatments={treatment.relatedTreatments}
-          categoryId={resolvedParams.category}
-          subcategoryId={resolvedParams.subcategory}
-        />
-      )}
-
-      {/* CTA Section */}
-      {treatment.cta && <CTASection data={treatment.cta} variant="treatment" />}
+      {/* All sections via config-driven rendering */}
+      <SectionRenderer sections={treatmentDetailPageConfig} data={treatmentData} />
     </main>
   );
 }

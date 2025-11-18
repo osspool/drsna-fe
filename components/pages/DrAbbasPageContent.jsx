@@ -1,11 +1,36 @@
-import { HeroSection } from "@/components/heroes/landing/HeroSection";
 import { SectionRenderer } from "@/components/common/SectionRenderer";
 import { drAbbasPageConfig } from "@/lib/configs/dr-abbas";
 import { drAbbasData } from "@/data/pages/dr-abbas/page";
 
-// P-Shot focused data configuration
+/**
+ * P-Shot focused data configuration
+ * Extends base dr abbas data with P-Shot specific content
+ */
 const pshotFocusedData = {
   ...drAbbasData,
+  hero: {
+    videoUrl: "https://www.youtube.com/watch?v=nUqENQZHd80",
+    badge: "CERTIFIED P-SHOT® PROVIDER",
+    headline: "Dr Syed Nadeem Abbas",
+    flipWords: ["P-Shot Expert", "Male Health Specialist", "Certified Provider", "Trusted Doctor"],
+    subheadline: 'London\'s most experienced P-Shot practitioner with <span class="text-primary font-semibold">over 1,000 successful procedures</span> and <span class="text-primary font-semibold">98% satisfaction rate</span>',
+    primaryCTA: "Book Consultation",
+    primaryCTAHref: "/contact",
+    secondaryCTA: "Learn About P-Shot",
+    secondaryCTAHref: "/pshot",
+    trustIndicators: [
+      "Certified by Dr. Runels",
+      "1,000+ P-Shot Procedures",
+      "15+ Years Experience",
+      "98% Success Rate"
+    ]
+  },
+  quickStats: {
+    experience: "15+ Years",
+    procedures: "1,000+ P-Shots",
+    satisfaction: "98% Success Rate",
+    certified: "Official P-Shot® Provider"
+  },
   overview: {
     ...drAbbasData.overview,
     title: "Your P-Shot Specialist",
@@ -71,7 +96,6 @@ const pshotFocusedData = {
       location: "Kent, UK"
     }
   ],
-  faqTitle: "Questions About Dr Abbas",
   faq: [
     {
       question: "What makes Dr Abbas different from other P-Shot providers?",
@@ -96,64 +120,21 @@ const pshotFocusedData = {
 
 /**
  * Shared Dr Abbas page content component
+ *
+ * Fully config-driven page that renders all sections via SectionRenderer.
+ * Supports variant switching between general profile and P-Shot focused content.
+ *
  * @param {Object} props
- * @param {'general' | 'pshot'} props.variant - Determines which content variant to show
+ * @param {'general'|'pshot'} [props.variant='general'] - Content variant to display
  */
 export function DrAbbasPageContent({ variant = 'general' }) {
-  const isPShot = variant === 'pshot';
-  const data = isPShot ? pshotFocusedData : drAbbasData;
-
-  // Hero configuration based on variant
-  const heroConfig = isPShot ? {
-    videoUrl: "https://www.youtube.com/watch?v=nUqENQZHd80",
-    badge: "CERTIFIED P-SHOT® PROVIDER",
-    headline: "Dr Syed Nadeem Abbas",
-    flipWords: ["P-Shot Expert", "Male Health Specialist", "Certified Provider", "Trusted Doctor"],
-    subheadline: 'London\'s most experienced P-Shot practitioner with <span class="text-primary font-semibold">over 1,000 successful procedures</span> and <span class="text-primary font-semibold">98% satisfaction rate</span>',
-    primaryCTA: "Book Consultation",
-    primaryCTAHref: "/contact",
-    secondaryCTA: "Learn About P-Shot",
-    secondaryCTAHref: "/",
-    trustIndicators: [
-      "Certified by Dr. Runels",
-      "1,000+ P-Shot Procedures",
-      "15+ Years Experience",
-      "98% Success Rate"
-    ]
-  } : {
-    videoUrl: "https://www.youtube.com/watch?v=nUqENQZHd80",
-    badge: "GLOBAL RECOGNITION AWARD 2024",
-    headline: "Dr Syed Nadeem Abbas",
-    flipWords: ["Excellence", "Precision", "Artistry", "Compassion"],
-    subheadline: 'Transforming lives through <span class="text-primary font-semibold">surgical precision</span>, <span class="text-primary font-semibold">artistic vision</span>, and <span class="text-primary font-semibold">15+ years mastery</span>',
-    primaryCTA: "Book Your Consultation",
-    primaryCTAHref: "/booking",
-    secondaryCTA: "Explore Treatments",
-    secondaryCTAHref: "/treatments",
-    trustIndicators: [
-      "MSc (Distinction)",
-      "MRCGP | MRCSEd | MBBS",
-      "15+ Years Experience",
-      "10,000+ Happy Patients"
-    ]
-  };
-
-  // Override quick stats for P-Shot variant
-  if (isPShot) {
-    data.quickStats = {
-      experience: "15+ Years",
-      procedures: "1,000+ P-Shots",
-      satisfaction: "98% Success Rate",
-      certified: "Official P-Shot® Provider"
-    };
-  }
+  // Select data based on variant (cloned to avoid mutation)
+  const data = variant === 'pshot'
+    ? { ...pshotFocusedData }
+    : { ...drAbbasData };
 
   return (
     <main className="min-h-screen">
-      {/* Hero Section */}
-      <HeroSection {...heroConfig} />
-
-      {/* All other sections rendered via registry */}
       <SectionRenderer sections={drAbbasPageConfig} data={data} />
     </main>
   );

@@ -1,42 +1,32 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
 
 export function AnimatedSectionHeader({ title, subtitle, badge }) {
   return (
     <div className="text-center mb-16">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6"
+      <div
+        className="opacity-0 animate-fade-in-up inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6"
       >
         <Sparkles className="w-4 h-4 text-primary" />
         <span className="text-primary text-sm font-semibold tracking-wider uppercase">
           {badge}
         </span>
-      </motion.div>
+      </div>
 
-      <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.1 }}
-        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-6"
+      <h2
+        className="opacity-0 animate-fade-in-up text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-6"
+        style={{ animationDelay: '100ms' }}
       >
         {title}
-      </motion.h2>
+      </h2>
 
-      <motion.p
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.2 }}
-        className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto"
+      <p
+        className="opacity-0 animate-fade-in text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto"
+        style={{ animationDelay: '200ms' }}
       >
         {subtitle}
-      </motion.p>
+      </p>
     </div>
   );
 }
@@ -45,13 +35,10 @@ export function AnimatedFeatureList({ items }) {
   return (
     <div className="space-y-6">
       {items.map((item, idx) => (
-        <motion.div
+        <div
           key={idx}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: idx * 0.1 }}
-          className="flex gap-4"
+          className="opacity-0 animate-fade-in-up flex gap-4"
+          style={{ animationDelay: `${idx * 100}ms` }}
         >
           <div className="shrink-0 w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
             <div className="w-6 h-6 bg-primary rounded-full" />
@@ -64,7 +51,7 @@ export function AnimatedFeatureList({ items }) {
               {item.description}
             </p>
           </div>
-        </motion.div>
+        </div>
       ))}
     </div>
   );
@@ -72,25 +59,20 @@ export function AnimatedFeatureList({ items }) {
 
 export function AnimatedImage({ src, alt, className }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, x: 30 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      className={className}
+    <div
+      className={`opacity-0 animate-slide-in-right ${className}`}
     >
       {/* Image content will be passed as children */}
-    </motion.div>
+    </div>
   );
 }
 
 export function AnimatedContent({ children, direction = "left" }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, x: direction === "left" ? -30 : 30 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
+    <div
+      className={`opacity-0 ${direction === "left" ? "animate-slide-in-left" : "animate-slide-in-right"}`}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }

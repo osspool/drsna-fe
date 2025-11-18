@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { VideoPlayer } from "@/components/ui/VideoPlayer";
@@ -25,11 +24,8 @@ export function VideoBlock({ data }) {
       <Section background="gradient-cream">
         <Container>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: videoOnLeft ? -30 : 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className={videoOnLeft ? "lg:order-first" : "lg:order-last"}
+            <div
+              className={`opacity-0 ${videoOnLeft ? 'animate-slide-in-left lg:order-first' : 'animate-slide-in-right lg:order-last'}`}
             >
               <VideoPlayer
                 video={video}
@@ -42,14 +38,11 @@ export function VideoBlock({ data }) {
                   {video.title}
                 </p>
               )}
-            </motion.div>
+            </div>
 
             {/* Content Side */}
-            <motion.div
-              initial={{ opacity: 0, x: videoOnLeft ? 30 : -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className={videoOnLeft ? "lg:order-last" : "lg:order-first"}
+            <div
+              className={`opacity-0 ${videoOnLeft ? 'animate-slide-in-right lg:order-last' : 'animate-slide-in-left lg:order-first'}`}
             >
               <div className="space-y-6">
                 {featureContent?.title && (
@@ -63,7 +56,7 @@ export function VideoBlock({ data }) {
                   </p>
                 )}
               </div>
-            </motion.div>
+            </div>
           </div>
         </Container>
       </Section>
@@ -77,12 +70,8 @@ export function VideoBlock({ data }) {
     return (
       <Section background="white">
         <Container>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-5xl mx-auto"
-          >
+          <div className="opacity-0 animate-fade-in-up max-w-5xl mx-auto">
+
             {(title || subtitle) && (
               <div className="text-center mb-12">
                 {title && (
@@ -111,7 +100,7 @@ export function VideoBlock({ data }) {
                 {description}
               </p>
             )}
-          </motion.div>
+          </div>
         </Container>
       </Section>
     );
@@ -122,12 +111,8 @@ export function VideoBlock({ data }) {
     <Section background="gradient-cream">
       <Container>
         {(title || subtitle) && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
+          <div className="opacity-0 animate-fade-in-up text-center mb-12">
+
             {title && (
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
                 {title}
@@ -138,17 +123,15 @@ export function VideoBlock({ data }) {
                 {subtitle}
               </p>
             )}
-          </motion.div>
+          </div>
         )}
 
         <div className="grid md:grid-cols-2 gap-8">
           {videos.map((video, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              className="opacity-0 animate-fade-in-up"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <VideoPlayer
@@ -178,7 +161,7 @@ export function VideoBlock({ data }) {
                   </div>
                 )}
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </Container>

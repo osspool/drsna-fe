@@ -34,13 +34,19 @@ export function FAQSection({
   badge,
   cta = null
 }) {
-  if (!data?.length) return null;
+  const items = Array.isArray(data) ? data : data?.items || data?.questions;
+  if (!items?.length) return null;
 
   // Get preset with optional overrides
   const headerPreset = getSectionPreset('faq', {
     ...(title !== undefined && { title }),
     ...(subtitle !== undefined && { subtitle }),
-    ...(badge !== undefined && { badge })
+    ...(badge !== undefined && { badge }),
+    ...(data && {
+      title: title ?? data.title,
+      subtitle: subtitle ?? data.subtitle,
+      badge: badge ?? data.badge
+    })
   });
 
   const showIcons = variant === "with-icons";
@@ -63,7 +69,7 @@ export function FAQSection({
 
           {/* FAQ Accordion - Using shadcn Accordion for accessibility */}
           <Accordion type="single" collapsible defaultValue="item-0" className="space-y-4">
-            {data.map((faq, index) => {
+            {items.map((faq, index) => {
               const Icon = showIcons ? getIconComponent(faq.icon) : null;
 
               return (

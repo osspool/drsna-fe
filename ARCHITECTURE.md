@@ -1,519 +1,591 @@
-# Project Architecture
+# Dr. SNA Clinic Architecture Guide
 
-## Overview
-
-This Next.js application uses a **centralized block registry system** with config-driven page rendering for maximum code reusability, maintainability, and scalability.
-
-## Architecture Principles
-
-1. **Single Block Registry** - All reusable components registered once
-2. **Config-Driven Pages** - Pages reference blocks by ID with mappers
-3. **Clean Data Organization** - Page data organized by type
-4. **Separation of Concerns** - Mappers handle data transformation
-5. **Theme Consistency** - Global CSS variables used throughout
+## 📋 Table of Contents
+1. [Overview](#overview)
+2. [Unified Architecture Pattern](#unified-architecture-pattern)
+3. [Project Structure](#project-structure)
+4. [Core Concepts](#core-concepts)
+5. [Animation System](#animation-system)
+6. [Performance Optimization](#performance-optimization)
+7. [Adding New Content](#adding-new-content)
+8. [Best Practices](#best-practices)
 
 ---
 
-## Directory Structure
+## Overview
+
+This Next.js 14 project uses a **unified, block-based architecture** for maximum code reusability and maintainability. All pages follow the same pattern: **JSON → Mapper → Config → Renderer**.
+
+### Key Benefits
+- ✅ **Beginner-Friendly**: Clear separation of data, logic, and presentation
+- ✅ **DRY Principle**: Reusable blocks eliminate duplication
+- ✅ **Easy Content Updates**: Change JSON files without touching code
+- ✅ **Type-Safe**: JSDoc documentation for all components
+- ✅ **Performance**: Lazy-loading and image optimization built-in
+
+---
+
+## Unified Architecture Pattern
+
+Every page follows this flow:
 
 ```
-├── lib/
+JSON Data → Mapper → Config → SectionRenderer → Rendered Page
+```
+
+### 1. JSON Data (`/data/`)
+Raw content stored in JSON files. Easy for non-developers to edit.
+
+```json
+// data/contact.json
+{
+  "hero": {
+    "title": "Contact Us",
+    "description": "Get in touch with our team"
+  },
+  "contactInfo": [...]
+}
+```
+
+### 2. Mapper (`/lib/mappers/`)
+Transforms raw JSON into component-ready props.
+
+```javascript
+// lib/mappers/contact.js
+export function mapContactPageData(data) {
+  return {
+    hero: {
+      title: data.hero.title,
+      variant: 'subcategory'
+    },
+    contactInfo: data.contactInfo
+  };
+}
+```
+
+### 3. Config (`/lib/configs/`)
+Defines which sections render and in what order.
+
+```javascript
+// lib/configs/contact.js
+export const contactSections = [
+  {
+    id: 'hero',
+    block: 'hero.category',  // References block registry
+    mapper: () => ({ data: data.hero })
+  },
+  {
+    id: 'contact-info',
+    block: 'contact.info-cards',
+    mapper: () => ({ data: { cards: data.contactInfo } })
+  }
+];
+```
+
+### 4. Page (`/app/`)
+Loads data, gets config, renders sections.
+
+```javascript
+// app/(home)/contact/page.js
+import { SectionRenderer } from "@/components/common/SectionRenderer";
+import { contactSections, getContactData } from "@/lib/configs/contact";
+
+export default function ContactPage() {
+  const data = getContactData();
+  return (
+    <main>
+      <SectionRenderer sections={contactSections} data={data} />
+    </main>
+  );
+}
+```
+
+---
+
+## Project Structure
+
+```
+clinic/
+├── app/                          # Next.js 14 App Router
+│   └── (home)/                   # Main site pages
+│       ├── page.jsx              # Home page
+│       ├── contact/page.js       # Contact page
+│       ├── treatments/           # Treatment pages
+│       └── about-us/page.jsx     # About page
+│
+├── components/                   # React components
+│   ├── common/                   # Reusable primitives
+│   │   ├── AnimatedWrapper.jsx   # Animation primitives
+│   │   ├── SectionRenderer.jsx   # Universal renderer
+│   │   ├── IconFeatureCard.jsx   # Base card component
+│   │   └── skeletons/            # Loading states
+│   ├── blocks/                   # Content blocks
+│   ├── sections/                 # Page sections
+│   ├── heroes/                   # Hero sections
+│   ├── landing/                  # Landing page sections
+│   ├── treatments/               # Treatment-specific components
+│   └── contact/                  # Contact-specific components
+│
+├── data/                         # JSON content files
+│   ├── home/                     # Home page data
+│   ├── contact.json              # Contact page data
+│   ├── treatments-listing.json   # Treatments listing data
+│   ├── aesthetic-medicine/       # Category data
+│   └── intimate-health/          # Category data
+│
+├── lib/                          # Utilities and configuration
 │   ├── blocks/
 │   │   └── registry.js           # Central block registry
-│   ├── configs/                   # Page configurations
-│   │   ├── home.js               # Home page config
-│   │   ├── about.js              # About page config
-│   │   ├── pshot.js              # P-Shot page config
-│   │   └── dr-abbas.js           # Dr Abbas page config
-│   ├── mappers/                   # Data transformation functions
+│   ├── configs/                  # Page configurations
 │   │   ├── home.js
-│   │   ├── about.js
-│   │   └── profile.js
-│   └── sections/                  # Legacy (being phased out)
+│   │   ├── contact.js
+│   │   ├── treatments.js
+│   │   └── category.js
+│   ├── mappers/                  # Data transformers
+│   │   ├── home.js
+│   │   ├── contact.js
+│   │   ├── treatments.js
+│   │   └── category.js
+│   └── seo-helpers.js            # SEO utilities
 │
-├── data/
-│   ├── home/                      # Home page data
-│   │   ├── page.json
-│   │   └── about/
-│   │       └── page.json          # About page data
-│   ├── pages/                     # Other page data
-│   │   ├── pshot/
-│   │   │   ├── landing-data.js
-│   │   │   └── site-config.js
-│   │   └── dr-abbas/
-│   │       └── page.js
-│   ├── aesthetic-medicine/        # Treatment category data
-│   ├── intimate-health/
-│   └── ...
-│
-├── components/
-│   ├── blocks/                    # Content blocks
-│   │   ├── OverviewBlock.jsx
-│   │   ├── ExpertiseBlock.jsx
-│   │   ├── GalleryBlock.jsx
-│   │   └── ...
-│   ├── heroes/                    # Hero sections
-│   │   ├── landing/
-│   │   ├── treatments/
-│   │   └── specialty/
-│   ├── sections/                  # Common sections
-│   │   ├── TestimonialsSection.jsx
-│   │   ├── FAQSection.jsx
-│   │   └── CTASection.jsx
-│   ├── landing/                   # Landing-specific sections
-│   ├── treatments/                # Treatment-specific sections
-│   └── common/
-│       └── SectionRenderer.jsx    # Universal renderer
-│
-└── app/
-    ├── (home)/                    # Main site pages
-    │   ├── page.js                # Home page
-    │   ├── about-us/
-    │   ├── contact/
-    │   └── treatments/
-    └── pshot/                     # P-Shot landing site
-        ├── layout.jsx             # Custom layout
-        └── page.jsx
-
+└── public/                       # Static assets
+    └── images/                   # Optimized images
 ```
 
 ---
 
 ## Core Concepts
 
-### 1. Central Block Registry (`lib/blocks/registry.js`)
+### Block Registry (`lib/blocks/registry.js`)
 
-Single source of truth for all reusable components.
+The **single source of truth** for all reusable components. Every component is registered with a semantic ID.
 
 ```javascript
-// Import components once
-import { HeroSectionV2 } from "@/components/heroes/landing/HeroSectionV2";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
-
-// Register with semantic IDs
 export const blockRegistry = {
-  'hero.landing': HeroSectionV2,
-  'section.testimonials': TestimonialsSection,
-  // ... all other blocks
-};
-
-// Helper function
-export function getBlock(blockId) {
-  return blockRegistry[blockId];
-}
-```
-
-**Benefits:**
-- ✅ Import each component once
-- ✅ Reference by semantic ID
-- ✅ Easy to discover available blocks
-- ✅ Type-safe (can add TypeScript)
-
-### 2. Page Configurations (`lib/configs/`)
-
-Clean, declarative page structure.
-
-```javascript
-// lib/configs/home.js
-import * as mappers from '@/lib/mappers/home';
-
-export const homePageConfig = [
-  {
-    id: 'hero',
-    block: 'hero.landing',           // Reference block by ID
-    dataKey: 'hero',                 // Data path in page data
-    mapper: mappers.mapHomeHeroProps // Transform function
-  },
-  {
-    id: 'testimonials',
-    block: 'section.testimonials',
-    dataKey: 'testimonials',
-    condition: (data) => data.testimonials?.length > 0, // Optional render condition
-    mapper: mappers.mapHomeTestimonialsProps
-  },
-  // ... more sections
-];
-```
-
-**Benefits:**
-- ✅ Easy to reorder sections
-- ✅ Easy to add/remove sections  - ✅ Clear section dependencies
-- ✅ Conditional rendering support
-
-### 3. Data Mappers (`lib/mappers/`)
-
-Pure functions that transform page data into component props.
-
-```javascript
-// lib/mappers/home.js
-
-/**
- * Transform home hero data to HeroSectionV2 props
- */
-export function mapHomeHeroProps(data) {
-  return {
-    data: data.hero,
-    variant: "landing"
-  };
-}
-
-/**
- * Transform testimonials data
- */
-export function mapHomeTestimonialsProps(data) {
-  return {
-    data: data.testimonials,
-    title: "What Our Patients Say"
-  };
-}
-```
-
-**Benefits:**
-- ✅ Reusable data transformations
-- ✅ Easy to test
-- ✅ No component imports
-- ✅ Type-safe transformations
-
-### 4. Section Renderer (`components/common/SectionRenderer.jsx`)
-
-Universal component renderer.
-
-```javascript
-import { getBlock } from "@/lib/blocks/registry";
-
-export function SectionRenderer({ sections, data }) {
-  return (
-    <>
-      {sections.map((section) => {
-        // Get component from registry
-        const Component = getBlock(section.block);
-
-        // Transform data with mapper
-        const props = section.mapper(data);
-
-        // Render if conditions met
-        if (section.condition && !section.condition(data)) {
-          return null;
-        }
-
-        return <Component key={section.id} {...props} />;
-      })}
-    </>
-  );
-}
-```
-
----
-
-## Block Registry Organization
-
-### Block ID Naming Convention
-
-Format: `category.name` or `category.subcategory.name`
-
-```javascript
-{
-  // ===== HEROES =====
-  'hero.landing': HeroSectionV2,
-  'hero.landing-v1': HeroSection,
+  // Heroes
+  'hero.landing': HeroSection,
   'hero.category': CategoryHero,
-  'hero.treatment': TreatmentHero,
-  'hero.pshot': PShotHero,
 
-  // ===== LANDING SECTIONS =====
-  'landing.award-spotlight': AwardSpotlightSection,
-  'landing.clinic-showcase': ClinicShowcaseSection,
-  'landing.featured-treatments': FeaturedTreatments,
+  // Sections
+  'section.features': FeaturesSection,
+  'section.testimonials': TestimonialsSection,
 
-  // ===== CONTENT BLOCKS =====
+  // Blocks
   'block.overview': OverviewBlock,
-  'block.expertise': ExpertiseBlock,
   'block.gallery': GalleryBlock,
 
-  // ===== COMMON SECTIONS =====
-  'section.testimonials': TestimonialsSection,
-  'section.faq': FAQSection,
-  'section.cta': CTASection,
-  'section.stats': StatsSection,
-  'section.features': FeaturesSection,
-
-  // ===== TREATMENT SECTIONS =====
-  'treatment.process-timeline': ProcessTimeline,
-  'treatment.related': RelatedTreatmentsSection,
-
-  // ===== SPECIALTY SECTIONS =====
-  'specialty.doctor-credentials': DoctorCredentials,
-}
-```
-
----
-
-## Usage Examples
-
-### Example 1: Home Page
-
-```javascript
-// app/(home)/page.js
-import { SectionRenderer } from "@/components/common/SectionRenderer";
-import { homePageConfig } from "@/lib/configs/home";
-import { getHomePageData } from "@/lib/home";
-
-export default async function HomePage() {
-  const homeData = await getHomePageData();
-
-  return (
-    <main>
-      <SectionRenderer sections={homePageConfig} data={homeData} />
-    </main>
-  );
-}
-```
-
-### Example 2: About Page
-
-```javascript
-// app/(home)/about-us/page.jsx
-import { SectionRenderer } from "@/components/common/SectionRenderer";
-import { aboutPageConfig } from "@/lib/configs/about";
-import { getAboutPageData } from "@/lib/about";
-
-export default async function AboutUsPage() {
-  const aboutData = await getAboutPageData();
-
-  return (
-    <main>
-      <SectionRenderer sections={aboutPageConfig} data={aboutData} />
-    </main>
-  );
-}
-```
-
-### Example 3: Adding a New Section
-
-1. **Add to block registry** (if new component):
-```javascript
-// lib/blocks/registry.js
-import { NewSection } from "@/components/sections/NewSection";
-
-export const blockRegistry = {
-  // ... existing blocks
-  'section.new': NewSection,
+  // Contact
+  'contact.info-cards': ContactInfoCards,
 };
 ```
 
-2. **Add mapper function**:
+**Lazy-Loaded Blocks** (for performance):
+- `PShotFeaturedSection` - Heavy featured section
+- `DrAbbasSection` - Doctor profile section
+- `TreatmentBentoSection` - Bento grid section
+- `GalleryBlock` - Image gallery
+- `TestimonialsSection` - Testimonials carousel
+- `ProcessTimeline` - Process timeline
+
+### SectionRenderer (`components/common/SectionRenderer.jsx`)
+
+Universal component that renders sections from config:
+
 ```javascript
-// lib/mappers/home.js
-export function mapNewSectionProps(data) {
-  return {
-    data: data.newSection,
-    variant: "default"
-  };
-}
+<SectionRenderer
+  sections={contactSections}  // Array of section configs
+  data={pageData}             // Page data
+/>
 ```
 
-3. **Add to page config**:
-```javascript
-// lib/configs/home.js
-export const homePageConfig = [
-  // ... existing sections
-  {
-    id: 'newSection',
-    block: 'section.new',
-    dataKey: 'newSection',
-    mapper: mappers.mapNewSectionProps
-  },
-];
-```
+### Conditional Rendering
 
-4. **Add data to JSON**:
-```json
-// data/home/page.json
+Sections can have conditions:
+
+```javascript
 {
-  "hero": { ... },
-  "newSection": {
-    "title": "New Section",
-    "content": "..."
-  }
+  id: 'testimonials',
+  block: 'section.testimonials',
+  mapper: () => ({ data: data.testimonials }),
+  condition: (pageData) => pageData.testimonials?.length > 0
 }
 ```
 
 ---
 
-## Data Organization
+## Animation System
 
-### Page Data Structure
+### Animation Primitives (`components/common/AnimatedWrapper.jsx`)
 
-```
-data/
-├── home/                    # Home page & related pages
-│   ├── page.json           # Main home page data
-│   └── about/
-│       └── page.json       # About page data
-│
-├── pages/                   # Standalone pages
-│   ├── pshot/              # P-Shot landing page
-│   │   ├── landing-data.js
-│   │   └── site-config.js
-│   └── dr-abbas/           # Dr Abbas profile page
-│       └── page.js
-│
-└── [category]/             # Treatment category data
-    ├── category.json
-    └── [subcategory]/
-        ├── subcategory.json
-        └── treatments/
-            └── [slug].json
-```
+Reusable animation components replace manual class strings:
 
----
+**Available Primitives:**
 
-## Theme System
-
-All components use global CSS variables from `app/globals.css`:
-
-```css
-:root {
-  --background: ...;
-  --foreground: ...;
-  --primary: ...;
-  --muted: ...;
-  --muted-foreground: ...;
-  --border: ...;
-  /* ... */
-}
-```
-
-**Usage in components:**
+#### `<FadeIn>`
 ```jsx
-<div className="bg-background text-foreground">
-  <h1 className="text-primary">Title</h1>
-  <p className="text-muted-foreground">Description</p>
+<FadeIn delay={200}>
+  <div>Fades in content</div>
+</FadeIn>
+```
+
+#### `<FadeInUp>`
+```jsx
+<FadeInUp delay={100}>
+  <h1>Slides up while fading in</h1>
+</FadeInUp>
+```
+
+#### `<SlideIn>`
+```jsx
+<SlideIn direction="left" delay={300}>
+  <div>Slides in from direction</div>
+</SlideIn>
+```
+Directions: `left`, `right`, `up`, `down`
+
+#### `<ScaleIn>`
+```jsx
+<ScaleIn delay={200}>
+  <div>Scales in from center</div>
+</ScaleIn>
+```
+
+#### `<StaggerChildren>`
+```jsx
+<StaggerChildren staggerDelay={100} animation="fadeInUp">
+  {items.map((item, i) => (
+    <div key={i}>{item.name}</div>
+  ))}
+</StaggerChildren>
+```
+Animations: `fadeInUp`, `slideInLeft`, `slideInRight`
+
+### Why Animation Primitives?
+
+**Before:**
+```jsx
+<div className="opacity-0 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
+  Content
 </div>
 ```
 
-**Never use custom colors** - always use theme variables for consistency.
+**After:**
+```jsx
+<FadeInUp delay={200}>
+  Content
+</FadeInUp>
+```
+
+**Benefits:**
+- ✅ No duplicate class strings
+- ✅ Centralized timing control
+- ✅ Easier to modify globally
+- ✅ Better readability
+
+---
+
+## Performance Optimization
+
+### 1. Image Optimization
+
+All `<Image>` components have proper `sizes` prop:
+
+```jsx
+<Image
+  src="/images/hero.jpg"
+  alt="Hero"
+  fill
+  sizes="(max-width: 768px) 100vw, 50vw"  // Critical!
+  priority  // For above-fold images
+/>
+```
+
+**Common sizes patterns:**
+- Full width: `sizes="100vw"`
+- Two columns: `sizes="(max-width: 768px) 100vw, 50vw"`
+- Three columns: `sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"`
+- Avatar: `sizes="48px"`
+
+### 2. Lazy Loading
+
+Heavy below-fold sections are dynamically imported in `lib/blocks/registry.js`:
+
+```javascript
+const PShotFeaturedSection = dynamic(
+  () => import('@/components/landing/PShotFeaturedSection').then(mod => ({ default: mod.PShotFeaturedSection })),
+  {
+    loading: () => <SectionSkeleton />,
+    ssr: true
+  }
+);
+```
+
+### 3. Skeleton Loaders
+
+All lazy-loaded components have skeleton states in `components/common/skeletons/`:
+- `GallerySkeleton`
+- `TestimonialsSkeleton`
+- `ProcessTimelineSkeleton`
+- `SectionSkeleton`
+- `MapSkeleton`
+
+---
+
+## Adding New Content
+
+### Adding a New Page
+
+**Step 1:** Create JSON data file
+```javascript
+// data/new-page.json
+{
+  "hero": {
+    "title": "New Page",
+    "description": "Page description"
+  },
+  "sections": [...]
+}
+```
+
+**Step 2:** Create mapper
+```javascript
+// lib/mappers/new-page.js
+export function mapNewPageData(data) {
+  return {
+    hero: { ...data.hero },
+    sections: data.sections
+  };
+}
+```
+
+**Step 3:** Create config
+```javascript
+// lib/configs/new-page.js
+import newPageData from '@/data/new-page.json';
+import { mapNewPageData } from '@/lib/mappers/new-page';
+
+const data = mapNewPageData(newPageData);
+
+export const newPageSections = [
+  {
+    id: 'hero',
+    block: 'hero.category',
+    mapper: () => ({ data: data.hero })
+  },
+  // Add more sections...
+];
+```
+
+**Step 4:** Create page
+```javascript
+// app/(home)/new-page/page.jsx
+import { SectionRenderer } from "@/components/common/SectionRenderer";
+import { newPageSections } from "@/lib/configs/new-page";
+
+export default function NewPage() {
+  return (
+    <main>
+      <SectionRenderer sections={newPageSections} />
+    </main>
+  );
+}
+```
+
+### Adding a New Block Component
+
+**Step 1:** Create component with JSDoc
+```javascript
+// components/blocks/NewBlock.jsx
+/**
+ * New Block Component
+ *
+ * Description of what this block does.
+ *
+ * @param {Object} props
+ * @param {Object} props.data - Block data
+ * @param {string} props.data.title - Block title
+ * @param {string} [props.data.subtitle] - Optional subtitle
+ */
+export function NewBlock({ data }) {
+  return (
+    <Section>
+      <Container>
+        <FadeInUp>
+          <h2>{data.title}</h2>
+        </FadeInUp>
+        {data.subtitle && (
+          <FadeInUp delay={100}>
+            <p>{data.subtitle}</p>
+          </FadeInUp>
+        )}
+      </Container>
+    </Section>
+  );
+}
+```
+
+**Step 2:** Register in block registry
+```javascript
+// lib/blocks/registry.js
+import { NewBlock } from "@/components/blocks/NewBlock";
+
+export const blockRegistry = {
+  // ... existing blocks
+  'block.new': NewBlock,
+};
+```
+
+**Step 3:** Use in page config
+```javascript
+// lib/configs/some-page.js
+export const somePageSections = [
+  {
+    id: 'new-section',
+    block: 'block.new',
+    mapper: () => ({
+      data: {
+        title: "Section Title",
+        subtitle: "Optional subtitle"
+      }
+    })
+  }
+];
+```
 
 ---
 
 ## Best Practices
 
-### 1. Adding New Pages
+### ✅ Do's
 
-✅ **DO:**
-- Create config in `lib/configs/[page].js`
-- Create mappers in `lib/mappers/[page].js`
-- Organize data in `data/pages/[page]/` or `data/home/[page]/`
-- Use existing blocks from registry
-- Use global theme colors
+1. **Use animation primitives** instead of manual class strings
+   ```jsx
+   // Good
+   <FadeInUp delay={100}>
+     <h1>Title</h1>
+   </FadeInUp>
 
-❌ **DON'T:**
-- Import components directly in pages
-- Create new components when existing ones work
-- Define custom colors
-- Duplicate mapper logic
+   // Bad
+   <h1 className="opacity-0 animate-fade-in-up" style={{ animationDelay: '100ms' }}>
+     Title
+   </h1>
+   ```
 
-### 2. Creating New Blocks
+2. **Always add JSDoc** to components
+   ```jsx
+   /**
+    * Component Description
+    * @param {Object} props
+    * @param {string} props.title - The title
+    */
+   ```
 
-✅ **DO:**
-- Make components reusable with props
-- Use theme variables for colors
-- Add to block registry with semantic ID
-- Document props with JSDoc
-- Support variants when appropriate
+3. **Use proper image sizes**
+   ```jsx
+   <Image sizes="(max-width: 768px) 100vw, 50vw" ... />
+   ```
 
-❌ **DON'T:**
-- Hardcode content
-- Use inline styles
-- Create page-specific components
-- Import other blocks directly
+4. **Follow the unified pattern** for all pages
+   ```
+   JSON → Mapper → Config → SectionRenderer
+   ```
 
-### 3. Data Management
+5. **Register all reusable components** in block registry
 
-✅ **DO:**
-- Keep data close to its page
-- Use consistent naming conventions
-- Validate data structure
-- Use TypeScript types (future)
+### ❌ Don'ts
 
-❌ **DON'T:**
-- Mix data and components
-- Scatter data across folders
-- Use inconsistent formats
+1. **Don't hardcode content** in components - use JSON data
+
+2. **Don't create inline data objects** in page files
+
+3. **Don't use manual animation class strings**
+
+4. **Don't skip the mapper layer** - always transform data
+
+5. **Don't forget loading states** for lazy-loaded components
+
+6. **Don't mix concerns** - keep data, logic, and presentation separate
 
 ---
 
-## Migration Guide
+## Component Patterns
 
-### From Old to New System
+### Reusable Base Components
 
-**Old way:**
-```javascript
-// components/landing/HomeSectionRenderer.jsx
-import { HeroSectionV2 } from "@/components/heroes/landing/HeroSectionV2";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
-// ... 10+ more imports
+#### IconFeatureCard
+Base card component extended by specific use cases:
 
-export function HomeSectionRenderer({ homeData }) {
+```jsx
+import { IconFeatureCard } from "@/components/common/IconFeatureCard";
+
+// Extend for specific use
+export function ContactCard({ info }) {
   return (
-    <>
-      <HeroSectionV2 {...homeData.hero} />
-      <TestimonialsSection data={homeData.testimonials} />
-      {/* ... */}
-    </>
+    <IconFeatureCard
+      icon={info.icon}
+      title={info.title}
+      variant="bordered"
+      iconBg="primary"
+      animationDelay={0.1}
+    >
+      {/* Custom content */}
+      <div>{info.details}</div>
+    </IconFeatureCard>
   );
 }
 ```
 
-**New way:**
-```javascript
-// app/(home)/page.js
-import { SectionRenderer } from "@/components/common/SectionRenderer";
-import { homePageConfig } from "@/lib/configs/home";
+### Section Wrapper Pattern
 
-export default async function HomePage() {
-  const homeData = await getHomePageData();
-  return <SectionRenderer sections={homePageConfig} data={homeData} />;
+```jsx
+import { Section } from "@/components/layout/Section";
+import { Container } from "@/components/layout/Container";
+
+export function MySection({ data }) {
+  return (
+    <Section padding="xl" background="secondary">
+      <Container>
+        {/* Section content */}
+      </Container>
+    </Section>
+  );
 }
 ```
-
----
-
-## Future Enhancements
-
-- [ ] TypeScript types for configs and mappers
-- [ ] Visual config editor
-- [ ] A/B testing support
-- [ ] Analytics integration
-- [ ] Block variants system
-- [ ] Dynamic block loading
-- [ ] Block preview mode
 
 ---
 
 ## Troubleshooting
 
-### Block not found
-```
-Block "section.xyz" not found in registry
-```
-**Solution:** Add the block to `lib/blocks/registry.js`
+### Build Errors
 
-### Component not rendering
-**Check:**
-1. Is the block ID correct in config?
-2. Does the mapper return correct props?
-3. Is the data available at the dataKey path?
-4. Does the condition pass (if any)?
+**Issue:** "Block not found in registry"
+- **Solution:** Check that component is imported and registered in `lib/blocks/registry.js`
 
-### Import errors
-**Check:**
-1. Is the data path correct after reorganization?
-2. Update imports from `@/data/pshot/` to `@/data/pages/pshot/`
-3. Update imports from `@/data/dr-abbas` to `@/data/pages/dr-abbas/page`
+**Issue:** "File has not been read yet"
+- **Solution:** For Write tool, either read the file first or ensure it's a new file
+
+### Runtime Errors
+
+**Issue:** Animation not working
+- **Solution:** Verify animation primitive is imported from `@/components/common/AnimatedWrapper`
+
+**Issue:** Image not loading
+- **Solution:** Check that `sizes` prop is present and path is correct
 
 ---
 
-## Contact & Support
+## Summary
 
-For questions or contributions, please refer to the project documentation or contact the development team.
+This architecture provides:
+
+✅ **Consistency**: All pages follow the same pattern
+✅ **Maintainability**: Changes propagate automatically
+✅ **Performance**: Lazy-loading and optimization built-in
+✅ **Developer Experience**: Clear structure, documented components
+✅ **Content Management**: Easy JSON-based updates
+
+The codebase is designed to be beginner-friendly while maintaining professional-grade architecture. Every decision prioritizes clarity over cleverness, making it easy for anyone to contribute.
+
+---
+
+For questions or contributions, refer to the inline JSDoc comments in each component file.

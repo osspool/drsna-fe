@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Check, Star, Info } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
@@ -8,6 +7,54 @@ import { SectionHeader } from "@/components/common/SectionHeader";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
+/**
+ * Pricing Block Component
+ *
+ * Flexible pricing display supporting single price or multi-package layouts.
+ * Includes consultation fees, included items, financing options, and disclaimers.
+ *
+ * @param {Object} props
+ * @param {Object} props.data - Block data
+ * @param {string} props.data.title - Section title
+ * @param {string} [props.data.subtitle] - Section subtitle
+ * @param {string} [props.data.disclaimer] - Legal disclaimer text
+ * @param {Object} [props.data.singlePrice] - Single price configuration
+ * @param {string} props.data.singlePrice.currentPrice - Current price (e.g., "£299")
+ * @param {string} [props.data.singlePrice.originalPrice] - Original price for strike-through
+ * @param {string} props.data.singlePrice.currency - Currency label (e.g., "GBP")
+ * @param {Object} [props.data.singlePrice.consultationFee] - Consultation fee details
+ * @param {Array} [props.data.packages] - Multiple pricing packages
+ * @param {Object} props.data.packages[].name - Package name
+ * @param {string} props.data.packages[].price - Package price
+ * @param {string[]} props.data.packages[].features - Package features
+ * @param {boolean} [props.data.packages[].popular] - Mark as popular
+ * @param {string[]} [props.data.includes] - What's included in the price
+ * @param {Object} [props.data.financing] - Financing options
+ *
+ * @example
+ * // Single Price
+ * <PricingBlock data={{
+ *   title: "Treatment Pricing",
+ *   singlePrice: {
+ *     currentPrice: "£299",
+ *     originalPrice: "£399",
+ *     currency: "GBP",
+ *     consultationFee: { amount: "£50", refundable: true }
+ *   },
+ *   includes: ["Initial consultation", "Follow-up care"],
+ *   disclaimer: "Prices may vary based on individual needs"
+ * }} />
+ *
+ * @example
+ * // Multi-Package
+ * <PricingBlock data={{
+ *   title: "Treatment Packages",
+ *   packages: [
+ *     { name: "Basic", price: "£299", features: ["1 session", "Aftercare"] },
+ *     { name: "Premium", price: "£599", features: ["3 sessions", "Premium aftercare"], popular: true }
+ *   ]
+ * }} />
+ */
 export function PricingBlock({ data }) {
   const { title, subtitle, disclaimer, packages, singlePrice, includes, financing } = data;
   
@@ -23,12 +70,9 @@ export function PricingBlock({ data }) {
             <SectionHeader title={title} subtitle={subtitle} spacing="md" />
 
             {/* Single Price Card */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="bg-linear-to-br from-primary/5 via-card to-primary/10 rounded-3xl p-8 md:p-12 border-2 border-primary/20 shadow-xl"
+            <div
+              className="opacity-0 animate-scale-in bg-linear-to-br from-primary/5 via-card to-primary/10 rounded-3xl p-8 md:p-12 border-2 border-primary/20 shadow-xl"
+              style={{ animationDelay: '200ms' }}
             >
               {/* Price Display */}
               <div className="text-center mb-6">
@@ -82,16 +126,13 @@ export function PricingBlock({ data }) {
                   </Link>
                 </Button>
               )}
-            </motion.div>
+            </div>
 
             {/* What's Included */}
             {includes && includes.length > 0 && (
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3 }}
-                className="mt-12 bg-card rounded-3xl p-8 md:p-10 border border-border"
+              <div
+                className="opacity-0 animate-fade-in-up mt-12 bg-card rounded-3xl p-8 md:p-10 border border-border"
+                style={{ animationDelay: '300ms' }}
               >
                 <h3 className="text-2xl font-heading font-bold text-foreground mb-6 text-center">
                   What's Included
@@ -106,7 +147,7 @@ export function PricingBlock({ data }) {
                     </div>
                   ))}
                 </div>
-              </motion.div>
+              </div>
             )}
 
           </div>
@@ -126,13 +167,10 @@ export function PricingBlock({ data }) {
             {/* Pricing Packages */}
             <div className="flex flex-wrap justify-center gap-6 mb-16 max-w-6xl mx-auto">
               {packages.map((pkg, index) => (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="relative w-full sm:w-[320px] md:w-[340px] lg:w-[360px]"
+                  className="opacity-0 animate-fade-in-up relative w-full sm:w-[320px] md:w-[340px] lg:w-[360px]"
+                  style={{ animationDelay: `${index * 100}ms` }}
                 >
                   {/* Popular Badge */}
                   {pkg.popular && (
@@ -187,17 +225,14 @@ export function PricingBlock({ data }) {
                       </p>
                     )}
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
 
             {/* What's Included */}
             {includes && includes.length > 0 && (
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="max-w-6xl mx-auto bg-card rounded-3xl p-8 md:p-12 border border-border mb-12"
+              <div
+                className="opacity-0 animate-fade-in-up max-w-6xl mx-auto bg-card rounded-3xl p-8 md:p-12 border border-border mb-12"
               >
                 <h3 className="text-2xl font-heading font-bold text-primary mb-8 text-center">
                   Every Treatment Includes
@@ -212,16 +247,13 @@ export function PricingBlock({ data }) {
                     </div>
                   ))}
                 </div>
-              </motion.div>
+              </div>
             )}
 
             {/* Financing */}
             {financing?.available && (
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="max-w-6xl mx-auto text-center bg-primary/5 rounded-3xl p-8 border border-primary/20"
+              <div
+                className="opacity-0 animate-fade-in-up max-w-6xl mx-auto text-center bg-primary/5 rounded-3xl p-8 border border-primary/20"
               >
                 <h3 className="text-2xl font-heading font-bold text-primary mb-3">
                   Flexible Payment Options Available
@@ -232,7 +264,7 @@ export function PricingBlock({ data }) {
                 <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold">
                   <Link href="/contact">{financing.buttonText || "Learn More About Financing"}</Link>
                 </Button>
-              </motion.div>
+              </div>
             )}
           </>
         )}

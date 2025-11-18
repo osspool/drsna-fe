@@ -1,6 +1,5 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 import { ChevronDown, Phone, Calendar } from "lucide-react";
@@ -21,25 +20,18 @@ export function MobileNav({ isOpen, onClose }) {
   };
 
   return (
-    <AnimatePresence>
+    <>
       {isOpen && (
         <>
           {/* Backdrop */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+          <div
             onClick={onClose}
-            className="fixed inset-0 bg-[#0a0908]/60 backdrop-blur-md z-40 lg:hidden"
+            className="fixed inset-0 bg-[#0a0908]/60 backdrop-blur-md z-40 lg:hidden animate-fade-in"
           />
 
           {/* Mobile Menu Panel */}
-          <motion.div
-            initial={{ x: "100%" }}
-            animate={{ x: 0 }}
-            exit={{ x: "100%" }}
-            transition={{ type: "spring", damping: 30, stiffness: 300 }}
-            className="fixed top-16 right-0 bottom-0 w-full max-w-md bg-[#0a0908]/95 backdrop-blur-2xl shadow-2xl border-l border-white/5 z-50 lg:hidden overflow-y-auto"
+          <div
+            className="fixed top-16 right-0 bottom-0 w-full max-w-md bg-[#0a0908]/95 backdrop-blur-2xl shadow-2xl border-l border-white/5 z-50 lg:hidden overflow-y-auto animate-slide-in-right"
           >
             <Container>
               <nav className="py-6">
@@ -64,14 +56,8 @@ export function MobileNav({ isOpen, onClose }) {
                         />
                       </button>
 
-                      <AnimatePresence>
-                        {expandedCategory === key && (
-                          <motion.div
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: "auto", opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            className="overflow-hidden"
-                          >
+                      {expandedCategory === key && (
+                        <div className="overflow-hidden transition-all duration-300 ease-in-out">
                             <div className="pb-4 space-y-2">
                               {/* View All Category Link */}
                               <Link
@@ -105,14 +91,8 @@ export function MobileNav({ isOpen, onClose }) {
                                       />
                                     </button>
 
-                                    <AnimatePresence>
-                                      {expandedSubcategory === subKey && (
-                                        <motion.ul
-                                          initial={{ height: 0, opacity: 0 }}
-                                          animate={{ height: "auto", opacity: 1 }}
-                                          exit={{ height: 0, opacity: 0 }}
-                                          className="overflow-hidden space-y-0.5 pl-3 mt-1"
-                                        >
+                                    {expandedSubcategory === subKey && (
+                                      <ul className="overflow-hidden space-y-0.5 pl-3 mt-1 transition-all duration-300 ease-in-out">
                                           {subcategory.treatments.map((treatment) => (
                                             <li key={treatment}>
                                               <Link
@@ -124,16 +104,14 @@ export function MobileNav({ isOpen, onClose }) {
                                               </Link>
                                             </li>
                                           ))}
-                                        </motion.ul>
+                                        </ul>
                                       )}
-                                    </AnimatePresence>
                                   </div>
                                 )
                               )}
                             </div>
-                          </motion.div>
+                          </div>
                         )}
-                      </AnimatePresence>
                     </div>
                   ))}
                 </div>
@@ -191,9 +169,9 @@ export function MobileNav({ isOpen, onClose }) {
                 </div>
               </nav>
             </Container>
-          </motion.div>
+          </div>
         </>
       )}
-    </AnimatePresence>
+    </>
   );
 }

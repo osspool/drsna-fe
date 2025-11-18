@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { ArrowRight, Phone, Mail, MapPin, Calendar } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/button";
@@ -20,11 +19,8 @@ export function CTASection({ data, variant = "default" }) {
 
   if (variant === "inline") {
     return (
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="relative rounded-3xl overflow-hidden bg-linear-to-br from-primary to-primary/80 p-12 md:p-16 text-center"
+      <div
+        className="opacity-0 animate-fade-in-up relative rounded-3xl overflow-hidden bg-linear-to-br from-primary to-primary/80 p-12 md:p-16 text-center"
       >
         <div className="absolute inset-0 bg-[url('/patterns/dots.svg')] opacity-10" />
 
@@ -64,17 +60,14 @@ export function CTASection({ data, variant = "default" }) {
             )}
           </div>
         </div>
-      </motion.div>
+      </div>
     );
   }
 
   if (variant === "card") {
     return (
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="bg-linear-to-br from-primary to-primary/80 rounded-2xl p-8 text-primary-foreground"
+      <div
+        className="opacity-0 animate-fade-in-up bg-linear-to-br from-primary to-primary/80 rounded-2xl p-8 text-primary-foreground"
       >
         <Calendar className="w-12 h-12 mb-4 opacity-90" />
         <h3 className="text-2xl font-heading font-bold mb-3">
@@ -95,7 +88,7 @@ export function CTASection({ data, variant = "default" }) {
             <ArrowRight className="w-4 h-4" />
           </span>
         </MovingBorderButton>
-      </motion.div>
+      </div>
     );
   }
 
@@ -129,11 +122,9 @@ export function CTASection({ data, variant = "default" }) {
     return (
       <Section background="default" padding="lg" className="relative">
         <Container className="relative z-20">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center max-w-4xl mx-auto"
+          <div
+            className="opacity-0 animate-fade-in-up text-center max-w-4xl mx-auto"
+            style={{ animationDelay: '0ms' }}
           >
             <h2 className="text-5xl md:text-7xl font-heading font-bold text-foreground mb-8">
               {ctaData.title || "Begin Your Journey"}
@@ -163,37 +154,31 @@ export function CTASection({ data, variant = "default" }) {
               {contactInfo.map((info, index) => {
                 const InfoIcon = getIconComponent(info.icon, Phone);
                 return (
-                <motion.a
+                <a
                   key={index}
                   href={info.href}
                   target={info.href.startsWith("http") ? "_blank" : undefined}
                   rel={info.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="group glass-card rounded-2xl p-6 border border-border hover:bg-card/80 hover:border-primary transition-all"
+                  className="opacity-0 animate-fade-in-up group glass-card rounded-2xl p-6 border border-border hover:bg-card/80 hover:border-primary transition-all"
+                  style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <InfoIcon className="w-6 h-6 text-primary mb-3 mx-auto group-hover:scale-110 transition-transform" />
                   <p className="text-sm text-muted-foreground mb-1">{info.label}</p>
                   <p className="text-foreground font-semibold group-hover:text-primary transition-colors">
                     {info.value}
                   </p>
-                </motion.a>
+                </a>
                 );
               })}
             </div>
 
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              className="mt-12 text-muted-foreground text-sm"
+            <div
+              className="opacity-0 animate-fade-in mt-12 text-muted-foreground text-sm"
             >
               <p className="mb-2">Open {openingHours.days}</p>
               <p className="text-lg font-semibold text-foreground">{openingHours.hours}</p>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </Container>
       </Section>
     );
@@ -204,53 +189,39 @@ export function CTASection({ data, variant = "default" }) {
       <BackgroundBeams />
 
       <Container className="relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center max-w-4xl mx-auto"
+        <div
+          className="opacity-0 animate-fade-in-up text-center max-w-4xl mx-auto"
+          style={{ animationDelay: '0ms' }}
         >
           {ctaData.overline && (
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="inline-flex items-center gap-2 px-6 py-2 bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full mb-8"
+            <div
+              className="opacity-0 animate-scale-in inline-flex items-center gap-2 px-6 py-2 bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full mb-8"
             >
               <span className="text-primary text-sm font-semibold tracking-wider uppercase">
                 {ctaData.overline}
               </span>
-            </motion.div>
+            </div>
           )}
 
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6"
+          <h2
+            className="opacity-0 animate-fade-in-up text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6"
+            style={{ animationDelay: '100ms' }}
           >
             {ctaData.title}
-          </motion.h2>
+          </h2>
 
           {ctaData.subtitle && (
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="text-lg md:text-xl text-muted-foreground mb-8 font-light leading-relaxed"
+            <p
+              className="opacity-0 animate-fade-in text-lg md:text-xl text-muted-foreground mb-8 font-light leading-relaxed"
+              style={{ animationDelay: '200ms' }}
             >
               {ctaData.subtitle}
-            </motion.p>
+            </p>
           )}
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12"
+          <div
+            className="opacity-0 animate-fade-in-up flex flex-col sm:flex-row items-center justify-center gap-6 mb-12"
+            style={{ animationDelay: '300ms' }}
           >
             <MovingBorderButton
               as={Link}
@@ -276,15 +247,12 @@ export function CTASection({ data, variant = "default" }) {
                 </Link>
               </Button>
             )}
-          </motion.div>
+          </div>
 
           {(ctaData.phone || ctaData.note) && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4 }}
-              className="space-y-4"
+            <div
+              className="opacity-0 animate-fade-in space-y-4"
+              style={{ animationDelay: '400ms' }}
             >
               {ctaData.phone && (
                 <a
@@ -300,9 +268,9 @@ export function CTASection({ data, variant = "default" }) {
                   {ctaData.note}
                 </p>
               )}
-            </motion.div>
+            </div>
           )}
-        </motion.div>
+        </div>
       </Container>
     </section>
   );

@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Award, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { HeroCarousel } from "@/components/heroes/shared/hero-carousel";
-import { motion, AnimatePresence } from "framer-motion";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const defaultSlides = [
@@ -89,15 +88,10 @@ export function HeroSectionV2({ data }) {
       {/* Content Container */}
       <div className="relative z-30 container mx-auto px-4 py-12 sm:py-20 md:py-32">
         <div className="max-w-5xl mx-auto">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={currentSlide}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              className="text-left max-w-full sm:max-w-2xl"
-            >
+          <div
+            key={currentSlide}
+            className="opacity-0 animate-fade-in-up text-left max-w-full sm:max-w-2xl"
+          >
               {/* Award Badge */}
               <div className="inline-flex items-center gap-2 bg-royal-blue/90 backdrop-blur-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-full mb-4 sm:mb-6 md:mb-8">
                 <Award className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-white shrink-0" />
@@ -142,8 +136,7 @@ export function HeroSectionV2({ data }) {
                   </Button>
                 </Link>
               </div>
-            </motion.div>
-          </AnimatePresence>
+            </div>
         </div>
       </div>
 

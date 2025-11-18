@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import * as Icons from "lucide-react";
 import Glow from "@/components/custom/ui/glow";
 import { Container } from "@/components/layout/Container";
@@ -16,11 +15,8 @@ export function SafetyBlock({ data }) {
       <Glow className="opacity-70" variant="center" />
 
       <Container className="relative">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
+        <div
+          className="opacity-0 animate-fade-in-up text-center mb-16"
         >
           <p className="text-xs uppercase tracking-[0.4em] text-muted-foreground mb-3">
             Safety & Trust
@@ -33,7 +29,7 @@ export function SafetyBlock({ data }) {
               {content}
             </p>
           )}
-        </motion.div>
+        </div>
 
         {/* Certifications Grid */}
         {certifications && certifications.length > 0 && (
@@ -45,13 +41,10 @@ export function SafetyBlock({ data }) {
               const Icon = Icons[iconName] || Icons.ShieldCheck;
 
               return (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="group flex"
+                  className="opacity-0 animate-fade-in-up group flex"
+                  style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <HoverBorderGradient
                     as="div"
@@ -71,7 +64,7 @@ export function SafetyBlock({ data }) {
                       {cert.description}
                     </p>
                   </HoverBorderGradient>
-                </motion.div>
+                </div>
               );
             })}
           </div>
@@ -79,11 +72,8 @@ export function SafetyBlock({ data }) {
 
         {/* Premium Products */}
         {products && products.length > 0 && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="rounded-[36px] p-10 md:p-12 border border-border bg-linear-to-r from-card/10 to-card/5 backdrop-blur-xl"
+          <div
+            className="opacity-0 animate-fade-in-up rounded-[36px] p-10 md:p-12 border border-border bg-linear-to-r from-card/10 to-card/5 backdrop-blur-xl"
           >
             <h3 className="text-3xl font-heading font-semibold text-foreground mb-8 text-center">
               Premium Products We Use
@@ -98,7 +88,7 @@ export function SafetyBlock({ data }) {
                 </div>
               ))}
             </div>
-          </motion.div>
+          </div>
         )}
       </Container>
     </Section>

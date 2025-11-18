@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 
@@ -20,12 +19,10 @@ export function RelatedTreatmentsSection({ treatments, categoryId, subcategoryId
 
         <div className="grid md:grid-cols-3 gap-8">
           {treatments.map((treatment, index) => (
-            <motion.div
+            <div
               key={treatment.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              className="opacity-0 animate-fade-in-up"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
               <Link href={`/treatments/${categoryId}/${subcategoryId}/${treatment.id}`}>
                 <div className="group h-full bg-card rounded-3xl p-8 border border-border hover:border-primary/30 hover:shadow-primary-lg transition-all duration-300">
@@ -48,7 +45,7 @@ export function RelatedTreatmentsSection({ treatments, categoryId, subcategoryId
                   )}
                 </div>
               </Link>
-            </motion.div>
+            </div>
           ))}
         </div>
       </Container>

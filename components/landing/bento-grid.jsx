@@ -1,36 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-
-// Animation variants for the container to stagger children
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.1,
-    },
-  },
-};
-
-// Animation variants for each grid item
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: "spring",
-      stiffness: 100,
-      damping: 10,
-    },
-  },
-};
-
-
 
 /**
  * A responsive, animated 3-column bento grid layout component.
@@ -52,83 +23,80 @@ export const BentoGridShowcase = ({
   className,
 }) => {
   return (
-    <motion.section
-      variants={containerVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.1 }}
+    <section
       className={cn(
         // Core grid layout: 1 col on mobile, 3 on desktop
         "grid w-full grid-cols-1 gap-6 md:grid-cols-3",
         // Defines 6 explicit rows on medium screens and up (for proper 50/50 middle split)
         "md:grid-rows-[repeat(6,minmax(180px,1fr))]",
+        "opacity-0 animate-fade-in",
         className
       )}
     >
       {/* Left Column - 3 blocks, each spanning 2 rows */}
       {/* Slot 1: Left Top - Col 1, Rows 1-2 */}
-      <motion.div
-        variants={itemVariants}
-        className="md:col-start-1 md:col-span-1 md:row-start-1 md:row-span-2"
+      <div
+        className="opacity-0 animate-fade-in-up md:col-start-1 md:col-span-1 md:row-start-1 md:row-span-2"
+        style={{ animationDelay: '0ms' }}
       >
         {leftTop}
-      </motion.div>
+      </div>
 
       {/* Slot 2: Middle Top (Doctor) - Col 2, Rows 1-3 (50% of column) */}
-      <motion.div
-        variants={itemVariants}
-        className="md:col-start-2 md:col-span-1 md:row-start-1 md:row-span-3"
+      <div
+        className="opacity-0 animate-fade-in-up md:col-start-2 md:col-span-1 md:row-start-1 md:row-span-3"
+        style={{ animationDelay: '100ms' }}
       >
         {middleTop}
-      </motion.div>
+      </div>
 
       {/* Slot 3: Right Top - Col 3, Rows 1-2 */}
-      <motion.div
-        variants={itemVariants}
-        className="md:col-start-3 md:col-span-1 md:row-start-1 md:row-span-2"
+      <div
+        className="opacity-0 animate-fade-in-up md:col-start-3 md:col-span-1 md:row-start-1 md:row-span-2"
+        style={{ animationDelay: '200ms' }}
       >
         {rightTop}
-      </motion.div>
+      </div>
 
       {/* Slot 4: Left Middle - Col 1, Rows 3-4 */}
-      <motion.div
-        variants={itemVariants}
-        className="md:col-start-1 md:col-span-1 md:row-start-3 md:row-span-2"
+      <div
+        className="opacity-0 animate-fade-in-up md:col-start-1 md:col-span-1 md:row-start-3 md:row-span-2"
+        style={{ animationDelay: '300ms' }}
       >
         {leftMiddle}
-      </motion.div>
+      </div>
 
       {/* Slot 5: Right Middle - Col 3, Rows 3-4 */}
-      <motion.div
-        variants={itemVariants}
-        className="md:col-start-3 md:col-span-1 md:row-start-3 md:row-span-2"
+      <div
+        className="opacity-0 animate-fade-in-up md:col-start-3 md:col-span-1 md:row-start-3 md:row-span-2"
+        style={{ animationDelay: '400ms' }}
       >
         {rightMiddle}
-      </motion.div>
+      </div>
 
       {/* Slot 6: Left Bottom - Col 1, Rows 5-6 */}
-      <motion.div
-        variants={itemVariants}
-        className="md:col-start-1 md:col-span-1 md:row-start-5 md:row-span-2"
+      <div
+        className="opacity-0 animate-fade-in-up md:col-start-1 md:col-span-1 md:row-start-5 md:row-span-2"
+        style={{ animationDelay: '500ms' }}
       >
         {leftBottom}
-      </motion.div>
+      </div>
 
       {/* Slot 7: Middle Bottom - Col 2, Rows 4-6 (50% of column) */}
-      <motion.div
-        variants={itemVariants}
-        className="md:col-start-2 md:col-span-1 md:row-start-4 md:row-span-3"
+      <div
+        className="opacity-0 animate-fade-in-up md:col-start-2 md:col-span-1 md:row-start-4 md:row-span-3"
+        style={{ animationDelay: '600ms' }}
       >
         {middleBottom}
-      </motion.div>
+      </div>
 
       {/* Slot 8: Right Bottom - Col 3, Rows 5-6 */}
-      <motion.div
-        variants={itemVariants}
-        className="md:col-start-3 md:col-span-1 md:row-start-5 md:row-span-2"
+      <div
+        className="opacity-0 animate-fade-in-up md:col-start-3 md:col-span-1 md:row-start-5 md:row-span-2"
+        style={{ animationDelay: '700ms' }}
       >
         {rightBottom}
-      </motion.div>
-    </motion.section>
+      </div>
+    </section>
   );
 };

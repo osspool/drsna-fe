@@ -1,6 +1,4 @@
 "use client";
-
-import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Icon } from "@/components/custom/ui/icon";
 
@@ -191,18 +189,15 @@ export function StatCard({
     </>
   );
 
-  // Wrap with motion if animation is enabled
+  // Wrap with animation if enabled
   if (animate) {
     return (
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: animationDelay }}
-        className={cn(cardClasses, variant === "large" && "group")}
+      <div
+        className={cn("opacity-0 animate-fade-in-up", cardClasses, variant === "large" && "group")}
+        style={{ animationDelay: `${(animationDelay || 0) * 1000}ms` }}
       >
         {content}
-      </motion.div>
+      </div>
     );
   }
 

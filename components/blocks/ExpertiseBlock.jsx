@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/layout/Container";
 import { Icon } from "@/components/custom/ui/icon";
@@ -26,12 +25,7 @@ export function ExpertiseBlock({ data }) {
 
       <Container className="relative z-10">
         {/* Header Section - Large and Centered */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
+        <div className="opacity-0 animate-fade-in-up text-center mb-16">
           {badge && (
             <Badge variant="outline" className="mb-4 text-sm font-semibold uppercase tracking-wider">
               {badge}
@@ -53,7 +47,7 @@ export function ExpertiseBlock({ data }) {
               {description}
             </p>
           )}
-        </motion.div>
+        </div>
 
         {/* Bento-Style Features Grid */}
         {features && features.length > 0 && (
@@ -64,13 +58,10 @@ export function ExpertiseBlock({ data }) {
               const gridClass = isLarge ? "md:col-span-2" : "";
 
               return (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1, duration: 0.5 }}
-                  className={`group relative ${gridClass}`}
+                  className={`opacity-0 animate-fade-in-up group relative ${gridClass}`}
+                  style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <div className="h-full bg-gradient-to-br from-card to-card/50 rounded-3xl p-8 md:p-10 border border-border hover:border-primary/40 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10">
                     {/* Glow Effect on Hover */}
@@ -102,7 +93,7 @@ export function ExpertiseBlock({ data }) {
                       )}
                     </div>
                   </div>
-                </motion.div>
+                </div>
               );
             })}
           </div>
@@ -110,12 +101,7 @@ export function ExpertiseBlock({ data }) {
 
         {/* Approach Section - Split Layout */}
         {approach && (
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="relative"
-          >
+          <div className="opacity-0 animate-fade-in-up relative">
             <div className="bg-gradient-to-br from-muted via-muted to-muted/50 rounded-3xl overflow-hidden border border-border">
               <div className="grid lg:grid-cols-2 gap-0">
                 {/* Left Side - Title */}
@@ -133,13 +119,10 @@ export function ExpertiseBlock({ data }) {
                 {/* Right Side - Points */}
                 <div className="p-8 md:p-12 lg:p-16 space-y-6">
                   {approach.points && approach.points.map((point, index) => (
-                    <motion.div
+                    <div
                       key={index}
-                      initial={{ opacity: 0, x: 20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: index * 0.1 }}
-                      className="flex items-start gap-4 group"
+                      className="opacity-0 animate-slide-in-right flex items-start gap-4 group"
+                      style={{ animationDelay: `${index * 100}ms` }}
                     >
                       <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                         <span className="text-primary font-bold text-lg">{index + 1}</span>
@@ -147,12 +130,12 @@ export function ExpertiseBlock({ data }) {
                       <p className="text-lg text-foreground leading-relaxed font-medium pt-1">
                         {point}
                       </p>
-                    </motion.div>
+                    </div>
                   ))}
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         )}
       </Container>
     </Section>

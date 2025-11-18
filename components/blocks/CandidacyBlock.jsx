@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Check, X } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
@@ -16,11 +15,8 @@ export function CandidacyBlock({ data }) {
 
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           {/* Suitable Candidates */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="bg-card rounded-3xl p-8 border-2 border-green-500/20"
+          <div
+            className="opacity-0 animate-slide-in-left bg-card rounded-3xl p-8 border-2 border-green-500/20"
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center">
@@ -39,14 +35,11 @@ export function CandidacyBlock({ data }) {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
           {/* Not Suitable */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="bg-card rounded-3xl p-8 border-2 border-red-500/20"
+          <div
+            className="opacity-0 animate-slide-in-right bg-card rounded-3xl p-8 border-2 border-red-500/20"
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-full bg-red-500 flex items-center justify-center">
@@ -65,19 +58,16 @@ export function CandidacyBlock({ data }) {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
         </div>
 
         {/* Note */}
         {note && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="bg-primary/10 rounded-2xl p-6 border border-primary/20 text-center"
+          <div
+            className="opacity-0 animate-fade-in-up bg-primary/10 rounded-2xl p-6 border border-primary/20 text-center"
           >
             <p className="text-foreground/80 font-medium">{note}</p>
-          </motion.div>
+          </div>
         )}
       </Container>
     </Section>

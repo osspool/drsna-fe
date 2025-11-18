@@ -1,107 +1,29 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Container } from "@/components/layout/Container";
-import { Section } from "@/components/layout/Section";
-import { SectionHeader } from "@/components/common/SectionHeader";
-import { CategoryHero } from "@/components/heroes/treatments/CategoryHero";
-import { CTASection } from "@/components/sections/CTASection";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import { TreatmentsCategoryCard } from "@/components/treatments/TreatmentsCategoryCard";
-import {
-  AnimatedSectionHeader,
-  AnimatedFeatureList,
-  AnimatedContent
-} from "@/components/treatments/TreatmentsAnimatedSection";
-import {
-  getCategories,
-  getTreatmentsHeroData,
-  getWhyChooseFeatures
-} from "@/lib/categories";
+/**
+ * Treatments Listing Page
+ *
+ * Registry-driven architecture using:
+ * - JSON data (data/treatments-listing.json)
+ * - Mapper (lib/mappers/treatments.js)
+ * - Config (lib/configs/treatments.js)
+ * - SectionRenderer (components/common/SectionRenderer.jsx)
+ *
+ * This follows the established pattern for consistency and maintainability.
+ */
+
+import { SectionRenderer } from "@/components/common/SectionRenderer";
+import { getTreatmentsSections, getTreatmentsPageData, getTreatmentsSEO } from "@/lib/configs/treatments";
 
 /**
  * Treatments Page - Server Component
- * Uses Next.js 16 Server Components for optimal SEO and performance
- * Client-side animations extracted to separate components
  */
 export default async function TreatmentsPage() {
-  // Fetch data on the server with automatic caching ('use cache' in lib)
-  const categories = await getCategories();
-  const heroData = await getTreatmentsHeroData();
-  const whyChooseFeatures = await getWhyChooseFeatures();
+  // Fetch data on the server with automatic caching
+  const pageData = await getTreatmentsPageData();
+  const sections = getTreatmentsSections(pageData.categories, pageData.features);
 
   return (
     <main className="min-h-screen">
-      {/* Hero Section */}
-      <CategoryHero data={heroData} variant="category" showStats={true} />
-
-      {/* Categories Section */}
-      <Section 
-        id="categories" 
-        padding="lg" 
-        className="bg-linear-to-b from-secondary/30 to-background"
-      >
-        <Container>
-          {/* Section Header */}
-          <AnimatedSectionHeader
-            badge="Our Services"
-            title="Choose Your Treatment Category"
-            subtitle="Explore our comprehensive range of medical treatments, each delivered with expertise, care, and the highest safety standards"
-          />
-
-          {/* Category Cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-            {categories.map((category, index) => (
-              <TreatmentsCategoryCard key={category.id} category={category} index={index} />
-            ))}
-          </div>
-        </Container>
-      </Section>
-
-      {/* Why Choose Us Section */}
-      <Section padding="lg" background="white">
-        <Container>
-          <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
-            <AnimatedContent direction="left">
-              <SectionHeader
-                badge="Excellence in Care"
-                badgeIcon="sparkles"
-                title="Why Choose Dr. SNA Clinic?"
-                subtitle="We combine medical expertise, advanced technology, and personalized care to deliver exceptional results that transform lives."
-                subtitleClassName="text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed"
-                align="left"
-                spacing="md"
-                animate={false}
-              />
-
-              <AnimatedFeatureList items={whyChooseFeatures} />
-
-              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground mt-10 text-base md:text-lg px-8 py-6 font-semibold shadow-lg">
-                <Link href="/dr-syed-nadeem-abbas">
-                  Learn More About Us
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
-              </Button>
-            </AnimatedContent>
-
-            <AnimatedContent direction="right">
-              <div className="relative h-[500px] md:h-[600px] rounded-3xl overflow-hidden shadow-xl">
-                <Image
-                  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80"
-                  alt="Dr. SNA Clinic"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-linear-to-t from-foreground/60 to-transparent" />
-              </div>
-            </AnimatedContent>
-          </div>
-        </Container>
-      </Section>
-
-      {/* CTA Section */}
-      <CTASection />
+      <SectionRenderer sections={sections} data={pageData} />
     </main>
   );
 }
@@ -110,14 +32,5 @@ export default async function TreatmentsPage() {
  * Generate metadata for SEO
  */
 export async function generateMetadata() {
-  return {
-    title: "Medical Treatments | Aesthetic Medicine, Intimate Health & Pain Management | Dr. SNA Clinic",
-    description: "Explore our comprehensive range of medical treatments including aesthetic medicine, intimate health solutions, and advanced pain management. Expert care in London.",
-    keywords: "medical treatments, aesthetic medicine, intimate health, pain management, London clinic",
-    openGraph: {
-      title: "Premium Medical Treatments | Dr. SNA Clinic",
-      description: "Transform your life with world-class aesthetic medicine, intimate health, and pain management solutions.",
-      images: ["https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1200&q=80"],
-    },
-  };
+  return getTreatmentsSEO();
 }

@@ -1,15 +1,15 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { SectionHeader } from "@/components/common/SectionHeader";
 import { Spotlight } from "@/components/aceternity/spotlight";
 import { CardSpotlight } from "@/components/aceternity/card-spotlight";
-import { 
-  Activity, 
-  Layers, 
-  Sparkles, 
+import { AnimatedCard, IconBox, CheckItem } from "@/components/common/primitives";
+import {
+  Activity,
+  Layers,
+  Sparkles,
   Shield,
   Zap,
   Heart,
@@ -71,13 +71,7 @@ export function HowItWorksBlock({ data }) {
                 const IconComponent = iconMap[benefit.icon] || Activity;
 
                 return (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                  >
+                  <div key={index}>
                     <CardSpotlight
                       radius={300}
                       color="#c69255"
@@ -98,7 +92,7 @@ export function HowItWorksBlock({ data }) {
                         {benefit.description}
                       </p>
                     </CardSpotlight>
-                  </motion.div>
+                  </div>
                 );
               })}
             </div>
@@ -106,12 +100,7 @@ export function HowItWorksBlock({ data }) {
 
           {/* Growth Factors Section */}
           {growthFactors && growthFactors.length > 0 && (
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="relative z-10"
-            >
+            <div className="relative z-10">
               <CardSpotlight
                 radius={500}
                 color="#d4a574"
@@ -129,17 +118,13 @@ export function HowItWorksBlock({ data }) {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 relative z-20">
                   {growthFactors.map((factor, index) => (
-                    <motion.div
+                    <div
                       key={index}
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: index * 0.05 }}
                       className="flex items-center gap-3 bg-secondary/80 rounded-xl p-4 border border-primary/20 hover:border-primary/50 hover:bg-secondary transition-all duration-300 group"
                     >
                       <div className="shrink-0">
-                        <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/40 group-hover:scale-110 transition-all duration-300">
-                          <CheckCircle2 className="w-5 h-5 text-primary transition-colors duration-300" />
+                        <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/40 transition-all duration-300">
+                          <CheckCircle2 className="w-5 h-5 text-primary" />
                         </div>
                       </div>
                       <div className="flex-1">
@@ -147,11 +132,11 @@ export function HowItWorksBlock({ data }) {
                           {factor}
                         </p>
                       </div>
-                    </motion.div>
+                    </div>
                   ))}
                 </div>
               </CardSpotlight>
-            </motion.div>
+            </div>
           )}
         </Container>
       </Section>
@@ -181,42 +166,26 @@ export function HowItWorksBlock({ data }) {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {benefits.map((benefit, index) => {
               const IconComponent = iconMap[benefit.icon] || Activity;
-              
+
               return (
-                <motion.div
+                <AnimatedCard
                   key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="group"
+                  variant="gradient"
+                  hoverGradient
+                  className="h-full"
                 >
-                  <div className="relative h-full bg-linear-to-br from-card to-secondary/30 rounded-2xl p-6 shadow-md hover:shadow-2xl transition-all duration-300 border border-primary/10 hover:border-primary/30 overflow-hidden">
-                    {/* Animated Background Gradient */}
-                    <div className="absolute inset-0 bg-linear-to-br from-primary/0 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <IconBox variant="gradient" size="lg" hoverScale>
+                    <IconComponent className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
+                  </IconBox>
 
-                    {/* Content */}
-                    <div className="relative z-10">
-                      {/* Icon */}
-                      <div className="w-14 h-14 rounded-xl bg-linear-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-4 group-hover:from-primary group-hover:to-primary/80 transition-all duration-300 group-hover:scale-110">
-                        <IconComponent className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
-                      </div>
+                  <h3 className="text-xl font-bold text-foreground mb-2 mt-4 group-hover:text-primary transition-colors duration-300">
+                    {benefit.title}
+                  </h3>
 
-                      {/* Title */}
-                      <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
-                        {benefit.title}
-                      </h3>
-
-                      {/* Description */}
-                      <p className="text-muted-foreground leading-relaxed text-sm">
-                        {benefit.description}
-                      </p>
-                    </div>
-
-                    {/* Corner Accent */}
-                    <div className="absolute top-0 right-0 w-20 h-20 bg-linear-to-bl from-primary/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  </div>
-                </motion.div>
+                  <p className="text-muted-foreground leading-relaxed text-sm">
+                    {benefit.description}
+                  </p>
+                </AnimatedCard>
               );
             })}
           </div>
@@ -224,12 +193,7 @@ export function HowItWorksBlock({ data }) {
 
         {/* Growth Factors Section */}
         {growthFactors && growthFactors.length > 0 && (
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="bg-linear-to-br from-primary/5 via-primary/10 to-primary/5 rounded-3xl p-8 lg:p-12 border border-primary/20 shadow-xl"
-          >
+          <div className="bg-linear-to-br from-primary/5 via-primary/10 to-primary/5 rounded-3xl p-8 lg:p-12 border border-primary/20 shadow-xl">
             <div className="text-center mb-8">
               <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
                 Key Growth Factors in PRP
@@ -241,28 +205,10 @@ export function HowItWorksBlock({ data }) {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {growthFactors.map((factor, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.05 }}
-                  className="flex items-center gap-3 bg-card rounded-xl p-4 shadow-md hover:shadow-lg transition-all duration-300 group"
-                >
-                  <div className="shrink-0">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                      <CheckCircle2 className="w-5 h-5 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
-                    </div>
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-sm font-medium text-foreground group-hover:text-primary transition-colors duration-300">
-                      {factor}
-                    </p>
-                  </div>
-                </motion.div>
+                <CheckItem key={index}>{factor}</CheckItem>
               ))}
             </div>
-          </motion.div>
+          </div>
         )}
       </Container>
     </Section>

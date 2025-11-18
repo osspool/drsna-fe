@@ -1,11 +1,26 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
+import { SlideIn, FadeInUp } from "@/components/common/AnimatedWrapper";
 import { cn } from "@/lib/utils";
 
+/**
+ * Content Block Component
+ *
+ * Flexible content display supporting text-only or text-image layouts.
+ * Image position can be configured for left/right placement.
+ *
+ * @param {Object} props
+ * @param {Object} props.data - Block data
+ * @param {string} [props.data.heading] - Optional heading text
+ * @param {string} props.data.content - HTML content string
+ * @param {string} [props.data.image] - Image URL
+ * @param {'left'|'right'} [props.data.imagePosition='right'] - Image position
+ * @param {string} [props.data.imageAlt] - Image alt text
+ * @param {'text-only'|'text-image'} [props.data.layout='text-image'] - Layout variant
+ */
 export function ContentBlock({ data }) {
   const { heading, content, image, imagePosition = "right", imageAlt, layout = "text-image" } = data;
   const isImageRight = imagePosition === "right";
@@ -14,11 +29,7 @@ export function ContentBlock({ data }) {
     return (
       <Section>
         <Container maxWidth="4xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
+          <FadeInUp>
             {heading && (
               <h2 className="text-4xl font-heading font-bold mb-6 text-gold">
                 {heading}
@@ -28,7 +39,7 @@ export function ContentBlock({ data }) {
               className="prose prose-lg max-w-none"
               dangerouslySetInnerHTML={{ __html: content }}
             />
-          </motion.div>
+          </FadeInUp>
         </Container>
       </Section>
     );
@@ -42,12 +53,9 @@ export function ContentBlock({ data }) {
           isImageRight ? "" : "md:grid-flow-dense"
         )}>
           {/* Text Content */}
-          <motion.div
-            initial={{ opacity: 0, x: isImageRight ? -30 : 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className={isImageRight ? "" : "md:col-start-2"}
+          <SlideIn
+            direction={isImageRight ? 'left' : 'right'}
+            className={isImageRight ? '' : 'md:col-start-2'}
           >
             {heading && (
               <h2 className="text-4xl font-heading font-bold mb-6 text-gold">
@@ -58,26 +66,25 @@ export function ContentBlock({ data }) {
               className="prose prose-lg max-w-none prose-headings:text-gold prose-strong:text-gold-dark"
               dangerouslySetInnerHTML={{ __html: content }}
             />
-          </motion.div>
+          </SlideIn>
 
           {/* Image */}
-          <motion.div
-            initial={{ opacity: 0, x: isImageRight ? 30 : -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+          <SlideIn
+            direction={isImageRight ? 'right' : 'left'}
             className={cn(
-              "relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-gold-lg",
               isImageRight ? "" : "md:col-start-1 md:row-start-1"
             )}
           >
-            <Image
-              src={image || "/images/placeholder.jpg"}
-              alt={imageAlt || heading || "Treatment image"}
-              fill
-              className="object-cover"
-            />
-          </motion.div>
+            <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-gold-lg">
+              <Image
+                src={image || "/images/placeholder.jpg"}
+                alt={imageAlt || heading || "Treatment image"}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </div>
+          </SlideIn>
         </div>
       </Container>
     </Section>

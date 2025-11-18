@@ -20,16 +20,16 @@ import { Section } from "@/components/layout/Section";
 import { VideoPlayer } from "@/components/ui/VideoPlayer";
 import { useImageOrientation } from "@/hooks/use-image-orientation";
 import { getYouTubeThumbnailUrl } from "@/lib/utils";
-import { motion } from "framer-motion";
 
 export function TestimonialsSection({
   data,
-  variant = "text",
+  variant,
   title,
   subtitle,
   badge,
   background = "default"
 }) {
+  const resolvedVariant = variant ?? data?.variant ?? "text";
   const [selectedVideo, setSelectedVideo] = useState(null);
 
   const testimonials = data?.testimonials || data?.items || data || [];
@@ -45,7 +45,7 @@ export function TestimonialsSection({
     gradient: "bg-gradient-to-b from-secondary to-background"
   };
 
-  if (variant === "video") {
+  if (resolvedVariant === "video") {
     return (
       <section className={`py-20 border-y border-border ${bgClasses[background]}`}>
         <Container>
@@ -116,7 +116,7 @@ export function TestimonialsSection({
   }
 
   // Video testimonials with detailed info (quote, rating, verified badge)
-  if (variant === "video-detailed") {
+  if (resolvedVariant === "video-detailed") {
     const [playing, setPlaying] = useState({});
 
     const handlePlay = (index) => {
@@ -148,13 +148,10 @@ export function TestimonialsSection({
           {/* Video Testimonials Grid */}
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
             {videoTestimonials.map((testimonial, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.15 }}
-                className="group h-full"
+                className="opacity-0 animate-fade-in-up group h-full"
+                style={{ animationDelay: `${index * 150}ms` }}
               >
                 <div className="gradient-border group-hover:gradient-border-hover rounded-3xl h-full w-full transition-all duration-500">
                   <div className="gradient-border-inner rounded-[calc(1.5rem-4px)] flex flex-col h-full">
@@ -221,22 +218,19 @@ export function TestimonialsSection({
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
 
           {/* Optional CTA */}
           {videoTestimonials.length > 0 && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mt-12"
+            <div
+              className="opacity-0 animate-fade-in-up text-center mt-12"
             >
               <p className="text-muted-foreground text-sm">
                 All testimonials are from verified patients who underwent treatment at Dr. SNA Clinic
               </p>
-            </motion.div>
+            </div>
           )}
         </Container>
       </Section>
@@ -279,6 +273,7 @@ export function TestimonialsSection({
                               src={testimonial.image}
                               alt={testimonial.name}
                               fill
+                              sizes="48px"
                               className="object-cover"
                             />
                           </div>

@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Check, Sparkles, X } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
@@ -42,11 +41,8 @@ export function ComparisonBlock({ data }) {
         <SectionHeader {...headerPreset} />
 
         {hasCompetitors && (
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="bg-white rounded-3xl border-2 border-dark-brown/10 overflow-hidden shadow-xl"
+          <div
+            className="opacity-0 animate-fade-in-up bg-white rounded-3xl border-2 border-dark-brown/10 overflow-hidden shadow-xl"
           >
             <div className="grid grid-cols-3 bg-dark-brown text-white">
               <div className="p-6 font-heading font-bold text-lg">Feature</div>
@@ -57,15 +53,12 @@ export function ComparisonBlock({ data }) {
             </div>
 
             {data.competitors.map((item, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.05 }}
-                className={`grid grid-cols-3 ${
+                className={`opacity-0 animate-slide-in-left grid grid-cols-3 ${
                   index % 2 === 0 ? "bg-cream/30" : "bg-white"
                 } ${item.highlight ? "border-l-4 border-gold" : ""}`}
+                style={{ animationDelay: `${index * 50}ms` }}
               >
                 <div className="p-6 font-semibold text-dark-brown flex items-center">
                   {item.feature}
@@ -88,17 +81,14 @@ export function ComparisonBlock({ data }) {
                     <span className="text-dark-brown/60">{item.others}</span>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         )}
 
         {hasComparisons && (
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className={`bg-cream/30 rounded-3xl overflow-hidden border border-dark-brown/10 ${
+          <div
+            className={`opacity-0 animate-fade-in-up bg-cream/30 rounded-3xl overflow-hidden border border-dark-brown/10 ${
               hasCompetitors ? "mt-16" : ""
             }`}
           >
@@ -138,15 +128,12 @@ export function ComparisonBlock({ data }) {
                 </tbody>
               </table>
             </div>
-          </motion.div>
+          </div>
         )}
 
         {shouldShowCta && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mt-12 text-center"
+          <div
+            className="opacity-0 animate-fade-in-up mt-12 text-center"
           >
             {ctaText && (
               <p className="text-xl text-dark-brown/70 mb-6">{ctaText}</p>
@@ -157,7 +144,7 @@ export function ComparisonBlock({ data }) {
                 <span className="text-gold font-semibold">{ctaHighlight}</span>
               </div>
             )}
-          </motion.div>
+          </div>
         )}
       </Container>
     </Section>

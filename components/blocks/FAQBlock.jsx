@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import {
@@ -16,21 +15,15 @@ export function FAQBlock({ data }) {
   return (
     <Section background="default">
       <Container maxWidth="4xl">
-        <motion.h2
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.4 }}
-          className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-center mb-12 sm:mb-16 text-foreground"
+        <h2
+          className="opacity-0 animate-fade-in text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-center mb-12 sm:mb-16 text-foreground"
         >
           {heading}
-        </motion.h2>
+        </h2>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.1 }}
+        <div
+          className="opacity-0 animate-fade-in"
+          style={{ animationDelay: '100ms' }}
         >
           <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
             {items?.map((item, index) => (
@@ -50,7 +43,7 @@ export function FAQBlock({ data }) {
               </AccordionItem>
             ))}
           </Accordion>
-        </motion.div>
+        </div>
       </Container>
     </Section>
   );

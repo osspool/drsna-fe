@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/layout/Container";
 import { SectionHeader } from "@/components/common/SectionHeader";
@@ -27,13 +26,10 @@ export function TeamSection({ data }) {
 
         <div className="space-y-12">
           {data.map((member, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="bg-card rounded-3xl overflow-hidden border border-border shadow-lg"
+              className="opacity-0 animate-fade-in-up bg-card rounded-3xl overflow-hidden border border-border shadow-lg"
+              style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="grid lg:grid-cols-3 gap-0">
                 {/* Image - 1 column on desktop (33%) */}
@@ -43,6 +39,7 @@ export function TeamSection({ data }) {
                       src={member.image}
                       alt={member.name}
                       fill
+                      sizes="(max-width: 1024px) 100vw, 33vw"
                       className="object-cover object-center"
                       priority={index === 0}
                     />
@@ -132,7 +129,7 @@ export function TeamSection({ data }) {
                   )}
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </Container>

@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
@@ -9,11 +8,9 @@ import { Icon } from "@/components/custom/ui/icon";
 export function TreatmentsCategoryCard({ category, index }) {
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: index * 0.1 }}
+    <div
+      className="opacity-0 animate-fade-in-up"
+      style={{ animationDelay: `${index * 100}ms` }}
     >
       <Link href={`/treatments/${category.id}`}>
         <div className="group relative h-full rounded-3xl overflow-hidden bg-card border-2 border-border hover:border-primary/30 hover:shadow-2xl transition-all duration-700">
@@ -78,6 +75,6 @@ export function TreatmentsCategoryCard({ category, index }) {
           </div>
         </div>
       </Link>
-    </motion.div>
+    </div>
   );
 }

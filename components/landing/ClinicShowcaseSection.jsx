@@ -3,7 +3,6 @@
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import Glow from "@/components/custom/ui/glow";
@@ -174,23 +173,17 @@ export function ClinicShowcaseSection({ data }) {
       <Glow variant="center" className="opacity-40" />
 
       <div className="relative py-20 md:py-32">
-       
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16 md:mb-20"
+
+          <div
+            className="opacity-0 animate-fade-in-up text-center mb-16 md:mb-20"
           >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 backdrop-blur-sm border border-primary/30 rounded-full mb-8"
+            <div
+              className="opacity-0 animate-scale-in inline-flex items-center gap-2 px-6 py-2 bg-primary/10 backdrop-blur-sm border border-primary/30 rounded-full mb-8"
             >
               <span className="text-primary text-sm font-semibold tracking-wider uppercase">
                 {sectionData.badge}
               </span>
-            </motion.div>
+            </div>
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-foreground mb-6 px-4">
               {sectionData.title}
@@ -201,16 +194,12 @@ export function ClinicShowcaseSection({ data }) {
             <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
               {sectionData.description}
             </p>
-          </motion.div>
+          </div>
 
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
-                className="relative h-[400px] md:h-[500px]"
+              <div
+                className="opacity-0 animate-slide-in-left relative h-[400px] md:h-[500px]"
                 style={{ perspective: "1000px" }}
                 ref={imageContainerRef}
               >
@@ -230,24 +219,14 @@ export function ClinicShowcaseSection({ data }) {
                     />
                   </div>
                 ))}
-              </motion.div>
+              </div>
 
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
-                className="flex flex-col justify-between h-full"
+              <div
+                className="opacity-0 animate-slide-in-right flex flex-col justify-between h-full"
               >
-                <AnimatePresence mode="wait">
-                  <motion.div
+                  <div
                     key={activeIndex}
-                    variants={contentVariants}
-                    initial="initial"
-                    animate="animate"
-                    exit="exit"
-                    transition={{ duration: 0.3, ease: "easeInOut" }}
-                    className="space-y-8"
+                    className="opacity-0 animate-fade-in-up space-y-8"
                   >
                     <div>
                       <p className="text-primary text-sm font-semibold tracking-wider uppercase mb-3">
@@ -258,21 +237,10 @@ export function ClinicShowcaseSection({ data }) {
                       </h3>
                     </div>
 
-                    <motion.p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                      {activeContent.description.split(" ").map((word, i) => (
-                        <motion.span
-                          key={i}
-                          initial={{ filter: "blur(10px)", opacity: 0, y: 5 }}
-                          animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
-                          transition={{ duration: 0.22, ease: "easeInOut", delay: 0.025 * i }}
-                          style={{ display: "inline-block" }}
-                        >
-                          {word}&nbsp;
-                        </motion.span>
-                      ))}
-                    </motion.p>
-                  </motion.div>
-                </AnimatePresence>
+                    <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                      {activeContent.description}
+                    </p>
+                  </div>
 
                 <div className="flex gap-4 mt-10 md:mt-16">
                   <button
@@ -316,7 +284,7 @@ export function ClinicShowcaseSection({ data }) {
                     ))}
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
       </div>

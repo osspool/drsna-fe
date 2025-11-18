@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { RatingStars } from "./RatingStars";
 import { CheckCircle } from "lucide-react";
@@ -72,14 +71,12 @@ export function TestimonialCard({
 
     if (animate) {
       return (
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: animationDelay }}
+        <div
+          className="opacity-0 animate-fade-in-up"
+          style={{ animationDelay: `${(animationDelay || 0) * 1000}ms` }}
         >
           {content}
-        </motion.div>
+        </div>
       );
     }
 
@@ -149,14 +146,12 @@ export function TestimonialCard({
 
     if (animate) {
       return (
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: animationDelay }}
+        <div
+          className="opacity-0 animate-fade-in-up"
+          style={{ animationDelay: `${(animationDelay || 0) * 1000}ms` }}
         >
           {content}
-        </motion.div>
+        </div>
       );
     }
 
@@ -196,15 +191,12 @@ export function TestimonialCard({
 
   if (animate) {
     return (
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: animationDelay }}
-        className="h-full"
+      <div
+        className="opacity-0 animate-fade-in-up h-full"
+        style={{ animationDelay: `${(animationDelay || 0) * 1000}ms` }}
       >
         {content}
-      </motion.div>
+      </div>
     );
   }
 

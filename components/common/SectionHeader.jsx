@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { Icon } from "@/components/custom/ui/icon";
@@ -125,17 +124,12 @@ export function SectionHeader({
     </>
   );
 
-  // Wrap with motion if animation is enabled
+  // Wrap with animation if enabled
   if (animate) {
     return (
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className={containerClasses}
-      >
+      <div className={cn("opacity-0 animate-fade-in-up", containerClasses)}>
         {content}
-      </motion.div>
+      </div>
     );
   }
 

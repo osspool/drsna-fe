@@ -65,7 +65,7 @@
   "benefits": {
     "title": "What This Library Offers",
     "subtitle": "Clarity, context, and confidence before you choose a treatment.",
-    "items": [
+    "features": [
       {
         "title": "Study design at a glance",
         "description": "Know whether evidence comes from RCTs, cohort data, or systematic reviews.",

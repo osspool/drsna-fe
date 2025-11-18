@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Sparkles } from "lucide-react";
@@ -64,6 +63,7 @@ export function CategoryHero({
               src={data.hero.backgroundImage}
               alt={data.title}
               fill
+              sizes="100vw"
               className={`object-cover ${settings.backgroundOpacity}`}
               priority
             />
@@ -73,10 +73,8 @@ export function CategoryHero({
       )}
 
       <Container className={`relative z-10 text-center ${settings.containerPadding}`}>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: settings.animationDuration }}
+        <div
+          className="opacity-0 animate-fade-in-up"
         >
           {/* Breadcrumb - only for subcategory */}
           {!isCategory && breadcrumb?.categoryId && (
@@ -92,39 +90,33 @@ export function CategoryHero({
           )}
 
           {/* Main Headline */}
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-6 leading-tight"
+          <h1
+            className="opacity-0 animate-fade-in-up text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-6 leading-tight"
+            style={{ animationDelay: '300ms' }}
           >
             {data.hero?.headline || data.title}
-          </motion.h1>
+          </h1>
 
           {/* Subheadline */}
           {data.hero?.subheadline && (
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: isCategory ? 0.5 : 0.4 }}
-              className={`text-lg md:text-xl ${isCategory ? "lg:text-2xl text-white/90 max-w-4xl mb-8" : "text-primary max-w-3xl mb-6"} mx-auto font-light leading-relaxed`}
+            <p
+              className={`opacity-0 animate-fade-in text-lg md:text-xl ${isCategory ? "lg:text-2xl text-white/90 max-w-4xl mb-8" : "text-primary max-w-3xl mb-6"} mx-auto font-light leading-relaxed`}
+              style={{ animationDelay: isCategory ? '500ms' : '400ms' }}
             >
               {data.hero.subheadline}
-            </motion.p>
+            </p>
           )}
 
           {/* Description */}
           {data.longDescription && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: isCategory ? 0.6 : 0.5 }}
-              className={`text-lg ${isCategory ? "md:text-xl text-white/80 mb-12" : "text-white/80 mb-10"} mx-auto leading-relaxed space-y-4`}
+            <div
+              className={`opacity-0 animate-fade-in text-lg ${isCategory ? "md:text-xl text-white/80 mb-12" : "text-white/80 mb-10"} mx-auto leading-relaxed space-y-4`}
+              style={{ animationDelay: isCategory ? '600ms' : '500ms' }}
             >
               {data.longDescription.split('\n\n').map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
-            </motion.div>
+            </div>
           )}
 
           {/* Stats Row - only for category */}
@@ -133,11 +125,11 @@ export function CategoryHero({
           )}
 
           {/* CTA Buttons */}
-          <CTAButtons 
+          <CTAButtons
             cta={data.hero?.cta}
-            delay={isCategory ? 0.8 : 0.6}
+            delay={isCategory ? '800ms' : '600ms'}
           />
-        </motion.div>
+        </div>
       </Container>
 
       {/* Scroll Indicator - only for category */}
@@ -150,11 +142,9 @@ export function CategoryHero({
 
 function Breadcrumb({ categoryId, categoryName }) {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.2 }}
-      className="flex items-center justify-center gap-2 text-white/70 text-sm mb-6"
+    <div
+      className="opacity-0 animate-fade-in flex items-center justify-center gap-2 text-white/70 text-sm mb-6"
+      style={{ animationDelay: '200ms' }}
     >
       <Link href="/treatments" className="hover:text-primary transition-colors">
         Treatments
@@ -163,33 +153,29 @@ function Breadcrumb({ categoryId, categoryName }) {
       <Link href={`/treatments/${categoryId}`} className="hover:text-primary transition-colors">
         {categoryName || "Category"}
       </Link>
-    </motion.div>
+    </div>
   );
 }
 
 function TaglineBadge({ tagline }) {
   return (
-    <motion.div
-      initial={{ scale: 0, rotate: -180 }}
-      animate={{ scale: 1, rotate: 0 }}
-      transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-      className="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 backdrop-blur-sm border border-primary/30 rounded-full mb-8"
+    <div
+      className="opacity-0 animate-scale-in inline-flex items-center gap-2 px-6 py-3 bg-primary/10 backdrop-blur-sm border border-primary/30 rounded-full mb-8"
+      style={{ animationDelay: '200ms' }}
     >
       <Sparkles className="w-4 h-4 text-primary" />
       <span className="text-primary text-sm font-semibold tracking-wider uppercase">
         {tagline}
       </span>
-    </motion.div>
+    </div>
   );
 }
 
 function StatsSection({ stats }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.7 }}
-      className="flex flex-wrap items-center justify-center gap-12 mb-12"
+    <div
+      className="opacity-0 animate-fade-in-up flex flex-wrap items-center justify-center gap-12 mb-12"
+      style={{ animationDelay: '700ms' }}
     >
       {stats.map((stat, index) => (
         <div key={index} className="text-center">
@@ -201,17 +187,15 @@ function StatsSection({ stats }) {
           </div>
         </div>
       ))}
-    </motion.div>
+    </div>
   );
 }
 
 function CTAButtons({ cta, delay }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay }}
-      className="flex flex-col sm:flex-row items-center justify-center gap-4"
+    <div
+      className="opacity-0 animate-fade-in-up flex flex-col sm:flex-row items-center justify-center gap-4"
+      style={{ animationDelay: delay }}
     >
       <Button
         asChild
@@ -233,26 +217,22 @@ function CTAButtons({ cta, delay }) {
           Explore Treatments
         </Link>
       </Button>
-    </motion.div>
+    </div>
   );
 }
 
 function ScrollIndicator() {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 1.2 }}
-      className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-10"
+    <div
+      className="opacity-0 animate-fade-in absolute bottom-12 left-1/2 transform -translate-x-1/2 z-10"
+      style={{ animationDelay: '1200ms' }}
     >
       <div className="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center p-2">
-        <motion.div
-          animate={{ y: [0, 12, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-          className="w-1.5 h-1.5 bg-primary rounded-full"
+        <div
+          className="w-1.5 h-1.5 bg-primary rounded-full animate-bounce"
         />
       </div>
-    </motion.div>
+    </div>
   );
 }
 

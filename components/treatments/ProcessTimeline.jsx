@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 import { Container } from "@/components/layout/Container";
 import {
   ArrowLeft,
@@ -27,13 +26,14 @@ function getIconComponent(icon) {
   return icons[pascal] || Sparkles;
 }
 
-export function ProcessTimeline({ data, variant = "default" }) {
+export function ProcessTimeline({ data, variant }) {
   if (!data || !data.steps || !data.steps.length) return null;
 
   const steps = data.steps;
+  const resolvedVariant = variant ?? data.variant ?? "default";
 
   // Compact Timeline Variant (from WhatToExpectBlock)
-  if (variant === "compact-timeline") {
+  if (resolvedVariant === "compact-timeline") {
     return (
       <Section background="muted" padding="none" ripple={true}>
         <div className="relative flex w-full flex-col items-start justify-start overflow-hidden py-16 md:py-24">
@@ -43,11 +43,8 @@ export function ProcessTimeline({ data, variant = "default" }) {
           {/* Content Layer */}
           <Container className="relative z-10 w-full">
             {/* Header */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-10 max-w-3xl mx-auto"
+            <div
+              className="opacity-0 animate-fade-in-up text-center mb-10 max-w-3xl mx-auto"
             >
               {data.title && (
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-3">
@@ -64,17 +61,15 @@ export function ProcessTimeline({ data, variant = "default" }) {
                   {data.description}
                 </p>
               )}
-            </motion.div>
+            </div>
 
             {/* Compact Step Cards */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {steps.map((step, index) => (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.05 }}
+                  className="opacity-0 animate-fade-in-up"
+                  style={{ animationDelay: `${index * 50}ms` }}
                 >
                   <div className="group h-full bg-card/95 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-primary/10 hover:border-primary/30">
                     <div className="flex items-start justify-between gap-4">
@@ -110,16 +105,13 @@ export function ProcessTimeline({ data, variant = "default" }) {
                       </p>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
 
             {/* Summary Box */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="mt-8 max-w-2xl mx-auto"
+            <div
+              className="opacity-0 animate-fade-in-up mt-8 max-w-2xl mx-auto"
             >
               <div className="rounded-3xl border border-primary/20 bg-card/80 backdrop-blur-sm p-6 shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="flex items-start gap-4">
@@ -134,7 +126,7 @@ export function ProcessTimeline({ data, variant = "default" }) {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </Container>
         </div>
       </Section>
@@ -142,7 +134,7 @@ export function ProcessTimeline({ data, variant = "default" }) {
   }
 
   // Timeline Variant (from WhatToExpectBlock default)
-  if (variant === "timeline") {
+  if (resolvedVariant === "timeline") {
     return (
       <Section background="muted" padding="none" ripple={true}>
         <div className="relative flex w-full flex-col items-start justify-start overflow-hidden py-16 md:py-24">
@@ -152,11 +144,8 @@ export function ProcessTimeline({ data, variant = "default" }) {
           {/* Content Layer */}
           <Container className="relative z-10 w-full">
             {/* Header */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-12 max-w-3xl mx-auto"
+            <div
+              className="opacity-0 animate-fade-in-up text-center mb-12 max-w-3xl mx-auto"
             >
               {data.title && (
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-3">
@@ -173,18 +162,15 @@ export function ProcessTimeline({ data, variant = "default" }) {
                   {data.description}
                 </p>
               )}
-            </motion.div>
+            </div>
 
             {/* Timeline Steps */}
             <div className="max-w-4xl mx-auto space-y-6">
               {steps.map((step, index) => (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.08 }}
-                  className="flex gap-4 group"
+                  className="opacity-0 animate-slide-in-left flex gap-4 group"
+                  style={{ animationDelay: `${index * 80}ms` }}
                 >
                   {/* Step Number */}
                   <div className="shrink-0">
@@ -238,7 +224,7 @@ export function ProcessTimeline({ data, variant = "default" }) {
                       </div>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
           </Container>
@@ -252,12 +238,8 @@ export function ProcessTimeline({ data, variant = "default" }) {
       <Container>
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16 max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="mb-4 md:mb-6"
+          <div
+            className="opacity-0 animate-scale-in mb-4 md:mb-6"
           >
             <Badge
               variant="default"
@@ -266,33 +248,27 @@ export function ProcessTimeline({ data, variant = "default" }) {
               <Sparkles className="w-3.5 h-3.5" />
               How It Works
             </Badge>
-          </motion.div>
+          </div>
 
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-3 md:mb-4"
+          <h2
+            className="opacity-0 animate-fade-in-up text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-3 md:mb-4"
+            style={{ animationDelay: '100ms' }}
           >
             {data.title || "Your Treatment Journey"}
-          </motion.h2>
+          </h2>
 
           {data.subtitle && (
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2, duration: 0.6 }}
-              className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto"
+            <p
+              className="opacity-0 animate-fade-in-up text-base md:text-lg text-muted-foreground max-w-2xl mx-auto"
+              style={{ animationDelay: '200ms' }}
             >
               {data.subtitle}
-            </motion.p>
+            </p>
           )}
         </div>
 
         {/* Timeline */}
-        {variant === "vertical" ? (
+        {resolvedVariant === "vertical" ? (
           <VerticalTimeline steps={steps} />
         ) : (
           <MinimalTimeline steps={steps} />
@@ -322,11 +298,8 @@ function MinimalTimeline({ steps }) {
   return (
     <div className="max-w-5xl mx-auto">
       {/* Horizontal Stepper */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="mb-8 md:mb-12"
+      <div
+        className="opacity-0 animate-fade-in-up mb-8 md:mb-12"
       >
         <div className="relative">
           {/* Mobile: Scrollable container */}
@@ -377,17 +350,12 @@ function MinimalTimeline({ steps }) {
             })}
           </div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Content Card */}
-      <AnimatePresence mode="wait">
-        <motion.div
+        <div
           key={activeIndex}
-          initial={{ opacity: 0, y: 30, scale: 0.98 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          exit={{ opacity: 0, y: -30, scale: 0.98 }}
-          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="bg-card border border-border rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.08)] overflow-hidden"
+          className="opacity-0 animate-fade-in-up bg-card border border-border rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.08)] overflow-hidden"
         >
           <div className="p-6 md:p-10 lg:p-12">
             {/* Step Header */}
@@ -397,25 +365,21 @@ function MinimalTimeline({ steps }) {
                   Step {activeIndex + 1}
                 </span>
                 {activeStep.duration && (
-                  <motion.span
-                    initial={{ opacity: 0, x: -10 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.2 }}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-secondary/50 rounded-full text-muted-foreground text-xs"
+                  <span
+                    className="opacity-0 animate-slide-in-left inline-flex items-center gap-1.5 px-3 py-1.5 bg-secondary/50 rounded-full text-muted-foreground text-xs"
+                    style={{ animationDelay: '200ms' }}
                   >
                     <Clock className="w-3.5 h-3.5" />
                     {activeStep.duration}
-                  </motion.span>
+                  </span>
                 )}
               </div>
             </div>
 
             {/* Title and Description */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.1, duration: 0.6 }}
-              className="mb-6"
+            <div
+              className="opacity-0 animate-fade-in-up mb-6"
+              style={{ animationDelay: '100ms' }}
             >
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-3 md:mb-4">
                 {activeStep.title}
@@ -423,15 +387,13 @@ function MinimalTimeline({ steps }) {
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 {activeStep.description}
               </p>
-            </motion.div>
+            </div>
 
             {/* Tips Section */}
             {activeStep.tips && activeStep.tips.length > 0 && (
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2, duration: 0.6 }}
-                className="bg-linear-to-br from-primary/5 via-secondary/30 to-primary/5 border border-primary/15 rounded-2xl p-5 md:p-6 mb-6"
+              <div
+                className="opacity-0 animate-fade-in-up bg-linear-to-br from-primary/5 via-secondary/30 to-primary/5 border border-primary/15 rounded-2xl p-5 md:p-6 mb-6"
+                style={{ animationDelay: '200ms' }}
               >
                 <div className="flex items-center gap-2 mb-3">
                   <div className="flex items-center justify-center w-8 h-8 bg-primary/15 rounded-lg">
@@ -443,19 +405,17 @@ function MinimalTimeline({ steps }) {
                 </div>
                 <ul className="space-y-2.5">
                   {activeStep.tips.map((tip, idx) => (
-                    <motion.li
+                    <li
                       key={idx}
-                      initial={{ opacity: 0, x: -10 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 0.3 + idx * 0.1 }}
-                      className="flex items-start gap-3 text-sm md:text-base text-foreground/80"
+                      className="opacity-0 animate-slide-in-left flex items-start gap-3 text-sm md:text-base text-foreground/80"
+                      style={{ animationDelay: `${300 + idx * 100}ms` }}
                     >
                       <span className="flex items-center justify-center w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
                       <span>{tip}</span>
-                    </motion.li>
+                    </li>
                   ))}
                 </ul>
-              </motion.div>
+              </div>
             )}
 
             {/* Navigation */}
@@ -483,19 +443,16 @@ function MinimalTimeline({ steps }) {
               </div>
             </div>
           </div>
-        </motion.div>
-      </AnimatePresence>
+        </div>
     </div>
   );
 }
 
 function StepCircle({ icon: Icon, isActive, isComplete, onClick }) {
   return (
-    <motion.button
+    <button
       onClick={onClick}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      className={`relative flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full transition-all duration-500 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:ring-offset-2 ${
+      className={`relative flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full transition-all duration-500 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:ring-offset-2 ${
         isActive
           ? "bg-primary shadow-lg shadow-primary/40"
           : isComplete
@@ -509,15 +466,11 @@ function StepCircle({ icon: Icon, isActive, isComplete, onClick }) {
         }`}
       />
       {isActive && (
-        <motion.div
-          layoutId="activeRing"
-          className="absolute inset-0 rounded-full border-2 border-primary"
-          initial={{ scale: 1.3, opacity: 0 }}
-          animate={{ scale: 1.15, opacity: 1 }}
-          transition={{ duration: 0.3 }}
+        <div
+          className="absolute inset-0 rounded-full border-2 border-primary animate-scale-in"
         />
       )}
-    </motion.button>
+    </button>
   );
 }
 
@@ -525,12 +478,10 @@ function StepConnector({ isComplete }) {
   return (
     <div className="relative w-12 md:w-20 h-0.5 mx-1 md:mx-2">
       <div className="absolute inset-0 bg-border rounded-full" />
-      <motion.div
-        className="absolute inset-0 bg-primary rounded-full"
-        initial={{ scaleX: 0 }}
-        animate={{ scaleX: isComplete ? 1 : 0 }}
-        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-        style={{ transformOrigin: "left" }}
+      <div
+        className={`absolute inset-0 bg-primary rounded-full transition-transform duration-500 origin-left ${
+          isComplete ? 'scale-x-100' : 'scale-x-0'
+        }`}
       />
     </div>
   );
@@ -548,17 +499,10 @@ function VerticalTimeline({ steps }) {
             const Icon = getIconComponent(step.icon);
 
             return (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-30px" }}
-                transition={{
-                  delay: index * 0.08,
-                  duration: 0.5,
-                  ease: [0.22, 1, 0.36, 1]
-                }}
-                className="relative flex gap-4 md:gap-6"
+                className="opacity-0 animate-fade-in-up relative flex gap-4 md:gap-6"
+                style={{ animationDelay: `${index * 80}ms` }}
               >
                 {/* Icon Circle */}
                 <div className="shrink-0 flex items-start">
@@ -607,7 +551,7 @@ function VerticalTimeline({ steps }) {
                     )}
                   </div>
                 </div>
-              </motion.div>
+              </div>
             );
           })}
         </div>

@@ -1,23 +1,30 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Clock, Calendar, TrendingUp, Star } from "lucide-react";
 import { CometCard } from "@/components/aceternity/comet-card";
+import { FadeInUp } from "@/components/common/AnimatedWrapper";
 
+/**
+ * Treatment Card Component
+ *
+ * Displays a treatment card with image, metadata, benefits, and pricing.
+ * Used in treatment grids and listings.
+ *
+ * @param {Object} props
+ * @param {Object} props.treatment - Treatment object with all details
+ * @param {string} props.categoryId - Category slug
+ * @param {string} [props.subcategoryId] - Optional subcategory slug
+ * @param {number} [props.index=0] - Card index for animation delay
+ */
 export function TreatmentCard({ treatment, categoryId, subcategoryId, index = 0 }) {
   const href = subcategoryId
     ? `/treatments/${categoryId}/${subcategoryId}/${treatment.id}`
     : `/treatments/${categoryId}/${treatment.id}`;
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: index * 0.05 }}
-    >
+    <FadeInUp delay={index * 50}>
       <Link href={href}>
         <CometCard>
           <div className="group relative h-full rounded-3xl overflow-hidden bg-card border border-border hover:border-primary/30 hover:shadow-xl transition-all duration-500">
@@ -126,23 +133,28 @@ export function TreatmentCard({ treatment, categoryId, subcategoryId, index = 0 
           </div>
         </CometCard>
       </Link>
-    </motion.div>
+    </FadeInUp>
   );
 }
 
-// Simplified version for grid layouts
+/**
+ * Simplified Treatment Card Component
+ *
+ * Lightweight version for grid layouts without images.
+ *
+ * @param {Object} props
+ * @param {Object} props.treatment - Treatment object
+ * @param {string} props.categoryId - Category slug
+ * @param {string} [props.subcategoryId] - Optional subcategory slug
+ * @param {number} [props.index=0] - Card index for animation delay
+ */
 export function TreatmentCardSimple({ treatment, categoryId, subcategoryId, index = 0 }) {
   const href = subcategoryId
     ? `/treatments/${categoryId}/${subcategoryId}/${treatment.id}`
     : `/treatments/${categoryId}/${treatment.id}`;
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: index * 0.05 }}
-    >
+    <FadeInUp delay={index * 50}>
       <Link href={href}>
         <div className="group relative bg-card rounded-2xl p-8 border border-border hover:border-primary/30 hover:shadow-xl transition-all duration-500">
           {/* Hover gradient effect */}
@@ -178,6 +190,6 @@ export function TreatmentCardSimple({ treatment, categoryId, subcategoryId, inde
           </div>
         </div>
       </Link>
-    </motion.div>
+    </FadeInUp>
   );
 }

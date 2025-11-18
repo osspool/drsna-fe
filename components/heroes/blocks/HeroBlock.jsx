@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -34,50 +33,37 @@ export function HeroBlock({ data }) {
 
       {/* Content */}
       <Container className="relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-3xl"
-        >
+        <div className="opacity-0 animate-fade-in-up max-w-3xl">
           {/* Title */}
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            className="font-heading text-5xl md:text-7xl font-bold text-white drop-shadow-2xl mb-6"
+          <h1
+            className="opacity-0 animate-fade-in-up font-heading text-5xl md:text-7xl font-bold text-white drop-shadow-2xl mb-6"
+            style={{ animationDelay: '200ms' }}
           >
             {title}
-          </motion.h1>
+          </h1>
 
           {/* Subtitle */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-            className="text-2xl md:text-3xl font-accent text-gold-light drop-shadow-lg mb-4"
+          <p
+            className="opacity-0 animate-fade-in-up text-2xl md:text-3xl font-accent text-gold-light drop-shadow-lg mb-4"
+            style={{ animationDelay: '400ms' }}
           >
             {subtitle}
-          </motion.p>
+          </p>
 
           {/* Description */}
           {description && (
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.6 }}
-              className="text-lg text-gray-200 drop-shadow-md mb-8 max-w-2xl"
+            <p
+              className="opacity-0 animate-fade-in-up text-lg text-gray-200 drop-shadow-md mb-8 max-w-2xl"
+              style={{ animationDelay: '500ms' }}
             >
               {description}
-            </motion.p>
+            </p>
           )}
 
           {/* CTAs */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.6 }}
-            className="flex flex-wrap gap-4"
+          <div
+            className="opacity-0 animate-fade-in-up flex flex-wrap gap-4"
+            style={{ animationDelay: '600ms' }}
           >
             {cta?.primary && (
               <Button
@@ -102,8 +88,8 @@ export function HeroBlock({ data }) {
                 </Link>
               </Button>
             )}
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </Container>
 
       {/* Decorative Gold Accent */}

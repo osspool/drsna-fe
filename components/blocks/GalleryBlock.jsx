@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import { Container } from "@/components/layout/Container";
@@ -56,13 +55,10 @@ export function GalleryBlock({ data }) {
         {/* Gallery Grid */}
         <div className={`grid grid-cols-1 ${gridColsClass} gap-6`}>
           {images.map((image, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="group cursor-pointer"
+              className="opacity-0 animate-fade-in-up group cursor-pointer"
+              style={{ animationDelay: `${index * 100}ms` }}
               onClick={() => handleImageClick(image, index)}
             >
               <div className="relative aspect-4/3 rounded-2xl overflow-hidden bg-secondary/5 shadow-lg hover:shadow-2xl transition-all duration-300">
@@ -85,7 +81,7 @@ export function GalleryBlock({ data }) {
                   </div>
                 )}
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 

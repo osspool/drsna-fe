@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
 import { BackgroundRippleEffect } from "../aceternity/background-ripple-effect";
 
 export function Section({
@@ -45,14 +44,11 @@ export function Section({
 
   if (animate) {
     return (
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.6 }}
+      <div
+        className="opacity-0 animate-fade-in-up"
       >
         {content}
-      </motion.div>
+      </div>
     );
   }
 

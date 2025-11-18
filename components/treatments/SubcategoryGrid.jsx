@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Sparkles } from "lucide-react";
@@ -14,37 +13,26 @@ export function SubcategoryGrid({ subcategories, categoryId }) {
       <Container>
         {/* Section Header */}
         <div className="text-center mb-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 bg-primary/10 border border-primary/20 rounded-full mb-4"
-          >
+          <div className="opacity-0 animate-fade-in-up inline-flex items-center gap-2 px-4 py-1.5 bg-primary/10 border border-primary/20 rounded-full mb-4">
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-primary text-xs font-semibold tracking-wider uppercase">
               Our Treatments
             </span>
-          </motion.div>
+          </div>
 
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-3"
+          <h2
+            className="opacity-0 animate-fade-in-up text-3xl md:text-4xl font-heading font-bold text-foreground mb-3"
+            style={{ animationDelay: '100ms' }}
           >
             Explore Our Specialties
-          </motion.h2>
+          </h2>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="text-base text-muted-foreground max-w-3xl mx-auto"
+          <p
+            className="opacity-0 animate-fade-in-up text-base text-muted-foreground max-w-3xl mx-auto"
+            style={{ animationDelay: '200ms' }}
           >
             Choose from our range of specialized treatment areas, each expertly designed to address your unique needs
-          </motion.p>
+          </p>
         </div>
 
         {/* Grid */}
@@ -65,11 +53,9 @@ export function SubcategoryGrid({ subcategories, categoryId }) {
 
 function SubcategoryCard({ subcategory, categoryId, index }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: index * 0.1 }}
+    <div
+      className="opacity-0 animate-fade-in-up"
+      style={{ animationDelay: `${index * 100}ms` }}
     >
       <Link href={`/treatments/${categoryId}/${subcategory.id}`}>
         <div className="group relative h-full rounded-3xl overflow-hidden bg-card border-2 border-border hover:border-transparent hover:shadow-2xl transition-all duration-700">
@@ -80,6 +66,7 @@ function SubcategoryCard({ subcategory, categoryId, index }) {
                 src={subcategory.image}
                 alt={subcategory.title}
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
@@ -137,6 +124,6 @@ function SubcategoryCard({ subcategory, categoryId, index }) {
           )}
         </div>
       </Link>
-    </motion.div>
+    </div>
   );
 }

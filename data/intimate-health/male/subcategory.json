@@ -127,7 +127,7 @@
   },
   "benefits": {
     "title": "Designed for Men's Real Lives",
-    "items": [
+    "features": [
       {"title": "Fast appointments", "description": "Evening and lunchtime slots reduce time away from work", "icon": "clock"},
       {"title": "Comprehensive diagnostics", "description": "Hormones, vascular studies, and lifestyle review inform every plan", "icon": "activity"},
       {"title": "Advanced pain control", "description": "Topical, nerve block, or nitrous options keep you comfortable", "icon": "shield-check"},

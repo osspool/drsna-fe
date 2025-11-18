@@ -4,10 +4,21 @@ export const drAbbasData = {
   description: "Meet London's most distinguished aesthetic medicine specialist, combining clinical precision with artistic vision to deliver natural, confidence-enhancing results.",
 
   hero: {
-    backgroundImage: "/images/drsnaclinic/doctor-hero.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=nUqENQZHd80",
     badge: "GLOBAL RECOGNITION AWARD 2024",
-    headline: "Meet Dr Syed Nadeem Abbas",
-    subheadline: "Pioneer in Advanced Aesthetic Medicine",
+    headline: "Dr Syed Nadeem Abbas",
+    flipWords: ["Excellence", "Precision", "Artistry", "Compassion"],
+    subheadline: 'Transforming lives through <span class="text-primary font-semibold">surgical precision</span>, <span class="text-primary font-semibold">artistic vision</span>, and <span class="text-primary font-semibold">15+ years mastery</span>',
+    primaryCTA: "Book Your Consultation",
+    primaryCTAHref: "/booking",
+    secondaryCTA: "Explore Treatments",
+    secondaryCTAHref: "/treatments",
+    trustIndicators: [
+      "MSc (Distinction)",
+      "MRCGP | MRCSEd | MBBS",
+      "15+ Years Experience",
+      "10,000+ Happy Patients"
+    ]
   },
 
   quickStats: {

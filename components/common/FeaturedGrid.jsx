@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/layout/Section";
@@ -80,11 +79,8 @@ export function FeaturedGrid({
 
         {/* CTA Button */}
         {cta && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mt-14 md:mt-16 flex justify-center"
+          <div
+            className="opacity-0 animate-fade-in-up mt-14 md:mt-16 flex justify-center"
           >
             <Button
               asChild
@@ -97,7 +93,7 @@ export function FeaturedGrid({
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
-          </motion.div>
+          </div>
         )}
       </Container>
     </Section>
@@ -112,12 +108,9 @@ function CategoryCard({ item, index }) {
   const IconComponent = getIconComponent(item.icon, "sparkles");
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: index * 0.08, duration: 0.3 }}
-      className="flex h-full"
+    <div
+      className="opacity-0 animate-fade-in-up flex h-full"
+      style={{ animationDelay: `${index * 80}ms` }}
     >
       {/* Desktop Version */}
       <div className="hidden md:block w-full h-full group">
@@ -225,7 +218,7 @@ function CategoryCard({ item, index }) {
           </div>
         </Link>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

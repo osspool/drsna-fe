@@ -56,7 +56,7 @@ export const pshotLandingData = {
   benefits: {
     title: "Transform Your Intimate Health",
     subtitle: "Clinically proven benefits that change lives",
-    items: [
+    features: [
       {
         title: "Enhanced Performance",
         description: "Improve stamina, sensation, and overall sexual performance naturally",
