@@ -159,50 +159,52 @@ export function PShotFeaturedSection({ data }) {
                 </div>
               </FadeInUp>
 
-              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                <StaggerChildren staggerDelay={100} animation="fadeInUp">
-                  {sectionData.processSteps.map((process, index) => (
-                    <div key={process.title + index} className="group">
-                      <CometCard className="h-full">
-                        <div className="gradient-border group-hover:gradient-border-hover rounded-2xl h-full transition-all duration-300">
-                          <div className="gradient-border-inner rounded-[calc(1rem-4px)] flex flex-col">
-                            <div className="relative h-44 overflow-hidden">
-                              <Image
-                                src={process.image}
-                                alt={process.title}
-                                fill
-                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                                className="object-cover transition-transform duration-700 group-hover:scale-110"
-                              />
-                              <div className="pointer-events-none absolute inset-0">
-                                <div className="absolute inset-0 bg-black/35 dark:bg-background/35" />
-                                <div className="absolute inset-0 bg-linear-to-t from-black/95 via-black/55 to-black/15 dark:from-background/95 dark:via-background/55 dark:to-background/15" />
-                              </div>
-
-                              <div className="absolute top-4 left-4">
-                                <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center backdrop-blur-sm border-2 border-primary/50">
-                                  <span className="text-primary-foreground font-heading font-bold text-lg">
-                                    {process.step}
-                                  </span>
-                                </div>
-                              </div>
+              <StaggerChildren
+                staggerDelay={100}
+                animation="fadeInUp"
+                className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+              >
+                {sectionData.processSteps.map((process, index) => (
+                  <div key={process.title + index} className="group">
+                    <CometCard className="h-full">
+                      <div className="gradient-border group-hover:gradient-border-hover rounded-2xl h-full transition-all duration-300">
+                        <div className="gradient-border-inner rounded-[calc(1rem-4px)] flex flex-col">
+                          <div className="relative h-44 overflow-hidden">
+                            <Image
+                              src={process.image}
+                              alt={process.title}
+                              fill
+                              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                              className="object-cover transition-transform duration-700 group-hover:scale-110"
+                            />
+                            <div className="pointer-events-none absolute inset-0">
+                              <div className="absolute inset-0 bg-black/35 dark:bg-background/35" />
+                              <div className="absolute inset-0 bg-linear-to-t from-black/95 via-black/55 to-black/15 dark:from-background/95 dark:via-background/55 dark:to-background/15" />
                             </div>
 
-                            <div className="flex flex-col gap-3 p-6">
-                              <h4 className="text-lg font-heading font-semibold text-foreground md:text-xl">
-                                {process.title}
-                              </h4>
-                              <p className="text-sm leading-relaxed text-muted-foreground">
-                                {process.description}
-                              </p>
+                            <div className="absolute top-4 left-4">
+                              <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center backdrop-blur-sm border-2 border-primary/50">
+                                <span className="text-primary-foreground font-heading font-bold text-lg">
+                                  {process.step}
+                                </span>
+                              </div>
                             </div>
                           </div>
+
+                          <div className="flex flex-col gap-3 p-6">
+                            <h4 className="text-lg font-heading font-semibold text-foreground md:text-xl">
+                              {process.title}
+                            </h4>
+                            <p className="text-sm leading-relaxed text-muted-foreground">
+                              {process.description}
+                            </p>
+                          </div>
                         </div>
-                      </CometCard>
-                    </div>
-                  ))}
-                </StaggerChildren>
-              </div>
+                      </div>
+                    </CometCard>
+                  </div>
+                ))}
+              </StaggerChildren>
             </div>
 
             <FadeInUp delay={200}>

@@ -1,7 +1,7 @@
 import { headers } from 'next/headers';
 import { getCategories } from '@/lib/categories';
-import { getAllTreatments } from '@/lib/treatments';
-import { getAllSubcategories } from '@/lib/subcategories';
+import { getAllTreatmentPaths } from '@/lib/treatments';
+import { getAllSubcategoryPaths } from '@/lib/subcategories';
 import { getDomainByHost } from '@/lib/domains';
 
 /**
@@ -46,9 +46,9 @@ export default async function sitemap() {
 
   if (domain.includeSubcategories) {
     try {
-      const subcategories = await getAllSubcategories();
+      const subcategories = await getAllSubcategoryPaths();
       subcategoryPages = subcategories.map((sub) => ({
-        url: `${baseUrl}/treatments/${sub.categoryId}/${sub.id}`,
+        url: `${baseUrl}/treatments/${sub.category}/${sub.subcategory}`,
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: 0.7,
@@ -60,9 +60,9 @@ export default async function sitemap() {
 
   if (domain.includeTreatments) {
     try {
-      const treatments = await getAllTreatments();
+      const treatments = await getAllTreatmentPaths();
       treatmentPages = treatments.map((treatment) => ({
-        url: `${baseUrl}/treatments/${treatment.categoryId}/${treatment.subcategoryId}/${treatment.id}`,
+        url: `${baseUrl}/treatments/${treatment.category}/${treatment.subcategory}/${treatment.slug}`,
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: 0.7,

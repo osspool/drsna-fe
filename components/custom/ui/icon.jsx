@@ -79,6 +79,8 @@ import {
     ListChecks,
     Link2,
     FlaskConical,
+    Syringe,
+    AudioWaveform,
   } from "lucide-react";
 
 
@@ -185,6 +187,10 @@ import {
     'trending-up': TrendingUp,
     'check-circle': CheckCircle2,
     settings: Settings,
+    syringe: Syringe,
+    waveform: AudioWaveform,
+    audioWaveform: AudioWaveform,
+    'audio-waveform': AudioWaveform,
   };
   
   
