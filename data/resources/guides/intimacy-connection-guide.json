@@ -1,0 +1,115 @@
+{
+  "slug": "intimacy-connection-guide",
+  "title": "Intimacy & Confidence Playbook",
+  "subtitle": "Blend behavioural micro-habits with medical support for erections, arousal, and connection.",
+  "summary": "We see couples weekly who feel disconnected because of ED, low desire, or pelvic floor changes. This guide shows how to audit relationship dynamics, create low-pressure rituals, and understand when to add clinical treatments like P-Shot®, shockwave therapy, or hormonal optimisation.",
+  "readTime": "9 min read",
+  "lastUpdated": "2024-11-10",
+  "heroImage": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&auto=format&fit=crop",
+  "metrics": [
+    {"label": "Connection rituals", "value": "3 per week"},
+    {"label": "Shockwave success", "value": "76% improved"},
+    {"label": "P-Shot boosters", "value": "12–18 months"}
+  ],
+  "sections": [
+    {
+      "title": "Rebuild intimacy outside the bedroom",
+      "intro": "Pressure-free contact resets your nervous system before any medical therapy.",
+      "items": [
+        {
+          "heading": "Micro-connection habits",
+          "badge": "Daily",
+          "body": "Schedule 10-minute phone-free walks, gratitude swaps, or shared breathing before bed. These rituals stimulate oxytocin and reduce the performance loop."
+        },
+        {
+          "heading": "Communication scripts",
+          "badge": "Weekly",
+          "body": "Use the 'What I feel / What I need / How you can help' format to discuss desire or anxiety. It keeps feedback specific without blame."
+        },
+        {
+          "heading": "Nervous system priming",
+          "badge": "Somatic",
+          "body": "Slow exhales (4-7-8 breathing) or guided pelvic floor relaxation lowers sympathetic tone, making arousal signals easier to reach." 
+        }
+      ]
+    },
+    {
+      "title": "Lifestyle factors that sabotage intimacy",
+      "intro": "Most ED cases have a metabolic or pelvic component we can optimise.",
+      "items": [
+        {
+          "heading": "Sleep + alcohol",
+          "badge": "Foundations",
+          "body": "Aim for 7–8 hours of sleep and limit alcohol to <7 units weekly. REM sleep drives testosterone and dopamine pathways that fuel desire."
+        },
+        {
+          "heading": "Pelvic floor and circulation",
+          "badge": "Movement",
+          "body": "Alternate strength training with LISS cardio, plus pelvic floor physiotherapy if you notice urinary leaks or difficulty maintaining erections."
+        },
+        {
+          "heading": "Medication review",
+          "badge": "GP + clinic",
+          "body": "SSRIs, beta-blockers, and 5-alpha inhibitors can blunt arousal. Bring your prescription list so we can coordinate with your GP."
+        }
+      ]
+    },
+    {
+      "title": "Medical options that restore confidence",
+      "intro": "When lifestyle work still leaves gaps, regenerative therapies deliver measurable improvements.",
+      "items": [
+        {
+          "heading": "P-Shot®",
+          "badge": "Regenerative",
+          "body": "Concentrated platelet-rich plasma thickens the corpus cavernosum, improves sensitivity, and can add 10–20% girth. Results develop over 6–12 weeks." 
+        },
+        {
+          "heading": "Shockwave Therapy",
+          "badge": "Blood flow",
+          "body": "Six sessions of focused acoustic waves rebuild micro-vascular networks and boost natural erections without pills." 
+        },
+        {
+          "heading": "Hormonal + peptide support",
+          "badge": "Custom",
+          "body": "For low testosterone or post-menopausal changes we coordinate with endocrinology partners, often layering BHRT, kisspeptin, or PT-141 with counselling." 
+        }
+      ]
+    }
+  ],
+  "recommendedTreatments": [
+    {
+      "title": "P-Shot® Intimate Therapy",
+      "href": "/treatments/intimate-health/male/p-shot",
+      "description": "Doctor-led PRP injections to enhance erections and sensitivity."
+    },
+    {
+      "title": "Shockwave Therapy",
+      "href": "/treatments/intimate-health/male/shockwave-therapy",
+      "description": "Low-intensity acoustic waves that repair blood flow without medication."
+    },
+    {
+      "title": "O-Shot & Feminine Wellness",
+      "href": "/treatments/intimate-health/female/prp-shot-women",
+      "description": "PRP and radiofrequency solutions for arousal, lubrication, and pelvic floor strength."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can I combine counselling with medical treatments?",
+      "answer": "Absolutely. We collaborate with sex therapists so behavioural rewiring and regenerative medicine reinforce each other."
+    },
+    {
+      "question": "How soon will I see results after shockwave therapy?",
+      "answer": "Most patients notice fuller morning erections by session four, with peak results 8–12 weeks after completing the series."
+    },
+    {
+      "question": "Is the P-Shot painful?",
+      "answer": "We use numbing cream plus vibration analgesia. Patients report minimal discomfort and can resume daily activities immediately."
+    }
+  ],
+  "seo": {
+    "title": "Intimacy & Confidence Guide | P-Shot, Shockwave & Lifestyle Tips",
+    "description": "Practical intimacy advice plus when to add P-Shot®, shockwave therapy, or hormone optimisation. Written by Dr SNA Clinic.",
+    "keywords": ["intimacy tips", "P-Shot education", "shockwave therapy guide"]
+  }
+}

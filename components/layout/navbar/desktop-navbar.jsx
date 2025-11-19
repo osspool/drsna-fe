@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { navigationData } from "./nav-data"
@@ -15,13 +15,50 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 import { Container } from "@/components/layout/Container"
+import { contactInfo } from "@/data/contact-info"
 
 export function DesktopNavbar({ onMenuOpenChange }) {
   const [activeMenuId, setActiveMenuId] = useState(null)
+  const triggerRefs = useRef({})
 
   useEffect(() => {
     onMenuOpenChange?.(activeMenuId !== null)
   }, [activeMenuId, onMenuOpenChange])
+
+  // Click outside to close menu - optimized for performance
+  useEffect(() => {
+    if (!activeMenuId) return
+
+    const handleClickOutside = (event) => {
+      // Check if click is on any trigger button
+      const clickedTrigger = Object.values(triggerRefs.current).some(
+        (ref) => ref && ref.contains(event.target)
+      )
+
+      // Check if click is inside mega menu content
+      const megaMenuContent = document.querySelector('[data-mega-menu-content]')
+      const clickedInMenu = megaMenuContent && megaMenuContent.contains(event.target)
+
+      // Close if clicked outside both trigger and menu
+      if (!clickedTrigger && !clickedInMenu) {
+        setActiveMenuId(null)
+      }
+    }
+
+    const handleEscKey = (event) => {
+      if (event.key === "Escape") {
+        setActiveMenuId(null)
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside)
+    document.addEventListener("keydown", handleEscKey)
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+      document.removeEventListener("keydown", handleEscKey)
+    }
+  }, [activeMenuId])
 
   const mainItems = navigationData.filter((item) => !item.children || item.children.length === 0)
   const dropdownItems = navigationData.filter((item) => item.children && item.children.length > 0)
@@ -52,6 +89,7 @@ export function DesktopNavbar({ onMenuOpenChange }) {
               return (
                 <div key={item.id} className="group">
                   <button
+                    ref={(el) => (triggerRefs.current[item.id] = el)}
                     className={` py-2 text-sm  transition-all duration-300 ease-out flex items-center gap-1.5 rounded-lg ${
                       isActive
                         ? "text-primary "
@@ -90,14 +128,14 @@ export function DesktopNavbar({ onMenuOpenChange }) {
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Link
-                    href="tel:02071234567"
+                    href={`tel:${contactInfo.phone.primary.number}`}
                     className="text-white/80 hover:text-white text-[14px] transition-colors duration-200 flex items-center gap-1.5"
                   >
                     <Phone className="w-4 h-4" />
                   </Link>
                 </TooltipTrigger>
                 <TooltipContent>
-                  <p>020 7123 4567</p>
+                  <p>{contactInfo.phone.primary.display}</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>

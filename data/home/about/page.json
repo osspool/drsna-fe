@@ -1,5 +1,25 @@
 {
   "page": "About Us",
+  "title": "About Dr SNA Clinic",
+  "description": "Visit Dr SNA Clinic on Wimpole Street, London. CQC-registered aesthetic and regenerative medicine clinic with 20+ years of clinical excellence. Award-winning treatments for skin, hair, and intimate health.",
+  "seo": {
+    "metaTitle": "London Clinic | Dr SNA Clinic Wimpole Street",
+    "metaDescription": "Visit Dr SNA Clinic on Wimpole Street, London. CQC-registered aesthetic and regenerative medicine clinic with 20+ years of clinical excellence. Award-winning treatments for skin, hair, and intimate health.",
+    "keywords": [
+      "aesthetic clinic London",
+      "regenerative medicine London",
+      "Dr SNA Clinic",
+      "Wimpole Street clinic",
+      "Harley Street medical district",
+      "CQC registered clinic",
+      "PRP treatment London",
+      "facial aesthetics London",
+      "hair restoration London",
+      "joint pain treatment",
+      "medically-led clinic"
+    ],
+    "canonicalUrl": "/about-us"
+  },
   "hero": {
     "badge": "About Dr SNA Clinic",
     "title": "Advanced Medical, Regenerative and Aesthetic Care",

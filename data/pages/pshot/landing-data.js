@@ -1,3 +1,11 @@
+/**
+ * P-Shot Landing Page Base Data
+ *
+ * Contains above-the-fold and essential sections.
+ * Heavy sections (FAQ, testimonials, doctor credentials, featured treatment)
+ * are lazy-loaded via lib/pshot.js for better performance.
+ */
+
 export const pshotLandingData = {
   hero: {
     badge: "RECLAIM YOUR CONFIDENCE",
@@ -14,41 +22,6 @@ export const pshotLandingData = {
       "Results in weeks, not months",
       "Complete privacy guaranteed",
     ],
-  },
-
-  doctorCredentials: {
-    title: "You're in Expert Hands",
-    subtitle: "Dr Syed Nadeem Abbas",
-    image: "/images/drsnaclinic/doctor-intro.jpg",
-    description: "Dr Abbas understands that this decision takes courage. That's why he treats every patient with the respect, discretion, and care they deserve. With over 1,000 P-Shot procedures and a 98% satisfaction rate, he's helped men from all walks of life feel confident again.",
-    achievements: [
-      {
-        metric: "1,000+",
-        label: "Men Treated",
-        description: "Real results, real lives changed"
-      },
-      {
-        metric: "15+",
-        label: "Years Experience",
-        description: "Trusted expertise you can rely on"
-      },
-      {
-        metric: "98%",
-        label: "Would Recommend",
-        description: "Men who got their confidence back"
-      },
-      {
-        metric: "100%",
-        label: "Private & Discreet",
-        description: "Your privacy is protected"
-      }
-    ],
-    qualifications: [
-      "MSc in Aesthetic Medicine (with Distinction)",
-      "Royal College of Surgeons Edinburgh",
-      "Certified by Dr. Charles Runels (P-Shot® Creator)",
-      "15+ years in men's health and regenerative medicine"
-    ]
   },
 
   benefits: {
@@ -85,46 +58,6 @@ export const pshotLandingData = {
         description: "12-18 months of results from a single treatment.",
         icon: "clock",
       },
-    ],
-  },
-
-  // Featured treatment section - Shockwave Therapy
-  featuredTreatment: {
-    badge: "ENHANCED RESULTS",
-    title: "Why We Recommend Shockwave Therapy",
-    subtitle: "The Perfect Partner to Your P-Shot",
-    description: "Many of our patients ask: 'What's the best way to maximise my results?' The answer is simple — combine P-Shot with Shockwave Therapy. While the P-Shot regenerates tissue and improves sensitivity, Shockwave Therapy restores blood flow at the source. Together, they create lasting change that neither treatment achieves alone.",
-    image: "/images/treatment/intimate-health/shockwave-therapy.jpg",
-    benefits: [
-      {
-        title: "Restores Natural Blood Flow",
-        description: "Creates new blood vessels where you need them most. Better circulation means better performance — naturally, without medication.",
-        icon: "activity",
-      },
-      {
-        title: "Amplifies Your P-Shot Results",
-        description: "The P-Shot regenerates tissue. Shockwave improves the blood supply. Together, you get results that last longer and feel stronger.",
-        icon: "trendingUp",
-      },
-      {
-        title: "No Downtime, No Pain",
-        description: "Walk in, walk out, get back to life. Most men describe it as a light tapping sensation — nothing more.",
-        icon: "check",
-      },
-      {
-        title: "Proven by Science",
-        description: "Over 40 clinical studies show significant improvement in erectile function. This isn't experimental — it's established medicine.",
-        icon: "award",
-      },
-    ],
-    cta: {
-      text: "Ask About Combination Treatment",
-      href: "/booking",
-    },
-    stats: [
-      { value: "76%", label: "improvement in erectile function" },
-      { value: "6", label: "painless sessions" },
-      { value: "2+ years", label: "lasting results" },
     ],
   },
 
@@ -191,73 +124,6 @@ export const pshotLandingData = {
       },
     ],
   },
-
-  faq: [
-    {
-      question: "Will it hurt?",
-      answer: "Honestly? No. We use a strong numbing cream, and most men say they barely feel anything. It's far less uncomfortable than you're imagining.",
-    },
-    {
-      question: "When will I notice a difference?",
-      answer: "Most men feel something within 2-4 weeks. The full results — that's when you really notice it — come around 6-12 weeks as your body regenerates new tissue.",
-    },
-    {
-      question: "How long will results last?",
-      answer: "12-18 months typically. Some men go longer. Many choose to do a maintenance treatment once a year to keep results strong.",
-    },
-    {
-      question: "I've tried pills. Will this actually work for ED?",
-      answer: "The P-Shot works differently — it addresses the root cause by improving blood flow and regenerating tissue. Studies show 70-80% improvement in erectile function. It's not a quick fix; it's a real solution.",
-    },
-    {
-      question: "What kind of size increase is realistic?",
-      answer: "10-20% increase in both length and girth. That's what the research shows, and that's what our patients experience. It's noticeable.",
-    },
-    {
-      question: "Will I need to take time off work?",
-      answer: "No. You walk in, we do the treatment, you walk out. Resume normal activities immediately. We just ask you to wait 24-48 hours before intimate activity.",
-    },
-    {
-      question: "How do I know if this is right for me?",
-      answer: "Book a consultation. It's confidential, no-pressure, and free. Dr Abbas will assess your situation and tell you honestly whether P-Shot — or something else — is the right path.",
-    },
-    {
-      question: "Is this actually safe?",
-      answer: "Very. We're using your own blood, so there's no risk of rejection or allergic reaction. It's been used safely in over 500,000 procedures worldwide.",
-    },
-  ],
-
-  testimonials: [
-    {
-      name: "James K.",
-      age: 52,
-      rating: 5,
-      text: "I'd been on medication for years and hated it. The timing, the side effects, feeling like I wasn't really 'me'. After the P-Shot, it just works naturally. My wife noticed. I noticed. It's changed things between us.",
-      treatment: "ED Treatment",
-      verified: true,
-    },
-    {
-      name: "Michael R.",
-      age: 45,
-      rating: 5,
-      text: "I was nervous about talking to anyone about this. Dr Abbas made it easy — no judgment, just straight answers. The results? Better than I expected. I feel confident again.",
-      treatment: "Enhancement",
-      verified: true,
-    },
-    {
-      name: "David L.",
-      age: 58,
-      rating: 5,
-      text: "Peyronie's was affecting my relationship more than I wanted to admit. Six weeks after the P-Shot, the curvature is noticeably better and there's no pain. I should have done this years ago.",
-      treatment: "Peyronie's Treatment",
-      verified: true,
-    },
-  ],
-
-  videoTestimonials: [
-    { id: "1evUXYKrunc", title: "P-Shot Success Story - John's Journey" },
-    { id: "4E4heDTY2Uk", title: "Life After P-Shot - Real Results" },
-  ],
 
   stats: {
     procedures: "1,000+",

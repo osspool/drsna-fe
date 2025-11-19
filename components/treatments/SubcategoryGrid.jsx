@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import { SmartImage } from "@/components/common/SmartImage";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 
@@ -62,9 +62,11 @@ function SubcategoryCard({ subcategory, categoryId, index }) {
           {/* Image Section */}
           {subcategory.image && (
             <div className="relative h-56 overflow-hidden">
-              <Image
+              <SmartImage
                 src={subcategory.image}
                 alt={subcategory.title}
+                title={subcategory.title}
+                description={subcategory.description}
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-110"

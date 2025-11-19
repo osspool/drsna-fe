@@ -1,1 +1,215 @@
-{"benefits":{"features":[{"icon":"stethoscope","title":"Doctor artistry","description":"Consultant injectors combine anatomy insight with aesthetic vision."},{"icon":"sliders","title":"Tailored techniques","description":"Filler, toxin, or dissolving agents chosen for your facial goals."},{"icon":"map","title":"Long-term planning","description":"We map every session for seamless maintenance."}],"title":"Why Patients Trust Us","layout":"grid-3"},"categoryId":"aesthetic-medicine","subcategoryId":"face","tagline":"Sleek Definition. Zero Surgery.","longDescription":"A beautifully sculpted jawline frames the entire face. Our doctors customise each plan using hyaluronic acid fillers for structure, neuromodulators or fat-dissolving for slimming, and collagen stimulators for long-lasting lift. The result? A sharper profile, a more balanced chin, and a camera-ready lower face—without downtime.","relatedTreatments":[{"title":"Lip Enhancement","description":"Balance lower-face volume with a perfected pout.","reason":"Complete facial harmony.","id":"lip-enhancement"},{"id":"non-surgical-rhinoplasty","reason":"Profile-perfect pairing.","description":"Fine-tune your profile from every angle.","title":"Non-Surgical Rhinoplasty"}],"pricing":{"title":"Jawline Pricing","subtitle":"Consultation fee (£75) credited toward treatment","packages":[{"includes":"Aftercare kit","price":"£795","description":"2ml filler for jawline or chin + LED cooling","name":"Sharp Contour"},{"savings":"Save £150","includes":"Review + tweak within 4 weeks","name":"Complete Profile","description":"3ml filler + masseter slimming or fat-dissolving","price":"£1,150"}],"singlePrice":{"currency":"GBP","currentPrice":"£450"},"includes":["Consultation & facial mapping","Premium HA fillers / neuromodulators","Comfort protocol & aftercare"]},"hero":{"badge":"Custom filler + contour plan","headline":"Define Your Profile with Precision","subheadline":"Doctor-led jawline sculpting for sharp angles, balanced chins, and elegant lower faces.","image":"https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80"},"id":"jawline-reduction","faq":[{"answer":"Only if that’s your goal. We customise ratio and angles for each face.","question":"Will it look masculine?"},{"question":"How long do results last?","answer":"Filler lasts 12-18 months; masseter slimming needs a refresher every 6 months."}],"shortTitle":"Jawline Sculpt","candidacy":{"title":"Best Suited For","note":"We collaborate with surgeons when a hybrid plan is needed.","suitable":["Soft jawlines lacking definition","Jowls or lower-face heaviness","Masculinisation or feminisation goals","Post-weight loss contour support"],"notSuitable":["Pregnancy/breastfeeding","Severe skin laxity requiring surgery"]},"bookingInfo":{"consultationFee":"£75 (redeemable)","duration":"45-minute consultation","cancellationPolicy":"48 hours’ notice to reschedule","depositRequired":false},"description":"Combination chin and jawline treatments using filler, slimming injectables, and skin tightening to sculpt a confident profile.","seo":{"h1":"Non-Surgical Jawline Sculpting in London","keywords":["jawline filler london","chin sculpting","non surgical jawline","face contouring london"],"canonicalUrl":"/treatments/aesthetic-medicine/face/jawline-reduction","metaDescription":"Define your chin and jawline with bespoke filler, slimming, and tightening treatments. Doctor-only procedures for men and women.","metaTitle":"Jawline Contouring London | Non-Surgical Jaw Enhancement | Dr. SNA Clinic"},"title":"Jawline Sculpting & Contour","quickStats":{"sessions":"Single session + review","price":"From £450","duration":"45 minutes","downtime":"Minimal swelling 24-48 hrs","painLevel":"Low-Moderate","resultsVisible":"Immediate with continued improvement","resultsLast":"12-18 months (filler) / 6 months (slimming)","anesthesia":"Topical + local as needed"},"overview":{"content":"We analyse your lower face angles, bite, and skin laxity before layering solutions: filler for structure, botulinum toxin for masseter slimming, fat-dissolving for jowls, and collagen stimulators for lift. Every injection is mapped and recorded so touch-ups remain precise.","highlights":["Micro-cannula filler for safety + longevity","Masseter slimming for softer lower face","Fat-dissolving or radiofrequency for jowls","Suitable for both feminine and masculine goals"],"title":"Your Sculpting Blueprint","image":"https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=1200&q=80"},"cta":{"urgency":"Limited weekly appointments","primaryButton":"Book jawline sculpt","title":"Ready for a Sculpted Profile?","subtitle":"Book a jawline consultation and receive your personalised contour plan.","guarantee":"Consult fee credited toward treatment","secondaryButton":"Message our team"}}
+{
+  "benefits": {
+    "features": [
+      {
+        "icon": "stethoscope",
+        "title": "Doctor artistry",
+        "description": "Consultant injectors combine anatomy insight with aesthetic vision."
+      },
+      {
+        "icon": "sliders",
+        "title": "Tailored techniques",
+        "description": "Filler, toxin, or dissolving agents chosen for your facial goals."
+      },
+      {
+        "icon": "map",
+        "title": "Long-term planning",
+        "description": "We map every session for seamless maintenance."
+      }
+    ],
+    "title": "Why Patients Trust Us",
+    "layout": "grid-3"
+  },
+  "categoryId": "aesthetic-medicine",
+  "subcategoryId": "face",
+  "tagline": "Sleek Definition. Zero Surgery.",
+  "longDescription": "A beautifully sculpted jawline frames the entire face. Our doctors customise each plan using hyaluronic acid fillers for structure, neuromodulators or fat-dissolving for slimming, and collagen stimulators for long-lasting lift. The result? A sharper profile, a more balanced chin, and a camera-ready lower face—without downtime.",
+  "relatedTreatments": [
+    {
+      "title": "Lip Enhancement",
+      "description": "Balance lower-face volume with a perfected pout.",
+      "reason": "Complete facial harmony.",
+      "id": "lip-enhancement"
+    },
+    {
+      "id": "non-surgical-rhinoplasty",
+      "reason": "Profile-perfect pairing.",
+      "description": "Fine-tune your profile from every angle.",
+      "title": "Non-Surgical Rhinoplasty"
+    }
+  ],
+  "pricing": {
+    "title": "Jawline Pricing",
+    "subtitle": "Consultation fee (£75) credited toward treatment",
+    "packages": [
+      {
+        "includes": "Aftercare kit",
+        "price": "£795",
+        "description": "2ml filler for jawline or chin + LED cooling",
+        "name": "Sharp Contour"
+      },
+      {
+        "savings": "Save £150",
+        "includes": "Review + tweak within 4 weeks",
+        "name": "Complete Profile",
+        "description": "3ml filler + masseter slimming or fat-dissolving",
+        "price": "£1,150"
+      }
+    ],
+    "singlePrice": { "currency": "GBP", "currentPrice": "£450" },
+    "includes": [
+      "Consultation & facial mapping",
+      "Premium HA fillers / neuromodulators",
+      "Comfort protocol & aftercare"
+    ]
+  },
+  "hero": {
+    "badge": "Custom filler + contour plan",
+    "headline": "Define Your Profile with Precision",
+    "subheadline": "Doctor-led jawline sculpting for sharp angles, balanced chins, and elegant lower faces.",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80"
+  },
+  "id": "jawline-reduction",
+  "faq": [
+    {
+      "question": "Will it look masculine?",
+      "answer": "Only if that's your goal. We customize the ratio and angles for each face—whether you want a more feminine, masculine, or androgynous result. Dr Abbas maps your facial proportions and discusses your vision before any treatment."
+    },
+    {
+      "question": "How long do jawline filler results last?",
+      "answer": "Filler lasts 12-18 months because we place it deep onto bone where there's minimal movement. Masseter slimming (Botox) needs a refresher every 6 months as the muscle gradually regains strength. Fat-dissolving results are permanent."
+    },
+    {
+      "question": "Does jawline filler hurt?",
+      "answer": "We apply topical numbing cream and can add a dental nerve block for complete comfort. Most patients feel only pressure during cannula placement. The procedure is very tolerable, and we check in with you throughout."
+    },
+    {
+      "question": "How much does jawline sculpting cost in London?",
+      "answer": "Single-area treatment starts from £450. Our Sharp Contour (2ml filler + LED) is £795. The Complete Profile (3ml filler + masseter slimming or fat-dissolving) is £1,150 (save £150). Consultation fee (£75) is credited toward treatment."
+    },
+    {
+      "question": "Will I bruise from jawline filler?",
+      "answer": "Bruising is possible but minimized by our cannula technique—only one entry point rather than multiple needle pricks. If bruising occurs, it's usually small and easily covered. Avoiding blood thinners beforehand helps significantly."
+    },
+    {
+      "question": "How much filler do I need for a defined jawline?",
+      "answer": "Most patients need 2-4ml total for meaningful definition (1-2ml per side). We start conservatively and can add more at your 2-week review. Men often need more volume than women. We never overfill on first session."
+    },
+    {
+      "question": "Can jawline filler be dissolved?",
+      "answer": "Yes, hyaluronic acid jawline fillers can be dissolved with hyaluronidase if needed. However, this is rarely necessary when treatment is done by experienced injectors who understand facial proportions and use conservative amounts."
+    },
+    {
+      "question": "What's the difference between jawline filler and masseter slimming?",
+      "answer": "Jawline filler adds volume and structure—ideal for weak chins or undefined jaws. Masseter slimming (Botox) reduces bulky jaw muscles—ideal for square faces. Many patients benefit from both: slimming the muscle while adding filler for contour."
+    }
+  ],
+  "shortTitle": "Jawline Sculpt",
+  "candidacy": {
+    "title": "Best Suited For",
+    "note": "We collaborate with surgeons when a hybrid plan is needed.",
+    "suitable": [
+      "Soft jawlines lacking definition",
+      "Jowls or lower-face heaviness",
+      "Masculinisation or feminisation goals",
+      "Post-weight loss contour support"
+    ],
+    "notSuitable": [
+      "Pregnancy/breastfeeding",
+      "Severe skin laxity requiring surgery"
+    ]
+  },
+  "bookingInfo": {
+    "consultationFee": "£75 (redeemable)",
+    "duration": "45-minute consultation",
+    "cancellationPolicy": "48 hours’ notice to reschedule",
+    "depositRequired": false
+  },
+  "description": "Combination chin and jawline treatments using filler, slimming injectables, and skin tightening to sculpt a confident profile.",
+  "seo": {
+    "h1": "Non-Surgical Jawline Sculpting in London",
+    "keywords": [
+      "jawline filler london",
+      "chin sculpting",
+      "non surgical jawline",
+      "face contouring london"
+    ],
+    "canonicalUrl": "/treatments/aesthetic-medicine/face/jawline-reduction",
+    "metaDescription": "Define your chin and jawline with bespoke filler, slimming, and tightening treatments. Doctor-only procedures for men and women.",
+    "metaTitle": "Jawline Contouring London | Non-Surgical Jaw Enhancement | Dr. SNA Clinic",
+    "schema": {
+      "@type": "MedicalProcedure",
+      "procedureType": "NoninvasiveProcedure",
+      "bodyLocation": [
+        "Jawline",
+        "Chin",
+        "Masseter muscles",
+        "Jowls",
+        "Gonial angle"
+      ],
+      "howPerformed": "We use a customized combination based on your goals: (1) For definition—hyaluronic acid filler is injected along the jawline using cannulas to create sharp, elegant contours; (2) For slimming wide jaws—botulinum toxin is precisely injected into masseter muscles to reduce their bulk over 6-8 weeks; (3) For jowls—fat-dissolving injections or radiofrequency break down pockets. Each technique is mapped to your facial anatomy. Treatment takes 30-60 minutes total",
+      "preparation": "Arrive with clean skin—no makeup. Stop blood-thinning supplements for one week. Avoid alcohol 48 hours before. If having masseter treatment, eat a good meal beforehand (you'll want to avoid heavy chewing after). Bring photos showing jaw/chin shapes you admire from multiple angles. Come ready to see your profile transform",
+      "followup": "Apply ice packs for 20 minutes every few hours for the first day (filler treatment). If masseter slimming, avoid chewing gum and tough foods for 24 hours. No lying flat or intense exercise for 48 hours after filler. Sleep elevated for two nights. Avoid massaging jawline for one week. Attend your 2-week review for assessment and refinement",
+      "outcome": "Jawline appears sharper, more defined, and sculpted. Chin looks balanced and proportionate. Wide jaws slim down elegantly (masseter treatment takes 6-8 weeks to show full effect). Profile looks camera-ready from every angle. Your lower face appears lifted and youthful. Confidence soars. Filler results last 12-18 months; masseter slimming needs repeat every 6 months",
+      "medicationRequired": "Topical numbing cream. Optional dental nerve block for chin filler",
+      "medicalSpecialty": "Aesthetic Medicine",
+      "relevantSpecialty": "Facial Contouring",
+      "isProprietary": false,
+      "treatmentFrequency": "Single session with optional 2-week refinement. Filler maintenance every 12-18 months. Masseter slimming every 6 months. Fat-dissolving may need 2-3 sessions spaced 6 weeks apart",
+      "adverseOutcome": "Mild swelling for 24-72 hours with filler. Possible bruising. Temporary jaw soreness with masseter treatment. Difficulty chewing tough foods for a few days. Very rarely, asymmetry that needs adjustment",
+      "contraindication": [
+        "Pregnancy or breastfeeding",
+        "Active skin infection in jaw/chin area",
+        "Severe allergies to HA or botulinum toxin",
+        "TMJ disorders (masseter treatment may worsen)",
+        "Unrealistic expectations about surgical-level change"
+      ],
+      "typicalTest": [
+        "3D facial analysis and jawline mapping",
+        "Bite and jaw function assessment",
+        "Masseter muscle size evaluation",
+        "Photos from multiple angles (front, profile, three-quarters)",
+        "Discussion of aesthetic goals (masculine vs feminine)",
+        "Medical history including dental work"
+      ],
+      "clinicalFindings": [
+        "Soft or undefined jawline lacking structure",
+        "Weak or recessed chin",
+        "Wide or square jaw from enlarged masseter muscles",
+        "Jowls from age-related volume loss",
+        "Desire for balanced, proportionate lower face",
+        "Facial feminization or masculinization goals"
+      ]
+    }
+  },
+  "title": "Jawline Sculpting & Contour",
+  "quickStats": {
+    "sessions": "Single session + review",
+    "price": "From £450",
+    "duration": "45 minutes",
+    "downtime": "Minimal swelling 24-48 hrs",
+    "painLevel": "Low-Moderate",
+    "resultsVisible": "Immediate with continued improvement",
+    "resultsLast": "12-18 months (filler) / 6 months (slimming)",
+    "anesthesia": "Topical + local as needed"
+  },
+  "overview": {
+    "content": "We analyse your lower face angles, bite, and skin laxity before layering solutions: filler for structure, botulinum toxin for masseter slimming, fat-dissolving for jowls, and collagen stimulators for lift. Every injection is mapped and recorded so touch-ups remain precise.",
+    "highlights": [
+      "Micro-cannula filler for safety + longevity",
+      "Masseter slimming for softer lower face",
+      "Fat-dissolving or radiofrequency for jowls",
+      "Suitable for both feminine and masculine goals"
+    ],
+    "title": "Your Sculpting Blueprint",
+    "image": "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=1200&q=80"
+  },
+  "cta": {
+    "urgency": "Limited weekly appointments",
+    "primaryButton": "Book jawline sculpt",
+    "title": "Ready for a Sculpted Profile?",
+    "subtitle": "Book a jawline consultation and receive your personalised contour plan.",
+    "guarantee": "Consult fee credited toward treatment",
+    "secondaryButton": "Message our team"
+  }
+}

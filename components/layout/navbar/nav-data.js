@@ -350,4 +350,10 @@ export const navigationData = [
       },
     ],
   },
+  {
+    id: "resources",
+    label: "Resources",
+    description: "Guides for hair fall, intimacy, and longevity",
+    href: "/resources",
+  },
 ]

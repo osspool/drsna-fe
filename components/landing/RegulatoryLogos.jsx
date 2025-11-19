@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
+import { SmartImage } from "@/components/common/SmartImage";
 
 const defaultData = {
   badge: "Certified Excellence",
@@ -67,9 +67,10 @@ export function RegulatoryLogos({ data }) {
                 key={index}
                 className="flex items-center justify-center  transition-all duration-300"
               >
-                <Image
+                <SmartImage
                   src={logo.src}
                   alt={logo.name}
+                  title={logo.name}
                   width={120}
                   height={80}
                   className="object-contain h-20 w-auto"

@@ -1,0 +1,115 @@
+{
+  "slug": "hair-fall-roadmap",
+  "title": "Hair Fall SOS Roadmap",
+  "subtitle": "Stop daily shedding, thicken density, and know exactly when to escalate to regenerative medicine.",
+  "summary": "This guide explains the most common triggers we diagnose in clinic, the lab markers worth checking, evidence-backed at-home upgrades, and how PRP, exosomes, or Regenera® micro-grafts fit into your plan.",
+  "readTime": "8 min read",
+  "lastUpdated": "2024-12-01",
+  "heroImage": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1600&auto=format&fit=crop",
+  "metrics": [
+    {"label": "Ideal daily shedding", "value": "<100 strands"},
+    {"label": "Ferritin target", "value": "> 70 ng/mL"},
+    {"label": "Clinic checklist", "value": "4 diagnostic steps"}
+  ],
+  "sections": [
+    {
+      "title": "Spot the dominant trigger",
+      "intro": "Multiple factors can snowball into thinning. Work through the fast checks below before you panic-buy supplements.",
+      "items": [
+        {
+          "heading": "Nutrient gaps & ferritin dips",
+          "badge": "Labs to request",
+          "body": "Order ferritin, serum iron, B12, vitamin D, thyroid panel, and inflammatory markers (CRP). Ferritin below 70 ng/mL, even when 'within range', often correlates with diffuse shedding. We pair micronutrient therapy with PRP only after these labs are corrected."
+        },
+        {
+          "heading": "Hormone or medication shifts",
+          "badge": "Timeline audit",
+          "body": "Note any new contraception, PCOS flare, post-partum hormonal crash, or finasteride/intake changes within the last 3–6 months. Stress hormones like cortisol spike telogen effluvium too."
+        },
+        {
+          "heading": "Mechanical + inflammatory triggers",
+          "badge": "Scalp health",
+          "body": "Look for seborrhoeic dermatitis, psoriasis plaques, tight hairstyles, or constant heat styling. Calm inflammation first with prescription topicals before high-yield PRP."
+        }
+      ]
+    },
+    {
+      "title": "At-home upgrades that actually matter",
+      "intro": "Use a layered approach for 12 weeks before assessing progress.",
+      "items": [
+        {
+          "heading": "Daily scalp nutrition",
+          "badge": "Routine",
+          "body": "Microneedling once weekly (1.5 mm max), peptide-rich serums, and caffeine/polynucleotide tonics boost blood flow. Pair with protein-forward meals and omega-3 intake."
+        },
+        {
+          "heading": "Inflammation control",
+          "badge": "1% ketoconazole",
+          "body": "Use medicated shampoo twice weekly for micro-inflammation, plus LED red light (630–660 nm) 10 minutes daily to extend the growth phase."
+        },
+        {
+          "heading": "Lifestyle stabilisers",
+          "badge": "Stress & sleep",
+          "body": "Aim for 7.5+ hours sleep, resistance training 2x weekly, and guided breathing. Stress hormones directly shorten anagen cycles."
+        }
+      ]
+    },
+    {
+      "title": "When to book regenerative treatments",
+      "intro": "Clinic therapies compress timelines when lifestyle changes are not enough.",
+      "items": [
+        {
+          "heading": "Dual-spin PRP",
+          "badge": "First-line",
+          "body": "Ideal for early thinning or post-partum shedding. We deliver three sessions, four weeks apart, using meso-gun coverage and LED boosts. Expect visible density at week 12."
+        },
+        {
+          "heading": "Exosome or polynucleotide boosters",
+          "badge": "Stacking",
+          "body": "Bioactive exosomes accelerate regrowth in stubborn zones; polynucleotides calm inflamed scalps and enhance shine."
+        },
+        {
+          "heading": "Regenera® micro-grafts",
+          "badge": "Advanced",
+          "body": "For receding temples or long-standing patches, micro-grafts supply progenitor cells and matrix proteins. Combine with maintenance PRP every six months."
+        }
+      ]
+    }
+  ],
+  "recommendedTreatments": [
+    {
+      "title": "PRP Hair Restoration",
+      "href": "/treatments/aesthetic-medicine/hair/prp-hair",
+      "description": "Dual-spin, doctor-led PRP with meso-gun coverage plus LED recovery."
+    },
+    {
+      "title": "Exosome Therapy",
+      "href": "/treatments/aesthetic-medicine/hair/exosome-treatment",
+      "description": "Nano-particle growth factors layered with PRP for resistant areas."
+    },
+    {
+      "title": "Regenera® Micro-Graft",
+      "href": "/treatments/aesthetic-medicine/hair/regenera-treatment",
+      "description": "Autologous micro-grafts that supercharge dormant follicles."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How long should I try lifestyle tweaks before PRP?",
+      "answer": "Give any at-home plan 12 weeks while you normalise labs. If shedding persists, schedule a trichology-led consultation so we can combine diagnostics with PRP or exosomes."
+    },
+    {
+      "question": "Can I stay on minoxidil or finasteride?",
+      "answer": "Yes. We often keep patients on their prescription or topical plan, but we adjust dosages after lab review to minimise side effects."
+    },
+    {
+      "question": "What does maintenance look like?",
+      "answer": "Most patients book a single PRP booster every 6–9 months plus LED sessions during seasonal shedding."
+    }
+  ],
+  "seo": {
+    "title": "Hair Fall Solutions Guide | PRP vs Exosomes vs Regenera | Dr SNA Clinic",
+    "description": "Learn the exact labs, at-home tweaks, and clinic treatments to stop shedding. Expert tips from Dr SNA Clinic's trichology team.",
+    "keywords": ["hair fall guide", "hair loss checklist", "PRP hair education"]
+  }
+}

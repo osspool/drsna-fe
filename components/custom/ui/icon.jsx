@@ -81,6 +81,7 @@ import {
     FlaskConical,
     Syringe,
     AudioWaveform,
+    AlignCenter,
   } from "lucide-react";
 
 
@@ -191,6 +192,8 @@ import {
     waveform: AudioWaveform,
     audioWaveform: AudioWaveform,
     'audio-waveform': AudioWaveform,
+    alignCenter: AlignCenter,
+    'align-center': AlignCenter,
   };
   
   

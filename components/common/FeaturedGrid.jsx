@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/layout/Section";
@@ -10,6 +9,7 @@ import { SectionHeader } from "@/components/common/SectionHeader";
 import { CometCard } from "@/components/aceternity/comet-card";
 import { Icon } from "@/components/custom/ui/icon";
 import { getIconComponent } from "@/lib/icon-utils";
+import { SmartImage } from "@/components/common/SmartImage";
 
 /**
  * Featured Grid Component
@@ -119,8 +119,10 @@ function CategoryCard({ item, index }) {
             <div className="gradient-border group-hover:gradient-border-hover rounded-3xl h-full w-full transition-all duration-300">
               <div className="gradient-border-inner rounded-[calc(1.5rem-4px)] flex flex-col shadow-sm">
                 <div className="relative w-full aspect-5/3 overflow-hidden bg-muted">
-                  <Image
+                  <SmartImage
                     src={item.image}
+                    title={item.title}
+                    description={item.description}
                     alt={item.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
@@ -173,8 +175,10 @@ function CategoryCard({ item, index }) {
           <div className="gradient-border group-hover:gradient-border-hover rounded-3xl h-full w-full transition-all duration-300">
             <div className="gradient-border-inner rounded-[calc(1.5rem-4px)] flex flex-col">
               <div className="relative w-full aspect-video overflow-hidden bg-muted">
-                <Image
+                <SmartImage
                   src={item.image}
+                  title={item.title}
+                  description={item.description}
                   alt={item.title}
                   fill
                   className="object-cover"

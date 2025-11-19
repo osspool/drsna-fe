@@ -57,31 +57,31 @@ export function FeaturesSection({
 
   // Section variants with full header
   return (
-    <Section background="muted-dark" padding="sm">
+    <Section background="muted-dark" padding="default">
       <Container>
         {/* Section Header */}
         {(title || heading || subtitle) && (
-          <div className="text-center mb-12 md:mb-16">
+          <div className="text-center mb-8 md:mb-10">
             {subtitle && (
-              <div className="mb-4">
+              <div className="mb-3">
                 <Badge
                   variant="secondary"
-                  className="px-4 py-2 text-xs font-semibold tracking-wider uppercase bg-muted-foreground/10 border-muted-foreground/20 text-muted-foreground"
+                  className="px-3 py-1.5 text-xs font-semibold tracking-wider uppercase bg-muted-foreground/10 border-muted-foreground/20 text-muted-foreground"
                 >
-                  <Sparkles className="w-3 h-3" />
+                  <Sparkles className="w-3 h-3 mr-1.5" />
                   {subtitle}
                 </Badge>
               </div>
             )}
 
             {(title || heading) && (
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-primary mb-3">
                 {title || heading}
               </h2>
             )}
 
             {description && (
-              <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-sm md:text-base text-muted-foreground max-w-2xl mx-auto">
                 {description}
               </p>
             )}
@@ -113,7 +113,7 @@ export function FeaturesSection({
 // Default variant - Simple cards with hover effects (from BenefitsBlock)
 function DefaultFeaturesGrid({ features, layout }) {
   return (
-    <div className={cn("grid gap-6 md:gap-8", layout)}>
+    <div className={cn("grid gap-5", layout)}>
       {features.map((feature, index) => (
         <IconFeatureCard
           key={index}
@@ -122,10 +122,11 @@ function DefaultFeaturesGrid({ features, layout }) {
           description={feature.description}
           variant="default"
           iconBg="primary"
-          iconSize="lg"
-          className="rounded-xl"
-          iconClassName="w-14 h-14 rounded-full group-hover:bg-primary/20"
-          titleClassName="text-lg"
+          iconSize="md"
+          className="rounded-xl p-5 bg-card/50 border border-border/50 hover:border-primary/30 hover:bg-card/80 transition-all duration-300"
+          iconClassName="w-10 h-10 rounded-lg bg-primary/10 group-hover:bg-primary/20"
+          titleClassName="text-base font-semibold"
+          descriptionClassName="text-sm text-muted-foreground"
           animationDelay={index * 0.05}
         />
       ))}
@@ -217,7 +218,7 @@ function TrustBadges({ stats }) {
   }));
 
   return (
-    <div className="mt-12 flex items-center justify-center gap-6 md:gap-8 flex-wrap">
+    <div className="mt-8 flex items-center justify-center gap-4 md:gap-6 flex-wrap">
       {statsToShow.map((stat, index) => {
         const Icon = stat.icon;
 

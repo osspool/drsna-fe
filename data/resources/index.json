@@ -1,0 +1,68 @@
+{
+  "title": "Patient Resources & Treatment Guides",
+  "description": "Evidence-backed guides covering hair fall, intimacy, skin longevity, and regenerative medicine so you can make informed decisions before treatment.",
+  "seo": {
+    "metaTitle": "Patient Resources & Treatment Guides | Dr SNA Clinic",
+    "metaDescription": "Hair fall, intimacy, and longevity guides written by Dr SNA Clinic so you know which labs, habits, and regenerative treatments to consider.",
+    "keywords": [
+      "patient resources",
+      "treatment guides",
+      "hair restoration guide",
+      "aesthetic medicine information",
+      "health optimization",
+      "Dr SNA Clinic resources"
+    ],
+    "canonicalUrl": "/resources"
+  },
+  "hero": {
+    "badge": "Patient Education Hub",
+    "title": "Problem-Solving Guides Backed by Clinic Data",
+    "subtitle": "Actionable checklists, science summaries, and treatment roadmaps written by Dr Syed Nadeem Abbas and our regenerative team.",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1600&auto=format&fit=crop",
+    "cta": {
+      "primary": {
+        "text": "Book a clarity call",
+        "href": "/booking"
+      },
+      "secondary": {
+        "text": "Ask a question",
+        "href": "/contact"
+      }
+    }
+  },
+  "guides": [
+    {
+      "slug": "hair-fall-roadmap",
+      "title": "Hair Fall SOS Roadmap",
+      "category": "Hair & Scalp",
+      "excerpt": "Identify biological triggers, upgrade at-home care, and learn when PRP, exosomes, or Regenera® make the fastest impact.",
+      "estimatedRead": "8 min read",
+      "updated": "2024-12-01",
+      "image": "https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=1200&auto=format&fit=crop",
+      "keywords": ["hair shedding causes", "PRP hair education"],
+      "cta": "Triage your shedding and build a medical plan"
+    },
+    {
+      "slug": "intimacy-connection-guide",
+      "title": "Intimacy & Confidence Playbook",
+      "category": "Intimate Health",
+      "excerpt": "Blend behavioural micro-habits with medical options such as P-Shot®, shockwave therapy, and hormone optimisation.",
+      "estimatedRead": "9 min read",
+      "updated": "2024-11-10",
+      "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1200&auto=format&fit=crop",
+      "keywords": ["intimacy tips", "ED help without pills"],
+      "cta": "Reconnect physically and emotionally"
+    },
+    {
+      "slug": "youthful-appearance-science",
+      "title": "Younger, Longer Science Brief",
+      "category": "Skin & Longevity",
+      "excerpt": "Understand why some people look biologically younger—covering genetics, inflammation, and regenerative treatments.",
+      "estimatedRead": "7 min read",
+      "updated": "2024-10-22",
+      "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=1200&auto=format&fit=crop",
+      "keywords": ["look younger science", "anti-ageing London"],
+      "cta": "Build a longevity-forward skin plan"
+    }
+  ]
+}

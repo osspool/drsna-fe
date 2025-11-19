@@ -1,12 +1,12 @@
 "use client";
 
 import * as React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { BentoGridShowcase } from "./bento-grid";
 import { Section } from "../layout/Section";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { SmartImage } from "@/components/common/SmartImage";
 
 const BentoCard = ({ children, className }) => {
   return (
@@ -129,8 +129,10 @@ const ImageCard = ({ card, minHeight = 280 }) => {
   const cardContent = (
     <BentoCard className={card.href ? "cursor-pointer" : ""}>
       <div className="relative h-full" style={{ minHeight }}>
-        <Image
+        <SmartImage
           src={imageSrc}
+          title={card.title}
+          description={card.description}
           alt={card.title}
           fill
           sizes="(max-width: 768px) 100vw, 33vw"
@@ -185,8 +187,10 @@ const MainFeatureCard = ({ card }) => {
   const cardContent = (
     <BentoCard className={card.href ? "cursor-pointer" : ""}>
       <div className="relative h-full" style={{ minHeight: card.minHeight || 320 }}>
-        <Image
+        <SmartImage
           src={imageSrc}
+          title={card.title}
+          description={card.subtitle || card.description}
           alt={card.title}
           fill
           sizes="(max-width: 768px) 100vw, 33vw"

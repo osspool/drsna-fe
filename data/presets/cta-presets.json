@@ -1,0 +1,80 @@
+{
+  "buttons": {
+    "bookConsultation": "Book Your Consultation",
+    "bookAppointment": "Book Your Appointment Now",
+    "bookFreeConsultation": "Book Free Consultation",
+    "requestCallback": "Request a Callback",
+    "speakToSpecialist": "Speak to a Specialist",
+    "askQuestion": "Ask a Question",
+    "viewGallery": "View Before & After Gallery",
+    "learnMore": "Learn More"
+  },
+
+  "titles": {
+    "readyToBegin": "Ready to Begin Your Journey?",
+    "readyToTransform": "Ready to Transform Your Confidence?",
+    "readyToEnhance": "Ready to Enhance Your Natural Beauty?",
+    "readyToRelieve": "Ready for Advanced Pain Relief?",
+    "readyToRestore": "Ready to Restore Your Vitality?",
+    "takeFirstStep": "Take the First Step Today"
+  },
+
+  "subtitles": {
+    "bookWithDrAbbas": "Book your consultation with Dr Abbas at our Marylebone clinic today",
+    "discoverPlan": "Book your consultation with Dr Abbas and discover your personalized treatment plan",
+    "expertTeam": "Book a consultation with our expert team and discover your personalized treatment plan",
+    "confidentialConsultation": "Schedule your confidential consultation with Dr Abbas"
+  },
+
+  "urgency": {
+    "limitedAppointments": "Limited appointments available each week",
+    "limitedSlots": "Limited treatment slots available",
+    "specialOffer": "Special consultation offer available",
+    "transformAppearance": "Transform your appearance with expert treatment"
+  },
+
+  "guarantees": {
+    "consultationCredit": "Consultation fee credited toward treatment",
+    "consultationRedeemable": "Consultation fee redeemable against treatment",
+    "gmcRegistered": "Professional care from GMC-registered doctor",
+    "cqcRegistered": "CQC registered clinic with GMC certified doctors",
+    "wimpoleStreet": "48 Wimpole Street, Marylebone location",
+    "complimentaryReview": "Complimentary 2-week review included",
+    "privacyGuaranteed": "Complete privacy and confidentiality guaranteed"
+  },
+
+  "variants": {
+    "aesthetic": {
+      "title": "readyToEnhance",
+      "subtitle": "discoverPlan",
+      "primaryButton": "bookConsultation",
+      "secondaryButton": "requestCallback",
+      "urgency": "limitedAppointments",
+      "guarantee": "consultationCredit"
+    },
+    "painManagement": {
+      "title": "readyToRelieve",
+      "subtitle": "bookWithDrAbbas",
+      "primaryButton": "bookConsultation",
+      "secondaryButton": "speakToSpecialist",
+      "urgency": "limitedSlots",
+      "guarantee": "gmcRegistered"
+    },
+    "intimateHealth": {
+      "title": "readyToRestore",
+      "subtitle": "confidentialConsultation",
+      "primaryButton": "bookConsultation",
+      "secondaryButton": "requestCallback",
+      "urgency": "limitedAppointments",
+      "guarantee": "privacyGuaranteed"
+    },
+    "regenerative": {
+      "title": "readyToBegin",
+      "subtitle": "expertTeam",
+      "primaryButton": "bookConsultation",
+      "secondaryButton": "speakToSpecialist",
+      "urgency": "limitedSlots",
+      "guarantee": "cqcRegistered"
+    }
+  }
+}

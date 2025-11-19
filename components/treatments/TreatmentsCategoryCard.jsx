@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import { SmartImage } from "@/components/common/SmartImage";
 import { ArrowRight } from "lucide-react";
 import { Icon } from "@/components/custom/ui/icon";
 
@@ -16,9 +16,11 @@ export function TreatmentsCategoryCard({ category, index }) {
         <div className="group relative h-full rounded-3xl overflow-hidden bg-card border-2 border-border hover:border-primary/30 hover:shadow-2xl transition-all duration-700">
           {/* Image */}
           <div className="relative h-72 md:h-80 overflow-hidden">
-            <Image
+            <SmartImage
               src={category.image}
               alt={category.title}
+              title={category.title}
+              description={category.description}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover transition-transform duration-700 group-hover:scale-110"

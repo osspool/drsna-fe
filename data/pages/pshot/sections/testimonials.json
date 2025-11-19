@@ -1,0 +1,26 @@
+[
+  {
+    "name": "James K.",
+    "age": 52,
+    "rating": 5,
+    "text": "I'd been on medication for years and hated it. The timing, the side effects, feeling like I wasn't really 'me'. After the P-Shot, it just works naturally. My wife noticed. I noticed. It's changed things between us.",
+    "treatment": "ED Treatment",
+    "verified": true
+  },
+  {
+    "name": "Michael R.",
+    "age": 45,
+    "rating": 5,
+    "text": "I was nervous about talking to anyone about this. Dr Abbas made it easy — no judgment, just straight answers. The results? Better than I expected. I feel confident again.",
+    "treatment": "Enhancement",
+    "verified": true
+  },
+  {
+    "name": "David L.",
+    "age": 58,
+    "rating": 5,
+    "text": "Peyronie's was affecting my relationship more than I wanted to admit. Six weeks after the P-Shot, the curvature is noticeably better and there's no pain. I should have done this years ago.",
+    "treatment": "Peyronie's Treatment",
+    "verified": true
+  }
+]

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react";
 import { Container } from "@/components/layout/Container";
+import { contactInfo } from "@/data/contact-info";
 
 export function Footer() {
   const footerLinks = {
@@ -12,9 +13,9 @@ export function Footer() {
       { label: "Pain Management", href: "/treatments/pain-management" },
     ],
     company: [
-      { label: "About Us", href: "/about" },
-      { label: "Our Team", href: "/team" },
-      { label: "Blog", href: "/blog" },
+      { label: "About Us", href: "/about-us" },
+      { label: "Dr Syed Nadeem Abbas", href: "/dr-syed-nadeem-abbas" },
+      { label: "Resources", href: "/resources" },
       { label: "Contact", href: "/contact" },
     ],
     legal: [
@@ -26,9 +27,9 @@ export function Footer() {
   };
 
   const socialLinks = [
-    { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-    { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
-    { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+    { icon: Instagram, href: contactInfo.social.instagram, label: "Instagram" },
+    { icon: Facebook, href: contactInfo.social.facebook, label: "Facebook" },
+    { icon: Twitter, href: contactInfo.social.twitter, label: "Twitter" },
   ];
 
   return (
@@ -106,29 +107,42 @@ export function Footer() {
             </h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-primary mt-0.5 shrink-0" />
                 <span className="text-white/70">
-                  123 Harley Street,
+                  {contactInfo.address.streetAddress},
                   <br />
-                  London, W1G 6AW
+                  {contactInfo.address.addressLocality}, {contactInfo.address.addressRegion}
+                  <br />
+                  {contactInfo.address.postalCode}
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-primary flex-shrink-0" />
+                <Phone className="w-5 h-5 text-primary shrink-0" />
                 <a
-                  href="tel:+442071234567"
+                  href={`tel:${contactInfo.phone.primary.number}`}
                   className="text-white/70 hover:text-primary transition-colors"
                 >
-                  020 7123 4567
+                  {contactInfo.phone.primary.display}
                 </a>
               </li>
+              {contactInfo.phone.secondary && (
+                <li className="flex items-center gap-3">
+                  <Phone className="w-5 h-5 text-primary shrink-0" />
+                  <a
+                    href={`tel:${contactInfo.phone.secondary.number}`}
+                    className="text-white/70 hover:text-primary transition-colors"
+                  >
+                    {contactInfo.phone.secondary.display}
+                  </a>
+                </li>
+              )}
               <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-primary flex-shrink-0" />
+                <Mail className="w-5 h-5 text-primary shrink-0" />
                 <a
-                  href="mailto:info@drsnaclinic.com"
+                  href={`mailto:${contactInfo.email.primary}`}
                   className="text-white/70 hover:text-primary transition-colors"
                 >
-                  info@drsnaclinic.com
+                  {contactInfo.email.primary}
                 </a>
               </li>
             </ul>

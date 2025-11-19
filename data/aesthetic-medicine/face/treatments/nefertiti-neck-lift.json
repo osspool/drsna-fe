@@ -1,1 +1,210 @@
-{"pricing":{"singlePrice":{"currentPrice":"£325","currency":"GBP"},"packages":[{"name":"Nefertiti Refresh","includes":"Review at 2 weeks","description":"Standard dosing for neck + jawline","price":"£325"},{"description":"Nefertiti lift + jawline filler touch-up","includes":"LED therapy","price":"£495","name":"Contour Plus","savings":"Save £85"}],"includes":["Consultation & muscle mapping","Botulinum toxin treatment","Aftercare + review"],"subtitle":"Consultation fee (£50) credited toward treatment","title":"Pricing"},"hero":{"image":"https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80","headline":"Frame Your Face with a Sculpted Neck","subheadline":"Doctor-led Nefertiti Lift smooths vertical bands and lifts the jawline in 15 minutes.","badge":"No downtime • Subtle yet powerful"},"faq":[{"question":"Will it affect swallowing?","answer":"No. We target superficial bands only; swallowing muscles remain untouched."},{"question":"How often do I repeat it?","answer":"Every 3-4 months to maintain lift."}],"id":"nefertiti-neck-lift","shortTitle":"Nefertiti Lift","candidacy":{"title":"Ideal Candidates","note":"Combine with Profound RF or filler for severe laxity.","suitable":["Visible platysma bands","Early jowl formation","Downturned corners of the mouth"],"notSuitable":["Pregnancy/breastfeeding","Neuromuscular disorders"]},"bookingInfo":{"duration":"20-minute consultation","consultationFee":"£50 (redeemable)","depositRequired":false,"cancellationPolicy":"48 hours’ notice required"},"description":"Targeted botulinum toxin relaxes platysma bands, tightens the jawline border, and creates the elegant neck of a queen.","seo":{"metaDescription":"Sharpen your jawline and smooth neck lines with the Nefertiti Lift. Doctor-only botulinum toxin technique for elegant lower-face definition.","canonicalUrl":"/treatments/aesthetic-medicine/face/nefertiti-neck-lift","keywords":["nefertiti lift london","neck botox","non surgical neck lift","jawline botox"],"h1":"Nefertiti Neck Lift in London","metaTitle":"Nefertiti Lift London | Non-Surgical Neck Lift | Dr. SNA Clinic"},"title":"Nefertiti Neck Lift","overview":{"content":"We inject micro-doses of botulinum toxin along the platysma bands and jawline border. This relaxes downward pull, allowing your natural lift to shine. The jaw looks sharper, necklace lines soften, and makeup sits beautifully.","highlights":["Targets ‘turkey neck’ bands","Defines jaw without filler","Pairs with radiofrequency or filler for extra lift"],"title":"How It Works","image":"https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1200&q=80"},"quickStats":{"painLevel":"Low","downtime":"None","price":"From £325","duration":"20 minutes","anesthesia":"Optional topical numbing","resultsLast":"3-4 months","resultsVisible":"7-10 days","sessions":"Single session + maintenance"},"cta":{"subtitle":"Book a Nefertiti Lift consultation.","title":"Ready for a Regal Profile?","primaryButton":"Book neck lift","urgency":"Limited toxin clinics weekly","secondaryButton":"Talk to a patient advisor","guarantee":"Consult fee credited toward treatment"},"benefits":{"layout":"grid-3","features":[{"description":"Performed by doctors experienced with lower-face anatomy.","title":"Consultant technique","icon":"stethoscope"},{"description":"Custom dosing for each platysma band.","icon":"map","title":"Precision mapping"},{"description":"Appointment reminders so results never lapse.","title":"Seamless maintenance","icon":"repeat"}],"title":"Clinic Benefits"},"categoryId":"aesthetic-medicine","subcategoryId":"face","tagline":"Elevate Your Jawline. Smooth the Neck.","longDescription":"Named after the legendary Egyptian queen, the Nefertiti Lift releases downward pull from the platysma muscles while subtly lifting the jawline. We map every band and inject micro-doses of toxin along the jaw and neck to refine contour, soften wrinkles, and keep your profile poised.","relatedTreatments":[{"description":"Enhance contour with filler support.","reason":"Dual sculpting effect.","id":"jawline-reduction","title":"Jawline Sculpt"},{"title":"Skin Boosters","id":"skin-boosters","reason":"Complete neck glow.","description":"Hydrate the neck for silky texture."}]}
+{
+  "pricing": {
+    "singlePrice": { "currentPrice": "£325", "currency": "GBP" },
+    "packages": [
+      {
+        "name": "Nefertiti Refresh",
+        "includes": "Review at 2 weeks",
+        "description": "Standard dosing for neck + jawline",
+        "price": "£325"
+      },
+      {
+        "description": "Nefertiti lift + jawline filler touch-up",
+        "includes": "LED therapy",
+        "price": "£495",
+        "name": "Contour Plus",
+        "savings": "Save £85"
+      }
+    ],
+    "includes": [
+      "Consultation & muscle mapping",
+      "Botulinum toxin treatment",
+      "Aftercare + review"
+    ],
+    "subtitle": "Consultation fee (£50) credited toward treatment",
+    "title": "Pricing"
+  },
+  "hero": {
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80",
+    "headline": "Frame Your Face with a Sculpted Neck",
+    "subheadline": "Doctor-led Nefertiti Lift smooths vertical bands and lifts the jawline in 15 minutes.",
+    "badge": "No downtime • Subtle yet powerful"
+  },
+  "faq": [
+    {
+      "question": "Will it affect swallowing?",
+      "answer": "No. We target the superficial platysma bands only; the deeper swallowing muscles remain completely untouched. This is a safe, well-established technique when performed by experienced injectors."
+    },
+    {
+      "question": "How often do I repeat the Nefertiti Lift?",
+      "answer": "Every 3-4 months to maintain your lifted jawline. Many patients schedule standing quarterly appointments. The effect gradually wears off as the muscle regains strength, so regular maintenance keeps results consistent."
+    },
+    {
+      "question": "How long does the Nefertiti Lift last?",
+      "answer": "Results typically last 3-4 months—similar to anti-wrinkle injections. Some patients find results last up to 5 months depending on muscle strength and metabolism. Consistent treatments can extend longevity over time."
+    },
+    {
+      "question": "Does the Nefertiti Lift hurt?",
+      "answer": "Most patients describe tiny pinpricks—the needles are ultra-fine. We can apply topical numbing cream, but most don't need it. The procedure takes only 15-20 minutes and discomfort is minimal."
+    },
+    {
+      "question": "How much does the Nefertiti Lift cost in London?",
+      "answer": "Our Nefertiti Refresh (standard dosing) is £325. The Contour Plus (with jawline filler touch-up + LED) is £495 (save £85). Consultation fee (£50) is credited toward treatment. Maintenance patients often book packages."
+    },
+    {
+      "question": "When will I see Nefertiti Lift results?",
+      "answer": "Results develop gradually over 7-14 days as the muscles relax. You'll notice your jawline becoming sharper and neck bands softening. Full results are visible by 2 weeks, which is when we schedule your review."
+    },
+    {
+      "question": "Can I combine the Nefertiti Lift with other treatments?",
+      "answer": "Yes—it pairs beautifully with jawline filler for maximum definition, or skin boosters for neck texture. Many patients combine it with anti-wrinkle injections for the forehead in the same session for convenience."
+    },
+    {
+      "question": "Is the Nefertiti Lift suitable for turkey neck?",
+      "answer": "Yes, it's excellent for visible platysma bands (vertical neck cords). For significant skin laxity, we may recommend combining with Profound RF or referring to a surgeon. Dr Abbas will assess your specific anatomy during consultation."
+    }
+  ],
+  "id": "nefertiti-neck-lift",
+  "shortTitle": "Nefertiti Lift",
+  "candidacy": {
+    "title": "Ideal Candidates",
+    "note": "Combine with Profound RF or filler for severe laxity.",
+    "suitable": [
+      "Visible platysma bands",
+      "Early jowl formation",
+      "Downturned corners of the mouth"
+    ],
+    "notSuitable": ["Pregnancy/breastfeeding", "Neuromuscular disorders"]
+  },
+  "bookingInfo": {
+    "duration": "20-minute consultation",
+    "consultationFee": "£50 (redeemable)",
+    "depositRequired": false,
+    "cancellationPolicy": "48 hours’ notice required"
+  },
+  "description": "Targeted botulinum toxin relaxes platysma bands, tightens the jawline border, and creates the elegant neck of a queen.",
+  "seo": {
+    "metaDescription": "Sharpen your jawline and smooth neck lines with the Nefertiti Lift. Doctor-only botulinum toxin technique for elegant lower-face definition.",
+    "canonicalUrl": "/treatments/aesthetic-medicine/face/nefertiti-neck-lift",
+    "keywords": [
+      "nefertiti lift london",
+      "neck botox",
+      "non surgical neck lift",
+      "jawline botox"
+    ],
+    "h1": "Nefertiti Neck Lift in London",
+    "metaTitle": "Nefertiti Lift London | Non-Surgical Neck Lift | Dr. SNA Clinic",
+    "schema": {
+      "@type": "MedicalProcedure",
+      "procedureType": "NoninvasiveProcedure",
+      "bodyLocation": [
+        "Platysma muscle (neck)",
+        "Jawline border",
+        "Lower face",
+        "Upper neck bands"
+      ],
+      "howPerformed": "After mapping the visible platysma bands and jawline, we inject tiny amounts of botulinum toxin using ultra-fine needles along specific points—starting just below your jawline and extending down your neck in a pattern named after Queen Nefertiti. The medicine relaxes these downward-pulling muscles, allowing your natural facial structure to lift. The jawline appears sharper and more defined. Vertical neck bands (turkey neck) soften beautifully. Treatment takes about 15 minutes and feels like tiny pinpricks",
+      "preparation": "Arrive with clean skin—no makeup or lotions on your neck. Stop blood-thinning supplements for 3 days if possible. Avoid alcohol 24 hours before. Wear a top with a wide neckline for easy access. Eat beforehand. Come ready to see your jawline emerge",
+      "followup": "Stay upright for 4 hours after treatment—no lying flat or bending forward. Avoid rubbing, massaging, or applying pressure to your neck for 24 hours. No intense exercise or hot yoga for 24 hours. Results develop gradually over 7-14 days as the muscles relax. You'll notice your jawline becoming more defined and neck bands softening. Attend your 2-week review to assess and add tiny refinements if needed",
+      "outcome": "Jawline looks sharper and more sculpted. Vertical neck bands disappear or dramatically soften. The lower face appears lifted and more elegant. Your profile looks younger in photos. Neck skin lays smoother. Many patients say they finally see their jawline again. Results last 3-4 months, then you repeat treatment to maintain that regal contour",
+      "medicationRequired": "Optional topical numbing cream (most patients don't need it)",
+      "medicalSpecialty": "Aesthetic Medicine",
+      "relevantSpecialty": "Facial Aesthetics",
+      "isProprietary": false,
+      "treatmentFrequency": "Single treatment session every 3-4 months to maintain results. Many patients schedule standing quarterly appointments to keep jawline perpetually defined",
+      "adverseOutcome": "Mild soreness at injection sites for a few hours. Small bruises possible. Very rarely, temporary difficulty swallowing or neck weakness (resolves within days). Asymmetry if muscles respond unevenly (we adjust at review)",
+      "contraindication": [
+        "Pregnancy or breastfeeding",
+        "Allergy to botulinum toxin",
+        "Neuromuscular disorders (myasthenia gravis, ALS)",
+        "Active neck infection or rash",
+        "Taking aminoglycoside antibiotics",
+        "Unrealistic expectations about surgical-level lift"
+      ],
+      "typicalTest": [
+        "Visual assessment of platysma bands when jaw clenched",
+        "Neck skin elasticity evaluation",
+        "Jawline contour analysis",
+        "Photos from front and profile",
+        "Medical history review",
+        "Discussion of neck care routine"
+      ],
+      "clinicalFindings": [
+        "Visible platysma bands (vertical neck cords)",
+        "Loss of jawline definition",
+        "Early jowl formation",
+        "Downturned mouth corners affecting neck appearance",
+        "Desire for elegant lower face without surgery",
+        "'Turkey neck' appearance when talking or straining"
+      ]
+    }
+  },
+  "title": "Nefertiti Neck Lift",
+  "overview": {
+    "content": "We inject micro-doses of botulinum toxin along the platysma bands and jawline border. This relaxes downward pull, allowing your natural lift to shine. The jaw looks sharper, necklace lines soften, and makeup sits beautifully.",
+    "highlights": [
+      "Targets ‘turkey neck’ bands",
+      "Defines jaw without filler",
+      "Pairs with radiofrequency or filler for extra lift"
+    ],
+    "title": "How It Works",
+    "image": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1200&q=80"
+  },
+  "quickStats": {
+    "painLevel": "Low",
+    "downtime": "None",
+    "price": "From £325",
+    "duration": "20 minutes",
+    "anesthesia": "Optional topical numbing",
+    "resultsLast": "3-4 months",
+    "resultsVisible": "7-10 days",
+    "sessions": "Single session + maintenance"
+  },
+  "cta": {
+    "subtitle": "Book a Nefertiti Lift consultation.",
+    "title": "Ready for a Regal Profile?",
+    "primaryButton": "Book neck lift",
+    "urgency": "Limited toxin clinics weekly",
+    "secondaryButton": "Talk to a patient advisor",
+    "guarantee": "Consult fee credited toward treatment"
+  },
+  "benefits": {
+    "layout": "grid-3",
+    "features": [
+      {
+        "description": "Performed by doctors experienced with lower-face anatomy.",
+        "title": "Consultant technique",
+        "icon": "stethoscope"
+      },
+      {
+        "description": "Custom dosing for each platysma band.",
+        "icon": "map",
+        "title": "Precision mapping"
+      },
+      {
+        "description": "Appointment reminders so results never lapse.",
+        "title": "Seamless maintenance",
+        "icon": "repeat"
+      }
+    ],
+    "title": "Clinic Benefits"
+  },
+  "categoryId": "aesthetic-medicine",
+  "subcategoryId": "face",
+  "tagline": "Elevate Your Jawline. Smooth the Neck.",
+  "longDescription": "Named after the legendary Egyptian queen, the Nefertiti Lift releases downward pull from the platysma muscles while subtly lifting the jawline. We map every band and inject micro-doses of toxin along the jaw and neck to refine contour, soften wrinkles, and keep your profile poised.",
+  "relatedTreatments": [
+    {
+      "description": "Enhance contour with filler support.",
+      "reason": "Dual sculpting effect.",
+      "id": "jawline-reduction",
+      "title": "Jawline Sculpt"
+    },
+    {
+      "title": "Skin Boosters",
+      "id": "skin-boosters",
+      "reason": "Complete neck glow.",
+      "description": "Hydrate the neck for silky texture."
+    }
+  ]
+}

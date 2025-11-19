@@ -1,0 +1,38 @@
+{
+  "badge": "ENHANCED RESULTS",
+  "title": "Why We Recommend Shockwave Therapy",
+  "subtitle": "The Perfect Partner to Your P-Shot",
+  "description": "Many of our patients ask: 'What's the best way to maximise my results?' The answer is simple — combine P-Shot with Shockwave Therapy. While the P-Shot regenerates tissue and improves sensitivity, Shockwave Therapy restores blood flow at the source. Together, they create lasting change that neither treatment achieves alone.",
+  "image": "/images/treatment/intimate-health/shockwave-therapy.jpg",
+  "benefits": [
+    {
+      "title": "Restores Natural Blood Flow",
+      "description": "Creates new blood vessels where you need them most. Better circulation means better performance — naturally, without medication.",
+      "icon": "activity"
+    },
+    {
+      "title": "Amplifies Your P-Shot Results",
+      "description": "The P-Shot regenerates tissue. Shockwave improves the blood supply. Together, you get results that last longer and feel stronger.",
+      "icon": "trendingUp"
+    },
+    {
+      "title": "No Downtime, No Pain",
+      "description": "Walk in, walk out, get back to life. Most men describe it as a light tapping sensation — nothing more.",
+      "icon": "check"
+    },
+    {
+      "title": "Proven by Science",
+      "description": "Over 40 clinical studies show significant improvement in erectile function. This isn't experimental — it's established medicine.",
+      "icon": "award"
+    }
+  ],
+  "cta": {
+    "text": "Ask About Combination Treatment",
+    "href": "/booking"
+  },
+  "stats": [
+    { "value": "76%", "label": "improvement in erectile function" },
+    { "value": "6", "label": "painless sessions" },
+    { "value": "2+ years", "label": "lasting results" }
+  ]
+}

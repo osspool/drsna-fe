@@ -2,7 +2,8 @@ import { notFound } from "next/navigation";
 import { SectionRenderer } from "@/components/common/SectionRenderer";
 import { treatmentDetailPageConfig } from "@/lib/configs/treatment-detail";
 import { getTreatment, getStaticTreatmentPaths } from "@/lib/treatments";
-import { createMetadataGenerator, createStaticParamsGenerator } from "@/lib/seo-helpers";
+import { createMetadataGenerator, createStaticParamsGenerator, generateTreatmentStructuredData } from "@/lib/seo-helpers";
+import { getBaseUrl } from "@/lib/domain-helpers";
 
 /**
  * Generate static params for high-priority treatments only
@@ -46,10 +47,24 @@ export default async function TreatmentPage({ params }) {
     _params: resolvedParams
   };
 
+  // Generate domain-aware structured data for SEO
+  const baseUrl = await getBaseUrl();
+  const structuredData = generateTreatmentStructuredData(treatment, resolvedParams, baseUrl);
+
   return (
-    <main className="min-h-screen">
-      {/* All sections via config-driven rendering */}
-      <SectionRenderer sections={treatmentDetailPageConfig} data={treatmentData} />
-    </main>
+    <>
+      {/* Structured Data for SEO - enables rich snippets */}
+      {structuredData.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      )}
+
+      <main className="min-h-screen">
+        {/* All sections via config-driven rendering */}
+        <SectionRenderer sections={treatmentDetailPageConfig} data={treatmentData} />
+      </main>
+    </>
   );
 }

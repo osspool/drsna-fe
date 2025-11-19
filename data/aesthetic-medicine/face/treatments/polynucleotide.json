@@ -1,1 +1,242 @@
-{"tagline":"DNA-Driven Repair for Resilient Skin","subcategoryId":"face","categoryId":"aesthetic-medicine","longDescription":"Polynucleotides (PN) are DNA fragments that supercharge your skin’s repair response. We micro-inject PN along cheeks, temples, and jawline to hydrate deeply, reduce redness, and tighten texture. Think of it as a skin reboot that pairs beautifully with fillers, lasers, or PRP—ideal for anyone craving lit-from-within radiance without downtime.","relatedTreatments":[{"id":"skin-boosters","reason":"Hydration synergy.","description":"Layer hydration for glass-skin sheen.","title":"Skin Boosters"},{"title":"PRP Facelift","reason":"Advanced glow plan.","id":"prp-facelift","description":"Combine PRP + PN for ultimate regeneration."}],"benefits":{"layout":"grid-3","title":"Clinic Advantages","features":[{"description":"Precision placement for overall harmony.","icon":"stethoscope","title":"Doctor-only injections"},{"description":"Choose PN-HPT, PDRN, or combined boosters.","title":"Custom PN blends","icon":"beaker"},{"description":"Integrate skincare, supplements, and maintenance schedule.","icon":"calendar","title":"Holistic plan"}]},"process":{"title":"Treatment Timeline","steps":[{"title":"Consult & Skin Analysis","icon":"clipboard-check","number":1,"description":"Hydration scan, tone check, and plan creation."},{"number":2,"icon":"syringe","title":"PN Session #1","description":"Micro injections over face/neck."},{"description":"Boost results and lock in glow.","icon":"repeat","number":3,"title":"PN Session #2"},{"title":"Review & Maintenance","icon":"sparkles","number":4,"description":"LED top-up, skincare adjustments, optional third session."}]},"candidacy":{"title":"Ideal Candidates","notSuitable":["Pregnancy/breastfeeding","Active skin infection"],"note":"Great prep or follow-up for filler, PRP, or microneedling.","suitable":["Stressed, dull, or dehydrated skin","Early fine lines or crepey texture","Sensitivity/rosacea-prone complexions"]},"seo":{"metaTitle":"Polynucleotide Treatment London | DNA Skin Therapy | Dr. SNA Clinic","metaDescription":"Regenerate facial skin with polynucleotide injections. Doctor-led treatment improves hydration, elasticity, and glow in just 2 sessions.","canonicalUrl":"/treatments/aesthetic-medicine/face/polynucleotide","keywords":["polynucleotide face london","pn injections","dna skin therapy","regenerative facial treatment"],"h1":"Polynucleotide Face Therapy in London"},"description":"Highly purified polynucleotide injections regenerate collagen, calm inflammation, and restore bounce across the face and neck.","bookingInfo":{"cancellationPolicy":"48 hours’ notice to reschedule","depositRequired":false,"consultationFee":"£50 (redeemable)","duration":"30-minute consultation"},"title":"Polynucleotide Face Therapy","cta":{"primaryButton":"Book PN facial","urgency":"Limited PN appointments weekly","subtitle":"Book your polynucleotide consultation today.","title":"Ready for DNA-Level Glow?","guarantee":"Consult fee credited toward treatment","secondaryButton":"Chat with a skin advisor"},"quickStats":{"price":"Course from £750","duration":"40 minutes","downtime":"Pinpoint bumps 12-24 hrs","painLevel":"Low","resultsVisible":"10 days","resultsLast":"6-9 months","anesthesia":"Topical numbing","sessions":"2 sessions (3 weeks apart)"},"overview":{"title":"What PN Does for the Face","image":"https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1200&q=80","content":"PN attracts water, signals fibroblasts, and moderates inflammation pathways. We place it across cheeks, temples, jawline, and neck to smooth fine lines, repair barrier damage, and enhance luminosity. It’s the ideal maintenance treatment between fillers or as a standalone glow plan.","highlights":["Improves elasticity + tone","Reduces redness and sensitivity","Safe for all skin tones","Pairs with PRP, lasers, or skin boosters"]},"hero":{"headline":"Regenerate. Rehydrate. Radiate.","subheadline":"Polynucleotide injections reboot collagen and skin health from the inside out.","image":"https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=1920&q=80","badge":"Zero volumising • Pure repair"},"pricing":{"title":"Pricing","subtitle":"Consultation fee (£50) credited toward treatment","includes":["Consultation & custom plan","Polynucleotide product","LED therapy","Aftercare + follow-up"],"packages":[{"savings":"Save £50","name":"PN Duo Glow","includes":"Hydration kit","description":"2 PN sessions + LED","price":"£750"},{"savings":"Save £180","name":"PN + PRP Fusion","includes":"Homecare bundle","description":"PN course + PRP booster","price":"£1,150"}],"singlePrice":{"currentPrice":"£400","currency":"GBP"}},"faq":[{"answer":"No—PN hydrates and repairs but doesn’t create volume.","question":"Is PN the same as filler?"},{"question":"How often do I need it?","answer":"Most clients repeat every 6-9 months or before big events."}],"id":"polynucleotide","shortTitle":"PN Face"}
+{
+  "tagline": "DNA-Driven Repair for Resilient Skin",
+  "subcategoryId": "face",
+  "categoryId": "aesthetic-medicine",
+  "longDescription": "Polynucleotides (PN) are DNA fragments that supercharge your skin’s repair response. We micro-inject PN along cheeks, temples, and jawline to hydrate deeply, reduce redness, and tighten texture. Think of it as a skin reboot that pairs beautifully with fillers, lasers, or PRP—ideal for anyone craving lit-from-within radiance without downtime.",
+  "relatedTreatments": [
+    {
+      "id": "skin-boosters",
+      "reason": "Hydration synergy.",
+      "description": "Layer hydration for glass-skin sheen.",
+      "title": "Skin Boosters"
+    },
+    {
+      "title": "PRP Facelift",
+      "reason": "Advanced glow plan.",
+      "id": "prp-facelift",
+      "description": "Combine PRP + PN for ultimate regeneration."
+    }
+  ],
+  "benefits": {
+    "layout": "grid-3",
+    "title": "Clinic Advantages",
+    "features": [
+      {
+        "description": "Precision placement for overall harmony.",
+        "icon": "stethoscope",
+        "title": "Doctor-only injections"
+      },
+      {
+        "description": "Choose PN-HPT, PDRN, or combined boosters.",
+        "title": "Custom PN blends",
+        "icon": "beaker"
+      },
+      {
+        "description": "Integrate skincare, supplements, and maintenance schedule.",
+        "icon": "calendar",
+        "title": "Holistic plan"
+      }
+    ]
+  },
+  "process": {
+    "title": "Treatment Timeline",
+    "steps": [
+      {
+        "title": "Consult & Skin Analysis",
+        "icon": "clipboard-check",
+        "number": 1,
+        "description": "Hydration scan, tone check, and plan creation."
+      },
+      {
+        "number": 2,
+        "icon": "syringe",
+        "title": "PN Session #1",
+        "description": "Micro injections over face/neck."
+      },
+      {
+        "description": "Boost results and lock in glow.",
+        "icon": "repeat",
+        "number": 3,
+        "title": "PN Session #2"
+      },
+      {
+        "title": "Review & Maintenance",
+        "icon": "sparkles",
+        "number": 4,
+        "description": "LED top-up, skincare adjustments, optional third session."
+      }
+    ]
+  },
+  "candidacy": {
+    "title": "Ideal Candidates",
+    "notSuitable": ["Pregnancy/breastfeeding", "Active skin infection"],
+    "note": "Great prep or follow-up for filler, PRP, or microneedling.",
+    "suitable": [
+      "Stressed, dull, or dehydrated skin",
+      "Early fine lines or crepey texture",
+      "Sensitivity/rosacea-prone complexions"
+    ]
+  },
+  "seo": {
+    "metaTitle": "Polynucleotide Treatment London | DNA Skin Therapy | Dr. SNA Clinic",
+    "metaDescription": "Regenerate facial skin with polynucleotide injections. Doctor-led treatment improves hydration, elasticity, and glow in just 2 sessions.",
+    "canonicalUrl": "/treatments/aesthetic-medicine/face/polynucleotide",
+    "keywords": [
+      "polynucleotide face london",
+      "pn injections",
+      "dna skin therapy",
+      "regenerative facial treatment"
+    ],
+    "h1": "Polynucleotide Face Therapy in London",
+    "schema": {
+      "@type": "MedicalProcedure",
+      "procedureType": "NoninvasiveProcedure",
+      "bodyLocation": [
+        "Face",
+        "Cheeks",
+        "Temples",
+        "Jawline",
+        "Neck",
+        "Décolletage"
+      ],
+      "howPerformed": "After cleansing and numbing your skin, ultra-fine needles deliver micro-droplets of purified polynucleotide (DNA fragments) across your face using bio-aesthetic points. These DNA building blocks penetrate the dermal layer, where they signal your fibroblasts to ramp up collagen and elastin production. They also attract water molecules for deep hydration and calm inflammatory pathways that cause redness. The process takes about 30 minutes. You'll see tiny bumps that smooth within hours",
+      "preparation": "Come with clean, makeup-free skin. Stay super hydrated for 3 days before (drink 2-3 liters daily). Stop blood-thinning supplements for one week. Avoid alcohol and processed foods 48 hours before—PN works best in a clean system. If you have sensitive or rosacea-prone skin, this is your ideal treatment. Come ready for regeneration",
+      "followup": "Tiny injection bumps disappear within 12-24 hours. Don't massage or press treated areas for 24 hours. Avoid makeup, intense exercise, saunas, and direct sun for 24 hours. Drink lots of water to support cellular repair. Your second session 3 weeks later completes the course. Skin continues improving for 4-6 weeks as collagen rebuilds",
+      "outcome": "Skin looks plumper, more hydrated, and luminous—the lit-from-within glow. Fine lines soften. Texture becomes smoother and more refined. Redness calms dramatically. Pores appear smaller. Your complexion reflects light beautifully. Makeup sits flawlessly. Unlike fillers, PN doesn't add volume—just pure skin quality improvement. Results last 6-9 months",
+      "medicationRequired": "Topical numbing cream for comfort",
+      "medicalSpecialty": "Aesthetic Medicine",
+      "relevantSpecialty": "Dermatology",
+      "isProprietary": false,
+      "treatmentFrequency": "Two sessions spaced 3 weeks apart for initial course, then maintenance sessions every 6-9 months to preserve that regenerated glow",
+      "adverseOutcome": "Small injection bumps for 12-24 hours (normal and expected). Possible pinpoint bruising. Mild swelling in delicate areas. Very rarely, tiny lumps that dissolve within days",
+      "contraindication": [
+        "Pregnancy or breastfeeding",
+        "Active skin infection, rash, or rosacea flare",
+        "Severe allergies to DNA-derived products (extremely rare)",
+        "Autoimmune skin conditions without specialist clearance",
+        "Keloid scarring tendency"
+      ],
+      "typicalTest": [
+        "Skin hydration analysis using specialized scanner",
+        "Elasticity and barrier function assessment",
+        "Photos from multiple angles",
+        "Discussion of skincare routine and concerns",
+        "Medical history including any inflammatory skin conditions"
+      ],
+      "clinicalFindings": [
+        "Dehydrated, dull, or stressed-looking skin",
+        "Fine lines and loss of elasticity",
+        "Redness, sensitivity, or rosacea",
+        "Post-procedure skin recovery (after lasers or peels)",
+        "Desire for natural skin quality improvement",
+        "Prevention of aging for younger patients"
+      ]
+    }
+  },
+  "description": "Highly purified polynucleotide injections regenerate collagen, calm inflammation, and restore bounce across the face and neck.",
+  "bookingInfo": {
+    "cancellationPolicy": "48 hours’ notice to reschedule",
+    "depositRequired": false,
+    "consultationFee": "£50 (redeemable)",
+    "duration": "30-minute consultation"
+  },
+  "title": "Polynucleotide Face Therapy",
+  "cta": {
+    "primaryButton": "Book PN facial",
+    "urgency": "Limited PN appointments weekly",
+    "subtitle": "Book your polynucleotide consultation today.",
+    "title": "Ready for DNA-Level Glow?",
+    "guarantee": "Consult fee credited toward treatment",
+    "secondaryButton": "Chat with a skin advisor"
+  },
+  "quickStats": {
+    "price": "Course from £750",
+    "duration": "40 minutes",
+    "downtime": "Pinpoint bumps 12-24 hrs",
+    "painLevel": "Low",
+    "resultsVisible": "10 days",
+    "resultsLast": "6-9 months",
+    "anesthesia": "Topical numbing",
+    "sessions": "2 sessions (3 weeks apart)"
+  },
+  "overview": {
+    "title": "What PN Does for the Face",
+    "image": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1200&q=80",
+    "content": "PN attracts water, signals fibroblasts, and moderates inflammation pathways. We place it across cheeks, temples, jawline, and neck to smooth fine lines, repair barrier damage, and enhance luminosity. It’s the ideal maintenance treatment between fillers or as a standalone glow plan.",
+    "highlights": [
+      "Improves elasticity + tone",
+      "Reduces redness and sensitivity",
+      "Safe for all skin tones",
+      "Pairs with PRP, lasers, or skin boosters"
+    ]
+  },
+  "hero": {
+    "headline": "Regenerate. Rehydrate. Radiate.",
+    "subheadline": "Polynucleotide injections reboot collagen and skin health from the inside out.",
+    "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=1920&q=80",
+    "badge": "Zero volumising • Pure repair"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Consultation fee (£50) credited toward treatment",
+    "includes": [
+      "Consultation & custom plan",
+      "Polynucleotide product",
+      "LED therapy",
+      "Aftercare + follow-up"
+    ],
+    "packages": [
+      {
+        "savings": "Save £50",
+        "name": "PN Duo Glow",
+        "includes": "Hydration kit",
+        "description": "2 PN sessions + LED",
+        "price": "£750"
+      },
+      {
+        "savings": "Save £180",
+        "name": "PN + PRP Fusion",
+        "includes": "Homecare bundle",
+        "description": "PN course + PRP booster",
+        "price": "£1,150"
+      }
+    ],
+    "singlePrice": { "currentPrice": "£400", "currency": "GBP" }
+  },
+  "faq": [
+    {
+      "answer": "No—PN hydrates and repairs skin at a cellular level but doesn't create volume or structure like filler. Many patients combine both: filler for volume, PN for skin quality.",
+      "question": "Is polynucleotide the same as filler?"
+    },
+    {
+      "question": "How often do I need polynucleotide treatment?",
+      "answer": "Most clients repeat every 6-9 months for maintenance. The initial course is 2 sessions spaced 3 weeks apart. Some patients book before events for an extra glow boost."
+    },
+    {
+      "question": "How much does polynucleotide treatment cost?",
+      "answer": "A single session is £400. The PN Duo Glow (2 sessions + LED) is £750 (save £50). The PN + PRP Fusion is £1,150 (save £180). Consultation fee (£50) is credited toward treatment."
+    },
+    {
+      "question": "Does polynucleotide hurt?",
+      "answer": "We apply topical numbing cream before treatment. Most patients describe mild pinpricks rather than pain. The injections are superficial and use ultra-fine needles."
+    },
+    {
+      "question": "When will I see results from polynucleotide?",
+      "answer": "Initial glow appears within 10 days as hydration improves. Full results develop over 4-6 weeks as collagen rebuilds and skin texture refines. Results continue improving between sessions."
+    },
+    {
+      "question": "Is polynucleotide safe for sensitive skin?",
+      "answer": "Yes, PN is excellent for sensitive and rosacea-prone skin. It calms inflammatory pathways and reduces redness. DNA fragments are biocompatible and well-tolerated by all skin types."
+    },
+    {
+      "question": "Can I combine polynucleotide with other treatments?",
+      "answer": "Absolutely. PN pairs beautifully with skin boosters, PRP, lasers, and fillers. Many patients use PN as prep before other treatments or as recovery support after. Dr Abbas will design your optimal combination."
+    },
+    {
+      "question": "How long do polynucleotide results last?",
+      "answer": "Results typically last 6-9 months. Longevity improves with good skincare, hydration, and sun protection. Regular maintenance sessions help sustain that lit-from-within glow."
+    }
+  ],
+  "id": "polynucleotide",
+  "shortTitle": "PN Face"
+}

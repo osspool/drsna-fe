@@ -26,6 +26,7 @@ import categories from "@/data/categories.json";
 import Image from "next/image";
 import { ModeToggle } from "../custom/ui/mode-toggle";
 import { MovingBorderButton } from "@/components/aceternity/moving-border";
+import { contactInfo } from "@/data/contact-info";
 
 export function MainNav() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,6 +40,20 @@ export function MainNav() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // ESC key to close mobile menu - optimized for performance
+  useEffect(() => {
+    if (!isMobileMenuOpen) return;
+
+    const handleEscKey = (event) => {
+      if (event.key === "Escape") {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("keydown", handleEscKey);
+    return () => document.removeEventListener("keydown", handleEscKey);
+  }, [isMobileMenuOpen]);
 
   return (
     <>
@@ -158,6 +173,21 @@ export function MainNav() {
                           </Link>
                         </NavigationMenuLink>
                       </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <Link
+                            href="/resources"
+                            className="block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-colors hover:bg-accent group"
+                          >
+                            <div className="text-sm font-medium text-foreground">
+                              Resources
+                            </div>
+                            <p className="line-clamp-2 text-xs leading-relaxed text-muted-foreground">
+                              Evidence-led guides for hair fall, intimacy, and longevity
+                            </p>
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -171,14 +201,14 @@ export function MainNav() {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Link
-                      href="tel:02071234567"
+                      href={`tel:${contactInfo.phone.primary.number}`}
                       className="text-white/80 hover:text-white text-[14px] transition-colors duration-200 flex items-center gap-1.5"
                     >
                       <Phone className="w-4 h-4" />
                     </Link>
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>020 7123 4567</p>
+                    <p>{contactInfo.phone.primary.display}</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>

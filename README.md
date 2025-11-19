@@ -174,3 +174,12 @@ curl https://pshots.co.uk/sitemap.xml
 # Test robots
 curl https://drsnaclinic.com/robots.txt
 curl https://pshots.co.uk/robots.txt
+
+
+
+but we need confident site map linking to our particular treatments e.g. pshot treatment , lip filter, joint pain, so that we can rank high when some one look for .. like how to look good or get boost in intimate life.. like a pro seo analyst reserach keywords and add those .. 
+
+and check @data/categories.json  
+and for top 8 treatments (pshot , shockwave, prp face lift  hair restoration, Joint Rejuvenation, Arthrosamid Treatment, Stem Cell Therapy
+
+add proper site link.. about us contact or just normal treament pages shouldn't be focus .. we need to target niche so that when user search with their problem we rank high... first plan than implement 

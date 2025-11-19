@@ -1,6 +1,20 @@
 import { getBlock, getBlockSpec } from "@/lib/blocks/registry";
 import { validateBlockProps } from "@/lib/blocks/types";
 
+const isPromiseLike = (value) => value && typeof value === 'object' && typeof value.then === 'function';
+
+async function resolveSectionData(value) {
+  if (!value) return value;
+  if (typeof value === 'function') {
+    const result = value();
+    return isPromiseLike(result) ? await result : result;
+  }
+  if (isPromiseLike(value)) {
+    return await value;
+  }
+  return value;
+}
+
 /**
  * Generic Section Renderer Component
  *
@@ -21,12 +35,11 @@ import { validateBlockProps } from "@/lib/blocks/types";
  * @param {Object} props.data - Page data object
  * @param {Function} props.shouldRender - Optional custom shouldRender function
  */
-export function SectionRenderer({ sections, data, shouldRender }) {
+export async function SectionRenderer({ sections, data, shouldRender }) {
   if (!sections || !data) return null;
 
-  return (
-    <>
-      {sections.map((section) => {
+  const renderedSections = await Promise.all(
+    sections.map(async (section) => {
         const spec = getBlockSpec(section.block);
 
         // Check if section should render
@@ -42,10 +55,11 @@ export function SectionRenderer({ sections, data, shouldRender }) {
           return null;
         }
 
-        // Resolve raw section data
-        const sectionData = section.dataKey
+        // Resolve raw section data (may be function or promise for lazy sections)
+        const rawSectionData = section.dataKey
           ? section.dataKey.split('.').reduce((obj, key) => obj?.[key], data)
           : data;
+        const sectionData = await resolveSectionData(rawSectionData);
 
         // Get props - prefer block spec normalization, fallback to existing mapper
         let props;
@@ -71,9 +85,10 @@ export function SectionRenderer({ sections, data, shouldRender }) {
 
         // Render component with key for React reconciliation
         return <Component key={section.id} {...props} />;
-      })}
-    </>
+      })
   );
+
+  return <>{renderedSections}</>;
 }
 
 /**
@@ -96,6 +111,9 @@ function renderCheckWithSpec(data, section, spec, customShouldRender) {
     const sectionData = section.dataKey
       ? section.dataKey.split('.').reduce((obj, key) => obj?.[key], data)
       : data;
+    if (typeof sectionData === 'function' || isPromiseLike(sectionData)) {
+      return true;
+    }
     return spec.shouldRender(data, sectionData, section);
   }
 
@@ -119,6 +137,9 @@ function shouldRenderSection(data, section) {
       .reduce((obj, key) => obj?.[key], data);
 
     // Treat empty arrays and objects as falsy
+    if (typeof value === 'function' || isPromiseLike(value)) {
+      return true;
+    }
     if (Array.isArray(value)) {
       return value.length > 0;
     }

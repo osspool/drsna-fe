@@ -79,6 +79,7 @@ export function MegaMenu({ item, isOpen, onClose }) {
 
       <div className="fixed top-16 inset-x-0 z-50 pointer-events-none">
         <div
+          data-mega-menu-content
           className="pointer-events-auto w-full overflow-hidden overscroll-contain"
           style={{ height: "calc(100vh - 4rem)" }}
         >

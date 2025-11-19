@@ -1,7 +1,22 @@
 export const drAbbasData = {
   title: "Dr Syed Nadeem Abbas",
   tagline: "Transforming Lives Through Excellence in Aesthetic Medicine",
-  description: "Meet London's most distinguished aesthetic medicine specialist, combining clinical precision with artistic vision to deliver natural, confidence-enhancing results.",
+  description: "Meet Dr Syed Nadeem Abbas (MSc, MRCGP, MRCSEd, MBBS), London's most distinguished aesthetic medicine specialist. 15+ years experience, 10,000+ happy patients, globally recognized excellence.",
+  
+  seo: {
+    metaTitle: "Dr Syed Nadeem Abbas | Award-Winning Aesthetic Medicine Specialist London",
+    metaDescription: "Meet Dr Syed Nadeem Abbas (MSc, MRCGP, MRCSEd, MBBS), London's most distinguished aesthetic medicine specialist. 15+ years experience, 10,000+ happy patients, globally recognized excellence.",
+    keywords: [
+      "Dr Syed Nadeem Abbas",
+      "aesthetic doctor London",
+      "Dr SNA",
+      "best aesthetic practitioner UK",
+      "facial rejuvenation specialist",
+      "intimate health expert London",
+      "award-winning cosmetic doctor",
+    ],
+    canonicalUrl: "/dr-syed-nadeem-abbas"
+  },
 
   hero: {
     videoUrl: "https://www.youtube.com/watch?v=nUqENQZHd80",

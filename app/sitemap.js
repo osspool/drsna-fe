@@ -3,6 +3,7 @@ import { getCategories } from '@/lib/categories';
 import { getAllTreatmentPaths } from '@/lib/treatments';
 import { getAllSubcategoryPaths } from '@/lib/subcategories';
 import { getDomainByHost } from '@/lib/domains';
+import { getAllResourcePaths } from '@/lib/resources';
 
 /**
  * Generate dynamic sitemap for all pages
@@ -27,20 +28,21 @@ export default async function sitemap() {
   let categoryPages = [];
   let subcategoryPages = [];
   let treatmentPages = [];
+  let resourcePages = [];
 
   if (domain.includeCategories) {
     try {
-      const categoriesData = await getCategories();
-      const categories = categoriesData?.categories || {};
-
-      categoryPages = Object.keys(categories).map((categoryId) => ({
-        url: `${baseUrl}/treatments/${categoryId}`,
+      const categoriesArray = await getCategories();
+      
+      categoryPages = categoriesArray.map((category) => ({
+        url: `${baseUrl}/treatments/${category.id}`,
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: 0.8,
       }));
     } catch (e) {
       // Categories may not be available
+      console.error('Error loading categories for sitemap:', e);
     }
   }
 
@@ -66,9 +68,27 @@ export default async function sitemap() {
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: 0.7,
+        // Include images for better SEO
+        ...(treatment.image && {
+          images: [treatment.image]
+        })
       }));
     } catch (e) {
       // Treatments may not be available
+    }
+  }
+
+  if (domain.includeResources) {
+    try {
+      const resources = await getAllResourcePaths();
+      resourcePages = resources.map((resource) => ({
+        url: `${baseUrl}/resources/${resource.slug}`,
+        lastModified: resource.updated ? new Date(resource.updated) : new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.6,
+      }));
+    } catch (e) {
+      // Resources optional
     }
   }
 
@@ -77,5 +97,6 @@ export default async function sitemap() {
     ...categoryPages,
     ...subcategoryPages,
     ...treatmentPages,
+    ...resourcePages,
   ];
 }

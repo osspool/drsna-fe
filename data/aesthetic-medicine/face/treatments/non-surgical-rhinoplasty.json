@@ -1,1 +1,221 @@
-{"faq":[{"question":"Is it safe?","answer":"Yes. We use cannulas, aspirate, and carry dissolving enzyme to keep treatment ultra-safe."},{"question":"Will it make my nose bigger?","answer":"Filler adds structure strategically, often making the nose appear smaller and straighter."}],"id":"non-surgical-rhinoplasty","pricing":{"packages":[{"includes":"Aftercare + review","price":"£450","description":"Bridge smoothing + tip lift","name":"Classic Liquid Rhino"},{"savings":"Save £100","name":"Profile Perfect","includes":"3D photography","description":"Rhinoplasty + chin/jawline balancing","price":"£650"}],"singlePrice":{"currentPrice":"£450","currency":"GBP"},"includes":["Consultation & mapping","Premium HA filler","Cannula technique","Review appointment"],"title":"Pricing","subtitle":"Consultation fee (£75) credited toward treatment"},"hero":{"badge":"Immediate results • Zero downtime","subheadline":"Doctor-only liquid rhinoplasty delivers precise, reversible results in minutes.","headline":"Elevate Your Profile Without Surgery","image":"https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=1920&q=80"},"shortTitle":"Liquid Rhinoplasty","bookingInfo":{"consultationFee":"£75 (redeemable)","duration":"30-minute consultation","cancellationPolicy":"48 hours’ notice to reschedule","depositRequired":false},"description":"Hyaluronic acid filler and precision mapping to smooth bumps, lift tips, and balance noses without surgery.","seo":{"canonicalUrl":"/treatments/aesthetic-medicine/face/non-surgical-rhinoplasty","metaDescription":"Refine your nose shape with doctor-led non-surgical rhinoplasty. Smooth bumps, lift tips, and balance your profile in 20 minutes.","h1":"Non-Surgical Rhinoplasty in London","keywords":["non surgical rhinoplasty london","liquid nose job","nose filler london","non surgical nose lift"],"metaTitle":"Non-Surgical Rhinoplasty London | Liquid Nose Job | Dr. SNA Clinic"},"candidacy":{"note":"We refer to ENT surgeons for structural breathing concerns.","suitable":["Dorsal hump or uneven bridge","Downturned nasal tip","Revision after surgery","Anyone seeking reversible refinement"],"notSuitable":["Need for functional correction (septoplasty)","Pregnancy/breastfeeding"],"title":"Who Is It For?"},"quickStats":{"sessions":"Single session + review","duration":"20 minutes","price":"From £450","painLevel":"Low","downtime":"Return to life instantly","anesthesia":"Topical numbing","resultsLast":"12-18 months","resultsVisible":"Immediately"},"overview":{"highlights":["Smooth dorsal humps","Lift or support nasal tip","Define bridge + improve symmetry","Reversible, adjustable, tailored"],"content":"We map the nasal bridge, tip, and radix before injecting micro threads of HA filler to camouflage bumps or lift angles. Cannula delivery protects blood vessels while ensuring perfect symmetry. Prefer a subtle tweak or a dramatic refinement? We plan with 3D photography so you preview from every angle.","title":"How We Refine Your Nose","image":"https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1200&q=80"},"cta":{"title":"Ready for a Dream Profile?","subtitle":"Book your liquid rhinoplasty consultation today.","urgency":"Limited weekly slots for doctor-only care","primaryButton":"Book nose consult","secondaryButton":"Talk to a patient advisor","guarantee":"Consult fee credited toward treatment"},"title":"Non-Surgical Rhinoplasty","benefits":{"features":[{"description":"Senior doctor injectors with advanced vascular knowledge.","title":"Medical precision","icon":"stethoscope"},{"title":"Ultra-safe technique","icon":"shield","description":"Cannula + aspiration to protect delicate vessels."},{"title":"Photo-guided planning","icon":"camera","description":"Preview angles before we inject."}],"title":"Clinic Advantages","layout":"grid-3"},"categoryId":"aesthetic-medicine","tagline":"Profile Perfection in 20 Minutes","subcategoryId":"face","longDescription":"Liquid rhinoplasty transforms your profile with zero downtime. Using micro-cannulas and premium HA fillers, Dr. Abbas can camouflage dorsal humps, refine tips, and straighten bridges in just one visit. The technique is painless, reversible, and tailored to your goals—perfect for anyone seeking surgical-level definition minus the recovery.","relatedTreatments":[{"title":"Jawline Sculpt","reason":"Balances proportions.","description":"Complete your profile transformation.","id":"jawline-reduction"},{"id":"tear-trough-treatment","reason":"Harmonious mid-face.","description":"Brighten eyes to match your polished profile.","title":"Tear Trough Filler"}]}
+{
+  "faq": [
+    {
+      "question": "Is it safe?",
+      "answer": "Yes. We use cannula technique with aspiration and carry hyaluronidase (dissolving enzyme) on-site. Our doctors have advanced vascular knowledge specific to nasal anatomy. It's one of our safest procedures when performed correctly."
+    },
+    {
+      "question": "Will it make my nose bigger?",
+      "answer": "No—filler adds structure strategically, which often makes the nose appear smaller and straighter. By smoothing bumps and lifting the tip, the overall profile looks more refined and proportionate."
+    },
+    {
+      "question": "How long does liquid rhinoplasty last?",
+      "answer": "Results typically last 12-18 months—longer than most facial fillers because the nose moves less. Some patients find results lasting up to 2 years. Touch-ups maintain your refined profile."
+    },
+    {
+      "question": "Does non-surgical rhinoplasty hurt?",
+      "answer": "We thoroughly numb the nose with topical and injectable local anaesthetic for complete comfort. Most patients feel only mild pressure during injection. The procedure is very tolerable."
+    },
+    {
+      "question": "How much does liquid rhinoplasty cost in London?",
+      "answer": "Our Classic Liquid Rhino (bridge smoothing + tip lift) is £450. The Profile Perfect package (rhinoplasty + chin/jawline balancing) is £650 (save £100). Consultation fee (£75) is credited toward treatment."
+    },
+    {
+      "question": "Can nose filler be dissolved if I don't like it?",
+      "answer": "Yes, this is one of the biggest advantages of liquid rhinoplasty—it's completely reversible. Hyaluronidase enzyme dissolves HA filler within 24-48 hours if you want to return to your original nose or make changes."
+    },
+    {
+      "question": "What can non-surgical rhinoplasty fix?",
+      "answer": "Liquid rhinoplasty can smooth dorsal humps, lift droopy tips, straighten bridges, improve symmetry, and refine post-surgical irregularities. It cannot reduce nose size or correct breathing issues—we refer to ENT surgeons for functional concerns."
+    },
+    {
+      "question": "How much filler is used for liquid rhinoplasty?",
+      "answer": "Most nose refinements use 0.5-1ml of filler. We use conservative amounts for natural results—you can always add more at your review. Less is more with nasal filler."
+    }
+  ],
+  "id": "non-surgical-rhinoplasty",
+  "pricing": {
+    "packages": [
+      {
+        "includes": "Aftercare + review",
+        "price": "£450",
+        "description": "Bridge smoothing + tip lift",
+        "name": "Classic Liquid Rhino"
+      },
+      {
+        "savings": "Save £100",
+        "name": "Profile Perfect",
+        "includes": "3D photography",
+        "description": "Rhinoplasty + chin/jawline balancing",
+        "price": "£650"
+      }
+    ],
+    "singlePrice": { "currentPrice": "£450", "currency": "GBP" },
+    "includes": [
+      "Consultation & mapping",
+      "Premium HA filler",
+      "Cannula technique",
+      "Review appointment"
+    ],
+    "title": "Pricing",
+    "subtitle": "Consultation fee (£75) credited toward treatment"
+  },
+  "hero": {
+    "badge": "Immediate results • Zero downtime",
+    "subheadline": "Doctor-only liquid rhinoplasty delivers precise, reversible results in minutes.",
+    "headline": "Elevate Your Profile Without Surgery",
+    "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=1920&q=80"
+  },
+  "shortTitle": "Liquid Rhinoplasty",
+  "bookingInfo": {
+    "consultationFee": "£75 (redeemable)",
+    "duration": "30-minute consultation",
+    "cancellationPolicy": "48 hours’ notice to reschedule",
+    "depositRequired": false
+  },
+  "description": "Hyaluronic acid filler and precision mapping to smooth bumps, lift tips, and balance noses without surgery.",
+  "seo": {
+    "canonicalUrl": "/treatments/aesthetic-medicine/face/non-surgical-rhinoplasty",
+    "metaDescription": "Refine your nose shape with doctor-led non-surgical rhinoplasty. Smooth bumps, lift tips, and balance your profile in 20 minutes.",
+    "h1": "Non-Surgical Rhinoplasty in London",
+    "keywords": [
+      "non surgical rhinoplasty london",
+      "liquid nose job",
+      "nose filler london",
+      "non surgical nose lift"
+    ],
+    "metaTitle": "Non-Surgical Rhinoplasty London | Liquid Nose Job | Dr. SNA Clinic",
+    "schema": {
+      "@type": "MedicalProcedure",
+      "procedureType": "NoninvasiveProcedure",
+      "bodyLocation": [
+        "Nasal bridge (dorsum)",
+        "Nasal tip",
+        "Radix (root of nose)",
+        "Columella",
+        "Alar base"
+      ],
+      "howPerformed": "After numbing your nose thoroughly, a blunt-tipped micro-cannula is gently inserted through a tiny entry point. Smooth hyaluronic acid gel is carefully threaded along the nasal bridge to camouflage bumps, or placed at the tip to create lift. We shape and sculpt as we go, checking your profile from every angle. The cannula glides smoothly without piercing blood vessels. You can see results instantly in the mirror, and we adjust until you're thrilled. The whole process takes about 20 minutes",
+      "preparation": "Arrive with clean skin—no makeup. Stop blood-thinning supplements for one week. Avoid alcohol 48 hours before. Bring photos of noses you admire from every angle (front, profile, three-quarter). Have realistic expectations—filler can camouflage and refine but can't reduce size. Come ready to see your profile transformed",
+      "followup": "Apply ice packs for 20 minutes every few hours on day one. Avoid touching, pressing, or sleeping face-down for 48 hours. No glasses resting on bridge for one week (use tape to suspend them or wear contacts). Skip intense workouts for 24 hours. Avoid saunas and facials for one week. Swelling is minimal. Attend your 2-week review to assess and refine if needed",
+      "outcome": "Your profile immediately looks straighter and more balanced. Dorsal humps blend into a smooth line. Droopy tips lift elegantly. Your nose appears more refined from every angle. Friends notice you look better but can't pinpoint why. Best part? It's completely reversible if you ever want to change. Results last 12-18 months—longer than most facial fillers because the nose moves less",
+      "medicationRequired": "Topical and injectable local anesthetic for complete comfort",
+      "medicalSpecialty": "Aesthetic Medicine",
+      "relevantSpecialty": "Facial Plastic Surgery",
+      "isProprietary": false,
+      "treatmentFrequency": "Single session with optional 2-week refinement. Repeat every 12-18 months to maintain results, or let it dissolve completely and decide again",
+      "adverseOutcome": "Mild swelling or redness for 24-48 hours. Small bruise at entry point possible. Temporary numbness at injection site. Very rarely, visible filler lines if too much product used (we use conservative amounts)",
+      "seriousAdverseOutcome": {
+        "name": "Vascular occlusion (blocked blood vessel in nose)",
+        "probability": "Extremely rare (less than 0.01%) when using cannula technique with aspiration and experienced injectors. We have emergency protocols and hyaluronidase on-site"
+      },
+      "contraindication": [
+        "Pregnancy or breastfeeding",
+        "Active nose or sinus infection",
+        "History of nasal surgery within 6 months",
+        "Severe nasal deviation requiring functional correction",
+        "Unrealistic expectations about size reduction",
+        "Previous poor reaction to HA filler"
+      ],
+      "typicalTest": [
+        "3D facial photography from all angles",
+        "Nasal anatomy and proportion analysis",
+        "Skin thickness assessment",
+        "Discussion of functional breathing (we don't compromise this)",
+        "Review of previous nose surgeries or trauma",
+        "Computer imaging to preview possible results"
+      ],
+      "clinicalFindings": [
+        "Dorsal hump (bump on bridge)",
+        "Drooping or under-projected nasal tip",
+        "Asymmetrical bridge or tip",
+        "Post-surgical irregularities",
+        "Desire for balanced profile without surgery",
+        "Good skin quality and realistic goals"
+      ]
+    }
+  },
+  "candidacy": {
+    "note": "We refer to ENT surgeons for structural breathing concerns.",
+    "suitable": [
+      "Dorsal hump or uneven bridge",
+      "Downturned nasal tip",
+      "Revision after surgery",
+      "Anyone seeking reversible refinement"
+    ],
+    "notSuitable": [
+      "Need for functional correction (septoplasty)",
+      "Pregnancy/breastfeeding"
+    ],
+    "title": "Who Is It For?"
+  },
+  "quickStats": {
+    "sessions": "Single session + review",
+    "duration": "20 minutes",
+    "price": "From £450",
+    "painLevel": "Low",
+    "downtime": "Return to life instantly",
+    "anesthesia": "Topical numbing",
+    "resultsLast": "12-18 months",
+    "resultsVisible": "Immediately"
+  },
+  "overview": {
+    "highlights": [
+      "Smooth dorsal humps",
+      "Lift or support nasal tip",
+      "Define bridge + improve symmetry",
+      "Reversible, adjustable, tailored"
+    ],
+    "content": "We map the nasal bridge, tip, and radix before injecting micro threads of HA filler to camouflage bumps or lift angles. Cannula delivery protects blood vessels while ensuring perfect symmetry. Prefer a subtle tweak or a dramatic refinement? We plan with 3D photography so you preview from every angle.",
+    "title": "How We Refine Your Nose",
+    "image": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1200&q=80"
+  },
+  "cta": {
+    "title": "Ready for a Dream Profile?",
+    "subtitle": "Book your liquid rhinoplasty consultation today.",
+    "urgency": "Limited weekly slots for doctor-only care",
+    "primaryButton": "Book nose consult",
+    "secondaryButton": "Talk to a patient advisor",
+    "guarantee": "Consult fee credited toward treatment"
+  },
+  "title": "Non-Surgical Rhinoplasty",
+  "benefits": {
+    "features": [
+      {
+        "description": "Senior doctor injectors with advanced vascular knowledge.",
+        "title": "Medical precision",
+        "icon": "stethoscope"
+      },
+      {
+        "title": "Ultra-safe technique",
+        "icon": "shield",
+        "description": "Cannula + aspiration to protect delicate vessels."
+      },
+      {
+        "title": "Photo-guided planning",
+        "icon": "camera",
+        "description": "Preview angles before we inject."
+      }
+    ],
+    "title": "Clinic Advantages",
+    "layout": "grid-3"
+  },
+  "categoryId": "aesthetic-medicine",
+  "tagline": "Profile Perfection in 20 Minutes",
+  "subcategoryId": "face",
+  "longDescription": "Liquid rhinoplasty transforms your profile with zero downtime. Using micro-cannulas and premium HA fillers, Dr. Abbas can camouflage dorsal humps, refine tips, and straighten bridges in just one visit. The technique is painless, reversible, and tailored to your goals—perfect for anyone seeking surgical-level definition minus the recovery.",
+  "relatedTreatments": [
+    {
+      "title": "Jawline Sculpt",
+      "reason": "Balances proportions.",
+      "description": "Complete your profile transformation.",
+      "id": "jawline-reduction"
+    },
+    {
+      "id": "tear-trough-treatment",
+      "reason": "Harmonious mid-face.",
+      "description": "Brighten eyes to match your polished profile.",
+      "title": "Tear Trough Filler"
+    }
+  ]
+}

@@ -1,16 +1,31 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronDown, Phone, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/layout/Container";
 import { cn } from "@/lib/utils";
 import categories from "@/data/categories.json";
+import { contactInfo } from "@/data/contact-info";
 
 export function MobileNav({ isOpen, onClose }) {
   const [expandedCategory, setExpandedCategory] = useState(null);
   const [expandedSubcategory, setExpandedSubcategory] = useState(null);
+
+  // ESC key to close mobile menu - optimized for performance
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleEscKey = (event) => {
+      if (event.key === "Escape") {
+        onClose();
+      }
+    };
+
+    document.addEventListener("keydown", handleEscKey);
+    return () => document.removeEventListener("keydown", handleEscKey);
+  }, [isOpen, onClose]);
 
   const formatName = (slug) => {
     return slug
@@ -151,12 +166,12 @@ export function MobileNav({ isOpen, onClose }) {
                 {/* CTA Buttons */}
                 <div className="space-y-2 pt-6 border-t border-white/10">
                   <Link
-                    href="tel:02071234567"
+                    href={`tel:${contactInfo.phone.primary.number}`}
                     onClick={onClose}
                     className="w-full flex items-center justify-center gap-2 py-2.5 text-white border border-white/20 rounded-lg hover:bg-white/10 transition-colors"
                   >
                     <Phone className="w-4 h-4" />
-                    020 7123 4567
+                    {contactInfo.phone.primary.display}
                   </Link>
                   <Link
                     href="/booking"

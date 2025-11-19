@@ -1,1 +1,242 @@
-{"bookingInfo":{"depositRequired":false,"cancellationPolicy":"48 hours’ notice to reschedule","duration":"30-minute consultation","consultationFee":"£50 (redeemable)"},"description":"Ultrafine hyaluronic acid and vitamin injections that drench skin in hydration, refine pores, and revive glow with zero downtime.","seo":{"metaTitle":"Skin Booster Injections London | Profhilo & Redensity | Dr. SNA Clinic","canonicalUrl":"/treatments/aesthetic-medicine/face/skin-boosters","metaDescription":"Hydrate and brighten your skin with doctor-led skin booster injections. Profhilo, Redensity I, and Jalupro tailored for face, neck, and hands.","h1":"Skin Booster Injections in London","keywords":["skin booster london","profhilo london","injectable glow treatment","hyaluronic acid skin injections"]},"candidacy":{"note":"We adapt ingredients for sensitive or acne-prone skin.","notSuitable":["Active infection","Pregnancy/breastfeeding"],"suitable":["Dull, dehydrated, or crepey skin","Neck/décolleté lines","Pre-event skin prep","All skin tones"],"title":"Best For"},"quickStats":{"sessions":"2 sessions (4 weeks apart)","anesthesia":"Topical numbing","resultsLast":"6 months","resultsVisible":"7-10 days","duration":"30 minutes","price":"Course from £450","painLevel":"Low","downtime":"Pinprick bumps 12 hrs"},"overview":{"highlights":["Profhilo for bio-remodelling + lift","Redensity I for fine lines and pigment","Jalupro for vitamin-rich glow","Custom plans for face, neck, chest, hands"],"content":"Skin boosters sit between skincare and filler. Using micro-droplets of HA and vitamins we hydrate the dermis from within, improve elasticity, and smooth crepey areas. Because there’s no volumising effect, you only see healthy, radiant skin.","image":"https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1200&q=80","title":"What Skin Boosters Do"},"cta":{"guarantee":"Consult fee credited toward treatment","secondaryButton":"Chat with a skin expert","primaryButton":"Book skin booster","urgency":"Limited daily appointments for doctor-only delivery","subtitle":"Book your skin booster consultation.","title":"Ready for Glass-Skin Radiance?"},"title":"Skin Booster Injections","id":"skin-boosters","faq":[{"question":"Do boosters replace filler?","answer":"No—they hydrate and smooth but don’t add structure. Combine with filler for volume goals."},{"question":"Will I bruise?","answer":"Micro punctures close fast; mild pinpoint marks vanish overnight."}],"hero":{"badge":"Zero downtime","headline":"Glow That Survives Late Nights","subheadline":"Doctor-picked skin boosters flood your complexion with lasting hydration and light reflection.","image":"https://images.unsplash.com/photo-1542838686-73e5375969b1?w=1920&q=80"},"pricing":{"subtitle":"Consultation fee (£50) credited toward treatment","title":"Pricing","singlePrice":{"currentPrice":"£250","currency":"GBP"},"packages":[{"description":"2 sessions + LED add-on","includes":"Hydration ampoules","name":"Profhilo Duo","price":"£500","savings":"Save £80"},{"savings":"Save £140","price":"£750","includes":"Skin prep kit + review facial","description":"Profhilo + Redensity I combo","name":"Ultimate Glow Plan"}],"includes":["Doctor consultation","Premium skin booster product","LED therapy (where needed)","Aftercare & follow-up"]},"shortTitle":"Skin Boosters","categoryId":"aesthetic-medicine","tagline":"Injectable Radiance for Dewy, Camera-Ready Skin","subcategoryId":"face","longDescription":"When skincare and facials plateau, skin boosters pick up the slack. We use premium HA blends (Profhilo, Redensity I, Jalupro) and tailor them to each zone—face, neck, décolleté, even hands. The result? Glassy luminosity, softer fine lines, and a supple complexion that makeup artists adore.","relatedTreatments":[{"title":"Polynucleotide Glow","id":"polynucleotide","reason":"Hydration + regeneration","description":"Layer PN for deeper repair."},{"title":"PRP Facelift","reason":"Ultimate glow duo","id":"prp-facelift","description":"Boost collagen alongside hydration."}],"benefits":{"layout":"grid-3","features":[{"description":"Every session performed by medical injectors.","icon":"stethoscope","title":"Doctor-only injections"},{"description":"We mix boosters or add PN/PRP to suit your skin.","icon":"beaker","title":"Tailored cocktails"},{"title":"Rapid results","icon":"sparkles","description":"Leave glowing—perfect before events."}],"title":"Why Patients Book with Us"},"process":{"steps":[{"icon":"clipboard-check","number":1,"title":"Consult + Skin MOT","description":"Assess hydration, tone, and texture."},{"description":"Micro injections across targeted zones.","number":2,"icon":"syringe","title":"Booster Session"},{"description":"LED therapy + skincare plan.","icon":"sun","number":3,"title":"Glow Lock-In"},{"title":"Review","number":4,"icon":"repeat","description":"Second session at week 4, then maintenance every 6 months."}],"title":"Treatment Journey"}}
+{
+  "bookingInfo": {
+    "depositRequired": false,
+    "cancellationPolicy": "48 hours’ notice to reschedule",
+    "duration": "30-minute consultation",
+    "consultationFee": "£50 (redeemable)"
+  },
+  "description": "Ultrafine hyaluronic acid and vitamin injections that drench skin in hydration, refine pores, and revive glow with zero downtime.",
+  "seo": {
+    "metaTitle": "Skin Booster Injections London | Profhilo & Redensity | Dr. SNA Clinic",
+    "canonicalUrl": "/treatments/aesthetic-medicine/face/skin-boosters",
+    "metaDescription": "Hydrate and brighten your skin with doctor-led skin booster injections. Profhilo, Redensity I, and Jalupro tailored for face, neck, and hands.",
+    "h1": "Skin Booster Injections in London",
+    "keywords": [
+      "skin booster london",
+      "profhilo london",
+      "injectable glow treatment",
+      "hyaluronic acid skin injections"
+    ],
+    "schema": {
+      "@type": "MedicalProcedure",
+      "procedureType": "NoninvasiveProcedure",
+      "bodyLocation": [
+        "Face",
+        "Neck",
+        "Décolletage",
+        "Backs of hands",
+        "Under-eye area"
+      ],
+      "howPerformed": "After cleansing your skin and applying numbing cream, ultra-fine needles deliver micro-droplets of hyaluronic acid (and sometimes vitamins or amino acids) just below the skin's surface. We use a technique called bio-aesthetic points (BAP)—specific injection sites that allow the HA to spread evenly throughout tissue. Each droplet hydrates deeply, attracts water molecules, and stimulates collagen production. The process takes about 20 minutes. You'll see tiny bumps immediately that smooth out within hours",
+      "preparation": "Come with clean skin—no makeup. Stay well-hydrated for 2-3 days before (drink at least 2 liters of water daily). Avoid alcohol 24 hours before. Stop blood-thinning supplements for one week. If you have an event, schedule treatment at least 10 days prior to allow full settling. Come ready to glow",
+      "followup": "Tiny raised bumps at injection points are normal—they disappear within 12-24 hours. Don't massage or press on treated areas for 24 hours. Avoid makeup, intense exercise, saunas, and sun exposure for 24 hours. Stay super hydrated to maximize HA hydration effect. Your second session 4 weeks later completes the course. Skin continues improving for 4-6 weeks as collagen builds",
+      "outcome": "Skin looks dewy, plump, and radiant—the 'glass skin' glow everyone wants. Fine lines soften. Pores appear smaller. Crepey texture smooths out. Under-eyes look less hollow. Your complexion reflects light beautifully. Makeup glides on flawlessly. The hydration lasts 6 months, then you can repeat. It's prevention and treatment in one",
+      "medicationRequired": "Topical numbing cream for comfort",
+      "medicalSpecialty": "Aesthetic Medicine",
+      "relevantSpecialty": "Dermatology",
+      "isProprietary": false,
+      "treatmentFrequency": "Two sessions spaced 4 weeks apart for initial course, then maintenance sessions every 6-9 months to preserve that hydrated glow",
+      "adverseOutcome": "Small injection bumps for 12-24 hours (normal and expected). Possible pinpoint bruising. Mild swelling in delicate areas like under-eyes. Very rarely, tiny lumps that dissolve within days or can be massaged out",
+      "contraindication": [
+        "Pregnancy or breastfeeding",
+        "Active skin infection, rash, or cold sores",
+        "Severe allergies to HA (extremely rare)",
+        "Keloid scarring tendency",
+        "Autoimmune skin conditions in active flare"
+      ],
+      "typicalTest": [
+        "Visual skin quality assessment",
+        "Hydration and elasticity evaluation using skin scanner",
+        "Photos from multiple angles",
+        "Discussion of skincare routine and goals",
+        "Medical history review"
+      ],
+      "clinicalFindings": [
+        "Dehydrated, dull, or tired-looking skin",
+        "Fine lines and crepey texture",
+        "Loss of skin elasticity and firmness",
+        "Uneven skin tone",
+        "Pre-event skin prep for photo-ready glow",
+        "Desire for natural enhancement without volume change"
+      ]
+    }
+  },
+  "candidacy": {
+    "note": "We adapt ingredients for sensitive or acne-prone skin.",
+    "notSuitable": ["Active infection", "Pregnancy/breastfeeding"],
+    "suitable": [
+      "Dull, dehydrated, or crepey skin",
+      "Neck/décolleté lines",
+      "Pre-event skin prep",
+      "All skin tones"
+    ],
+    "title": "Best For"
+  },
+  "quickStats": {
+    "sessions": "2 sessions (4 weeks apart)",
+    "anesthesia": "Topical numbing",
+    "resultsLast": "6 months",
+    "resultsVisible": "7-10 days",
+    "duration": "30 minutes",
+    "price": "Course from £450",
+    "painLevel": "Low",
+    "downtime": "Pinprick bumps 12 hrs"
+  },
+  "overview": {
+    "highlights": [
+      "Profhilo for bio-remodelling + lift",
+      "Redensity I for fine lines and pigment",
+      "Jalupro for vitamin-rich glow",
+      "Custom plans for face, neck, chest, hands"
+    ],
+    "content": "Skin boosters sit between skincare and filler. Using micro-droplets of HA and vitamins we hydrate the dermis from within, improve elasticity, and smooth crepey areas. Because there’s no volumising effect, you only see healthy, radiant skin.",
+    "image": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1200&q=80",
+    "title": "What Skin Boosters Do"
+  },
+  "cta": {
+    "guarantee": "Consult fee credited toward treatment",
+    "secondaryButton": "Chat with a skin expert",
+    "primaryButton": "Book skin booster",
+    "urgency": "Limited daily appointments for doctor-only delivery",
+    "subtitle": "Book your skin booster consultation.",
+    "title": "Ready for Glass-Skin Radiance?"
+  },
+  "title": "Skin Booster Injections",
+  "id": "skin-boosters",
+  "faq": [
+    {
+      "question": "Do skin boosters replace filler?",
+      "answer": "No—they hydrate and smooth skin but don't add structure or volume. Many patients combine skin boosters with filler for both radiance and contouring."
+    },
+    {
+      "question": "Will I bruise from skin boosters?",
+      "answer": "Micro punctures close fast; mild pinpoint marks vanish overnight. You may have tiny bumps for 12-24 hours that massage away. Major bruising is rare."
+    },
+    {
+      "question": "How long do skin booster results last?",
+      "answer": "Results typically last 6-9 months. We recommend maintenance sessions every 6 months to keep that hydrated glow. Longevity improves with good skincare and hydration."
+    },
+    {
+      "question": "What's the difference between Profhilo and other skin boosters?",
+      "answer": "Profhilo uses pure hyaluronic acid that spreads under skin for bio-remodelling and lift. Redensity I adds vitamins for fine lines. Jalupro includes amino acids for rejuvenation. Dr Abbas recommends based on your specific concerns."
+    },
+    {
+      "question": "How much do skin boosters cost in London?",
+      "answer": "Single sessions start from £250. Our Profhilo Duo course (2 sessions + LED) is £500, and the Ultimate Glow Plan (Profhilo + Redensity I combo) is £750. Consultation fee (£50) is credited toward treatment."
+    },
+    {
+      "question": "Do skin booster injections hurt?",
+      "answer": "We use topical numbing cream, so most patients feel only mild pinpricks. The BAP technique uses just 5-10 injection points per area, making it quick and tolerable."
+    },
+    {
+      "question": "How many skin booster sessions do I need?",
+      "answer": "Most protocols require 2 sessions spaced 4 weeks apart for initial results. After that, maintenance every 6 months preserves the glow. Some patients add quarterly boosters before events."
+    },
+    {
+      "question": "Can I have skin boosters before an event?",
+      "answer": "Yes, but allow at least 10 days before your event. Tiny bumps resolve within 24 hours, but full settling and optimal glow take 7-10 days. Many patients book pre-wedding or holiday courses."
+    }
+  ],
+  "hero": {
+    "badge": "Zero downtime",
+    "headline": "Glow That Survives Late Nights",
+    "subheadline": "Doctor-picked skin boosters flood your complexion with lasting hydration and light reflection.",
+    "image": "https://images.unsplash.com/photo-1542838686-73e5375969b1?w=1920&q=80"
+  },
+  "pricing": {
+    "subtitle": "Consultation fee (£50) credited toward treatment",
+    "title": "Pricing",
+    "singlePrice": { "currentPrice": "£250", "currency": "GBP" },
+    "packages": [
+      {
+        "description": "2 sessions + LED add-on",
+        "includes": "Hydration ampoules",
+        "name": "Profhilo Duo",
+        "price": "£500",
+        "savings": "Save £80"
+      },
+      {
+        "savings": "Save £140",
+        "price": "£750",
+        "includes": "Skin prep kit + review facial",
+        "description": "Profhilo + Redensity I combo",
+        "name": "Ultimate Glow Plan"
+      }
+    ],
+    "includes": [
+      "Doctor consultation",
+      "Premium skin booster product",
+      "LED therapy (where needed)",
+      "Aftercare & follow-up"
+    ]
+  },
+  "shortTitle": "Skin Boosters",
+  "categoryId": "aesthetic-medicine",
+  "tagline": "Injectable Radiance for Dewy, Camera-Ready Skin",
+  "subcategoryId": "face",
+  "longDescription": "When skincare and facials plateau, skin boosters pick up the slack. We use premium HA blends (Profhilo, Redensity I, Jalupro) and tailor them to each zone—face, neck, décolleté, even hands. The result? Glassy luminosity, softer fine lines, and a supple complexion that makeup artists adore.",
+  "relatedTreatments": [
+    {
+      "title": "Polynucleotide Glow",
+      "id": "polynucleotide",
+      "reason": "Hydration + regeneration",
+      "description": "Layer PN for deeper repair."
+    },
+    {
+      "title": "PRP Facelift",
+      "reason": "Ultimate glow duo",
+      "id": "prp-facelift",
+      "description": "Boost collagen alongside hydration."
+    }
+  ],
+  "benefits": {
+    "layout": "grid-3",
+    "features": [
+      {
+        "description": "Every session performed by medical injectors.",
+        "icon": "stethoscope",
+        "title": "Doctor-only injections"
+      },
+      {
+        "description": "We mix boosters or add PN/PRP to suit your skin.",
+        "icon": "beaker",
+        "title": "Tailored cocktails"
+      },
+      {
+        "title": "Rapid results",
+        "icon": "sparkles",
+        "description": "Leave glowing—perfect before events."
+      }
+    ],
+    "title": "Why Patients Book with Us"
+  },
+  "process": {
+    "steps": [
+      {
+        "icon": "clipboard-check",
+        "number": 1,
+        "title": "Consult + Skin MOT",
+        "description": "Assess hydration, tone, and texture."
+      },
+      {
+        "description": "Micro injections across targeted zones.",
+        "number": 2,
+        "icon": "syringe",
+        "title": "Booster Session"
+      },
+      {
+        "description": "LED therapy + skincare plan.",
+        "icon": "sun",
+        "number": 3,
+        "title": "Glow Lock-In"
+      },
+      {
+        "title": "Review",
+        "number": 4,
+        "icon": "repeat",
+        "description": "Second session at week 4, then maintenance every 6 months."
+      }
+    ],
+    "title": "Treatment Journey"
+  }
+}

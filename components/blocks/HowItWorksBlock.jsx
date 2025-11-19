@@ -45,19 +45,19 @@ export function HowItWorksBlock({ data }) {
   // Dark Glass Variant with Spotlight
   if (variant === "dark-glass") {
     return (
-      <Section background="muted-dark" padding="xl" className="relative overflow-hidden">
+      <Section background="muted-dark" padding="default" className="relative overflow-hidden">
         <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="hsl(var(--primary) / 0.3)" />
 
         <Container>
           {/* Header */}
-          <div className="max-w-3xl mx-auto relative z-10">
+          <div className="max-w-3xl mx-auto relative z-10 mb-10">
             <SectionHeader
               title={title}
               subtitle={subtitle}
               subtitleClassName="font-medium"
             >
               {content && (
-                <p className="text-base md:text-lg text-muted-foreground leading-relaxed mt-6">
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed mt-4">
                   {content}
                 </p>
               )}
@@ -66,7 +66,7 @@ export function HowItWorksBlock({ data }) {
 
           {/* Benefits Grid with Spotlight Cards */}
           {benefits && benefits.length > 0 && (
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 relative z-10">
+            <div className={`grid md:grid-cols-2 lg:grid-cols-${Math.min(benefits.length, 4)} gap-5 relative z-10 ${growthFactors?.length > 0 ? 'mb-10' : ''}`}>
               {benefits.map((benefit, index) => {
                 const IconComponent = iconMap[benefit.icon] || Activity;
 
@@ -144,26 +144,28 @@ export function HowItWorksBlock({ data }) {
   }
 
   return (
-    <Section background="muted-dark">
+    <Section background="muted-dark" padding="default">
       <Container>
         {/* Header */}
-        <SectionHeader
-          title={title}
-          titleClassName="text-foreground"
-          subtitle={subtitle}
-          subtitleClassName="text-primary font-medium"
-          maxWidth={4}
-        >
-          {content && (
-            <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto mt-6">
-              {content}
-            </p>
-          )}
-        </SectionHeader>
+        <div className="mb-10">
+          <SectionHeader
+            title={title}
+            titleClassName="text-foreground"
+            subtitle={subtitle}
+            subtitleClassName="text-primary font-medium"
+            maxWidth={4}
+          >
+            {content && (
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto mt-4">
+                {content}
+              </p>
+            )}
+          </SectionHeader>
+        </div>
 
         {/* Benefits Grid */}
         {benefits && benefits.length > 0 && (
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className={`grid md:grid-cols-2 lg:grid-cols-${Math.min(benefits.length, 4)} gap-5 ${growthFactors?.length > 0 ? 'mb-10' : ''}`}>
             {benefits.map((benefit, index) => {
               const IconComponent = iconMap[benefit.icon] || Activity;
 

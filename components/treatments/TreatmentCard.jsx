@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import { SmartImage } from "@/components/common/SmartImage";
 import { ArrowRight, Clock, Calendar, TrendingUp, Star } from "lucide-react";
 import { CometCard } from "@/components/aceternity/comet-card";
 import { FadeInUp } from "@/components/common/AnimatedWrapper";
@@ -31,9 +31,11 @@ export function TreatmentCard({ treatment, categoryId, subcategoryId, index = 0 
             {/* Image Section */}
             {treatment.image && (
               <div className="relative h-56 overflow-hidden">
-                <Image
+                <SmartImage
                   src={treatment.image}
                   alt={treatment.title}
+                  title={treatment.title}
+                  description={treatment.shortDescription}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"

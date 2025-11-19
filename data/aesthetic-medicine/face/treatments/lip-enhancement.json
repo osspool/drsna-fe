@@ -42,12 +42,36 @@
   "id": "lip-enhancement",
   "faq": [
     {
-      "answer": "No. We layer filler strategically to enhance your natural anatomy, never overpower it.",
+      "answer": "No. We layer filler strategically to enhance your natural anatomy, never overpower it. Dr Abbas follows a 'less is more' philosophy—we can always add more at your review.",
       "question": "Will my lips look fake?"
     },
     {
       "question": "How long does swelling last?",
-      "answer": "Most swelling subsides within 48 hours; full settling occurs by day seven."
+      "answer": "Most swelling subsides within 48 hours; full settling occurs by day seven. Ice packs and sleeping elevated help reduce swelling faster."
+    },
+    {
+      "question": "How long do lip fillers last?",
+      "answer": "Lip fillers typically last 9-12 months depending on metabolism, product choice, and lifestyle. Some patients find results last longer with repeated treatments as filler builds a foundation."
+    },
+    {
+      "question": "Do lip fillers hurt?",
+      "answer": "We use topical numbing cream and can add a dental block for sensitive patients. Most describe mild pressure rather than pain. The filler also contains lidocaine for added comfort during injection."
+    },
+    {
+      "question": "How much do lip fillers cost in London?",
+      "answer": "Our lip enhancement starts from £295 for 0.7ml (subtle refresh) up to £395 for 1ml with border definition. Consultation fee (£50) is credited toward treatment."
+    },
+    {
+      "question": "Can lip filler be dissolved if I don't like it?",
+      "answer": "Yes, hyaluronic acid fillers can be dissolved with hyaluronidase enzyme. Results are visible within 24-48 hours. We offer this service if you're unhappy or have migration from previous treatments elsewhere."
+    },
+    {
+      "question": "How many ml of filler do I need for my lips?",
+      "answer": "Most first-timers achieve beautiful results with 0.5-1ml. We recommend starting conservatively—you can always add more at your 2-week review. Overfilling creates an unnatural look we avoid."
+    },
+    {
+      "question": "Can I get lip filler if I get cold sores?",
+      "answer": "Yes, but we recommend taking antiviral medication (like Valtrex) starting 24 hours before treatment to prevent an outbreak. We can prescribe this at your consultation if needed."
     }
   ],
   "hero": {
@@ -123,7 +147,48 @@
     "h1": "Lip Enhancement at Dr. SNA Clinic",
     "metaDescription": "Discover natural-looking lip fillers in London. Doctor-led artistry, premium HA products, zero downtime results.",
     "canonicalUrl": "/treatments/aesthetic-medicine/face/lip-enhancement",
-    "metaTitle": "Lip Fillers London | Natural Lip Enhancement | Dr. SNA Clinic"
+    "metaTitle": "Lip Fillers London | Natural Lip Enhancement | Dr. SNA Clinic",
+    "schema": {
+      "@type": "MedicalProcedure",
+      "procedureType": "NoninvasiveProcedure",
+      "bodyLocation": ["Lips", "Vermillion border", "Cupid's bow", "Philtrum"],
+      "howPerformed": "After applying numbing cream (and optional dental block for extra comfort), hyaluronic acid gel is injected into precise points along your lips using ultra-fine needles or a flexible cannula. We build volume gradually—starting with structure in the border to define your shape, then adding soft fullness throughout. You watch in the mirror as we sculpt, ensuring perfect symmetry. The gel instantly plumps lips while attracting water for natural hydration",
+      "preparation": "Avoid blood-thinning supplements (fish oil, vitamin E, aspirin) for one week before treatment. No alcohol 48 hours prior. Come hydrated and having eaten. Bring inspiration photos showing lip shapes you admire. If you're prone to cold sores, start antiviral medication 24 hours before (we can prescribe). Arrive with clean lips—no lipstick or gloss",
+      "followup": "Apply ice packs for 20 minutes every few hours for the first day—this reduces swelling dramatically. Sleep elevated for two nights. Avoid intense kissing, hot drinks, spicy food, and strenuous exercise for 24 hours. No lipstick for 24 hours. Swelling peaks at 24-48 hours then improves rapidly. Attend your 2-week review for assessment and any refinement (complimentary)",
+      "outcome": "Immediately fuller, more defined lips with beautiful symmetry. Your Cupid's bow stands out. Lips feel soft and move naturally when you smile or talk. The hydration makes lips look healthy and kissable. Swelling settles within a week, revealing your final result. You look like yourself—just with the lips you've always wanted. Results last 9-12 months",
+      "medicationRequired": "Topical numbing cream. Optional dental nerve block for sensitive patients",
+      "medicalSpecialty": "Aesthetic Medicine",
+      "relevantSpecialty": "Facial Aesthetics",
+      "isProprietary": false,
+      "treatmentFrequency": "Single session with optional 2-week refinement. Most patients maintain results with yearly touch-ups or let filler dissolve completely and repeat when desired",
+      "adverseOutcome": "Swelling for 24-72 hours (ice helps tremendously). Possible bruising. Temporary lumpiness or asymmetry that smooths within days. Very rarely, vascular occlusion (we have emergency protocols and reversal agents)",
+      "seriousAdverseOutcome": {
+        "name": "Vascular occlusion (blocked blood vessel)",
+        "probability": "Extremely rare (less than 0.01%) when using proper technique, aspiration, and cannulas"
+      },
+      "contraindication": [
+        "Active cold sore or lip infection",
+        "Pregnancy or breastfeeding",
+        "Severe allergies to hyaluronic acid (extremely rare)",
+        "Bleeding disorders",
+        "Unrealistic expectations about lip size"
+      ],
+      "typicalTest": [
+        "Lip symmetry and proportion analysis",
+        "Photos from multiple angles",
+        "Discussion of desired lip style (natural, Russian, classic)",
+        "Medical history including previous filler",
+        "Smile dynamics assessment"
+      ],
+      "clinicalFindings": [
+        "Thin or asymmetrical lips",
+        "Undefined vermillion border",
+        "Flat or absent Cupid's bow",
+        "Desire for fuller, more defined lips",
+        "Age-related volume loss",
+        "Correction of previous unsatisfactory filler"
+      ]
+    }
   },
   "description": "Doctor-led lip filler artistry that balances shape, hydration, and definition for effortless confidence.",
   "bookingInfo": {

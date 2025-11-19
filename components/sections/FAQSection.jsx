@@ -37,6 +37,26 @@ export function FAQSection({
   const items = Array.isArray(data) ? data : data?.items || data?.questions;
   if (!items?.length) return null;
 
+  const faqEntities = items
+    .filter((faq) => faq?.question && faq?.answer)
+    .map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer
+      }
+    }));
+
+  const schemaPayload =
+    faqEntities.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqEntities
+        }
+      : null;
+
   // Get preset with optional overrides
   const headerPreset = getSectionPreset('faq', {
     ...(title !== undefined && { title }),
@@ -64,6 +84,12 @@ export function FAQSection({
   return (
     <Section padding="sm" className="muted-dark">
     <Container maxWidth="">
+          {schemaPayload && (
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaPayload) }}
+            />
+          )}
           {/* Section Header */}
           <SectionHeader {...headerPreset} />
 

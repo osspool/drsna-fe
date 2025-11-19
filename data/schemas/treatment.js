@@ -1,8 +1,44 @@
 /**
  * Treatment Page Data Schema
- *
- * Use this schema to generate treatment page content.
- * Each treatment has sections that can be enabled/disabled.
+ * 
+ * Complete Zod schema for treatment pages with comprehensive SEO structured data.
+ * 
+ * ## Purpose
+ * This schema defines the structure for all medical treatment pages, ensuring:
+ * - Consistent data structure across all treatments
+ * - Complete schema.org MedicalProcedure structured data for SEO
+ * - Patient-friendly language while maintaining medical accuracy
+ * - AI-friendly content that ranks well in search and LLM results
+ * 
+ * ## Key SEO Features
+ * - `seo.schema`: Complete schema.org MedicalProcedure markup
+ * - Patient-centric language for `howPerformed`, `preparation`, `followup`, `outcome`
+ * - Comprehensive contraindications and safety information
+ * - Clinical context for medical credibility
+ * 
+ * ## Usage for AI Content Generation
+ * When generating treatment content, ALWAYS include:
+ * 1. Complete `seo.schema` block with ALL fields
+ * 2. Patient-friendly explanations (avoid jargon)
+ * 3. Emotional, solution-focused language
+ * 4. Specific body locations using anatomical terms
+ * 5. Honest contraindications and side effects
+ * 
+ * ## Example Schema Block
+ * ```json
+ * "seo": {
+ *   "schema": {
+ *     "@type": "MedicalProcedure",
+ *     "procedureType": "NoninvasiveProcedure",
+ *     "bodyLocation": ["Specific anatomical location"],
+ *     "howPerformed": "2-4 patient-friendly sentences...",
+ *     "preparation": "What to do before...",
+ *     "followup": "What to expect after...",
+ *     "outcome": "Results and timeline...",
+ *     ... (all other required fields)
+ *   }
+ * }
+ * ```
  */
 
 import { z } from 'zod';
@@ -35,6 +71,84 @@ const testimonialSchema = z.object({
   location: z.string().optional()
 });
 
+// SEO Schema for schema.org MedicalProcedure
+// This comprehensive schema helps search engines and AI understand medical treatments
+const medicalProcedureSchema = z.object({
+  '@type': z.literal('MedicalProcedure').default('MedicalProcedure'),
+  
+  // Classification
+  procedureType: z.enum([
+    'NoninvasiveProcedure',
+    'MinimallyInvasiveProcedure', 
+    'SurgicalProcedure',
+    'TherapeuticProcedure',
+    'IntravenousTherapy',
+    'NutritionalCounseling'
+  ]).describe('Type of medical procedure'),
+  
+  // Anatomical location
+  bodyLocation: z.union([
+    z.string(), 
+    z.array(z.string())
+  ]).describe('Body part(s) treated - specific anatomical terms'),
+  
+  // Procedure details (patient-friendly language)
+  howPerformed: z.string()
+    .min(100)
+    .describe('2-4 sentences explaining HOW the procedure is done, step-by-step, in patient-friendly language'),
+  
+  preparation: z.string()
+    .min(50)
+    .describe('What patients need to do BEFORE treatment - fasting, medications, lifestyle adjustments'),
+  
+  followup: z.string()
+    .min(50)
+    .describe('POST-treatment care instructions, timeline, what to expect, maintenance schedule'),
+  
+  outcome: z.string()
+    .min(50)
+    .describe('Expected RESULTS - what improvements patients will see, timeline, duration of effects'),
+  
+  // Clinical information
+  medicationRequired: z.string()
+    .describe('Medications/anesthesia used during procedure or "None"'),
+  
+  medicalSpecialty: z.string()
+    .describe('Primary specialty (e.g., "Aesthetic Medicine", "Regenerative Medicine", "Urology")'),
+  
+  relevantSpecialty: z.string()
+    .optional()
+    .describe('Subspecialty if applicable (e.g., "Trichology", "Sexual Medicine")'),
+  
+  isProprietary: z.boolean()
+    .describe('Is this a trademarked/proprietary treatment?'),
+  
+  treatmentFrequency: z.string()
+    .describe('How often treatment is performed - session frequency, maintenance schedule'),
+  
+  // Safety and contraindications
+  adverseOutcome: z.string()
+    .describe('Common, expected side effects - be honest but reassuring'),
+  
+  seriousAdverseOutcome: z.object({
+    name: z.string().describe('Rare serious complication'),
+    probability: z.string().describe('Likelihood (e.g., "Less than 1%")')
+  }).optional(),
+  
+  contraindication: z.array(z.string())
+    .min(3)
+    .describe('Absolute and relative contraindications - who should NOT have this treatment'),
+  
+  // Diagnostic and clinical context
+  typicalTest: z.array(z.string())
+    .optional()
+    .describe('Diagnostic tests, assessments, or evaluations performed before/during treatment'),
+  
+  clinicalFindings: z.array(z.string())
+    .optional()
+    .describe('Conditions treated, patient profiles suitable for this procedure')
+}).describe('Complete schema.org MedicalProcedure structured data for SEO');
+
 // Main treatment schema
 export const treatmentSchema = z.object({
   // Identity
@@ -49,10 +163,29 @@ export const treatmentSchema = z.object({
 
   // SEO
   seo: z.object({
-    metaTitle: z.string(),
-    metaDescription: z.string().max(160),
-    keywords: z.array(z.string()),
-    h1: z.string().optional()
+    metaTitle: z.string()
+      .describe('Full page title for <title> tag (include location, brand)'),
+    
+    metaDescription: z.string()
+      .max(160)
+      .describe('Meta description for search results - compelling, benefit-focused'),
+    
+    keywords: z.array(z.string())
+      .min(3)
+      .max(10)
+      .describe('Target keywords for this page (include location, variations)'),
+    
+    h1: z.string()
+      .optional()
+      .describe('Main H1 heading - can differ from metaTitle, patient-friendly'),
+    
+    canonicalUrl: z.string()
+      .optional()
+      .describe('Canonical URL path (e.g., "/treatments/category/subcategory/slug")'),
+    
+    schema: medicalProcedureSchema
+      .optional()
+      .describe('Complete schema.org structured data - critical for SEO and AI discoverability')
   }),
 
   // Hero section

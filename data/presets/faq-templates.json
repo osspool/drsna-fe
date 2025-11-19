@@ -1,0 +1,104 @@
+{
+  "common": {
+    "doesItHurt": {
+      "question": "Does the treatment hurt?",
+      "answer": "Most patients experience minimal discomfort. We use topical numbing cream and advanced techniques to ensure your comfort throughout the procedure."
+    },
+    "howLongResults": {
+      "question": "How long do results last?",
+      "answer": "Results typically last 12-18 months, though this varies by individual. Many patients choose maintenance treatments to preserve their results."
+    },
+    "whenSeeResults": {
+      "question": "When will I see results?",
+      "answer": "Initial results are often visible within 2-4 weeks, with full results developing over 6-12 weeks as your body's natural healing processes take effect."
+    },
+    "canCombine": {
+      "question": "Can I combine this with other treatments?",
+      "answer": "Yes, this treatment can be effectively combined with other procedures for enhanced results. Dr Abbas will discuss complementary options during your consultation."
+    },
+    "downtime": {
+      "question": "Is there any downtime?",
+      "answer": "There is minimal to no downtime. Most patients return to normal activities immediately, though we recommend avoiding strenuous exercise for 24-48 hours."
+    },
+    "isSafe": {
+      "question": "Is the treatment safe?",
+      "answer": "Yes, the treatment is very safe when performed by qualified practitioners. Dr Abbas is GMC registered and our clinic is CQC certified, ensuring the highest safety standards."
+    },
+    "consultationProcess": {
+      "question": "What happens during the consultation?",
+      "answer": "During your consultation, Dr Abbas will assess your concerns, discuss your goals, explain the treatment options, and create a personalized treatment plan. The consultation fee is redeemable against treatment."
+    }
+  },
+
+  "aesthetic": {
+    "lookNatural": {
+      "question": "Will I look natural or overdone?",
+      "answer": "Natural-looking results are our priority. Dr Abbas follows the philosophy of 'enhanced, not changed' — you'll look like the best version of yourself, not someone different."
+    },
+    "lookFrozen": {
+      "question": "Will I look frozen or expressionless?",
+      "answer": "No. Dr Abbas uses precise techniques that preserve natural facial movement and expression while reducing lines and wrinkles."
+    },
+    "brandDifference": {
+      "question": "What's the difference between product brands?",
+      "answer": "We use premium FDA-approved products like Juvederm and Restylane. Dr Abbas will recommend the best product for your specific needs based on treatment area and desired results."
+    },
+    "pregnancySafe": {
+      "question": "Is it safe during pregnancy or breastfeeding?",
+      "answer": "We do not recommend aesthetic treatments during pregnancy or breastfeeding as a precautionary measure. Please wait until after this period to undergo treatment."
+    }
+  },
+
+  "painManagement": {
+    "exerciseAfter": {
+      "question": "How soon can I exercise after treatment?",
+      "answer": "We typically recommend resting for 24-48 hours, then gradually returning to activity. High-impact exercise should be avoided for 1-2 weeks depending on the treatment area."
+    },
+    "insteadOfSurgery": {
+      "question": "Can this replace surgery?",
+      "answer": "In many cases, regenerative treatments can help avoid or delay surgery. Dr Abbas will assess whether you're a suitable candidate and discuss realistic expectations."
+    },
+    "howManyTreatments": {
+      "question": "How many treatments will I need?",
+      "answer": "Most patients see significant improvement after 1-3 treatments. Dr Abbas will create a personalized treatment plan based on your condition severity and goals."
+    },
+    "insuranceCover": {
+      "question": "Is this covered by insurance?",
+      "answer": "Some private health insurance policies cover regenerative treatments. We recommend checking with your provider. We can provide documentation to support your claim."
+    }
+  },
+
+  "intimateHealth": {
+    "privacy": {
+      "question": "How is my privacy protected?",
+      "answer": "Your privacy is our absolute priority. All consultations are completely confidential, we use discreet billing, and our private Wimpole Street clinic ensures discretion."
+    },
+    "needToUndress": {
+      "question": "Do I need to undress for the treatment?",
+      "answer": "Treatment requirements vary, but we ensure your comfort and dignity at all times. Dr Abbas will explain exactly what to expect before your appointment."
+    },
+    "intimacyAfter": {
+      "question": "How soon can I be intimate after treatment?",
+      "answer": "We typically recommend waiting 24-48 hours before intimate activity. Dr Abbas will provide specific aftercare instructions based on your treatment."
+    },
+    "partnerKnow": {
+      "question": "Will my partner know I've had treatment?",
+      "answer": "Results are natural-looking and gradual. While your partner may notice positive changes, the treatment itself is not obvious unless you choose to share."
+    }
+  },
+
+  "hair": {
+    "workForMe": {
+      "question": "Will this treatment work for my type of hair loss?",
+      "answer": "Results vary based on the cause and stage of hair loss. Dr Abbas will assess your scalp during consultation and recommend the most effective treatment approach for your situation."
+    },
+    "permanentResults": {
+      "question": "Are the results permanent?",
+      "answer": "Hair regeneration treatments stimulate natural regrowth which can be long-lasting with proper maintenance. Most patients benefit from annual top-up treatments."
+    },
+    "whenSeeGrowth": {
+      "question": "When will I see new hair growth?",
+      "answer": "Initial improvements in hair quality are often noticed within 4-6 weeks. Significant new growth typically becomes visible around 3-6 months as hair follicles regenerate."
+    }
+  }
+}

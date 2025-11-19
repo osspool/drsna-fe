@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
 import { SectionRenderer } from "@/components/common/SectionRenderer";
 import { getSubcategoryPageConfig } from "@/lib/configs/subcategory";
-import { getSubcategory, getCategories, getStaticSubcategoryPaths } from "@/lib/subcategories";
+import { getSubcategory, getStaticSubcategoryPaths } from "@/lib/subcategories";
+import { getCategories } from "@/lib/categories";
 import { createMetadataGenerator, createStaticParamsGenerator } from "@/lib/seo-helpers";
 
 /**
@@ -41,7 +42,8 @@ export default async function SubcategoryPage({ params }) {
   // Get category data for breadcrumb
   const categoriesData = await getCategories();
   const getCategoryName = (categoryId) => {
-    return categoriesData?.categories?.[categoryId]?.title || "Treatments";
+    const category = categoriesData?.find(cat => cat.id === categoryId);
+    return category?.title || "Treatments";
   };
 
   const treatmentsArray = subcategoryData.treatments

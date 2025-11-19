@@ -1,40 +1,22 @@
+import { contactInfo, getSchemaAddress, getSchemaOpeningHours } from "./contact-info";
+
 export const clinicStructuredData = {
   "@context": "https://schema.org",
   "@type": "MedicalClinic",
-  name: "Dr SNA Clinic",
-  alternateName: "Dr Syed Nadeem Abbas Clinic",
+  name: contactInfo.clinic.name,
+  alternateName: contactInfo.clinic.legalName,
   description:
     "Premier aesthetic medicine and regenerative treatment clinic in London",
-  url: "https://drsnaclinic.com",
-  telephone: "+447955836986",
-  email: "info@drsnaclinic.com",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "48 Wimpole Street",
-    addressLocality: "Marylebone, London",
-    postalCode: "W1G 8SF",
-    addressCountry: "GB",
-  },
+  url: contactInfo.urls.website,
+  telephone: contactInfo.phone.primary.number,
+  email: contactInfo.email.primary,
+  address: getSchemaAddress(),
   geo: {
     "@type": "GeoCoordinates",
-    latitude: "51.5175",
-    longitude: "-0.1483",
+    latitude: contactInfo.geo.latitude,
+    longitude: contactInfo.geo.longitude,
   },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-      ],
-      opens: "09:00",
-      closes: "18:00",
-    },
-  ],
+  openingHoursSpecification: getSchemaOpeningHours(),
   founder: {
     "@type": "Person",
     name: "Dr Syed Nadeem Abbas",

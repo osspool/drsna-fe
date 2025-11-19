@@ -45,6 +45,10 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: process.env.NEXT_PUBLIC_PSHOT_GOOGLE_SITE_VERIFICATION || "",
+    bing: process.env.NEXT_PUBLIC_PSHOT_BING_SITE_VERIFICATION || "",
+  },
 };
 
 export default function PShotLayout({ children }) {

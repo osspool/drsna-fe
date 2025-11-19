@@ -1,0 +1,115 @@
+{
+  "slug": "youthful-appearance-science",
+  "title": "Younger, Longer Science Brief",
+  "subtitle": "Decode the genetic, inflammatory, and regenerative levers that keep faces looking rested for longer.",
+  "summary": "Looking younger than your age is rarely an accident. We review MC1R and FOXO3 gene research, collagen glycation, lifestyle biomarkers, and how regenerative treatments such as PRP facelifts, polynucleotides, and stem-cell therapies fit into a longevity plan.",
+  "readTime": "7 min read",
+  "lastUpdated": "2024-10-22",
+  "heroImage": "https://images.unsplash.com/photo-1500522144261-ea64433bbe27?w=1600&auto=format&fit=crop",
+  "metrics": [
+    {"label": "Collagen drop", "value": "1% per year"},
+    {"label": "PRP facelift", "value": "12–18 month glow"},
+    {"label": "Sleep sweet-spot", "value": "7.5 hours"}
+  ],
+  "sections": [
+    {
+      "title": "Genetics vs. epigenetics",
+      "intro": "Genes load the gun; lifestyle pulls the trigger. Here's how to work with both.",
+      "items": [
+        {
+          "heading": "MC1R variants",
+          "badge": "Pigment",
+          "body": "Certain MC1R copies are linked to earlier wrinkling because they produce less eumelanin. Daily SPF and antioxidants counter the oxidative load." 
+        },
+        {
+          "heading": "FOXO3 longevity gene",
+          "badge": "Cell repair",
+          "body": "People with FOXO3 variants regulate autophagy better. Mimic the effect with low-glycaemic diets, intermittent fasting, and adequate protein (1.2 g/kg)."
+        },
+        {
+          "heading": "Epigenetic age",
+          "badge": "Habits",
+          "body": "Inflammation, alcohol, and poor sleep accelerate methylation drift. Focus on anti-inflammatory nutrition and stress management to keep biological age younger than chronological age."
+        }
+      ]
+    },
+    {
+      "title": "Lifestyle levers you can control",
+      "intro": "Everyday choices either protect or degrade collagen.",
+      "items": [
+        {
+          "heading": "Glycation control",
+          "badge": "Sugar",
+          "body": "Aim for 30g+ protein per meal, swap ultra-processed snacks for fibre-rich options, and keep HbA1c below 5.2%. Glycation stiffens collagen and dulls skin." 
+        },
+        {
+          "heading": "Sleep & circadian cues",
+          "badge": "Rest",
+          "body": "Consistent bedtimes, morning sunlight, and limiting blue light one hour before bed keep cortisol rhythms stable and support nightly repair." 
+        },
+        {
+          "heading": "Movement & fascia",
+          "badge": "Training",
+          "body": "Strength training plus facial massage devices keep fascia toned, preventing laxity and heaviness."
+        }
+      ]
+    },
+    {
+      "title": "Regenerative treatments that move the needle",
+      "intro": "When lifestyle is optimised, add targeted medical boosters.",
+      "items": [
+        {
+          "heading": "PRP Vampire Facelift",
+          "badge": "Biostimulatory",
+          "body": "Liquid gold rich in growth factors boosts collagen types I & III, brightens tone, and softens texture for 12–18 months." 
+        },
+        {
+          "heading": "Polynucleotide skin boosters",
+          "badge": "Barrier reset",
+          "body": "PN strands hydrate deep dermal layers, improve elasticity, and calm redness—ideal for tech neck or dullness." 
+        },
+        {
+          "heading": "Stem-cell & exosome infusions",
+          "badge": "Advanced",
+          "body": "BMAC or adipose stem-cell therapy plus exosomes repair chronic damage in joints and skin, keeping you active and radiant." 
+        }
+      ]
+    }
+  ],
+  "recommendedTreatments": [
+    {
+      "title": "PRP Facelift",
+      "href": "/treatments/aesthetic-medicine/face/prp-facelift",
+      "description": "Autologous PRP combined with microneedling or fillers for luminous skin."
+    },
+    {
+      "title": "Polynucleotide Skin Booster",
+      "href": "/treatments/aesthetic-medicine/face/polynucleotide",
+      "description": "Deep hydration and elasticity boost for tech-neck lines and dullness."
+    },
+    {
+      "title": "Stem-Cell Therapy",
+      "href": "/treatments/pain-management/treatments/bmac-therapy",
+      "description": "Whole-body regeneration so you move like you feel—youthfully."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do I need genetic testing before booking treatments?",
+      "answer": "Not always. We can infer risk factors from family history and biomarkers, but we do offer nutrigenomic panels if you want personalised longevity protocols."
+    },
+    {
+      "question": "How soon will a PRP facelift show results?",
+      "answer": "Glow improves within 2–3 weeks, with maximal collagen remodelling at 3 months. Results last 12–18 months when paired with sleep, nutrition, and SPF."
+    },
+    {
+      "question": "Can I combine PN boosters with dermal fillers?",
+      "answer": "Yes. Polynucleotides prep the skin so filler integration looks seamless. We often stage PN first, then refined filler placement two weeks later."
+    }
+  ],
+  "seo": {
+    "title": "Look Younger Science Guide | PRP Facelift, PN Boosters & Longevity Tips",
+    "description": "From genes to regenerative treatments, learn how to look biologically younger with Dr SNA Clinic.",
+    "keywords": ["look younger science", "PRP facelift education", "skin longevity tips"]
+  }
+}

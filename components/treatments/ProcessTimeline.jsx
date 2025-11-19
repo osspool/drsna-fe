@@ -26,16 +26,72 @@ function getIconComponent(icon) {
   return icons[pascal] || Sparkles;
 }
 
+function durationToISO(duration) {
+  if (!duration) return null;
+  const match = duration.toLowerCase().match(/(\d+)\s*(hour|hr|hours|minute|min|mins)/);
+  if (!match) return null;
+  const value = parseInt(match[1], 10);
+  if (Number.isNaN(value)) return null;
+  const unit = match[2];
+  if (unit.startsWith("hour") || unit.startsWith("hr")) {
+    return `PT${value}H`;
+  }
+  return `PT${value}M`;
+}
+
+function buildHowToSchema(data, steps) {
+  if (!data?.title || !steps?.length) return null;
+
+  const schemaSteps = steps
+    .filter((step) => step?.title || step?.description)
+    .map((step, index) => {
+      const name = step.title || `Step ${step.number || index + 1}`;
+      return {
+        "@type": "HowToStep",
+        position: index + 1,
+        name,
+        itemListElement: [
+          {
+            "@type": "HowToDirection",
+            text: step.description || name
+          }
+        ],
+        ...(step.duration && { timeRequired: durationToISO(step.duration) })
+      };
+    });
+
+  if (!schemaSteps.length) return null;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: data.title,
+    description: data.subtitle || data.description,
+    totalTime: durationToISO(data.totalDuration),
+    step: schemaSteps
+  };
+}
+
 export function ProcessTimeline({ data, variant }) {
   if (!data || !data.steps || !data.steps.length) return null;
 
   const steps = data.steps;
   const resolvedVariant = variant ?? data.variant ?? "default";
+  const howToSchema = buildHowToSchema(data, steps);
+  const schemaMarkup = howToSchema ? JSON.stringify(howToSchema) : null;
+  const SchemaScript = () =>
+    schemaMarkup ? (
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: schemaMarkup }}
+      />
+    ) : null;
 
   // Compact Timeline Variant (from WhatToExpectBlock)
   if (resolvedVariant === "compact-timeline") {
     return (
       <Section background="muted" padding="none" ripple={true}>
+        <SchemaScript />
         <div className="relative flex w-full flex-col items-start justify-start overflow-hidden py-16 md:py-24">
           {/* Glow Effect */}
           <Glow variant="center" className="opacity-30" />
@@ -137,6 +193,7 @@ export function ProcessTimeline({ data, variant }) {
   if (resolvedVariant === "timeline") {
     return (
       <Section background="muted" padding="none" ripple={true}>
+        <SchemaScript />
         <div className="relative flex w-full flex-col items-start justify-start overflow-hidden py-16 md:py-24">
           {/* Glow Effect */}
           <Glow variant="center" className="opacity-30" />
@@ -235,6 +292,7 @@ export function ProcessTimeline({ data, variant }) {
 
   return (
       <Section background="muted-dark" padding="sm">
+      <SchemaScript />
       <Container>
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16 max-w-4xl mx-auto">

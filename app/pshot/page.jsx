@@ -1,6 +1,6 @@
 import { SectionRenderer } from "@/components/common/SectionRenderer";
 import { pshotPageConfig } from "@/lib/configs/pshot";
-import { pshotLandingData } from "@/data/pages/pshot/landing-data";
+import { getPShotPageData } from "@/lib/pshot";
 import { pshotSiteConfig } from "@/data/pages/pshot/site-config";
 import { clinicStructuredData } from "@/data/structured-data";
 
@@ -113,7 +113,9 @@ const pshotStructuredData = [
   },
 ];
 
-export default function PShotLandingPage() {
+export default async function PShotLandingPage() {
+  const pshotLandingData = await getPShotPageData();
+
   return (
     <>
       {/* Enhanced Structured Data */}

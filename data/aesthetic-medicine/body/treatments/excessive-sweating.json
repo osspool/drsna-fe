@@ -1,1 +1,192 @@
-{"quickStats":{"sessions":"One visit","downtime":"None","duration":"20-25 minutes","price":"From £450","resultsVisible":"7-10 days","anesthesia":"Topical numbing or ice","resultsLast":"6-9 months"},"overview":{"highlights":["Suitable for underarms, palms, soles","Doctor-only injections","No downtime or lifestyle restrictions","Repeat 1-2 times per year"],"content":"We mark the treatment area, apply numbing, then deliver micro-doses of botulinum toxin just under the skin. The toxin blocks acetylcholine release so sweat glands stay inactive while nerves regenerate over months.","title":"How It Works","image":"https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&q=80"},"cta":{"secondaryButton":"Ask a question","subtitle":"Book a hyperhidrosis consultation today.","title":"Ready to Stay Dry?","primaryButton":"Book sweat-free session"},"title":"Excessive Sweating (Hyperhidrosis) Treatment","description":"Micro-dosed botulinum toxin blocks overactive sweat glands in the underarms, palms, or soles for months of relief.","seo":{"metaTitle":"Excessive Sweating Treatment London | Botox for Hyperhidrosis | Dr. SNA Clinic","metaDescription":"Stop sweat marks with doctor-led hyperhidrosis injections. Underarm, palm, and sole treatments with results lasting up to 9 months.","h1":"Hyperhidrosis Treatment in London","keywords":["hyperhidrosis london","excessive sweating treatment","botox underarm sweat","stop sweating london"]},"shortTitle":"Hyperhidrosis","id":"excessive-sweating","faq":[{"answer":"We use numbing cream, ice packs, and vibration distraction. Discomfort is brief.","question":"Does it hurt?"},{"answer":"No—your body has plenty of other sweat glands to regulate temperature naturally.","question":"Will I sweat elsewhere?"},{"question":"How often do I need it?","answer":"Most clients repeat every 6-9 months once sweating slowly returns."}],"hero":{"badge":"Lasts up to 9 months","subheadline":"Precision injections that shut down overactive sweat glands for months.","headline":"20 Minutes to Sweat-Free Confidence","image":"https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?w=1920&q=80","backgroundImage":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80"},"pricing":{"title":"Transparent Pricing","includes":["Doctor consultation","Starch-iodine test (if required)","Botulinum toxin injections","Aftercare guide + support"],"singlePrice":{"currency":"GBP","currentPrice":"£450"},"packages":[{"description":"Both underarms treated in one visit.","name":"Underarm Session","price":"£450"},{"description":"Extra dosing for thicker skin.","name":"Palms or Soles","price":"£500"}]},"longDescription":"If sweat patches or slippery palms impact your day, our GMC doctors deliver targeted micro-injections that switch off the nerve signals responsible for excessive sweating. Treatments take 20 minutes, require no downtime, and keep you dry for up to nine months.","categoryId":"aesthetic-medicine","tagline":"Stay Dry. Stay Confident.","subcategoryId":"body","process":{"title":"Simple Treatment Flow","steps":[{"description":"Review history, medications, and treatment areas.","number":1,"title":"Consult"},{"description":"Outline sweat zones and apply numbing.","number":2,"title":"Mark & Numb"},{"description":"Deliver precise toxin grid in under 15 minutes.","title":"Micro-Injections","number":3},{"number":4,"title":"Stay Dry","description":"Resume life immediately; results appear within a week."}]},"benefits":{"features":[{"description":"No more outfit changes or awkward handshakes.","title":"Dry Clothes & Palms"},{"title":"Boosted Confidence","description":"Perform on stage, in meetings, or on dates worry-free."},{"title":"Fast Appointments","description":"Pop in during lunch and return to work immediately."}],"title":"Why Patients Book This Treatment"}}
+{
+  "quickStats": {
+    "sessions": "One visit",
+    "downtime": "None",
+    "duration": "20-25 minutes",
+    "price": "From £450",
+    "resultsVisible": "7-10 days",
+    "anesthesia": "Topical numbing or ice",
+    "resultsLast": "6-9 months"
+  },
+  "overview": {
+    "highlights": [
+      "Suitable for underarms, palms, soles",
+      "Doctor-only injections",
+      "No downtime or lifestyle restrictions",
+      "Repeat 1-2 times per year"
+    ],
+    "content": "We mark the treatment area, apply numbing, then deliver micro-doses of botulinum toxin just under the skin. The toxin blocks acetylcholine release so sweat glands stay inactive while nerves regenerate over months.",
+    "title": "How It Works",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&q=80"
+  },
+  "cta": {
+    "secondaryButton": "Ask a question",
+    "subtitle": "Book a hyperhidrosis consultation today.",
+    "title": "Ready to Stay Dry?",
+    "primaryButton": "Book sweat-free session"
+  },
+  "title": "Excessive Sweating (Hyperhidrosis) Treatment",
+  "description": "Micro-dosed botulinum toxin blocks overactive sweat glands in the underarms, palms, or soles for months of relief.",
+  "seo": {
+    "metaTitle": "Excessive Sweating Treatment London | Botox for Hyperhidrosis | Dr. SNA Clinic",
+    "metaDescription": "Stop sweat marks with doctor-led hyperhidrosis injections. Underarm, palm, and sole treatments with results lasting up to 9 months.",
+    "h1": "Hyperhidrosis Treatment in London",
+    "keywords": [
+      "hyperhidrosis london",
+      "excessive sweating treatment",
+      "botox underarm sweat",
+      "stop sweating london"
+    ],
+    "schema": {
+      "@type": "MedicalProcedure",
+      "procedureType": "NoninvasiveProcedure",
+      "bodyLocation": [
+        "Underarms (axillae)",
+        "Palms of hands",
+        "Soles of feet",
+        "Occasionally face or scalp"
+      ],
+      "howPerformed": "We mark a grid pattern over the sweaty area and apply numbing cream or ice packs. Using ultra-fine needles, tiny amounts of purified botulinum toxin are injected just under the skin across the grid—typically 15-20 injections per underarm. The medicine blocks the nerve signals that trigger sweat glands, effectively switching them off. The whole process takes about 20 minutes. You'll feel small pinpricks but numbing makes it very tolerable",
+      "preparation": "Shave underarms 24 hours before (not immediately before—can increase sensitivity). Come in a vest or sleeveless top for easy access. Avoid antiperspirants on treatment day. Eat beforehand to keep blood sugar stable. If treating palms, avoid using your hands heavily for a few hours afterward. Come ready for life-changing dryness",
+      "followup": "Avoid intense exercise and hot showers for 24 hours to let the medicine settle. No massage or rubbing of treated areas for 3 days. Antiperspirants can be used after 24 hours (though you won't need them!). Results appear within 3-7 days and peak by 2 weeks. You'll notice shirts staying dry, confident handshakes, and no more sweat anxiety",
+      "outcome": "Complete dryness in treated areas for 6-9 months. No more sweat patches, outfit changes, or embarrassing wetness. Handshakes become confident. You can wear any color clothing without worry. Social anxiety around sweating disappears. Your body still sweats elsewhere to regulate temperature—this is safe and targeted. When sweating gradually returns after 6-9 months, simply repeat treatment",
+      "medicationRequired": "Topical numbing cream or ice packs. Optional oral anxiety medication for needle-phobic patients",
+      "medicalSpecialty": "Aesthetic Medicine",
+      "relevantSpecialty": "Dermatology",
+      "isProprietary": false,
+      "treatmentFrequency": "Single treatment session lasting 6-9 months. Repeat when sweating gradually returns. Many patients schedule standing appointments twice yearly to stay perpetually dry",
+      "adverseOutcome": "Temporary injection site bumps for a few hours. Small bruises possible. Mild soreness for 1-2 days. Very rarely, compensatory sweating elsewhere (usually mild and temporary)",
+      "contraindication": [
+        "Pregnancy or breastfeeding",
+        "Allergy to botulinum toxin",
+        "Certain nerve disorders (myasthenia gravis)",
+        "Active skin infection in treatment area",
+        "Taking specific antibiotics (aminoglycosides)"
+      ],
+      "typicalTest": [
+        "Starch-iodine test (turns sweaty areas dark purple to map treatment zones)",
+        "Medical history to rule out underlying causes",
+        "Discussion of impact on daily life and confidence",
+        "Visual assessment of sweating severity"
+      ],
+      "clinicalFindings": [
+        "Excessive underarm, palm, or sole sweating interfering with daily life",
+        "Visible sweat marks on clothing",
+        "Social anxiety or embarrassment about sweating",
+        "Failed response to clinical-strength antiperspirants",
+        "Desire for long-lasting sweat control without surgery"
+      ]
+    }
+  },
+  "shortTitle": "Hyperhidrosis",
+  "id": "excessive-sweating",
+  "faq": [
+    {
+      "question": "Does hyperhidrosis treatment hurt?",
+      "answer": "We use numbing cream, ice packs, and vibration distraction to minimize discomfort. You'll feel small pinpricks, but they're brief. Most patients tolerate it well and say it's worth every second for months of dryness."
+    },
+    {
+      "question": "Will I sweat more elsewhere after treatment?",
+      "answer": "Compensatory sweating is rare and usually mild if it occurs. Your body has plenty of other sweat glands to regulate temperature naturally. The blocked areas are a small percentage of total sweat glands."
+    },
+    {
+      "question": "How long does hyperhidrosis treatment last?",
+      "answer": "Results typically last 6-9 months. Most patients schedule repeat treatments twice yearly. Some find results lasting even longer with regular maintenance."
+    },
+    {
+      "question": "How much does excessive sweating treatment cost in London?",
+      "answer": "Underarm treatment (both sides) is £450. Palms or soles are £500 due to thicker skin requiring more product. Consultation and starch-iodine testing (if needed) are included."
+    },
+    {
+      "question": "When will I see results from hyperhidrosis treatment?",
+      "answer": "Dryness begins within 3-7 days and reaches full effect by 2 weeks. You'll notice your shirts staying dry and confident handshakes returning. The relief is genuinely life-changing."
+    },
+    {
+      "question": "Is hyperhidrosis treatment safe long-term?",
+      "answer": "Yes—Botox for sweating has been used safely for over 20 years with excellent safety records. Your body still regulates temperature through other sweat glands. Many patients have treatments for decades."
+    },
+    {
+      "question": "Can I return to work after hyperhidrosis treatment?",
+      "answer": "Yes—there's no downtime. You can return to work immediately. Just avoid intense exercise and hot showers for 24 hours. Most patients book during lunch breaks."
+    },
+    {
+      "question": "Is this treatment covered by insurance?",
+      "answer": "Some private health insurance policies cover hyperhidrosis treatment as a medical condition. We provide detailed invoices for reimbursement claims. Check with your provider about coverage for botulinum toxin for excessive sweating."
+    }
+  ],
+  "hero": {
+    "badge": "Lasts up to 9 months",
+    "subheadline": "Precision injections that shut down overactive sweat glands for months.",
+    "headline": "20 Minutes to Sweat-Free Confidence",
+    "image": "https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?w=1920&q=80",
+    "backgroundImage": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80"
+  },
+  "pricing": {
+    "title": "Transparent Pricing",
+    "includes": [
+      "Doctor consultation",
+      "Starch-iodine test (if required)",
+      "Botulinum toxin injections",
+      "Aftercare guide + support"
+    ],
+    "singlePrice": { "currency": "GBP", "currentPrice": "£450" },
+    "packages": [
+      {
+        "description": "Both underarms treated in one visit.",
+        "name": "Underarm Session",
+        "price": "£450"
+      },
+      {
+        "description": "Extra dosing for thicker skin.",
+        "name": "Palms or Soles",
+        "price": "£500"
+      }
+    ]
+  },
+  "longDescription": "If sweat patches or slippery palms impact your day, our GMC doctors deliver targeted micro-injections that switch off the nerve signals responsible for excessive sweating. Treatments take 20 minutes, require no downtime, and keep you dry for up to nine months.",
+  "categoryId": "aesthetic-medicine",
+  "tagline": "Stay Dry. Stay Confident.",
+  "subcategoryId": "body",
+  "process": {
+    "title": "Simple Treatment Flow",
+    "steps": [
+      {
+        "description": "Review history, medications, and treatment areas.",
+        "number": 1,
+        "title": "Consult"
+      },
+      {
+        "description": "Outline sweat zones and apply numbing.",
+        "number": 2,
+        "title": "Mark & Numb"
+      },
+      {
+        "description": "Deliver precise toxin grid in under 15 minutes.",
+        "title": "Micro-Injections",
+        "number": 3
+      },
+      {
+        "number": 4,
+        "title": "Stay Dry",
+        "description": "Resume life immediately; results appear within a week."
+      }
+    ]
+  },
+  "benefits": {
+    "features": [
+      {
+        "description": "No more outfit changes or awkward handshakes.",
+        "title": "Dry Clothes & Palms"
+      },
+      {
+        "title": "Boosted Confidence",
+        "description": "Perform on stage, in meetings, or on dates worry-free."
+      },
+      {
+        "title": "Fast Appointments",
+        "description": "Pop in during lunch and return to work immediately."
+      }
+    ],
+    "title": "Why Patients Book This Treatment"
+  }
+}
