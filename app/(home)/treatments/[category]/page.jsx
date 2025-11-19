@@ -13,6 +13,8 @@
 import { notFound } from "next/navigation";
 import { SectionRenderer } from "@/components/common/SectionRenderer";
 import { getCategorySections, getCategoryMetadata } from "@/lib/configs/category";
+import { getBaseUrl } from "@/lib/domain-helpers";
+import { buildBreadcrumbSchema, buildCollectionPageSchema } from "@/lib/seo-helpers";
 
 // Import category data
 import aestheticMedicineData from "@/data/aesthetic-medicine/category.json";
@@ -49,11 +51,50 @@ export default async function CategoryPage({ params }) {
     notFound();
   }
 
+  const baseUrl = await getBaseUrl();
   const sections = getCategorySections(categoryData, resolvedParams.category);
+  const structuredData = buildCategoryStructuredData(
+    categoryData,
+    resolvedParams.category,
+    baseUrl
+  );
 
   return (
-    <main className="min-h-screen">
-      <SectionRenderer sections={sections} data={categoryData} />
-    </main>
+    <>
+      {structuredData.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      )}
+      <main className="min-h-screen">
+        <SectionRenderer sections={sections} data={categoryData} />
+      </main>
+    </>
   );
+}
+
+function buildCategoryStructuredData(category, slug, baseUrl) {
+  if (!category || !baseUrl) return [];
+  const categoryUrl = `${baseUrl}/treatments/${slug}`;
+
+  const collectionSchema = buildCollectionPageSchema({
+    name: category.title,
+    description: category.description || category.hero?.subtitle,
+    url: categoryUrl,
+    about: category.hero?.badge || category.shortTitle,
+    items: (category.subcategories || []).map((sub) => ({
+      "@type": "Collection",
+      name: sub.title,
+      url: `${categoryUrl}/${sub.slug}`,
+      description: sub.description,
+    })),
+  });
+
+  const breadcrumbSchema = buildBreadcrumbSchema(baseUrl, [
+    { name: "Treatments", path: "/treatments" },
+    { name: category.title, url: categoryUrl },
+  ]);
+
+  return [collectionSchema, breadcrumbSchema].filter(Boolean);
 }

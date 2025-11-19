@@ -12,6 +12,7 @@ import {
   createStaticParamsGenerator,
   generateResourceStructuredData,
 } from "@/lib/seo-helpers";
+import { getBaseUrl } from "@/lib/domain-helpers";
 
 function renderInline(text) {
   const segments = text.split(/(\*\*[^*]+\*\*)/g);
@@ -220,8 +221,13 @@ export default async function ResourceGuidePage({ params }) {
     notFound();
   }
 
+  const baseUrl = await getBaseUrl();
   // Generate structured data for SEO
-  const structuredData = generateResourceStructuredData(guide, resolvedParams.slug);
+  const structuredData = generateResourceStructuredData(
+    guide,
+    resolvedParams.slug,
+    baseUrl
+  );
 
   return (
     <>

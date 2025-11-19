@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { SmartImage } from "@/components/common/SmartImage";
 import { getResourcesOverview, getResourcesMetadata } from "@/lib/resources";
+import { getBaseUrl } from "@/lib/domain-helpers";
+import { generateResourceStructuredData, buildBreadcrumbSchema } from "@/lib/seo-helpers";
 
 /**
  * Generate metadata using standardized helper for consistency
@@ -26,9 +28,18 @@ function formatUpdatedDate(value) {
 export default async function ResourcesPage() {
   const overview = await getResourcesOverview();
   const guides = overview.guides || [];
+  const baseUrl = await getBaseUrl();
+  const structuredData = buildResourcesStructuredData(guides, baseUrl);
 
   return (
-    <main className="bg-royal-blue text-white">
+    <>
+      {structuredData.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      )}
+      <main className="bg-royal-blue text-white">
       <section className="pt-28 pb-16 md:pt-32 md:pb-20 bg-gradient-to-b from-black/60 via-black/40 to-black/20 relative overflow-hidden">
         <Container className="relative z-10 grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-center">
           <div>
@@ -139,5 +150,26 @@ export default async function ResourcesPage() {
         </Container>
       </section>
     </main>
+    </>
   );
+}
+
+function buildResourcesStructuredData(guides, baseUrl) {
+  if (!Array.isArray(guides) || !baseUrl) return [];
+  const listSchema = guides.map((guide) =>
+    generateResourceStructuredData({
+      title: guide.title,
+      summary: guide.excerpt,
+      heroImage: guide.image,
+      category: guide.category,
+      faqs: guide.faqs,
+      lastUpdated: guide.updated,
+    }, guide.slug, baseUrl)
+  ).flat();
+
+  const breadcrumbSchema = buildBreadcrumbSchema(baseUrl, [
+    { name: "Resources", path: "/resources" },
+  ]);
+
+  return breadcrumbSchema ? [...listSchema, breadcrumbSchema] : listSchema;
 }

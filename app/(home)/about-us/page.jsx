@@ -4,21 +4,11 @@ import { getAboutPageData, getAboutMetadata } from "@/lib/about";
 import { getBaseUrl } from "@/lib/domain-helpers";
 
 /**
- * Generate domain-aware metadata
+ * Generate domain-aware metadata - NOT cached, can use headers()
  */
 export async function generateMetadata() {
   const baseUrl = await getBaseUrl();
-  const aboutData = await getAboutPageData();
-  
-  return {
-    metadataBase: new URL(baseUrl),
-    title: aboutData.seo?.metaTitle || "About Us | Dr SNA Clinic",
-    description: aboutData.seo?.metaDescription || aboutData.description,
-    keywords: aboutData.seo?.keywords,
-    alternates: {
-      canonical: aboutData.seo?.canonicalUrl ? `${baseUrl}${aboutData.seo.canonicalUrl}` : `${baseUrl}/about-us`,
-    },
-  };
+  return getAboutMetadata(baseUrl);
 }
 
 /**

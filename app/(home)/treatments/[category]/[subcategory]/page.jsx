@@ -3,7 +3,8 @@ import { SectionRenderer } from "@/components/common/SectionRenderer";
 import { getSubcategoryPageConfig } from "@/lib/configs/subcategory";
 import { getSubcategory, getStaticSubcategoryPaths } from "@/lib/subcategories";
 import { getCategories } from "@/lib/categories";
-import { createMetadataGenerator, createStaticParamsGenerator } from "@/lib/seo-helpers";
+import { createMetadataGenerator, createStaticParamsGenerator, buildBreadcrumbSchema, buildCollectionPageSchema } from "@/lib/seo-helpers";
+import { getBaseUrl } from "@/lib/domain-helpers";
 
 /**
  * Generate static params for high-priority subcategories only
@@ -62,10 +63,52 @@ export default async function SubcategoryPage({ params }) {
 
   // Get config with params
   const pageConfig = getSubcategoryPageConfig(resolvedParams);
+  const baseUrl = await getBaseUrl();
+  const structuredData = buildSubcategoryStructuredData(
+    subcategoryData,
+    resolvedParams,
+    treatmentsArray,
+    baseUrl
+  );
 
   return (
-    <main className="min-h-screen">
-      <SectionRenderer sections={pageConfig} data={pageData} />
-    </main>
+    <>
+      {structuredData.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      )}
+      <main className="min-h-screen">
+        <SectionRenderer sections={pageConfig} data={pageData} />
+      </main>
+    </>
   );
+}
+
+function buildSubcategoryStructuredData(subcategory, params, treatments, baseUrl) {
+  if (!subcategory || !baseUrl) return [];
+  const subcategoryUrl = `${baseUrl}/treatments/${params.category}/${params.subcategory}`;
+
+  const treatmentEntities = (treatments || []).map((treatment) => ({
+    "@type": "MedicalProcedure",
+    name: treatment.title,
+    description: treatment.summary || treatment.description,
+    url: `${subcategoryUrl}/${treatment.slug || treatment.id}`,
+  }));
+
+  const collectionSchema = buildCollectionPageSchema({
+    name: subcategory.title,
+    description: subcategory.description || subcategory.hero?.subtitle,
+    url: subcategoryUrl,
+    about: subcategory.hero?.badge || subcategory.shortTitle,
+    items: treatmentEntities,
+  });
+
+  const breadcrumbSchema = buildBreadcrumbSchema(baseUrl, [
+    { name: "Treatments", path: "/treatments" },
+    { name: subcategory.title, url: subcategoryUrl },
+  ]);
+
+  return [collectionSchema, breadcrumbSchema].filter(Boolean);
 }
