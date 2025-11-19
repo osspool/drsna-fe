@@ -1,13 +1,19 @@
 import { NextResponse } from 'next/server';
 
+/**
+ * Next.js 16 Proxy
+ *
+ * Handles domain-based routing:
+ * - pshots.co.uk -> /pshot content
+ * - drsnaclinic.com -> main site
+ */
 export function proxy(request) {
   const hostname = request.headers.get('host') || '';
   const url = request.nextUrl;
 
-  // Extract domain information
+  // Check if this is the P-Shot domain
   const isPShotDomain =
-    hostname.includes('pshots.com') ||
-    hostname.includes('pshot.drsnaclinic.com') ||
+    hostname.includes('pshots.co.uk') ||
     hostname.includes('pshot.localhost'); // For local development
 
   // Clone the URL for rewriting
@@ -28,7 +34,7 @@ export function proxy(request) {
     // Set custom header to identify P-Shot domain
     const response = NextResponse.rewrite(rewriteUrl);
     response.headers.set('x-domain-context', 'pshot');
-    response.headers.set('x-site-name', 'P-Shot Clinic');
+    response.headers.set('x-site-name', 'P-Shot UK');
     return response;
   }
 

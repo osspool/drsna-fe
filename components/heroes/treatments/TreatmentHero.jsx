@@ -59,11 +59,11 @@ export function TreatmentHero({ treatment, params }) {
   return (
     <section className="relative min-h-[60vh] sm:min-h-[70vh] overflow-hidden pt-28 pb-12 sm:pt-40 sm:pb-20 bg-black">
       {/* Background Image */}
-      {treatment.hero?.backgroundImage && (
+      {(treatment.hero?.image || treatment.hero?.backgroundImage) && (
         <>
           <div className="absolute inset-0 z-0">
             <Image
-              src={treatment.hero.backgroundImage}
+              src={treatment.hero.image || treatment.hero.backgroundImage}
               alt={treatment.title}
               fill
               sizes="100vw"
@@ -71,7 +71,7 @@ export function TreatmentHero({ treatment, params }) {
               priority
             />
           </div>
-          <div className="absolute inset-0 bg-gradient-to-br from-black/75 via-black/65 to-black/75 z-0" />
+          <div className="absolute inset-0 bg-linear-to-br from-black/75 via-black/65 to-black/75 z-0" />
         </>
       )}
 

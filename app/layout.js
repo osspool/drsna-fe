@@ -22,6 +22,7 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://drsnaclinic.com'),
   title: "Dr SNA Clinic | Luxury Aesthetic Medicine in London",
   description:
     "Premier aesthetic medicine clinic offering advanced treatments in facial aesthetics, intimate health, and pain management. Expert care in the heart of London.",

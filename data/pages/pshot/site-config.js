@@ -2,7 +2,7 @@ export const pshotSiteConfig = {
   name: "P-Shot Clinic",
   title: "P-Shot Treatment London | Priapus Shot® | Dr SNA Clinic",
   description: "Experience the revolutionary P-Shot (Priapus Shot®) treatment in London. Enhance performance, size, and confidence with PRP therapy. Book your consultation with Dr Syed Nadeem Abbas.",
-  url: "https://pshots.com",
+  url: "https://pshots.co.uk",
   ogImage: "/images/pshot/og-image.jpg",
 
   // Navigation

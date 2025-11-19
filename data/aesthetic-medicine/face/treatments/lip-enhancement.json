@@ -1,1 +1,164 @@
-{"benefits":{"title":"Why Choose Dr. SNA Clinic?","features":[{"icon":"stethoscope","title":"Doctor Expertise","description":"Every treatment performed by Dr. Abbas or senior aesthetic doctor."},{"title":"Ultra-Natural Finish","icon":"feather","description":"We build structure and hydration, never stiffness or migration."},{"description":"Numbing, vibration analgesia, and stress-reducing environment.","title":"Comfort Protocol","icon":"sofa"}],"layout":"grid-3"},"longDescription":"Lip enhancement at Dr. SNA Clinic is never one-size-fits-all. We analyse your facial proportions, smile dynamics, and hydration levels before selecting premium HA fillers that deliver soft volume, crisp borders, or subtle symmetry tweaks. Expect a bespoke plan, micro-cannula comfort, and results that feel like you—only more confident.","relatedTreatments":[{"title":"Tear Trough Filler","reason":"Complements lip enhancement.","id":"tear-trough-treatment","description":"Balance mid-face volume for a fresher look."},{"reason":"Complete facial contouring.","id":"jawline-reduction","description":"Define lower face for full profile harmony.","title":"Jawline Treatment"}],"tagline":"Pillow-Soft Volume with Clinic-Level Precision","subcategoryId":"face","categoryId":"aesthetic-medicine","shortTitle":"Lip Fillers","id":"lip-enhancement","faq":[{"answer":"No. We layer filler strategically to enhance your natural anatomy, never overpower it.","question":"Will my lips look fake?"},{"question":"How long does swelling last?","answer":"Most swelling subsides within 48 hours; full settling occurs by day seven."}],"hero":{"badge":"Doctor-only injections","image":"https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80","video":null,"subheadline":"Precise filler placement for plush hydration, refined borders, and camera-ready confidence.","headline":"Natural Lips, Elevated"},"pricing":{"financing":{"available":false},"subtitle":"Consultation fee (£50) credited toward treatment","singlePrice":{"currentPrice":"£295","currency":"GBP"},"includes":["Consultation & lip mapping","Premium HA filler","Numbing protocol","Aftercare + review"],"title":"Transparent Pricing","packages":[{"includes":"Aftercare kit + review","price":"£295","description":"0.7ml filler for subtle refresh","name":"Hydration Gloss"},{"includes":"LED healing + check-in","description":"1ml filler + border definition","price":"£395","name":"Signature Volume"}]},"cta":{"subtitle":"Book a lip enhancement consultation today.","title":"Ready for Your Signature Smile?","primaryButton":"Book lip filler consult","urgency":"Limited daily slots to maintain doctor-only delivery","secondaryButton":"Chat with a patient advisor","guarantee":"Consult fee credited toward treatment"},"overview":{"title":"Our Approach","image":"https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1200&q=80","highlights":["Premium HA fillers (Teoxane, Juvederm, Restylane)","Micro-cannula + needle combination for less bruising","Personalised shape planning (Classic, Russian, Balanced)","Aftercare kit + review at 2 weeks"],"content":"We focus on harmony—not trend-driven exaggeration. Whether you want hydration, Cupid’s bow definition, or a subtle Russian-inspired lift, we map your lips with HA fillers tailored to texture and longevity. Expect soft, flexible movement and precise symmetry from every angle."},"quickStats":{"sessions":"Single session + review","price":"From £295","duration":"30 minutes","painLevel":"Low","downtime":"Mild swelling 24-48 hrs","anesthesia":"Topical numbing + dental block optional","resultsLast":"9-12 months","resultsVisible":"Immediate"},"title":"Lip Enhancement","seo":{"keywords":["lip fillers london","lip enhancement clinic","subtle lip filler","doctor lip augmentation"],"h1":"Lip Enhancement at Dr. SNA Clinic","metaDescription":"Discover natural-looking lip fillers in London. Doctor-led artistry, premium HA products, zero downtime results.","canonicalUrl":"/treatments/aesthetic-medicine/face/lip-enhancement","metaTitle":"Lip Fillers London | Natural Lip Enhancement | Dr. SNA Clinic"},"description":"Doctor-led lip filler artistry that balances shape, hydration, and definition for effortless confidence.","bookingInfo":{"consultationFee":"£50 (redeemable)","duration":"30-minute consultation","cancellationPolicy":"48 hours’ notice to reschedule","depositRequired":false},"candidacy":{"suitable":["Desire subtle volume or hydration","Asymmetry or flat Cupid’s bow","Post-lip filler correction"],"note":"We dissolve previous filler if migration is present.","notSuitable":["Pregnancy/breastfeeding","Active cold sores or infection"],"title":"Ideal Candidates"},"beforeAfter":{"gallery":[{"id":"lip-01","description":"One syringe for soft volume and defined Cupid’s bow.","before":"https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=800&q=80","after":"https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=801&q=80","treatment":"1ml HA filler + contouring","title":"Hydration Refresh"}],"note":"Individual outcomes vary; images represent typical hydration-focused enhancements.","title":"Before & After","subtitle":"Real patient results with permission","enabled":true}}
+{
+  "benefits": {
+    "title": "Why Choose Dr. SNA Clinic?",
+    "features": [
+      {
+        "icon": "stethoscope",
+        "title": "Doctor Expertise",
+        "description": "Every treatment performed by Dr. Abbas or senior aesthetic doctor."
+      },
+      {
+        "title": "Ultra-Natural Finish",
+        "icon": "feather",
+        "description": "We build structure and hydration, never stiffness or migration."
+      },
+      {
+        "description": "Numbing, vibration analgesia, and stress-reducing environment.",
+        "title": "Comfort Protocol",
+        "icon": "sofa"
+      }
+    ],
+    "layout": "grid-3"
+  },
+  "longDescription": "Lip enhancement at Dr. SNA Clinic is never one-size-fits-all. We analyse your facial proportions, smile dynamics, and hydration levels before selecting premium HA fillers that deliver soft volume, crisp borders, or subtle symmetry tweaks. Expect a bespoke plan, micro-cannula comfort, and results that feel like you—only more confident.",
+  "relatedTreatments": [
+    {
+      "title": "Tear Trough Filler",
+      "reason": "Complements lip enhancement.",
+      "id": "tear-trough-treatment",
+      "description": "Balance mid-face volume for a fresher look."
+    },
+    {
+      "reason": "Complete facial contouring.",
+      "id": "jawline-reduction",
+      "description": "Define lower face for full profile harmony.",
+      "title": "Jawline Treatment"
+    }
+  ],
+  "tagline": "Pillow-Soft Volume with Clinic-Level Precision",
+  "subcategoryId": "face",
+  "categoryId": "aesthetic-medicine",
+  "shortTitle": "Lip Fillers",
+  "id": "lip-enhancement",
+  "faq": [
+    {
+      "answer": "No. We layer filler strategically to enhance your natural anatomy, never overpower it.",
+      "question": "Will my lips look fake?"
+    },
+    {
+      "question": "How long does swelling last?",
+      "answer": "Most swelling subsides within 48 hours; full settling occurs by day seven."
+    }
+  ],
+  "hero": {
+    "badge": "Doctor-only injections",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80",
+    "video": null,
+    "subheadline": "Precise filler placement for plush hydration, refined borders, and camera-ready confidence.",
+    "headline": "Natural Lips, Elevated"
+  },
+  "pricing": {
+    "financing": { "available": false },
+    "subtitle": "Consultation fee (£50) credited toward treatment",
+    "singlePrice": { "currentPrice": "£295", "currency": "GBP" },
+    "includes": [
+      "Consultation & lip mapping",
+      "Premium HA filler",
+      "Numbing protocol",
+      "Aftercare + review"
+    ],
+    "title": "Transparent Pricing",
+    "packages": [
+      {
+        "includes": "Aftercare kit + review",
+        "price": "£295",
+        "description": "0.7ml filler for subtle refresh",
+        "name": "Hydration Gloss"
+      },
+      {
+        "includes": "LED healing + check-in",
+        "description": "1ml filler + border definition",
+        "price": "£395",
+        "name": "Signature Volume"
+      }
+    ]
+  },
+  "cta": {
+    "subtitle": "Book a lip enhancement consultation today.",
+    "title": "Ready for Your Signature Smile?",
+    "primaryButton": "Book lip filler consult",
+    "urgency": "Limited daily slots to maintain doctor-only delivery",
+    "secondaryButton": "Chat with a patient advisor",
+    "guarantee": "Consult fee credited toward treatment"
+  },
+  "overview": {
+    "title": "Our Approach",
+    "image": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1200&q=80",
+    "highlights": [
+      "Premium HA fillers (Teoxane, Juvederm, Restylane)",
+      "Micro-cannula + needle combination for less bruising",
+      "Personalised shape planning (Classic, Russian, Balanced)",
+      "Aftercare kit + review at 2 weeks"
+    ],
+    "content": "We focus on harmony—not trend-driven exaggeration. Whether you want hydration, Cupid’s bow definition, or a subtle Russian-inspired lift, we map your lips with HA fillers tailored to texture and longevity. Expect soft, flexible movement and precise symmetry from every angle."
+  },
+  "quickStats": {
+    "sessions": "Single session + review",
+    "price": "From £295",
+    "duration": "30 minutes",
+    "painLevel": "Low",
+    "downtime": "Mild swelling 24-48 hrs",
+    "anesthesia": "Topical numbing + dental block optional",
+    "resultsLast": "9-12 months",
+    "resultsVisible": "Immediate"
+  },
+  "title": "Lip Enhancement",
+  "seo": {
+    "keywords": [
+      "lip fillers london",
+      "lip enhancement clinic",
+      "subtle lip filler",
+      "doctor lip augmentation"
+    ],
+    "h1": "Lip Enhancement at Dr. SNA Clinic",
+    "metaDescription": "Discover natural-looking lip fillers in London. Doctor-led artistry, premium HA products, zero downtime results.",
+    "canonicalUrl": "/treatments/aesthetic-medicine/face/lip-enhancement",
+    "metaTitle": "Lip Fillers London | Natural Lip Enhancement | Dr. SNA Clinic"
+  },
+  "description": "Doctor-led lip filler artistry that balances shape, hydration, and definition for effortless confidence.",
+  "bookingInfo": {
+    "consultationFee": "£50 (redeemable)",
+    "duration": "30-minute consultation",
+    "cancellationPolicy": "48 hours’ notice to reschedule",
+    "depositRequired": false
+  },
+  "candidacy": {
+    "suitable": [
+      "Desire subtle volume or hydration",
+      "Asymmetry or flat Cupid’s bow",
+      "Post-lip filler correction"
+    ],
+    "note": "We dissolve previous filler if migration is present.",
+    "notSuitable": [
+      "Pregnancy/breastfeeding",
+      "Active cold sores or infection"
+    ],
+    "title": "Ideal Candidates"
+  },
+  "beforeAfter": {
+    "gallery": [
+      {
+        "id": "lip-01",
+        "description": "One syringe for soft volume and defined Cupid’s bow.",
+        "before": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=800&q=80",
+        "after": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=801&q=80",
+        "treatment": "1ml HA filler + contouring",
+        "title": "Hydration Refresh"
+      }
+    ],
+    "note": "Individual outcomes vary; images represent typical hydration-focused enhancements.",
+    "title": "Before & After",
+    "subtitle": "Real patient results with permission",
+    "enabled": true
+  }
+}

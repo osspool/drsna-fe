@@ -65,16 +65,54 @@ export const metadata = {
   },
 };
 
+// Enhanced structured data with Organization and WebSite for sitelinks
+const homeStructuredData = [
+  clinicStructuredData,
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Dr SNA Clinic",
+    url: "https://drsnaclinic.com",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "https://drsnaclinic.com/treatments?search={search_term_string}",
+      },
+      "query-input": "required name=search_term_string",
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Dr SNA Clinic",
+    url: "https://drsnaclinic.com",
+    logo: "https://drsnaclinic.com/images/logo.png",
+    sameAs: [
+      "https://facebook.com/drsnaclinic",
+      "https://instagram.com/drsnaclinic",
+      "https://twitter.com/drsnaclinic",
+    ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+44-7955-836986",
+      contactType: "customer service",
+      areaServed: "GB",
+      availableLanguage: ["English"],
+    },
+  },
+];
+
 export default async function HomePage() {
   const homeData = await getHomePageData();
 
   return (
     <>
-      {/* Structured Data for SEO */}
-      {/* <script
+      {/* Structured Data for SEO - enables rich snippets and sitelinks */}
+      <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicStructuredData) }}
-      /> */}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeStructuredData) }}
+      />
 
       <main>
         {/* All home sections - config-driven rendering */}

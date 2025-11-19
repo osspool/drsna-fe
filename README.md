@@ -160,3 +160,17 @@ Legend:
 1y: Cache expires after 1 year (effectively permanent)
 
 Built with ❤️ using Next.js, Tailwind CSS, shadcn/ui, and Framer Motion
+
+
+
+
+After deploying, verify they work:
+# Test main site
+curl https://drsnaclinic.com/sitemap.xml
+
+# Test pshot site
+curl https://pshots.co.uk/sitemap.xml
+
+# Test robots
+curl https://drsnaclinic.com/robots.txt
+curl https://pshots.co.uk/robots.txt
