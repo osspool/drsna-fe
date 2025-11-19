@@ -1,4 +1,6 @@
-import { DrAbbasPageContent } from "@/components/pages/DrAbbasPageContent";
+import { SectionRenderer } from "@/components/common/SectionRenderer";
+import { drAbbasPageConfig } from "@/lib/configs/dr-abbas";
+import { drAbbasData } from "@/data/pages/dr-abbas/page";
 
 export const metadata = {
   title: "Dr Syed Nadeem Abbas | Award-Winning Aesthetic Medicine Specialist London",
@@ -13,5 +15,9 @@ export const metadata = {
 };
 
 export default function DrAbbasPage() {
-  return <DrAbbasPageContent variant="general" />;
+  return (
+    <main className="min-h-screen">
+      <SectionRenderer sections={drAbbasPageConfig} data={drAbbasData} />
+    </main>
+  );
 }
