@@ -20,21 +20,21 @@ export async function generateMetadata() {
   const canonical = `${baseUrl}/contact`;
 
   return {
-    title: "Book Consultation | Dr SNA Clinic London",
+    title: "Contact Dr SNA Clinic | Book a Private Consultation in Marylebone",
     description:
-      "Book your confidential consultation with Dr Syed Nadeem Abbas. Award-winning aesthetic medicine clinic on Wimpole Street, London. Call +44 7955 836986 or book online.",
+      "Speak directly with Dr Syed Nadeem Abbas’ concierge team to arrange aesthetic consultations, urgent treatment reviews, or bespoke skin plans at our Wimpole Street clinic.",
     keywords: [
-      "book consultation",
-      "aesthetic medicine appointment",
-      "Dr Syed Nadeem Abbas contact",
-      "Wimpole Street clinic",
-      "London aesthetic clinic",
+      "contact dr sna clinic",
+      "private aesthetic consultation london",
+      "book wimpole street clinic",
+      "dr syed nadeem abbas contact",
+      "luxury skin clinic marylebone",
     ],
     metadataBase: new URL(baseUrl),
     openGraph: {
-      title: "Book Consultation | Dr SNA Clinic",
+      title: "Speak With Dr SNA Clinic’s Concierge Team",
       description:
-        "Schedule your confidential consultation with award-winning aesthetic medicine specialist Dr Syed Nadeem Abbas.",
+        "Message, call, or visit Dr Syed Nadeem Abbas’ private Marylebone clinic for personalised aesthetic advice and bookings.",
       url: canonical,
       type: "website",
       images: [
@@ -48,9 +48,9 @@ export async function generateMetadata() {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Book Consultation | Dr SNA Clinic",
+      title: "Contact Dr SNA Clinic",
       description:
-        "Schedule your confidential consultation with award-winning aesthetic medicine specialist Dr Syed Nadeem Abbas.",
+        "Request a discreet consultation or get answers from our Marylebone-based medical team.",
       images: ["/images/drsnaclinic/clinic-inside.jpg"],
     },
     alternates: {

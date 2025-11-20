@@ -30,22 +30,22 @@
   },
   "benefits": {
     "layout": "grid-3",
-    "title": "Clinic Advantages",
+    "title": "Why Our Patients Choose Us",
     "features": [
       {
-        "description": "Dr. Abbas and our medical team perform every session.",
+        "description": "Your treatment is never delegated—Dr. Abbas personally performs every injection for safety and precision.",
         "icon": "stethoscope",
-        "title": "Doctor-only injections"
+        "title": "Expert hands you can trust"
       },
       {
-        "description": "Dual-spin centrifuge ensures 5-6x platelet concentration.",
+        "description": "We use advanced dual-spin technology to concentrate your healing platelets 5-6 times stronger than standard methods.",
         "icon": "sparkles",
-        "title": "High potency PRP"
+        "title": "Maximum strength, visible results"
       },
       {
         "icon": "heart",
-        "title": "Full support system",
-        "description": "Supplements, at-home care, and progress tracking built in."
+        "title": "We're with you every step",
+        "description": "From your first consultation to maintenance care, we provide personalized guidance, supplements, and ongoing support."
       }
     ]
   },
@@ -73,46 +73,46 @@
     "subtitle": "Custom density mapping each visit",
     "title": "Targeted Zones"
   },
-  "description": "High-potency platelet-rich plasma injections that thicken thinning hair, reduce shedding, and restore confidence.",
+  "description": "Natural hair restoration that reignites growth from within—helping you feel like yourself again without surgery or harsh chemicals.",
   "hero": {
     "video": null,
-    "subheadline": "Doctor-led PRP hair therapy that reactivates follicles in as little as 12 weeks.",
-    "headline": "Regrow Confidence, Strand by Strand",
+    "subheadline": "Harness your body's natural healing power to awaken dormant follicles and reclaim the hair you thought was gone.",
+    "headline": "Fall in Love with Your Hair Again",
     "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=1920&q=80",
-    "badge": "Dual-spin high-yield PRP"
+    "badge": "Doctor-Led Natural Regrowth"
   },
   "whatToExpect": {
     "background": "gradient-cream",
     "steps": [
       {
-        "title": "Trichology Consult",
+        "title": "Your Personalized Assessment",
         "number": 1,
-        "description": "Scalp photography, bloodwork review, and plan creation.",
+        "description": "We listen, examine your scalp, review any labs, and create a custom plan tailored to your hair goals.",
         "duration": "20 mins"
       },
       {
         "duration": "15 mins",
-        "description": "Dual-spin centrifuge concentrates platelets 5-6x baseline.",
+        "description": "While you relax, we prepare your concentrated PRP using advanced dual-spin technology for maximum potency.",
         "number": 2,
-        "title": "PRP Preparation"
+        "title": "Precision Preparation"
       },
       {
-        "title": "Scalp Injections",
+        "title": "Gentle Treatment",
         "number": 3,
-        "description": "Comfort-first meso-gun delivery across temples, crown, or part line.",
+        "description": "Using comfort-focused techniques, we deliver PRP exactly where your hair needs it most—temples, crown, or part line.",
         "duration": "20 mins"
       },
       {
         "number": 4,
-        "title": "Aftercare & Boosters",
+        "title": "Ongoing Support",
         "duration": "5 mins",
-        "description": "LED therapy + home protocol of supplements and topicals."
+        "description": "We finish with soothing LED therapy and send you home with a complete aftercare plan plus expert guidance."
       }
     ],
-    "title": "Treatment Flow",
+    "title": "What to Expect During Your Visit",
     "enabled": true,
     "variant": "compact-timeline",
-    "subtitle": "Simple, comfortable, repeatable"
+    "subtitle": "Comfortable, caring, effective"
   },
   "faq": [
     {
@@ -148,8 +148,8 @@
       "answer": "We recommend 3 initial sessions spaced 4 weeks apart for optimal results. After that, maintenance boosters every 6-9 months help sustain hair density and prevent further thinning."
     }
   ],
-  "longDescription": "PRP harnesses the healing power in your own blood. We draw a small sample, concentrate the platelets up to 6x baseline, and inject them across the scalp using ultra-fine needles. Growth factors like PDGF, VEGF, and IGF flood the follicles, boost blood flow, and extend the growth phase. Expect stronger strands, less shedding, and a thicker hairline—without drugs or surgery.",
-  "tagline": "Wake Up Dormant Follicles with Liquid Gold",
+  "longDescription": "Your blood holds incredible healing power. Through a gentle process, we extract and concentrate the platelets—your body's natural repair agents—creating a potent solution rich in growth factors. When injected into your scalp, these healing messengers wake up sleeping hair follicles, strengthen fragile strands, and encourage new growth. It's nature's way of turning back time on hair loss—no surgery, no synthetic drugs, just you at your best.",
+  "tagline": "The hair you miss is waiting to come back",
   "categoryId": "aesthetic-medicine",
   "process": {
     "title": "Your Regrowth Timeline",
@@ -158,16 +158,16 @@
         "number": 1,
         "icon": "clipboard-check",
         "title": "Week 0",
-        "description": "Consult + first PRP session."
+        "description": "Your journey begins with a comprehensive consultation and your first treatment—gentle, comfortable, and personalized to your hair goals."
       },
       {
-        "description": "Session 2 + LED booster.",
+        "description": "Second session with LED light therapy boost to accelerate healing and maximize follicle activation.",
         "title": "Week 4",
         "icon": "activity",
         "number": 2
       },
       {
-        "description": "Session 3 + scalp analysis.",
+        "description": "Final initial treatment with detailed scalp photography to track your progress and celebrate early wins.",
         "title": "Week 8",
         "number": 3,
         "icon": "target"
@@ -176,18 +176,18 @@
         "number": 4,
         "icon": "trending-up",
         "title": "Week 12",
-        "description": "Visible regrowth and density review. Plan maintenance every 6 months."
+        "description": "See the transformation—new growth, thicker strands, and renewed confidence. We'll plan maintenance sessions to protect your results."
       }
     ]
   },
   "title": "PRP Hair Restoration",
   "cta": {
     "guarantee": "Consultation fee credited toward treatment",
-    "secondaryButton": "Speak to a hair advisor",
-    "urgency": "Limited PRP clinics weekly to protect quality",
-    "primaryButton": "Book PRP Hair consult",
-    "title": "Ready to Love Your Hair Again?",
-    "subtitle": "Book a PRP consultation and see regrowth start in weeks."
+    "secondaryButton": "Speak to a hair specialist",
+    "urgency": "Limited appointments—we prioritize quality over volume",
+    "primaryButton": "Start your hair journey",
+    "title": "Your Hair Transformation Starts Today",
+    "subtitle": "Take the first step toward thicker, healthier hair. Book your personalized consultation and discover what's possible."
   },
   "quickStats": {
     "resultsVisible": "8-12 weeks",
@@ -199,15 +199,56 @@
     "painLevel": "Low",
     "sessions": "3 sessions (4 weeks apart)"
   },
+  "gallery": {
+    "title": "Inside a PRP Session",
+    "subtitle": "Doctor-led care, sterile technique, and comfort-focused touches",
+    "columns": 3,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=900&q=80",
+        "alt": "Nurse preparing platelet-rich plasma tubes",
+        "title": "Dual-Spin Prep",
+        "caption": "High-yield centrifugation concentrates platelets x6."
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=900&q=80",
+        "alt": "Doctor performing scalp injections",
+        "title": "Precision Mapping",
+        "caption": "Targeted injections cover temples, crown, and part line."
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=900&q=80",
+        "alt": "Patient relaxing under LED therapy",
+        "title": "LED Recovery",
+        "caption": "Red light therapy calms the scalp and boosts absorption."
+      }
+    ]
+  },
+  "beforeAfter": {
+    "gallery": [
+      {
+        "id": "prp-hair-1",
+        "description": "After 3 sessions of PRP therapy.",
+        "before": "/images/treatments/prp-hair/before-after/before.png",
+        "after": "/images/treatments/prp-hair/before-after/after.png",
+        "treatment": "PRP Hair Restoration",
+        "title": "Hair Density Improvement"
+      }
+    ],
+    "disclaimer": "Individual results vary. Maintenance recommended.",
+    "title": "Before & After",
+    "subtitle": "Real patient results",
+    "enabled": true
+  },
   "overview": {
-    "title": "Why PRP Works for Hair",
+    "title": "Why PRP Transforms Hair Loss",
     "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1200&q=80",
-    "content": "Platelets are packed with growth factors that kick-start healing anywhere they’re placed. Injected into the scalp, they increase blood flow, revive dormant follicles, and strengthen the hair shaft. Because PRP is autologous, there’s zero risk of rejection—just pure regeneration. We use dual-spin centrifuges for maximum potency and meso-gun delivery for even coverage.",
+    "content": "Imagine harnessing your body's own healing wisdom to restore what's been lost. PRP therapy uses the regenerative power already flowing through your veins—concentrated platelets rich in growth factors that naturally repair and rejuvenate. When delivered to your scalp, these healing messengers breathe life back into tired follicles, strengthen fragile hair, and coax new strands to grow. It's not magic—it's your body rediscovering what it was always meant to do.",
     "highlights": [
-      "Suitable for male and female pattern thinning",
-      "Drug-free and hormone-free",
-      "Pairs with exosomes or Regenera® for advanced cases",
-      "Trichologist oversight + lifestyle guidance"
+      "Perfect for men and women experiencing thinning or pattern hair loss",
+      "Completely natural—no synthetic chemicals or hormones",
+      "Can be enhanced with advanced therapies like exosomes for faster results",
+      "Guided by hair specialists who understand your unique journey"
     ]
   },
   "candidacy": {
@@ -252,21 +293,23 @@
       "@type": "MedicalProcedure",
       "procedureType": "NoninvasiveProcedure",
       "bodyLocation": "Scalp",
-      "howPerformed": "Blood is drawn from the patient, processed in a dual-spin centrifuge to concentrate platelets 5-6x baseline, then injected into the scalp using meso-gun or micro-needling technique with topical numbing",
-      "preparation": "Clean hair, no topical products on treatment day. Optional topical anaesthetic applied 30 minutes before procedure",
-      "followup": "Avoid washing hair for 24 hours. LED therapy and homecare regimen provided. Three sessions spaced 4 weeks apart, then maintenance every 6-9 months",
-      "outcome": "Reduced hair shedding, increased hair thickness and density, reactivation of dormant follicles. Visible results at 8-12 weeks, peak results at 6 months",
-      "medicationRequired": "Topical anaesthetic (optional)",
+      "howPerformed": "A small blood sample is gently drawn from your arm, similar to a routine blood test. This sample is then placed in an advanced dual-spin centrifuge that separates and concentrates your platelets to 5-6 times their normal levels, creating a powerful healing serum. Using precise injection techniques with ultra-fine needles or a specialized meso-gun device, this concentrated PRP is carefully delivered into targeted areas of your scalp where thinning or hair loss has occurred. Topical numbing cream is applied beforehand to ensure your complete comfort throughout the 20-minute injection process.",
+      "preparation": "Arrive with clean, dry hair and avoid using any styling products, oils, or conditioners on treatment day. If you're taking blood-thinning medications or supplements like aspirin, fish oil, or vitamin E, please discuss these with your doctor at least one week before treatment as they may need to be paused temporarily. Stay well-hydrated in the days leading up to your appointment. An optional topical numbing cream will be applied 30 minutes before your procedure to maximize comfort.",
+      "followup": "For the first 24 hours after treatment, avoid washing your hair or getting your scalp wet to allow the PRP to fully absorb and begin its regenerative work. You may experience mild scalp tenderness or redness, which typically resolves within a day. Soothing LED light therapy is provided immediately after your treatment to reduce inflammation and enhance healing. You'll receive a personalized home care kit including supplements and gentle topical treatments to support your results. Plan to return for two additional sessions spaced 4 weeks apart to complete your initial treatment series. After that, maintenance sessions every 6-9 months help sustain your improved hair density and protect against future thinning.",
+      "outcome": "Within the first 4-6 weeks, you'll likely notice your hair feels stronger and you're losing fewer strands when brushing or washing. By 8-12 weeks, visible new growth typically begins to emerge as dormant follicles awaken and start producing hair again. Hair thickness, density, and overall volume continue to improve over the following months, with peak results appearing around 6 months post-treatment. Many patients report renewed confidence as their hairline fills in, their part line narrows, and their hair regains the fullness they remember. Results can last 12-18 months or longer with proper maintenance care.",
+      "medicationRequired": "Topical numbing cream (optional but recommended for comfort)",
       "medicalSpecialty": "Aesthetic Medicine",
       "isProprietary": false,
-      "treatmentFrequency": "3 initial sessions 4 weeks apart, then maintenance every 6-9 months",
-      "adverseOutcome": "Temporary scalp tenderness, minor bruising, rare infection",
+      "treatmentFrequency": "Three initial sessions spaced 4 weeks apart to build maximum follicle stimulation, followed by maintenance treatments every 6-9 months to preserve results and prevent further hair loss",
+      "adverseOutcome": "Most patients experience only mild, temporary side effects including scalp tenderness for 1-2 days, occasional minor bruising at injection sites, or slight swelling that resolves quickly. Infection is extremely rare due to sterile technique and the antimicrobial properties of PRP itself",
       "contraindication": [
-        "Active scalp infection",
-        "Platelet disorders",
-        "Severe anemia",
-        "Uncontrolled diabetes",
-        "Complete baldness (non-active follicles)"
+        "Active scalp infection or open wounds on the scalp",
+        "Platelet function disorders or low platelet counts",
+        "Severe untreated anemia",
+        "Uncontrolled diabetes (blood sugar must be stable)",
+        "Complete baldness where hair follicles are no longer viable",
+        "Current use of blood thinners that cannot be safely paused",
+        "Certain autoimmune conditions affecting the scalp"
       ],
       "relevantSpecialty": "Trichology"
     }

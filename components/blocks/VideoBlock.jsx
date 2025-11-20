@@ -3,10 +3,19 @@
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { VideoPlayer } from "@/components/ui/VideoPlayer";
+import { SectionHeader } from "@/components/common/SectionHeader";
 import { useState } from "react";
 
 export function VideoBlock({ data }) {
-  const { title, subtitle, description, videos = [], layout = "grid", featureContent, enabled = true } = data;
+  const {
+    title,
+    subtitle,
+    description,
+    videos = [],
+    layout = "grid",
+    featureContent,
+    enabled = true,
+  } = data;
   const [playing, setPlaying] = useState({});
 
   if (!enabled || !videos || videos.length === 0) return null;
@@ -19,19 +28,35 @@ export function VideoBlock({ data }) {
   if (layout === "feature" && videos[0]) {
     const video = videos[0];
     const videoOnLeft = featureContent?.videoSide === "left";
+    const contentTitle = featureContent?.title ?? title;
+    const contentSubtitle = featureContent?.subtitle ?? subtitle;
+    const contentDescription = featureContent?.description ?? description;
+    const highlights = featureContent?.highlights || [];
+    const hasContent =
+      contentTitle || contentSubtitle || contentDescription || highlights.length > 0;
 
     return (
       <Section background="gradient-cream">
         <Container>
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div
+            className={`grid gap-12 items-center ${
+              hasContent ? "lg:grid-cols-2" : "justify-center"
+            }`}
+          >
             <div
-              className={`opacity-0 ${videoOnLeft ? 'animate-slide-in-left lg:order-first' : 'animate-slide-in-right lg:order-last'}`}
+              className={`opacity-0 ${
+                videoOnLeft
+                  ? "animate-slide-in-left lg:order-first"
+                  : hasContent
+                  ? "animate-slide-in-right lg:order-last"
+                  : "animate-fade-in-up"
+              }`}
             >
               <VideoPlayer
                 video={video}
                 isPlaying={!!playing[0]}
                 onPlay={() => handlePlay(0)}
-                size="md"
+                size={hasContent ? "md" : "lg"}
               />
               {video.title && (
                 <p className="mt-4 text-center text-muted-foreground font-medium">
@@ -40,23 +65,44 @@ export function VideoBlock({ data }) {
               )}
             </div>
 
-            {/* Content Side */}
-            <div
-              className={`opacity-0 ${videoOnLeft ? 'animate-slide-in-right lg:order-last' : 'animate-slide-in-left lg:order-first'}`}
-            >
-              <div className="space-y-6">
-                {featureContent?.title && (
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground">
-                    {featureContent.title}
-                  </h2>
-                )}
-                {featureContent?.description && (
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    {featureContent.description}
-                  </p>
-                )}
+            {hasContent && (
+              <div
+                className={`opacity-0 ${
+                  videoOnLeft
+                    ? "animate-slide-in-right lg:order-last"
+                    : "animate-slide-in-left lg:order-first"
+                }`}
+              >
+                <div className="space-y-6">
+                  <SectionHeader
+                    title={contentTitle}
+                    subtitle={contentSubtitle}
+                    subtitleClassName="text-muted-foreground"
+                    align="left"
+                    spacing="sm"
+                    animate={false}
+                  />
+                  {contentDescription && (
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      {contentDescription}
+                    </p>
+                  )}
+                  {highlights.length > 0 && (
+                    <ul className="space-y-3">
+                      {highlights.map((item, index) => (
+                        <li
+                          key={index}
+                          className="flex items-start gap-3 text-sm text-muted-foreground"
+                        >
+                          <span className="mt-1 inline-flex h-2 w-2 rounded-full bg-primary/70" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </Container>
       </Section>

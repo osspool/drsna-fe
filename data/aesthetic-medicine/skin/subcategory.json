@@ -1,1 +1,213 @@
-{"cta":{"secondaryButton":"Speak to a skin advisor","note":"Consultation fee (£80) redeemable against treatment.","primaryButton":"Book skin consult","subtitle":"Book a doctor-led skin consultation and receive a bespoke roadmap.","title":"Start Your Skin Transformation"},"title":"Skin Health & Regeneration","description":"Advanced biostimulants, boosters, and skin programmes that correct texture, tone, and resilience.","seo":{"metaTitle":"Skin Treatments London | Polynucleotides & Medical Facials | Dr. SNA","metaDescription":"Discover regenerative skin treatments in London: polynucleotides, bespoke skin programmes, and advanced boosters for glowing, resilient skin.","keywords":["skin clinic london","polynucleotide skin treatment","medical facial london","skin boosters","hyperpigmentation treatment"],"h1":"Advanced Skin Treatments in London"},"beforeAfter":{"note":"Taken under consistent clinic lighting.","gallery":[{"description":"Three PN sessions improved density and hydration.","after":"https://images.unsplash.com/photo-1504593811423-6dd665756598?w=800&q=80","treatment":"Polynucleotide Skin Booster","title":"Polynucleotide Glow","before":"https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=800&q=80","id":"pn-radiance"}],"subtitle":"Photos shared with consent; individual results vary.","title":"Texture & Tone Transformations"},"treatments":{"polynucleotide-skin":{"shortDescription":"Injectable DNA fragments that repair, hydrate, and thicken skin.","title":"Polynucleotide Skin Booster","description":"Using premium PN-HPT formulas, we inject micro-droplets across face, neck, or hands to regenerate fibroblasts, reduce inflammation, and restore bounce—the perfect reset after stress or sun damage.","downtime":"Pinpoint bumps 24 hrs","results":"2-3 weeks","featured":true,"image":"https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&q=80","longevity":"6-9 months","popular":true,"price":"Course from £750","duration":"40 mins","icon":"droplet","benefits":["Deep hydration","Barrier repair","Healthy glow"]},"skin-range":{"title":"Signature Skin Range Programmes","shortDescription":"Custom combination of peels, LED, boosters, and homecare.","downtime":"Depends on peel depth (0-5 days)","description":"After a skin MOT, we design a 6-12 week plan blending chemical peels, LED, mesotherapy, and medical skincare to address pigmentation, acne, or dullness in a structured way.","icon":"sparkles","benefits":["Even tone","Clear pores","Resilient barrier"],"image":"https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&q=80","longevity":"Improves with maintenance","results":"Progressive over 4-8 weeks","featured":true,"price":"Programmes from £950","popular":false,"duration":"45-60 mins per visit"}},"shortTitle":"Skin","id":"skin","hero":{"backgroundImage":"https://images.unsplash.com/photo-1517282009859-f000ec3b26b2?w=1920&q=80","cta":"Plan your skin journey","subheadline":"Regenerative skin therapy for clarity, firmness, and long-lasting glow.","headline":"Radiance Engineered by Doctors","image":"https://images.unsplash.com/photo-1542838686-73e5375969b1?w=1920&q=80"},"introduction":{"highlights":["Polynucleotide & skin booster experts","Medical-grade homecare plans","LED + peel combinations for stubborn concerns","Data-tracked progress reviews"],"content":"We analyse your skin barrier, pigment path, and lifestyle triggers before recommending a plan. Expect VISIA or dermatoscope imaging, bespoke homecare, and regenerative in-clinic treatments that deliver measurable improvement.","image":"https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=1200&q=80","title":"Skin Science, Simplified"},"longDescription":"Healthy skin is more than surface deep. Our skin division uses polynucleotides, bio-remodellers, LED light, and medical-grade skincare to correct pigment, rebuild collagen, and lock in hydration. Whether you're targeting pigmentation, breakouts, or dullness, every plan is measured, photographed, and adjusted under Dr. Abbas’ supervision for long-term results.","categoryId":"aesthetic-medicine","tagline":"Glow From the Inside Out","relatedSubcategories":[{"description":"Combine skin glow with sculpting treatments.","id":"face","title":"Facial Aesthetics","image":"https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&q=80"},{"id":"hair","description":"Support scalp health alongside skin.","title":"Hair Restoration","image":"https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=600&q=80"}],"process":{"title":"Your Skin Journey","steps":[{"title":"Skin MOT","icon":"camera","number":1,"description":"Consult, VISIA imaging, and lifestyle review."},{"title":"Plan Creation","icon":"clipboard-check","number":2,"description":"Select polynucleotides, boosters, or programmes with homecare."},{"description":"3-6 visits combining injectables, peels, and LED.","title":"Treatment Block","icon":"calendar","number":3},{"description":"Track results, top up quarterly, and refresh homecare.","number":4,"icon":"repeat","title":"Review & Maintain"}]},"video":{"videos":[{"description":"Consultation to glowing review in 90 seconds.","thumbnail":"https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1280&q=80","url":"https://youtu.be/_rqOTIFl39I","title":"Skin Protocol Walkthrough"}],"enabled":true,"layout":"feature","description":"Dr. Abbas explains how we combine polynucleotides, LED, and medical skincare for flagship results.","title":"Go Behind the Treatment Room Door"},"treatmentCategories":[{"title":"Regeneration Boost","description":"Flood the skin with polynucleotides and growth factors for rapid repair.","treatments":["polynucleotide-skin"],"icon":"dna","id":"regeneration","benefits":["Collagen stimulation","Improved density","Reduced redness"]},{"icon":"layers","benefits":["Even tone","Calm breakouts","Glass-skin finish"],"id":"programmes","title":"Comprehensive Skin Programmes","treatments":["skin-range"],"description":"Layered protocols that tackle multiple concerns simultaneously."}],"benefits":{"features":[{"icon":"stethoscope","title":"Doctor oversight","description":"Consultants track every stage for safety and results."},{"icon":"activity","title":"Data-driven plans","description":"Imaging and hydration scoring guide every tweak."},{"title":"Regenerative-first","icon":"dna","description":"We prioritise polynucleotides, PDRN, and LED over aggressive damage."},{"icon":"book","title":"Holistic education","description":"Nutrition and lifestyle advice included."}],"title":"Why Our Skin Patients Stay Loyal"}}
+{
+  "cta": {
+    "secondaryButton": "Speak to a skin advisor",
+    "note": "Consultation fee (\u00a380) redeemable against treatment.",
+    "primaryButton": "Book skin consult",
+    "subtitle": "Book a doctor-led skin consultation and receive a bespoke roadmap.",
+    "title": "Start Your Skin Transformation"
+  },
+  "title": "Skin Health & Regeneration",
+  "description": "Advanced biostimulants, boosters, and skin programmes that correct texture, tone, and resilience.",
+  "seo": {
+    "metaTitle": "Skin Treatments London | Polynucleotides & Medical Facials | Dr. SNA",
+    "metaDescription": "Discover regenerative skin treatments in London: polynucleotides, bespoke skin programmes, and advanced boosters for glowing, resilient skin.",
+    "keywords": [
+      "skin clinic london",
+      "polynucleotide skin treatment",
+      "medical facial london",
+      "skin boosters",
+      "hyperpigmentation treatment"
+    ],
+    "h1": "Advanced Skin Treatments in London"
+  },
+  "beforeAfter": {
+    "gallery": [
+      {
+        "description": "Three PN sessions improved density and hydration.",
+        "after": "https://images.unsplash.com/photo-1504593811423-6dd665756598?w=800&q=80",
+        "treatment": "Polynucleotide Skin Booster",
+        "title": "Polynucleotide Glow",
+        "before": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=800&q=80",
+        "id": "pn-radiance"
+      }
+    ],
+    "subtitle": "Photos shared with consent; individual results vary.",
+    "title": "Texture & Tone Transformations",
+    "disclaimer": "Taken under consistent clinic lighting."
+  },
+  "treatments": {
+    "polynucleotide-skin": {
+      "shortDescription": "Injectable DNA fragments that repair, hydrate, and thicken skin.",
+      "title": "Polynucleotide Skin Booster",
+      "description": "Using premium PN-HPT formulas, we inject micro-droplets across face, neck, or hands to regenerate fibroblasts, reduce inflammation, and restore bounce\u2014the perfect reset after stress or sun damage.",
+      "downtime": "Pinpoint bumps 24 hrs",
+      "results": "2-3 weeks",
+      "featured": true,
+      "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&q=80",
+      "longevity": "6-9 months",
+      "popular": true,
+      "price": "Course from \u00a3750",
+      "duration": "40 mins",
+      "icon": "droplet",
+      "benefits": [
+        "Deep hydration",
+        "Barrier repair",
+        "Healthy glow"
+      ]
+    },
+    "skin-range": {
+      "title": "Signature Skin Range Programmes",
+      "shortDescription": "Custom combination of peels, LED, boosters, and homecare.",
+      "downtime": "Depends on peel depth (0-5 days)",
+      "description": "After a skin MOT, we design a 6-12 week plan blending chemical peels, LED, mesotherapy, and medical skincare to address pigmentation, acne, or dullness in a structured way.",
+      "icon": "sparkles",
+      "benefits": [
+        "Even tone",
+        "Clear pores",
+        "Resilient barrier"
+      ],
+      "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&q=80",
+      "longevity": "Improves with maintenance",
+      "results": "Progressive over 4-8 weeks",
+      "featured": true,
+      "price": "Programmes from \u00a3950",
+      "popular": false,
+      "duration": "45-60 mins per visit"
+    }
+  },
+  "shortTitle": "Skin",
+  "id": "skin",
+  "hero": {
+    "backgroundImage": "https://images.unsplash.com/photo-1517282009859-f000ec3b26b2?w=1920&q=80",
+    "cta": "Plan your skin journey",
+    "subheadline": "Regenerative skin therapy for clarity, firmness, and long-lasting glow.",
+    "headline": "Radiance Engineered by Doctors",
+    "image": "https://images.unsplash.com/photo-1542838686-73e5375969b1?w=1920&q=80"
+  },
+  "introduction": {
+    "highlights": [
+      "Polynucleotide & skin booster experts",
+      "Medical-grade homecare plans",
+      "LED + peel combinations for stubborn concerns",
+      "Data-tracked progress reviews"
+    ],
+    "content": "We analyse your skin barrier, pigment path, and lifestyle triggers before recommending a plan. Expect VISIA or dermatoscope imaging, bespoke homecare, and regenerative in-clinic treatments that deliver measurable improvement.",
+    "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=1200&q=80",
+    "title": "Skin Science, Simplified"
+  },
+  "longDescription": "Healthy skin is more than surface deep. Our skin division uses polynucleotides, bio-remodellers, LED light, and medical-grade skincare to correct pigment, rebuild collagen, and lock in hydration. Whether you're targeting pigmentation, breakouts, or dullness, every plan is measured, photographed, and adjusted under Dr. Abbas\u2019 supervision for long-term results.",
+  "categoryId": "aesthetic-medicine",
+  "tagline": "Glow From the Inside Out",
+  "relatedSubcategories": [
+    {
+      "description": "Combine skin glow with sculpting treatments.",
+      "id": "face",
+      "title": "Facial Aesthetics",
+      "image": "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&q=80"
+    },
+    {
+      "id": "hair",
+      "description": "Support scalp health alongside skin.",
+      "title": "Hair Restoration",
+      "image": "https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=600&q=80"
+    }
+  ],
+  "process": {
+    "title": "Your Skin Journey",
+    "steps": [
+      {
+        "title": "Skin MOT",
+        "icon": "camera",
+        "number": 1,
+        "description": "Consult, VISIA imaging, and lifestyle review."
+      },
+      {
+        "title": "Plan Creation",
+        "icon": "clipboard-check",
+        "number": 2,
+        "description": "Select polynucleotides, boosters, or programmes with homecare."
+      },
+      {
+        "description": "3-6 visits combining injectables, peels, and LED.",
+        "title": "Treatment Block",
+        "icon": "calendar",
+        "number": 3
+      },
+      {
+        "description": "Track results, top up quarterly, and refresh homecare.",
+        "number": 4,
+        "icon": "repeat",
+        "title": "Review & Maintain"
+      }
+    ]
+  },
+  "video": {
+    "videos": [
+      {
+        "description": "Consultation to glowing review in 90 seconds.",
+        "thumbnail": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1280&q=80",
+        "url": "https://youtu.be/_rqOTIFl39I",
+        "title": "Skin Protocol Walkthrough"
+      }
+    ],
+    "enabled": true,
+    "layout": "feature",
+    "description": "Dr. Abbas explains how we combine polynucleotides, LED, and medical skincare for flagship results.",
+    "title": "Go Behind the Treatment Room Door"
+  },
+  "treatmentCategories": [
+    {
+      "title": "Regeneration Boost",
+      "description": "Flood the skin with polynucleotides and growth factors for rapid repair.",
+      "treatments": [
+        "polynucleotide-skin"
+      ],
+      "icon": "dna",
+      "id": "regeneration",
+      "benefits": [
+        "Collagen stimulation",
+        "Improved density",
+        "Reduced redness"
+      ]
+    },
+    {
+      "icon": "layers",
+      "benefits": [
+        "Even tone",
+        "Calm breakouts",
+        "Glass-skin finish"
+      ],
+      "id": "programmes",
+      "title": "Comprehensive Skin Programmes",
+      "treatments": [
+        "skin-range"
+      ],
+      "description": "Layered protocols that tackle multiple concerns simultaneously."
+    }
+  ],
+  "benefits": {
+    "features": [
+      {
+        "icon": "stethoscope",
+        "title": "Doctor oversight",
+        "description": "Consultants track every stage for safety and results."
+      },
+      {
+        "icon": "activity",
+        "title": "Data-driven plans",
+        "description": "Imaging and hydration scoring guide every tweak."
+      },
+      {
+        "title": "Regenerative-first",
+        "icon": "dna",
+        "description": "We prioritise polynucleotides, PDRN, and LED over aggressive damage."
+      },
+      {
+        "icon": "book",
+        "title": "Holistic education",
+        "description": "Nutrition and lifestyle advice included."
+      }
+    ],
+    "title": "Why Our Skin Patients Stay Loyal"
+  }
+}

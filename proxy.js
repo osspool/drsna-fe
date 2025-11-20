@@ -38,6 +38,25 @@ export function proxy(request) {
     return response;
   }
 
+  // Check if this is the ED domain
+  const isEDDomain =
+    hostname.includes('erectiledysfunction-treatments.com') ||
+    hostname.includes('ed.localhost');
+
+  // Handle ED domain routing
+  if (isEDDomain) {
+    if (url.pathname === '/') {
+      rewriteUrl.pathname = '/erectiledysfunction';
+    } else if (!url.pathname.startsWith('/erectiledysfunction')) {
+      rewriteUrl.pathname = `/erectiledysfunction${url.pathname}`;
+    }
+
+    const response = NextResponse.rewrite(rewriteUrl);
+    response.headers.set('x-domain-context', 'erectiledysfunction');
+    response.headers.set('x-site-name', 'Erectile Dysfunction Treatment London');
+    return response;
+  }
+
   // Default: Main site (drsnaclinic.com)
   const response = NextResponse.next();
   response.headers.set('x-domain-context', 'main');

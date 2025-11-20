@@ -15,6 +15,7 @@ export { PricingBlock } from "./PricingBlock";
 export { CandidacyBlock } from "./CandidacyBlock";
 export { SafetyBlock } from "./SafetyBlock";
 export { ComparisonBlock } from "./ComparisonBlock";
+export { TwoColumnFeaturesBlock } from "./TwoColumnFeaturesBlock";
 
 // Consolidated Section Components (from sections/)
 export { FAQSection } from "@/components/sections/FAQSection";

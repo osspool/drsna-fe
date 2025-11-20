@@ -71,7 +71,10 @@ export function TreatmentMenu({ item, breadcrumb, onBack, onNavigate, inlineChil
   const hasSections = sectionDefinitions.length > 0
 
   return (
-    <div className="w-full h-full flex flex-col overflow-hidden">
+    <div 
+      className="w-full h-full flex flex-col overflow-hidden"
+      onClick={(e) => e.target === e.currentTarget && handleNavigate()}
+    >
       {/* Header */}
       <div className="px-6 md:px-8 border-b border-white/10">
         <div className="max-w-6xl mx-auto flex items-center justify-between gap-6 py-5 min-h-[44px]">
@@ -100,7 +103,10 @@ export function TreatmentMenu({ item, breadcrumb, onBack, onNavigate, inlineChil
       </div>
 
       {/* Treatment content */}
-      <div className="px-6 md:px-8 py-8 overflow-y-auto overscroll-contain flex-1">
+      <div 
+        className="px-6 md:px-8 py-8 overflow-y-auto overscroll-contain flex-1"
+        onClick={(e) => e.target === e.currentTarget && handleNavigate()}
+      >
         <div className="max-w-6xl mx-auto">
           {hasSections ? (
             <div className={`grid gap-8 ${buildColumnClasses(sectionDefinitions.length)}`}>

@@ -116,7 +116,7 @@ export function MainNav() {
                       <li>
                         <NavigationMenuLink asChild>
                           <Link
-                            href="/about"
+                            href="/about-us"
                             className="block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-colors hover:bg-accent group"
                           >
                             <div className="text-sm font-medium text-foreground">
@@ -131,7 +131,7 @@ export function MainNav() {
                       <li>
                         <NavigationMenuLink asChild>
                           <Link
-                            href="/team"
+                            href="/about-us#team"
                             className="block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-colors hover:bg-accent group"
                           >
                             <div className="text-sm font-medium text-foreground">

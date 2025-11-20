@@ -208,7 +208,7 @@ export const navigationData = [
           { id: "physiotherapy", label: "Physiotherapy", href: "/treatments/pain-management/treatments/physiotherapy" },
           {
             id: "arthrosamid-injection",
-            label: "ArthrosamidAr",
+            label: "Arthrosamid",
             href: "/treatments/pain-management/treatments/arthrosamid-injection",
           },
         ],
@@ -348,12 +348,12 @@ export const navigationData = [
         description: "Get in touch with our team",
         href: "/contact",
       },
+      {
+        id: "resources",
+        label: "Resources",
+        description: "Evidence-led guides for hair fall, intimacy, and longevity",
+        href: "/resources",
+      },
     ],
-  },
-  {
-    id: "resources",
-    label: "Resources",
-    description: "Guides for hair fall, intimacy, and longevity",
-    href: "/resources",
   },
 ]

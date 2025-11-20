@@ -71,19 +71,27 @@ export function MegaMenu({ item, isOpen, onClose }) {
   if (!isOpen) return null
 
   return (
-    <>
+    <div
+      className="fixed top-16 inset-x-0 bottom-0 z-50"
+      data-mega-menu-root
+      onClick={onClose}
+    >
+      <div className="absolute inset-0 bg-royal-blue/80 backdrop-blur-sm transition-opacity duration-300 animate-in fade-in" />
       <div
-        className="fixed top-16 inset-x-0 bottom-0 bg-royal-blue/80 backdrop-blur-sm z-40 transition-opacity duration-300 animate-in fade-in"
-        onClick={onClose}
-      />
-
-      <div className="fixed top-16 inset-x-0 z-50 pointer-events-none">
-        <div
-          data-mega-menu-content
-          className="pointer-events-auto w-full overflow-hidden overscroll-contain"
-          style={{ height: "calc(100vh - 4rem)" }}
+        data-mega-menu-content
+        className="relative w-full h-full overflow-hidden overscroll-contain"
+        onClick={(event) => {
+          if (event.target === event.currentTarget) {
+            onClose()
+            return
+          }
+          event.stopPropagation()
+        }}
+      >
+        <div 
+          className="h-full flex flex-col overflow-hidden bg-royal-blue/80 animate-in slide-in-from-top-4 fade-in duration-300"
+          onClick={(e) => e.target === e.currentTarget && onClose()}
         >
-          <div className="h-full flex flex-col overflow-hidden bg-royal-blue/80 animate-in slide-in-from-top-4 fade-in duration-300">
             {/* Header with breadcrumb and back button */}
             {shouldShowTreatmentMenu ? (
               <TreatmentMenu
@@ -119,7 +127,10 @@ export function MegaMenu({ item, isOpen, onClose }) {
                 )}
 
                 {/* Menu content area with scroll */}
-                <div className="flex-1 overflow-y-auto overscroll-contain px-8 py-10">
+                <div 
+                  className="flex-1 overflow-y-auto overscroll-contain px-8 py-10"
+                  onClick={(e) => e.target === e.currentTarget && onClose()}
+                >
                   {displayChildren.length > 0 ? (
                     <div className="grid gap-6 max-w-6xl mx-auto w-full grid-cols-1 lg:grid-cols-2">
                       {displayChildren.map((child, index) => {
@@ -192,6 +203,5 @@ export function MegaMenu({ item, isOpen, onClose }) {
           </div>
         </div>
       </div>
-    </>
   )
 }

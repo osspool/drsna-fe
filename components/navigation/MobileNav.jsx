@@ -134,14 +134,14 @@ export function MobileNav({ isOpen, onClose }) {
                 {/* More Links */}
                 <div className="space-y-1 mb-6 pt-6 border-t border-white/10">
                   <Link
-                    href="/about"
+                    href="/about-us"
                     onClick={onClose}
                     className="block py-2.5 px-3 font-medium text-white hover:bg-white/10 rounded-lg transition-colors"
                   >
                     About Us
                   </Link>
                   <Link
-                    href="/team"
+                    href="/about-us#team"
                     onClick={onClose}
                     className="block py-2.5 px-3 font-medium text-white hover:bg-white/10 rounded-lg transition-colors"
                   >

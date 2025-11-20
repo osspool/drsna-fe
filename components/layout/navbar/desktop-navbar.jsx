@@ -30,17 +30,13 @@ export function DesktopNavbar({ onMenuOpenChange }) {
     if (!activeMenuId) return
 
     const handleClickOutside = (event) => {
-      // Check if click is on any trigger button
+      const megaMenuRoot = document.querySelector('[data-mega-menu-root]')
+      const clickedInsideMegaMenu = megaMenuRoot && megaMenuRoot.contains(event.target)
       const clickedTrigger = Object.values(triggerRefs.current).some(
         (ref) => ref && ref.contains(event.target)
       )
 
-      // Check if click is inside mega menu content
-      const megaMenuContent = document.querySelector('[data-mega-menu-content]')
-      const clickedInMenu = megaMenuContent && megaMenuContent.contains(event.target)
-
-      // Close if clicked outside both trigger and menu
-      if (!clickedTrigger && !clickedInMenu) {
+      if (!clickedTrigger && !clickedInsideMegaMenu) {
         setActiveMenuId(null)
       }
     }

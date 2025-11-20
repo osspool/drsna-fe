@@ -177,10 +177,6 @@ export function PShotFeaturedSection({ data }) {
                               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                               className="object-cover transition-transform duration-700 group-hover:scale-110"
                             />
-                            <div className="pointer-events-none absolute inset-0">
-                              <div className="absolute inset-0 bg-black/35 dark:bg-background/35" />
-                              <div className="absolute inset-0 bg-linear-to-t from-black/95 via-black/55 to-black/15 dark:from-background/95 dark:via-background/55 dark:to-background/15" />
-                            </div>
 
                             <div className="absolute top-4 left-4">
                               <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center backdrop-blur-sm border-2 border-primary/50">

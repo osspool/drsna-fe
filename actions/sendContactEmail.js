@@ -8,20 +8,20 @@ import { createMailTransporter, buildFromHeader } from '@/lib/mailer';
 const ContactFormSchema = z.object({
   name: z.string().min(2, 'Name is required'),
   email: z.string().email('Invalid email address'),
-  company: z.string().optional(),
+  subject: z.string().optional(),
   phone: z.string().optional(),
   message: z.string().min(10, 'Message must be at least 10 characters'),
 });
 
 export async function sendContactEmail(prevState, formData) {
   try {
-    // Extract form data
+    // Extract form data (convert null to empty string for Zod validation)
     const rawFormData = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      company: formData.get('company'),
-      phone: formData.get('phone'),
-      message: formData.get('message'),
+      name: formData.get('name') || '',
+      email: formData.get('email') || '',
+      subject: formData.get('subject') || '',
+      phone: formData.get('phone') || '',
+      message: formData.get('message') || '',
     };
 
     // Validate form data
@@ -45,8 +45,8 @@ export async function sendContactEmail(prevState, formData) {
     // Verify SMTP connection
     await transporter.verify();
 
-    // Create subject (no service field)
-    const emailSubject = 'Contact Form: New Message';
+    // Create subject from form or use default
+    const emailSubject = validatedFields.data.subject || 'Contact Form: New Message';
 
     // Prepare email content
     const mailOptions = {
@@ -59,7 +59,7 @@ export async function sendContactEmail(prevState, formData) {
         
         Name: ${validatedFields.data.name}
         Email: ${validatedFields.data.email}
-        ${validatedFields.data.company ? `Company: ${validatedFields.data.company}` : ''}
+        ${validatedFields.data.subject ? `Subject: ${validatedFields.data.subject}` : ''}
         ${validatedFields.data.phone ? `Phone: ${validatedFields.data.phone}` : ''}
         
         Message:
@@ -69,7 +69,7 @@ export async function sendContactEmail(prevState, formData) {
         <h2>New Contact Form Submission</h2>
         <p><strong>Name:</strong> ${validatedFields.data.name}</p>
         <p><strong>Email:</strong> ${validatedFields.data.email}</p>
-        ${validatedFields.data.company ? `<p><strong>Company:</strong> ${validatedFields.data.company}</p>` : ''}
+        ${validatedFields.data.subject ? `<p><strong>Subject:</strong> ${validatedFields.data.subject}</p>` : ''}
         ${validatedFields.data.phone ? `<p><strong>Phone:</strong> ${validatedFields.data.phone}</p>` : ''}
         <p><strong>Message:</strong></p>
         <div style="background-color: #f5f5f5; padding: 15px; border-radius: 5px; margin-top: 10px;">
@@ -79,7 +79,10 @@ export async function sendContactEmail(prevState, formData) {
     };
 
     // Send email
-    await transporter.sendMail(mailOptions);
+    const info = await transporter.sendMail(mailOptions);
+
+    // Log success for debugging
+    console.log('✅ Contact email sent:', info.messageId);
 
     // Return success state
     return {
@@ -90,7 +93,8 @@ export async function sendContactEmail(prevState, formData) {
 
   } catch (error) {
     // Handle errors
-    console.error('Contact form error:', error);
+    console.error('❌ Contact form error:', error?.message || error);
+
     return {
       message: "Sorry, something went wrong. Please try again later or contact us directly.",
       success: false,

@@ -24,9 +24,8 @@ export function CategoryIntroductionSection({ data }) {
       <Container>
         <SectionHeader
           title={data.title}
-          titleClassName="text-foreground"
           subtitle={data.content}
-          subtitleClassName="text-muted-foreground leading-relaxed"
+          subtitleClassName="leading-relaxed"
           maxWidth={4}
         />
 

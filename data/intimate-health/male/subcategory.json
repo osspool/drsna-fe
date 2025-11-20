@@ -43,39 +43,63 @@
       "title": "Performance Optimisation",
       "description": "Restore healthy erections, sensitivity, and stamina with PRP and acoustic wave therapy.",
       "icon": "activity",
-      "treatments": ["p-shot", "shockwave-therapy"],
-      "benefits": ["Improved blood flow", "Heightened sensitivity", "Confidence in intimate moments"]
+      "treatments": [
+        "p-shot",
+        "shockwave-therapy"
+      ],
+      "benefits": [
+        "Improved blood flow",
+        "Heightened sensitivity",
+        "Confidence in intimate moments"
+      ]
     },
     {
       "id": "corrective",
       "title": "Corrective Care",
       "description": "Address Peyronie's curvature and scar tissue with combination regenerative medicine.",
       "icon": "align-center",
-      "treatments": ["peyronies-disease"],
-      "benefits": ["Reduced curvature", "Less plaque density", "Pain-free erections"]
+      "treatments": [
+        "peyronies-disease"
+      ],
+      "benefits": [
+        "Reduced curvature",
+        "Less plaque density",
+        "Pain-free erections"
+      ]
     },
     {
       "id": "dermatological",
       "title": "Dermatological Support",
       "description": "Calm inflammation and rebuild tissue integrity for chronic skin conditions.",
       "icon": "droplet",
-      "treatments": ["lichen-sclerosis-male"],
-      "benefits": ["Soothe irritation", "Protect delicate tissue", "Prevent flare-ups"]
+      "treatments": [
+        "lichen-sclerosis-male"
+      ],
+      "benefits": [
+        "Soothe irritation",
+        "Protect delicate tissue",
+        "Prevent flare-ups"
+      ]
     }
   ],
   "treatments": {
     "p-shot": {
-      "title": "P-Shot® PRP for Men",
+      "title": "P-Shot\u00ae PRP for Men",
       "shortDescription": "Platelet-rich plasma injections that regenerate penile tissue and sensitivity.",
-      "description": "Our flagship procedure isolates high-quality PRP ('liquid gold') and reinjects it into strategic areas to enhance blood flow, improve rigidity, and boost nerve response—without surgery.",
+      "description": "Our flagship procedure isolates high-quality PRP ('liquid gold') and reinjects it into strategic areas to enhance blood flow, improve rigidity, and boost nerve response\u2014without surgery.",
       "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80",
       "icon": "droplet",
       "duration": "40 mins",
-      "downtime": "None – resume intimacy same day",
+      "downtime": "None \u2013 resume intimacy same day",
       "results": "3-6 weeks",
       "longevity": "12-18 months",
-      "price": "From £1,200",
-      "benefits": ["Improved erection quality", "Increased girth + sensitivity", "Supports Peyronie's correction", "Drug-free solution"],
+      "price": "From \u00a31,200",
+      "benefits": [
+        "Improved erection quality",
+        "Increased girth + sensitivity",
+        "Supports Peyronie's correction",
+        "Drug-free solution"
+      ],
       "featured": true,
       "popular": true
     },
@@ -89,8 +113,13 @@
       "downtime": "None",
       "results": "Often within 2-3 sessions",
       "longevity": "Up to 2 years",
-      "price": "From £350 per session",
-      "benefits": ["Drug-free performance", "Enhanced blood flow", "Supports nerve repair", "Pairs well with P-Shot"],
+      "price": "From \u00a3350 per session",
+      "benefits": [
+        "Drug-free performance",
+        "Enhanced blood flow",
+        "Supports nerve repair",
+        "Pairs well with P-Shot"
+      ],
       "featured": true,
       "popular": true
     },
@@ -104,8 +133,13 @@
       "downtime": "Minimal soreness",
       "results": "Visible change at 8-12 weeks",
       "longevity": "Permanent when maintained",
-      "price": "Programmes from £1,650",
-      "benefits": ["Reduced curvature", "Less plaque density", "Pain-free intimacy", "Confidence restored"],
+      "price": "Programmes from \u00a31,650",
+      "benefits": [
+        "Reduced curvature",
+        "Less plaque density",
+        "Pain-free intimacy",
+        "Confidence restored"
+      ],
       "featured": false,
       "popular": false
     },
@@ -119,8 +153,13 @@
       "downtime": "None",
       "results": "Symptom relief within days",
       "longevity": "Maintenance every 6-12 months",
-      "price": "From £795",
-      "benefits": ["Reduces itching/burning", "Protects against scarring", "Improves skin elasticity", "Doctor-monitored plan"],
+      "price": "From \u00a3795",
+      "benefits": [
+        "Reduces itching/burning",
+        "Protects against scarring",
+        "Improves skin elasticity",
+        "Doctor-monitored plan"
+      ],
       "featured": false,
       "popular": false
     }
@@ -128,19 +167,55 @@
   "benefits": {
     "title": "Designed for Men's Real Lives",
     "features": [
-      {"title": "Fast appointments", "description": "Evening and lunchtime slots reduce time away from work", "icon": "clock"},
-      {"title": "Comprehensive diagnostics", "description": "Hormones, vascular studies, and lifestyle review inform every plan", "icon": "activity"},
-      {"title": "Advanced pain control", "description": "Topical, nerve block, or nitrous options keep you comfortable", "icon": "shield-check"},
-      {"title": "Progress tracking", "description": "Outcome surveys and ultrasound comparisons so you can see gains", "icon": "chart-line"}
+      {
+        "title": "Fast appointments",
+        "description": "Evening and lunchtime slots reduce time away from work",
+        "icon": "clock"
+      },
+      {
+        "title": "Comprehensive diagnostics",
+        "description": "Hormones, vascular studies, and lifestyle review inform every plan",
+        "icon": "activity"
+      },
+      {
+        "title": "Advanced pain control",
+        "description": "Topical, nerve block, or nitrous options keep you comfortable",
+        "icon": "shield-check"
+      },
+      {
+        "title": "Progress tracking",
+        "description": "Outcome surveys and ultrasound comparisons so you can see gains",
+        "icon": "chart-line"
+      }
     ]
   },
   "process": {
     "title": "What Working with Us Looks Like",
     "steps": [
-      {"number": 1, "title": "Confidential consultation", "description": "45-minute doctor appointment covering goals, history, and expectations.", "icon": "message-circle"},
-      {"number": 2, "title": "Diagnostics & planning", "description": "Penile Doppler, hormone labs, or photo documentation inform your bespoke plan.", "icon": "scan"},
-      {"number": 3, "title": "Treatment sessions", "description": "Precision-delivered PRP, shockwave, or topical therapy in a calm suite.", "icon": "syringe"},
-      {"number": 4, "title": "Review & optimisation", "description": "Follow-up measurements, supplement tweaks, and maintenance roadmap.", "icon": "refresh-cw"}
+      {
+        "number": 1,
+        "title": "Confidential consultation",
+        "description": "45-minute doctor appointment covering goals, history, and expectations.",
+        "icon": "message-circle"
+      },
+      {
+        "number": 2,
+        "title": "Diagnostics & planning",
+        "description": "Penile Doppler, hormone labs, or photo documentation inform your bespoke plan.",
+        "icon": "scan"
+      },
+      {
+        "number": 3,
+        "title": "Treatment sessions",
+        "description": "Precision-delivered PRP, shockwave, or topical therapy in a calm suite.",
+        "icon": "syringe"
+      },
+      {
+        "number": 4,
+        "title": "Review & optimisation",
+        "description": "Follow-up measurements, supplement tweaks, and maintenance roadmap.",
+        "icon": "refresh-cw"
+      }
     ]
   },
   "faq": [
@@ -154,7 +229,7 @@
     },
     {
       "question": "Is there any downtime?",
-      "answer": "Most patients resume normal activity—including intercourse—the same day. Mild swelling or tingling settles within 24 hours."
+      "answer": "Most patients resume normal activity\u2014including intercourse\u2014the same day. Mild swelling or tingling settles within 24 hours."
     },
     {
       "question": "Can I combine treatments?",
@@ -166,13 +241,13 @@
     },
     {
       "question": "Is financing available?",
-      "answer": "0% finance is available for courses over £1,000, and bespoke payment plans can be arranged with our patient advisor."
+      "answer": "0% finance is available for courses over \u00a31,000, and bespoke payment plans can be arranged with our patient advisor."
     }
   ],
   "beforeAfter": {
     "title": "Meaningful Functional Gains",
     "subtitle": "Ultrasound and patient-reported data demonstrate measurable improvements.",
-    "note": "Imagery available in clinic due to patient privacy."
+    "disclaimer": "Imagery available in clinic due to patient privacy."
   },
   "video": {
     "enabled": true,
@@ -199,7 +274,7 @@
     "subtitle": "Book a confidential consultation with Dr. Abbas and receive a tailored action plan the same day.",
     "primaryButton": "Book men's health consult",
     "secondaryButton": "Request a call back",
-    "note": "Consultation fee (£100) credited toward treatment."
+    "note": "Consultation fee (\u00a3100) credited toward treatment."
   },
   "relatedSubcategories": [
     {

@@ -6,7 +6,7 @@ import { Play, X, Quote } from "lucide-react";
 import { SectionHeader } from "@/components/common/SectionHeader";
 import { TestimonialCard } from "@/components/common/TestimonialCard";
 import { RatingStars } from "@/components/common/RatingStars";
-import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogClose, DialogTitle } from "@/components/ui/dialog";
 import {
   Carousel,
   CarouselContent,
@@ -18,8 +18,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { VideoPlayer } from "@/components/ui/VideoPlayer";
-import { useImageOrientation } from "@/hooks/use-image-orientation";
-import { getYouTubeThumbnailUrl } from "@/lib/utils";
+
+import { VideoThumbnail } from "./VideoThumbnail";
 
 export function TestimonialsSection({
   data,
@@ -69,7 +69,7 @@ export function TestimonialsSection({
                       <div className="relative aspect-video overflow-hidden bg-muted">
                         <VideoThumbnail video={video} />
 
-                        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/30 to-transparent opacity-60 group-hover:opacity-75 transition-opacity" />
+                        <div className="absolute inset-0 bg-linear-to-t from-background/80 via-background/30 to-transparent opacity-60 group-hover:opacity-75 transition-opacity" />
 
                         <button
                           onClick={() => setSelectedVideo(videoIdentifier)}
@@ -94,6 +94,7 @@ export function TestimonialsSection({
 
         <Dialog open={!!selectedVideo} onOpenChange={() => setSelectedVideo(null)}>
           <DialogContent className="max-w-5xl w-full p-0 bg-card border-border overflow-hidden">
+            <DialogTitle className="sr-only">Patient Testimonial Video</DialogTitle>
             <DialogClose className="absolute right-4 top-4 z-50 rounded-full p-2 border border-border bg-background/80 backdrop-blur-sm hover:bg-primary hover:border-primary transition-all duration-300 group">
               <X className="h-5 w-5 text-foreground group-hover:text-primary-foreground" />
               <span className="sr-only">Close</span>
@@ -333,45 +334,3 @@ export function TestimonialsSection({
   );
 }
 
-function VideoThumbnail({ video }) {
-  const videoIdentifier = video.id || video.videoId;
-  const manualOrientation =
-    video.orientation || (typeof video.isPortrait === "boolean" ? (video.isPortrait ? "portrait" : "landscape") : undefined);
-  const initialThumbnail =
-    video.thumbnail || (videoIdentifier ? getYouTubeThumbnailUrl(videoIdentifier, { orientationHint: manualOrientation }) : null);
-  const orientation = useImageOrientation(initialThumbnail);
-  const resolvedOrientation = manualOrientation || orientation;
-  const isPortrait = resolvedOrientation === "portrait";
-  const PORTRAIT_DEFAULT_SCALE = 4;
-  const baseScale =
-    typeof video.thumbnailZoom === "number"
-      ? video.thumbnailZoom
-      : isPortrait
-        ? PORTRAIT_DEFAULT_SCALE
-        : 1;
-  const thumbnailSrc =
-    video.thumbnail || (videoIdentifier ? getYouTubeThumbnailUrl(videoIdentifier, { orientationHint: resolvedOrientation }) : null);
-  const computeBackgroundSize = () => {
-    if (!isPortrait) return "cover";
-    const widthPercent = Math.max(baseScale * 100, 400);
-    return `${widthPercent}% auto`;
-  };
-
-  if (!thumbnailSrc) {
-    return <div className="absolute inset-0 bg-muted" />;
-  }
-
-  return (
-    <div className="absolute inset-0 overflow-hidden" aria-label={video.title || "Patient testimonial"}>
-      <div
-        className="h-full w-full transition-[background-size] duration-500 group-hover:scale-[1.02]"
-        style={{
-          backgroundImage: `url(${thumbnailSrc})`,
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: computeBackgroundSize(),
-        }}
-      />
-    </div>
-  );
-}

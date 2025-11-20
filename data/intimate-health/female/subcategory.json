@@ -44,38 +44,57 @@
       "title": "Regenerative Rejuvenation",
       "description": "Reawaken arousal, sensitivity, and lubrication with advanced PRP and RF tightening.",
       "icon": "sparkles",
-      "treatments": ["prp-shot-women", "ultra-femme-360"],
-      "benefits": ["Increased natural lubrication", "Heightened orgasm intensity", "Improved tissue tone"]
+      "treatments": [
+        "prp-shot-women",
+        "ultra-femme-360"
+      ],
+      "benefits": [
+        "Increased natural lubrication",
+        "Heightened orgasm intensity",
+        "Improved tissue tone"
+      ]
     },
     {
       "id": "pelvic-strength",
       "title": "Pelvic Floor Strength & Support",
       "description": "Neuromuscular stimulation that performs 11,000 Kegels in under 30 minutes.",
       "icon": "activity",
-      "treatments": ["btl-emsella-chair"],
-      "benefits": ["Better bladder control", "Improved posture and core stability", "Faster postnatal recovery"]
+      "treatments": [
+        "btl-emsella-chair"
+      ],
+      "benefits": [
+        "Better bladder control",
+        "Improved posture and core stability",
+        "Faster postnatal recovery"
+      ]
     },
     {
       "id": "calm-comfort",
       "title": "Comfort & Dermatological Care",
       "description": "Soothe inflammatory skin conditions and rebuild healthy vulvar tissue.",
       "icon": "shield",
-      "treatments": ["lichen-sclerosis-female"],
-      "benefits": ["Reduced itching and tearing", "More resilient skin barrier", "Fewer flare-ups"]
+      "treatments": [
+        "lichen-sclerosis-female"
+      ],
+      "benefits": [
+        "Reduced itching and tearing",
+        "More resilient skin barrier",
+        "Fewer flare-ups"
+      ]
     }
   ],
   "treatments": {
     "prp-shot-women": {
-      "title": "O-Shot® PRP for Women",
+      "title": "O-Shot\u00ae PRP for Women",
       "shortDescription": "Clitoral and G-spot PRP injections that boost lubrication and orgasm quality.",
       "description": "Our O-Shot protocol concentrates platelet-rich plasma up to 6x baseline and strategically injects it along the clitoral complex, anterior vaginal wall, and labia to promote nerve regeneration, collagen production, and healthier blood flow.",
       "image": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=800&q=80",
       "icon": "droplet",
       "duration": "45 mins",
-      "downtime": "Zero downtime – resume intimacy same day",
+      "downtime": "Zero downtime \u2013 resume intimacy same day",
       "results": "2-6 weeks",
       "longevity": "12-18 months",
-      "price": "From £1,100",
+      "price": "From \u00a31,100",
       "benefits": [
         "Stronger, faster orgasms",
         "Better natural lubrication",
@@ -86,16 +105,16 @@
       "popular": true
     },
     "ultra-femme-360": {
-      "title": "Ultra Femme 360™",
+      "title": "Ultra Femme 360\u2122",
       "shortDescription": "Radiofrequency tightening for labial contour and vaginal support without surgery.",
-      "description": "This 8-minute internal and external RF treatment heats tissue to 42–45°C, triggering collagen remodelling for tighter vaginal walls, improved moisture retention, and refined labial appearance.",
+      "description": "This 8-minute internal and external RF treatment heats tissue to 42\u201345\u00b0C, triggering collagen remodelling for tighter vaginal walls, improved moisture retention, and refined labial appearance.",
       "image": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=800&q=80",
       "icon": "waves",
       "duration": "30 mins (internal + external)",
       "downtime": "No downtime",
       "results": "Immediately, with peak at 90 days",
       "longevity": "12 months",
-      "price": "Course from £1,250",
+      "price": "Course from \u00a31,250",
       "benefits": [
         "Restores vaginal tightness",
         "Enhances moisture and pH",
@@ -106,16 +125,16 @@
       "popular": true
     },
     "btl-emsella-chair": {
-      "title": "BTL EMSELLA® Chair",
+      "title": "BTL EMSELLA\u00ae Chair",
       "shortDescription": "High-intensity focused electromagnetic therapy to strengthen the entire pelvic floor.",
       "description": "Remain fully clothed while 11,200 supramaximal contractions activate deep pelvic floor muscles, rebuilding continence and sexual function after childbirth or menopause.",
       "image": "https://images.unsplash.com/photo-1610276198568-eb6d0ff53e48?w=800&q=80",
       "icon": "pulse",
       "duration": "28 mins",
-      "downtime": "None – walk out immediately",
+      "downtime": "None \u2013 walk out immediately",
       "results": "Improvement after first session, best after 6",
       "longevity": "6-9 months",
-      "price": "Packages from £900 (6 sessions)",
+      "price": "Packages from \u00a3900 (6 sessions)",
       "benefits": [
         "Less urinary urgency or leaks",
         "Improved intimate sensation",
@@ -132,10 +151,10 @@
       "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&q=80",
       "icon": "shield-check",
       "duration": "45 mins",
-      "downtime": "Minimal – mild warmth for 24 hrs",
+      "downtime": "Minimal \u2013 mild warmth for 24 hrs",
       "results": "Symptom relief within 1-3 weeks",
       "longevity": "Sustained with quarterly maintenance",
-      "price": "From £750",
+      "price": "From \u00a3750",
       "benefits": [
         "Calms itching and soreness",
         "Thickens fragile tissue",
@@ -239,7 +258,6 @@
   "beforeAfter": {
     "title": "Subtle, Natural Transformations",
     "subtitle": "Patient imagery is shown with permission and remains anonymised.",
-    "note": "Results vary; photos represent typical improvements after recommended treatment plans.",
     "gallery": [
       {
         "id": "vf-tightening",
@@ -257,14 +275,15 @@
         "description": "Two PRP sessions plus LED therapy reduced plaques and itching for 12+ months.",
         "treatment": "Lichen Sclerosus Relief Programme"
       }
-    ]
+    ],
+    "disclaimer": "Results vary; photos represent typical improvements after recommended treatment plans."
   },
   "cta": {
     "title": "Ready to Feel Like Yourself Again?",
     "subtitle": "Book a confidential consultation with Dr. Abbas or our senior female clinician today.",
     "primaryButton": "Book women's health consult",
     "secondaryButton": "Speak to a patient advisor",
-    "note": "Consultation fee (£100) credited toward any treatment within 30 days."
+    "note": "Consultation fee (\u00a3100) credited toward any treatment within 30 days."
   },
   "relatedSubcategories": [
     {

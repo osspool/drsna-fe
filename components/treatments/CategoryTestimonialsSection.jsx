@@ -18,13 +18,12 @@ export function CategoryTestimonialsSection({ data }) {
   if (!data || data.length === 0) return null;
 
   return (
-    <Section padding="xl" className="bg-gradient-to-b from-secondary to-background">
+    <Section padding="xl" className="bg-linear-to-b from-secondary to-background">
       <Container>
         <SectionHeader
           badge="Patient Stories"
           badgeIcon="star"
           title="What Our Patients Say"
-          titleClassName="text-foreground"
         />
 
         <div className="grid md:grid-cols-3 gap-8">

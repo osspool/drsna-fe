@@ -73,7 +73,10 @@ const FormTextarea = ({
     return (
       <Textarea
         {...(field || {})}
-        value={value ?? ""}
+        id={name}
+        name={name} // Required for FormData to collect values in server actions
+        // Only set value for controlled components (with field or explicit value prop)
+        {...(field || propValue !== undefined ? { value: value ?? "" } : {})}
         placeholder={placeholder}
         disabled={isDisabled}
         className={cn(
@@ -81,7 +84,7 @@ const FormTextarea = ({
           textareaClassName
         )}
         rows={rows}
-        onChange={handleChange}
+        {...(field || propOnChange || onValueChange ? { onChange: handleChange } : {})}
         {...props}
       />
     );

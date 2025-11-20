@@ -20,7 +20,7 @@
     ],
     "layout": "grid-3"
   },
-  "longDescription": "Lip enhancement at Dr. SNA Clinic is never one-size-fits-all. We analyse your facial proportions, smile dynamics, and hydration levels before selecting premium HA fillers that deliver soft volume, crisp borders, or subtle symmetry tweaks. Expect a bespoke plan, micro-cannula comfort, and results that feel like you—only more confident.",
+  "longDescription": "Lip enhancement at Dr. SNA Clinic is never one-size-fits-all. We analyse your facial proportions, smile dynamics, and hydration levels before selecting premium HA fillers that deliver soft volume, crisp borders, or subtle symmetry tweaks. Expect a bespoke plan, micro-cannula comfort, and results that feel like you\u2014only more confident.",
   "relatedTreatments": [
     {
       "title": "Tear Trough Filler",
@@ -42,7 +42,7 @@
   "id": "lip-enhancement",
   "faq": [
     {
-      "answer": "No. We layer filler strategically to enhance your natural anatomy, never overpower it. Dr Abbas follows a 'less is more' philosophy—we can always add more at your review.",
+      "answer": "No. We layer filler strategically to enhance your natural anatomy, never overpower it. Dr Abbas follows a 'less is more' philosophy\u2014we can always add more at your review.",
       "question": "Will my lips look fake?"
     },
     {
@@ -59,7 +59,7 @@
     },
     {
       "question": "How much do lip fillers cost in London?",
-      "answer": "Our lip enhancement starts from £295 for 0.7ml (subtle refresh) up to £395 for 1ml with border definition. Consultation fee (£50) is credited toward treatment."
+      "answer": "Our lip enhancement starts from \u00a3295 for 0.7ml (subtle refresh) up to \u00a3395 for 1ml with border definition. Consultation fee (\u00a350) is credited toward treatment."
     },
     {
       "question": "Can lip filler be dissolved if I don't like it?",
@@ -67,7 +67,7 @@
     },
     {
       "question": "How many ml of filler do I need for my lips?",
-      "answer": "Most first-timers achieve beautiful results with 0.5-1ml. We recommend starting conservatively—you can always add more at your 2-week review. Overfilling creates an unnatural look we avoid."
+      "answer": "Most first-timers achieve beautiful results with 0.5-1ml. We recommend starting conservatively\u2014you can always add more at your 2-week review. Overfilling creates an unnatural look we avoid."
     },
     {
       "question": "Can I get lip filler if I get cold sores?",
@@ -82,9 +82,14 @@
     "headline": "Natural Lips, Elevated"
   },
   "pricing": {
-    "financing": { "available": false },
-    "subtitle": "Consultation fee (£50) credited toward treatment",
-    "singlePrice": { "currentPrice": "£295", "currency": "GBP" },
+    "financing": {
+      "available": false
+    },
+    "subtitle": "Consultation fee (\u00a350) credited toward treatment",
+    "singlePrice": {
+      "currentPrice": "\u00a3295",
+      "currency": "GBP"
+    },
     "includes": [
       "Consultation & lip mapping",
       "Premium HA filler",
@@ -95,14 +100,14 @@
     "packages": [
       {
         "includes": "Aftercare kit + review",
-        "price": "£295",
+        "price": "\u00a3295",
         "description": "0.7ml filler for subtle refresh",
         "name": "Hydration Gloss"
       },
       {
         "includes": "LED healing + check-in",
         "description": "1ml filler + border definition",
-        "price": "£395",
+        "price": "\u00a3395",
         "name": "Signature Volume"
       }
     ]
@@ -124,11 +129,11 @@
       "Personalised shape planning (Classic, Russian, Balanced)",
       "Aftercare kit + review at 2 weeks"
     ],
-    "content": "We focus on harmony—not trend-driven exaggeration. Whether you want hydration, Cupid’s bow definition, or a subtle Russian-inspired lift, we map your lips with HA fillers tailored to texture and longevity. Expect soft, flexible movement and precise symmetry from every angle."
+    "content": "We focus on harmony\u2014not trend-driven exaggeration. Whether you want hydration, Cupid\u2019s bow definition, or a subtle Russian-inspired lift, we map your lips with HA fillers tailored to texture and longevity. Expect soft, flexible movement and precise symmetry from every angle."
   },
   "quickStats": {
     "sessions": "Single session + review",
-    "price": "From £295",
+    "price": "From \u00a3295",
     "duration": "30 minutes",
     "painLevel": "Low",
     "downtime": "Mild swelling 24-48 hrs",
@@ -151,11 +156,16 @@
     "schema": {
       "@type": "MedicalProcedure",
       "procedureType": "NoninvasiveProcedure",
-      "bodyLocation": ["Lips", "Vermillion border", "Cupid's bow", "Philtrum"],
-      "howPerformed": "After applying numbing cream (and optional dental block for extra comfort), hyaluronic acid gel is injected into precise points along your lips using ultra-fine needles or a flexible cannula. We build volume gradually—starting with structure in the border to define your shape, then adding soft fullness throughout. You watch in the mirror as we sculpt, ensuring perfect symmetry. The gel instantly plumps lips while attracting water for natural hydration",
-      "preparation": "Avoid blood-thinning supplements (fish oil, vitamin E, aspirin) for one week before treatment. No alcohol 48 hours prior. Come hydrated and having eaten. Bring inspiration photos showing lip shapes you admire. If you're prone to cold sores, start antiviral medication 24 hours before (we can prescribe). Arrive with clean lips—no lipstick or gloss",
-      "followup": "Apply ice packs for 20 minutes every few hours for the first day—this reduces swelling dramatically. Sleep elevated for two nights. Avoid intense kissing, hot drinks, spicy food, and strenuous exercise for 24 hours. No lipstick for 24 hours. Swelling peaks at 24-48 hours then improves rapidly. Attend your 2-week review for assessment and any refinement (complimentary)",
-      "outcome": "Immediately fuller, more defined lips with beautiful symmetry. Your Cupid's bow stands out. Lips feel soft and move naturally when you smile or talk. The hydration makes lips look healthy and kissable. Swelling settles within a week, revealing your final result. You look like yourself—just with the lips you've always wanted. Results last 9-12 months",
+      "bodyLocation": [
+        "Lips",
+        "Vermillion border",
+        "Cupid's bow",
+        "Philtrum"
+      ],
+      "howPerformed": "After applying numbing cream (and optional dental block for extra comfort), hyaluronic acid gel is injected into precise points along your lips using ultra-fine needles or a flexible cannula. We build volume gradually\u2014starting with structure in the border to define your shape, then adding soft fullness throughout. You watch in the mirror as we sculpt, ensuring perfect symmetry. The gel instantly plumps lips while attracting water for natural hydration",
+      "preparation": "Avoid blood-thinning supplements (fish oil, vitamin E, aspirin) for one week before treatment. No alcohol 48 hours prior. Come hydrated and having eaten. Bring inspiration photos showing lip shapes you admire. If you're prone to cold sores, start antiviral medication 24 hours before (we can prescribe). Arrive with clean lips\u2014no lipstick or gloss",
+      "followup": "Apply ice packs for 20 minutes every few hours for the first day\u2014this reduces swelling dramatically. Sleep elevated for two nights. Avoid intense kissing, hot drinks, spicy food, and strenuous exercise for 24 hours. No lipstick for 24 hours. Swelling peaks at 24-48 hours then improves rapidly. Attend your 2-week review for assessment and any refinement (complimentary)",
+      "outcome": "Immediately fuller, more defined lips with beautiful symmetry. Your Cupid's bow stands out. Lips feel soft and move naturally when you smile or talk. The hydration makes lips look healthy and kissable. Swelling settles within a week, revealing your final result. You look like yourself\u2014just with the lips you've always wanted. Results last 9-12 months",
       "medicationRequired": "Topical numbing cream. Optional dental nerve block for sensitive patients",
       "medicalSpecialty": "Aesthetic Medicine",
       "relevantSpecialty": "Facial Aesthetics",
@@ -192,15 +202,15 @@
   },
   "description": "Doctor-led lip filler artistry that balances shape, hydration, and definition for effortless confidence.",
   "bookingInfo": {
-    "consultationFee": "£50 (redeemable)",
+    "consultationFee": "\u00a350 (redeemable)",
     "duration": "30-minute consultation",
-    "cancellationPolicy": "48 hours’ notice to reschedule",
+    "cancellationPolicy": "48 hours\u2019 notice to reschedule",
     "depositRequired": false
   },
   "candidacy": {
     "suitable": [
       "Desire subtle volume or hydration",
-      "Asymmetry or flat Cupid’s bow",
+      "Asymmetry or flat Cupid\u2019s bow",
       "Post-lip filler correction"
     ],
     "note": "We dissolve previous filler if migration is present.",
@@ -214,16 +224,16 @@
     "gallery": [
       {
         "id": "lip-01",
-        "description": "One syringe for soft volume and defined Cupid’s bow.",
-        "before": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=800&q=80",
-        "after": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=801&q=80",
+        "description": "One syringe for soft volume and defined Cupid\u2019s bow.",
+        "before": "/images/treatments/lip-enhancement/before-after/before.png",
+        "after": "/images/treatments/lip-enhancement/before-after/after.png",
         "treatment": "1ml HA filler + contouring",
         "title": "Hydration Refresh"
       }
     ],
-    "note": "Individual outcomes vary; images represent typical hydration-focused enhancements.",
     "title": "Before & After",
     "subtitle": "Real patient results with permission",
-    "enabled": true
+    "enabled": true,
+    "disclaimer": "Individual outcomes vary; images represent typical hydration-focused enhancements."
   }
 }

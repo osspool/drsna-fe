@@ -65,11 +65,13 @@ const FormInput = ({
     const inputProps = {
       ...(field || {}),
       id: name,
+      name: name, // Required for FormData to collect values in server actions
       type,
       disabled: isDisabled,
       placeholder,
-      value: safeValue,
-      onChange: (e) => handleChange(e, field),
+      // Only set value for controlled components (with field or explicit value prop)
+      ...(field || value !== undefined ? { value: safeValue } : {}),
+      ...(field || onChange ? { onChange: (e) => handleChange(e, field) } : {}),
       "aria-invalid": fieldState?.invalid,
       ...props,
     };

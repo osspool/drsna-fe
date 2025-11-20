@@ -6,49 +6,34 @@ import { pshotSiteConfig } from "@/data/pages/pshot/site-config";
 import { clinicStructuredData } from "@/data/structured-data";
 import { getBaseUrl } from "@/lib/domain-helpers";
 
-export const metadata = {
-  metadataBase: new URL("https://pshots.co.uk"),
-  title: "P-Shot Treatment London | Priapus Shot UK | ED Treatment | Dr SNA Clinic",
-  description: "Revolutionary P-Shot (Priapus Shot) treatment in London. Natural ED solution using PRP therapy. 98% satisfaction rate. CQC registered. Book consultation with Dr Syed Nadeem Abbas.",
-  keywords: pshotSiteConfig.keywords,
-  authors: [{ name: "Dr Syed Nadeem Abbas" }],
-  openGraph: {
-    title: "P-Shot Treatment London - UK's Leading P-Shot Specialist",
-    description: "Experience the P-Shot with Dr Abbas, one of the UK's leading specialists. Over 1,000 procedures, 98% satisfaction rate. Natural ED treatment.",
-    url: "https://pshots.co.uk",
-    siteName: "P-Shot UK",
-    locale: "en_GB",
-    type: "website",
-    images: [
-      {
-        url: pshotSiteConfig.ogImage,
-        width: 1200,
-        height: 630,
-        alt: "P-Shot Treatment London - Dr SNA Clinic",
+export async function generateMetadata() {
+  const { buildMetadata } = await import("@/lib/seo-helpers");
+  const { getBaseUrl } = await import("@/lib/domain-helpers");
+  const baseUrl = await getBaseUrl();
+
+  return buildMetadata(
+    {
+      title: "P-Shot Treatment London | Priapus Shot UK | ED Treatment | Dr SNA Clinic",
+      description: "Revolutionary P-Shot (Priapus Shot) treatment in London. Natural ED solution using PRP therapy. 98% satisfaction rate. CQC registered. Book consultation with Dr Syed Nadeem Abbas.",
+      categoryId: "intimate-health",
+      quickStats: {
+        price: "£1,200",
       },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "P-Shot Treatment London - Natural ED Solution",
-    description: "Revolutionary PRP therapy for erectile dysfunction. 98% satisfaction rate. Book your consultation today.",
-    images: [pshotSiteConfig.ogImage],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
+      seo: {
+        keywords: pshotSiteConfig.keywords,
+        canonicalUrl: "https://pshots.co.uk",
+      },
+      authors: [{ name: "Dr Syed Nadeem Abbas" }],
+      hero: {
+        image: pshotSiteConfig.ogImage,
+        badge: "P-Shot Treatment"
+      }
     },
-  },
-  alternates: {
-    canonical: "https://pshots.co.uk",
-  },
-};
+    'hero.image',
+    "P-Shot Treatment London",
+    baseUrl
+  );
+}
 
 export default function PShotLandingPage() {
   return (

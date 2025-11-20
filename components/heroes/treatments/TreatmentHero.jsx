@@ -107,11 +107,11 @@ export function TreatmentHero({ treatment, params }) {
           {/* Badge */}
           {treatment.hero?.badge && (
             <div
-              className="opacity-0 animate-scale-in inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-6 sm:py-3 bg-primary/10 backdrop-blur-sm border border-primary/30 rounded-full mb-4 sm:mb-6"
+              className="opacity-0 animate-scale-in inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-6 sm:py-3 bg-primary/25 backdrop-blur-md border border-primary/50 rounded-full mb-4 sm:mb-6 shadow-lg shadow-primary/20"
               style={{ animationDelay: '200ms' }}
             >
-              <Star className="w-3 h-3 sm:w-4 sm:h-4 text-primary fill-primary flex-shrink-0" />
-              <span className="text-primary text-[10px] sm:text-sm font-semibold tracking-wider uppercase">
+              <Star className="w-3 h-3 sm:w-4 sm:h-4 text-primary-foreground fill-primary-foreground flex-shrink-0" />
+              <span className="text-primary-foreground text-[10px] sm:text-sm font-semibold tracking-wider uppercase">
                 {treatment.hero.badge}
               </span>
             </div>
