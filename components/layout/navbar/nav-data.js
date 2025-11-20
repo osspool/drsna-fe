@@ -154,8 +154,6 @@ export const navigationData = [
     label: "Pain Management",
     description: "Regenerative treatments for chronic pain relief",
     href: "/treatments/pain-management",
-    skipCategoryStage: true,
-    inlineChildSections: true,
     children: [
       {
         id: "conditions",

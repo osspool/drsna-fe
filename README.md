@@ -183,3 +183,29 @@ and check @data/categories.json
 and for top 8 treatments (pshot , shockwave, prp face lift  hair restoration, Joint Rejuvenation, Arthrosamid Treatment, Stem Cell Therapy
 
 add proper site link.. about us contact or just normal treament pages shouldn't be focus .. we need to target niche so that when user search with their problem we rank high... first plan than implement 
+
+
+
+/treatments/aesthetic-medicine/face/cheek-augmentation
+i need you to create content for this treatment page.. follow @treatment-detail.js  for the page  @page.jsx  with proper config 
+
+Make seo optimized emotional, highly ranked content 
+get data from our deprecated page and improve it :
+https://blog.drsnaclinic.com/cheek-fillers/#
+
+
+
+
+
+in our @arthrosamid-injection.json .. this is our one of the core treatement .. so  please add proper seo optimized section similar to @p-shot.json  like add @TwoColumnFeaturesBlock.jsx  with really high quality text e.g. 
+
+Arhrosamid is a synovial scaffold permanently combining with the synovial lining / membrane in the knee which in early stage OA and severe OA becomes a psytokine storm of inflammatory cells causing stiffness and pain for patients.
+
+Once injected, Arthrosamid takes up to 4-6 weeks and out to 3 months to have a clinical effect for patients, it is a physical, biological process. 
+
+Once the inert hydrogel is injected via ultrasound the natural filtering process of the synovium uptakes the hydrogel, becoming over time integrated, reducing inflammation and stiffness and improving elasticity of the joint. 
+
+To date 23,000 patients across the UK and Europe have been treated with 4 clinical studies demonstrating multiple years of sustained lain relief. 2 of the clinical studies demonstrating sustained lain relief for up to 5 years from a single injection.
+
+
+if needed generate appropirate realistic image to make the  ui look clean 
