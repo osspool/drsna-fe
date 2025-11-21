@@ -381,7 +381,11 @@
         "description": "Ice application to minimize swelling, detailed aftercare instructions, and discussion of what to expect during healing and result development.",
         "title": "Immediate Aftercare",
         "number": 5,
-        "tips": ["Apply cold compress", "Sleep elevated", "Avoid rubbing eyes"],
+        "tips": [
+          "Apply cold compress",
+          "Sleep elevated",
+          "Avoid rubbing eyes"
+        ],
         "icon": "snowflake"
       },
       {
@@ -501,7 +505,7 @@
   },
   "overview": {
     "title": "What is Non-Surgical Blepharoplasty?",
-    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1200&q=80",
+    "image": "/images/treatments/Non-Surgical-Blepharoplasty.webp",
     "highlights": [
       "No surgery, scalpels, or general anesthesia",
       "Minimal downtime—back to work next day",
@@ -557,7 +561,10 @@
   "id": "non-surgical-blepharoplasty",
   "pricing": {
     "title": "Non-Surgical Blepharoplasty",
-    "financing": { "available": true, "buttonText": "0% Finance Available" },
+    "financing": {
+      "available": true,
+      "buttonText": "0% Finance Available"
+    },
     "subtitle": "Price Starts From",
     "includes": [
       "Specialized eye area assessment",

@@ -1,6 +1,9 @@
 {
   "pricing": {
-    "singlePrice": { "currentPrice": "£325", "currency": "GBP" },
+    "singlePrice": {
+      "currentPrice": "£325",
+      "currency": "GBP"
+    },
     "packages": [
       {
         "name": "Nefertiti Refresh",
@@ -74,7 +77,10 @@
       "Early jowl formation",
       "Downturned corners of the mouth"
     ],
-    "notSuitable": ["Pregnancy/breastfeeding", "Neuromuscular disorders"]
+    "notSuitable": [
+      "Pregnancy/breastfeeding",
+      "Neuromuscular disorders"
+    ]
   },
   "bookingInfo": {
     "duration": "20-minute consultation",
@@ -148,7 +154,7 @@
       "Pairs with radiofrequency or filler for extra lift"
     ],
     "title": "How It Works",
-    "image": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1200&q=80"
+    "image": "/images/treatments/Neck-lift.webp"
   },
   "quickStats": {
     "painLevel": "Low",

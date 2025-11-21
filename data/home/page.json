@@ -50,13 +50,16 @@
         "headline": "Award-Winning",
         "subheadline": "Dr Syed Nadeem Abbas",
         "description": "Experience transformative care from London's most distinguished aesthetic medicine specialist",
-        "image": "/images/drsnaclinic/hero-new.jpg"
+        "image": "/images/drsnaclinic/hero-new-n.jpg"
       },
       {
         "description": "Advanced regenerative therapies tailored to enhance your inherent beauty with precision and artistry",
         "image": "/images/drsnaclinic/clinic-outside.jpg",
         "id": 2,
-        "primaryCta": { "text": "Explore Treatments", "href": "/treatments" },
+        "primaryCta": {
+          "text": "Explore Treatments",
+          "href": "/treatments"
+        },
         "badge": "CUTTING-EDGE TREATMENTS",
         "headline": "Rediscover Your",
         "subheadline": "Natural Radiance"
@@ -65,13 +68,19 @@
         "description": "Bespoke treatments in an exclusive environment where sophistication meets clinical excellence",
         "image": "/images/drsnaclinic/clinic-inside-view.jpg",
         "id": 3,
-        "primaryCta": { "href": "/booking", "text": "Book Consultation" },
+        "primaryCta": {
+          "href": "/booking",
+          "text": "Book Consultation"
+        },
         "badge": "LUXURY AESTHETIC MEDICINE",
         "subheadline": "Best Self",
         "headline": "Embrace Your"
       }
     ],
-    "secondaryCta": { "href": "/treatments", "text": "View Treatments" }
+    "secondaryCta": {
+      "href": "/treatments",
+      "text": "View Treatments"
+    }
   },
   "treatmentBento": {
     "title": "Our Signature Treatments",
@@ -79,11 +88,17 @@
       "middleTop": {
         "icon": "award",
         "highlights": [
-          { "text": "CQC Registered" },
-          { "text": "GMC Certified" },
-          { "text": "10,000+ Patients" }
+          {
+            "text": "CQC Registered"
+          },
+          {
+            "text": "GMC Certified"
+          },
+          {
+            "text": "10,000+ Patients"
+          }
         ],
-        "subtitle": "Consultant Aesthetic Physician",
+        "subtitle": "Aesthetic and Regenerative Medicine Expert",
         "image": "/images/drsnaclinic/dr-sna-feature.jpg",
         "title": "Dr Syed Nadeem Abbas",
         "iconColor": "text-primary",
@@ -157,10 +172,16 @@
       }
     },
     "subtitle": "Experience cutting-edge aesthetic and regenerative medicine with our expert-led treatments",
-    "badge": { "text": "Premium Treatments", "icon": "sparkles" },
+    "badge": {
+      "text": "Premium Treatments",
+      "icon": "sparkles"
+    },
     "cta": {
       "text": "Ready to transform your health and confidence?",
-      "button": { "href": "/booking", "text": "Book Your Consultation" }
+      "button": {
+        "href": "/booking",
+        "text": "Book Your Consultation"
+      }
     }
   },
   "featuredTreatments": {
@@ -206,7 +227,10 @@
       }
     ],
     "badge": "OUR SPECIALTIES",
-    "cta": { "href": "/treatments", "text": "View All Treatments" },
+    "cta": {
+      "href": "/treatments",
+      "text": "View All Treatments"
+    },
     "title": "Comprehensive Care",
     "subtitle": "From aesthetic enhancement to regenerative medicine, we offer world-class treatments tailored to your unique needs"
   },
