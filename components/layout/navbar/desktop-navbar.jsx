@@ -69,8 +69,7 @@ export function DesktopNavbar({ onMenuOpenChange }) {
               <Image
                 src="/dr-sna-clinic-logo.png"
                 alt="Dr SNA Clinic"
-                width={70}
-                height={45}
+                fill
                 priority
                 className="object-contain"
               />

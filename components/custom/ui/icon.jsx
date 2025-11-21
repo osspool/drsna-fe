@@ -82,6 +82,9 @@ import {
     Syringe,
     AudioWaveform,
     AlignCenter,
+    Ear,
+    RefreshCw,
+    MessageCircle,
   } from "lucide-react";
 
 
@@ -193,6 +196,11 @@ import {
     audioWaveform: AudioWaveform,
     'audio-waveform': AudioWaveform,
     alignCenter: AlignCenter,
+    ear: Ear,
+    refreshCw: RefreshCw,
+    'refresh-cw': RefreshCw,
+    messageCircle: MessageCircle,
+    'message-circle': MessageCircle,
     'align-center': AlignCenter,
   };
   

@@ -24,8 +24,7 @@ export function MobileNavbar() {
               <Image
                 src="/dr-sna-clinic-logo.png"
                 alt="Dr SNA Clinic"
-                width={60}
-                height={40}
+                fill
                 priority
                 className="object-contain"
               />

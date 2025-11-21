@@ -281,7 +281,7 @@
   "testimonials": {
     "title": "What Our Patients Say",
     "subtitle": "Real experiences from real patients",
-    "questions": [
+    "testimonials": [
       {
         "name": "Sarah M.",
         "role": "Facial Aesthetics Patient",
@@ -305,7 +305,7 @@
   "faq": {
     "title": "Frequently Asked Questions",
     "badge": "FAQ",
-    "questions": [
+    "items": [
       {
         "question": "What makes Dr SNA Clinic different from a standard aesthetic or beauty clinic?",
         "answer": "Dr SNA Clinic is a medically led aesthetic and regenerative clinic, not a high-street beauty salon. All treatments are designed and overseen by a UK-trained doctor with more than 20 years of clinical experience, including trauma & orthopaedics, regenerative medicine and aesthetic medicine.\n\nWe focus on:\n- long-term health, function and confidence\n- evidence-based regenerative treatments\n- natural, doctor-led facial aesthetics\n- skin, hair, joint and tissue health — not just looks\n\nThis medical foundation allows us to treat more complex concerns safely, ethically and effectively."

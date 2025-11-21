@@ -70,11 +70,10 @@ export function MainNav() {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 relative z-10">
               <div className="relative w-[70px] h-[45px]">
-                <Image 
-                  src="/dr-sna-clinic-logo.png" 
-                  alt="Dr SNA Clinic" 
-                  width={70} 
-                  height={45}
+                <Image
+                  src="/dr-sna-clinic-logo.png"
+                  alt="Dr SNA Clinic"
+                  fill
                   priority
                   className="object-contain"
                 />

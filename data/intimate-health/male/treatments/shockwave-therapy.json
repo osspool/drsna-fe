@@ -92,592 +92,551 @@
             "Recommended by European Association of Urology for mild-to-moderate ED"
         ]
     },
-    "emotionalConnection": {
-        "title": "You're Not Broken—Your Body Just Needs The Right Support",
-        "paragraphs": [
-            "If you've been living with erectile dysfunction, you already know it's not just about sex. It's the quiet panic when intimacy approaches. The avoided eye contact with your partner. The late-night Google searches for answers. The growing distance in a relationship that once felt effortless. By 2025, over 322 million men worldwide face this—yet most suffer in silence, believing they're alone.",
-            "The truth? ED isn't a life sentence. It's not weakness. And it's definitely not something you just 'live with.' Four out of five men with ED also experience symptoms of depression—not because they're fragile, but because sexual health is deeply tied to identity, confidence, and connection. The good news? Your body has an incredible capacity to heal when given the right stimulus."
-        ],
-        "features": [
-            {
-                "icon": "heart-pulse",
-                "title": "Restore Natural Function",
-                "description": "Unlike pills that mask symptoms for a few hours, shockwave therapy regenerates blood vessels so your body works on its own again—no pills, no timing, no anxiety."
-            },
-            {
-                "icon": "users",
-                "title": "Rebuild Intimacy & Connection",
-                "description": "When performance anxiety disappears and spontaneity returns, relationships transform. Men report feeling like themselves again—confident, present, and deeply connected to their partners."
-            }
-        ],
-        "image": "https://images.unsplash.com/photo-1516733968668-dbdce39c4651?w=1200&q=80",
-        "imageAlt": "Man looking hopeful and confident about erectile dysfunction treatment"
-    },
-    "naturalHealing": {
-        "title": "How Your Body Rebuilds Itself—Naturally",
-        "paragraphs": [
-            "Think of your blood vessels like garden hoses that have developed tiny kinks and clogs over time. Shockwave therapy uses gentle acoustic pulses—like controlled ripples through water—to break apart those micro-blockages and signal your body to grow fresh, healthy vessels.",
-            "It's called angiogenesis: your body's natural ability to create new blood pathways. The shockwaves trigger the release of VEGF (vascular endothelial growth factor) and other healing signals that recruit stem cells to the area. Over the course of 6-12 sessions, you're literally rebuilding the vascular infrastructure needed for strong, spontaneous erections."
-        ],
-        "features": [
-            {
-                "icon": "trending-up",
-                "title": "57% Medication-Free",
-                "description": "Over half of treated men achieved erections without pills, compared to just 9% in placebo groups—a dramatic shift toward natural function."
-            },
-            {
-                "icon": "activity",
-                "title": "2.96-Point IIEF Improvement",
-                "description": "Across multiple studies, men saw an average erectile function score increase of nearly 3 points—clinically meaningful improvement in rigidity and confidence."
-            },
-            {
-                "icon": "calendar",
-                "title": "Results Maintained at 12+ Months",
-                "description": "Long-term follow-up studies confirm that improvements aren't temporary. Vascular health improvements persist well beyond treatment completion."
-            },
-            {
-                "icon": "heart-pulse",
-                "title": "Works for PDE5 Non-Responders",
-                "description": "Double-blind studies found shockwave can shift men who don't respond to pills into responders—because it addresses the root vascular cause."
-            },
-            {
-                "icon": "shield",
-                "title": "Zero Serious Adverse Events",
-                "description": "Across thousands of treatments in clinical trials, no serious complications reported. Mild tingling or temporary redness fade within hours."
-            },
-            {
-                "icon": "users",
-                "title": "84% Effectiveness Rate",
-                "description": "Studies show effectiveness in up to 84% of men with mild-to-moderate ED, with 50% achieving sexual performance within the first month post-treatment."
-            }
-        ]
-    },
-    "treatmentExperience": {
-        "title": "What Really Happens During Your Session",
-        "paragraphs": [
-            "Most men arrive nervous for their first session—and leave wondering what they were worried about. You'll lie comfortably in a private suite while a doctor applies medical-grade ultrasound gel to your genital area. The handheld shockwave device delivers gentle acoustic pulses—patients describe it as rhythmic tapping or tingling, nothing remotely painful.",
-            "The doctor methodically targets the shaft, crura (base), and glans following a treatment map customized to your Doppler results. Each session delivers 2,000-3,000 pulses over about 15-20 minutes. No needles. No anesthesia. No recovery time. You'll drive yourself home, return to work, even hit the gym that same day. Between sessions, you'll follow a simple home protocol—nitric oxide support, pelvic floor exercises—that amplifies results."
-        ],
-        "features": [
-            {
-                "icon": "clock",
-                "title": "20 Minutes, Then You're Done",
-                "description": "From check-in to checkout, most appointments take under 30 minutes. Many men schedule during lunch breaks and return to work immediately after."
-            },
-            {
-                "icon": "message-circle",
-                "title": "Discreet & Professional",
-                "description": "Soundproof private suites, neutral appointment notes, and a team trained in sensitivity. Your privacy isn't an afterthought—it's built into every detail."
-            }
-        ],
-        "image": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1200&q=80",
-        "imageAlt": "Professional medical setting for shockwave therapy treatment"
-    },
-    "candidacy": {
-        "subtitle": "Ideal for men seeking natural, long-term improvement",
-        "title": "Who Benefits Most?",
-        "note": "Final suitability determined after consultation, Doppler imaging, and medication review.",
-        "suitable": [
-            "Mild to moderate erectile dysfunction",
-            "Men wanting to reduce reliance on PDE5 medication",
-            "Post-prostatectomy recovery protocols",
-            "Peyronie’s patients prepping for traction or PRP",
-            "Men combining with the P-Shot® for maximal results"
-        ],
-        "notSuitable": [
-            "Active genital infection or open lesions",
-            "Uncontrolled bleeding disorders",
-            "Pacemaker without cardiologist clearance",
-            "Severe curvature requiring surgical intervention",
-            "Inability to commit to course-based schedule"
-        ]
-    },
-    "seo": {
-        "metaTitle": "Shockwave Therapy for ED London | Natural Erectile Dysfunction Treatment | Dr. SNA Clinic",
-        "metaDescription": "Regenerate blood flow naturally with shockwave therapy for erectile dysfunction. 57% achieve medication-free erections. FDA-listed device, urologist-designed protocols. From £350/session in London.",
-        "keywords": [
-            "shockwave therapy london",
-            "shockwave therapy erectile dysfunction",
-            "low intensity shockwave therapy eswt",
-            "acoustic wave therapy ed",
-            "extracorporeal shockwave erectile dysfunction",
-            "shockwave therapy vs viagra",
-            "gainswave london",
-            "ed treatment without pills",
-            "natural erectile dysfunction treatment",
-            "shockwave therapy cost london",
-            "shockwave therapy success rate",
-            "shockwave for peyronie's disease",
-            "li-eswt london",
-            "vascular erectile dysfunction treatment",
-            "shockwave therapy near me",
-            "non invasive ed treatment",
-            "regenerative medicine erectile dysfunction",
-            "shockwave therapy harley street",
-            "private ed clinic london",
-            "shockwave therapy reviews uk"
-        ],
-        "schema": {
-            "@type": "MedicalProcedure",
-            "procedureType": "NoninvasiveProcedure",
-            "bodyLocation": [
-                "Penile tissue",
-                "Corpora cavernosa",
-                "Penile crura",
-                "Glans"
+        "emotionalConnection": {
+            "title": "You're Not Broken—Your Body Just Needs The Right Support",
+            "paragraphs": [
+                "If you've been living with erectile dysfunction, you already know it's not just about sex. It's the quiet panic when intimacy approaches. The avoided eye contact with your partner. The late-night Google searches for answers. The growing distance in a relationship that once felt effortless. By 2025, over 322 million men worldwide face this—yet most suffer in silence, believing they're alone.",
+                "The truth? ED isn't a life sentence. It's not weakness. And it's definitely not something you just 'live with.' Four out of five men with ED also experience symptoms of depression—not because they're fragile, but because sexual health is deeply tied to identity, confidence, and connection. The good news? Your body has an incredible capacity to heal when given the right stimulus."
             ],
-            "howPerformed": "You lie comfortably while a doctor applies ultrasound gel to your genital area. A handheld device delivers gentle acoustic pulses—like tiny taps—along specific pathways of the penis. Each pulse creates healing micro-bubbles that stimulate new blood vessel growth. The sensation is mild tingling, not pain. Six sessions over three weeks rebuild your natural blood flow",
-            "preparation": "Come well-hydrated and having eaten. No shaving needed—we work over the area gently. Continue your regular medications unless advised otherwise. Arrive 15 minutes early to relax and complete brief paperwork. Most men feel nervous at first, but our team makes the process comfortable and private",
-            "followup": "You can drive and work immediately after each session. Gentle activity (walking, light gym) is fine that same day. Some men notice tingling or mild fullness for a few hours—this is healing happening. Use the home protocol (nitric oxide support, pelvic exercises) between sessions. Morning erections often improve by week 2-3",
-            "outcome": "Within 2-4 weeks, many men notice stronger morning erections and easier arousal. By 12 weeks, spontaneous erections return and medication needs often decrease. Blood vessels that were restricted now carry oxygen-rich blood freely. Results last 18-24 months. You regain confidence knowing your body is working naturally again",
-            "medicationRequired": "None required—no numbing, no injections",
-            "medicalSpecialty": "Regenerative Medicine",
-            "relevantSpecialty": "Men's Sexual Health",
-            "isProprietary": false,
-            "treatmentFrequency": "Six sessions over three weeks (two per week), then optional yearly booster to maintain vascular health. Many men combine with one P-Shot injection for enhanced results",
-            "adverseOutcome": "Mild redness or tingling at treatment site for 1-2 hours. Very rarely, temporary bruising (fades in days). No sexual dysfunction or serious complications reported in medical literature",
-            "contraindication": [
-                "Active genital infection or open sores",
-                "Uncontrolled bleeding disorder",
-                "Pacemaker (unless cardiologist provides clearance)",
-                "Recent penile surgery (within 6 weeks)",
-                "Cannot commit to 6-session schedule"
+            "features": [
+                {
+                    "icon": "heart-pulse",
+                    "title": "Restore Natural Function",
+                    "description": "Unlike pills that mask symptoms for a few hours, shockwave therapy regenerates blood vessels so your body works on its own again—no pills, no timing, no anxiety."
+                },
+                {
+                    "icon": "clock",
+                    "title": "20 Minutes, Then You're Done",
+                    "description": "From check-in to checkout, most appointments take under 30 minutes. Many men schedule during lunch breaks and return to work immediately after."
+                },
+                {
+                    "icon": "message-circle",
+                    "title": "Discreet & Professional",
+                    "description": "Soundproof private suites, neutral appointment notes, and a team trained in sensitivity. Your privacy isn't an afterthought—it's built into every detail."
+                }
             ],
-            "typicalTest": [
-                "Penile Doppler ultrasound to measure blood flow",
-                "IIEF-5 questionnaire (erectile function score)",
-                "Medical history and medication review",
-                "Optional hormone panel (testosterone, prolactin)"
+            "image": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1200&q=80",
+            "imageAlt": "Professional medical setting for shockwave therapy treatment"
+        },
+        "naturalHealing": {
+            "title": "Natural Healing, Not Just Symptom Relief",
+            "paragraphs": [
+                "Shockwave therapy triggers your body's own repair mechanisms. By stimulating the formation of new blood vessels (angiogenesis), it addresses the root cause of vascular erectile dysfunction.",
+                "This process rejuvenates the penile tissue, leading to stronger, more sustainable erections without the need for pills or invasive procedures."
             ],
-            "clinicalFindings": [
+            "features": [
+                {
+                    "icon": "activity",
+                    "title": "Angiogenesis",
+                    "description": "Promotes the growth of new, healthy blood vessels."
+                },
+                {
+                    "icon": "zap",
+                    "title": "Nerve Regeneration",
+                    "description": "Enhances sensitivity and neural response."
+                }
+            ],
+            "image": "/images/treatments/shockwave-angiogenesis.png",
+            "imageAlt": "Illustration of angiogenesis and natural healing"
+        },
+        "candidacy": {
+            "subtitle": "Ideal for men seeking natural, long-term improvement",
+            "title": "Who Benefits Most?",
+            "note": "Final suitability determined after consultation, Doppler imaging, and medication review.",
+            "suitable": [
                 "Mild to moderate erectile dysfunction",
-                "Reduced spontaneous or morning erections",
-                "Difficulty maintaining rigidity",
-                "Peyronie's disease with curvature",
-                "Post-prostatectomy erectile recovery",
-                "Desire to reduce or stop ED medications"
+                "Men wanting to reduce reliance on PDE5 medication",
+                "Post-prostatectomy recovery protocols",
+                "Peyronie’s patients prepping for traction or PRP",
+                "Men combining with the P-Shot® for maximal results"
+            ],
+            "notSuitable": [
+                "Active genital infection or open lesions",
+                "Uncontrolled bleeding disorders",
+                "Pacemaker without cardiologist clearance",
+                "Severe curvature requiring surgical intervention",
+                "Inability to commit to course-based schedule"
             ]
         },
-        "canonicalUrl": "/treatments/intimate-health/male/shockwave-therapy",
-        "h1": "Shockwave Therapy for Male Intimate Health"
-    },
-    "bookingInfo": {
-        "consultationFee": "£100 (redeemable)",
-        "duration": "20-minute treatment sessions",
-        "cancellationPolicy": "48 hours' notice to reschedule",
-        "depositRequired": false
-    },
-    "shortTitle": "Shockwave Therapy",
-    "pricing": {
-        "title": "Shockwave Therapy Pricing",
-        "packages": [
+        "seo": {
+            "metaTitle": "Shockwave Therapy for ED London | Natural Erectile Dysfunction Treatment | Dr. SNA Clinic",
+            "metaDescription": "Regenerate blood flow naturally with shockwave therapy for erectile dysfunction. 57% achieve medication-free erections. FDA-listed device, urologist-designed protocols. From £350/session in London.",
+            "keywords": [
+                "shockwave therapy london",
+                "shockwave therapy erectile dysfunction",
+                "low intensity shockwave therapy eswt",
+                "acoustic wave therapy ed",
+                "extracorporeal shockwave erectile dysfunction",
+                "shockwave therapy vs viagra",
+                "gainswave london",
+                "ed treatment without pills",
+                "natural erectile dysfunction treatment",
+                "shockwave therapy cost london",
+                "shockwave therapy success rate",
+                "shockwave for peyronie's disease",
+                "li-eswt london",
+                "vascular erectile dysfunction treatment",
+                "shockwave therapy near me",
+                "non invasive ed treatment",
+                "regenerative medicine erectile dysfunction",
+                "shockwave therapy harley street",
+                "private ed clinic london",
+                "shockwave therapy reviews uk"
+            ],
+            "schema": {
+                "@type": "MedicalProcedure",
+                "procedureType": "NoninvasiveProcedure",
+                "bodyLocation": [
+                    "Penile tissue",
+                    "Corpora cavernosa",
+                    "Penile crura",
+                    "Glans"
+                ],
+                "howPerformed": "You lie comfortably while a doctor applies ultrasound gel to your genital area. A handheld device delivers gentle acoustic pulses—like tiny taps—along specific pathways of the penis. Each pulse creates healing micro-bubbles that stimulate new blood vessel growth. The sensation is mild tingling, not pain. Six sessions over three weeks rebuild your natural blood flow",
+                "preparation": "Come well-hydrated and having eaten. No shaving needed—we work over the area gently. Continue your regular medications unless advised otherwise. Arrive 15 minutes early to relax and complete brief paperwork. Most men feel nervous at first, but our team makes the process comfortable and private",
+                "followup": "You can drive and work immediately after each session. Gentle activity (walking, light gym) is fine that same day. Some men notice tingling or mild fullness for a few hours—this is healing happening. Use the home protocol (nitric oxide support, pelvic exercises) between sessions. Morning erections often improve by week 2-3",
+                "outcome": "Within 2-4 weeks, many men notice stronger morning erections and easier arousal. By 12 weeks, spontaneous erections return and medication needs often decrease. Blood vessels that were restricted now carry oxygen-rich blood freely. Results last 18-24 months. You regain confidence knowing your body is working naturally again",
+                "medicationRequired": "None required—no numbing, no injections",
+                "medicalSpecialty": "Regenerative Medicine",
+                "relevantSpecialty": "Men's Sexual Health",
+                "isProprietary": false,
+                "treatmentFrequency": "Six sessions over three weeks (two per week), then optional yearly booster to maintain vascular health. Many men combine with one P-Shot injection for enhanced results",
+                "adverseOutcome": "Mild redness or tingling at treatment site for 1-2 hours. Very rarely, temporary bruising (fades in days). No sexual dysfunction or serious complications reported in medical literature",
+                "contraindication": [
+                    "Active genital infection or open sores",
+                    "Uncontrolled bleeding disorder",
+                    "Pacemaker (unless cardiologist provides clearance)",
+                    "Recent penile surgery (within 6 weeks)",
+                    "Cannot commit to 6-session schedule"
+                ],
+                "typicalTest": [
+                    "Penile Doppler ultrasound to measure blood flow",
+                    "IIEF-5 questionnaire (erectile function score)",
+                    "Medical history and medication review",
+                    "Optional hormone panel (testosterone, prolactin)"
+                ],
+                "clinicalFindings": [
+                    "Mild to moderate erectile dysfunction",
+                    "Reduced spontaneous or morning erections",
+                    "Difficulty maintaining rigidity",
+                    "Peyronie's disease with curvature",
+                    "Post-prostatectomy erectile recovery",
+                    "Desire to reduce or stop ED medications"
+                ]
+            },
+            "canonicalUrl": "/treatments/intimate-health/male/shockwave-therapy",
+            "h1": "Shockwave Therapy for Male Intimate Health"
+        },
+        "bookingInfo": {
+            "consultationFee": "£100 (redeemable)",
+            "duration": "20-minute treatment sessions",
+            "cancellationPolicy": "48 hours' notice to reschedule",
+            "depositRequired": false
+        },
+        "shortTitle": "Shockwave Therapy",
+        "pricing": {
+            "title": "Shockwave Therapy Pricing",
+            "packages": [
+                {
+                    "savings": "Save £300",
+                    "description": "Two sessions weekly for three weeks",
+                    "includes": "Doctor review + home protocol",
+                    "price": "£1,800",
+                    "name": "6-Session Course"
+                },
+                {
+                    "includes": "Shockwave + peptides + traction coaching",
+                    "name": "12-Session Optimiser",
+                    "description": "Ideal for diabetics or vascular compromise",
+                    "price": "£3,200",
+                    "savings": "Save £1,000 vs pay-per-session"
+                }
+            ],
+            "financing": {
+                "available": true,
+                "buttonText": "0% Finance Available"
+            },
+            "subtitle": "Consultation fee (£100) redeemable toward a treatment plan",
+            "singlePrice": {
+                "currency": "GBP",
+                "consultationFee": "£100",
+                "originalPrice": "£400",
+                "consultationNote": "Redeemable within 30 days",
+                "currentPrice": "£350",
+                "consultationDisclaimer": "Includes Doppler ultrasound where indicated"
+            },
+            "disclaimer": "*Exact number of sessions confirmed after diagnostic review.",
+            "includes": [
+                "Doctor consultation and diagnostic plan",
+                "Focused shockwave delivery (not radial spa devices)",
+                "Private suite + comfort measures",
+                "Home protocol (supplements, nitric oxide support)",
+                "Progress tracking via IIEF and Doppler imaging",
+                "Access to doctor between sessions via secure app"
+            ]
+        },
+        "treatsConditions": {
+            "conditions": [
+                {
+                    "icon": "heart-pulse",
+                    "effectiveness": "High",
+                    "name": "Vascular Erectile Dysfunction",
+                    "description": "Restores blood inflow and endothelial health."
+                },
+                {
+                    "name": "Performance Decline Post-Prostatectomy",
+                    "description": "Speeds rehab when combined with medications or PRP.",
+                    "effectiveness": "Moderate",
+                    "icon": "stethoscope"
+                },
+                {
+                    "icon": "align-center",
+                    "name": "Peyronie’s Disease",
+                    "description": "Softens plaques and improves curvature when paired with traction.",
+                    "effectiveness": "Moderate"
+                },
+                {
+                    "description": "Improves nerve signalling for more intense sensation.",
+                    "name": "Sensitivity Loss",
+                    "effectiveness": "High",
+                    "icon": "zap"
+                }
+            ],
+            "title": "Conditions We Treat",
+            "subtitle": "Evidence-based applications for LI-ESWT"
+        },
+        "id": "shockwave-therapy",
+        "relatedTreatments": [
             {
-                "savings": "Save £300",
-                "description": "Two sessions weekly for three weeks",
-                "includes": "Doctor review + home protocol",
-                "price": "£1,800",
-                "name": "6-Session Course"
+                "description": "Injectable PRP to amplify shockwave gains.",
+                "reason": "Synergistic vascular regeneration",
+                "id": "p-shot",
+                "title": "P-Shot® PRP for Men"
             },
             {
-                "includes": "Shockwave + peptides + traction coaching",
-                "name": "12-Session Optimiser",
-                "description": "Ideal for diabetics or vascular compromise",
-                "price": "£3,200",
-                "savings": "Save £1,000 vs pay-per-session"
+                "description": "Comprehensive plaque remodelling protocol.",
+                "reason": "Shockwave prepares tissue for PRP + traction.",
+                "id": "peyronies-disease",
+                "title": "Peyronie’s Regenerative Plan"
+            },
+            {
+                "title": "Lichen Sclerosus Relief",
+                "description": "PRP + light therapy to calm inflammation.",
+                "reason": "Maintain penile skin health during treatment.",
+                "id": "lichen-sclerosis-male"
             }
         ],
-        "financing": {
-            "available": true,
-            "buttonText": "0% Finance Available"
+        "howItWorks": {
+            "subtitle": "Acoustic energy drives a healing cascade",
+            "content": "Shockwaves create micro-cavitation bubbles that collapse and trigger cellular signalling. This process releases VEGF, eNOS, and proliferative cytokines while dissolving micro-plaque that restricts penile blood flow.",
+            "variant": "dark-glass",
+            "benefits": [
+                {
+                    "icon": "droplet",
+                    "title": "Angiogenesis",
+                    "description": "New micro-vessels form, restoring oxygen-rich blood supply."
+                },
+                {
+                    "icon": "zap",
+                    "title": "Neurogenesis",
+                    "description": "Nerve response improves for faster arousal and sensation."
+                },
+                {
+                    "icon": "align-center",
+                    "title": "Plaque Disruption",
+                    "description": "Breaks down fibrotic tissue linked to Peyronie’s curvature."
+                },
+                {
+                    "title": "Synergy with PRP",
+                    "icon": "layers",
+                    "description": "Prepares tissue to absorb growth factors from the P-Shot."
+                }
+            ],
+            "title": "Science Behind Shockwave Therapy",
+            "background": "default",
+            "enabled": true,
+            "growthFactors": [
+                "VEGF – Vascular Endothelial Growth Factor",
+                "eNOS – Endothelial Nitric Oxide Synthase",
+                "PCNA – Proliferating Cell Nuclear Antigen"
+            ]
         },
-        "subtitle": "Consultation fee (£100) redeemable toward a treatment plan",
-        "singlePrice": {
-            "currency": "GBP",
-            "consultationFee": "£100",
-            "originalPrice": "£400",
-            "consultationNote": "Redeemable within 30 days",
-            "currentPrice": "£350",
-            "consultationDisclaimer": "Includes Doppler ultrasound where indicated"
+        "alternativeTitles": [
+            "Extracorporeal Shockwave Therapy",
+            "ESWT for ED",
+            "Acoustic Wave Therapy",
+            "GAINSWave"
+        ],
+        "subcategoryId": "male",
+        "testimonials": [
+            {
+                "name": "Anthony L.",
+                "image": "https://images.unsplash.com/photo-1504593811423-6dd665756598?w=400&q=80",
+                "verified": true,
+                "treatment": "Shockwave + P-Shot",
+                "text": "By the fourth session morning erections were back and I no longer panic about intimacy. The course was painless and the team was incredibly discreet.",
+                "date": "2024-03-02",
+                "rating": 5,
+                "age": 51
+            },
+            {
+                "age": 57,
+                "rating": 5,
+                "date": "2023-12-18",
+                "text": "Curvature dropped from 35° to under 15° after combining shockwave with traction and PRP. Follow-up imaging proved the plaque shrinkage.",
+                "treatment": "Shockwave for Peyronie's",
+                "image": "https://images.unsplash.com/photo-1521119989659-a83eee488004?w=400&q=80",
+                "verified": true,
+                "name": "Daniel W."
+            }
+        ],
+        "benefits": {
+            "features": [
+                {
+                    "description": "Reduces reliance on medication by fixing blood flow.",
+                    "icon": "heart-pulse",
+                    "title": "Natural Erections"
+                },
+                {
+                    "description": "Walk in during lunch, return to work immediately.",
+                    "title": "No Downtime",
+                    "icon": "clock"
+                },
+                {
+                    "title": "Supports Peyronie’s Plans",
+                    "icon": "align-center",
+                    "description": "Breaks down plaques ahead of traction or PRP."
+                },
+                {
+                    "icon": "droplet",
+                    "title": "Enhances P-Shot®",
+                    "description": "Improves uptake of growth factors for bigger gains."
+                },
+                {
+                    "description": "Suitable for diabetics or cardiac patients cleared for activity.",
+                    "title": "Safe with Comorbidities",
+                    "icon": "shield-check"
+                },
+                {
+                    "icon": "target",
+                    "title": "Precise Energy Delivery",
+                    "description": "Focused applicator penetrates deeper than radial devices."
+                }
+            ],
+            "title": "Benefits of Shockwave at Our Clinic",
+            "subtitle": "Engineered for long-term vascular change",
+            "layout": "grid-3"
         },
-        "disclaimer": "*Exact number of sessions confirmed after diagnostic review.",
-        "includes": [
-            "Doctor consultation and diagnostic plan",
-            "Focused shockwave delivery (not radial spa devices)",
-            "Private suite + comfort measures",
-            "Home protocol (supplements, nitric oxide support)",
-            "Progress tracking via IIEF and Doppler imaging",
-            "Access to doctor between sessions via secure app"
+        "whyChooseDrSNA": {
+            "title": "Why Dr. SNA Clinic?",
+            "background": "gradient-cream",
+            "enabled": true,
+            "subtitle": "Results-focused shockwave in a discreet men’s health setting",
+            "features": [
+                {
+                    "description": "Treatment plans mapped by Dr. Abbas after Doppler assessment.",
+                    "icon": "stethoscope",
+                    "title": "Urologist-Designed Protocols"
+                },
+                {
+                    "description": "We use a focused applicator (not radial spa devices) for deeper penetration.",
+                    "icon": "settings",
+                    "title": "FDA-Listed Device"
+                },
+                {
+                    "title": "Privacy Guaranteed",
+                    "icon": "shield",
+                    "description": "Soundproof suites, neutral booking notes, and concierge scheduling."
+                },
+                {
+                    "icon": "layers",
+                    "title": "Add-On Therapies",
+                    "description": "Combine with P-Shot, peptide support, traction, or EMS for faster gains."
+                },
+                {
+                    "description": "IIEF-5 scoring and ultrasound imaging track objective improvements.",
+                    "icon": "activity",
+                    "title": "Progress Tracking"
+                },
+                {
+                    "title": "Finance Options",
+                    "icon": "credit-card",
+                    "description": "0% interest plans for full treatment courses."
+                }
+            ],
+            "variant": "compact-grid"
+        },
+        "treatsAreas": {
+            "areas": [
+                {
+                    "description": "Boosts arterial inflow and rigidity.",
+                    "price": "Included",
+                    "name": "Corpora Cavernosa",
+                    "icon": "activity",
+                    "image": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=600&q=80"
+                },
+                {
+                    "icon": "target",
+                    "image": "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=600&q=80",
+                    "description": "Supports venous sealing to maintain erections.",
+                    "price": "Included",
+                    "name": "Penile Crura"
+                },
+                {
+                    "icon": "sparkles",
+                    "image": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=600&q=80",
+                    "price": "Included",
+                    "description": "Improves sensitivity and neural signalling.",
+                    "name": "Glans"
+                }
+            ],
+            "subtitle": "Energy delivered along every vascular pathway",
+            "title": "Treatment Zones"
+        },
+        "description": "Low-intensity shockwaves stimulate angiogenesis and nerve repair to restore natural erections.",
+        "comparison": {
+            "subtitle": "Understand how LI-ESWT fits alongside other therapies",
+            "title": "Compare Your Options",
+            "comparisons": [
+                {
+                    "results": "2-4 weeks",
+                    "cost": "£1,800 (course)",
+                    "treatment": "Shockwave Therapy",
+                    "naturalness": "Mechanical stimulation",
+                    "duration": "18-24 months",
+                    "downtime": "None"
+                },
+                {
+                    "results": "3-6 weeks",
+                    "treatment": "P-Shot PRP",
+                    "cost": "£1,200",
+                    "naturalness": "Autologous biologic",
+                    "duration": "12-18 months",
+                    "downtime": "None"
+                },
+                {
+                    "naturalness": "Pharmaceutical",
+                    "cost": "£300+/year",
+                    "treatment": "Medication (PDE5)",
+                    "results": "30-60 mins",
+                    "downtime": "None",
+                    "duration": "Short acting"
+                },
+                {
+                    "duration": "10+ years",
+                    "downtime": "4-6 weeks",
+                    "results": "Immediate",
+                    "treatment": "Penile Implants",
+                    "cost": "£8k-£15k",
+                    "naturalness": "Surgical"
+                }
+            ]
+        },
+        "hero": {
+            "badge": "Course-based protocol",
+            "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80",
+            "headline": "Drug-Free Regeneration for ED",
+            "video": "https://youtu.be/3cuL-4IYW2g",
+            "subheadline": "Precision shockwave therapy that re-opens blood vessels and boosts responsiveness.",
+            "backgroundImage": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80"
+        },
+        "whatToExpect": {
+            "subtitle": "Fast, comfortable, repeatable sessions",
+            "variant": "compact-timeline",
+            "enabled": true,
+            "title": "What to Expect Each Visit",
+            "background": "gradient-cream",
+            "steps": [
+                {
+                    "title": "Pre-Session Check-In",
+                    "number": 1,
+                    "description": "Vitals, medication review, and baseline questionnaire.",
+                    "duration": "5 mins"
+                },
+                {
+                    "description": "Ultrasound gel applied; doctor outlines treatment points.",
+                    "duration": "3 mins",
+                    "title": "Target Mapping",
+                    "number": 2
+                },
+                {
+                    "description": "2,000–3,000 pulses across shaft, crura, and glans.",
+                    "duration": "15 mins",
+                    "title": "Shockwave Delivery",
+                    "number": 3
+                },
+                {
+                    "title": "Aftercare & Next Steps",
+                    "number": 4,
+                    "duration": "2 mins",
+                    "description": "Immediate return to normal activity; home protocol emailed."
+                }
+            ]
+        },
+        "faq": [
+            {
+                "question": "Does shockwave therapy hurt?",
+                "answer": "Most patients describe a light tapping sensation—like tiny pulses. Energy levels are adjustable and we can pause at any time. It's painless enough that no numbing is required."
+            },
+            {
+                "question": "How much does shockwave therapy cost in London?",
+                "answer": "Single sessions are £350. The 6-Session Course is £1,800 (save £300). The 12-Session Optimiser is £3,200 (save £1,000). Consultation fee (£100) is credited toward treatment. 0% finance available."
+            },
+            {
+                "question": "How many shockwave sessions do I need?",
+                "answer": "The standard protocol is 6 sessions over 3 weeks (twice weekly). Some men benefit from 12 sessions if there's significant vascular compromise. We assess progress with Doppler imaging and adjust accordingly."
+            },
+            {
+                "question": "When will I see shockwave results?",
+                "answer": "Many men notice stronger morning erections after 3-4 sessions. Maximal gains typically appear 8-12 weeks after completing the course as new blood vessels fully mature."
+            },
+            {
+                "question": "Can I combine shockwave with ED medication?",
+                "answer": "Yes. PDE5 inhibitors (Viagra, Cialis) can be used during the course and often become optional once vascular health improves. Many men successfully reduce or eliminate medication dependence."
+            },
+            {
+                "question": "Is shockwave safe with heart conditions?",
+                "answer": "If your cardiologist has cleared you for sexual activity, shockwave is usually safe. We review all medications and cardiac history first. Shockwave doesn't affect heart function."
+            },
+            {
+                "question": "How long do shockwave results last?",
+                "answer": "Results typically last 18-24 months depending on lifestyle factors. Maintenance sessions annually help sustain vascular health. Many men make yearly boosters part of their wellness routine."
+            },
+            {
+                "question": "Will insurance cover shockwave therapy?",
+                "answer": "Shockwave for ED is usually considered elective, but we provide itemised invoices for personal reimbursement if your policy covers regenerative treatments. Check with your provider."
+            },
+            {
+                "question": "What's the difference between shockwave therapy and GAINSWave?",
+                "answer": "GAINSWave is a branded protocol using low-intensity shockwave therapy. At Dr. SNA Clinic, we use FDA-listed focused shockwave devices (not radial) with urologist-designed treatment maps. Our approach is evidence-based and customized to your Doppler imaging—not a one-size-fits-all franchise protocol."
+            },
+            {
+                "question": "Can shockwave therapy help if pills don't work for me anymore?",
+                "answer": "Absolutely. Double-blind studies show shockwave can convert PDE5 non-responders into responders by addressing the underlying vascular damage. Many men who stopped responding to Viagra or Cialis regain sensitivity to medication after vascular regeneration—or achieve erections without pills entirely."
+            },
+            {
+                "question": "Is shockwave therapy permanent or will I need maintenance?",
+                "answer": "Shockwave creates lasting vascular improvements—18-24 months on average—but lifestyle factors (smoking, diabetes, cardiovascular health) affect longevity. Many men opt for annual booster sessions to sustain gains, similar to how you'd maintain muscle with periodic training."
+            },
+            {
+                "question": "What's the success rate for shockwave therapy for ED?",
+                "answer": "Clinical studies show effectiveness in up to 84% of men with mild-to-moderate vascular ED. About 57% achieve medication-free erections, and many others see significant improvement in rigidity and spontaneity. Success depends on ED cause, severity, and overall vascular health."
+            },
+            {
+                "question": "Can younger men benefit from shockwave therapy?",
+                "answer": "Yes. Younger men with vascular ED (often related to diabetes, metabolic syndrome, or cycling injuries) respond excellently. Early intervention prevents progression and establishes healthy vascular patterns before damage becomes extensive."
+            },
+            {
+                "question": "How does shockwave therapy compare to the P-Shot?",
+                "answer": "They're synergistic, not competitive. Shockwave mechanically triggers angiogenesis; P-Shot delivers concentrated growth factors. Many men combine both—shockwave prepares tissue, then PRP amplifies regeneration. Together, they produce faster, more comprehensive results than either alone."
+            },
+            {
+                "question": "Will my partner know I'm having treatment?",
+                "answer": "Only if you choose to tell them. Sessions leave no visible marks, require no recovery, and appointments are booked with neutral notes. Many men schedule during work hours and return to normal activity—including intimacy—the same day."
+            },
+            {
+                "question": "What if I have diabetes or high blood pressure?",
+                "answer": "Both are manageable with shockwave therapy. We review your medications and may request clearance from your GP or cardiologist. Diabetics often need the 12-session protocol for optimal vascular repair, but results can be excellent with good glycemic control."
+            }
         ]
-    },
-    "treatsConditions": {
-        "conditions": [
-            {
-                "icon": "heart-pulse",
-                "effectiveness": "High",
-                "name": "Vascular Erectile Dysfunction",
-                "description": "Restores blood inflow and endothelial health."
-            },
-            {
-                "name": "Performance Decline Post-Prostatectomy",
-                "description": "Speeds rehab when combined with medications or PRP.",
-                "effectiveness": "Moderate",
-                "icon": "stethoscope"
-            },
-            {
-                "icon": "align-center",
-                "name": "Peyronie’s Disease",
-                "description": "Softens plaques and improves curvature when paired with traction.",
-                "effectiveness": "Moderate"
-            },
-            {
-                "description": "Improves nerve signalling for more intense sensation.",
-                "name": "Sensitivity Loss",
-                "effectiveness": "High",
-                "icon": "zap"
-            }
-        ],
-        "title": "Conditions We Treat",
-        "subtitle": "Evidence-based applications for LI-ESWT"
-    },
-    "id": "shockwave-therapy",
-    "relatedTreatments": [
-        {
-            "description": "Injectable PRP to amplify shockwave gains.",
-            "reason": "Synergistic vascular regeneration",
-            "id": "p-shot",
-            "title": "P-Shot® PRP for Men"
-        },
-        {
-            "description": "Comprehensive plaque remodelling protocol.",
-            "reason": "Shockwave prepares tissue for PRP + traction.",
-            "id": "peyronies-disease",
-            "title": "Peyronie’s Regenerative Plan"
-        },
-        {
-            "title": "Lichen Sclerosus Relief",
-            "description": "PRP + light therapy to calm inflammation.",
-            "reason": "Maintain penile skin health during treatment.",
-            "id": "lichen-sclerosis-male"
-        }
-    ],
-    "howItWorks": {
-        "subtitle": "Acoustic energy drives a healing cascade",
-        "content": "Shockwaves create micro-cavitation bubbles that collapse and trigger cellular signalling. This process releases VEGF, eNOS, and proliferative cytokines while dissolving micro-plaque that restricts penile blood flow.",
-        "variant": "dark-glass",
-        "benefits": [
-            {
-                "icon": "droplet",
-                "title": "Angiogenesis",
-                "description": "New micro-vessels form, restoring oxygen-rich blood supply."
-            },
-            {
-                "icon": "zap",
-                "title": "Neurogenesis",
-                "description": "Nerve response improves for faster arousal and sensation."
-            },
-            {
-                "icon": "align-center",
-                "title": "Plaque Disruption",
-                "description": "Breaks down fibrotic tissue linked to Peyronie’s curvature."
-            },
-            {
-                "title": "Synergy with PRP",
-                "icon": "layers",
-                "description": "Prepares tissue to absorb growth factors from the P-Shot."
-            }
-        ],
-        "title": "Science Behind Shockwave Therapy",
-        "background": "default",
-        "enabled": true,
-        "growthFactors": [
-            "VEGF – Vascular Endothelial Growth Factor",
-            "eNOS – Endothelial Nitric Oxide Synthase",
-            "PCNA – Proliferating Cell Nuclear Antigen"
-        ]
-    },
-    "alternativeTitles": [
-        "Extracorporeal Shockwave Therapy",
-        "ESWT for ED",
-        "Acoustic Wave Therapy",
-        "GAINSWave"
-    ],
-    "subcategoryId": "male",
-    "testimonials": [
-        {
-            "name": "Anthony L.",
-            "image": "https://images.unsplash.com/photo-1504593811423-6dd665756598?w=400&q=80",
-            "verified": true,
-            "treatment": "Shockwave + P-Shot",
-            "text": "By the fourth session morning erections were back and I no longer panic about intimacy. The course was painless and the team was incredibly discreet.",
-            "date": "2024-03-02",
-            "rating": 5,
-            "age": 51
-        },
-        {
-            "age": 57,
-            "rating": 5,
-            "date": "2023-12-18",
-            "text": "Curvature dropped from 35° to under 15° after combining shockwave with traction and PRP. Follow-up imaging proved the plaque shrinkage.",
-            "treatment": "Shockwave for Peyronie's",
-            "image": "https://images.unsplash.com/photo-1521119989659-a83eee488004?w=400&q=80",
-            "verified": true,
-            "name": "Daniel W."
-        }
-    ],
-    "benefits": {
-        "features": [
-            {
-                "description": "Reduces reliance on medication by fixing blood flow.",
-                "icon": "heart-pulse",
-                "title": "Natural Erections"
-            },
-            {
-                "description": "Walk in during lunch, return to work immediately.",
-                "title": "No Downtime",
-                "icon": "clock"
-            },
-            {
-                "title": "Supports Peyronie’s Plans",
-                "icon": "align-center",
-                "description": "Breaks down plaques ahead of traction or PRP."
-            },
-            {
-                "icon": "droplet",
-                "title": "Enhances P-Shot®",
-                "description": "Improves uptake of growth factors for bigger gains."
-            },
-            {
-                "description": "Suitable for diabetics or cardiac patients cleared for activity.",
-                "title": "Safe with Comorbidities",
-                "icon": "shield-check"
-            },
-            {
-                "icon": "target",
-                "title": "Precise Energy Delivery",
-                "description": "Focused applicator penetrates deeper than radial devices."
-            }
-        ],
-        "title": "Benefits of Shockwave at Our Clinic",
-        "subtitle": "Engineered for long-term vascular change",
-        "layout": "grid-3"
-    },
-    "whyChooseDrSNA": {
-        "title": "Why Dr. SNA Clinic?",
-        "background": "gradient-cream",
-        "enabled": true,
-        "subtitle": "Results-focused shockwave in a discreet men’s health setting",
-        "features": [
-            {
-                "description": "Treatment plans mapped by Dr. Abbas after Doppler assessment.",
-                "icon": "stethoscope",
-                "title": "Urologist-Designed Protocols"
-            },
-            {
-                "description": "We use a focused applicator (not radial spa devices) for deeper penetration.",
-                "icon": "settings",
-                "title": "FDA-Listed Device"
-            },
-            {
-                "title": "Privacy Guaranteed",
-                "icon": "shield",
-                "description": "Soundproof suites, neutral booking notes, and concierge scheduling."
-            },
-            {
-                "icon": "layers",
-                "title": "Add-On Therapies",
-                "description": "Combine with P-Shot, peptide support, traction, or EMS for faster gains."
-            },
-            {
-                "description": "IIEF-5 scoring and ultrasound imaging track objective improvements.",
-                "icon": "activity",
-                "title": "Progress Tracking"
-            },
-            {
-                "title": "Finance Options",
-                "icon": "credit-card",
-                "description": "0% interest plans for full treatment courses."
-            }
-        ],
-        "variant": "compact-grid"
-    },
-    "treatsAreas": {
-        "areas": [
-            {
-                "description": "Boosts arterial inflow and rigidity.",
-                "price": "Included",
-                "name": "Corpora Cavernosa",
-                "icon": "activity",
-                "image": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=600&q=80"
-            },
-            {
-                "icon": "target",
-                "image": "https://images.unsplash.com/photo-1512654446293-423c82f0c4fc?w=600&q=80",
-                "description": "Supports venous sealing to maintain erections.",
-                "price": "Included",
-                "name": "Penile Crura"
-            },
-            {
-                "icon": "sparkles",
-                "image": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=600&q=80",
-                "price": "Included",
-                "description": "Improves sensitivity and neural signalling.",
-                "name": "Glans"
-            },
-            {
-                "price": "Add-on",
-                "name": "Peyronie’s Plaques (optional)",
-                "description": "Breaks down fibrotic scar tissue when combined with traction.",
-                "icon": "align-center",
-                "image": "https://images.unsplash.com/photo-1485217988980-11786ced9454?w=600&q=80"
-            }
-        ],
-        "subtitle": "Energy delivered along every vascular pathway",
-        "title": "Treatment Zones"
-    },
-    "description": "Low-intensity shockwaves stimulate angiogenesis and nerve repair to restore natural erections.",
-    "comparison": {
-        "subtitle": "Understand how LI-ESWT fits alongside other therapies",
-        "title": "Compare Your Options",
-        "comparisons": [
-            {
-                "results": "2-4 weeks",
-                "cost": "£1,800 (course)",
-                "treatment": "Shockwave Therapy",
-                "naturalness": "Mechanical stimulation",
-                "duration": "18-24 months",
-                "downtime": "None"
-            },
-            {
-                "results": "3-6 weeks",
-                "treatment": "P-Shot PRP",
-                "cost": "£1,200",
-                "naturalness": "Autologous biologic",
-                "duration": "12-18 months",
-                "downtime": "None"
-            },
-            {
-                "naturalness": "Pharmaceutical",
-                "cost": "£300+/year",
-                "treatment": "Medication (PDE5)",
-                "results": "30-60 mins",
-                "downtime": "None",
-                "duration": "Short acting"
-            },
-            {
-                "duration": "10+ years",
-                "downtime": "4-6 weeks",
-                "results": "Immediate",
-                "treatment": "Penile Implants",
-                "cost": "£8k-£15k",
-                "naturalness": "Surgical"
-            }
-        ]
-    },
-    "hero": {
-        "badge": "Course-based protocol",
-        "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80",
-        "headline": "Drug-Free Regeneration for ED",
-        "video": "https://youtu.be/3cuL-4IYW2g",
-        "subheadline": "Precision shockwave therapy that re-opens blood vessels and boosts responsiveness.",
-        "backgroundImage": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80"
-    },
-    "whatToExpect": {
-        "subtitle": "Fast, comfortable, repeatable sessions",
-        "variant": "compact-timeline",
-        "enabled": true,
-        "title": "What to Expect Each Visit",
-        "background": "gradient-cream",
-        "steps": [
-            {
-                "title": "Pre-Session Check-In",
-                "number": 1,
-                "description": "Vitals, medication review, and baseline questionnaire.",
-                "duration": "5 mins"
-            },
-            {
-                "description": "Ultrasound gel applied; doctor outlines treatment points.",
-                "duration": "3 mins",
-                "title": "Target Mapping",
-                "number": 2
-            },
-            {
-                "description": "2,000–3,000 pulses across shaft, crura, and glans.",
-                "duration": "15 mins",
-                "title": "Shockwave Delivery",
-                "number": 3
-            },
-            {
-                "title": "Aftercare & Next Steps",
-                "number": 4,
-                "duration": "2 mins",
-                "description": "Immediate return to normal activity; home protocol emailed."
-            }
-        ]
-    },
-    "faq": [
-        {
-            "question": "Does shockwave therapy hurt?",
-            "answer": "Most patients describe a light tapping sensation—like tiny pulses. Energy levels are adjustable and we can pause at any time. It's painless enough that no numbing is required."
-        },
-        {
-            "question": "How much does shockwave therapy cost in London?",
-            "answer": "Single sessions are £350. The 6-Session Course is £1,800 (save £300). The 12-Session Optimiser is £3,200 (save £1,000). Consultation fee (£100) is credited toward treatment. 0% finance available."
-        },
-        {
-            "question": "How many shockwave sessions do I need?",
-            "answer": "The standard protocol is 6 sessions over 3 weeks (twice weekly). Some men benefit from 12 sessions if there's significant vascular compromise. We assess progress with Doppler imaging and adjust accordingly."
-        },
-        {
-            "question": "When will I see shockwave results?",
-            "answer": "Many men notice stronger morning erections after 3-4 sessions. Maximal gains typically appear 8-12 weeks after completing the course as new blood vessels fully mature."
-        },
-        {
-            "question": "Can I combine shockwave with ED medication?",
-            "answer": "Yes. PDE5 inhibitors (Viagra, Cialis) can be used during the course and often become optional once vascular health improves. Many men successfully reduce or eliminate medication dependence."
-        },
-        {
-            "question": "Is shockwave safe with heart conditions?",
-            "answer": "If your cardiologist has cleared you for sexual activity, shockwave is usually safe. We review all medications and cardiac history first. Shockwave doesn't affect heart function."
-        },
-        {
-            "question": "How long do shockwave results last?",
-            "answer": "Results typically last 18-24 months depending on lifestyle factors. Maintenance sessions annually help sustain vascular health. Many men make yearly boosters part of their wellness routine."
-        },
-        {
-            "question": "Will insurance cover shockwave therapy?",
-            "answer": "Shockwave for ED is usually considered elective, but we provide itemised invoices for personal reimbursement if your policy covers regenerative treatments. Check with your provider."
-        },
-        {
-            "question": "What's the difference between shockwave therapy and GAINSWave?",
-            "answer": "GAINSWave is a branded protocol using low-intensity shockwave therapy. At Dr. SNA Clinic, we use FDA-listed focused shockwave devices (not radial) with urologist-designed treatment maps. Our approach is evidence-based and customized to your Doppler imaging—not a one-size-fits-all franchise protocol."
-        },
-        {
-            "question": "Can shockwave therapy help if pills don't work for me anymore?",
-            "answer": "Absolutely. Double-blind studies show shockwave can convert PDE5 non-responders into responders by addressing the underlying vascular damage. Many men who stopped responding to Viagra or Cialis regain sensitivity to medication after vascular regeneration—or achieve erections without pills entirely."
-        },
-        {
-            "question": "Is shockwave therapy permanent or will I need maintenance?",
-            "answer": "Shockwave creates lasting vascular improvements—18-24 months on average—but lifestyle factors (smoking, diabetes, cardiovascular health) affect longevity. Many men opt for annual booster sessions to sustain gains, similar to how you'd maintain muscle with periodic training."
-        },
-        {
-            "question": "What's the success rate for shockwave therapy for ED?",
-            "answer": "Clinical studies show effectiveness in up to 84% of men with mild-to-moderate vascular ED. About 57% achieve medication-free erections, and many others see significant improvement in rigidity and spontaneity. Success depends on ED cause, severity, and overall vascular health."
-        },
-        {
-            "question": "Can younger men benefit from shockwave therapy?",
-            "answer": "Yes. Younger men with vascular ED (often related to diabetes, metabolic syndrome, or cycling injuries) respond excellently. Early intervention prevents progression and establishes healthy vascular patterns before damage becomes extensive."
-        },
-        {
-            "question": "How does shockwave therapy compare to the P-Shot?",
-            "answer": "They're synergistic, not competitive. Shockwave mechanically triggers angiogenesis; P-Shot delivers concentrated growth factors. Many men combine both—shockwave prepares tissue, then PRP amplifies regeneration. Together, they produce faster, more comprehensive results than either alone."
-        },
-        {
-            "question": "Will my partner know I'm having treatment?",
-            "answer": "Only if you choose to tell them. Sessions leave no visible marks, require no recovery, and appointments are booked with neutral notes. Many men schedule during work hours and return to normal activity—including intimacy—the same day."
-        },
-        {
-            "question": "What if I have diabetes or high blood pressure?",
-            "answer": "Both are manageable with shockwave therapy. We review your medications and may request clearance from your GP or cardiologist. Diabetics often need the 12-session protocol for optimal vascular repair, but results can be excellent with good glycemic control."
-        }
-    ]
 }
