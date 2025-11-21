@@ -333,6 +333,240 @@ export const treatmentSchema = z.object({
     reason: z.string().describe('Why its related')
   })).max(4).optional(),
 
+  // === ADDITIONAL CONTENT SECTIONS ===
+
+  // Emotional connection section (two-column features)
+  emotionalConnection: z.object({
+    title: z.string(),
+    paragraphs: z.array(z.string()).min(1).max(3),
+    features: z.array(z.object({
+      icon: iconSchema,
+      title: z.string(),
+      description: z.string()
+    })).optional(),
+    image: z.string().optional(),
+    imageAlt: z.string().optional(),
+    caption: z.string().optional()
+  }).optional(),
+
+  // Natural healing approach (two-column features)
+  naturalHealing: z.object({
+    title: z.string(),
+    paragraphs: z.array(z.string()).min(1).max(3),
+    features: z.array(z.object({
+      icon: iconSchema,
+      title: z.string(),
+      description: z.string()
+    })).optional(),
+    image: z.string().optional(),
+    imageAlt: z.string().optional(),
+    caption: z.string().optional()
+  }).optional(),
+
+  // Why choose Dr. SNA section (features with cards)
+  whyChooseDrSNA: z.object({
+    enabled: z.boolean().default(true),
+    title: z.string(),
+    subtitle: z.string().optional(),
+    description: z.string().optional(),
+    features: z.array(z.object({
+      icon: iconSchema,
+      title: z.string(),
+      description: z.string()
+    })).max(6),
+    variant: z.enum(['default', 'cards', 'compact', 'list']).optional(),
+    layout: z.enum(['grid-2', 'grid-3', 'grid-4']).optional(),
+    showStats: z.boolean().optional(),
+    stats: z.object({
+      treatments: z.string().optional(),
+      rating: z.string().optional(),
+      satisfaction: z.string().optional()
+    }).optional()
+  }).optional(),
+
+  // Video section
+  video: z.object({
+    enabled: z.boolean().default(true),
+    title: z.string().optional(),
+    subtitle: z.string().optional(),
+    description: z.string().optional(),
+    layout: z.enum(['grid', 'single', 'feature']).default('grid'),
+    videos: z.array(z.object({
+      id: z.string().optional(),
+      videoId: z.string().optional(),
+      url: z.string().optional(),
+      title: z.string().optional(),
+      description: z.string().optional(),
+      duration: z.string().optional(),
+      thumbnail: z.string().optional()
+    })),
+    featureContent: z.object({
+      title: z.string().optional(),
+      subtitle: z.string().optional(),
+      description: z.string().optional(),
+      highlights: z.array(z.string()).optional(),
+      videoSide: z.enum(['left', 'right']).optional()
+    }).optional()
+  }).optional(),
+
+  // What to expect timeline
+  whatToExpect: z.object({
+    enabled: z.boolean().default(true),
+    title: z.string(),
+    subtitle: z.string().optional(),
+    variant: z.enum(['default', 'detailed', 'compact', 'timeline', 'vertical']).optional(),
+    steps: z.array(z.object({
+      number: z.number(),
+      title: z.string(),
+      description: z.string(),
+      duration: z.string().optional(),
+      icon: iconSchema.optional()
+    })).min(1)
+  }).optional(),
+
+  // Detailed features (two-column features)
+  detailedFeatures: z.object({
+    title: z.string(),
+    paragraphs: z.array(z.string()).min(1).max(3),
+    features: z.array(z.object({
+      icon: iconSchema,
+      title: z.string(),
+      description: z.string()
+    })).optional(),
+    image: z.string().optional(),
+    imageAlt: z.string().optional(),
+    caption: z.string().optional()
+  }).optional(),
+
+  // Doctor quote with image
+  doctorQuote: z.object({
+    title: z.string(),
+    paragraphs: z.array(z.string()).min(1).max(3),
+    quote: z.object({
+      text: z.string(),
+      cite: z.string().optional(),
+      logoSrc: z.string().optional()
+    }).optional(),
+    images: z.object({
+      light: z.string(),
+      dark: z.string().optional(),
+      width: z.number().optional(),
+      height: z.number().optional(),
+      altLight: z.string().optional(),
+      altDark: z.string().optional(),
+      alt: z.string().optional()
+    }).optional(),
+    image: z.string().optional(),
+    imageAlt: z.string().optional()
+  }).optional(),
+
+  // Photo gallery
+  gallery: z.object({
+    title: z.string().optional(),
+    subtitle: z.string().optional(),
+    images: z.array(z.union([
+      z.string(),
+      z.object({
+        src: z.string().optional(),
+        url: z.string().optional(),
+        alt: z.string().optional(),
+        title: z.string().optional(),
+        caption: z.string().optional()
+      })
+    ])),
+    columns: z.number().min(2).max(4).default(3)
+  }).optional(),
+
+  // Treatment areas block
+  treatsAreas: z.object({
+    title: z.string(),
+    subtitle: z.string().optional(),
+    areas: z.array(z.object({
+      name: z.string(),
+      description: z.string(),
+      image: z.string().optional(),
+      icon: z.string().optional().describe('Lucide icon name in kebab-case'),
+      price: z.string().optional(),
+      duration: z.string().optional()
+    }))
+  }).optional(),
+
+  // Healing vs masking comparison (two-column features)
+  healingVsMasking: z.object({
+    title: z.string(),
+    paragraphs: z.array(z.string()).min(1).max(3),
+    features: z.array(z.object({
+      icon: iconSchema,
+      title: z.string(),
+      description: z.string()
+    })).optional(),
+    image: z.string().optional(),
+    imageAlt: z.string().optional(),
+    caption: z.string().optional()
+  }).optional(),
+
+  // Real results showcase (features section)
+  realResults: z.object({
+    title: z.string(),
+    subtitle: z.string().optional(),
+    description: z.string().optional(),
+    features: z.array(z.object({
+      icon: iconSchema,
+      title: z.string(),
+      description: z.string()
+    })).max(6),
+    variant: z.enum(['default', 'cards', 'compact', 'list']).optional(),
+    layout: z.enum(['grid-2', 'grid-3', 'grid-4']).optional()
+  }).optional(),
+
+  // Treatment experience (two-column features)
+  treatmentExperience: z.object({
+    title: z.string(),
+    paragraphs: z.array(z.string()).min(1).max(3),
+    features: z.array(z.object({
+      icon: iconSchema,
+      title: z.string(),
+      description: z.string()
+    })).optional(),
+    image: z.string().optional(),
+    imageAlt: z.string().optional(),
+    caption: z.string().optional()
+  }).optional(),
+
+  // Safety and quality section
+  safety: z.object({
+    title: z.string(),
+    content: z.string().optional(),
+    certifications: z.array(z.object({
+      name: z.string(),
+      description: z.string(),
+      icon: z.string().optional().describe('Lucide icon name in kebab-case')
+    })).optional(),
+    products: z.array(z.string()).optional().describe('Premium product names/brands used')
+  }).optional(),
+
+  // Video testimonials (detailed with ratings and verification)
+  videoTestimonials: z.object({
+    enabled: z.boolean().default(true),
+    title: z.string().optional(),
+    subtitle: z.string().optional(),
+    description: z.string().optional(),
+    testimonials: z.array(z.object({
+      name: z.string(),
+      treatment: z.string().optional(),
+      rating: z.number().min(1).max(5).optional(),
+      quote: z.string().optional(),
+      verified: z.boolean().default(true),
+      results: z.string().optional(),
+      video: z.object({
+        id: z.string().optional(),
+        videoId: z.string().optional(),
+        url: z.string().optional(),
+        thumbnail: z.string().optional()
+      })
+    }))
+  }).optional(),
+
   // CTA
   cta: ctaSchema
 });

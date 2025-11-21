@@ -154,38 +154,6 @@
       ]
     }
   ],
-  "clinicShowcase": {
-    "badge": "Experience Excellence",
-    "title": "Your Sanctuary of",
-    "titleAccent": "Aesthetic Excellence",
-    "description": "Step inside our world-class clinic where luxury, privacy, and cutting-edge technology converge to create the perfect environment for your transformation",
-    "slides": [
-      {
-        "src": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=80",
-        "title": "State-of-the-Art Reception",
-        "subtitle": "First Impressions That Last",
-        "description": "Welcome to our elegant reception area, where luxury meets comfort. Every detail is designed to put you at ease from the moment you arrive."
-      },
-      {
-        "src": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&q=80",
-        "title": "Premium Treatment Rooms",
-        "subtitle": "Where Excellence Meets Comfort",
-        "description": "Our advanced treatment rooms combine cutting-edge medical equipment with a soothing ambiance, ensuring your complete comfort during every procedure."
-      },
-      {
-        "src": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1600&q=80",
-        "title": "Private Consultation Suites",
-        "subtitle": "Your Journey Begins Here",
-        "description": "Discreet, private spaces where Dr Abbas takes the time to understand your aesthetic goals and create your personalized treatment plan."
-      },
-      {
-        "src": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=1600&q=80",
-        "title": "Prestigious London Location",
-        "subtitle": "Wimpole Street Excellence",
-        "description": "Located in the heart of London's medical district, our clinic sets the standard for aesthetic medicine in one of the world's most iconic locations."
-      }
-    ]
-  },
   "expertise": {
     "badge": "Our Expertise",
     "title": "Medically Designed, Integrated & Evidence-Led",

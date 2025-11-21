@@ -19,6 +19,11 @@ export function proxy(request) {
   // Clone the URL for rewriting
   const rewriteUrl = url.clone();
 
+  // Handle /about redirect to /about-us
+  if (url.pathname === '/about') {
+    return NextResponse.redirect(new URL('/about-us', request.url));
+  }
+
   // Handle P-Shot domain routing
   if (isPShotDomain) {
     // Rewrite root to P-Shot landing page
