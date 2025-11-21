@@ -85,6 +85,8 @@ import {
     Ear,
     RefreshCw,
     MessageCircle,
+    Umbrella,
+    Baby,
   } from "lucide-react";
 
 
@@ -202,6 +204,8 @@ import {
     messageCircle: MessageCircle,
     'message-circle': MessageCircle,
     'align-center': AlignCenter,
+    umbrella: Umbrella,
+    baby: Baby,
   };
   
   
