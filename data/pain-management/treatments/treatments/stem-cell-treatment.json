@@ -10,12 +10,12 @@
   "hero": {
     "headline": "Stem Cells That Keep You Moving",
     "subheadline": "Consultant-led adipose stem cell therapy in Marylebone brings back cushioning, calms inflammation, and buys you time away from the operating theatre.",
-    "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1920&q=80",
+    "image": "/images/treatments/stem-cell-hero.jpg",
     "badge": "Adipose harvest + injection same day"
   },
   "overview": {
     "title": "Why Adipose Stem Cells Work",
-    "image": "https://images.unsplash.com/photo-1581091012184-5c2af8c1c1b9?w=1400&q=80",
+    "image": "/images/treatments/Adipose-Stem.jpeg",
     "content": "Fat tissue is a rich, gentle source of mesenchymal stem cells. When we reinfuse these cells into a degenerative joint, they orchestrate repair: calming cytokines, building new collagen, and recruiting your own healing cells. It’s ideal for moderate arthritis, labral tears, tendinopathy, and chronic inflammation when PRP is no longer enough.",
     "highlights": [
       "Mini-liposuction harvest with local anaesthetic + light sedation",
@@ -49,7 +49,7 @@
         "name": "Knee & Hip Osteoarthritis",
         "description": "Rebuild cartilage, calm synovitis, and delay joint replacement.",
         "icon": "shield",
-        "image": "https://images.unsplash.com/photo-1544829099-b9a0c07afdba?w=800&q=80"
+        "image": "/images/treatments/Hip-Osteoarthritis.jpg"
       },
       {
         "name": "Shoulder & Labral Tears",
@@ -61,7 +61,7 @@
         "name": "Tendinopathy & Sports Injuries",
         "description": "Achilles, plantar fascia, hamstring, and groin injuries that keep flaring.",
         "icon": "pulse",
-        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800&q=80"
+        "image": "/images/treatments/Sports-Injuries.jpg"
       }
     ]
   },

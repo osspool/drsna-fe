@@ -8,7 +8,7 @@
             "Back on your feet within 48 hours—no hospital stay, no steroid crash"
         ],
         "content": "Arthrosamid® is a polyacrylamide hydrogel composed of 97.5% water and 2.5% iPAAG. It integrates with the synovial membrane, permanently increasing viscosity and cushioning. Instead of washing out like hyaluronic acid, Arthrosamid becomes part of the joint lining, dampening inflammation and restoring shock absorption so stairs, hills, and long walks feel effortless again.",
-        "image": "https://images.unsplash.com/photo-1521119989659-a83eee488004?w=1200&q=80",
+        "image": "/images/treatments/Arthrosamid.webp",
         "title": "Why Arthrosamid® Works"
     },
     "quickStats": {
@@ -170,11 +170,11 @@
         ]
     },
     "hero": {
-    "badge": "Documented 156-week relief",
-    "image": "/images/treatment/pain-management/arthrosamid-injection/hero.png",
-    "headline": "Bring Back the Cushion in One Visit",
-    "video": "https://youtu.be/gvl85ocgsRA",
-    "subheadline": "Dr Abbas injects Arthrosamid® under ultrasound in Marylebone, so worn knees feel cushioned without steroids or surgery."
+        "badge": "Documented 156-week relief",
+        "image": "/images/treatments/Arthrosamid-hero.webp",
+        "headline": "Bring Back the Cushion in One Visit",
+        "video": "https://youtu.be/gvl85ocgsRA",
+        "subheadline": "Dr Abbas injects Arthrosamid® under ultrasound in Marylebone, so worn knees feel cushioned without steroids or surgery."
     },
     "faq": [
         {
