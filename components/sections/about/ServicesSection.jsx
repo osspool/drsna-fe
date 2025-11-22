@@ -1,6 +1,7 @@
 import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/layout/Container";
 import { SectionHeader } from "@/components/common/SectionHeader";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * Services Section
@@ -22,7 +23,7 @@ export function ServicesSection({ data }) {
         <div className="grid md:grid-cols-2 gap-8">
           {data.list && data.list.map((service, index) => (
             <div
-              key={index}
+              key={generateStableKey(service, index, "service-entry")}
               className="bg-card rounded-2xl p-8 border border-border hover:border-primary/30 hover:shadow-lg transition-all"
             >
               <h3 className="text-xl font-heading font-bold text-foreground mb-4">
@@ -43,7 +44,7 @@ export function ServicesSection({ data }) {
                   </p>
                   <ul className="space-y-2">
                     {(service.idealFor || service.designedFor).map((item, i) => (
-                      <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
+                      <li key={generateStableKey(item, i, "service-ideal-item")} className="text-sm text-muted-foreground flex items-start gap-2">
                         <span className="text-primary mt-0.5">•</span>
                         <span>{item}</span>
                       </li>

@@ -32,6 +32,39 @@
   },
   "guides": [
     {
+      "slug": "stem-cell-treatment-london",
+      "title": "Stem Cell Treatment in London: Your Body's Hidden Healing Power",
+      "category": "Regenerative Medicine",
+      "excerpt": "Harness your own cells to rebuild tissue, reverse chronic pain, and reclaim the active life you thought was gone. Adipose-derived MSC therapy explained.",
+      "estimatedRead": "14 min read",
+      "updated": "2025-01-22",
+      "image": "https://images.unsplash.com/photo-1576671081837-49000212a370?w=1200&auto=format&fit=crop",
+      "keywords": ["stem cell treatment London", "MSC therapy UK", "regenerative medicine"],
+      "cta": "Discover if stem cell therapy can help you"
+    },
+    {
+      "slug": "arthrosamid-injections-london",
+      "title": "Arthrosamid® Injections: One Shot. Three Years. Zero Surgery.",
+      "category": "Pain Management",
+      "excerpt": "Advanced hydrogel technology that replaces lost cushioning in arthritic knees—delivering lasting relief without pills, steroids, or joint replacement.",
+      "estimatedRead": "11 min read",
+      "updated": "2025-01-22",
+      "image": "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?w=1200&auto=format&fit=crop",
+      "keywords": ["Arthrosamid London", "knee osteoarthritis treatment", "hydrogel injection"],
+      "cta": "See if Arthrosamid can delay your knee replacement"
+    },
+    {
+      "slug": "shockwave-therapy-comprehensive-guide",
+      "title": "Shockwave Therapy for Erectile Dysfunction: Complete Guide",
+      "category": "Intimate Health",
+      "excerpt": "How acoustic wave therapy rebuilds blood flow naturally—without pills, surgery, or downtime. Covers success rates (76-84%), costs, protocols, and combination therapies.",
+      "estimatedRead": "12 min read",
+      "updated": "2025-01-22",
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&auto=format&fit=crop",
+      "keywords": ["shockwave therapy ED", "LI-ESWT guide", "erectile dysfunction treatment"],
+      "cta": "Understand if shockwave therapy is right for you"
+    },
+    {
       "slug": "hair-fall-roadmap",
       "title": "Hair Fall SOS Roadmap",
       "category": "Hair & Scalp",

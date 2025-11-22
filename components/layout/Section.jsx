@@ -21,16 +21,17 @@ export function Section({
     cream: "bg-secondary",
     "gradient-cream": "bg-linear-to-b from-secondary/30 via-background to-secondary/20",
     gold: "bg-primary",
+    primary: "bg-primary", // Added primary alias
     muted: "bg-muted/70",
     "muted-dark": "bg-muted"
   };
 
   const paddings = {
     none: "",
-    sm: "py-12 md:py-16",
-    default: "py-16 md:py-24",
-    lg: "py-24 md:py-32",
-    xl: "py-32 md:py-40",
+    sm: "py-8 md:py-12",
+    default: "py-12 md:py-16",
+    lg: "py-16 md:py-24",
+    xl: "py-20 md:py-28",
   };
 
   const content = (

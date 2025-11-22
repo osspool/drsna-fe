@@ -1,42 +1,62 @@
-import Link from "next/link";
+"use client";
 
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+
+/**
+ * TreatmentRecommendations Component
+ *
+ * Displays related treatments with internal linking to treatment pages.
+ * Styled to match RelatedTreatmentsSection for consistent UX.
+ *
+ * SEO Benefits:
+ * - Internal linking to treatment pages
+ * - Contextual relevance for topic clusters
+ * - Encourages deeper site exploration
+ */
 export function TreatmentRecommendations({ treatments }) {
   if (!treatments?.length) return null;
 
   return (
-    <section className="py-12">
-      <div className="flex flex-col gap-3 mb-6 text-center">
-        <p className="text-sm font-semibold text-primary uppercase tracking-[0.3em]">
-          Recommended Next Steps
-        </p>
-        <h2 className="text-3xl font-heading font-bold text-foreground">
-          Treatments that accelerate results
+    <section className="py-16 bg-card rounded-3xl">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+          You May Also Like
         </h2>
-        <p className="text-base text-muted-foreground">
-          Book a consult to personalise dosage, combinations, and timelines.
+        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          Complementary treatments that work beautifully together
         </p>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-3">
-        {treatments.map((treatment) => (
-          <Link
-            key={treatment.href}
-            href={treatment.href}
-            className="rounded-3xl border border-border bg-card p-6 text-left hover:border-primary/40 hover:-translate-y-1 transition"
+      <div className="grid md:grid-cols-3 gap-8">
+        {treatments.map((treatment, index) => (
+          <div
+            key={treatment.href || treatment.id}
+            className="opacity-0 animate-fade-in-up"
+            style={{ animationDelay: `${index * 100}ms` }}
           >
-            <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
-              Clinic protocol
-            </p>
-            <h3 className="mt-2 text-xl font-heading font-semibold text-foreground">
-              {treatment.title}
-            </h3>
-            <p className="mt-2 text-sm text-muted-foreground">
-              {treatment.description}
-            </p>
-            <span className="mt-4 inline-flex items-center gap-2 text-primary font-semibold">
-              View treatment →
-            </span>
-          </Link>
+            <Link href={treatment.href}>
+              <div className="group h-full bg-background rounded-3xl p-8 border border-border hover:border-primary/30 hover:shadow-primary-lg transition-all duration-300">
+                <h3 className="text-2xl font-heading font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                  {treatment.title}
+                </h3>
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  {treatment.description}
+                </p>
+                <div className="flex items-center text-primary font-semibold text-sm">
+                  Learn more
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform" />
+                </div>
+                {treatment.reason && (
+                  <div className="mt-4 pt-4 border-t border-border">
+                    <p className="text-sm text-muted-foreground/80 italic">
+                      Why? {treatment.reason}
+                    </p>
+                  </div>
+                )}
+              </div>
+            </Link>
+          </div>
         ))}
       </div>
     </section>

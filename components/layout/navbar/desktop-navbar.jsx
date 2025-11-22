@@ -7,7 +7,8 @@ import { navigationData } from "./nav-data"
 import { MegaMenu } from "./mega-menu"
 import { ChevronDown, Phone, Calendar } from "lucide-react"
 import { ModeToggle } from "@/components/custom/ui/mode-toggle"
-import { MovingBorderButton } from "@/components/aceternity/moving-border"
+import { Button } from "@/components/ui/button"
+
 import {
   Tooltip,
   TooltipContent,
@@ -60,7 +61,7 @@ export function DesktopNavbar({ onMenuOpenChange }) {
   const dropdownItems = navigationData.filter((item) => item.children && item.children.length > 0)
 
   return (
-    <div className="hidden lg:block">
+    <nav className="hidden lg:block" aria-label="Main navigation">
       <Container maxWidth="full">
         <div className="flex items-center gap-6 h-16">
           {/* Logo */}
@@ -71,6 +72,7 @@ export function DesktopNavbar({ onMenuOpenChange }) {
                 alt="Dr SNA Clinic"
                 fill
                 priority
+                sizes="70px"
                 className="object-contain"
               />
             </div>
@@ -125,6 +127,7 @@ export function DesktopNavbar({ onMenuOpenChange }) {
                   <Link
                     href={`tel:${contactInfo.phone.primary.number}`}
                     className="text-white/80 hover:text-white text-[14px] transition-colors duration-200 flex items-center gap-1.5"
+                    aria-label={`Call us at ${contactInfo.phone.primary.display}`}
                   >
                     <Phone className="w-4 h-4" />
                   </Link>
@@ -135,18 +138,12 @@ export function DesktopNavbar({ onMenuOpenChange }) {
               </Tooltip>
             </TooltipProvider>
             <Link href="/booking">
-              <MovingBorderButton
-                borderRadius="1.5rem"
-                className="bg-linear-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground text-[13px] font-medium px-4 py-2 border-none"
-                containerClassName="h-auto"
-                borderClassName="bg-[radial-gradient(circle,var(--primary)_20%,var(--primary-foreground)_40%,transparent_70%)]"
-                duration={3000}
+              <Button 
+                className="bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] to-[#BF953F] text-royal-blue hover:text-royal-blue/80 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 border border-white/20"
               >
-                <span className="flex items-center gap-1.5">
-                  <Calendar className="w-4 h-4" />
-                  Book Consultation
-                </span>
-              </MovingBorderButton>
+                <Calendar className="w-4 h-4 mr-2" />
+                Book Consultation
+              </Button>
             </Link>
           </div>
         </div>
@@ -159,6 +156,6 @@ export function DesktopNavbar({ onMenuOpenChange }) {
           onClose={() => setActiveMenuId(null)}
         />
       )}
-    </div>
+    </nav>
   )
 }

@@ -1,3 +1,5 @@
+import { generateStableKey } from "@/lib/utils";
+
 /**
  * Section Skeleton Loader
  *
@@ -18,7 +20,7 @@ export function SectionSkeleton() {
         {/* Content Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {Array.from({ length: 6 }).map((_, i) => (
-            <div key={i} className="space-y-4">
+            <div key={generateStableKey("section-skeleton", i, "section-skeleton-card")} className="space-y-4">
               <div className="aspect-video bg-muted animate-pulse rounded-lg" />
               <div className="h-6 bg-muted animate-pulse rounded-lg" />
               <div className="h-4 bg-muted animate-pulse rounded-lg w-3/4" />

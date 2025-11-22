@@ -4,6 +4,7 @@ import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/layout/Container";
 import { Icon } from "@/components/custom/ui/icon";
 import { Badge } from "@/components/ui/badge";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * Expertise Block
@@ -59,7 +60,7 @@ export function ExpertiseBlock({ data }) {
 
               return (
                 <div
-                  key={index}
+                  key={generateStableKey(feature, index, "expertise-feature")}
                   className={`opacity-0 animate-fade-in-up group relative ${gridClass}`}
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
@@ -120,7 +121,7 @@ export function ExpertiseBlock({ data }) {
                 <div className="p-8 md:p-12 lg:p-16 space-y-6">
                   {approach.points && approach.points.map((point, index) => (
                     <div
-                      key={index}
+                      key={generateStableKey(point, index, "expertise-approach-point")}
                       className="opacity-0 animate-slide-in-right flex items-start gap-4 group"
                       style={{ animationDelay: `${index * 100}ms` }}
                     >

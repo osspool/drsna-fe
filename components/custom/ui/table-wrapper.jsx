@@ -9,7 +9,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
-import { cn } from '@/lib/utils';
+import { cn, generateStableKey } from '@/lib/utils';
 
 export function TableWrapper({
   title,
@@ -72,7 +72,7 @@ export function TableWrapper({
                 <TableRow>
                   {columns.map((column, index) => (
                     <TableHead 
-                      key={index}
+                      key={generateStableKey(column.key ?? column.header ?? index, index, 'table-column-head')}
                       className={cn(column.className)}
                     >
                       {column.header}
@@ -83,7 +83,7 @@ export function TableWrapper({
             )}
             <TableBody>
               {data?.map((item, index) => renderRow ? renderRow(item, index) : (
-                <TableRow key={index}>
+                <TableRow key={generateStableKey(item, index, 'table-row')}>
                   {children}
                 </TableRow>
               ))}
@@ -105,9 +105,9 @@ export function SimpleTable({
   ...props
 }) {
   const renderRow = (item, index) => (
-    <TableRow key={index}>
+    <TableRow key={generateStableKey(item, index, 'simple-table-row')}>
       {columns.map((column, colIndex) => (
-        <TableCell key={colIndex} className={column.cellClassName}>
+        <TableCell key={generateStableKey(column.key ?? column.header ?? colIndex, colIndex, 'simple-table-cell')} className={column.cellClassName}>
           {column.render ? column.render(item, index) : item[column.key]}
         </TableCell>
       ))}

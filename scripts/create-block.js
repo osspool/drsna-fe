@@ -63,6 +63,7 @@ import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { SectionHeader } from "@/components/common/SectionHeader";
 import { FadeInUp } from "@/components/common/AnimatedWrapper";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * ${componentName} Component
@@ -90,7 +91,7 @@ export function ${componentName}({ data }) {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           {items.map((item, index) => (
-            <FadeInUp key={index} delay={index * 100}>
+            <FadeInUp key={generateStableKey(item, index, "${componentName}-item")} delay={index * 100}>
               <div className="bg-card p-6 rounded-2xl border border-border hover:border-primary/30 transition-all">
                 <h3 className="text-lg font-bold text-foreground mb-2">
                   {item.title}

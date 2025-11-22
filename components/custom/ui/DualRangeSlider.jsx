@@ -1,7 +1,7 @@
 "use client";
 
 import * as SliderPrimitive from "@radix-ui/react-slider";
-import { cn } from "@/lib/utils";
+import { cn, generateStableKey } from "@/lib/utils";
 import { Fragment, useMemo } from "react";
 import { forwardRef } from "react";
 
@@ -25,7 +25,7 @@ const DualRangeSlider = forwardRef(
           <SliderPrimitive.Range className="absolute h-full bg-primary" />
         </SliderPrimitive.Track>
         {initialValue.map((value, index) => (
-          <Fragment key={index}>
+          <Fragment key={generateStableKey(value, index, "dual-range-thumb")}>
             <SliderPrimitive.Thumb
               className={cn(
                 "relative block h-5 w-5 rounded-full border-2 border-primary bg-background",

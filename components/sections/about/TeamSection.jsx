@@ -5,6 +5,7 @@ import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/layout/Container";
 import { SectionHeader } from "@/components/common/SectionHeader";
 import { Award, BadgeCheck, GraduationCap, Users } from "lucide-react";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * Team Section
@@ -27,7 +28,7 @@ export function TeamSection({ data }) {
         <div className="space-y-12">
           {data.map((member, index) => (
             <div
-              key={index}
+              key={generateStableKey(member, index, "team-member")}
               className="opacity-0 animate-fade-in-up bg-card rounded-3xl overflow-hidden border border-border shadow-lg"
               style={{ animationDelay: `${index * 150}ms` }}
             >
@@ -62,7 +63,7 @@ export function TeamSection({ data }) {
                       <div className="flex flex-wrap gap-2">
                         {member.highlights.map((highlight, i) => (
                           <span
-                            key={i}
+                            key={generateStableKey(highlight, i, "team-highlight")}
                             className="inline-flex items-center gap-1.5 bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold border border-primary/20"
                           >
                             <BadgeCheck className="w-3.5 h-3.5" />
@@ -91,7 +92,7 @@ export function TeamSection({ data }) {
                         </h4>
                         <ul className="space-y-2">
                           {member.credentials.list.map((item, i) => (
-                            <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
+                            <li key={generateStableKey(item, i, "team-credential")} className="text-sm text-muted-foreground flex items-start gap-2">
                               <span className="text-primary mt-0.5">•</span>
                               <span className="leading-snug">{item}</span>
                             </li>
@@ -109,7 +110,7 @@ export function TeamSection({ data }) {
                         </h4>
                         <ul className="space-y-2">
                           {member.memberships.list.map((item, i) => (
-                            <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
+                            <li key={generateStableKey(item, i, "team-membership")} className="text-sm text-muted-foreground flex items-start gap-2">
                               <span className="text-primary mt-0.5">•</span>
                               <span className="leading-snug">{item}</span>
                             </li>

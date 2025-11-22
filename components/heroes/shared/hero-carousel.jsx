@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn, generateStableKey } from "@/lib/utils";
 
 /**
  * Modern Hero Carousel Component
@@ -74,10 +74,11 @@ export function HeroCarousel({
     <div className={cn("absolute inset-0 overflow-hidden", className)}>
       {/* Image Slides */}
       {images.map((image, index) => {
+        const slideKey = generateStableKey(image, index, "hero-slide");
         const isActive = index === currentIndex;
         return (
           <div
-            key={image.url || index}
+            key={slideKey}
             className={cn(
               "absolute inset-0 transition-all duration-1000 ease-in-out",
               isActive ? "opacity-100 z-10" : "opacity-0 z-0",
@@ -90,6 +91,7 @@ export function HeroCarousel({
               alt={image.alt || `Slide ${index + 1}`}
               fill
               priority={index === 0}
+              fetchPriority={index === 0 ? "high" : "auto"}
               quality={90}
               className={cn(
                 "object-cover",
@@ -97,7 +99,7 @@ export function HeroCarousel({
                 enableKenBurns && isActive && "animate-kenburns"
               )}
               style={image.style}
-              sizes="100vw"
+              sizes="(max-width: 768px) 100vw, 100vw"
             />
           </div>
         );
@@ -151,9 +153,9 @@ export function HeroCarousel({
           {/* Slide Indicators - More Visible */}
           {showIndicators && (
             <div className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-30 flex items-center gap-2.5 bg-black/40 backdrop-blur-sm px-4 py-2.5 rounded-full">
-              {images.map((_, index) => (
+              {images.map((image, index) => (
                 <button
-                  key={index}
+                  key={generateStableKey(image, index, "hero-indicator")}
                   onClick={() => {
                     goToSlide(index);
                     handleUserInteraction();
@@ -175,4 +177,3 @@ export function HeroCarousel({
     </div>
   );
 }
-

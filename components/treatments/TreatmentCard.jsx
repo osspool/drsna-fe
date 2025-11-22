@@ -5,6 +5,7 @@ import { SmartImage } from "@/components/common/SmartImage";
 import { ArrowRight, Clock, Calendar, TrendingUp, Star } from "lucide-react";
 import { CometCard } from "@/components/aceternity/comet-card";
 import { FadeInUp } from "@/components/common/AnimatedWrapper";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * Treatment Card Component
@@ -107,7 +108,7 @@ export function TreatmentCard({ treatment, categoryId, subcategoryId, index = 0 
                 <div className="mb-6">
                   <ul className="space-y-2">
                     {treatment.benefits.slice(0, 3).map((benefit, idx) => (
-                      <li key={idx} className="flex items-start text-sm text-muted-foreground">
+                      <li key={generateStableKey(benefit, idx, "treatment-benefit")} className="flex items-start text-sm text-muted-foreground">
                         <span className="text-primary mr-2">✓</span>
                         {benefit}
                       </li>

@@ -5,6 +5,7 @@ import * as Icons from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { FadeInUp } from "@/components/common/AnimatedWrapper";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * Treatment Areas Block Component
@@ -51,7 +52,7 @@ export function TreatmentAreasBlock({ data }) {
             const Icon = Icons[iconName] || Icons.MapPin;
 
             return (
-              <FadeInUp key={index} delay={index * 100}>
+              <FadeInUp key={generateStableKey(area, index, "treatment-area")} delay={index * 100}>
                 <div className="group flex h-full">
                   <div className="flex flex-col h-full w-full rounded-3xl overflow-hidden bg-card border border-border hover:border-primary/30 hover:shadow-primary-lg transition-all duration-500">
                     {/* Image */}

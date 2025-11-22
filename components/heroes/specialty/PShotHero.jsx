@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Phone, CheckCircle } from "lucide-react";
 import Link from "next/link";
+import { generateStableKey } from "@/lib/utils";
 
 export function PShotHero({ data }) {
   return (
@@ -70,7 +71,7 @@ export function PShotHero({ data }) {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-3xl">
             {data.trustIndicators.map((indicator, index) => (
               <div
-                key={index}
+                key={generateStableKey(indicator, index, "pshot-indicator")}
                 className="flex items-center gap-3 text-sm font-medium text-foreground"
               >
                 <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />

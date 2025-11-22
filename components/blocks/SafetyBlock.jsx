@@ -5,6 +5,7 @@ import Glow from "@/components/custom/ui/glow";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { HoverBorderGradient } from "@/components/aceternity/hover-border-gradient";
+import { generateStableKey } from "@/lib/utils";
 
 export function SafetyBlock({ data }) {
   const { title, content, certifications, products } = data;
@@ -42,7 +43,7 @@ export function SafetyBlock({ data }) {
 
               return (
                 <div
-                  key={index}
+                  key={generateStableKey(cert, index, "safety-certification")}
                   className="opacity-0 animate-fade-in-up group flex"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
@@ -81,7 +82,7 @@ export function SafetyBlock({ data }) {
             <div className="flex flex-wrap items-center justify-center gap-8">
               {products.map((product, index) => (
                 <div
-                  key={index}
+                  key={generateStableKey(product, index, "safety-product")}
                   className="px-6 py-3 bg-card/10 rounded-full border border-border text-foreground/80 font-semibold"
                 >
                   {product}
@@ -94,4 +95,3 @@ export function SafetyBlock({ data }) {
     </Section>
   );
 }
-

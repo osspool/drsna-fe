@@ -2,6 +2,7 @@
 
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { SmartImage } from "@/components/common/SmartImage";
+import { generateStableKey } from "@/lib/utils";
 
 const defaultData = {
   badge: "Certified Excellence",
@@ -64,7 +65,7 @@ export function RegulatoryLogos({ data }) {
           >
             {sectionData.logos.map((logo, index) => (
               <div
-                key={index}
+                key={generateStableKey(logo, index, "regulatory-logo")}
                 className="flex items-center justify-center  transition-all duration-300"
               >
                 <SmartImage

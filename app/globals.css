@@ -7,7 +7,7 @@
   /* Fonts */
   --font-sans: var(--font-inter);
   --font-heading: var(--font-heading);
-  --font-accent: var(--font-accent);
+
 
   /* Animations */
   --animate-meteor-effect: meteor 5s linear infinite;
@@ -371,5 +371,7 @@
            transition-all duration-300 
            hover:scale-105;
   }
+
+
 }
 

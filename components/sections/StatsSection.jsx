@@ -131,14 +131,14 @@ function StatsDefault({ statEntries }) {
             )}
           >
             <div className="flex items-center justify-between mb-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 border border-primary/20 rounded-full">
-                <span className="text-primary text-[0.65rem] font-semibold tracking-wider uppercase">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-foreground/10 border border-foreground/20 rounded-full">
+                <span className="text-foreground text-[0.65rem] font-semibold tracking-wider uppercase">
                   {label}
                 </span>
               </div>
-              <span className="block h-1.5 w-1.5 rounded-full bg-primary" />
+              <span className="block h-1.5 w-1.5 rounded-full bg-foreground" />
             </div>
-            <p className="text-xl font-semibold text-foreground leading-tight">
+            <p className="text-xl font-semibold text-primary leading-tight">
               {value}
             </p>
           </div>

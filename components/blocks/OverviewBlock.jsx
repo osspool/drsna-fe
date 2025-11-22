@@ -6,6 +6,7 @@ import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { SectionHeader } from "@/components/common/SectionHeader";
 import { SlideIn, StaggerChildren } from "@/components/common/AnimatedWrapper";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * Overview Block Component
@@ -46,7 +47,10 @@ export function OverviewBlock({ data }) {
 
             <div className="prose prose-lg max-w-none mb-8">
               {content.split('\n\n').map((paragraph, index) => (
-                <p key={index} className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4">
+                <p
+                  key={generateStableKey(paragraph, index, "overview-paragraph")}
+                  className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4"
+                >
                   {paragraph}
                 </p>
               ))}
@@ -59,14 +63,19 @@ export function OverviewBlock({ data }) {
                 animation="slideInLeft"
                 className="space-y-3"
               >
-                {highlights.map((highlight, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-1">
-                      <Check className="w-4 h-4 text-primary" />
-                    </div>
-                    <span className="text-foreground/80 font-medium">{highlight}</span>
-                  </div>
-                ))}
+                <ul className="space-y-3 m-0 p-0 list-none">
+                  {highlights.map((highlight, index) => (
+                    <li
+                      key={generateStableKey(highlight, index, "overview-highlight")}
+                      className="flex items-start gap-3"
+                    >
+                      <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-1">
+                        <Check className="w-4 h-4 text-primary" />
+                      </div>
+                      <span className="text-foreground/80 font-medium">{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
               </StaggerChildren>
             )}
           </SlideIn>

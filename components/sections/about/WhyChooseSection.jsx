@@ -2,6 +2,7 @@ import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/layout/Container";
 import { SectionHeader } from "@/components/common/SectionHeader";
 import { CheckCircle } from "lucide-react";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * Why Choose Section
@@ -30,7 +31,7 @@ export function WhyChooseSection({ data }) {
         {data.points && data.points.length > 0 && (
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             {data.points.map((point, index) => (
-              <div key={index} className="flex items-start gap-3">
+              <div key={generateStableKey(point, index, "why-choose-point")} className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <p className="text-base text-foreground leading-relaxed">{point}</p>
               </div>

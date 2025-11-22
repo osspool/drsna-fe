@@ -48,7 +48,7 @@ const defaultData = {
   ctaButtons: [
     {
       text: "Learn More About P-Shot®",
-      href: "/treatments/p-shot",
+      href: "/treatments/intimate-health/male/p-shot",
       icon: "arrow-right",
       variant: "primary",
     },

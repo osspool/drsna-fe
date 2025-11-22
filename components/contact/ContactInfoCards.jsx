@@ -10,6 +10,7 @@
 
 import { Container } from "@/components/layout/Container";
 import { ContactCard } from "@/components/contact/ContactCard";
+import { generateStableKey } from "@/lib/utils";
 
 export function ContactInfoCards({ data }) {
   const { cards } = data;
@@ -19,7 +20,7 @@ export function ContactInfoCards({ data }) {
       <Container>
         <div className="grid md:grid-cols-3 gap-8">
           {cards.map((info, index) => (
-            <ContactCard key={index} info={info} index={index} />
+            <ContactCard key={generateStableKey(info, index, "contact-card")} info={info} index={index} />
           ))}
         </div>
       </Container>

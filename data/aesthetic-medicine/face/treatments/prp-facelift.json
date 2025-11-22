@@ -179,13 +179,13 @@
   },
   "quickStats": {
     "painLevel": "Mild",
-    "downtime": "Minimal (24-48 hours redness)",
+    "downtime": "24-48 hours redness",
     "price": "From £450",
     "duration": "60-90 minutes",
     "resultsVisible": "2-4 weeks",
     "anesthesia": "Topical numbing cream",
     "resultsLast": "12-18 months",
-    "sessions": "3 sessions recommended (4-6 weeks apart)"
+    "sessions": "3 sessions"
   },
   "safety": {
     "content": "PRP therapy has been used in medicine for over 30 years in orthopedics, dentistry, and wound healing. Its application in aesthetic medicine is backed by extensive research demonstrating safety and efficacy.",

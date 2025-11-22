@@ -1,1 +1,117 @@
-{"shortTitle":"Evidence Library","hero":{"image":"https://images.unsplash.com/photo-1582719478248-54e9f2af79ae?w=1920&q=80","headline":"See the Studies Behind Our Treatments","subheadline":"Peer-reviewed research on regenerative joint and sexual health therapies.","cta":"Explore summaries","backgroundImage":"https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1920&q=80"},"faq":[],"id":"treatments","title":"Evidence-Backed Treatments","cta":{"subtitle":"Book a consultation to match the right therapy to your goals.","title":"Discuss the Evidence With Our Team","primaryButton":"Book a consult","secondaryButton":"Call the clinic"},"treatments":{"bmac-therapy":{"benefits":["High-potency marrow-derived cells","Long-term follow-up data","Targets cartilage and subchondral bone"],"icon":"dna","downtime":"48-72 hrs","description":"Randomized and long-term cohort studies report pain and function gains up to 15 years, delaying arthroplasty in many patients.","duration":"Day procedure","image":"https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=80","title":"BMAC Therapy","longevity":"3+ years","results":"8-12 weeks","shortDescription":"Bone marrow concentrate for advanced cartilage and subchondral changes."},"fat-derived-stem-cell-joint-therapy":{"description":"Prospective and randomized trials show stromal vascular fraction and culture-expanded adipose MSCs improve pain and function versus placebo or hyaluronic acid.","downtime":"48-72 hrs","shortDescription":"Mesenchymal stem cell injections for knee osteoarthritis with multi-year follow-up.","title":"Fat Derived Stem Cell Joint Therapy","duration":"Day procedure","popular":true,"featured":true,"results":"6-12 weeks","longevity":"12-24 months","image":"https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80","benefits":["Autologous cells with cushioning effect","RCT data versus placebo","Improvements in WOMAC and MRI scores"],"icon":"activity"},"p-shot":{"downtime":"Minimal","duration":"45 mins","description":"Double-blind trials and regenerative medicine reviews show PRP can improve IIEF scores and vascular parameters in vasculogenic ED.","longevity":"6-12 months","title":"P-Shot","image":"https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=801&q=80","shortDescription":"Platelet-rich plasma for erectile function and penile tissue repair.","results":"4-8 weeks","benefits":["Autologous growth factors","Potential IIEF score gains","Adjunct to PDE5 protocols"],"icon":"sparkles"},"prp-joint-treatment":{"icon":"droplet","benefits":["Drug-free biologic option","Improves WOMAC and VAS scores","Supports tendon and joint recovery"],"image":"https://images.unsplash.com/photo-1582719478248-54e9f2af79ae?w=801&q=80","title":"PRP Joint Treatment","longevity":"6-12 months","results":"4-6 weeks","shortDescription":"Platelet-rich plasma injections for joint pain and tendon healing.","downtime":"Minimal","description":"Multiple randomized trials demonstrate PRP outperforms hyaluronic acid and corticosteroid for sustained pain relief in knee osteoarthritis.","duration":"45 mins"}},"seo":{"metaTitle":"Scientific Evidence | Regenerative Therapy Studies | Dr. SNA Clinic","keywords":["regenerative medicine evidence","stem cell knee trial","BMAC study results","PRP osteoarthritis research","P-Shot clinical data"],"h1":"Evidence-Backed Treatments","metaDescription":"Read the peer-reviewed evidence for fat-derived stem cell therapy, BMAC, PRP joint treatments, and the P-Shot. Transparent summaries for informed decisions."},"description":"Summaries of peer-reviewed studies covering our core regenerative therapies.","process":{"title":"How to Use the Library","steps":[{"description":"Select the treatment you want to research.","title":"Choose a therapy"},{"description":"Review study design, outcomes, and safety signals.","title":"Scan the summary"},{"description":"Discuss whether the evidence fits your goals and health status.","title":"Book a consult"}]},"benefits":{"title":"Why Read These Summaries?","features":[{"description":"Study design, follow-up, and endpoints highlighted in plain language.","icon":"file-text","title":"Evidence at a glance"},{"title":"Practical takeaways","icon":"clock-3","description":"Understand how results translate to patient goals and timelines."},{"description":"We flag reported adverse events and common recovery timelines.","icon":"shield","title":"Safety first"}]},"longDescription":"These articles condense the clinical evidence that guides how we deliver fat-derived stem cell therapy, BMAC, PRP joint treatment, and the P-Shot. Each summary notes study design, follow-up length, and functional outcomes so you know what was measured and what patients experienced.","introduction":{"title":"Transparent, Concise, Clinically Relevant","image":"https://images.unsplash.com/photo-1581091012184-5c2af8c1c1b9?w=1200&q=80","highlights":["Peer-reviewed sources only","Functional outcomes highlighted","Safety signals noted up-front","Direct links to treatment pages"],"content":"We read the full papers so you can grasp the essentials quickly: who was studied, how outcomes were measured, and what improvements were seen. Each summary links directly to the therapy pathway we offer at the clinic."},"tagline":"Clinical outcomes you can read before you choose.","categoryId":"scientific-evidence"}
+{
+  "shortTitle": "Evidence Library",
+  "hero": {
+    "image": "https://images.unsplash.com/photo-1582719478248-54e9f2af79ae?w=1920&q=80",
+    "headline": "See the Studies Behind Our Treatments",
+    "subheadline": "Peer-reviewed research on regenerative joint and sexual health therapies.",
+    "cta": "Explore summaries",
+    "backgroundImage": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1920&q=80"
+  },
+  "faq": [],
+  "id": "treatments",
+  "title": "Evidence-Backed Treatments",
+  "cta": {
+    "subtitle": "Book a consultation to match the right therapy to your goals.",
+    "title": "Discuss the Evidence With Our Team",
+    "primaryButton": "Book a consult",
+    "secondaryButton": "Call the clinic"
+  },
+  "treatments": {
+    "fat-derived-stem-cell-joint-therapy": {
+      "description": "Prospective and randomized trials show stromal vascular fraction and culture-expanded adipose MSCs improve pain and function versus placebo or hyaluronic acid.",
+      "downtime": "48-72 hrs",
+      "shortDescription": "Mesenchymal stem cell injections for knee osteoarthritis with multi-year follow-up.",
+      "title": "Fat Derived Stem Cell Joint Therapy",
+      "duration": "Day procedure",
+      "popular": true,
+      "featured": true,
+      "results": "6-12 weeks",
+      "longevity": "12-24 months",
+      "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80",
+      "benefits": [
+        "Autologous cells with cushioning effect",
+        "RCT data versus placebo",
+        "Improvements in WOMAC and MRI scores"
+      ],
+      "icon": "activity"
+    },
+    "p-shot": {
+      "downtime": "Minimal",
+      "duration": "45 mins",
+      "description": "Double-blind trials and regenerative medicine reviews show PRP can improve IIEF scores and vascular parameters in vasculogenic ED.",
+      "longevity": "6-12 months",
+      "title": "P-Shot",
+      "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=801&q=80",
+      "shortDescription": "Platelet-rich plasma for erectile function and penile tissue repair.",
+      "results": "4-8 weeks",
+      "benefits": [
+        "Autologous growth factors",
+        "Potential IIEF score gains",
+        "Adjunct to PDE5 protocols"
+      ],
+      "icon": "sparkles"
+    }
+  },
+  "seo": {
+    "metaTitle": "Scientific Evidence | Regenerative Therapy Studies | Dr. SNA Clinic",
+    "keywords": [
+      "regenerative medicine evidence",
+      "stem cell knee trial",
+      "P-Shot clinical data"
+    ],
+    "h1": "Evidence-Backed Treatments",
+    "metaDescription": "Read the peer-reviewed evidence for fat-derived stem cell therapy and the P-Shot. Transparent summaries for informed decisions."
+  },
+  "description": "Summaries of peer-reviewed studies covering our signature stem cell and intimate wellness therapies.",
+  "process": {
+    "title": "How to Use the Library",
+    "steps": [
+      {
+        "description": "Select the treatment you want to research.",
+        "title": "Choose a therapy"
+      },
+      {
+        "description": "Review study design, outcomes, and safety signals.",
+        "title": "Scan the summary"
+      },
+      {
+        "description": "Discuss whether the evidence fits your goals and health status.",
+        "title": "Book a consult"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Why Read These Summaries?",
+    "features": [
+      {
+        "description": "Study design, follow-up, and endpoints highlighted in plain language.",
+        "icon": "file-text",
+        "title": "Evidence at a glance"
+      },
+      {
+        "title": "Practical takeaways",
+        "icon": "clock-3",
+        "description": "Understand how results translate to patient goals and timelines."
+      },
+      {
+        "description": "We flag reported adverse events and common recovery timelines.",
+        "icon": "shield",
+        "title": "Safety first"
+      }
+    ]
+  },
+  "longDescription": "These articles condense the clinical evidence that guides how we deliver fat-derived stem cell therapy and the P-Shot. Each summary notes study design, follow-up length, and functional outcomes so you know what was measured and what patients experienced.",
+  "introduction": {
+    "title": "Transparent, Concise, Clinically Relevant",
+    "image": "https://images.unsplash.com/photo-1581091012184-5c2af8c1c1b9?w=1200&q=80",
+    "highlights": [
+      "Peer-reviewed sources only",
+      "Functional outcomes highlighted",
+      "Safety signals noted up-front",
+      "Direct links to treatment pages"
+    ],
+    "content": "We read the full papers so you can grasp the essentials quickly: who was studied, how outcomes were measured, and what improvements were seen. Each summary links directly to the therapy pathway we offer at the clinic."
+  },
+  "tagline": "Clinical outcomes you can read before you choose.",
+  "categoryId": "scientific-evidence"
+}

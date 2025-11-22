@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Container } from "@/components/layout/Container";
 import { Spotlight } from "@/components/aceternity/spotlight";
 import { BackgroundBeams } from "@/components/aceternity/background-beams";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * Unified Hero Component for Category and Subcategory Pages
@@ -114,7 +115,9 @@ export function CategoryHero({
               style={{ animationDelay: isCategory ? '600ms' : '500ms' }}
             >
               {data.longDescription.split('\n\n').map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
+                <p key={generateStableKey(paragraph, index, "category-hero-paragraph")}>
+                  {paragraph}
+                </p>
               ))}
             </div>
           )}
@@ -178,7 +181,7 @@ function StatsSection({ stats }) {
       style={{ animationDelay: '700ms' }}
     >
       {stats.map((stat, index) => (
-        <div key={index} className="text-center">
+        <div key={generateStableKey(stat, index, "category-hero-stat")} className="text-center">
           <div className="text-5xl md:text-6xl font-heading font-bold text-primary mb-2">
             {stat.value}
           </div>

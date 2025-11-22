@@ -1,7 +1,7 @@
 "use client";
 
 import { Star } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn, generateStableKey } from "@/lib/utils";
 
 /**
  * Reusable RatingStars Component
@@ -40,7 +40,7 @@ export function RatingStars({
       <div className="flex gap-0.5">
         {Array.from({ length: maxRating }).map((_, i) => (
           <Star
-            key={i}
+            key={generateStableKey("rating-star", i, "rating-star")}
             className={cn(
               sizeClasses[size],
               i < starCount ? color : "text-muted-foreground"

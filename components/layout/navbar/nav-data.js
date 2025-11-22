@@ -186,28 +186,56 @@ export const navigationData = [
         label: "Treatments",
         description: "Available treatment methods",
         href: "/treatments/pain-management/treatments",
+        inlineChildSections: true,
         children: [
           {
-            id: "non-surgical-regenerative",
-            label: "Non-Surgical Regenerative",
-            href: "/treatments/pain-management/treatments/non-surgical-regenerative",
+            id: "featured-pain-management",
+            label: "Featured Regenerative Care",
+            description: "Minimal, high-impact therapies led by Dr Abbas.",
+            children: [
+              {
+                id: "stem-cell-treatment",
+                label: "Stem Cell Therapy",
+                href: "/treatments/pain-management/treatments/stem-cell-treatment",
+              },
+              {
+                id: "arthrosamid-injection",
+                label: "Arthrosamid Injections",
+                href: "/treatments/pain-management/treatments/arthrosamid-injection",
+              },
+              {
+                id: "physiotherapy",
+                label: "Specialist Physiotherapy",
+                href: "/treatments/pain-management/treatments/physiotherapy",
+              },
+            ],
           },
           {
-            id: "platelet-rich-plasma",
-            label: "PRP Therapy",
-            href: "/treatments/pain-management/treatments/platelet-rich-plasma",
-          },
-          {
-            id: "adipose-cell-therapy",
-            label: "Adipose Therapy",
-            href: "/treatments/pain-management/treatments/adipose-cell-therapy",
-          },
-          { id: "bmac-therapy", label: "BMAC Therapy", href: "/treatments/pain-management/treatments/bmac-therapy" },
-          { id: "physiotherapy", label: "Physiotherapy", href: "/treatments/pain-management/treatments/physiotherapy" },
-          {
-            id: "arthrosamid-injection",
-            label: "Arthrosamid",
-            href: "/treatments/pain-management/treatments/arthrosamid-injection",
+            id: "regenerative-programmes",
+            label: "Orthobiologic Programmes",
+            description: "Biologic injections, cushioning gels, and rehab-driven care plans.",
+            children: [
+              {
+                id: "platelet-rich-plasma",
+                label: "PRP Therapy",
+                href: "/treatments/pain-management/treatments/platelet-rich-plasma",
+              },
+              {
+                id: "non-surgical-regenerative",
+                label: "Non-Surgical Regenerative",
+                href: "/treatments/pain-management/treatments/non-surgical-regenerative",
+              },
+              {
+                id: "adipose-cell-therapy",
+                label: "Adipose Therapy",
+                href: "/treatments/pain-management/treatments/adipose-cell-therapy",
+              },
+              {
+                id: "bmac-therapy",
+                label: "BMAC Therapy",
+                href: "/treatments/pain-management/treatments/bmac-therapy",
+              },
+            ],
           },
         ],
       },
@@ -284,35 +312,6 @@ export const navigationData = [
             href: "/treatments/life-optimization/services/medical-nutrition-therapy",
           },
         ],
-      },
-    ],
-  },
-  {
-    id: "scientific-evidence",
-    label: "Scientific Evidence",
-    description: "Research-led regenerative treatments backed by clinical data",
-    href: "/treatments/scientific-evidence",
-    skipCategoryStage: true,
-    children: [
-      {
-        id: "fat-derived-stem-cell-joint-therapy",
-        label: "Fat Derived Stem Cell Joint Therapy",
-        href: "/treatments/scientific-evidence/treatments/fat-derived-stem-cell-joint-therapy",
-      },
-      {
-        id: "bmac-therapy",
-        label: "BMAC Therapy",
-        href: "/treatments/scientific-evidence/treatments/bmac-therapy",
-      },
-      {
-        id: "p-shot",
-        label: "P-Shot",
-        href: "/treatments/scientific-evidence/treatments/p-shot",
-      },
-      {
-        id: "prp-joint-treatment",
-        label: "PRP Joint Treatment",
-        href: "/treatments/scientific-evidence/treatments/prp-joint-treatment",
       },
     ],
   },

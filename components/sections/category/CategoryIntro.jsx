@@ -2,6 +2,7 @@ import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/layout/Container";
 import { SectionHeader } from "@/components/common/SectionHeader";
 import { IconFeatureCard } from "@/components/common/IconFeatureCard";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * Category Introduction Section
@@ -31,7 +32,7 @@ export function CategoryIntro({ data }) {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
             {data.highlights.map((highlight, index) => (
               <IconFeatureCard
-                key={index}
+                key={generateStableKey(highlight, index, "category-intro-highlight")}
                 icon={highlight.icon}
                 title={highlight.title}
                 description={highlight.description}

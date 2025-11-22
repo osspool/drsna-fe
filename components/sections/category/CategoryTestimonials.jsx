@@ -2,6 +2,7 @@ import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/layout/Container";
 import { SectionHeader } from "@/components/common/SectionHeader";
 import { Star } from "lucide-react";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * Category Testimonials Section
@@ -26,14 +27,14 @@ export function CategoryTestimonials({ testimonials }) {
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div
-              key={index}
+              key={generateStableKey(testimonial, index, "category-testimonial-card")}
               className="bg-card p-8 rounded-3xl border border-border hover:border-primary/30 hover:shadow-xl transition-all"
             >
               {/* Star Rating */}
               <div className="flex gap-1 mb-6">
                 {[...Array(testimonial.rating || 5)].map((_, i) => (
                   <Star
-                    key={i}
+                    key={generateStableKey(`${testimonial.name || "testimonial"}-star`, i, "category-testimonial-star")}
                     className="w-5 h-5 fill-primary text-primary"
                   />
                 ))}

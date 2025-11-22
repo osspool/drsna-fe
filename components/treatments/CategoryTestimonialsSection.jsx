@@ -13,6 +13,7 @@ import { Section } from "@/components/layout/Section";
 import { SectionHeader } from "@/components/common/SectionHeader";
 import { FadeInUp } from "@/components/common/AnimatedWrapper";
 import { Star } from "lucide-react";
+import { generateStableKey } from "@/lib/utils";
 
 export function CategoryTestimonialsSection({ data }) {
   if (!data || data.length === 0) return null;
@@ -28,13 +29,13 @@ export function CategoryTestimonialsSection({ data }) {
 
         <div className="grid md:grid-cols-3 gap-8">
           {data.map((testimonial, index) => (
-            <FadeInUp key={index} delay={index * 100}>
+            <FadeInUp key={generateStableKey(testimonial, index, "category-testimonial")} delay={index * 100}>
               <div className="bg-card p-8 rounded-3xl border border-border hover:border-primary/30 hover:shadow-xl transition-all h-full">
                 {/* Star Rating */}
                 <div className="flex gap-1 mb-6">
                   {[...Array(testimonial.rating || 5)].map((_, i) => (
                     <Star
-                      key={i}
+                      key={generateStableKey(`${testimonial.name || "testimonial"}-star`, i, "category-testimonial-star")}
                       className="w-5 h-5 fill-primary text-primary"
                     />
                   ))}

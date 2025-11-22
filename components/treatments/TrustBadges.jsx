@@ -4,6 +4,7 @@ import { ShieldCheck, CheckCircle } from "lucide-react";
 import { StatCard } from "@/components/common/StatCard";
 import { IconFeatureCard } from "@/components/common/IconFeatureCard";
 import { Icon } from "@/components/custom/ui/icon";
+import { generateStableKey } from "@/lib/utils";
 
 export function TrustBadges({ certifications, variant = "default" }) {
   if (!certifications || certifications.length === 0) return null;
@@ -13,7 +14,7 @@ export function TrustBadges({ certifications, variant = "default" }) {
       <div className="flex flex-wrap items-center justify-center gap-4">
         {certifications.map((cert, index) => (
           <div
-            key={index}
+            key={generateStableKey(cert, index, "trust-badge-inline")}
             className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-dark-brown/10 hover:border-gold/30 transition-colors"
           >
             <Icon name={cert.icon} size={16} className="text-gold flex-shrink-0" />
@@ -31,7 +32,7 @@ export function TrustBadges({ certifications, variant = "default" }) {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {certifications.map((cert, index) => (
           <StatCard
-            key={index}
+            key={generateStableKey(cert, index, "trust-badge-compact")}
             icon={cert.icon}
             label={cert.name}
             variant="minimal"
@@ -52,7 +53,7 @@ export function TrustBadges({ certifications, variant = "default" }) {
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {certifications.map((cert, index) => (
         <div
-          key={index}
+          key={generateStableKey(cert, index, "trust-badge-default")}
           className="bg-white rounded-2xl p-6 border border-dark-brown/10 hover:border-gold/30 hover:shadow-lg transition-all group"
         >
           <div className="flex items-start gap-4">
@@ -116,7 +117,7 @@ export function SafetySection({ data }) {
             <div className="flex flex-wrap justify-center gap-4">
               {data.products.map((product, index) => (
                 <div
-                  key={index}
+                  key={generateStableKey(product, index, "trust-product")}
                   className="px-6 py-3 bg-white rounded-full border-2 border-gold/20 hover:border-gold/40 transition-colors"
                 >
                   <span className="text-dark-brown font-semibold">{product}</span>
@@ -135,7 +136,7 @@ export function TrustIndicators({ indicators = ["CQC Registered", "GMC Certified
   return (
     <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
       {indicators.map((indicator, index) => (
-        <div key={index} className="flex items-center gap-2">
+        <div key={generateStableKey(indicator, index, "simple-trust-indicator")} className="flex items-center gap-2">
           <CheckCircle className="w-5 h-5 text-gold flex-shrink-0" />
           <span className="text-sm md:text-base font-medium text-dark-brown">
             {indicator}

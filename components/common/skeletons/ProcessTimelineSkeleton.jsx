@@ -1,3 +1,5 @@
+import { generateStableKey } from "@/lib/utils";
+
 /**
  * Process Timeline Skeleton Loader
  *
@@ -7,7 +9,7 @@ export function ProcessTimelineSkeleton() {
   return (
     <div className="space-y-8">
       {Array.from({ length: 4 }).map((_, i) => (
-        <div key={i} className="flex gap-6">
+        <div key={generateStableKey("process-skeleton", i, "process-timeline-skeleton-step")} className="flex gap-6">
           {/* Step number */}
           <div className="flex-shrink-0">
             <div className="w-12 h-12 bg-muted rounded-full animate-pulse" />

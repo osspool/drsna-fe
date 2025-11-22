@@ -44,7 +44,7 @@ export function HeroBlock({ data }) {
 
           {/* Subtitle */}
           <p
-            className="opacity-0 animate-fade-in-up text-2xl md:text-3xl font-accent text-gold-light drop-shadow-lg mb-4"
+            className="opacity-0 animate-fade-in-up text-2xl md:text-3xl font-heading italic text-gold-light drop-shadow-lg mb-4"
             style={{ animationDelay: '400ms' }}
           >
             {subtitle}

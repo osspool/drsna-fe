@@ -1,6 +1,7 @@
 "use client";
 
 import { Sparkles } from "lucide-react";
+import { generateStableKey } from "@/lib/utils";
 
 export function AnimatedSectionHeader({ title, subtitle, badge }) {
   return (
@@ -36,7 +37,7 @@ export function AnimatedFeatureList({ items }) {
     <div className="space-y-6">
       {items.map((item, idx) => (
         <div
-          key={idx}
+          key={generateStableKey(item, idx, "animated-feature")}
           className="opacity-0 animate-fade-in-up flex gap-4"
           style={{ animationDelay: `${idx * 100}ms` }}
         >

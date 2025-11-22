@@ -8,6 +8,7 @@ import { MovingBorderButton } from "@/components/aceternity/moving-border";
 import { Spotlight } from "@/components/aceternity/spotlight";
 import { FadeInUp, ScaleIn, FadeIn } from "@/components/common/AnimatedWrapper";
 import dynamic from "next/dynamic";
+import { generateStableKey } from "@/lib/utils";
 
 // Dynamic import to avoid SSR issues with ReactPlayer
 const BackgroundVideo = dynamic(
@@ -162,7 +163,7 @@ export function HeroSection({
               <FadeIn delay={1500}>
                 <div className="flex flex-wrap justify-center gap-6 text-white/80 text-xs md:text-sm font-medium">
                   {trustIndicators.map((indicator, index) => (
-                    <div key={index} className="flex items-center gap-2">
+                    <div key={generateStableKey(indicator, index, "hero-trust-indicator")} className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-primary shadow-primary" />
                       <span>{indicator}</span>
                     </div>

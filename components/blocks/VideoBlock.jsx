@@ -5,6 +5,7 @@ import { Section } from "@/components/layout/Section";
 import { VideoPlayer } from "@/components/ui/VideoPlayer";
 import { SectionHeader } from "@/components/common/SectionHeader";
 import { useState } from "react";
+import { generateStableKey } from "@/lib/utils";
 
 export function VideoBlock({ data }) {
   const {
@@ -91,7 +92,7 @@ export function VideoBlock({ data }) {
                     <ul className="space-y-3">
                       {highlights.map((item, index) => (
                         <li
-                          key={index}
+                          key={generateStableKey(item, index, "video-highlight")}
                           className="flex items-start gap-3 text-sm text-muted-foreground"
                         >
                           <span className="mt-1 inline-flex h-2 w-2 rounded-full bg-primary/70" />
@@ -175,7 +176,7 @@ export function VideoBlock({ data }) {
         <div className="grid md:grid-cols-2 gap-8">
           {videos.map((video, index) => (
             <div
-              key={index}
+              key={generateStableKey(video, index, "video-grid-item")}
               className="opacity-0 animate-fade-in-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >

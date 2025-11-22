@@ -106,27 +106,27 @@
       },
       "leftTop": {
         "icon": "activity",
-        "description": "Advanced regenerative medicine",
+        "description": "Harness potent biological healing for profound recovery",
         "href": "/treatments/pain-management/treatments/bmac-therapy",
         "iconColor": "text-purple-400",
         "image": "/images/pain-management/stem-cell.png",
-        "title": "Stem Cell Therapy"
+        "title": "BMAC Cellular Regeneration"
       },
       "leftMiddle": {
         "icon": "activity",
-        "description": "Revolutionary treatment for knee joint pain",
+        "description": "Revolutionary single-dose cushioning for lasting knee relief",
         "href": "/treatments/pain-management/conditions/knee-treatment",
         "iconColor": "text-blue-400",
         "image": "/images/pain-management/arthrosamid.png",
-        "title": "Arthrosamid"
+        "title": "Arthrosamid® Hydrogel Matrix"
       },
       "leftBottom": {
         "icon": "activity",
-        "description": "PRP, Durolane, Osteonil Plus for Joints",
+        "description": "Reclaim your active lifestyle with advanced orthobiologics",
         "href": "/treatments/pain-management/treatments/joint-injections",
         "iconColor": "text-emerald-400",
-        "image": "/images/pain-management/joint-injections.png",
-        "title": "Joint Injections"
+        "image": "/images/pain-management/joint-injections-running.png",
+        "title": "Bio-Regenerative Joint Therapy"
       },
       "middleBottom": {
         "chips": [
@@ -142,16 +142,16 @@
         "icon": "sparkles",
         "iconColor": "text-amber-400",
         "href": "/treatments/aesthetic-medicine/hair/prp-hair",
-        "description": "Revolutionary PRP & Exosome therapy",
-        "title": "Hair Restoration",
-        "image": "/images/aesthetic-medicine/hair-restoration.png"
+        "description": "Regain thicker, fuller hair and confidence",
+        "title": "PRP Hair Restoration",
+        "image": "/images/aesthetic-medicine/hair-restoration-couple.png"
       },
       "rightTop": {
         "iconColor": "text-rose-400",
         "href": "/treatments/intimate-health/male/p-shot",
-        "description": "Revolutionary PRP therapy for men",
+        "description": "Unrivaled potency and confidence",
         "image": "/images/intimate-health/p-shot-bento.png",
-        "title": "P-Shot Treatment",
+        "title": "The Abbas Signature P-Shot Protocol",
         "icon": "zap"
       },
       "rightMiddle": {
@@ -164,11 +164,11 @@
       },
       "rightBottom": {
         "icon": "sparkles",
-        "image": "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&h=400&fit=crop",
-        "title": "PRP Facelift",
+        "image": "/images/aesthetic-medicine/prp-facelift-couple.png",
+        "title": "Luminous Bio-Cellular Facelift",
         "href": "/treatments/aesthetic-medicine/face/prp-facelift",
         "iconColor": "text-cyan-400",
-        "description": "Revolutionary natural rejuvenation"
+        "description": "Unlock ageless, polished radiance naturally"
       }
     },
     "subtitle": "Experience cutting-edge aesthetic and regenerative medicine with our expert-led treatments",

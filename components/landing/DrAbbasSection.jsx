@@ -6,6 +6,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getIconComponent } from "@/lib/icon-utils";
 import { FadeInUp, SlideIn, StaggerChildren } from "@/components/common/AnimatedWrapper";
+import { generateStableKey } from "@/lib/utils";
 
 const defaultData = {
   badge: "Meet Our Founder",
@@ -152,7 +153,7 @@ export function DrAbbasSection({ data }) {
                   {mergedData.credentials.map((credential, index) => {
                     const Icon = getIconComponent(credential.icon, Sparkles);
                     return (
-                      <div key={index} className="relative w-full h-full group">
+                      <div key={generateStableKey(credential, index, "dr-abbas-credential")} className="relative w-full h-full group">
                         <div className="hidden md:block absolute inset-0 h-full w-full scale-[0.85] transform rounded-2xl bg-gradient-to-r from-primary/10 to-primary/5 blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
 
                         <div className="relative flex h-full flex-col items-start justify-start rounded-2xl border border-primary/20 bg-card p-6 shadow-md hover:shadow-lg hover:border-primary/40 transition-all duration-300">
@@ -179,7 +180,7 @@ export function DrAbbasSection({ data }) {
             <div className="space-y-8">
               <div className="space-y-5 text-base md:text-lg text-muted-foreground leading-relaxed">
                 {mergedData.content.map((paragraph, index) => (
-                  <p key={index}>{paragraph}</p>
+                  <p key={generateStableKey(paragraph, index, "dr-abbas-paragraph")}>{paragraph}</p>
                 ))}
               </div>
 

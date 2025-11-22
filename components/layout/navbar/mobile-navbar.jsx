@@ -26,6 +26,7 @@ export function MobileNavbar() {
                 alt="Dr SNA Clinic"
                 fill
                 priority
+                sizes="60px"
                 className="object-contain"
               />
             </div>

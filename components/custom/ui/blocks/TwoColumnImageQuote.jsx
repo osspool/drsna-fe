@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/layout/Container";
 import { Icon } from "@/components/custom/ui/icon";
+import { generateStableKey } from "@/lib/utils";
 
 export default function TwoColumnImageQuote({ data = {} }) {
   const {
@@ -47,7 +48,7 @@ export default function TwoColumnImageQuote({ data = {} }) {
             {paragraphs.length > 0 && (
               <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed">
                 {paragraphs.map((paragraph, idx) => (
-                  <p key={idx}>{paragraph}</p>
+                  <p key={generateStableKey(paragraph, idx, "two-column-paragraph")}>{paragraph}</p>
                 ))}
               </div>
             )}
@@ -55,7 +56,7 @@ export default function TwoColumnImageQuote({ data = {} }) {
             {features.length > 0 && (
               <div className="grid sm:grid-cols-2 gap-6 pt-6 border-t border-border/60">
                 {features.map((feature, idx) => (
-                  <div key={idx} className="flex items-start gap-3">
+                  <div key={generateStableKey(feature, idx, "two-column-feature")} className="flex items-start gap-3">
                     {feature.icon && (
                       <span className="shrink-0 w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                         <Icon name={feature.icon} size={18} className="text-primary" />

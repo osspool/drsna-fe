@@ -8,6 +8,7 @@ import {
   Lightbulb,
 } from "lucide-react";
 import { getIconComponent } from "./utils";
+import { generateStableKey } from "@/lib/utils";
 
 export function MinimalTimeline({ steps }) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -38,7 +39,7 @@ export function MinimalTimeline({ steps }) {
                 const isComplete = index < activeIndex;
 
                 return (
-                  <div key={index} className="flex items-center gap-3">
+                  <div key={generateStableKey(step, index, "minimal-timeline-mobile-step")} className="flex items-center gap-3">
                     <StepCircle
                       icon={Icon}
                       isActive={isActive}
@@ -61,7 +62,7 @@ export function MinimalTimeline({ steps }) {
               const isComplete = index < activeIndex;
 
               return (
-                <div key={index} className="flex items-center">
+                <div key={generateStableKey(step, index, "minimal-timeline-desktop-step")} className="flex items-center">
                   <StepCircle
                     icon={Icon}
                     isActive={isActive}
@@ -125,7 +126,7 @@ export function MinimalTimeline({ steps }) {
               <ul className="space-y-2.5">
                 {activeStep.tips.map((tip, idx) => (
                   <li
-                    key={idx}
+                    key={generateStableKey(tip, idx, "minimal-timeline-tip")}
                     className="opacity-0 animate-slide-in-left flex items-start gap-3 text-sm md:text-base text-foreground/80"
                     style={{ animationDelay: `${300 + idx * 100}ms` }}
                   >

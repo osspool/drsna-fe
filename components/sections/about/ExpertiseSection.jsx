@@ -1,6 +1,7 @@
 import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/layout/Container";
 import { SectionHeader } from "@/components/common/SectionHeader";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * Expertise Section
@@ -31,7 +32,7 @@ export function ExpertiseSection({ data }) {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
             {data.areas.map((area, index) => (
               <div
-                key={index}
+                key={generateStableKey(area, index, "expertise-area")}
                 className="bg-secondary/50 rounded-xl px-6 py-4 text-center"
               >
                 <p className="text-base font-medium text-foreground">{area}</p>
@@ -48,7 +49,7 @@ export function ExpertiseSection({ data }) {
             </h3>
             <ul className="space-y-4 max-w-2xl mx-auto">
               {data.approach.points.map((point, index) => (
-                <li key={index} className="text-base text-muted-foreground flex items-start gap-3">
+                <li key={generateStableKey(point, index, "expertise-approach-point")} className="text-base text-muted-foreground flex items-start gap-3">
                   <span className="text-primary text-xl mt-0.5">✓</span>
                   <span>{point}</span>
                 </li>

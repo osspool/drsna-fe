@@ -7,20 +7,17 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
+  preload: true,
 });
 
 const playfair = Playfair_Display({
   variable: "--font-heading",
   subsets: ["latin"],
   display: "swap",
+  preload: true,
 });
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-accent",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  display: "swap",
-});
+
 
 // Root layout - multi-domain aware metadata
 // Uses getBaseUrl() to support drsnaclinic.com, pshots.co.uk, and future domains
@@ -29,63 +26,40 @@ export async function generateMetadata() {
 
   return {
     metadataBase: new URL(baseUrl),
-    title: {
-      default: "Dr SNA Clinic | Luxury Aesthetic Medicine in London",
-      template: "%s | Dr SNA Clinic",
-    },
-    description:
-      "Premier aesthetic medicine clinic offering advanced treatments in facial aesthetics, intimate health, and pain management. Expert care in the heart of London.",
-    keywords: [
-      "aesthetic medicine",
-      "dermal fillers",
-      "anti-wrinkle",
-      "intimate health",
-      "pain management",
-      "London clinic",
-    ],
-    authors: [{ name: "Dr Syed Nadeem Abbas", url: `${baseUrl}/dr-syed-nadeem-abbas` }],
-    creator: "Dr SNA Clinic",
-    publisher: "Dr SNA Clinic",
     formatDetection: {
       email: false,
       address: false,
       telephone: false,
     },
-    icons: {
-      icon: [
-        { url: '/favicon.ico', sizes: 'any' },
-        { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-        { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      ],
-      apple: [
-        { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
-      ],
-      other: [
-        { rel: 'mask-icon', url: '/safari-pinned-tab.svg', color: '#1e3a8a' },
-      ],
+    verification: {
+      google: "q9eY9qqyNR42niMg9lCxufDpl0KlOeRnB8fNBKzncEc",
+      other: {
+        "msvalidate.01": "YOUR_BING_CODE_HERE",
+      },
     },
-    manifest: '/site.webmanifest',
-    openGraph: {
-      type: 'website',
-      locale: 'en_GB',
-      siteName: 'Dr SNA Clinic',
-      url: baseUrl,
-      title: "Dr SNA Clinic | Luxury Aesthetic Medicine in London",
-      description: "Premier aesthetic medicine clinic offering advanced treatments in facial aesthetics, intimate health, and pain management.",
-      images: [
+    alternates: {
+      canonical: baseUrl,
+    },
+    icons: {
+      icon: '/favicon.ico',
+      shortcut: '/favicon.ico',
+      apple: '/apple-icon.png',
+      other: [
         {
-          url: '/images/drsnaclinic/GRA-2024-Winner-Dr-SNA-Clinic.webp',
-          width: 1200,
-          height: 630,
-          alt: 'Dr SNA Clinic - Award-Winning Aesthetic Medicine',
+          rel: 'icon',
+          url: '/android-chrome-192x192.png',
+          sizes: '192x192',
+          type: 'image/png',
+        },
+        {
+          rel: 'icon',
+          url: '/android-chrome-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
         },
       ],
     },
-    twitter: {
-      card: 'summary_large_image',
-      site: '@drsnaclinic',
-      creator: '@drsnaclinic',
-    },
+    manifest: '/site.webmanifest',
     robots: {
       index: true,
       follow: true,
@@ -132,7 +106,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className={`${inter.variable} ${playfair.variable} ${cormorant.variable} font-sans antialiased`}
+        className={`${inter.variable} ${playfair.variable} font-sans antialiased bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-50 transition-colors duration-300`}
       >
         <Providers>
           {children}

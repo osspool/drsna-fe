@@ -20,6 +20,7 @@ import { Section } from "@/components/layout/Section";
 import { VideoPlayer } from "@/components/ui/VideoPlayer";
 
 import { VideoThumbnail } from "./VideoThumbnail";
+import { generateStableKey } from "@/lib/utils";
 
 export function TestimonialsSection({
   data,
@@ -61,9 +62,10 @@ export function TestimonialsSection({
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((video, index) => {
               const videoIdentifier = video.id || video.videoId;
+              const videoKey = generateStableKey(video, index, "testimonial-video");
 
               return (
-                <div key={videoIdentifier || index} className="group">
+                <div key={videoKey} className="group">
                   <div className="gradient-border group-hover:gradient-border-hover rounded-3xl h-full w-full transition-all duration-500">
                     <div className="gradient-border-inner rounded-[calc(1.5rem-4px)] overflow-hidden">
                       <div className="relative aspect-video overflow-hidden bg-muted">
@@ -150,7 +152,7 @@ export function TestimonialsSection({
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
             {videoTestimonials.map((testimonial, index) => (
               <div
-                key={index}
+                key={generateStableKey(testimonial, index, "testimonial-video-detailed")}
                 className="opacity-0 animate-fade-in-up group h-full"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
@@ -258,7 +260,7 @@ export function TestimonialsSection({
           >
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={generateStableKey(testimonial, index, "testimonial-carousel-item")} className="md:basis-1/2 lg:basis-1/3">
                   <Card className="h-full shadow-lg hover:shadow-xl transition-shadow duration-300 border-border">
                     <CardContent className="p-6">
                       <RatingStars rating={testimonial.rating || 5} size="lg" className="mb-4" />
@@ -318,7 +320,7 @@ export function TestimonialsSection({
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard
-              key={index}
+              key={generateStableKey(testimonial, index, "testimonial-card")}
               testimonial={{
                 ...testimonial,
                 quote: testimonial.text || testimonial.content || testimonial.quote,
@@ -333,4 +335,3 @@ export function TestimonialsSection({
     </section>
   );
 }
-

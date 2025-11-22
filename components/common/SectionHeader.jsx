@@ -60,10 +60,10 @@ export function SectionHeader({
 
   // Spacing classes
   const spacingClasses = {
-    sm: "mb-8",
-    md: "mb-12",
-    lg: "mb-16",
-    xl: "mb-20",
+    sm: "mb-6",
+    md: "mb-8",
+    lg: "mb-12",
+    xl: "mb-16",
   };
 
   const containerClasses = cn(
@@ -78,17 +78,17 @@ export function SectionHeader({
     <>
       {/* Badge */}
       {badge && (
-        <div className="mb-6">
+        <div className="mb-4">
           <Badge
             variant={badgeVariant === 'primary' ? 'default' : badgeVariant === 'gold' ? 'secondary' : 'default'}
             className={cn(
-              "px-6 py-2 text-sm font-semibold tracking-wider uppercase",
+              "px-4 py-1.5 text-xs font-semibold tracking-wider uppercase",
               badgeVariant === 'gold' && "bg-primary/10 border-primary/20 text-primary",
               badgeVariant === 'primary' && "bg-foreground/10 border-foreground/20 text-foreground",
               badgeClassName
             )}
           >
-            {badgeIcon && <Icon name={badgeIcon} size={16} />}
+            {badgeIcon && <Icon name={badgeIcon} size={14} className="mr-1.5" />}
             {badge}
           </Badge>
         </div>
@@ -98,7 +98,7 @@ export function SectionHeader({
       {title && (
         <h2
           className={cn(
-            "text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-4",
+            "text-3xl md:text-4xl font-heading font-bold text-primary mb-3",
             titleClassName
           )}
         >
@@ -110,7 +110,7 @@ export function SectionHeader({
       {subtitle && (
         <p
           className={cn(
-            "text-lg md:text-xl text-foreground",
+            "text-lg text-foreground/80 leading-relaxed",
             subtitleMaxWidth,
             subtitleClassName
           )}

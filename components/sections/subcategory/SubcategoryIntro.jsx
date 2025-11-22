@@ -1,6 +1,7 @@
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { SectionHeader } from "@/components/common/SectionHeader";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * Subcategory Introduction Section
@@ -34,7 +35,7 @@ export function SubcategoryIntro({ data, title }) {
             {data.highlights && (
               <div className="space-y-3">
                 {data.highlights.map((highlight, index) => (
-                  <div key={index} className="flex items-center gap-3">
+                  <div key={generateStableKey(highlight, index, "subcategory-highlight")} className="flex items-center gap-3">
                     <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
                       <span className="text-primary text-sm">✓</span>
                     </div>

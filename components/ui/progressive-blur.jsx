@@ -1,5 +1,5 @@
 'use client';;
-import { cn } from '@/lib/utils';
+import { cn, generateStableKey } from '@/lib/utils';
 import { motion } from 'motion/react';
 
 export const GRADIENT_ANGLES = {
@@ -35,7 +35,7 @@ export function ProgressiveBlur({
 
         return (
           <motion.div
-            key={index}
+            key={generateStableKey({ direction, index }, index, 'progressive-blur-layer')}
             className='pointer-events-none absolute inset-0 rounded-[inherit]'
             style={{
               maskImage: gradient,

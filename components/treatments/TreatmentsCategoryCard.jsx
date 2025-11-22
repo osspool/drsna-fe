@@ -4,6 +4,7 @@ import Link from "next/link";
 import { SmartImage } from "@/components/common/SmartImage";
 import { ArrowRight } from "lucide-react";
 import { Icon } from "@/components/custom/ui/icon";
+import { generateStableKey } from "@/lib/utils";
 
 export function TreatmentsCategoryCard({ category, index }) {
 
@@ -60,7 +61,7 @@ export function TreatmentsCategoryCard({ category, index }) {
               <div className="flex flex-wrap gap-2 mb-4 md:mb-6">
                 {category.subcategories.map((sub, idx) => (
                   <span
-                    key={idx}
+                    key={generateStableKey(sub, idx, "treatment-subcategory")}
                     className="px-3 py-1 bg-secondary text-muted-foreground text-xs md:text-sm rounded-full"
                   >
                     {sub}

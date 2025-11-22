@@ -7,6 +7,7 @@ import { Section } from "@/components/layout/Section";
 import { SectionHeader } from "@/components/common/SectionHeader";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { generateStableKey } from "@/lib/utils";
 
 export function GalleryBlock({ data }) {
   const { title, subtitle, images = [], columns = 3 } = data;
@@ -56,7 +57,7 @@ export function GalleryBlock({ data }) {
         <div className={`grid grid-cols-1 ${gridColsClass} gap-6`}>
           {images.map((image, index) => (
             <div
-              key={index}
+              key={generateStableKey(image, index, "gallery-image")}
               className="opacity-0 animate-fade-in-up group cursor-pointer"
               style={{ animationDelay: `${index * 100}ms` }}
               onClick={() => handleImageClick(image, index)}

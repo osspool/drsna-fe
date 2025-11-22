@@ -5,6 +5,7 @@ import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { SectionHeader } from "@/components/common/SectionHeader";
 import { getSectionPreset } from "@/lib/section-presets";
+import { generateStableKey } from "@/lib/utils";
 
 export function ComparisonBlock({ data }) {
   const hasCompetitors = Array.isArray(data?.competitors) && data.competitors.length > 0;
@@ -54,7 +55,7 @@ export function ComparisonBlock({ data }) {
 
             {data.competitors.map((item, index) => (
               <div
-                key={index}
+                key={generateStableKey(item, index, "competitor-row")}
                 className={`opacity-0 animate-slide-in-left grid grid-cols-3 ${
                   index % 2 === 0 ? "bg-cream/30" : "bg-white"
                 } ${item.highlight ? "border-l-4 border-gold" : ""}`}
@@ -99,9 +100,9 @@ export function ComparisonBlock({ data }) {
                     <th className="p-6 text-left font-heading font-bold text-dark-brown">
                       Treatment
                     </th>
-                    {aspects.map(aspect => (
+                    {aspects.map((aspect, index) => (
                       <th
-                        key={aspect}
+                        key={generateStableKey(aspect, index, "comparison-aspect-header")}
                         className="p-6 text-center font-heading font-bold text-dark-brown"
                       >
                         {formatAspectLabel(aspect)}
@@ -112,7 +113,7 @@ export function ComparisonBlock({ data }) {
                 <tbody>
                   {data.comparisons.map((comparison, index) => (
                     <tr
-                      key={comparison.treatment || index}
+                      key={generateStableKey(comparison.treatment || comparison, index, "comparison-row")}
                       className="border-b border-dark-brown/5 hover:bg-white/60 transition-colors"
                     >
                       <td className="p-6 font-semibold text-dark-brown">

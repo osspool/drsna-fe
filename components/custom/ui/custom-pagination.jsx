@@ -9,7 +9,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
-import { cn } from "@/lib/utils";
+import { cn, generateStableKey } from "@/lib/utils";
 import { useEffect, useState } from "react";
 
 function CustomPagination({ currentPage, onPageChange, totalPages, hasPrevPage, hasNextPage }) {
@@ -125,7 +125,7 @@ function CustomPagination({ currentPage, onPageChange, totalPages, hasPrevPage, 
         </PaginationItem>
 
         {getPageNumbers().map((pageNum, index) => (
-          <PaginationItem key={index}>
+          <PaginationItem key={generateStableKey(pageNum, index, "pagination-page")}>
             {pageNum === "..." ? (
               <span className={cn(
                 "flex items-center justify-center text-muted-foreground",

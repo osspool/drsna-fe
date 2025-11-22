@@ -1,0 +1,291 @@
+{
+  "id": "stem-cell-treatment",
+  "categoryId": "pain-management",
+  "subcategoryId": "treatments",
+  "title": "Adipose-Derived Stem Cell Treatment",
+  "shortTitle": "Stem Cell Therapy",
+  "tagline": "Your Cells, Reawakened",
+  "description": "Mini-liposuction harvests your own stem cells, we concentrate them in our lab, and Dr Abbas guides them back into the joints and tendons that refuse to heal.",
+  "longDescription": "Stem cell therapy is the London answer for people stuck between painkillers and surgery. We gently harvest adipose tissue from the abdomen or flanks, isolate millions of mesenchymal stem cells—100x more than bone marrow—and reinfuse them into arthritic joints or stubborn tendon tears under ultrasound guidance. Each protocol includes lab testing, sedation, and a personalised rehab plan so the renewed tissue actually learns how to move again.",
+  "hero": {
+    "headline": "Stem Cells That Keep You Moving",
+    "subheadline": "Consultant-led adipose stem cell therapy in Marylebone brings back cushioning, calms inflammation, and buys you time away from the operating theatre.",
+    "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1920&q=80",
+    "badge": "Adipose harvest + injection same day"
+  },
+  "overview": {
+    "title": "Why Adipose Stem Cells Work",
+    "image": "https://images.unsplash.com/photo-1581091012184-5c2af8c1c1b9?w=1400&q=80",
+    "content": "Fat tissue is a rich, gentle source of mesenchymal stem cells. When we reinfuse these cells into a degenerative joint, they orchestrate repair: calming cytokines, building new collagen, and recruiting your own healing cells. It’s ideal for moderate arthritis, labral tears, tendinopathy, and chronic inflammation when PRP is no longer enough.",
+    "highlights": [
+      "Mini-liposuction harvest with local anaesthetic + light sedation",
+      "100–1000x more stem cells than a same-volume bone marrow draw",
+      "Targets cartilage, tendons, ligaments, and chronic inflammatory pain",
+      "Documented relief out to 12–36 months with integrated rehab"
+    ]
+  },
+  "quickStats": {
+    "duration": "Half-day procedure",
+    "price": "From £4,250",
+    "painLevel": "Low (sedation available)",
+    "downtime": "48 hours",
+    "resultsVisible": "6-8 weeks",
+    "resultsLast": "12-36 months",
+    "sessions": "Single session + optional booster",
+    "anesthesia": "Local anaesthetic + twilight sedation"
+  },
+  "cta": {
+    "title": "Ready to Let Your Body Heal Itself?",
+    "subtitle": "Book a stem cell consultation to review imaging, lab work, and candidacy with Dr Abbas.",
+    "primaryButton": "Book stem cell consult",
+    "secondaryButton": "Request a call back",
+    "guarantee": "Consultation fee credited toward treatment",
+    "urgency": "Limited cell theatre slots each month"
+  },
+  "treatsAreas": {
+    "title": "Conditions We Treat",
+    "areas": [
+      {
+        "name": "Knee & Hip Osteoarthritis",
+        "description": "Rebuild cartilage, calm synovitis, and delay joint replacement.",
+        "icon": "shield",
+        "image": "https://images.unsplash.com/photo-1544829099-b9a0c07afdba?w=800&q=80"
+      },
+      {
+        "name": "Shoulder & Labral Tears",
+        "description": "Restore rotator cuff integrity and labral stability without downtime.",
+        "icon": "activity",
+        "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=801&q=80"
+      },
+      {
+        "name": "Tendinopathy & Sports Injuries",
+        "description": "Achilles, plantar fascia, hamstring, and groin injuries that keep flaring.",
+        "icon": "pulse",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800&q=80"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Why Patients Choose Stem Cell Therapy",
+    "layout": "grid-3",
+    "features": [
+      {
+        "icon": "droplet",
+        "title": "Autologous healing",
+        "description": "Your own cells mean zero rejection and a deeply personalised repair signal."
+      },
+      {
+        "icon": "clock",
+        "title": "Long-lasting comfort",
+        "description": "Documented relief out to 3 years when paired with rehab."
+      },
+      {
+        "icon": "layers",
+        "title": "Works with other therapies",
+        "description": "Combine with PRP, Arthrosamid®, or physiotherapy for layered results."
+      }
+    ]
+  },
+  "whatToExpect": {
+    "title": "What to Expect on Treatment Day",
+    "subtitle": "Harvest + preparation + reinjection in one calm visit",
+    "variant": "compact-timeline",
+    "enabled": true,
+    "background": "gradient-cream",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Consult & Labs",
+        "duration": "60 mins",
+        "description": "MRI/ultrasound review, blood tests, and sedation planning with Dr Abbas."
+      },
+      {
+        "number": 2,
+        "title": "Adipose Harvest",
+        "duration": "45 mins",
+        "description": "Mini-liposuction from abdomen or flanks with local anaesthetic + light sedation."
+      },
+      {
+        "number": 3,
+        "title": "Cell Processing",
+        "duration": "30 mins",
+        "description": "Cells are filtered, concentrated, and viability-tested in our clean-room lab."
+      },
+      {
+        "number": 4,
+        "title": "Ultrasound-Guided Reinjection",
+        "duration": "30 mins",
+        "description": "Stem cells returned to the joint or tendon using live imaging for precision."
+      }
+    ]
+  },
+  "process": {
+    "title": "Recovery Timeline",
+    "steps": [
+      {
+        "icon": "home",
+        "title": "Week 0",
+        "description": "Harvest + reinjection day. 48 hours of home rest and anti-inflammatory nutrition.",
+        "number": 1
+      },
+      {
+        "icon": "activity",
+        "title": "Week 2-6",
+        "description": "Physiotherapy restores mobility, then strength. Optional PRP booster at week 4.",
+        "number": 2
+      },
+      {
+        "icon": "bar-chart",
+        "title": "Month 3",
+        "description": "Strength testing, imaging review, and return-to-sport planning.",
+        "number": 3
+      },
+      {
+        "icon": "repeat",
+        "title": "Year 1+",
+        "description": "Annual reviews and maintenance boosters as needed.",
+        "number": 4
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Stem Cell Therapy Pricing",
+    "subtitle": "Consultation fee (£250) includes imaging review and lab work; redeemable within 30 days",
+    "includes": [
+      "Consultation with Dr Abbas",
+      "Adipose harvest + sedation",
+      "Cell processing + viability testing",
+      "Ultrasound-guided reinjection",
+      "Rehab plan + 12-week review"
+    ],
+    "singlePrice": {
+      "currency": "GBP",
+      "currentPrice": "£4,250",
+      "consultationFee": "£250",
+      "consultationNote": "Consultation credited toward treatment"
+    },
+    "packages": [
+      {
+        "name": "Stem Cell Core Programme",
+        "price": "£4,250",
+        "includes": "Single harvest + reinjection with rehab plan"
+      },
+      {
+        "name": "Stem Cell + PRP Booster",
+        "price": "£4,750",
+        "includes": "Stem cell treatment plus PRP at week 6",
+        "savings": "Save £250"
+      }
+    ],
+    "financing": {
+      "available": true,
+      "buttonText": "0% finance available"
+    }
+  },
+  "bookingInfo": {
+    "consultationFee": "£250 (redeemable)",
+    "duration": "60-minute consultation",
+    "cancellationPolicy": "72 hours’ notice required",
+    "depositRequired": true
+  },
+  "candidacy": {
+    "title": "Who Is a Candidate?",
+    "suitable": [
+      "Moderate osteoarthritis with preserved joint space",
+      "Chronic tendon tears (rotator cuff, Achilles, hamstring)",
+      "Recurrent inflammatory flares despite PRP or steroids",
+      "Athletes looking for surgery-free recovery"
+    ],
+    "notSuitable": [
+      "Active infection or cancer",
+      "Severe bone-on-bone arthritis requiring replacement",
+      "Uncontrolled diabetes or coagulation disorders"
+    ],
+    "note": "Comprehensive bloodwork and imaging are required before scheduling."
+  },
+  "faq": [
+    {
+      "question": "Is the harvest painful?",
+      "answer": "We use local anaesthetic and twilight sedation. You may feel gentle tugging but discomfort is minimal and bruising fades within a few days."
+    },
+    {
+      "question": "When will I notice results?",
+      "answer": "Inflammation settles first at 4–6 weeks; strength and confidence build from the 12-week mark as collagen and cartilage remodel."
+    },
+    {
+      "question": "How long do results last?",
+      "answer": "Most patients enjoy 12–36 months of relief. Annual check-ins help determine if a PRP or stem cell booster is needed."
+    },
+    {
+      "question": "Can I combine this with other treatments?",
+      "answer": "Yes. We often layer stem cells with PRP, Arthrosamid®, or physiotherapy to create cushioning, regeneration, and strength at the same time."
+    }
+  ],
+  "relatedTreatments": [
+    {
+      "id": "bmac-therapy",
+      "title": "BMAC Therapy",
+      "reason": "For severe degeneration",
+      "description": "Bone marrow concentrate is ideal when joints need the most potent signal."
+    },
+    {
+      "id": "platelet-rich-plasma",
+      "title": "PRP Therapy",
+      "reason": "Perfect pairing",
+      "description": "PRP boosts stem cell activity and maintains results."
+    },
+    {
+      "id": "physiotherapy",
+      "title": "Physiotherapy",
+      "reason": "Hold your gains",
+      "description": "Rehab integrates the new tissue into daily movement."
+    }
+  ],
+  "seo": {
+    "metaTitle": "Stem Cell Treatment London | Adipose Cellular Therapy | Dr SNA Clinic",
+    "metaDescription": "Consultant-led adipose-derived stem cell therapy in Marylebone. Harvest, process, and reinject your own cells to repair joints and tendons without surgery.",
+    "keywords": [
+      "stem cell treatment london",
+      "adipose stem cell therapy",
+      "stem cell injections for knee pain",
+      "regenerative medicine london"
+    ],
+    "canonicalUrl": "/treatments/pain-management/treatments/stem-cell-treatment",
+    "schema": {
+      "@type": "MedicalProcedure",
+      "procedureType": "MinimallyInvasiveProcedure",
+      "bodyLocation": [
+        "Knee joints",
+        "Hip joints",
+        "Shoulder",
+        "Elbow",
+        "Ankle"
+      ],
+      "howPerformed": "A small volume of adipose tissue is harvested via mini-liposuction under local anaesthetic and light sedation. The tissue is processed in a sterile centrifuge to isolate mesenchymal stem cells, which are reinjected under ultrasound guidance into damaged joints or tendons.",
+      "preparation": "Comprehensive bloodwork, MRI or ultrasound imaging, hydration, and no anti-inflammatories for seven days. Wear loose clothing for the harvest site.",
+      "followup": "48-hour rest followed by progressive physiotherapy. Formal reviews at 6 and 12 weeks with optional booster planning.",
+      "outcome": "Reduced inflammation, improved joint cushioning, enhanced tendon strength, and delayed need for surgery.",
+      "medicationRequired": "Local anaesthetic with optional oral sedation",
+      "medicalSpecialty": "Regenerative Medicine",
+      "relevantSpecialty": "Orthobiologics",
+      "isProprietary": false,
+      "treatmentFrequency": "Typically single session with optional booster at 6–12 months",
+      "adverseOutcome": "Temporary soreness or bruising at harvest and injection sites.",
+      "contraindication": [
+        "Active infection",
+        "Uncontrolled diabetes",
+        "Pregnancy"
+      ],
+      "typicalTest": [
+        "MRI scan",
+        "Blood tests",
+        "Ultrasound assessment"
+      ],
+      "clinicalFindings": [
+        "Cartilage degeneration",
+        "Tendinopathy",
+        "Ligament laxity"
+      ]
+    }
+  }
+}

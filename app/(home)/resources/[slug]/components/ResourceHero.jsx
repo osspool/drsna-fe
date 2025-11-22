@@ -1,15 +1,27 @@
 import { Container } from "@/components/layout/Container";
 import { SmartImage } from "@/components/common/SmartImage";
 import { MetricPills } from "./MetricPills";
+import { ResourceBreadcrumb } from "./ResourceBreadcrumb";
 
-export function ResourceHero({ guide }) {
+export function ResourceHero({ guide, baseUrl }) {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-black via-black/90 to-royal-blue text-white">
-      <Container className="relative z-10 py-28 flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-12">
-        <div className="flex-1 space-y-6">
-          <p className="text-xs uppercase tracking-[0.3em] text-white/70">
-            Updated {guide.lastUpdated || "recently"}
-          </p>
+      <Container className="relative z-10 pt-24 pb-12 space-y-8">
+        {/* Breadcrumb Navigation */}
+        <div className="text-white/80">
+          <ResourceBreadcrumb
+            category={guide.category}
+            title={guide.title}
+            baseUrl={baseUrl}
+          />
+        </div>
+
+        {/* Hero Content */}
+        <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-12">
+          <div className="flex-1 space-y-6">
+            <p className="text-xs uppercase tracking-[0.3em] text-white/70">
+              Updated {guide.lastUpdated || "recently"}
+            </p>
           <h1 className="text-4xl md:text-5xl font-heading font-bold">
             {guide.title}
           </h1>
@@ -21,22 +33,23 @@ export function ResourceHero({ guide }) {
           {guide.summary && (
             <p className="text-base text-white/70">{guide.summary}</p>
           )}
-          <MetricPills metrics={guide.metrics} />
-        </div>
-
-        {guide.heroImage && (
-          <div className="relative flex-1 aspect-[4/3] rounded-[32px] overflow-hidden border border-white/20 shadow-2xl">
-            <SmartImage
-              src={guide.heroImage}
-              title={guide.title}
-              description={guide.subtitle}
-              alt={guide.title}
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 45vw"
-            />
+            <MetricPills metrics={guide.metrics} />
           </div>
-        )}
+
+          {guide.heroImage && (
+            <div className="relative flex-1 aspect-[4/3] rounded-[32px] overflow-hidden border border-white/20 shadow-2xl">
+              <SmartImage
+                src={guide.heroImage}
+                title={guide.title}
+                description={guide.subtitle}
+                alt={guide.title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 45vw"
+              />
+            </div>
+          )}
+        </div>
       </Container>
       <div
         className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/50"

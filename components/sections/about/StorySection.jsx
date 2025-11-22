@@ -2,6 +2,7 @@ import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/layout/Container";
 import { SectionHeader } from "@/components/common/SectionHeader";
 import { Shield } from "lucide-react";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * Story Section
@@ -32,7 +33,7 @@ export function StorySection({ data }) {
           <div className="bg-secondary/50 rounded-2xl p-8 mb-8">
             <ul className="space-y-4">
               {data.values.map((value, index) => (
-                <li key={index} className="flex items-start gap-3">
+                <li key={generateStableKey(value, index, "story-value")} className="flex items-start gap-3">
                   <Shield className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <span className="text-base text-foreground leading-relaxed">{value}</span>
                 </li>

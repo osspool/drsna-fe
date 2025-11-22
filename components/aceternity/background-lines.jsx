@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import React from "react";
-import { cn } from "@/lib/utils";
+import { cn, generateStableKey } from "@/lib/utils";
 
 export const BackgroundLines = ({ children, className, svgOptions }) => {
   return (
@@ -31,7 +31,7 @@ const Svg = ({ svgOptions }) => {
         </defs>
         {[...Array(20)].map((_, i) => (
           <motion.line
-            key={i}
+            key={generateStableKey("background-line", i, "background-line")}
             x1={`${(i * defaultOptions.size) / 20}%`}
             y1="0%"
             x2={`${(i * defaultOptions.size) / 20}%`}

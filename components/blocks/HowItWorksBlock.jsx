@@ -6,6 +6,7 @@ import { SectionHeader } from "@/components/common/SectionHeader";
 import { Spotlight } from "@/components/aceternity/spotlight";
 import { CardSpotlight } from "@/components/aceternity/card-spotlight";
 import { AnimatedCard, IconBox, CheckItem } from "@/components/common/primitives";
+import { generateStableKey } from "@/lib/utils";
 import {
   Activity,
   Layers,
@@ -71,7 +72,7 @@ export function HowItWorksBlock({ data }) {
                 const IconComponent = iconMap[benefit.icon] || Activity;
 
                 return (
-                  <div key={index}>
+                  <div key={generateStableKey(benefit, index, "how-it-works-benefit-spotlight")}>
                     <CardSpotlight
                       radius={300}
                       color="#c69255"
@@ -119,7 +120,7 @@ export function HowItWorksBlock({ data }) {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 relative z-20">
                   {growthFactors.map((factor, index) => (
                     <div
-                      key={index}
+                      key={generateStableKey(factor, index, "how-it-works-factor-spotlight")}
                       className="flex items-center gap-3 bg-secondary/80 rounded-xl p-4 border border-primary/20 hover:border-primary/50 hover:bg-secondary transition-all duration-300 group"
                     >
                       <div className="shrink-0">
@@ -171,7 +172,7 @@ export function HowItWorksBlock({ data }) {
 
               return (
                 <AnimatedCard
-                  key={index}
+                  key={generateStableKey(benefit, index, "how-it-works-benefit")}
                   variant="gradient"
                   hoverGradient
                   className="h-full"
@@ -207,7 +208,7 @@ export function HowItWorksBlock({ data }) {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {growthFactors.map((factor, index) => (
-                <CheckItem key={index}>{factor}</CheckItem>
+                <CheckItem key={generateStableKey(factor, index, "how-it-works-factor")}>{factor}</CheckItem>
               ))}
             </div>
           </div>

@@ -121,6 +121,7 @@
           "title": "Treatments",
           "description": "Available treatment methods",
           "treatments": [
+            "stem-cell-treatment",
             "non-surgical-regenerative",
             "platelet-rich-plasma",
             "adipose-cell-therapy",
@@ -186,10 +187,7 @@
           "title": "Evidence-Backed Treatments",
           "description": "Clinically supported biologic therapies and protocols",
           "treatments": [
-            "fat-derived-stem-cell-joint-therapy",
-            "bmac-therapy",
-            "p-shot",
-            "prp-joint-treatment"
+            "fat-derived-stem-cell-joint-therapy"
           ]
         }
       }

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { SmartImage } from "@/components/common/SmartImage";
+import { PageBreadcrumb } from "@/components/common/PageBreadcrumb";
 import { getResourcesOverview, getResourcesMetadata } from "@/lib/resources";
 import { getBaseUrl } from "@/lib/domain-helpers";
 import { generateResourceStructuredData, buildBreadcrumbSchema } from "@/lib/seo-helpers";
@@ -41,9 +42,19 @@ export default async function ResourcesPage() {
       )}
       <main className="bg-royal-blue text-white">
       <section className="pt-28 pb-16 md:pt-32 md:pb-20 bg-gradient-to-b from-black/60 via-black/40 to-black/20 relative overflow-hidden">
-        <Container className="relative z-10 grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-center">
-          <div>
-            {overview.hero?.badge && (
+        <Container className="relative z-10 space-y-8">
+          {/* Breadcrumb Navigation */}
+          <div className="text-white/80">
+            <PageBreadcrumb
+              items={[{ name: "Resources", path: null }]}
+              baseUrl={baseUrl}
+            />
+          </div>
+
+          {/* Hero Content */}
+          <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-center">
+            <div>
+              {overview.hero?.badge && (
               <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/80">
                 {overview.hero.badge}
               </span>
@@ -74,19 +85,20 @@ export default async function ResourcesPage() {
             </div>
           </div>
 
-          {overview.hero?.image && (
-            <div className="relative aspect-[4/3] rounded-[32px] overflow-hidden border border-white/10 shadow-2xl">
-              <SmartImage
-                src={overview.hero.image}
-                alt={overview.hero.title}
-                title={overview.hero.title}
-                className="object-cover"
-                fill
-                sizes="(max-width: 1024px) 100vw, 40vw"
-                priority
-              />
-            </div>
-          )}
+            {overview.hero?.image && (
+              <div className="relative aspect-[4/3] rounded-[32px] overflow-hidden border border-white/10 shadow-2xl">
+                <SmartImage
+                  src={overview.hero.image}
+                  alt={overview.hero.title}
+                  title={overview.hero.title}
+                  className="object-cover"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  priority
+                />
+              </div>
+            )}
+          </div>
         </Container>
         <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/20 to-black/40" aria-hidden />
       </section>

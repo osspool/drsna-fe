@@ -2,48 +2,50 @@
 
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
+import { SectionHeader } from "@/components/common/SectionHeader";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { generateStableKey } from "@/lib/utils";
+import { getSectionHeaderProps } from "@/lib/section-presets";
 
-export function FAQBlock({ data }) {
-  const { heading, items } = data;
+export function FAQBlock({ data, id, background = "default", padding = "lg", preset = "faq" }) {
+  const headerProps = getSectionHeaderProps(data, preset);
+  // Support various data shapes
+  const questions = data.questions || data.items || (Array.isArray(data) ? data : []);
+
+  if (!Array.isArray(questions) || questions.length === 0) return null;
 
   return (
-    <Section background="default">
-      <Container maxWidth="4xl">
-        <h2
-          className="opacity-0 animate-fade-in text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-center mb-12 sm:mb-16 text-foreground"
-        >
-          {heading}
-        </h2>
+    <Section id={id} background={background} padding={padding}>
+      <Container maxWidth="md">
+        <SectionHeader {...headerProps} />
 
-        <div
-          className="opacity-0 animate-fade-in"
-          style={{ animationDelay: '100ms' }}
-        >
-          <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
-            {items?.map((item, index) => (
-              <AccordionItem
-                key={index}
-                value={`item-${index}`}
-                className="border-0 bg-transparent"
+        <Accordion type="single" collapsible className="w-full space-y-4">
+          {questions.map((item, index) => {
+            const itemKey = generateStableKey(item.question || item.name || index, index, "faq-item");
+            const questionText = item.question || item.name;
+            const answerText = item.answer || item.text || (item.acceptedAnswer && item.acceptedAnswer.text);
+
+            return (
+              <AccordionItem 
+                key={itemKey} 
+                value={itemKey}
+                className="bg-card border border-border rounded-xl px-6 transition-all duration-200 hover:border-primary/40"
               >
-                <div className="bg-card border border-border rounded-xl px-4 sm:px-6 hover:border-primary/40 transition-colors duration-200">
-                  <AccordionTrigger className="text-left font-semibold text-sm sm:text-base text-foreground hover:text-primary transition-colors py-4 sm:py-5">
-                    {item.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground leading-relaxed text-sm sm:text-base pb-4 sm:pb-5">
-                    {item.answer}
-                  </AccordionContent>
-                </div>
+                <AccordionTrigger className="text-left text-lg font-medium py-6 hover:text-primary hover:no-underline text-foreground">
+                  {questionText}
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-6">
+                  {answerText}
+                </AccordionContent>
               </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
+            );
+          })}
+        </Accordion>
       </Container>
     </Section>
   );

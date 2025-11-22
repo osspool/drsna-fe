@@ -1,1 +1,249 @@
-{"process":{"steps":[{"description":"Strength, mobility, posture, and lifestyle audit.","title":"Assessment","number":1,"icon":"clipboard-check"},{"description":"Exercise, manual therapy, and recovery plan tailored to injections.","title":"Programme Design","icon":"layers","number":2},{"number":3,"icon":"activity","title":"Guided Sessions","description":"In-clinic hands-on therapy + at-home digital coaching."},{"description":"Re-testing, plan upgrades, and maintenance strategy.","icon":"trending-up","number":4,"title":"Progress Review"}],"title":"Your Rehab Journey"},"benefits":{"title":"Why Physiotherapy Matters","features":[{"icon":"shield","title":"Protect your investment","description":"Rehab ensures injections deliver full potential."},{"description":"Correct mechanics and strength to avoid repeat injuries.","title":"Prevent relapse","icon":"repeat"},{"title":"Personal accountability","icon":"bar-chart","description":"Track metrics, hit milestones, and stay motivated."}],"layout":"grid-3"},"longDescription":"Regenerative injections create the healing opportunity—physiotherapy locks in the gains. Our musculoskeletal specialists design bespoke programmes that match your injection protocol, combining mobility, strength, neuromuscular control, and lifestyle coaching. Expect measurable progress, not generic exercises.","relatedTreatments":[{"reason":"Common combination.","description":"Pair PRP with rehab for optimal healing.","id":"platelet-rich-plasma","title":"PRP Therapy"},{"title":"Adipose Cell Therapy","description":"Integrate rehab with cellular therapies for long-term results.","reason":"Protects your investment.","id":"adipose-cell-therapy"}],"categoryId":"pain-management","subcategoryId":"treatments","tagline":"Stronger Movement. Lasting Results.","shortTitle":"Physiotherapy","faq":[{"question":"How often do I attend?","answer":"Typically weekly for the first 4-6 sessions, then bi-weekly as strength improves."},{"answer":"No, we support standalone physiotherapy or combine with regenerative treatments.","question":"Do I need injections first?"}],"id":"physiotherapy","hero":{"image":"https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=1920&q=80","video":null,"headline":"Rehab That Matches Your Biology","subheadline":"Custom programmes that stabilise joints, rebuild strength, and prevent flare-ups.","badge":"MSK specialists + regenerative doctors"},"pricing":{"financing":{"available":false},"title":"Physiotherapy Pricing","singlePrice":{"currency":"GBP","currentPrice":"£95"},"packages":[{"savings":"Save £30","description":"Ideal for single joint rehab","includes":"Digital exercise app, progress tracking","name":"6-Session Performance Plan","price":"£540"},{"description":"For multi-joint or post-operative cases","includes":"Manual therapy, gait analysis, re-testing","price":"£1,020","name":"12-Session Transformation","savings":"Save £120"}],"includes":["Dedicated MSK physiotherapist","Custom exercise programming","Access to rehab app + video demos","Progress reports shared with your consultant"]},"overview":{"highlights":["Supports PRP, adipose, BMAC, Arthrosamid®, and surgery-free plans","Includes strength, mobility, balance, and neuromuscular control","Remote check-ins and app-based exercise library","Sleep, stress, and nutrition guidance to speed recovery"],"content":"Every programme starts with movement screening, strength testing, and lifestyle review. We synchronise exercises with your injection timeline—protecting tissue while it remodels, then progressively loading for resilience. Expect digital tracking, video libraries, and ongoing consultant input.","title":"Integrated Rehab, Designed Around You","image":"https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1200&q=80"},"quickStats":{"sessions":"6-12 sessions recommended","downtime":"None","painLevel":"Comfortable challenge","price":"From £95/session","duration":"60-minute sessions","resultsVisible":"2-4 weeks","anesthesia":"None","resultsLast":"Sustained with adherence"},"cta":{"guarantee":"Assessment fee credited toward package","secondaryButton":"Request a call back","urgency":"Limited MSK physio slots each week","primaryButton":"Book physio assessment","title":"Ready to Move with Confidence?","subtitle":"Book a physiotherapy assessment and receive a personalised rehab plan."},"title":"Specialist Physiotherapy","bookingInfo":{"consultationFee":"£75 assessment (redeemable)","duration":"60-minute initial assessment","cancellationPolicy":"24 hours’ notice required","depositRequired":false},"description":"Targeted rehabilitation that protects your regenerative investment and keeps pain away for good.","seo":{"metaTitle":"Specialist Physiotherapy London | Rehab for Regenerative Treatments | Dr. SNA Clinic","metaDescription":"Pain management physiotherapy in London. Tailored rehab that supports PRP, BMAC, adipose therapy, and Arthrosamid® for long-lasting relief.","canonicalUrl":"/treatments/pain-management/treatments/physiotherapy","h1":"Specialist Physiotherapy for Pain Management","keywords":["physiotherapy london","pain management physiotherapist","rehab after prp","regenerative therapy exercises"],"schema":{"@type":"MedicalProcedure","procedureType":"TherapeuticProcedure","bodyLocation":"Whole body musculoskeletal system (customized to affected joints, spine, or limbs)","howPerformed":"Your physiotherapy journey begins with a comprehensive 60-minute assessment: movement screening, strength testing (using dynamometry), range of motion evaluation, posture analysis, and lifestyle review. Based on findings and any recent imaging or regenerative treatments (PRP, BMAC, adipose), your dedicated MSK physiotherapist designs a custom programme combining: (1) Manual therapy—hands-on techniques to release tight tissue, mobilize stiff joints, and restore alignment; (2) Progressive exercise prescription—starting with controlled movements to protect healing tissue, advancing to strengthening and functional loading; (3) Neuromuscular retraining—balance, proprioception, and movement pattern correction; (4) Education—sleep, ergonomics, nutrition, and stress management. You receive a digital exercise library with video demos, track progress in the app, and attend weekly or bi-weekly in-clinic sessions with your physio","preparation":"Wear comfortable, loose-fitting exercise clothing (shorts, t-shirt, trainers). Bring any recent imaging reports (MRI, X-ray, ultrasound) and a list of current medications or supplements. If you've had regenerative injections, note the dates and locations. Come ready to discuss your pain history, work demands, sports goals, and lifestyle. Prepare to commit to daily home exercises between sessions—consistency is everything","followup":"Complete your prescribed home exercise programme daily (typically 15-30 minutes). Log exercises and pain levels in the rehab app so your physio can adjust remotely. Attend scheduled in-clinic sessions (weekly initially, then bi-weekly). Report any flare-ups or setbacks immediately via app messaging. Progress reviews every 4-6 weeks include re-testing strength, range of motion, and functional tasks. As you improve, exercises progress from gentle mobility to loaded strength and sport-specific drills. Maintenance phase involves monthly check-ins and ongoing exercise adherence to prevent relapse","outcome":"Over 2-4 weeks, pain typically reduces as movement patterns improve and inflammation settles. Strength and range of motion increase progressively. You move with more confidence and less fear of injury. For post-injection patients, rehab locks in the healing gains—tissue remodels stronger and more resilient. Chronic pain sufferers regain function and reduce reliance on painkillers. Athletes return to sport safely. Results are sustained long-term when you maintain the exercise habits and movement strategies learned during therapy. Many patients transition to independent gym routines or maintenance check-ins quarterly","medicationRequired":"None—physiotherapy is drug-free","medicalSpecialty":"Physical Therapy","relevantSpecialty":"Sports Medicine","isProprietary":false,"treatmentFrequency":"Initial block of 6-12 weekly or bi-weekly sessions depending on condition severity. Maintenance check-ins monthly or quarterly thereafter. Can be standalone or integrated with regenerative treatments","adverseOutcome":"Mild muscle soreness after first few sessions (like starting a new gym routine). Temporary fatigue. Very rarely, symptom flare if exercises are too aggressive (we adjust immediately)","contraindication":["Acute fractures or surgical emergencies requiring medical intervention first","Severe osteoporosis with high fracture risk (needs medical clearance)","Active infection or uncontrolled inflammation requiring medical management","Complete unwillingness to perform home exercises (therapy won't work without patient engagement)"],"typicalTest":["Movement screening (squat, lunge, single-leg balance, gait analysis)","Strength testing using dynamometry or manual muscle testing","Range of motion measurements (goniometry)","Functional capacity evaluation (sit-to-stand, step-up, reach tests)","Posture and alignment assessment","Pain questionnaires (VAS, NPRS, functional scales)","Review of imaging and medical history"],"clinicalFindings":["Post-regenerative injection rehabilitation (PRP, BMAC, adipose, Arthrosamid)","Chronic musculoskeletal pain (back, neck, shoulder, hip, knee)","Sports injuries requiring return-to-play clearance","Postural dysfunction from desk work or repetitive strain","Joint instability or weakness","Post-operative rehabilitation","Movement pattern dysfunction contributing to pain","Desire to avoid surgery through conservative management","Need for strength and mobility optimization"]}},"candidacy":{"title":"Is This for You?","suitable":["Post-PRP or cellular therapy recovery","Chronic pain needing strength retraining","Athletes returning to sport","Desk workers correcting posture pain"],"note":"We coordinate with surgeons, GPs, and coaches for integrated care.","notSuitable":["Acute fractures or surgical emergencies (refer for surgery first)"]}}
+{
+  "id": "physiotherapy",
+  "categoryId": "pain-management",
+  "subcategoryId": "treatments",
+  "title": "Specialist Physiotherapy",
+  "shortTitle": "Physiotherapy",
+  "tagline": "Marylebone Rehab Built Around Regeneration",
+  "description": "Consultant-linked physiotherapy that protects your injections, rebuilds strength, and keeps relapses away.",
+  "longDescription": "Londoners travel to Marylebone for our physiotherapy because it feels like coaching, not a rushed checklist. Every session is synced with your regenerative timeline—PRP, Arthrosamid®, BMAC, or surgery-free care. We blend hands-on therapy, strength work, nervous-system retraining, and lifestyle coaching so the freedom you feel after treatment actually lasts.",
+  "hero": {
+    "image": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=1920&q=80",
+    "video": null,
+    "headline": "Movement Coaching for Real Life",
+    "subheadline": "A Marylebone physio team that works beside Dr Abbas, so your rehab, injections, and daily habits tell the same story.",
+    "badge": "Consultant-linked MSK team"
+  },
+  "overview": {
+    "title": "Integrated Rehab, Designed Around You",
+    "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1200&q=80",
+    "content": "Your programme begins with a 60-minute assessment—strength testing, gait video, mobility mapping, sleep and stress review. Then we design a plan that mirrors your biology: deloading while tissue remodels, strength when collagen matures, and accountability so you finish the plan feeling strong.",
+    "highlights": [
+      "Programmes personalised for PRP, Arthrosamid®, BMAC, and surgery-free patients",
+      "Hands-on therapy, neuromuscular drills, and strength coaching in every visit",
+      "Digital app with video demos, habit tracking, and consultant progress reports",
+      "Extended-hour appointments so you never skip rehab for meetings"
+    ]
+  },
+  "quickStats": {
+    "duration": "60-minute sessions",
+    "price": "From £95/session",
+    "painLevel": "Comfortable challenge",
+    "downtime": "None",
+    "resultsVisible": "2-4 weeks",
+    "resultsLast": "Sustained with adherence",
+    "sessions": "6-12 recommended",
+    "anesthesia": "None"
+  },
+  "cta": {
+    "title": "Ready to Move Without Overthinking It?",
+    "subtitle": "Book a physiotherapy assessment and leave with a crystal-clear plan for strength, mobility, and lifestyle upgrades.",
+    "primaryButton": "Book physio assessment",
+    "secondaryButton": "Request a call back",
+    "guarantee": "Assessment fee credited toward package",
+    "urgency": "Limited MSK physio slots each week"
+  },
+  "treatsAreas": {
+    "title": "Who We Help",
+    "areas": [
+      {
+        "name": "Post-PRP or Stem Cell Rehab",
+        "description": "Protect your investment with tissue-specific loading plans.",
+        "icon": "activity",
+        "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=80"
+      },
+      {
+        "name": "Arthritis Strength Coaching",
+        "description": "Build muscle and balance so Arthrosamid® and BMAC last longer.",
+        "icon": "dumbbell",
+        "image": "https://images.unsplash.com/photo-1521119989659-a83eee488004?w=800&q=80"
+      },
+      {
+        "name": "Desk-to-Athlete Reset",
+        "description": "Undo tech-neck, hip stiffness, and lower-back flare-ups with guided movement.",
+        "icon": "monitor",
+        "image": "https://images.unsplash.com/photo-1549576490-b0b4831ef60a?w=800&q=80"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Why Physiotherapy Matters",
+    "layout": "grid-3",
+    "features": [
+      {
+        "icon": "shield",
+        "title": "Protect your investment",
+        "description": "Rehab ensures injections deliver their full potential and prevents flare-ups."
+      },
+      {
+        "icon": "repeat",
+        "title": "Prevent relapse",
+        "description": "Correct mechanics, strength ratios, and lifestyle triggers so pain stays gone."
+      },
+      {
+        "icon": "bar-chart",
+        "title": "Personal accountability",
+        "description": "Track metrics, hit milestones, and get nudges from your physio between sessions."
+      }
+    ]
+  },
+  "process": {
+    "title": "Your Rehab Journey",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Assessment",
+        "icon": "clipboard-check",
+        "description": "Strength, mobility, posture, and lifestyle audit with movement capture."
+      },
+      {
+        "number": 2,
+        "title": "Programme Build",
+        "icon": "layers",
+        "description": "Exercise, manual therapy, and recovery plan tailored to your injections or goals."
+      },
+      {
+        "number": 3,
+        "title": "Guided Sessions",
+        "icon": "activity",
+        "description": "Hands-on therapy plus digital coaching so you practise perfectly at home."
+      },
+      {
+        "number": 4,
+        "title": "Momentum Review",
+        "icon": "trending-up",
+        "description": "Re-testing, load progression, and maintenance strategy."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Physiotherapy Pricing",
+    "includes": [
+      "Dedicated MSK physiotherapist",
+      "Custom exercise programming",
+      "Access to rehab app + video demos",
+      "Progress reports shared with your consultant"
+    ],
+    "singlePrice": {
+      "currency": "GBP",
+      "currentPrice": "£95"
+    },
+    "packages": [
+      {
+        "name": "6-Session Performance Plan",
+        "price": "£540",
+        "savings": "Save £30",
+        "includes": "Ideal for single joint rehab with digital tracking"
+      },
+      {
+        "name": "12-Session Transformation",
+        "price": "£1,020",
+        "savings": "Save £120",
+        "includes": "Complex cases, multi-joint support, re-testing, and gait analysis"
+      }
+    ],
+    "financing": {
+      "available": false
+    }
+  },
+  "bookingInfo": {
+    "consultationFee": "£75 assessment (redeemable)",
+    "duration": "60-minute initial assessment",
+    "cancellationPolicy": "24 hours’ notice required",
+    "depositRequired": false
+  },
+  "candidacy": {
+    "title": "Is This for You?",
+    "suitable": [
+      "Post-PRP, Arthrosamid®, or BMAC recovery",
+      "Chronic knee, hip, or back pain needing strength retraining",
+      "Athletes returning to sport with a deadline",
+      "Desk workers battling posture-related pain"
+    ],
+    "notSuitable": [
+      "Acute fractures or surgical emergencies (we refer you immediately)"
+    ],
+    "note": "We coordinate with surgeons, GPs, and coaches for integrated care."
+  },
+  "faq": [
+    {
+      "question": "How often do I attend?",
+      "answer": "Weekly for the first 4–6 sessions, then bi-weekly once strength and confidence return."
+    },
+    {
+      "question": "Do I need injections first?",
+      "answer": "No. We treat standalone cases, but we also build protocols that sync with PRP, BMAC, Arthrosamid®, or surgery."
+    },
+    {
+      "question": "Will I get homework?",
+      "answer": "Absolutely. Expect video-guided exercises, breathwork drills, and lifestyle nudges between sessions so progress sticks."
+    }
+  ],
+  "relatedTreatments": [
+    {
+      "id": "platelet-rich-plasma",
+      "title": "PRP Therapy",
+      "reason": "Common combination.",
+      "description": "Layer PRP with rehab for faster tendon and joint recovery."
+    },
+    {
+      "id": "arthrosamid-injection",
+      "title": "Arthrosamid® Injection",
+      "reason": "Protects the cushion.",
+      "description": "Physio keeps your new hydrogel working hard."
+    },
+    {
+      "id": "bmac-therapy",
+      "title": "BMAC Therapy",
+      "reason": "Advanced cases.",
+      "description": "Strength work ensures stem-cell gains translate to movement."
+    }
+  ],
+  "seo": {
+    "metaTitle": "Best Physiotherapy Clinic Marylebone | Regenerative Rehab | Dr SNA Clinic",
+    "metaDescription": "Marylebone-based physiotherapy team working beside Dr Abbas to protect PRP, Arthrosamid®, and BMAC results. Bespoke strength, mobility, and lifestyle coaching.",
+    "keywords": [
+      "physiotherapy marylebone",
+      "best physiotherapist london",
+      "rehab after prp",
+      "regenerative medicine physiotherapy"
+    ],
+    "canonicalUrl": "/treatments/pain-management/treatments/physiotherapy",
+    "schema": {
+      "@type": "MedicalProcedure",
+      "procedureType": "TherapeuticProcedure",
+      "bodyLocation": [
+        "Knees",
+        "Hips",
+        "Shoulders",
+        "Spine"
+      ],
+      "howPerformed": "Patients receive a 60-minute assessment followed by weekly hands-on therapy and guided strength sessions. Exercises are demonstrated in-clinic and delivered via app with real-time feedback, ensuring perfect form at home.",
+      "preparation": "Wear comfortable training clothing and bring any imaging or consultant letters. Hydrate well and arrive five minutes early for onboarding.",
+      "followup": "Weekly or bi-weekly sessions with digital check-ins. Formal progress reviews every six sessions to adjust load, mobility, and lifestyle habits.",
+      "outcome": "Improved strength, balance, neuromuscular control, and pain-free range of motion that keeps regenerative treatment results lasting.",
+      "medicationRequired": "None",
+      "medicalSpecialty": "Physical Therapy",
+      "relevantSpecialty": "Regenerative Medicine",
+      "isProprietary": false,
+      "treatmentFrequency": "Weekly or bi-weekly programmes lasting 6–12 sessions",
+      "adverseOutcome": "Temporary muscle soreness after progressive loading.",
+      "contraindication": [
+        "Unstable fractures",
+        "Uncontrolled cardiovascular conditions",
+        "Recent surgery without consultant clearance"
+      ],
+      "typicalTest": [
+        "Functional movement screening",
+        "Strength dynamometry",
+        "Posture and gait analysis"
+      ],
+      "clinicalFindings": [
+        "Chronic musculoskeletal pain",
+        "Return-to-play athletes",
+        "Desk posture dysfunction",
+        "Post-regenerative therapy stabilisation"
+      ]
+    }
+  }
+}

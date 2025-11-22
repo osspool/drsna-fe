@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { IconFeatureCard } from "@/components/common/IconFeatureCard";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * Contact Information Card Component
@@ -32,7 +33,7 @@ export function ContactCard({ info, index = 0 }) {
       {/* Contact Details */}
       <div className="space-y-2 mb-6 mt-4">
         {info.details.map((detail, idx) => (
-          <p key={idx} className="text-muted-foreground">
+          <p key={generateStableKey(detail, idx, "contact-detail")} className="text-muted-foreground">
             {detail}
           </p>
         ))}

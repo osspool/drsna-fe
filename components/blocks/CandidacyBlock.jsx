@@ -4,6 +4,7 @@ import { Check, X } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { SectionHeader } from "@/components/common/SectionHeader";
+import { generateStableKey } from "@/lib/utils";
 
 export function CandidacyBlock({ data }) {
   const { title, subtitle, suitable, notSuitable, note } = data;
@@ -29,7 +30,7 @@ export function CandidacyBlock({ data }) {
 
             <ul className="space-y-3">
               {suitable?.map((item, index) => (
-                <li key={index} className="flex items-start gap-3">
+                <li key={generateStableKey(item, index, "candidacy-suitable")} className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
                   <span className="text-foreground/90">{item}</span>
                 </li>
@@ -52,7 +53,7 @@ export function CandidacyBlock({ data }) {
 
             <ul className="space-y-3">
               {notSuitable?.map((item, index) => (
-                <li key={index} className="flex items-start gap-3">
+                <li key={generateStableKey(item, index, "candidacy-not-suitable")} className="flex items-start gap-3">
                   <X className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
                   <span className="text-foreground/90">{item}</span>
                 </li>

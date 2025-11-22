@@ -8,6 +8,7 @@ import React, {
 } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
+import { generateStableKey } from "@/lib/utils";
 
 
 
@@ -196,7 +197,7 @@ export const GalleryCarousal = ({
               >
                 {activeTestimonial.quote.split(" ").map((word, i) => (
                   <motion.span
-                    key={i}
+                    key={generateStableKey(word, i, "gallery-quote-word")}
                     initial={{
                       filter: "blur(10px)",
                       opacity: 0,

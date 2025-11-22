@@ -4,6 +4,7 @@ import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import Glow from "@/components/custom/ui/glow";
 import { Clock, Check } from "lucide-react";
+import { generateStableKey } from "@/lib/utils";
 
 export function DetailedTimeline({ data, steps, schemaMarkup }) {
   return (
@@ -37,7 +38,7 @@ export function DetailedTimeline({ data, steps, schemaMarkup }) {
           <div className="max-w-4xl mx-auto space-y-6">
             {steps.map((step, index) => (
               <div
-                key={index}
+                key={generateStableKey(step, index, "detailed-timeline-step")}
                 className="opacity-0 animate-slide-in-left flex gap-4 group"
                 style={{ animationDelay: `${index * 80}ms` }}
               >
@@ -65,7 +66,7 @@ export function DetailedTimeline({ data, steps, schemaMarkup }) {
                           <div className="mt-4 space-y-2 rounded-2xl bg-secondary/60 p-3">
                             {step.tips.map((tip, tipIndex) => (
                               <div
-                                key={tipIndex}
+                                key={generateStableKey(tip, tipIndex, "detailed-timeline-tip")}
                                 className="flex items-start gap-2 text-xs text-muted-foreground"
                               >
                                 <Check className="mt-0.5 h-3.5 w-3.5 text-primary" />

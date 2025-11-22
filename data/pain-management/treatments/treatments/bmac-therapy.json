@@ -3,18 +3,18 @@
     "areas": [
       {
         "name": "Advanced Knee & Hip Osteoarthritis",
-        "description": "Rebuild cartilage and reduce pain for long-term relief.",
+        "description": "Layer cartilage with stem-cell-rich concentrate so stairs, hills, and long walks feel confident again.",
         "icon": "shield",
         "image": "https://images.unsplash.com/photo-1544829099-b9a0c07afdba?w=800&q=80"
       },
       {
         "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=801&q=80",
         "icon": "move",
-        "description": "Support rotator cuff repair and labrum regeneration.",
+        "description": "Reinforce labral tissue, rotator cuffs, and high-demand tendons for athletes and busy parents alike.",
         "name": "Shoulder & Labral Tears"
       },
       {
-        "description": "Targets deep joint degeneration not responsive to injections.",
+        "description": "Targets facet joints, SI joints, and chronic back pain that hasn’t responded to steroid series.",
         "name": "Spinal Facet & Sacroiliac Pain",
         "icon": "activity",
         "image": "https://images.unsplash.com/photo-1526401485004-46910ecc8e51?w=800&q=80"
@@ -22,80 +22,76 @@
     ],
     "title": "Conditions We Treat"
   },
-  "description": "Concentrated bone marrow-derived cells that regenerate cartilage, tendons, and ligaments when standard therapies aren’t enough.",
+  "description": "Consultant-led bone marrow concentrate that rebuilds cartilage, stabilises tendons, and unlocks pain-free movement when cortisone and hyaluronic acid have failed.",
   "faq": [
     {
-      "answer": "We use local anaesthetic and offer conscious sedation. Most patients report mild soreness at the harvest site for 24-48 hours, easily managed with paracetamol. The injection site feels similar to a standard joint injection.",
-      "question": "Is the BMAC harvest painful?"
+      "question": "Will the bone marrow harvest hurt?",
+      "answer": "We numb the hip with local anaesthetic and offer twilight sedation. Most people describe gentle pressure for 2–3 minutes and only mild bruising for 24–48 hours, managed with paracetamol."
     },
     {
-      "question": "How soon will I notice improvement after BMAC?",
-      "answer": "Expect gradual improvement from 6-12 weeks as stem cells regenerate tissue and inflammation subsides. Most patients report significant pain reduction by 3 months, with continued improvement up to 12 months."
+      "question": "When should I expect to feel different?",
+      "answer": "Inflammation calms first at 4–6 weeks. True strength and freedom arrive around the 12-week review when collagen and cartilage have had time to remodel."
     },
     {
-      "question": "How long do BMAC results last?",
-      "answer": "Clinical studies show BMAC results can last 3-5 years or longer. Many patients avoid joint replacement surgery entirely. Annual follow-ups help monitor progress and determine if boosters would benefit you."
+      "question": "How long can BMAC results last?",
+      "answer": "Published studies show 3–5 years of relief, with some knees holding strong for even longer. Annual reviews keep you on top of maintenance boosters."
     },
     {
-      "question": "Is BMAC better than PRP for joints?",
-      "answer": "BMAC contains stem cells and is more potent than PRP, making it ideal for severe arthritis and large tendon tears. PRP works well for mild-moderate conditions. Dr Abbas will recommend based on your imaging and condition severity."
+      "question": "Can BMAC delay a knee or hip replacement?",
+      "answer": "Yes—if you still have some cartilage left, BMAC can stabilise the joint, reduce pain scores, and buy meaningful time before surgery. Dr Abbas will be honest if replacement is the safer option."
     },
     {
-      "question": "How much does BMAC therapy cost?",
-      "answer": "BMAC therapy starts from £3,450 including harvest, processing, injection, and rehab plan. The BMAC + PRP Boost package is £3,950. Consultation fee (£200) is credited toward treatment. 0% finance available."
+      "question": "Do I need PRP or Arthrosamid as well?",
+      "answer": "Severe joints often benefit from layered care. We frequently pair BMAC with Arthrosamid for cushioning or with high-yield PRP boosters to keep the biologic signal active."
     },
     {
-      "question": "Can BMAC help me avoid knee replacement surgery?",
-      "answer": "In many cases, yes. BMAC can regenerate cartilage and significantly reduce pain, delaying or avoiding joint replacement. Success depends on arthritis severity—we'll review your imaging and give honest expectations at consultation."
+      "question": "What does aftercare involve?",
+      "answer": "72-hour rest, anti-inflammatory nutrition, compression, then guided physiotherapy starting at week two. Desk work resumes within 3–5 days; sport clearance happens after strength testing."
     },
     {
-      "question": "Is BMAC covered by insurance?",
-      "answer": "Some private health insurers cover BMAC therapy as an orthobiologic treatment. We provide detailed invoices and medical reports to support your claim. Check with your provider about regenerative medicine coverage."
-    },
-    {
-      "question": "What's the recovery time after BMAC?",
-      "answer": "Rest for 72 hours post-procedure, then begin guided physiotherapy. Most patients return to desk work within 3-5 days. Progressive loading starts at week 2, with return to sport typically at 10-12 weeks depending on your condition."
+      "question": "Is finance or insurance available?",
+      "answer": "0% finance plans are available, and we provide detailed medical reports for private insurance submissions where orthobiologics are covered."
     }
   ],
   "hero": {
     "video": null,
-    "headline": "Regenerate Damaged Tissue with BMAC",
-    "subheadline": "High-potency stem-cell concentrate for advanced arthritis, labral tears, and stubborn tendon injuries.",
-    "image": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=1920&q=80",
-    "badge": "Consultant-only procedure"
+    "headline": "When Surgery Can Wait, BMAC Rebuilds",
+    "subheadline": "Dr Syed Nadeem Abbas harvests your marrow in Marylebone and reinfuses stem-cell-rich concentrate under live imaging so worn joints finally feel supported again.",
+    "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1920&q=80",
+    "badge": "Consultant-only cellular therapy"
   },
   "whatToExpect": {
     "background": "gradient-cream",
     "steps": [
       {
-        "duration": "45 mins",
-        "description": "MRI review, blood tests, and pre-procedure briefing.",
+        "duration": "60 mins",
+        "description": "Consultant imaging review, bloodwork, and sedation planning so the day feels calm and predictable.",
         "number": 1,
-        "title": "Consult & Planning"
+        "title": "Consultation & Lab Prep"
       },
       {
         "number": 2,
         "title": "Bone Marrow Harvest",
-        "description": "Iliac crest aspiration under local anaesthetic with sedation option.",
+        "description": "Posterior iliac crest aspiration with local anaesthetic plus twilight sedation for maximum comfort.",
         "duration": "30 mins"
       },
       {
-        "description": "Concentrate prepared in sterile centrifuge, then injected under ultrasound.",
+        "description": "Cells spin in our clean-room centrifuge, then Dr Abbas injects the concentrate under ultrasound or fluoroscopy for millimetre accuracy.",
         "duration": "30 mins",
         "number": 3,
-        "title": "Processing & Injection"
+        "title": "Processing & Reinjection"
       },
       {
-        "title": "Recovery & Rehab",
+        "title": "Recovery & Hybrid Rehab",
         "number": 4,
         "duration": "6-12 weeks",
-        "description": "Observation, rest, and bespoke physiotherapy plan."
+        "description": "72-hour rest followed by bespoke physiotherapy that mirrors the biological healing window."
       }
     ],
     "title": "What to Expect",
     "enabled": true,
     "variant": "compact-timeline",
-    "subtitle": "Two-hour outpatient procedure"
+    "subtitle": "A calm half-day in our regenerative theatre"
   },
   "relatedTreatments": [
     {
@@ -135,20 +131,20 @@
   },
   "cta": {
     "guarantee": "Consultation fee credited toward treatment",
-    "secondaryButton": "Speak with our team",
+    "secondaryButton": "Call the regenerative team",
     "primaryButton": "Book BMAC consult",
-    "urgency": "Limited theatre slots each month",
-    "subtitle": "Book a BMAC consultation with our regenerative consultants.",
-    "title": "Ready for Advanced Regenerative Relief?"
+    "urgency": "Limited cell-theatre slots each month",
+    "subtitle": "Secure time with Dr Abbas to review your imaging, sedation preferences, and personalised protocol.",
+    "title": "Ready to Rebuild Instead of Replace?"
   },
   "overview": {
     "highlights": [
-      "Most powerful autologous therapy we offer",
-      "Effective for advanced osteoarthritis, labral tears, and spinal facet joints",
-      "Performed in sterile theatre with experienced consultants",
-      "Paired with structured rehab for lasting results"
+      "Posterior iliac crest harvest performed personally by Dr Abbas with twilight sedation",
+      "Lab-grade centrifuges concentrate millions of stem cells and growth factors within 15 minutes",
+      "Ultrasound or fluoroscopy-guided injections target labral tears, cartilage loss, and spinal facet pain",
+      "Bundled with progressive physiotherapy so 12–36 month results are protected"
     ],
-    "content": "Bone marrow contains mesenchymal stem cells, growth factors, and cytokines that promote deep tissue regeneration. BMAC is ideal when PRP or adipose therapy isn’t strong enough. We aspirate bone marrow from the iliac crest, concentrate it using lab-grade centrifuges, and inject it under ultrasound or fluoroscopy into joints, tendons, or discs.",
+    "content": "Bone marrow carries mesenchymal stem cells, cytokines, and scaffolding proteins that can restart healing in cartilage, tendons, and subchondral bone. We harvest a small volume from your hip, concentrate it up to 8x baseline, and reinfuse the golden layer exactly where movement hurts. Patients who were told replacement was next finally feel stable enough to squat, climb stairs, or return to sport.",
     "title": "Why Choose BMAC?",
     "image": "https://images.unsplash.com/photo-1521119989659-a83eee488004?w=1200&q=80"
   },
@@ -263,19 +259,19 @@
     ],
     "title": "BMAC Pricing"
   },
-  "longDescription": "BMAC harnesses stem-cell-rich bone marrow concentrate to rebuild tissue in severe degenerative joints or chronic tendon injuries. At Dr. SNA Clinic we aspirate marrow from the posterior hip, process it in a sterile centrifuge, and inject the concentrate precisely under ultrasound guidance. It’s our most powerful regenerative option for patients wanting to delay or avoid major surgery.",
+  "longDescription": "Bone marrow aspirate concentrate (BMAC) is our most powerful regenerative option for people who still have life to live but joints that refuse to cooperate. Dr Abbas personally harvests marrow from the posterior hip, concentrates millions of stem cells and growth factors within minutes, and guides the concentrate back into the painful joint under live imaging. Every protocol includes lab testing, sedation support, and a rehab plan so your investment lasts.",
   "tagline": "Advanced Cellular Repair for Joints & Tendons",
   "categoryId": "pain-management",
   "process": {
     "steps": [
       {
-        "description": "BMAC procedure + rest at home.",
+        "description": "Harvest + reinfusion day followed by concierge check-ins and prescribed rest.",
         "number": 1,
         "icon": "home",
         "title": "Week 0"
       },
       {
-        "description": "Guided rehab, progressive loading, optional PRP booster.",
+        "description": "Physiotherapy drives neuromuscular control; PRP booster optional at week 4.",
         "icon": "activity",
         "number": 2,
         "title": "Week 2-6"
@@ -290,7 +286,7 @@
         "number": 4,
         "icon": "repeat",
         "title": "Year 1+",
-        "description": "Annual check-ups, boosters if required, prevention strategy."
+        "description": "Annual reviews, maintenance boosters, and preventative coaching."
       }
     ],
     "title": "Recovery Timeline"

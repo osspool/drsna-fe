@@ -2,6 +2,7 @@
 
 import { Clock, Lightbulb } from "lucide-react";
 import { getIconComponent } from "./utils";
+import { generateStableKey } from "@/lib/utils";
 
 export function VerticalTimeline({ steps }) {
   return (
@@ -15,7 +16,7 @@ export function VerticalTimeline({ steps }) {
 
             return (
               <div
-                key={index}
+                key={generateStableKey(step, index, "vertical-timeline-step")}
                 className="opacity-0 animate-fade-in-up relative flex gap-4 md:gap-6"
                 style={{ animationDelay: `${index * 80}ms` }}
               >
@@ -54,7 +55,7 @@ export function VerticalTimeline({ steps }) {
                         <ul className="space-y-1.5">
                           {step.tips.map((tip, idx) => (
                             <li
-                              key={idx}
+                              key={generateStableKey(tip, idx, "vertical-timeline-tip")}
                               className="flex items-start gap-2 text-xs md:text-sm text-muted-foreground"
                             >
                               <span className="flex items-center justify-center w-1 h-1 bg-primary rounded-full mt-1.5 shrink-0" />

@@ -1,5 +1,5 @@
 {
-    "longDescription": "If you've been struggling with erectile dysfunction, you already know it affects more than just your sex life—it impacts your confidence, your relationships, and how you see yourself. By 2025, over 322 million men worldwide face this challenge, yet most suffer in silence. The good news? Your body has an incredible capacity to heal when given the right stimulus.\\n\\nShockwave therapy (LI-ESWT) isn't another pill to mask symptoms for a few hours. It's regenerative medicine that rebuilds your vascular health from the inside out. Using precise acoustic pulses, we trigger your body's natural healing response—angiogenesis—to grow fresh blood vessels where they're needed most. Clinical studies show 57% of men achieve medication-free erections, with improvements lasting 18-24 months or longer.\\n\\nAt Dr. SNA Clinic, we combine FDA-listed focused shockwave technology with Doppler diagnostics, urologist-designed treatment maps, and optional P-Shot® or peptide protocols. Our approach is evidence-based, discreet, and designed for one goal: getting you back to feeling like yourself again—confident, present, and naturally responsive.",
+    "longDescription": "If you've been struggling with erectile dysfunction, you already know it affects more than just your sex life—it impacts your confidence, your relationships, and how you see yourself. By 2025, over 322 million men worldwide face this challenge, yet most suffer in silence. The good news? Your body has an incredible capacity to heal when given the right stimulus.\\n\\nShockwave therapy (LI-ESWT) isn't another pill to mask symptoms for a few hours. It's regenerative medicine that rebuilds your vascular health from the inside out. Using precise acoustic pulses, we trigger your body's natural healing response—angiogenesis—to grow fresh blood vessels where they're needed most. Clinical studies show up to 84% effectiveness, with 57% of men achieving medication-free erections. Improvements last 18-24 months or longer, addressing the root cause of vascular erectile dysfunction rather than just managing symptoms.\\n\\nAt Dr. SNA Clinic in London, we combine FDA-listed focused shockwave technology with advanced Doppler ultrasound diagnostics, urologist-designed treatment maps, and optional P-Shot® PRP or peptide protocols. Our evidence-based approach differs from spa-based treatments—we use focused applicators (not radial devices) that penetrate deep into penile tissue to stimulate genuine vascular regeneration. Every session is doctor-supervised with IIEF-5 scoring to track measurable improvements. Our approach is discreet, professional, and designed for one goal: getting you back to feeling like yourself again—confident, present, and naturally responsive without relying on pills.",
     "tagline": "Rebuild Blood Flow, Restore Confidence, Reclaim Intimacy",
     "categoryId": "intimate-health",
     "process": {
@@ -77,14 +77,14 @@
         "resultsLast": "Up to 24 months",
         "anesthesia": "None required",
         "duration": "20 minutes per session",
-        "price": "£350/session or £1,800 (6-session course)",
+        "price": "£180-250/session or £900-1,200 (6-session course)",
         "downtime": "None – resume life immediately",
         "painLevel": "1/10 tingling"
     },
     "overview": {
         "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&q=80",
         "title": "What Is LI-ESWT?",
-        "content": "Low-intensity extracorporeal shockwave therapy (LI-ESWT) delivers mechanical pulses that create controlled micro-trauma inside the corpora cavernosa. This stimulates endothelial repair, nitric oxide release, and stem cell activation—key mechanisms for healthy erections. Our protocol targets the crura, shaft, and glans to ensure uniform vascular regeneration.",
+        "content": "Low-intensity extracorporeal shockwave therapy (LI-ESWT) delivers mechanical pulses that create controlled micro-trauma inside the corpora cavernosa. This stimulates endothelial repair, nitric oxide release, and stem cell activation—key mechanisms for healthy erections. Our protocol targets the crura, shaft, and glans to ensure uniform vascular regeneration.\n\nFor a comprehensive deep-dive into how shockwave therapy works, success rates, treatment protocols, and how to combine with other therapies, read our detailed [Shockwave Therapy Complete Guide](/resources/shockwave-therapy-comprehensive-guide).",
         "highlights": [
             "Improves morning erections and spontaneity",
             "Safe with cardiovascular medication",
@@ -238,18 +238,18 @@
             "title": "Shockwave Therapy Pricing",
             "packages": [
                 {
-                    "savings": "Save £300",
+                    "savings": "Save up to £300",
                     "description": "Two sessions weekly for three weeks",
-                    "includes": "Doctor review + home protocol",
-                    "price": "£1,800",
+                    "includes": "Doctor review + home protocol + Doppler imaging",
+                    "price": "£900–£1,200",
                     "name": "6-Session Course"
                 },
                 {
                     "includes": "Shockwave + peptides + traction coaching",
-                    "name": "12-Session Optimiser",
+                    "name": "12-Session Intensive",
                     "description": "Ideal for diabetics or vascular compromise",
-                    "price": "£3,200",
-                    "savings": "Save £1,000 vs pay-per-session"
+                    "price": "£1,800–£2,400",
+                    "savings": "Comprehensive protocol for complex cases"
                 }
             ],
             "financing": {
@@ -260,9 +260,9 @@
             "singlePrice": {
                 "currency": "GBP",
                 "consultationFee": "£100",
-                "originalPrice": "£400",
+                "originalPrice": "£250",
                 "consultationNote": "Redeemable within 30 days",
-                "currentPrice": "£350",
+                "currentPrice": "£180–£250",
                 "consultationDisclaimer": "Includes Doppler ultrasound where indicated"
             },
             "disclaimer": "*Exact number of sessions confirmed after diagnostic review.",
@@ -304,6 +304,193 @@
             ],
             "title": "Conditions We Treat",
             "subtitle": "Evidence-based applications for LI-ESWT"
+        },
+        "gallery": {
+            "title": "Our Shockwave Therapy Facility",
+            "subtitle": "CQC-regulated clinic with state-of-the-art equipment",
+            "images": [
+                {
+                    "url": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=800&q=80",
+                    "alt": "Modern shockwave therapy treatment room",
+                    "title": "Private Treatment Suite",
+                    "caption": "Soundproof rooms designed for maximum discretion"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
+                    "alt": "FDA-listed shockwave therapy device",
+                    "title": "Medical-Grade Equipment",
+                    "caption": "Focused applicator for precise energy delivery"
+                },
+                {
+                    "url": "https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=800&q=80",
+                    "alt": "Comfortable consultation area",
+                    "title": "Confidential Consultations",
+                    "caption": "Relaxed environment for open discussions"
+                }
+            ],
+            "columns": 3
+        },
+        "doctorQuote": {
+            "title": "Clinical Expertise You Can Trust",
+            "paragraphs": [
+                "Shockwave therapy represents one of the most significant advances in non-invasive erectile dysfunction treatment. Unlike medications that provide temporary symptom relief, LI-ESWT addresses the underlying vascular pathology.",
+                "Our protocols are based on European Association of Urology guidelines, using focused shockwave energy at therapeutic intensities proven to stimulate neovascularization. We combine Doppler imaging with IIEF scoring to track objective improvements—not just subjective feedback.",
+                "Every treatment plan is physician-designed and monitored. This isn't a spa service; it's regenerative medicine delivered with clinical precision."
+            ],
+            "quote": {
+                "text": "We don't just treat symptoms—we rebuild the vascular infrastructure that makes natural erections possible.",
+                "cite": "Dr. SNA Abbas, Men's Health Specialist"
+            },
+            "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&q=80",
+            "imageAlt": "Dr. SNA Abbas consulting with patient"
+        },
+        "video": {
+            "enabled": true,
+            "title": "Understanding Shockwave Therapy for ED",
+            "subtitle": "Watch how the treatment works and what to expect",
+            "layout": "feature",
+            "videos": [
+                {
+                    "url": "https://youtu.be/3cuL-4IYW2g",
+                    "videoId": "3cuL-4IYW2g",
+                    "title": "How Shockwave Therapy Regenerates Blood Vessels",
+                    "description": "Dr. Abbas explains the science behind acoustic wave therapy for erectile dysfunction",
+                    "thumbnail": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80"
+                }
+            ],
+            "featureContent": {
+                "title": "See How It Works",
+                "subtitle": "From consultation to recovery",
+                "description": "Watch this short video to understand how shockwave therapy stimulates your body's natural healing response to restore erectile function.",
+                "highlights": [
+                    "Step-by-step treatment process",
+                    "Real patient experiences",
+                    "Expected timeline for results",
+                    "Safety and comfort measures"
+                ],
+                "videoSide": "right"
+            }
+        },
+        "treatmentExperience": {
+            "title": "What Treatment Actually Feels Like",
+            "paragraphs": [
+                "Most men arrive nervous for their first session—that's completely normal. Within minutes, they realize it's far less intimidating than imagined. You'll lie comfortably on a treatment table while the doctor applies ultrasound gel to the treatment area.",
+                "The shockwave applicator delivers gentle acoustic pulses that feel like rhythmic tapping—similar to a light massage. Energy levels are adjustable based on your comfort. There's no needles, no injections, no numbing required.",
+                "Sessions last 15-20 minutes. Afterwards, you simply wipe off the gel and leave. No recovery period, no restrictions. Many men schedule appointments during lunch breaks and return to work immediately."
+            ],
+            "features": [
+                {
+                    "icon": "smile",
+                    "title": "Completely Painless",
+                    "description": "Most patients rate discomfort as 1/10—just mild tingling or warmth as new blood vessels begin forming."
+                },
+                {
+                    "icon": "clock",
+                    "title": "Quick Sessions",
+                    "description": "15-20 minutes per appointment. Check in, receive treatment, leave. Most men are out the door in under 30 minutes total."
+                },
+                {
+                    "icon": "shield",
+                    "title": "Private & Discreet",
+                    "description": "One-on-one with your doctor in soundproof suites. Appointment notes use neutral terminology. Your privacy is guaranteed."
+                }
+            ],
+            "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+            "imageAlt": "Comfortable medical treatment environment",
+            "caption": "Relaxed, professional treatment in private suites"
+        },
+        "healingVsMasking": {
+            "title": "Regeneration vs. Temporary Relief",
+            "paragraphs": [
+                "Pills like Viagra and Cialis work—but they don't fix anything. They temporarily increase blood flow for a few hours, then wear off. You're managing symptoms, not addressing the root cause.",
+                "Shockwave therapy takes a different approach. By stimulating angiogenesis (new blood vessel growth), it rebuilds your natural erectile capacity from the inside out. You're not dependent on timing pills around intimacy. Your body works on its own again.",
+                "Think of it this way: medication is like using crutches to walk. Shockwave is like physical therapy that strengthens your legs so you don't need crutches anymore."
+            ],
+            "features": [
+                {
+                    "icon": "trending-up",
+                    "title": "Long-Term Improvement",
+                    "description": "Results last 18-24 months because we're rebuilding vascular tissue, not masking dysfunction for a few hours."
+                },
+                {
+                    "icon": "heart",
+                    "title": "Medication-Free Erections",
+                    "description": "57% of men achieve natural erections without pills. Others reduce dosage or use medication only occasionally."
+                },
+                {
+                    "icon": "activity",
+                    "title": "Spontaneity Restored",
+                    "description": "No planning around pill timing or worried about side effects. Respond naturally when the moment feels right."
+                }
+            ],
+            "image": "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=800&q=80",
+            "imageAlt": "Natural healing approach illustration"
+        },
+        "detailedFeatures": {
+            "title": "Why Our Shockwave Protocol Delivers Superior Results",
+            "paragraphs": [
+                "Not all shockwave devices are created equal. Many clinics use radial shockwave machines—essentially glorified massage tools that don't penetrate deep enough to reach the vascular tissue inside the corpora cavernosa.",
+                "We use focused shockwave technology with FDA-listed medical devices. Focused waves deliver therapeutic energy at precise depths (up to 6cm) where arterial regeneration happens. This is the same technology used in published clinical studies showing effectiveness in 76-84% of patients.",
+                "Every treatment is doctor-supervised with Doppler-guided targeting. We map your individual vascular anatomy to ensure energy reaches areas of compromised blood flow—not a one-size-fits-all approach."
+            ],
+            "features": [
+                {
+                    "icon": "target",
+                    "title": "Focused Energy Delivery",
+                    "description": "Penetrates 3-6cm deep to reach corpora cavernosa, not just surface tissue like radial devices."
+                },
+                {
+                    "icon": "activity",
+                    "title": "Doppler-Guided Treatment",
+                    "description": "Ultrasound imaging identifies exact areas of vascular restriction for targeted energy delivery."
+                },
+                {
+                    "icon": "clipboard-check",
+                    "title": "Evidence-Based Protocols",
+                    "description": "Based on European Association of Urology guidelines—not marketing hype or franchise protocols."
+                }
+            ],
+            "image": "https://images.unsplash.com/photo-1581594549595-35f6edc7b762?w=800&q=80",
+            "imageAlt": "Medical shockwave therapy technology"
+        },
+        "realResults": {
+            "title": "Measurable Clinical Outcomes",
+            "subtitle": "Evidence-based results tracked with objective diagnostics",
+            "description": "We don't rely on subjective feedback alone. Every patient receives IIEF-5 scoring and optional Doppler imaging to document vascular improvements.",
+            "features": [
+                {
+                    "icon": "trending-up",
+                    "title": "84% Clinical Effectiveness Rate",
+                    "description": "Published studies show shockwave therapy effectiveness in up to 84% of men with mild-to-moderate vascular erectile dysfunction."
+                },
+                {
+                    "icon": "heart-pulse",
+                    "title": "57% Achieve Medication-Free Erections",
+                    "description": "More than half of treated patients report natural, spontaneous erections without PDE5 inhibitors after completing the protocol."
+                },
+                {
+                    "icon": "activity",
+                    "title": "Improved Morning Erections by Week 3",
+                    "description": "Most men notice stronger, more frequent morning erections within 2-3 weeks as new blood vessels begin forming."
+                },
+                {
+                    "icon": "zap",
+                    "title": "18-24 Month Duration of Results",
+                    "description": "Vascular improvements last significantly longer than medication, with many men maintaining results for two years or more."
+                },
+                {
+                    "icon": "target",
+                    "title": "Doppler-Confirmed Blood Flow Increase",
+                    "description": "Follow-up ultrasound imaging shows measurable improvement in penile arterial blood flow post-treatment."
+                },
+                {
+                    "icon": "smile",
+                    "title": "Improved Quality of Life Scores",
+                    "description": "IIEF-5 questionnaires document significant improvements in erectile confidence, spontaneity, and relationship satisfaction."
+                }
+            ],
+            "variant": "cards",
+            "layout": "grid-3"
         },
         "id": "shockwave-therapy",
         "relatedTreatments": [

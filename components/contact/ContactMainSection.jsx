@@ -15,6 +15,7 @@ import { ContactForm } from "@/components/landing/contact/ContactForm";
 import { MapSkeleton } from "@/components/common/skeletons";
 import { SlideIn } from "@/components/common/AnimatedWrapper";
 import { Clock } from "lucide-react";
+import { generateStableKey } from "@/lib/utils";
 
 // Lazy-load ContactMap component (below-the-fold)
 const ContactMap = dynamic(() => import("@/components/contact/ContactMap"), {
@@ -63,7 +64,7 @@ export function ContactMainSection({ data }) {
                 <div className="space-y-4">
                   {businessHours.map((schedule, index) => (
                     <div
-                      key={index}
+                      key={generateStableKey(schedule, index, "business-hours")}
                       className="flex justify-between items-center py-3 border-b border-border last:border-0"
                     >
                       <span className="text-muted-foreground font-medium">

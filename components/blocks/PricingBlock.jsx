@@ -6,6 +6,7 @@ import { Section } from "@/components/layout/Section";
 import { SectionHeader } from "@/components/common/SectionHeader";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * Pricing Block Component
@@ -139,7 +140,7 @@ export function PricingBlock({ data }) {
                 </h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   {includes.map((item, index) => (
-                    <div key={index} className="flex items-start gap-3">
+                    <div key={generateStableKey(item, index, "single-pricing-include")} className="flex items-start gap-3">
                       <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
                         <Check className="w-4 h-4 text-primary" />
                       </div>
@@ -168,7 +169,7 @@ export function PricingBlock({ data }) {
             <div className="flex flex-wrap justify-center gap-6 mb-16 max-w-6xl mx-auto">
               {packages.map((pkg, index) => (
                 <div
-                  key={index}
+                  key={generateStableKey(pkg, index, "pricing-package")}
                   className="opacity-0 animate-fade-in-up relative w-full sm:w-[320px] md:w-[340px] lg:w-[360px]"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
@@ -239,7 +240,7 @@ export function PricingBlock({ data }) {
                 </h3>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {includes.map((item, index) => (
-                  <div key={index} className="flex items-center gap-3">
+                  <div key={generateStableKey(item, index, "pricing-include")} className="flex items-center gap-3">
                     <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                         <Check className="w-4 h-4 text-primary" />
                       </div>

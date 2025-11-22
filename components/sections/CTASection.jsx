@@ -8,6 +8,7 @@ import { BackgroundBeams } from "@/components/aceternity/background-beams";
 import { Section } from "@/components/layout/Section";
 import { MovingBorderButton } from "@/components/aceternity/moving-border";
 import { getIconComponent } from "@/lib/icon-utils";
+import { generateStableKey } from "@/lib/utils";
 
 export function CTASection({ data, variant = "default" }) {
   const ctaData = data || {
@@ -155,7 +156,7 @@ export function CTASection({ data, variant = "default" }) {
                 const InfoIcon = getIconComponent(info.icon, Phone);
                 return (
                 <a
-                  key={index}
+                  key={generateStableKey(info, index, "cta-contact")}
                   href={info.href}
                   target={info.href.startsWith("http") ? "_blank" : undefined}
                   rel={info.href.startsWith("http") ? "noopener noreferrer" : undefined}

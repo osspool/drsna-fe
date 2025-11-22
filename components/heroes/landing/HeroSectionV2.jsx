@@ -90,7 +90,7 @@ export function HeroSectionV2({ data }) {
         <div className="max-w-5xl mx-auto">
           <div
             key={currentSlide}
-            className="opacity-0 animate-fade-in-up text-left max-w-full sm:max-w-2xl"
+            className="text-left max-w-full sm:max-w-2xl"
           >
               {/* Award Badge */}
               <div className="inline-flex items-center gap-2 bg-royal-blue/90 backdrop-blur-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-full mb-4 sm:mb-6 md:mb-8">

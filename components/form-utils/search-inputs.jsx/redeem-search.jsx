@@ -17,6 +17,7 @@ import {
   SearchIcon,
 } from "lucide-react";
 import { useState } from "react";
+import { generateStableKey } from "@/lib/utils";
 
 const RedeemSearch = ({ onFiltersChange, currentFilters, isPending }) => {
   const [localFilters, setLocalFilters] = useState(currentFilters);
@@ -51,7 +52,7 @@ const RedeemSearch = ({ onFiltersChange, currentFilters, isPending }) => {
             <SelectContent>
               <SelectGroup>
                 {monthsOptions.map((month, index) => (
-                  <SelectItem key={index} value={index}>
+                  <SelectItem key={generateStableKey(month, index, "month-option")} value={index}>
                     {month}
                   </SelectItem>
                 ))}

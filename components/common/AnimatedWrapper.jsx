@@ -15,7 +15,7 @@
  * </SlideIn>
  */
 
-import { cn } from "@/lib/utils";
+import { cn, generateStableKey } from "@/lib/utils";
 
 /**
  * FadeIn - Simple opacity animation
@@ -188,7 +188,7 @@ export function StaggerChildren({
     <div className={className}>
       {childArray.map((child, index) => (
         <div
-          key={index}
+          key={generateStableKey(child?.key ?? index, index, "stagger-child")}
           className={cn("opacity-0", animationClass)}
           style={{
             animationDelay: `${initialDelay + (index * staggerDelay)}ms`

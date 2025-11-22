@@ -11,6 +11,7 @@ import {
 import { monthsOptions, paymentOptions } from "@/lib/constants";
 import { Calendar, CreditCardIcon, Filter, Search } from "lucide-react";
 import { useState } from "react";
+import { generateStableKey } from "@/lib/utils";
 
 const FilterSearchTransaction = ({
   onFiltersChange,
@@ -49,7 +50,7 @@ const FilterSearchTransaction = ({
             <SelectContent>
               <SelectGroup>
                 {monthsOptions.map((month, index) => (
-                  <SelectItem key={index} value={index}>
+                  <SelectItem key={generateStableKey(month, index, "transaction-month-option")} value={index}>
                     {month}
                   </SelectItem>
                 ))}
@@ -82,7 +83,7 @@ const FilterSearchTransaction = ({
             <SelectContent>
               <SelectGroup>
                 {paymentOptions.map((option, index) => (
-                  <SelectItem key={index} value={option}>
+                  <SelectItem key={generateStableKey(option, index, "transaction-payment-option")} value={option}>
                     {option}
                   </SelectItem>
                 ))}

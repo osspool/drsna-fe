@@ -6,6 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import Glow from "@/components/custom/ui/glow";
+import { generateStableKey } from "@/lib/utils";
 
 function calculateGap(width) {
   const minWidth = 1024;
@@ -272,9 +273,9 @@ export function ClinicShowcaseSection({ data }) {
                   </button>
 
                   <div className="flex items-center gap-2 ml-6">
-                    {slides.map((_, index) => (
+                    {slides.map((slide, index) => (
                       <button
-                        key={index}
+                        key={generateStableKey(slide, index, "clinic-showcase-indicator")}
                         onClick={() => setActiveIndex(index)}
                         className={`h-2 rounded-full transition-all duration-300 ${
                           index === activeIndex ? "w-8 bg-primary" : "w-2 bg-primary/30 hover:bg-primary/50"

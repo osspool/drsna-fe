@@ -11,14 +11,24 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { pshotSiteConfig } from "@/data/pages/pshot/site-config";
 
 export function PShotHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { setTheme } = useTheme();
 
+  // Use navigation from config, but inject Shockwave explicitly if needed or rely on config
+  // The user explicitly requested Shockwave to be present and route to main site.
+  // I will assume pshotSiteConfig is the source of truth, but I will add Shockwave manually if it's not there,
+  // or better, I'll modify the config to include it and use the config here.
+  // However, the user prompt specifically asked to fix the header.
+  
+  // Let's use the nav items from config which we will update
+  const navItems = pshotSiteConfig.navigation;
+
+  // Separate treatments if we want a dropdown, but for now flat list as per design
   const treatments = [
-    { label: "P-Shot®", href: "/" },
-    { label: "Shockwave Therapy", href: "/shockwave-therapy" },
+    { label: "Shockwave Therapy", href: "https://drsnaclinic.com/treatments/shockwave-therapy" },
   ];
 
   return (
@@ -29,18 +39,18 @@ export function PShotHeader() {
           <div className="flex items-center justify-between h-10 text-sm">
             <div className="flex items-center gap-6">
               <a
-                href="tel:+447955836986"
+                href={`tel:${pshotSiteConfig.contact.phone.replace(/\s+/g, '')}`}
                 className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                <span className="hidden md:inline">+44 7955 836986</span>
+                <span className="hidden md:inline">{pshotSiteConfig.contact.phone}</span>
               </a>
               <a
-                href="mailto:info@drsnaclinic.com"
+                href={`mailto:${pshotSiteConfig.contact.email}`}
                 className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                <span className="hidden lg:inline">info@drsnaclinic.com</span>
+                <span className="hidden lg:inline">{pshotSiteConfig.contact.email}</span>
               </a>
             </div>
             <div className="hidden md:block text-xs text-muted-foreground">
@@ -68,33 +78,23 @@ export function PShotHeader() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-1">
-            <Link
-              href="/"
-              className="px-4 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors"
-            >
-              Home
-            </Link>
-            {treatments.map((item) => (
-              <Link
-                key={item.href}
+            {navItems.map((item) => (
+               <Link
+                key={item.label}
                 href={item.href}
-                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
               >
                 {item.label}
               </Link>
             ))}
-            <Link
-              href="/dr-syed-nadeem-abbas"
-              className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-            >
-              Dr Abbas
-            </Link>
-            <Link
-              href="/contact"
-              className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-            >
-              Contact
-            </Link>
+            
+            {/* Explicit External Treatments Links if not in navItems */}
+             <Link
+                href="https://drsnaclinic.com/treatments/shockwave-therapy"
+                className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+              >
+                Shockwave Therapy
+              </Link>
           </div>
 
           {/* Theme Toggle & CTA Button */}
@@ -146,42 +146,24 @@ export function PShotHeader() {
         {mobileMenuOpen && (
           <div className="lg:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-1">
-              <Link
-                href="/"
-                className="px-4 py-3 text-sm font-medium text-foreground hover:bg-muted rounded-lg transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Home
-              </Link>
-
-              <div className="px-4 py-2 text-xs font-semibold text-primary uppercase tracking-wide">
-                Treatments
-              </div>
-              {treatments.map((item) => (
+              {navItems.map((item) => (
                 <Link
-                  key={item.href}
+                  key={item.label}
                   href={item.href}
-                  className="px-4 py-3 pl-8 text-sm font-medium text-muted-foreground hover:bg-muted rounded-lg transition-colors"
+                  className="px-4 py-3 text-sm font-medium text-foreground hover:bg-muted rounded-lg transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.label}
                 </Link>
               ))}
-
-              <Link
-                href="/dr-syed-nadeem-abbas"
-                className="px-4 py-3 text-sm font-medium text-muted-foreground hover:bg-muted rounded-lg transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Dr Abbas
-              </Link>
-              <Link
-                href="/contact"
-                className="px-4 py-3 text-sm font-medium text-muted-foreground hover:bg-muted rounded-lg transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Contact
-              </Link>
+              
+               <Link
+                  href="https://drsnaclinic.com/treatments/shockwave-therapy"
+                  className="px-4 py-3 text-sm font-medium text-foreground hover:bg-muted rounded-lg transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Shockwave Therapy
+                </Link>
 
               <div className="pt-4 px-4 space-y-3">
                 <div className="flex items-center justify-between">

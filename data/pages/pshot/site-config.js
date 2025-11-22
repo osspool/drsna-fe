@@ -5,14 +5,13 @@ export const pshotSiteConfig = {
   url: "https://pshots.co.uk",
   ogImage: "/images/pshot/og-image.jpg",
 
-  // Navigation
+  // Navigation - Single Page Sections & External Links
   navigation: [
     { label: "Home", href: "/" },
-    { label: "About P-Shot", href: "/about" },
-    { label: "Benefits", href: "/benefits" },
-    { label: "How It Works", href: "/process" },
-    { label: "Dr Abbas", href: "/dr-abbas" },
-    { label: "FAQ", href: "/faq" },
+    { label: "Benefits", href: "#benefits" },
+    { label: "How It Works", href: "#process" },
+    { label: "Dr Abbas", href: "#doctorCredentials" }, // Updated to link to section
+    { label: "FAQ", href: "#faq" },
     { label: "Contact", href: "/contact" },
   ],
 

@@ -1,3 +1,5 @@
+import { generateStableKey } from "@/lib/utils";
+
 /**
  * Testimonials Skeleton Loader
  *
@@ -7,11 +9,11 @@ export function TestimonialsSkeleton() {
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {Array.from({ length: 3 }).map((_, i) => (
-        <div key={i} className="bg-card rounded-2xl p-6 border border-border">
+        <div key={generateStableKey("testimonial-skeleton", i, "testimonial-skeleton-card")} className="bg-card rounded-2xl p-6 border border-border">
           {/* Rating stars */}
           <div className="flex gap-1 mb-4">
             {Array.from({ length: 5 }).map((_, j) => (
-              <div key={j} className="w-4 h-4 bg-muted rounded animate-pulse" />
+              <div key={generateStableKey("testimonial-star", j, "testimonial-skeleton-star")} className="w-4 h-4 bg-muted rounded animate-pulse" />
             ))}
           </div>
 

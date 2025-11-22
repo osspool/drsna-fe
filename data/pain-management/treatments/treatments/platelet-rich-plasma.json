@@ -1,5 +1,5 @@
 {
-  "longDescription": "PRP harnesses the healing components inside your own blood—platelets, growth factors, and cytokines—and concentrates them up to 6x baseline. When injected precisely into damaged joints, tendons, or ligaments, PRP sparks collagen production, calms inflammation, and strengthens tissue. At Dr. SNA Clinic we use dual-spin centrifuges, ultrasound guidance, and tailored rehab so every drop delivers results.",
+  "longDescription": "PRP concentrates the repair elements inside your own blood—platelets, cytokines, exosomes—and directs them to the tissues that keep holding you back. We draw a small vial, spin it twice to reach six-times baseline platelets, and guide the golden serum into painful joints or tendons under ultrasound. Pair it with physiotherapy and you have a drug-free, steroid-free plan that keeps you in the gym, on the pitch, or simply walking the school run without a limp.",
   "tagline": "Your Blood. Your Healing Power.",
   "categoryId": "pain-management",
   "process": {
@@ -36,8 +36,8 @@
     "secondaryButton": "Speak to a specialist",
     "primaryButton": "Book PRP consult",
     "urgency": "Limited PRP clinics each week",
-    "subtitle": "Book a PRP consultation and start your regenerative journey.",
-    "title": "Ready to Harness Your Body’s Healing Power?"
+    "subtitle": "Reserve your consultation to review imaging, discuss activity goals, and design a PRP plan with Dr Abbas.",
+    "title": "Ready to Heal With Your Own Biology?"
   },
   "quickStats": {
     "duration": "45-minute visit",
@@ -54,11 +54,11 @@
     "image": "https://images.unsplash.com/photo-1521119989659-a83eee488004?w=1200&q=80",
     "highlights": [
       "Autologous (your own blood) – zero rejection risk",
+      "Dual-spin centrifuge reaches 6–8x platelet concentration for powerful healing",
       "Targets osteoarthritis, tendinopathy, ligament sprains, and post-surgery healing",
-      "Complements physiotherapy and shockwave therapy",
-      "Minimal downtime and no steroid side effects"
+      "Minimal downtime plus same-day return to work"
     ],
-    "content": "Platelets carry the growth factors that repair tissue after injury. We draw a small amount of blood, process it in a dual-spin centrifuge to isolate a pure platelet layer, and inject it under ultrasound guidance into the damaged area. Growth factors trigger collagen synthesis, recruit stem cells, and increase blood flow so healing accelerates naturally."
+    "content": "Platelets carry the growth factors that repair tissue after injury. We draw a small amount of blood, process it in a dual-spin centrifuge, and inject the golden layer under ultrasound into the exact fibres that hurt. Growth factors trigger collagen synthesis, recruit stem cells, and increase blood flow so healing accelerates naturally."
   },
   "title": "Platelet-Rich Plasma (PRP) Therapy",
   "seo": {
@@ -308,11 +308,11 @@
     }
   ],
   "hero": {
-    "badge": "Dual-spin high-yield PRP",
+    "badge": "High-yield dual-spin PRP",
     "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1920&q=80",
     "video": null,
-    "headline": "Regenerate With Your Own Biology",
-    "subheadline": "Precision PRP therapy that repairs joints and tendons from the inside out."
+    "headline": "Your Blood. Our Lab. Real Relief.",
+    "subheadline": "Consultant-led PRP therapy in Marylebone that concentrates six times more platelets and injects them exactly where healing has stalled."
   },
   "whatToExpect": {
     "steps": [

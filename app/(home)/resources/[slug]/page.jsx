@@ -15,6 +15,7 @@ import { MarkdownContent } from "./components/MarkdownContent";
 import { GuideSection } from "./components/GuideSection";
 import { TreatmentRecommendations } from "./components/TreatmentRecommendations";
 import { ResourceHero } from "./components/ResourceHero";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * Generate static params using SEO helper
@@ -58,9 +59,25 @@ export default async function ResourceGuidePage({ params }) {
       )}
 
       <main className="bg-background text-foreground">
-        <ResourceHero guide={guide} />
+        <ResourceHero guide={guide} baseUrl={baseUrl} />
 
         <Container className="py-16 md:py-20 space-y-8">
+          {/* Emotional Intro Section */}
+          {guide.intro && (
+            <section className="max-w-4xl mx-auto">
+              <div className="rounded-3xl border border-border bg-gradient-to-br from-card to-card/50 p-8 md:p-12 shadow-sm">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+                  {guide.intro.title}
+                </h2>
+                <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
+                  {guide.intro.paragraphs.map((paragraph, index) => (
+                    <p key={generateStableKey(paragraph, index, "resource-intro-paragraph")}>{paragraph}</p>
+                  ))}
+                </div>
+              </div>
+            </section>
+          )}
+
           {guide.content && (
             <section className="rounded-3xl border border-border bg-card/80 p-8 shadow-sm">
               <MarkdownContent content={guide.content} />

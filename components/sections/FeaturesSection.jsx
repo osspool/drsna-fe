@@ -2,7 +2,7 @@
 
 import { Sparkles, Award, Star, Users } from "lucide-react";
 import { Container } from "@/components/layout/Container";
-import { cn } from "@/lib/utils";
+import { cn, generateStableKey } from "@/lib/utils";
 import { Section } from "../layout/Section";
 import { IconFeatureCard } from "@/components/common/IconFeatureCard";
 import { Icon } from "@/components/custom/ui/icon";
@@ -49,7 +49,7 @@ export function FeaturesSection({
     return (
       <div className="space-y-4">
         {featureList.map((feature, index) => (
-          <FeatureListItem key={index} feature={feature} index={index} />
+          <FeatureListItem key={generateStableKey(feature, index, "feature-list-item")} feature={feature} index={index} />
         ))}
       </div>
     );
@@ -116,7 +116,7 @@ function DefaultFeaturesGrid({ features, layout }) {
     <div className={cn("grid gap-5", layout)}>
       {features.map((feature, index) => (
         <IconFeatureCard
-          key={index}
+          key={generateStableKey(feature, index, "default-feature-card")}
           icon={feature.icon}
           title={feature.title}
           description={feature.description}
@@ -140,7 +140,7 @@ function CardsFeaturesGrid({ features, layout }) {
     <div className={cn("grid gap-6", layout)}>
       {features.map((feature, index) => (
         <IconFeatureCard
-          key={index}
+          key={generateStableKey(feature, index, "card-feature")}
           icon={feature.icon}
           title={feature.title}
           description={feature.description}
@@ -164,7 +164,7 @@ function CompactFeaturesGrid({ features }) {
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {features.map((feature, index) => (
         <IconFeatureCard
-          key={index}
+          key={generateStableKey(feature, index, "compact-feature")}
           icon={feature.icon}
           title={feature.title}
           description={feature.description}
@@ -224,7 +224,7 @@ function TrustBadges({ stats }) {
 
         return (
           <div
-            key={index}
+            key={generateStableKey(stat, index, "feature-stat")}
             className="flex items-center gap-3 bg-card/80 backdrop-blur-sm px-6 py-4 rounded-2xl border border-border shadow-sm"
           >
             <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-primary/10 flex items-center justify-center">

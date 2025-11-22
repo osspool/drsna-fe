@@ -1,6 +1,7 @@
 import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/layout/Container";
 import { SectionHeader } from "@/components/common/SectionHeader";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * Mission Section
@@ -36,7 +37,7 @@ export function MissionSection({ data }) {
               </h3>
               <ul className="space-y-3">
                 {data.focus.points.map((point, index) => (
-                  <li key={index} className="text-base text-muted-foreground flex items-start gap-2">
+                  <li key={generateStableKey(point, index, "mission-focus-point")} className="text-base text-muted-foreground flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
                     <span>{point}</span>
                   </li>
@@ -53,7 +54,7 @@ export function MissionSection({ data }) {
               </h3>
               <ul className="space-y-3">
                 {data.beliefs.points.map((point, index) => (
-                  <li key={index} className="text-base text-muted-foreground flex items-start gap-2">
+                  <li key={generateStableKey(point, index, "mission-belief-point")} className="text-base text-muted-foreground flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
                     <span>{point}</span>
                   </li>

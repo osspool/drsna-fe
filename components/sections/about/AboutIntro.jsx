@@ -2,6 +2,7 @@ import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/layout/Container";
 import { SectionHeader } from "@/components/common/SectionHeader";
 import { Check } from "lucide-react";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * About Introduction Section
@@ -24,7 +25,7 @@ export function AboutIntro({ data }) {
         {data.content && (
           <div className="space-y-4 mb-12 text-lg text-muted-foreground leading-relaxed">
             {data.content.map((paragraph, index) => (
-              <p key={index}>{paragraph}</p>
+              <p key={generateStableKey(paragraph, index, "about-paragraph")}>{paragraph}</p>
             ))}
           </div>
         )}
@@ -34,7 +35,7 @@ export function AboutIntro({ data }) {
           <div className="bg-secondary/50 rounded-2xl p-8 mb-12">
             <div className="space-y-4">
               {data.highlights.map((highlight, index) => (
-                <div key={index} className="flex items-start gap-3">
+                <div key={generateStableKey(highlight, index, "about-highlight")} className="flex items-start gap-3">
                   <Check className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <p className="text-base text-foreground leading-relaxed">{highlight}</p>
                 </div>
@@ -51,7 +52,7 @@ export function AboutIntro({ data }) {
             </h3>
             <ul className="space-y-3 mb-6">
               {data.purpose.points.map((point, index) => (
-                <li key={index} className="text-lg text-muted-foreground">
+                <li key={generateStableKey(point, index, "about-purpose-point")} className="text-lg text-muted-foreground">
                   {point}
                 </li>
               ))}

@@ -41,12 +41,13 @@
       "id": "biologics",
       "title": "Biologic Injections",
       "description": "Regenerative injectables that rebuild tissue and calm inflammation.",
-      "icon": "droplet",
-      "treatments": [
-        "platelet-rich-plasma",
-        "adipose-cell-therapy",
-        "bmac-therapy"
-      ],
+        "icon": "droplet",
+        "treatments": [
+            "platelet-rich-plasma",
+            "adipose-cell-therapy",
+            "stem-cell-treatment",
+            "bmac-therapy"
+        ],
       "benefits": [
         "Stimulate collagen and cartilage repair",
         "Reduce reliance on cortisone",
@@ -90,26 +91,44 @@
       "featured": true,
       "popular": true
     },
-    "adipose-cell-therapy": {
-      "title": "Adipose Cell Therapy",
-      "shortDescription": "Micro-fragmented fat injectables to cushion and regenerate joints.",
-      "description": "Adipose tissue provides cushioning cells and anti-inflammatory factors that stabilise arthritic joints.",
-      "image": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=800&q=80",
-      "icon": "layers",
-      "duration": "90 mins",
-      "downtime": "2-3 days",
-      "results": "6-8 weeks",
-      "longevity": "24 months",
-      "price": "From £2,250",
-      "benefits": [
-        "Long-lasting cushioning",
-        "Autologous (your own cells)",
-        "Ideal for knees, hips, and ankles"
-      ]
-    },
-    "bmac-therapy": {
-      "title": "Bone Marrow Aspirate Concentrate (BMAC)",
-      "shortDescription": "Concentrated marrow-derived cells for advanced cartilage and tendon repair.",
+        "adipose-cell-therapy": {
+            "title": "Adipose Cell Therapy",
+            "shortDescription": "Micro-fragmented fat injectables to cushion and regenerate joints.",
+            "description": "Adipose tissue provides cushioning cells and anti-inflammatory factors that stabilise arthritic joints.",
+            "image": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=800&q=80",
+            "icon": "layers",
+            "duration": "90 mins",
+            "downtime": "2-3 days",
+            "results": "6-8 weeks",
+            "longevity": "24 months",
+            "price": "From £2,250",
+            "benefits": [
+                "Long-lasting cushioning",
+                "Autologous (your own cells)",
+                "Ideal for knees, hips, and ankles"
+            ]
+        },
+        "stem-cell-treatment": {
+            "title": "Adipose-Derived Stem Cell Therapy",
+            "shortDescription": "Harvest, concentrate, and reinject your own stem cells for deep regeneration.",
+            "description": "Mini-liposuction collects millions of mesenchymal stem cells which are reinfused into arthritic joints or tendon tears under ultrasound guidance.",
+            "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800&q=80",
+            "icon": "dna",
+            "duration": "Half-day visit",
+            "downtime": "48 hrs",
+            "results": "6-8 weeks",
+            "longevity": "12-36 months",
+            "price": "From £4,250",
+            "benefits": [
+                "High cell counts from gentle adipose harvests",
+                "Targets cartilage, tendons, and chronic inflammation",
+                "Pairs with PRP or Arthrosamid® for layered results"
+            ],
+            "featured": true
+        },
+        "bmac-therapy": {
+            "title": "Bone Marrow Aspirate Concentrate (BMAC)",
+            "shortDescription": "Concentrated marrow-derived cells for advanced cartilage and tendon repair.",
       "description": "BMAC delivers stem-cell-rich concentrate to severe joint or tendon injuries when PRP alone isn’t enough.",
       "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=80",
       "icon": "cpu",

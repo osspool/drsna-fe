@@ -4,6 +4,7 @@ import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import Glow from "@/components/custom/ui/glow";
 import { Clock, Check } from "lucide-react";
+import { generateStableKey } from "@/lib/utils";
 
 export function CompactTimeline({ data, steps, schemaMarkup }) {
   return (
@@ -39,7 +40,7 @@ export function CompactTimeline({ data, steps, schemaMarkup }) {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {steps.map((step, index) => (
               <div
-                key={index}
+                key={generateStableKey(step, index, "compact-timeline-step")}
                 className="opacity-0 animate-fade-in-up"
                 style={{ animationDelay: `${index * 50}ms` }}
               >

@@ -1,5 +1,6 @@
 import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/layout/Container";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * Values Section
@@ -15,7 +16,7 @@ export function ValuesSection({ data }) {
         <div className="space-y-12">
           {data.map((value, index) => (
             <div
-              key={index}
+              key={generateStableKey(value, index, "values-entry")}
               className="bg-card rounded-2xl p-8 md:p-12 border border-border"
             >
               {/* Title */}
@@ -41,7 +42,7 @@ export function ValuesSection({ data }) {
               {value.points && value.points.length > 0 && (
                 <ul className="space-y-3 mb-6">
                   {value.points.map((point, i) => (
-                    <li key={i} className="text-base text-foreground flex items-start gap-2">
+                    <li key={generateStableKey(point, i, "values-point")} className="text-base text-foreground flex items-start gap-2">
                       <span className="text-primary mt-1">•</span>
                       <span>{point}</span>
                     </li>

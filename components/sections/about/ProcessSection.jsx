@@ -1,6 +1,7 @@
 import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/layout/Container";
 import { SectionHeader } from "@/components/common/SectionHeader";
+import { generateStableKey } from "@/lib/utils";
 
 /**
  * Process Section
@@ -27,7 +28,7 @@ export function ProcessSection({ data }) {
             </h3>
             <div className="grid md:grid-cols-2 gap-4">
               {data.expectations.steps.map((step, index) => (
-                <div key={index} className="bg-card rounded-xl p-6 border border-border">
+                <div key={generateStableKey(step, index, "process-step")} className="bg-card rounded-xl p-6 border border-border">
                   <div className="flex items-start gap-3">
                     <div className="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold flex-shrink-0">
                       {index + 1}
